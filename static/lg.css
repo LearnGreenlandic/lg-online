@@ -1,0 +1,47 @@
+html, body {
+	width: 100%;
+}
+
+.lecture {
+	position: relative;
+	white-space: nowrap;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.video {
+	display: inline-block;
+	vertical-align: top;
+}
+#video {
+	width: 100%;
+	object-fit: contain;
+}
+
+.slides {
+	display: inline-block;
+	vertical-align: top;
+}
+.slides img {
+	width: 100%;
+}
+
+.drawer, .options {
+	margin-top: 20px;
+}
+
+.drawer img {
+	height: 75px;
+	cursor: pointer;
+}
+
+.drawer img.current {
+	opacity: 0.5;
+}
+
+.flag img {
+	opacity: 0.5;
+}
+.flag:hover img, .flag:focus img {
+	opacity: 1;
+}
