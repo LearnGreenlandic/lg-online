@@ -22,7 +22,7 @@ if ($state['lg1'] === 0 && $state['lg2'] === 0) {
 	exit(0);
 }
 
-if (preg_match('~^(lg[12])/([\d-]+)/$~', $state['path'], $m)) {
+if (preg_match('~^(lg[12])/([\d.]+)/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/lecture.php';
 	lg_lecture($state, $m[1], $m[2]);
 }
@@ -30,9 +30,13 @@ else if ($state['path'] === 'lg1/') {
 	require_once __DIR__.'/lib/lg1.php';
 	lg_lg1($state);
 }
-else if (preg_match('~^(lg[12])/pdf/([\d-]+)/$~', $state['path'], $m)) {
+else if (preg_match('~^(lg[12])/pdf/([\d.]+)/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/pdf.php';
 	lg_pdf($state, $m[1], $m[2]);
+}
+else if (preg_match('~^lg1/pronounce/([12])/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/pronounce.php';
+	lg_pronounce($state, $m[1]);
 }
 else if (!empty($state['path'])) {
 	header('HTTP/1.0 302 Back to the root with you');

@@ -17,31 +17,36 @@ $l10n['eng']['LBL_VIDEO_QUALITY'] = 'Video resolution';
 $l10n['dan']['lg1'] = 'Grønlandsk for voksne';
 $l10n['eng']['lg1'] = 'Greenlandic for Foreigners';
 
-// src/TaskChooser.cpp
 $l10n['dan']['lg1/1'] = 'Forelæsning 1: De &quot;sære&quot; lyd';
 $l10n['eng']['lg1/1'] = 'Lecture 1: The New Sounds';
-// src/TaskChooser.cpp
 $l10n['dan']['lg1/2'] = 'Forelæsning 2: Typiske danskerfejl';
 $l10n['eng']['lg1/2'] = 'Lecture 2: Typical mistakes';
-// src/TaskChooser.cpp
 $l10n['dan']['lg1/3'] = 'Forelæsning 3: Tonerne og de lange ord';
 $l10n['eng']['lg1/3'] = 'Lecture 3: Tones and long words';
-// src/TaskChooser.cpp
 $l10n['dan']['lg1/4'] = 'Forelæsning 4: Træning og opsamling';
 $l10n['eng']['lg1/4'] = 'Lecture 4: Practice and repetition';
-// src/TaskChooser.cpp
-$l10n['dan']['lg1/5-1'] = 'Forelæsning 5.1: Gloserne i lektion 1';
-$l10n['eng']['lg1/5-1'] = 'Lecture 5.1: Words and lexicons in lesson one';
-// src/TaskChooser.cpp
-$l10n['dan']['lg1/5-2'] = 'Forelæsning 5.2: Grammatikken i lektion 1';
-$l10n['eng']['lg1/5-2'] = 'Lecture 5.2: Introduction to grammar';
+$l10n['dan']['lg1/5.1'] = 'Forelæsning 5.1: Gloserne i lektion 1';
+$l10n['eng']['lg1/5.1'] = 'Lecture 5.1: Words and lexicons in lesson one';
+$l10n['dan']['lg1/5.2'] = 'Forelæsning 5.2: Grammatikken i lektion 1';
+$l10n['eng']['lg1/5.2'] = 'Lecture 5.2: Introduction to grammar';
 
 $l10n['dan']['lg1/pronounce/1'] = 'Udtaleøvelse 1.1: Gentag';
 $l10n['eng']['lg1/pronounce/1'] = 'Pronunciation exercise 1.1: Repeat';
 $l10n['dan']['lg1/pronounce/2'] = 'Udtaleøvelse 1.2: Diktat';
 $l10n['eng']['lg1/pronounce/2'] = 'Pronunciation exercise 1.2: Dictation';
+$l10n['dan']['lg1/pronounce/1/text'] = 'Lyt og gentag ordet.';
+$l10n['eng']['lg1/pronounce/1/text'] = 'Listen and repeat the word.';
+
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
+$l10n['dan']['lg1/pdf/2'] = 'Forelæsning 2 som PDF';
+$l10n['eng']['lg1/pdf/2'] = 'Lecture 2 as PDF';
+$l10n['dan']['lg1/pdf/3'] = 'Forelæsning 3 som PDF';
+$l10n['eng']['lg1/pdf/3'] = 'Lecture 3 as PDF';
+$l10n['dan']['lg1/pdf/4'] = 'Forelæsning 4 som PDF';
+$l10n['eng']['lg1/pdf/4'] = 'Lecture 4 as PDF';
+$l10n['dan']['lg1/pdf/5.1'] = 'Forelæsning 5 som PDF';
+$l10n['eng']['lg1/pdf/5.1'] = 'Lecture 5 as PDF';
 
 /*
 // src/TaskChooser.cpp
@@ -474,21 +479,6 @@ $l10n['eng'][''] = 'Yes, next exercise';
 // src/ListenTwo.cpp
 $l10n['dan'][''] = 'Nej, tilbage til menuen';
 $l10n['eng'][''] = 'No, back to the menu';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Udtaleøvelse 1.1: Gentag';
-$l10n['eng'][''] = 'Pronunciation exercise 1.1: Repeat';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Lyt og gentag ordet.';
-$l10n['eng'][''] = 'Listen and repeat the word.';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Lyt igen';
-$l10n['eng'][''] = 'Listen again';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
 // src/PronounceOne.cpp
 $l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
 $l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';

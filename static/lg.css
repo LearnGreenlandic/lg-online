@@ -40,8 +40,13 @@ html, body {
 }
 
 .flag img {
+	height: 16px;
 	opacity: 0.5;
 }
 .flag:hover img, .flag:focus img {
 	opacity: 1;
+}
+.flag-dan {
+	margin-left: 6px;
+	margin-right: 6px;
 }

@@ -1,5 +1,9 @@
 'use strict';
 
+// U+274C ❌
+// U+2713 ✓
+// U+2714 ✔
+
 let g_video = null;
 let g_slides = [];
 let g_slide = -1;
@@ -31,16 +35,18 @@ function updateSlide() {
 }
 
 $(function() {
-	g_video = $('#video');
-	g_video.on('seeked', updateSlide);
-	g_video = g_video.get(0);
+	if ($('.lecture').length) {
+		g_video = $('#video');
+		g_video.on('seeked', updateSlide);
+		g_video = g_video.get(0);
 
-	let slides = $('.slide');
-	for (let i=0 ; i<slides.length ; ++i) {
-		$(slides[i]).click(goToSlide);
-		g_slides.push([parseInt(slides[i].getAttribute('data-s')), slides[i]]);
+		let slides = $('.slide');
+		for (let i=0 ; i<slides.length ; ++i) {
+			$(slides[i]).click(goToSlide);
+			g_slides.push([parseInt(slides[i].getAttribute('data-s')), slides[i]]);
+		}
+
+		updateSlide();
+		//setInterval(updateSlide, 1000);
 	}
-
-	updateSlide();
-	//setInterval(updateSlide, 1000);
 });

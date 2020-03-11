@@ -48,7 +48,7 @@ function lg_init() {
 	chdir(__DIR__.'/../');
 
 	$path = $_GET['path'] ?? '';
-	if (preg_match('~[^a-z0-9/-]~', $path) || substr($path, 0, 1) === '/' /* || !file_exists("d/{$path}") */) {
+	if (preg_match('~[^a-z0-9/.-]~', $path) || substr($path, 0, 1) === '/' /* || !file_exists("d/{$path}") */) {
 		header('HTTP/1.0 404 No such file');
 		exit(0);
 	}
@@ -135,8 +135,8 @@ function lg_header($state, $lg='', $path='') {
 		<li class="nav-item"><a href="<?=$prefix;?>/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg];?></a></li>
 	</ul>
 	<ul class="navbar-nav">
-		<li class="nav-item align-top"><a href="./?lang=dan" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/dan.png" height="16" class="d-inline-block align-top" alt=""> <span class="align-top">Dansk</span></a></li>
-		<li class="nav-item align-top"><a href="./?lang=eng" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/eng.png" height="16" class="d-inline-block align-top" alt=""> <span class="align-top">English</span></a></li>
+		<li class="nav-item align-top"><a href="./?lang=dan" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/dan.png" height="16" class="d-inline-block align-top flag-dan" alt=""> <span class="align-top">Dansk</span></a></li>
+		<li class="nav-item align-top"><a href="./?lang=eng" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/eng.png" height="16" class="d-inline-block align-top flag-eng" alt=""> <span class="align-top">English</span></a></li>
 	</ul>
 </nav>
 <?=$h1;?>
