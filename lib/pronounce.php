@@ -17,7 +17,7 @@ function lg_pronounce_1($state) {
 <div class="row">
 <?php
 	foreach (_prn_mp3s() as $mp3) {
-		echo '<div class="col-lg-4"><audio src="'.$prefix.'/'.$mp3.'" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio></div>';
+		echo '<div class="col-lg-4"><audio src="'.$prefix.'/'.$mp3.'" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio> <span></span></div>';
 	}
 ?>
 </div>
