@@ -47,6 +47,16 @@ $(function() {
 		}
 
 		updateSlide();
-		//setInterval(updateSlide, 1000);
+		setInterval(updateSlide, 1000);
+	}
+
+	if ($('.pronounce').length) {
+		$('audio').each(function() {
+			let p = $(this).closest('.entry');
+			p.find('button.btn-primary').click(function() {
+				let p = $(this).closest('.entry');
+				p.find('audio').get(0).play();
+			});
+		});
 	}
 });

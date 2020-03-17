@@ -50,3 +50,17 @@ html, body {
 	margin-left: 6px;
 	margin-right: 6px;
 }
+
+.ipa:before {
+	content: "[";
+}
+.ipa {
+}
+.ipa:after {
+	content: "]";
+}
+
+.pronounce input {
+	display: inline-block;
+	width: 20ex;
+}

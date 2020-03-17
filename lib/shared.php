@@ -149,3 +149,14 @@ function lg_footer($state=null) {
 </html>
 <?php
 }
+
+function lg_shuffle_assoc($arr) {
+	$keys = array_keys($arr);
+	shuffle($keys);
+	$na = [];
+	foreach ($keys as $key) {
+		$na[$key] = $arr[$key];
+	}
+
+	return $na;
+}

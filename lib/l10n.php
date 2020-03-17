@@ -34,8 +34,10 @@ $l10n['dan']['lg1/pronounce/1'] = 'Udtaleøvelse 1.1: Gentag';
 $l10n['eng']['lg1/pronounce/1'] = 'Pronunciation exercise 1.1: Repeat';
 $l10n['dan']['lg1/pronounce/2'] = 'Udtaleøvelse 1.2: Diktat';
 $l10n['eng']['lg1/pronounce/2'] = 'Pronunciation exercise 1.2: Dictation';
-$l10n['dan']['lg1/pronounce/1/text'] = 'Lyt og gentag ordet.';
-$l10n['eng']['lg1/pronounce/1/text'] = 'Listen and repeat the word.';
+$l10n['dan']['lg1/pronounce/1/text'] = 'Lyt og gentag ordet';
+$l10n['eng']['lg1/pronounce/1/text'] = 'Listen and repeat the word';
+$l10n['dan']['lg1/pronounce/2/text'] = 'Skriv hvad du hører';
+$l10n['eng']['lg1/pronounce/2/text'] = 'Write what you hear';
 
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
@@ -477,56 +479,6 @@ $l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue wi
 $l10n['dan'][''] = 'Ja, næste øvelse';
 $l10n['eng'][''] = 'Yes, next exercise';
 // src/ListenTwo.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/PronounceOne.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Udtaleøvelse 1.2: Diktat';
-$l10n['eng'][''] = 'Pronunciation exercise 1.2: Dictation';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Skriv hvad du hører.';
-$l10n['eng'][''] = 'Take down what you hear.';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Lyt igen';
-$l10n['eng'][''] = 'Listen again';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Skriv hvad du hørte:';
-$l10n['eng'][''] = 'Write what you heard:';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Det korrekte ord var:';
-$l10n['eng'][''] = 'The correct word was:';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du læse forelæsningen som PDF?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to view the lecture as PDF?';
-// src/PronounceTwo.cpp
-$l10n['dan'][''] = 'Ja, åben PDF';
-$l10n['eng'][''] = 'Yes, open the PDF';
-// src/PronounceTwo.cpp
 $l10n['dan'][''] = 'Nej, tilbage til menuen';
 $l10n['eng'][''] = 'No, back to the menu';
 // src/StructureOne.cpp
