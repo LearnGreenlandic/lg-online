@@ -14,6 +14,15 @@ $l10n['eng']['ERR_NO_ACCESS_LG2'] = 'You are either not <a href="/wp-login.php">
 $l10n['dan']['LBL_VIDEO_QUALITY'] = 'Video-opløsning';
 $l10n['eng']['LBL_VIDEO_QUALITY'] = 'Video resolution';
 
+$l10n['dan']['yes'] = 'Ja';
+$l10n['eng']['yes'] = 'Yes';
+$l10n['dan']['no'] = 'Nej';
+$l10n['eng']['no'] = 'No';
+$l10n['dan']['solution'] = 'Løsning';
+$l10n['eng']['solution'] = 'Solution';
+$l10n['dan']['close'] = 'Luk';
+$l10n['eng']['close'] = 'Close';
+
 $l10n['dan']['lg1'] = 'Grønlandsk for voksne';
 $l10n['eng']['lg1'] = 'Greenlandic for Foreigners';
 
@@ -38,6 +47,52 @@ $l10n['dan']['lg1/pronounce/1/text'] = 'Lyt og gentag ordet';
 $l10n['eng']['lg1/pronounce/1/text'] = 'Listen and repeat the word';
 $l10n['dan']['lg1/pronounce/2/text'] = 'Skriv hvad du hører';
 $l10n['eng']['lg1/pronounce/2/text'] = 'Write what you hear';
+
+$l10n['dan']['lg1/listening/1'] = 'Lydøvelse 1.1: En eller to konsonanter';
+$l10n['eng']['lg1/listening/1'] = 'Sound perception 1.1: One or two consonants';
+$l10n['dan']['lg1/listening/1/text'] = 'Lyt og svar om der er dobbelt-konsonanter';
+$l10n['eng']['lg1/listening/1/text'] = 'Listen and decide whether there are double consonants at play';
+$l10n['dan']['lg1/listening/1/no'] = 'Ingen dobbelt';
+$l10n['eng']['lg1/listening/1/no'] = 'No double';
+$l10n['dan']['lg1/listening/1/yes'] = 'Har dobbbelt';
+$l10n['eng']['lg1/listening/1/yes'] = 'Has double';
+$l10n['dan']['lg1/listening/2'] = 'Lydøvelse 1.2: r eller ikke r';
+$l10n['eng']['lg1/listening/2'] = 'Sound perception 1.2: -r- or no -r-';
+$l10n['dan']['lg1/listening/2/text'] = "Lyt og svar om ordet indeholder 'r' eller ej.";
+$l10n['eng']['lg1/listening/2/text'] = "Listen and decide whether there is 'r' or not in the word.";
+$l10n['dan']['lg1/listening/2/no'] = 'Intet r';
+$l10n['eng']['lg1/listening/2/no'] = 'No r';
+$l10n['dan']['lg1/listening/2/yes'] = 'Har r';
+$l10n['eng']['lg1/listening/2/yes'] = 'Has r';
+$l10n['dan']['lg1/listening/3'] = 'Lydøvelse 1.3: tt eller ts eller t';
+$l10n['eng']['lg1/listening/3'] = 'Sound perception 1.3: tt or ts or just t';
+$l10n['dan']['lg1/listening/3/text'] = "Lyt og svar om ordet indeholder 'tt' eller 'ts' eller kun 't'.";
+$l10n['eng']['lg1/listening/3/text'] = "Listen and decide whether the word contains 'tt' or 'ts' or just 't'.";
+$l10n['dan']['lg1/listening/3/tt'] = 'Har tt';
+$l10n['eng']['lg1/listening/3/tt'] = 'Has tt';
+$l10n['dan']['lg1/listening/3/ts'] = 'Har ts';
+$l10n['eng']['lg1/listening/3/ts'] = 'Has ts';
+$l10n['dan']['lg1/listening/3/t'] = 'Har kun t';
+$l10n['eng']['lg1/listening/3/t'] = 'Has only t';
+
+$l10n['dan']['lg1/hyphenate'] = 'Stavelsesdeling af bynavne';
+$l10n['eng']['lg1/hyphenate'] = 'Hyphenate place names';
+$l10n['dan']['lg1/hyphenate/text'] = 'Del ordet med -; brug noderne til hjælp.';
+$l10n['eng']['lg1/hyphenate/text'] = 'This is your first hyphenation exercise. You could do it without thinking at all since hyphenation could be copied directly from the staff. Do not do so but use the exercise to secure that you fully understand the three Greenlandic hyphenation rules.';
+
+$l10n['dan']['lg1/listening/4'] = 'Lydøvelse 1.4: Skriv hvad du hørte';
+$l10n['eng']['lg1/listening/4'] = 'Sound perception 1.4: Dictation - single words';
+$l10n['dan']['lg1/listening/4/text'] = $l10n['dan']['lg1/pronounce/2/text'];
+$l10n['eng']['lg1/listening/4/text'] = $l10n['eng']['lg1/pronounce/2/text'];
+
+$l10n['dan']['lg1/welcome/1'] = 'Skærmtekstsøvelse 1.1: Stavelsesdeling';
+$l10n['eng']['lg1/welcome/1'] = 'Text exercise 1.1: Hyphenate a text';
+$l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærmen lige efter velkomsten. Stavelsesdel den efter de tre regler, du netop har lært. Du finder facitlisten og en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>, men brug den først, når du har prøvet så godt du kan selv.';
+$l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a> but do not resort to it until you have tried your best on your own.';
+$l10n['dan']['lg1/welcome/2'] = 'Skærmtekstsøvelse 1.2: Udtale';
+$l10n['eng']['lg1/welcome/2'] = 'Text exercise 1.2: Pronunciation';
+$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder. Tryk <em>Næste ord</em> efter hvert ord, når du føler, at din udtale er ved at være korrekt. Så får du ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>.';
+$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches. Press <em>Next word</em> whenever you feel your pronunciation to be acceptable. Then a small analysis using our primitive staff will pop up for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a>.';
 
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
@@ -142,19 +197,6 @@ $l10n['eng'][''] = 'Translate wordforms';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Change language to English';
 $l10n['eng'][''] = 'Skift sprog til dansk';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.1: En eller to konsonanter';
-$l10n['eng'][''] = 'Sound perception 1.1: One or two consonants';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.2: r eller ikke r';
-$l10n['eng'][''] = 'Sound perception 1.2: -r- or no -r-';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.3: tt eller ts eller t';
-$l10n['eng'][''] = 'Sound perception 1.3: tt or ts or just t';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.4: Skriv hvad du hørte';
-$l10n['eng'][''] = 'Sound perception 1.4: Dictation - single words';
-// src/TaskChooser.cpp
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Forelæsning 5 som PDF';
 $l10n['eng'][''] = 'Lecture 5 as PDF';
@@ -261,131 +303,6 @@ $l10n['eng'][''] = 'Yes, next exercise';
 // src/DialogTwo.cpp
 $l10n['dan'][''] = 'Nej, tilbage til menuen';
 $l10n['eng'][''] = 'No, back to the menu';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Stavelsesdeling af bynavne';
-$l10n['eng'][''] = 'Hyphenate place names';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Del ordet med -; brug noderne til hjælp.';
-$l10n['eng'][''] = 'This is your first hyphenation exercise. You could do it without thinking at all since hyphenation could be copied directly from the staff. Do not do so but use the exercise to secure that you fully understand the three Greenlandic hyphenation rules.';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Næste ord';
-$l10n['eng'][''] = 'Next word';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Check';
-$l10n['eng'][''] = 'Check';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Hrhm...';
-$l10n['eng'][''] = 'Hrhm...';
-// src/HyphenOne.cpp
-$l10n['dan'][''] = 'Det korrekte er:';
-$l10n['eng'][''] = 'The correct was:';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Skriv hvad du hører.';
-$l10n['eng'][''] = 'Write down what you hear.';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Lyt igen';
-$l10n['eng'][''] = 'Listen again';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Det korrekte ord var:';
-$l10n['eng'][''] = 'The correct word was:';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.4: Skriv hvad du hørte';
-$l10n['eng'][''] = 'Sound perception 1.4: Dictation - single words';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/ListenFour.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Lyt og svar om der er to konsonanter.';
-$l10n['eng'][''] = 'Listen and decide whether there are two consonants at play.';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Lyt igen';
-$l10n['eng'][''] = 'Listen again';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Ikke to konsonanter';
-$l10n['eng'][''] = 'Not two consonants';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'To konsonanter';
-$l10n['eng'][''] = 'Two consonants';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Korrekt!
-Ordet var: ';
-$l10n['eng'][''] = 'Correct!
-The word was: ';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.1: En eller to konsonanter';
-$l10n['eng'][''] = 'Sound perception 1.1: One or two consonants';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Nej, har ikke ';
-$l10n['eng'][''] = 'No, doesn&apos;t have ';
-// src/ListenOne.cpp
-$l10n['dan'][''] = 'Jo, har ';
-$l10n['eng'][''] = 'Yes, has ';
 // src/ListenRepeatPlayer.cpp
 $l10n['dan'][''] = 'Lyt, forstå, gentag';
 $l10n['eng'][''] = 'Listen, understand, repeat';
@@ -398,89 +315,6 @@ $l10n['eng'][''] = 'See Tikaajaat again';
 // src/ListenRepeatPlayer.cpp
 $l10n['dan'][''] = '&lt;b&gt;Bemærk&lt;/b&gt;: Tikaajaat bruger en form du ikke har lært endnu. I sidste ord siger hun &lt;i&gt;najugaqarlunga&lt;/i&gt; i stedet for &lt;i&gt;najugaqarpunga&lt;/i&gt;. På dette sted betyder de to ord præcis det samme, så lad være med at tænke for meget over det.';
 $l10n['eng'][''] = '&lt;b&gt;Please observe&lt;/b&gt;: Tikaajaat uses a wordform you do not know. Her last word is &lt;i&gt;najugaqarlunga&lt;/i&gt; instead of &lt;i&gt;najugaqarpunga&lt;/i&gt;. The two wordforms are absolutely identical in this case so do not worry too much about it.';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Lyt og svar om ordet indeholder &apos;tt&apos; eller &apos;ts&apos; eller kun &apos;t&apos;.';
-$l10n['eng'][''] = 'Listen and decide whether the word contains &apos;tt&apos; or &apos;ts&apos; or just &apos;t&apos;.';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Lyt igen';
-$l10n['eng'][''] = 'Listen again';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Har tt';
-$l10n['eng'][''] = 'Has tt';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Har ts';
-$l10n['eng'][''] = 'Has ts';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Har kun t';
-$l10n['eng'][''] = 'Has only t';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Korrekt!
-Ordet var: ';
-$l10n['eng'][''] = 'Correct!
-The word was: ';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.3: tt eller ts eller t';
-$l10n['eng'][''] = 'Sound perception 1.3: tt or ts or just t';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du læse forelæsningen som PDF?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to view the lecture as PDF?';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Ja, åben PDF';
-$l10n['eng'][''] = 'Yes, open the PDF';
-// src/ListenThree.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Lyt og svar om ordet indeholder &apos;r&apos; eller ej.';
-$l10n['eng'][''] = 'Listen and decide whether there is &apos;r&apos; or not in the word.';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Lyt igen';
-$l10n['eng'][''] = 'Listen again';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Har ikke r';
-$l10n['eng'][''] = 'Has no r';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Har r';
-$l10n['eng'][''] = 'Has an r';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Korrekt!
-Ordet var: ';
-$l10n['eng'][''] = 'Correct!
-The word was: ';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Lydøvelse 1.2: r eller ikke r';
-$l10n['eng'][''] = 'Sound perception 1.2: -r- or no -r-';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/ListenTwo.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
 // src/StructureOne.cpp
 $l10n['dan'][''] = 'Nu hører du først Tika udtale navnene på de 18 gamle grønlandske kommuner. Lyt og prøv at skrive det navn, du hører. Lad være med at forsøge at springe over hvor gærdet er lavest ved at skrive af efter en liste eller et atlas; det lærer du ikke noget af! Husk at navne skrives med stort begyndelsesbogstav.';
 $l10n['eng'][''] = 'Tika will now pronounce the 18 old Greenlandic municipalities. Listen and take down the names you hear. Do not attempt any shortcuts like copying from a list or a map. It will do you no good! Remember to write proper names with capital first letter.';
@@ -757,12 +591,6 @@ $l10n['eng'][''] = 'Yes, next exercise';
 $l10n['dan'][''] = 'Nej, tilbage til menuen';
 $l10n['eng'][''] = 'No, back to the menu';
 // src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Skærmtekstsøvelse 1.1: Stavelsesdeling';
-$l10n['eng'][''] = 'Hyphenate a text';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Her er igen den tekst, der stod på skærmen lige efter velkomsten. Stavelsesdel den efter de tre regler, du netop har lært. Du finder facitlisten og en oversættelse i indstikshæftet, men brug den først, når du har prøvet så godt du kan selv.';
-$l10n['eng'][''] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in the pamphlet but do not resort to it until you have tried your best on your own.';
-// src/WelcomeOne.cpp
 $l10n['dan'][''] = 'Giv op...';
 $l10n['eng'][''] = 'Give up...';
 // src/WelcomeOne.cpp
@@ -806,27 +634,6 @@ $l10n['eng'][''] = 'Welcome to Greenlandic for Foreigners!';
 // src/WelcomeQuestion.cpp
 $l10n['dan'][''] = 'Ups! Hjælp mig ud!';
 $l10n['eng'][''] = 'Whoops! Help me out!';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Skærmtekstsøvelse 1.2: Udtale';
-$l10n['eng'][''] = 'Text exercise 1.2: Pronunciation';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder. Tryk &lt;Næste ord&gt; efter hvert ord, når du føler, at din udtale er ved at være korrekt. Så får du ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i indstikshæftet.';
-$l10n['eng'][''] = 'Read the text aloud word by word to get accustomed to the varying pitches. Press &lt;Next word&gt; whenever you feel your pronunciation to be acceptable. Then a small analysis using our primitive staff will pop up for you to check your intonation pattern.';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Næste ord';
-$l10n['eng'][''] = 'Next word';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du læse forelæsningen som PDF?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to view the lecture as PDF?';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Ja, åben PDF';
-$l10n['eng'][''] = 'Yes, open the PDF';
-// src/WelcomeTwo.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
 // src/WelcomeWords.cpp
 $l10n['dan'][''] = 'Diktat af Tika&apos;s velkomst';
 $l10n['eng'][''] = 'Tika&apos;s welcome as dictation';

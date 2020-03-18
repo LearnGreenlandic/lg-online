@@ -51,16 +51,16 @@ $GLOBALS['-words'] = [
 function lg_pronounce_1($state) {
 	extract($state, EXTR_SKIP);
 ?>
-<div class="task container-fluid pronounce">
+<div class="task task-audio container-fluid">
 <div class="row">
 <div class="col">
-<h2><?=$l10n['lg1/pronounce/1/text'];?></h2>
+<p><?=$l10n['lg1/pronounce/1/text'];?></p>
 </div>
 </div>
-<div class="row">
+<div class="row alternate">
 <?php
 	foreach ($GLOBALS['-words'] as $word => $ipa) {
-		echo '<div class="col-lg-6 my-1 entry"><div class="row"><div class="col-sm-2">'.$word.'</div><div class="col-sm-2 ipa">'.$ipa.'</div><div class="col-sm-4"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></div></div></div>';
+		echo '<div class="col-md-6 my-1 entry"><div class="row justify-content-center"><div class="col-3">'.$word.'</div><div class="col-3 ipa">'.$ipa.'</div><div class="col-3"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary btn-lg">▶</button></div></div></div>';
 	}
 ?>
 </div>
@@ -71,18 +71,17 @@ function lg_pronounce_1($state) {
 function lg_pronounce_2($state) {
 	extract($state, EXTR_SKIP);
 ?>
-<div class="task container-fluid pronounce">
+<div class="task task-text task-audio container-fluid">
 <div class="row">
 <div class="col">
-<h2><?=$l10n['lg1/pronounce/2/text'];?></h2>
+<p><?=$l10n['lg1/pronounce/2/text'];?></p>
 </div>
 </div>
-<div class="row">
-<!-- Yes, you can cheat by looking at the source. You're only hurting yourself. -->
+<div class="row alternate">
 <?php
 	$words = lg_shuffle_assoc($GLOBALS['-words']);
 	foreach ($words as $word => $ipa) {
-		echo '<div class="col-lg-6 my-1 entry"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" class="form-control"> <button type="button" class="btn btn-warning">?</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>

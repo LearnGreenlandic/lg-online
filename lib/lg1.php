@@ -21,6 +21,9 @@ function lg_lg1($state) {
 	<div class="media-body">
 		<h5><a href="<?=$prefix;?>/lg1/2/" class="text-warning"><?=$l10n['lg1/2'];?></a></h5>
 		<ul>
+			<li><a href="<?=$prefix;?>/lg1/listening/1/"><?=$l10n['lg1/listening/1'];?></a></li>
+			<li><a href="<?=$prefix;?>/lg1/listening/2/"><?=$l10n['lg1/listening/2'];?></a></li>
+			<li><a href="<?=$prefix;?>/lg1/listening/3/"><?=$l10n['lg1/listening/3'];?></a></li>
 			<li><a href="<?=$prefix;?>/lg1/pdf/2/"><?=$l10n['lg1/pdf/2'];?></a></li>
 		</ul>
 	</div>
@@ -30,6 +33,10 @@ function lg_lg1($state) {
 	<div class="media-body">
 		<h5><a href="<?=$prefix;?>/lg1/3/" class="text-warning"><?=$l10n['lg1/3'];?></a></h5>
 		<ul>
+			<li><a href="<?=$prefix;?>/lg1/hyphenate/"><?=$l10n['lg1/hyphenate'];?></a></li>
+			<li><a href="<?=$prefix;?>/lg1/listening/4/"><?=$l10n['lg1/listening/4'];?></a></li>
+			<li><a href="<?=$prefix;?>/lg1/welcome/1/"><?=$l10n['lg1/welcome/1'];?></a></li>
+			<li><a href="<?=$prefix;?>/lg1/welcome/2/"><?=$l10n['lg1/welcome/2'];?></a></li>
 			<li><a href="<?=$prefix;?>/lg1/pdf/3/"><?=$l10n['lg1/pdf/3'];?></a></li>
 		</ul>
 	</div>

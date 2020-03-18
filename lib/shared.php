@@ -140,6 +140,7 @@ function lg_header($state, $lg='', $path='') {
 	</ul>
 </nav>
 <?=$h1;?>
+<!-- Yes, you can cheat by looking at the source. You're only hurting yourself. -->
 <?php
 }
 

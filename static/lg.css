@@ -55,12 +55,34 @@ html, body {
 	content: "[";
 }
 .ipa {
+	white-space: nowrap;
 }
 .ipa:after {
 	content: "]";
 }
 
-.pronounce input {
+.task-text input {
 	display: inline-block;
 	width: 20ex;
+}
+
+.task-text-area textarea {
+	min-height: 100px;
+}
+
+.hyphenate img {
+	max-height: 100px;
+	background-color: #fff;
+	padding: 10px;
+}
+
+@media (max-width: 767px) {
+	.alternate > div:nth-child(odd) {
+		background-color: #111;
+	}
+}
+@media (min-width: 768px) {
+	.alternate > div:nth-child(4n-3), .alternate > div:nth-child(4n) {
+		background-color: #111;
+	}
 }
