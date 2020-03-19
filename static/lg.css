@@ -2,6 +2,13 @@ html, body {
 	width: 100%;
 }
 
+.chooser img {
+	width: 150px;
+}
+.chooser li:before {
+	content: "- ";
+}
+
 .lecture {
 	position: relative;
 	white-space: nowrap;
@@ -90,13 +97,38 @@ html, body {
 	white-space: pre-wrap;
 }
 
+.choice {
+	position: relative;
+}
+.ch-item {
+	display: inline-block;
+	position: relative;
+}
+
 @media (max-width: 767px) {
 	.alternate > div:nth-child(odd) {
 		background-color: #111;
+	}
+	.ch-item + .ch-item {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
 	}
 }
 @media (min-width: 768px) {
 	.alternate > div:nth-child(4n-3), .alternate > div:nth-child(4n) {
 		background-color: #111;
+	}
+	.choice {
+		padding-left: calc(150px + 2rem);
+		min-height: 120px;
+	}
+	.ch-item {
+		float: left;
+		clear: both;
+	}
+	.ch-img {
+		position: absolute;
+		left: 15px;
+		top: 0;
 	}
 }
