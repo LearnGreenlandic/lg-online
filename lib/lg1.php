@@ -5,6 +5,12 @@ function lg_lg1($state) {
 	lg_header($state, 'lg1');
 ?>
 <div class="container d-flex flex-wrap">
+<div class="media my-2 col-lg-12">
+	<a href="<?=$prefix;?>/lg1/welcome/" class="mr-3"><img src="<?=$prefix;?>/d/lg1/welcome-video/welcome.png" width="150"></a>
+	<div class="media-body">
+		<h5><a href="<?=$prefix;?>/lg1/welcome/" class="text-warning">{l10n:lg1/welcome/video/link}</a></h5>
+	</div>
+</div>
 <div class="media my-2 col-lg-6">
 	<a href="<?=$prefix;?>/lg1/1/" class="mr-3"><img src="<?=$prefix;?>/d/lg1/1/<?=$lang;?>/0.png" width="150"></a>
 	<div class="media-body">

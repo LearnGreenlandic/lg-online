@@ -39,6 +39,23 @@ $l10n['eng']['TXT_AUDIO_TRANSLATE'] = 'Push <button class="btn btn-sm btn-primar
 $l10n['dan']['lg1'] = 'Grønlandsk for voksne';
 $l10n['eng']['lg1'] = 'Greenlandic for Foreigners';
 
+$l10n['dan']['lg1/welcome/video/link'] = 'Velkomst ved Tikaajaat Kristiansen';
+$l10n['eng']['lg1/welcome/video/link'] = 'Welcome with Tikaajaat Kristiansen';
+$l10n['dan']['lg1/welcome/video'] = 'Velkommen til Grønlandsk for voksne!';
+$l10n['eng']['lg1/welcome/video'] = 'Welcome to Greenlandic for Foreigners!';
+$l10n['dan']['lg1/welcome/video/qhead'] = 'Forstået?';
+$l10n['eng']['lg1/welcome/video/qhead'] = 'Understood?';
+$l10n['dan']['lg1/welcome/video/qbody'] = 'Forstod du alt hvad Tikaajaat sagde i velkomstfilmen?';
+$l10n['eng']['lg1/welcome/video/qbody'] = 'Did you understand everything Tikaajaat said in the welcome clip?';
+$l10n['dan']['lg1/welcome/video/yes'] = 'Ja, selvfølgelig';
+$l10n['eng']['lg1/welcome/video/yes'] = 'Yes, of course';
+$l10n['dan']['lg1/welcome/video/no'] = 'Nej, lær mig det';
+$l10n['eng']['lg1/welcome/video/no'] = 'No, please teach me';
+$l10n['dan']['lg1/welcome/video/sure'] = 'Tikap tikilluaqqusissutaa paasillugu nalunaarutigigakku kalaaliunnguatsiarputit, qallunaat kalaallisut oqallorivissut amerlanngeqisut ilaginngikkukkit. Ilinniutinnguaq manna kalaallisut ilinnialerlaanut sanaajuvoq. Kalaallisut ilittut oqalussinnaareersut pissarsiffigivallaarnavianngilaat. Program qimaannarsinnaavat ataani karseeqqami oqaaseq \'baaj\' allakkukku. Pikkorissarneq manna marsilaarniarlugu malinnaaffigerusukkukku karseeqqami allaannassaatit \'ingerlaqqillanga\'. Qujanaq soqutiginnillutit ilinniusiarput alakkarakku.';
+$l10n['eng']['lg1/welcome/video/sure'] = $l10n['dan']['lg1/welcome/video/sure'];
+$l10n['dan']['lg1/welcome/video/help'] = 'Ups! Hjælp mig ud!';
+$l10n['eng']['lg1/welcome/video/help'] = 'Whoops! Help me out!';
+
 $l10n['dan']['lg1/1'] = 'Forelæsning 1: De &quot;sære&quot; lyd';
 $l10n['eng']['lg1/1'] = 'Lecture 1: The New Sounds';
 $l10n['dan']['lg1/2'] = 'Forelæsning 2: Typiske danskerfejl';
@@ -154,9 +171,6 @@ function lg_l10n_eng($out) {
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Lyt, forstå, gentag';
 $l10n['eng'][''] = 'Listen, understand, repeat';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Velkomst ved Tikaajaat Kristiansen';
-$l10n['eng'][''] = 'Welcome with Tikaajaat Kristiansen';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Strukturøvelse 1.1: Lydopfattelse';
 $l10n['eng'][''] = 'Pattern practice 1.1: Listen';
@@ -504,50 +518,6 @@ $l10n['eng'][''] = 'Yes, next exercise';
 // src/UpdownTwo.cpp
 $l10n['dan'][''] = 'Nej, tilbage til menuen';
 $l10n['eng'][''] = 'No, back to the menu';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Korrekt! Det var alt for denne øvelse. Vil du gå videre til næste øvelse?';
-$l10n['eng'][''] = 'Correct! That was all for this exercise. Do you want to continue with next exercise?';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/WelcomeOne.cpp
-$l10n['dan'][''] = 'Det korrekte er:';
-$l10n['eng'][''] = 'The correct was:';
-// src/WelcomePlayer.cpp
-$l10n['dan'][''] = 'Velkommen til Grønlandsk for voksne!';
-$l10n['eng'][''] = 'Welcome to Greenlandic for Foreigners!';
-// src/WelcomePlayer.cpp
-$l10n['dan'][''] = 'Forstået?';
-$l10n['eng'][''] = 'Understood?';
-// src/WelcomePlayer.cpp
-$l10n['dan'][''] = 'Forstod du alt hvad Tikaajaat sagde i velkomstfilmen?';
-$l10n['eng'][''] = 'Did you understand everything Tikaajaat said in the welcome clip?';
-// src/WelcomePlayer.cpp
-$l10n['dan'][''] = 'Ja, selvfølgelig';
-$l10n['eng'][''] = 'Yes, of course';
-// src/WelcomePlayer.cpp
-$l10n['dan'][''] = 'Nej, lær mig det';
-$l10n['eng'][''] = 'No, please teach me';
-// src/WelcomeQuestion.cpp
-$l10n['dan'][''] = 'Velkommen til Grønlandsk for voksne!';
-$l10n['eng'][''] = 'Welcome to Greenlandic for Foreigners!';
-// src/WelcomeQuestion.cpp
-$l10n['dan'][''] = 'Ups! Hjælp mig ud!';
-$l10n['eng'][''] = 'Whoops! Help me out!';
 // src/WelcomeWords.cpp
 $l10n['dan'][''] = 'Diktat af Tika&apos;s velkomst';
 $l10n['eng'][''] = 'Tika&apos;s welcome as dictation';

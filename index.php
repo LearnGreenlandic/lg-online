@@ -1,4 +1,10 @@
 <?php
+if ((!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] !== 'learngreenlandic.com' && $_SERVER['HTTP_HOST'] !== 'learn.gl') || empty($_SERVER['HTTPS'])) {
+	header('Location: https://learngreenlandic.com'.$_SERVER['REQUEST_URI'], true, 301);
+	die();
+}
+header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
+
 require_once __DIR__.'/lib/shared.php';
 
 $state = lg_init();
@@ -49,6 +55,10 @@ else if (preg_match('~^lg1/hyphenate/$~', $state['path'], $m)) {
 else if (preg_match('~^lg1/welcome/([12])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/welcome.php';
 	lg_welcome($state, $m[1]);
+}
+else if (preg_match('~^lg1/welcome/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/welcome.php';
+	lg_welcome($state, 'video');
 }
 else if (preg_match('~^lg1/dialogue/([123])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/dialogue.php';

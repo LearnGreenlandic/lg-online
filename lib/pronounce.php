@@ -60,7 +60,7 @@ function lg_pronounce_1($state) {
 <div class="row alternate">
 <?php
 	foreach ($GLOBALS['-words'] as $word => $ipa) {
-		echo '<div class="col-md-6 my-1 entry"><div class="row justify-content-center"><div class="col-3">'.$word.'</div><div class="col-3 ipa">'.$ipa.'</div><div class="col-3"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary btn-lg">▶</button></div></div></div>';
+		echo '<div class="col-md-6 my-1 entry"><div class="row justify-content-center"><div class="col-3">'.$word.'</div><div class="col-3 ipa">'.$ipa.'</div><div class="col-3"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary btn-lg">▶</button></div></div></div>';
 	}
 ?>
 </div>
@@ -81,7 +81,7 @@ function lg_pronounce_2($state) {
 <?php
 	$words = lg_shuffle_assoc($GLOBALS['-words']);
 	foreach ($words as $word => $ipa) {
-		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>

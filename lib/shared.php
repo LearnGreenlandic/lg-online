@@ -119,7 +119,6 @@ function lg_header($state, $lg='', $path='') {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?=$title;?></title>
 
-	<!-- link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" -->
 	<link rel="stylesheet" href="<?=$prefix;?>/static/bootstrap.min.css">
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -141,7 +140,7 @@ function lg_header($state, $lg='', $path='') {
 	</ul>
 </nav>
 <?=$h1;?>
-<!-- Yes, you can cheat by looking at the source. You're only hurting yourself. -->
+<!-- Please do not scrape or pirate these videos, lectures, or other material. We are a very small company with a limited market. -->
 <?php
 }
 

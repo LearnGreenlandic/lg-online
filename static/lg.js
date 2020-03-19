@@ -152,5 +152,14 @@ $(function() {
 		});
 	}
 
+	if ($('.welcome').length) {
+		$('#video').on('ended', function() {
+			$('#welcome-question').modal('show');
+		});
+		$('#welcome-yes').click(function() {
+			$('#welcome-sure').modal('show');
+		});
+	}
+
 	$('.inert').off();
 });

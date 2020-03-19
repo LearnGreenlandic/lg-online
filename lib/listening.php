@@ -19,7 +19,7 @@ function lg_listening_1($state) {
 		if (preg_match('~([mpqslkn])\1~', $word)) {
 			$double = 1;
 		}
-		echo '<div class="col-lg-6 my-2 text-center entry" data-which="'.$double.'" data-check="'.$word.'"><div class="row"><div class="col-8"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <span class="text-nowrap"><button type="button" class="btn btn-warning" data-which="0">{l10n:lg1/listening/1/no}</button> <button type="button" class="btn btn-warning" data-which="1">{l10n:lg1/listening/1/yes}</button></span></div><div class="col-4"><div class="text-success my-2">&nbsp;</div></div></div></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry" data-which="'.$double.'" data-check="'.$word.'"><div class="row"><div class="col-8"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <span class="text-nowrap"><button type="button" class="btn btn-warning" data-which="0">{l10n:lg1/listening/1/no}</button> <button type="button" class="btn btn-warning" data-which="1">{l10n:lg1/listening/1/yes}</button></span></div><div class="col-4"><div class="text-success my-2">&nbsp;</div></div></div></div>';
 	}
 ?>
 </div>
@@ -43,7 +43,7 @@ function lg_listening_2($state) {
 	foreach ($mp3s as $mp3) {
 		$word = basename($mp3, '.mp3');
 		$r = intval(strpos($word, 'r') !== false);
-		echo '<div class="col-lg-6 my-2 text-center entry" data-which="'.$r.'" data-check="'.$word.'"><div class="row"><div class="col-8"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <span class="text-nowrap"><button type="button" class="btn btn-warning" data-which="0">{l10n:lg1/listening/2/no}</button> <button type="button" class="btn btn-warning" data-which="1">{l10n:lg1/listening/2/yes}</button></span></div><div class="col-4"><div class="text-success my-2">&nbsp;</div></div></div></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry" data-which="'.$r.'" data-check="'.$word.'"><div class="row"><div class="col-8"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <span class="text-nowrap"><button type="button" class="btn btn-warning" data-which="0">{l10n:lg1/listening/2/no}</button> <button type="button" class="btn btn-warning" data-which="1">{l10n:lg1/listening/2/yes}</button></span></div><div class="col-4"><div class="text-success my-2">&nbsp;</div></div></div></div>';
 	}
 ?>
 </div>
@@ -73,7 +73,7 @@ function lg_listening_3($state) {
 		if (strpos($word, 'ts') !== false) {
 			$w = 2;
 		}
-		echo '<div class="col-lg-6 my-2 text-center entry" data-which="'.$w.'" data-check="'.$word.'"><div class="row"><div class="col-8"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <span class="text-nowrap"><button type="button" class="btn btn-warning" data-which="1">{l10n:lg1/listening/3/tt}</button> <button type="button" class="btn btn-warning" data-which="2">{l10n:lg1/listening/3/ts}</button> <button type="button" class="btn btn-warning" data-which="0">{l10n:lg1/listening/3/t}</button></span></div><div class="col-4"><div class="text-success my-2">&nbsp;</div></div></div></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry" data-which="'.$w.'" data-check="'.$word.'"><div class="row"><div class="col-8"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <span class="text-nowrap"><button type="button" class="btn btn-warning" data-which="1">{l10n:lg1/listening/3/tt}</button> <button type="button" class="btn btn-warning" data-which="2">{l10n:lg1/listening/3/ts}</button> <button type="button" class="btn btn-warning" data-which="0">{l10n:lg1/listening/3/t}</button></span></div><div class="col-4"><div class="text-success my-2">&nbsp;</div></div></div></div>';
 	}
 ?>
 </div>
@@ -96,7 +96,7 @@ function lg_listening_4($state) {
 	shuffle($mp3s);
 	foreach ($mp3s as $mp3) {
 		$word = basename($mp3, '.mp3');
-		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none" class="border border-secondary">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$prefix.'/'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>
