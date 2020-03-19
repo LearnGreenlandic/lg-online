@@ -76,6 +76,13 @@ html, body {
 	padding: 10px;
 }
 
+.q:before {
+	content: "Q: ";
+}
+.a:before {
+	content: "A: ";
+}
+
 @media (max-width: 767px) {
 	.alternate > div:nth-child(odd) {
 		background-color: #111;

@@ -33,6 +33,8 @@ $l10n['dan']['TXT_AUDIO_CHECK_REVEAL'] = 'Tryk på <button class="btn btn-sm btn
 $l10n['eng']['TXT_AUDIO_CHECK_REVEAL'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio, <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
 $l10n['dan']['TXT_CHECK_REVEAL'] = 'Tryk på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
 $l10n['eng']['TXT_CHECK_REVEAL'] = 'Push <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
+$l10n['dan']['TXT_AUDIO_TRANSLATE'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at skifte teksten mellem grønlandsk og dansk';
+$l10n['eng']['TXT_AUDIO_TRANSLATE'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to swap the text between Greenlandic and English';
 
 $l10n['dan']['lg1'] = 'Grønlandsk for voksne';
 $l10n['eng']['lg1'] = 'Greenlandic for Foreigners';
@@ -105,6 +107,19 @@ $l10n['eng']['lg1/welcome/2'] = 'Text exercise 1.2: Pronunciation';
 $l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder, indtil du føler, at din udtale er ved at være korrekt. Du får ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>. Naviger ved at trykke på <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> og <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, eller direkte på ordene.';
 $l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches, until you feel your pronunciation to be acceptable. A small analysis using our primitive staff is available for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a>. Navigate by pushing <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> and <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, or directly on the words.';
 
+$l10n['dan']['lg1/dialogue/1'] = 'Minidialog 1.1: Gentag';
+$l10n['eng']['lg1/dialogue/1'] = 'Mini-dialogue 1.1: Repeat';
+$l10n['dan']['lg1/dialogue/1/text'] = 'I denne første øvelse skal du udelukkende koncentrere dig om udtale. Du skal blot gentage Beatrines og Tikas sætninger præcis som de er. {l10n:TXT_AUDIO_TRANSLATE}.';
+$l10n['eng']['lg1/dialogue/1/text'] = 'In this first exercise you should concentrace exclusively on pronunciation. Simply repeat the sentences exactly as Beatrine and Tika say them. {l10n:TXT_AUDIO_TRANSLATE}.';
+$l10n['dan']['lg1/dialogue/2'] = 'Minidialog 1.2: Giv respons';
+$l10n['eng']['lg1/dialogue/2'] = 'Mini-dialogue 1.2: Respond';
+$l10n['dan']['lg1/dialogue/2/text'] = 'Anden øvelse er lidt vanskeligere, for nu er der også lidt indhold med i spillet. Du får først Beatrines sætninger som du så skal give et fornuftigt respons på! {l10n:TXT_AUDIO_TRANSLATE}.';
+$l10n['eng']['lg1/dialogue/2/text'] = 'This second exercise is a bit more difficult as the contents come into play. First you will see Beatrine\'s sentence, which you then have to formulate a response to! {l10n:TXT_AUDIO_TRANSLATE}.';
+$l10n['dan']['lg1/dialogue/3'] = 'Minidialog 1.3: Stil spørgsmål';
+$l10n['eng']['lg1/dialogue/3'] = 'Mini-dialogue 1.3: Ask questions';
+$l10n['dan']['lg1/dialogue/3/text'] = 'Den sidste øvelse i denne omgang er en simpel husk/oversæt-øvelse. Koncentrer dig om at huske Beatrines sætninger. Formuler dem selv højt, lyt til Beatrine igen og gentag til sidst hendes sætning. Du får Tikas responser serveret som lidt memoteknisk hjælp. {l10n:TXT_AUDIO_TRANSLATE}.';
+$l10n['eng']['lg1/dialogue/3/text'] = 'The last exercise in this round is a simple recall/translate exercise. Concentrate on remembering the sentences from Beatrine. Formulate them out loud, listen to Beatrine again and finally repeat what she says. You get to see Tika&apos;s response as a mnemonic device. {l10n:TXT_AUDIO_TRANSLATE}.';
+
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
 $l10n['dan']['lg1/pdf/2'] = 'Forelæsning 2 som PDF';
@@ -137,58 +152,11 @@ function lg_l10n_eng($out) {
 
 /*
 // src/TaskChooser.cpp
-$l10n['dan'][''] = 'Minidialog 1.1: Gentag';
-$l10n['eng'][''] = 'Mini-dialogue 1.1: Repeat';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Minidialog 1.2: Giv respons';
-$l10n['eng'][''] = 'Mini-dialogue 1.2: Respond';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Minidialog 1.3: Stil spørgsmål';
-$l10n['eng'][''] = 'Mini-dialogue 1.3: Ask questions';
-// src/TaskChooser.cpp
 $l10n['dan'][''] = 'Lyt, forstå, gentag';
 $l10n['eng'][''] = 'Listen, understand, repeat';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Velkomst ved Tikaajaat Kristiansen';
 $l10n['eng'][''] = 'Welcome with Tikaajaat Kristiansen';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './1/danish/0.png';
-$l10n['eng'][''] = './1/english/0.png';
-// src/TaskChooser.cpp
-// src/TaskChooser.cpp
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './2/danish/0.png';
-$l10n['eng'][''] = './2/english/0.png';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Forelæsning 2 som PDF';
-$l10n['eng'][''] = 'Lecture 2 as PDF';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './3/danish/0.png';
-$l10n['eng'][''] = './3/english/0.png';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Stavelsesdeling af bynavne';
-$l10n['eng'][''] = 'Hyphenate place names';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Skærmtekstsøvelse 1.1: Stavelsesdeling';
-$l10n['eng'][''] = 'Hyphenate running text';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Skærmtekstsøvelse 1.2: Udtale';
-$l10n['eng'][''] = 'Pronounce running text';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Forelæsning 3 som PDF';
-$l10n['eng'][''] = 'Lecture 3 as PDF';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './4/danish/0.png';
-$l10n['eng'][''] = './4/english/0.png';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Forelæsning 4 som PDF';
-$l10n['eng'][''] = 'Lecture 4 as PDF';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './5_1/danish/0.png';
-$l10n['eng'][''] = './5_1/english/0.png';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './5_2/danish/0.png';
-$l10n['eng'][''] = './5_2/english/0.png';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Strukturøvelse 1.1: Lydopfattelse';
 $l10n['eng'][''] = 'Pattern practice 1.1: Listen';
@@ -248,91 +216,7 @@ $l10n['eng'][''] = './grammatica/english.pdf';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = './pamphlet/danish.pdf';
 $l10n['eng'][''] = './pamphlet/english.pdf';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './images/english.png';
-$l10n['eng'][''] = './images/danish.png';
 
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Minidialog 1.1: Gentag';
-$l10n['eng'][''] = 'Mini-dialogue 1.1: Repeat';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'I denne første øvelse skal du udelukkende koncentrere dig om udtale. Du skal blot gentage Beatrines og Tikas sætninger præcis som de er. Du kan pege på teksterne for at se dem oversat.';
-$l10n['eng'][''] = 'In this first exercise you should concentrace exclusively on pronunciation. Simply repeat the sentences exactly as Beatrine and Tika say them. You can point on the texts to see a translation.';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Hør spørgsmålet';
-$l10n['eng'][''] = 'Listen to the question';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Hør svaret';
-$l10n['eng'][''] = 'Listen to the answer';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Næste dialog';
-$l10n['eng'][''] = 'Next dialogue';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/DialogOne.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Minidialog 1.3: Stil spørgsmål';
-$l10n['eng'][''] = 'Mini-dialogue 1.3: Ask questions';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Den sidste øvelse i denne omgang er en simpel husk/oversæt-øvelse. Koncentrer dig om at huske Beatrines sætninger. Formuler dem selv højt, lyt til Beatrine igen og gentag til sidst hendes sætning. Du får Tikas responser serveret som lidt memoteknisk hjælp.';
-$l10n['eng'][''] = 'The last exercise in this round is a simple recall/translate exercise. Concentrate on remembering the sentences from Beatrine. Formulate them out loud, listen to Beatrine again and finally repeat what she says. You get to see Tika&apos;s response as a mnemonic device.';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Hør spørgsmålet';
-$l10n['eng'][''] = 'Listen to the question';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Hør svaret';
-$l10n['eng'][''] = 'Listen to the answer';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Næste dialog';
-$l10n['eng'][''] = 'Next dialogue';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/DialogThree.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Minidialog 1.2: Giv respons';
-$l10n['eng'][''] = 'Mini-dialogue 1.2: Respond';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Anden øvelse er lidt vanskeligere, for nu er der også lidt indhold med i spillet. Du får først Beatrines sætninger som du så skal give et fornuftigt respons på!';
-$l10n['eng'][''] = 'This second exercise is a bit more difficult as the contents come into play. First you will see Beatrine&apos;s sentence, which you then have to formulate a response to!';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Hør spørgsmålet';
-$l10n['eng'][''] = 'Listen to the question';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Hør svaret';
-$l10n['eng'][''] = 'Listen to the answer';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Næste dialog';
-$l10n['eng'][''] = 'Next dialogue';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/DialogTwo.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
 // src/ListenRepeatPlayer.cpp
 $l10n['dan'][''] = 'Lyt, forstå, gentag';
 $l10n['eng'][''] = 'Listen, understand, repeat';

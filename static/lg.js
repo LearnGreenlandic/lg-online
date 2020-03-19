@@ -143,5 +143,14 @@ $(function() {
 		words.eq(0).click();
 	}
 
+	if ($('.task-dialogue').length) {
+		$('.task-dialogue').find('.btn-secondary').click(function() {
+			let t = $(this).closest('.entry').find('.t').first();
+			let txt = t.text();
+			t.text(t.attr('data-text'));
+			t.attr('data-text', txt);
+		});
+	}
+
 	$('.inert').off();
 });
