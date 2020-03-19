@@ -22,6 +22,11 @@ $l10n['dan']['solution'] = 'Løsning';
 $l10n['eng']['solution'] = 'Solution';
 $l10n['dan']['close'] = 'Luk';
 $l10n['eng']['close'] = 'Close';
+$l10n['dan']['prevword'] = 'Forrige ord';
+$l10n['eng']['prevword'] = 'Previous word';
+$l10n['dan']['nextword'] = 'Næste ord';
+$l10n['eng']['nextword'] = 'Next word';
+
 $l10n['dan']['TXT_AUDIO'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden';
 $l10n['eng']['TXT_AUDIO'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio';
 $l10n['dan']['TXT_AUDIO_CHECK_REVEAL'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
@@ -97,8 +102,8 @@ $l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærm
 $l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a> but do not resort to it until you have tried your best on your own. {l10n:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg1/welcome/2'] = 'Skærmtekstsøvelse 1.2: Udtale';
 $l10n['eng']['lg1/welcome/2'] = 'Text exercise 1.2: Pronunciation';
-$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder. Tryk <em>Næste ord</em> efter hvert ord, når du føler, at din udtale er ved at være korrekt. Så får du ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>.';
-$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches. Press <em>Next word</em> whenever you feel your pronunciation to be acceptable. Then a small analysis using our primitive staff will pop up for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a>.';
+$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder, indtil du føler, at din udtale er ved at være korrekt. Du får ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>. Naviger ved at trykke på <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> og <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, eller direkte på ordene.';
+$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches, until you feel your pronunciation to be acceptable. A small analysis using our primitive staff is available for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a>. Navigate by pushing <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> and <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, or directly on the words.';
 
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';

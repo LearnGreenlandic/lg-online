@@ -115,5 +115,33 @@ $(function() {
 		});
 	}
 
+	if ($('.welcome-read').length) {
+		let words = $('.welcome-read').find('span.w');
+		words.click(function() {
+			words.removeClass('text-info').removeClass('font-weight-bold');
+			let w = $(this);
+			w.addClass('text-info').addClass('font-weight-bold');
+			$('#wimg').attr('src', w.attr('data-png'));
+		});
+
+		$('#wprev').click(function() {
+			let n = $('.welcome-read').find('.text-info').prev();
+			if (!n.length) {
+				n = words.last();
+			}
+			n.click();
+		});
+
+		$('#wnext').click(function() {
+			let n = $('.welcome-read').find('.text-info').next();
+			if (!n.length) {
+				n = words.first();
+			}
+			n.click();
+		});
+
+		words.eq(0).click();
+	}
+
 	$('.inert').off();
 });

@@ -40,20 +40,20 @@ function lg_welcome_1($state) {
 function lg_welcome_2($state) {
 	extract($state, EXTR_SKIP);
 ?>
-<div class="task container-fluid hyphenate">
+<div class="task container-fluid hyphenate welcome-read">
 <div class="row">
 <div class="col">
 <p>{l10n:lg1/welcome/2/text}</p>
 </div>
 </div>
 <div class="row alternate">
-<div class="col my-2 text-center">
+<div class="col my-2">
 <p class="py-2">
 <?php
 	$pngs = glob('d/lg1/welcome/*.png');
 	$words = explode(' ', file_get_contents('d/lg1/welcome/input.txt'));
 	for ($i=0, $e=count($words) ; $i<$e ; ++$i) {
-		$words[$i] = '<span data-png="'.$prefix.'/'.$pngs[$i].'">'.$words[$i].'</span>';
+		$words[$i] = '<span class="w" data-png="'.$prefix.'/'.$pngs[$i].'">'.$words[$i].'</span>';
 	}
 	echo implode(' ', $words);
 ?>
@@ -61,8 +61,11 @@ function lg_welcome_2($state) {
 </div>
 </div>
 <div class="row">
-<div class="col my-2 text-center">
-<img src="<?=$prefix.'/'.$pngs[0];?>">
+<div class="col-12 text-center">
+<img id="wimg" class="mw-100" src="<?=$prefix.'/'.$pngs[0];?>">
+</div>
+<div class="col-12 my-2 text-center">
+<button type="button" class="btn btn-primary" id="wprev">{l10n:prevword}</button> <button type="button" class="btn btn-primary" id="wnext">{l10n:nextword}</button>
 </div>
 </div>
 </div>
