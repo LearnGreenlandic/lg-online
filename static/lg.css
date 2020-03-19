@@ -83,6 +83,10 @@ html, body {
 	content: "A: ";
 }
 
+#welcome-words {
+	white-space: pre-wrap;
+}
+
 @media (max-width: 767px) {
 	.alternate > div:nth-child(odd) {
 		background-color: #111;

@@ -52,7 +52,7 @@ else if (preg_match('~^lg1/hyphenate/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/hyphenate.php';
 	lg_hyphenate($state);
 }
-else if (preg_match('~^lg1/welcome/([12])/$~', $state['path'], $m)) {
+else if (preg_match('~^lg1/welcome/([123])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/welcome.php';
 	lg_welcome($state, $m[1]);
 }

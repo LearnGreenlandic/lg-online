@@ -5,8 +5,8 @@ function lg_welcome_video($state) {
 ?>
 <div class="container-fluid welcome">
 <div class="row">
-<div class="video col-md p-1">
-<video id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary">
+<div class="video col">
+<video id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary" poster="<?=$prefix;?>/d/lg1/welcome-video/welcome.png">
 <?php
 	$videos = glob("d/lg1/welcome-video/*.mp4");
 	sort($videos, SORT_NATURAL);
@@ -145,6 +145,70 @@ function lg_welcome_2($state) {
 <?php
 }
 
+function lg_welcome_3($state) {
+	extract($state, EXTR_SKIP);
+?>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+<p>{l10n:lg1/welcome/3/text}</p>
+</div>
+</div>
+<div class="row">
+<div class="video col-md">
+<video id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary" poster="<?=$prefix;?>/d/lg1/welcome-video/welcome.png">
+<?php
+	$videos = glob("d/lg1/welcome-video/*.mp4");
+	sort($videos, SORT_NATURAL);
+	$video = $videos[0];
+	foreach ($videos as $v) {
+		if (strpos($v, "/v{$q}p.mp4") !== false) {
+			$video = $v;
+		}
+	}
+	echo '<source src="'.$prefix.'/'.$video.'" type="video/mp4">';
+?>
+</video>
+</div>
+<div class="col-md">
+<div class="row" id="welcome-words">
+
+<div class="col-12">
+<?php
+	$txt = trim(file_get_contents('d/lg1/welcome-video/welcome.txt'));
+	$txt = preg_replace('~(\S+)~u', '<span class="w">$1</span>', $txt);
+	echo $txt;
+?>
+</div>
+<div class="col-4 py-1 text-right">
+<label for="welcome-input">{l10n:lg1/welcome/3/prompt}</label>
+</div>
+<div class="col-4 text-center">
+<input type="text" spellcheck="false" class="form-control" id="welcome-input">
+</div>
+<div class="col-4 text-left">
+<button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="options container-fluid">
+<div class="row m-1"><div class="col"><b>{l10n:LBL_VIDEO_QUALITY}</b>:
+<?php
+	foreach ($videos as $v) {
+		preg_match('~/v(\d+)p\.mp4$~', $v, $m);
+		echo ' <a href="./?q='.$m[1].'" class="btn btn-sm btn-secondary ml-2">'.$m[1].'p</a>';
+	}
+?>
+</div>
+</div>
+</div>
+<?php
+}
+
 function lg_welcome($state, $which) {
 	lg_header($state, 'lg1', 'welcome/'.$which);
 	if ($which === 'video') {
@@ -153,8 +217,11 @@ function lg_welcome($state, $which) {
 	else if ($which === '1') {
 		lg_welcome_1($state);
 	}
-	else {
+	else if ($which === '2') {
 		lg_welcome_2($state);
+	}
+	else {
+		lg_welcome_3($state);
 	}
 	lg_footer($state);
 }

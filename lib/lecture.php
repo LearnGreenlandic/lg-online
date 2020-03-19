@@ -7,7 +7,7 @@ function lg_lecture($state, $lg, $lecture) {
 <div class="lecture container-fluid">
 <div class="row">
 <div class="video col-md p-1">
-<video id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary">
+<video id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary" poster="<?=$prefix;?>/d/<?=$lg;?>/<?=$lecture;?>/<?=$lang;?>/0.png">
 <?php
 	$videos = glob("d/{$lg}/{$lecture}/{$lang}/*.mp4");
 	sort($videos, SORT_NATURAL);

@@ -55,6 +55,7 @@ function lg_lg1($state) {
 			<li><a href="<?=$prefix;?>/lg1/dialogue/1/">{l10n:lg1/dialogue/1}</a></li>
 			<li><a href="<?=$prefix;?>/lg1/dialogue/2/">{l10n:lg1/dialogue/2}</a></li>
 			<li><a href="<?=$prefix;?>/lg1/dialogue/3/">{l10n:lg1/dialogue/3}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/welcome/3/">{l10n:lg1/welcome/3}</a></li>
 			<li><a href="<?=$prefix;?>/lg1/pdf/4/">{l10n:lg1/pdf/4}</a></li>
 		</ul>
 	</div>

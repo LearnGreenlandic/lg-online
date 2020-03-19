@@ -137,6 +137,13 @@ $l10n['eng']['lg1/dialogue/3'] = 'Mini-dialogue 1.3: Ask questions';
 $l10n['dan']['lg1/dialogue/3/text'] = 'Den sidste øvelse i denne omgang er en simpel husk/oversæt-øvelse. Koncentrer dig om at huske Beatrines sætninger. Formuler dem selv højt, lyt til Beatrine igen og gentag til sidst hendes sætning. Du får Tikas responser serveret som lidt memoteknisk hjælp. {l10n:TXT_AUDIO_TRANSLATE}.';
 $l10n['eng']['lg1/dialogue/3/text'] = 'The last exercise in this round is a simple recall/translate exercise. Concentrate on remembering the sentences from Beatrine. Formulate them out loud, listen to Beatrine again and finally repeat what she says. You get to see Tika&apos;s response as a mnemonic device. {l10n:TXT_AUDIO_TRANSLATE}.';
 
+$l10n['dan']['lg1/welcome/3'] = 'Diktat af Tika\'s velkomst';
+$l10n['eng']['lg1/welcome/3'] = 'Tika\'s welcome as dictation';
+$l10n['dan']['lg1/welcome/3/text'] = 'Aflyt og skriv Tika\'s velkomst ord for ord. {l10n:TXT_CHECK_REVEAL}.';
+$l10n['eng']['lg1/welcome/3/text'] = 'Listen closely and write Tika\'s welcome word by word. {l10n:TXT_CHECK_REVEAL}.';
+$l10n['dan']['lg1/welcome/3/prompt'] = 'Skriv næste ord';
+$l10n['eng']['lg1/welcome/3/prompt'] = 'Write next word';
+
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
 $l10n['dan']['lg1/pdf/2'] = 'Forelæsning 2 som PDF';
@@ -209,12 +216,6 @@ $l10n['eng'][''] = 'Translate wordforms';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Change language to English';
 $l10n['eng'][''] = 'Skift sprog til dansk';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Forelæsning 5 som PDF';
-$l10n['eng'][''] = 'Lecture 5 as PDF';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Diktat af Tika&apos;s velkomst';
-$l10n['eng'][''] = 'Tika&apos;s welcome as dictation';
 // src/TaskChooser.cpp
 $l10n['dan'][''] = 'Appendix og andet';
 $l10n['eng'][''] = 'Appendix and more';
@@ -518,47 +519,4 @@ $l10n['eng'][''] = 'Yes, next exercise';
 // src/UpdownTwo.cpp
 $l10n['dan'][''] = 'Nej, tilbage til menuen';
 $l10n['eng'][''] = 'No, back to the menu';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Diktat af Tika&apos;s velkomst';
-$l10n['eng'][''] = 'Tika&apos;s welcome as dictation';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Aflyt og skriv Tika&apos;s velkomst ord for ord.';
-$l10n['eng'][''] = 'Listen closely and write Tika&apos;s welcome word by word.';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du læse forelæsningen som PDF?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to view the lecture as PDF?';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Ja, åben PDF';
-$l10n['eng'][''] = 'Yes, open the PDF';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Skriv ord nummer %1:';
-$l10n['eng'][''] = 'Write word number %1:';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Næsten korrekt.
-Store og små bogstaver gælder...';
-$l10n['eng'][''] = 'Almost correct.
-The check is case-sensitive...';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/WelcomeWords.cpp
-$l10n['dan'][''] = 'Det korrekte ord var:';
-$l10n['eng'][''] = 'The correct word was:';
 */

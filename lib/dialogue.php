@@ -4,7 +4,7 @@ function lg_dialogue_data($state) {
 	extract($state, EXTR_SKIP);
 	$es = [];
 	$kals = explode("\n", trim(file_get_contents('d/lg1/dialogue/kal.txt')));
-	$trs = explode("\n", file_get_contents('d/lg1/dialogue/'.$lang.'.txt'));
+	$trs = explode("\n", trim(file_get_contents('d/lg1/dialogue/'.$lang.'.txt')));
 	foreach ($kals as $i => $kal) {
 		$kal = explode("\t", $kal);
 		$tr = explode("\t", $trs[$i]);
