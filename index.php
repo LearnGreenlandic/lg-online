@@ -64,6 +64,10 @@ else if (preg_match('~^lg1/dialogue/([123])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/dialogue.php';
 	lg_dialogue($state, $m[1]);
 }
+else if (preg_match('~^lg1/repeat/(per|tika)/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/repeat.php';
+	lg_repeat($state, $m[1]);
+}
 else if (!empty($state['path'])) {
 	header('HTTP/1.0 302 Back to the root with you');
 	header("Location: {$state['prefix']}/");

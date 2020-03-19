@@ -144,6 +144,13 @@ $l10n['eng']['lg1/welcome/3/text'] = 'Listen closely and write Tika\'s welcome w
 $l10n['dan']['lg1/welcome/3/prompt'] = 'Skriv næste ord';
 $l10n['eng']['lg1/welcome/3/prompt'] = 'Write next word';
 
+$l10n['dan']['lg1/repeat/per'] = 'Lyt, forstå, gentag: Per';
+$l10n['eng']['lg1/repeat/per'] = 'Listen, understand, repeat: Per';
+$l10n['dan']['lg1/repeat/tika'] = 'Lyt, forstå, gentag: Tikaajaat';
+$l10n['eng']['lg1/repeat/tika'] = 'Listen, understand, repeat: Tikaajaat';
+$l10n['dan']['lg1/repeat/tika/text'] = '<strong>Bemærk</strong>: Tikaajaat bruger en form du ikke har lært endnu. I sidste ord siger hun <em>najugaqarlunga</em> i stedet for <em>najugaqarpunga</em>. På dette sted betyder de to ord præcis det samme, så lad være med at tænke for meget over det.';
+$l10n['eng']['lg1/repeat/tika/text'] = '<strong>Please observe</strong>: Tikaajaat uses a wordform you do not know. Her last word is <em>najugaqarlunga</em> instead of <em>najugaqarpunga</em>. The two wordforms are absolutely identical in this case so do not worry too much about it.';
+
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
 $l10n['dan']['lg1/pdf/2'] = 'Forelæsning 2 som PDF';
@@ -232,18 +239,6 @@ $l10n['eng'][''] = './grammatica/english.pdf';
 $l10n['dan'][''] = './pamphlet/danish.pdf';
 $l10n['eng'][''] = './pamphlet/english.pdf';
 
-// src/ListenRepeatPlayer.cpp
-$l10n['dan'][''] = 'Lyt, forstå, gentag';
-$l10n['eng'][''] = 'Listen, understand, repeat';
-// src/ListenRepeatPlayer.cpp
-$l10n['dan'][''] = 'Se Per igen';
-$l10n['eng'][''] = 'See Per again';
-// src/ListenRepeatPlayer.cpp
-$l10n['dan'][''] = 'Se Tikaajaat igen';
-$l10n['eng'][''] = 'See Tikaajaat again';
-// src/ListenRepeatPlayer.cpp
-$l10n['dan'][''] = '&lt;b&gt;Bemærk&lt;/b&gt;: Tikaajaat bruger en form du ikke har lært endnu. I sidste ord siger hun &lt;i&gt;najugaqarlunga&lt;/i&gt; i stedet for &lt;i&gt;najugaqarpunga&lt;/i&gt;. På dette sted betyder de to ord præcis det samme, så lad være med at tænke for meget over det.';
-$l10n['eng'][''] = '&lt;b&gt;Please observe&lt;/b&gt;: Tikaajaat uses a wordform you do not know. Her last word is &lt;i&gt;najugaqarlunga&lt;/i&gt; instead of &lt;i&gt;najugaqarpunga&lt;/i&gt;. The two wordforms are absolutely identical in this case so do not worry too much about it.';
 // src/StructureOne.cpp
 $l10n['dan'][''] = 'Nu hører du først Tika udtale navnene på de 18 gamle grønlandske kommuner. Lyt og prøv at skrive det navn, du hører. Lad være med at forsøge at springe over hvor gærdet er lavest ved at skrive af efter en liste eller et atlas; det lærer du ikke noget af! Husk at navne skrives med stort begyndelsesbogstav.';
 $l10n['eng'][''] = 'Tika will now pronounce the 18 old Greenlandic municipalities. Listen and take down the names you hear. Do not attempt any shortcuts like copying from a list or a map. It will do you no good! Remember to write proper names with capital first letter.';
