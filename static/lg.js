@@ -76,7 +76,7 @@ $(function() {
 	if ($('.task-audio').length) {
 		$('audio').each(function() {
 			let p = $(this).closest('.entry');
-			p.find('button.btn-primary').click(function() {
+			p.find('button.btn-primary,button.btn-info').click(function() {
 				let p = $(this).closest('.entry');
 				p.find('audio').get(0).play();
 			});

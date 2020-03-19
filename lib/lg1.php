@@ -76,6 +76,13 @@ function lg_lg1($state) {
 	<div class="media-body">
 		<h5><a href="<?=$prefix;?>/lg1/5.2/" class="text-warning">{l10n:lg1/5.2}</a></h5>
 		<ul>
+			<li><a href="<?=$prefix;?>/lg1/structure/1.1/">{l10n:lg1/structure/1.1}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/structure/1.2/">{l10n:lg1/structure/1.2}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/structure/1.3/">{l10n:lg1/structure/1.3}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/structure/2.1/">{l10n:lg1/structure/2.1}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/structure/2.2/">{l10n:lg1/structure/2.2}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/structure/3.1/">{l10n:lg1/structure/3.1}</a></li>
+			<li><a href="<?=$prefix;?>/lg1/structure/3.2/">{l10n:lg1/structure/3.2}</a></li>
 			<li><a href="<?=$prefix;?>/lg1/pdf/5.1/">{l10n:lg1/pdf/5.1}</a></li>
 		</ul>
 	</div>

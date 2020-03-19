@@ -61,9 +61,12 @@ html, body {
 	content: "]";
 }
 
-.task-text input {
+.task-text input, #welcome-words input {
 	display: inline-block;
 	width: 20ex;
+}
+.structure input {
+	width: 30ex;
 }
 
 .task-text-area textarea {

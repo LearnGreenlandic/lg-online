@@ -180,14 +180,8 @@ function lg_welcome_3($state) {
 	echo $txt;
 ?>
 </div>
-<div class="col-4 py-1 text-right">
-<label for="welcome-input">{l10n:lg1/welcome/3/prompt}</label>
-</div>
-<div class="col-4 text-center">
-<input type="text" spellcheck="false" class="form-control" id="welcome-input">
-</div>
-<div class="col-4 text-left">
-<button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button>
+<div class="col-12 py-1 text-center">
+<label for="welcome-input">{l10n:lg1/welcome/3/prompt}</label> <input type="text" spellcheck="false" class="form-control" id="welcome-input"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button>
 </div>
 
 </div>
