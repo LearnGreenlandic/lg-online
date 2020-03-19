@@ -6,7 +6,7 @@ function lg_hyphenate($state) {
 <div class="task task-text container-fluid hyphenate">
 <div class="row">
 <div class="col">
-<p><?=$l10n['lg1/hyphenate/text'];?></p>
+<p>{l10n:lg1/hyphenate/text}</p>
 </div>
 </div>
 <div class="row alternate">

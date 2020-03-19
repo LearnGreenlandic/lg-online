@@ -41,7 +41,7 @@ foreach ($slides as $s) {
 <!-- div class="row m-1"><div class="col-2"><b>{LBL_SLIDES_PDF}</b></div><div class="col"><a href="<?=$prefix;?>/download.php?pdf=lg1-1-dan" class="btn btn-primary">lg1-dan-1.pdf</a></div></div -->
 <?php
 if (count($videos) > 1) {
-	echo '<div class="row m-1"><div class="col"><b>'.$l10n['LBL_VIDEO_QUALITY'].'</b>:';
+	echo '<div class="row m-1"><div class="col"><b>{l10n:LBL_VIDEO_QUALITY}</b>:';
 	foreach ($videos as $v) {
 		preg_match('~/v(\d+)p\.mp4$~', $v, $m);
 		echo ' <a href="./?q='.$m[1].'" class="btn btn-sm btn-secondary ml-2">'.$m[1].'p</a>';

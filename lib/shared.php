@@ -85,6 +85,7 @@ function lg_init() {
 	}
 
 	require_once __DIR__.'/l10n.php';
+	ob_start('lg_l10n_'.$lang);
 
 	return [
 		'path' => $path,

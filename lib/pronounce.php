@@ -54,7 +54,7 @@ function lg_pronounce_1($state) {
 <div class="task task-audio container-fluid">
 <div class="row">
 <div class="col">
-<p><?=$l10n['lg1/pronounce/1/text'];?></p>
+<p>{l10n:lg1/pronounce/1/text}</p>
 </div>
 </div>
 <div class="row alternate">
@@ -74,7 +74,7 @@ function lg_pronounce_2($state) {
 <div class="task task-text task-audio container-fluid">
 <div class="row">
 <div class="col">
-<p><?=$l10n['lg1/pronounce/2/text'];?></p>
+<p>{l10n:lg1/pronounce/2/text}</p>
 </div>
 </div>
 <div class="row alternate">

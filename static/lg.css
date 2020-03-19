@@ -74,6 +74,7 @@ html, body {
 	max-height: 100px;
 	background-color: #fff;
 	padding: 10px;
+	max-width: 95%;
 }
 
 @media (max-width: 767px) {

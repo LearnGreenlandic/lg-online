@@ -22,6 +22,12 @@ $l10n['dan']['solution'] = 'Løsning';
 $l10n['eng']['solution'] = 'Solution';
 $l10n['dan']['close'] = 'Luk';
 $l10n['eng']['close'] = 'Close';
+$l10n['dan']['TXT_AUDIO'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden';
+$l10n['eng']['TXT_AUDIO'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio';
+$l10n['dan']['TXT_AUDIO_CHECK_REVEAL'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
+$l10n['eng']['TXT_AUDIO_CHECK_REVEAL'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio, <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
+$l10n['dan']['TXT_CHECK_REVEAL'] = 'Tryk på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
+$l10n['eng']['TXT_CHECK_REVEAL'] = 'Push <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
 
 $l10n['dan']['lg1'] = 'Grønlandsk for voksne';
 $l10n['eng']['lg1'] = 'Greenlandic for Foreigners';
@@ -43,31 +49,31 @@ $l10n['dan']['lg1/pronounce/1'] = 'Udtaleøvelse 1.1: Gentag';
 $l10n['eng']['lg1/pronounce/1'] = 'Pronunciation exercise 1.1: Repeat';
 $l10n['dan']['lg1/pronounce/2'] = 'Udtaleøvelse 1.2: Diktat';
 $l10n['eng']['lg1/pronounce/2'] = 'Pronunciation exercise 1.2: Dictation';
-$l10n['dan']['lg1/pronounce/1/text'] = 'Lyt og gentag ordet';
-$l10n['eng']['lg1/pronounce/1/text'] = 'Listen and repeat the word';
-$l10n['dan']['lg1/pronounce/2/text'] = 'Skriv hvad du hører';
-$l10n['eng']['lg1/pronounce/2/text'] = 'Write what you hear';
+$l10n['dan']['lg1/pronounce/1/text'] = 'Lyt og gentag ordet. {l10n:TXT_AUDIO}.';
+$l10n['eng']['lg1/pronounce/1/text'] = 'Listen and repeat the word. {l10n:TXT_AUDIO}.';
+$l10n['dan']['lg1/pronounce/2/text'] = 'Skriv hvad du hører. {l10n:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/pronounce/2/text'] = 'Write what you hear. {l10n:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/listening/1'] = 'Lydøvelse 1.1: En eller to konsonanter';
 $l10n['eng']['lg1/listening/1'] = 'Sound perception 1.1: One or two consonants';
-$l10n['dan']['lg1/listening/1/text'] = 'Lyt og svar om der er dobbelt-konsonanter';
-$l10n['eng']['lg1/listening/1/text'] = 'Listen and decide whether there are double consonants at play';
+$l10n['dan']['lg1/listening/1/text'] = 'Lyt og svar om der er dobbelt-konsonanter. {l10n:TXT_AUDIO}, og derefter svar via enten <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/1/no}</button> eller <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/1/yes}</button>.';
+$l10n['eng']['lg1/listening/1/text'] = 'Listen and decide whether there are double consonants at play. {l10n:TXT_AUDIO}, and then answer via either <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/1/no}</button> or <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/1/yes}</button>.';
 $l10n['dan']['lg1/listening/1/no'] = 'Ingen dobbelt';
 $l10n['eng']['lg1/listening/1/no'] = 'No double';
 $l10n['dan']['lg1/listening/1/yes'] = 'Har dobbbelt';
 $l10n['eng']['lg1/listening/1/yes'] = 'Has double';
 $l10n['dan']['lg1/listening/2'] = 'Lydøvelse 1.2: r eller ikke r';
 $l10n['eng']['lg1/listening/2'] = 'Sound perception 1.2: -r- or no -r-';
-$l10n['dan']['lg1/listening/2/text'] = "Lyt og svar om ordet indeholder 'r' eller ej.";
-$l10n['eng']['lg1/listening/2/text'] = "Listen and decide whether there is 'r' or not in the word.";
+$l10n['dan']['lg1/listening/2/text'] = 'Lyt og svar om ordet indeholder \'r\' eller ej. {l10n:TXT_AUDIO}, og derefter svar via enten <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/2/no}</button> eller <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/2/yes}</button>.';
+$l10n['eng']['lg1/listening/2/text'] = 'Listen and decide whether there is \'r\' or not in the word. {l10n:TXT_AUDIO}, and then answer via either <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/2/no}</button> or <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/2/yes}</button>.';
 $l10n['dan']['lg1/listening/2/no'] = 'Intet r';
 $l10n['eng']['lg1/listening/2/no'] = 'No r';
 $l10n['dan']['lg1/listening/2/yes'] = 'Har r';
 $l10n['eng']['lg1/listening/2/yes'] = 'Has r';
 $l10n['dan']['lg1/listening/3'] = 'Lydøvelse 1.3: tt eller ts eller t';
 $l10n['eng']['lg1/listening/3'] = 'Sound perception 1.3: tt or ts or just t';
-$l10n['dan']['lg1/listening/3/text'] = "Lyt og svar om ordet indeholder 'tt' eller 'ts' eller kun 't'.";
-$l10n['eng']['lg1/listening/3/text'] = "Listen and decide whether the word contains 'tt' or 'ts' or just 't'.";
+$l10n['dan']['lg1/listening/3/text'] = 'Lyt og svar om ordet indeholder \'tt\' eller \'ts\' eller kun \'t\'. {l10n:TXT_AUDIO}, og derefter svar via enten <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/3/tt}</button>, <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/3/ts}</button>, eller <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/3/t}</button>.';
+$l10n['eng']['lg1/listening/3/text'] = 'Listen and decide whether the word contains \'tt\' or \'ts\' or just \'t\'. {l10n:TXT_AUDIO}, and then answer via either <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/3/tt}</button>, <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/3/ts}</button>, or <button type="button" class="btn btn-sm btn-warning inert">{l10n:lg1/listening/3/t}</button>.';
 $l10n['dan']['lg1/listening/3/tt'] = 'Har tt';
 $l10n['eng']['lg1/listening/3/tt'] = 'Has tt';
 $l10n['dan']['lg1/listening/3/ts'] = 'Har ts';
@@ -77,8 +83,8 @@ $l10n['eng']['lg1/listening/3/t'] = 'Has only t';
 
 $l10n['dan']['lg1/hyphenate'] = 'Stavelsesdeling af bynavne';
 $l10n['eng']['lg1/hyphenate'] = 'Hyphenate place names';
-$l10n['dan']['lg1/hyphenate/text'] = 'Del ordet med -; brug noderne til hjælp.';
-$l10n['eng']['lg1/hyphenate/text'] = 'This is your first hyphenation exercise. You could do it without thinking at all since hyphenation could be copied directly from the staff. Do not do so but use the exercise to secure that you fully understand the three Greenlandic hyphenation rules.';
+$l10n['dan']['lg1/hyphenate/text'] = 'Del ordet med -; brug noderne til hjælp. {l10n:TXT_CHECK_REVEAL}.';
+$l10n['eng']['lg1/hyphenate/text'] = 'This is your first hyphenation exercise. You could do it without thinking at all since hyphenation could be copied directly from the staff. Do not do so but use the exercise to secure that you fully understand the three Greenlandic hyphenation rules. {l10n:TXT_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/listening/4'] = 'Lydøvelse 1.4: Skriv hvad du hørte';
 $l10n['eng']['lg1/listening/4'] = 'Sound perception 1.4: Dictation - single words';
@@ -87,8 +93,8 @@ $l10n['eng']['lg1/listening/4/text'] = $l10n['eng']['lg1/pronounce/2/text'];
 
 $l10n['dan']['lg1/welcome/1'] = 'Skærmtekstsøvelse 1.1: Stavelsesdeling';
 $l10n['eng']['lg1/welcome/1'] = 'Text exercise 1.1: Hyphenate a text';
-$l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærmen lige efter velkomsten. Stavelsesdel den efter de tre regler, du netop har lært. Du finder facitlisten og en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>, men brug den først, når du har prøvet så godt du kan selv.';
-$l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a> but do not resort to it until you have tried your best on your own.';
+$l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærmen lige efter velkomsten. Stavelsesdel den efter de tre regler, du netop har lært. Du finder facitlisten og en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>, men brug den først, når du har prøvet så godt du kan selv. {l10n:TXT_CHECK_REVEAL}.';
+$l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pdf/pamphlet/" target="_blank">the pamphlet (PDF)</a> but do not resort to it until you have tried your best on your own. {l10n:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg1/welcome/2'] = 'Skærmtekstsøvelse 1.2: Udtale';
 $l10n['eng']['lg1/welcome/2'] = 'Text exercise 1.2: Pronunciation';
 $l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder. Tryk <em>Næste ord</em> efter hvert ord, når du føler, at din udtale er ved at være korrekt. Så får du ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet/" target="_blank">indstikshæftet (PDF)</a>.';
@@ -104,6 +110,25 @@ $l10n['dan']['lg1/pdf/4'] = 'Forelæsning 4 som PDF';
 $l10n['eng']['lg1/pdf/4'] = 'Lecture 4 as PDF';
 $l10n['dan']['lg1/pdf/5.1'] = 'Forelæsning 5 som PDF';
 $l10n['eng']['lg1/pdf/5.1'] = 'Lecture 5 as PDF';
+
+$GLOBALS['-l10n'] = $l10n;
+
+function lg_l10n($out, $lang) {
+	while (preg_match_all('~\{l10n:([^}]+)\}~', $out, $ms, PREG_SET_ORDER)) {
+		foreach ($ms as $m) {
+			$out = str_replace($m[0], $GLOBALS['-l10n'][$lang][$m[1]], $out);
+		}
+	}
+	return $out;
+}
+
+function lg_l10n_dan($out) {
+	return lg_l10n($out, 'dan');
+}
+
+function lg_l10n_eng($out) {
+	return lg_l10n($out, 'eng');
+}
 
 /*
 // src/TaskChooser.cpp
