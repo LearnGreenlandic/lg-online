@@ -90,7 +90,7 @@ body {
 	display: inline-block;
 	width: 20ex;
 }
-.structure input {
+.structure input, .task-updown input {
 	width: 30ex;
 }
 

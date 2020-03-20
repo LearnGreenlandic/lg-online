@@ -19,7 +19,9 @@ function lg_pdf($state, $lg, $path) {
 		header("Content-Disposition: inline; filename=\"{$name}\"");
 		header('Content-Length: '.filesize($pdf));
 		readfile($pdf);
+		exit(0);
 	}
+
 	header('HTTP/1.0 404 No such file');
 	exit(0);
 }

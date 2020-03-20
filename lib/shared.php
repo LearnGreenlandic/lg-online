@@ -55,7 +55,7 @@ function lg_init() {
 
 	$prefix = substr($_SERVER['SCRIPT_NAME'], 0, -10);
 
-	if (!empty($path) && substr($path, -1) !== '/') {
+	if (!empty($path) && substr($path, -1) !== '/' && substr($path, -4) !== '.pdf') {
 		header('HTTP/1.0 301 Need that final /');
 		header("Location: {$prefix}/{$path}/");
 		exit(0);
@@ -119,6 +119,7 @@ function lg_header($state, $lg='', $path='') {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?=$title;?></title>
 
+	<!-- Bootstrap theme by https://bootswatch.com/darkly/ -->
 	<link rel="stylesheet" href="<?=$prefix;?>/static/bootstrap.min.css">
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

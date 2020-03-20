@@ -15,7 +15,7 @@ function lg_lg1($state) {
 	<ul class="list-unstyled ch-item">
 		<li><a href="<?=$prefix;?>/lg1/pronounce/1/">{l10n:lg1/pronounce/1}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/pronounce/2/">{l10n:lg1/pronounce/2}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/1/">{l10n:lg1/pdf/1}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/1.pdf">{l10n:lg1/pdf/1}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
@@ -25,7 +25,7 @@ function lg_lg1($state) {
 		<li><a href="<?=$prefix;?>/lg1/listening/1/">{l10n:lg1/listening/1}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/listening/2/">{l10n:lg1/listening/2}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/listening/3/">{l10n:lg1/listening/3}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/2/">{l10n:lg1/pdf/2}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/2.pdf">{l10n:lg1/pdf/2}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
@@ -36,7 +36,7 @@ function lg_lg1($state) {
 		<li><a href="<?=$prefix;?>/lg1/listening/4/">{l10n:lg1/listening/4}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/welcome/1/">{l10n:lg1/welcome/1}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/welcome/2/">{l10n:lg1/welcome/2}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/3/">{l10n:lg1/pdf/3}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/3.pdf">{l10n:lg1/pdf/3}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
@@ -47,7 +47,7 @@ function lg_lg1($state) {
 		<li><a href="<?=$prefix;?>/lg1/dialogue/2/">{l10n:lg1/dialogue/2}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/dialogue/3/">{l10n:lg1/dialogue/3}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/welcome/3/">{l10n:lg1/welcome/3}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/4/">{l10n:lg1/pdf/4}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/4.pdf">{l10n:lg1/pdf/4}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
@@ -56,7 +56,7 @@ function lg_lg1($state) {
 	<ul class="list-unstyled ch-item">
 		<li><a href="<?=$prefix;?>/lg1/repeat/per/">{l10n:lg1/repeat/per}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/repeat/tika/">{l10n:lg1/repeat/tika}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/5.1/">{l10n:lg1/pdf/5.1}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/5.1.pdf">{l10n:lg1/pdf/5.1}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
@@ -70,7 +70,7 @@ function lg_lg1($state) {
 		<li><a href="<?=$prefix;?>/lg1/structure/2.2/">{l10n:lg1/structure/2.2}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/structure/3.1/">{l10n:lg1/structure/3.1}</a></li>
 		<li><a href="<?=$prefix;?>/lg1/structure/3.2/">{l10n:lg1/structure/3.2}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/5.1/">{l10n:lg1/pdf/5.1}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/5.1.pdf">{l10n:lg1/pdf/5.1}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
@@ -86,8 +86,8 @@ function lg_lg1($state) {
 	<img src="<?=$prefix;?>/static/pdf.png" class="mr-3 ch-item ch-img img-small">
 	<h5 class="ch-item text-info">{l10n:lg1/appendix}</h5>
 	<ul class="list-unstyled ch-item">
-		<li><a href="<?=$prefix;?>/lg1/pdf/grammatica/">{l10n:lg1/appendix/grammatica}</a></li>
-		<li><a href="<?=$prefix;?>/lg1/pdf/pamphlet/">{l10n:lg1/appendix/pamphlet}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/grammatica.pdf">{l10n:lg1/appendix/grammatica}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/pamphlet.pdf">{l10n:lg1/appendix/pamphlet}</a></li>
 	</ul>
 </div>
 </div>

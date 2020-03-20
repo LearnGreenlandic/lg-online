@@ -85,7 +85,7 @@ function lg_welcome_1($state) {
 </div>
 </div>
 <div class="row alternate">
-<div class="col text-center entry"><textarea class="form-control" spellcheck="false" data-check="<?=$hyphen;?>"><?=$text;?></textarea> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>
+<div class="col text-center entry"><textarea class="form-control" spellcheck="false" lang="kl-GL" data-check="<?=$hyphen;?>"><?=$text;?></textarea> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>
 </div>
 </div>
 
@@ -121,7 +121,7 @@ function lg_welcome_2($state) {
 </div>
 <div class="row alternate">
 <div class="col my-2">
-<p class="py-2">
+<p class="py-2" lang="kl-GL">
 <?php
 	$pngs = glob('d/lg1/welcome/*.png');
 	$words = explode(' ', file_get_contents('d/lg1/welcome/input.txt'));
@@ -173,7 +173,7 @@ function lg_welcome_3($state) {
 <div class="col-md">
 <div class="row" id="welcome-words">
 
-<div class="col-12">
+<div class="col-12" lang="kl-GL">
 <?php
 	$txt = trim(file_get_contents('d/lg1/welcome-video/welcome.txt'));
 	$txt = preg_replace('~(\S+)~u', '<span class="w">$1</span>', $txt);

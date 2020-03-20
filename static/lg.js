@@ -108,9 +108,12 @@ $(function() {
 			let w = $(this).attr('data-which');
 			let e = $(this).closest('.entry');
 			if (w === e.attr('data-which')) {
-				e.find('.btn-warning').attr('disabled', true);
+				e.find('.btn-warning,.btn-danger').attr('disabled', true);
 				$(this).removeClass('btn-warning').addClass('btn-success');
 				e.find('.text-success').text(e.attr('data-check'));
+			}
+			else {
+				$(this).removeClass('btn-warning').addClass('btn-danger');
 			}
 		});
 	}

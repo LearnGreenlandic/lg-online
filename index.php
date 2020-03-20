@@ -47,7 +47,7 @@ else if ($state['path'] === 'lg1/') {
 	require_once __DIR__.'/lib/lg1.php';
 	lg_lg1($state);
 }
-else if (preg_match('~^(lg[12])/pdf/([\w\d.]+)/$~', $state['path'], $m)) {
+else if (preg_match('~^(lg[12])/pdf/([\w\d.]+?)\.pdf$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/pdf.php';
 	lg_pdf($state, $m[1], $m[2]);
 }
