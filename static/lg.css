@@ -127,19 +127,23 @@ body {
 	white-space: pre;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 	.alternate > div:nth-child(odd) {
 		background-color: #111;
 	}
+}
+@media (max-width: 735px) {
 	.ch-item + .ch-item {
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
 	}
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
 	.alternate > div:nth-child(4n-3), .alternate > div:nth-child(4n) {
 		background-color: #111;
 	}
+}
+@media (min-width: 736px) {
 	.choice {
 		padding-left: calc(150px + 2rem);
 		min-height: 120px;
