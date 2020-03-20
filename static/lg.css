@@ -1,12 +1,30 @@
-html, body {
+html {
+	width: 100%;
+	height: 100%;
+}
+body {
+	width: 100%;
+	padding-bottom: 75px;
+	min-height: calc(100% - 75px);
+	position: relative;
+}
+
+.footer {
+	position: absolute;
+	bottom: -75px;
+	left: 0;
 	width: 100%;
 }
 
 .chooser img {
-	width: 150px;
+	max-width: 150px;
 }
 .chooser li:before {
 	content: "- ";
+}
+.img-small {
+	padding-left: 35px;
+	padding-right: 35px;
 }
 
 .lecture {
@@ -103,6 +121,10 @@ html, body {
 .ch-item {
 	display: inline-block;
 	position: relative;
+}
+
+.ua {
+	white-space: pre;
 }
 
 @media (max-width: 767px) {

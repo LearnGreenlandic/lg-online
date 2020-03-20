@@ -73,6 +73,23 @@ function lg_lg1($state) {
 		<li><a href="<?=$prefix;?>/lg1/pdf/5.1/">{l10n:lg1/pdf/5.1}</a></li>
 	</ul>
 </div>
+<div class="choice my-2 col-lg-6">
+	<img src="<?=$prefix;?>/d/lg1/updown/updown.png" class="mr-3 ch-item ch-img img-small">
+	<h5 class="ch-item text-info">{l10n:lg1/updown}</h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="<?=$prefix;?>/lg1/updown/1/">{l10n:lg1/updown/1}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/updown/2/">{l10n:lg1/updown/2}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/updown/3/">{l10n:lg1/updown/3}</a></li>
+	</ul>
+</div>
+<div class="choice my-2 col-lg-6">
+	<img src="<?=$prefix;?>/static/pdf.png" class="mr-3 ch-item ch-img img-small">
+	<h5 class="ch-item text-info">{l10n:lg1/appendix}</h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="<?=$prefix;?>/lg1/pdf/grammatica/">{l10n:lg1/appendix/grammatica}</a></li>
+		<li><a href="<?=$prefix;?>/lg1/pdf/pamphlet/">{l10n:lg1/appendix/pamphlet}</a></li>
+	</ul>
+</div>
 </div>
 <?php
 	lg_footer($state);

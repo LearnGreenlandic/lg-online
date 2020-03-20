@@ -130,11 +130,11 @@ function lg_header($state, $lg='', $path='') {
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-	<a class="navbar-brand" href="<?=$prefix;?>/">LG</a>
+	<a class="navbar-brand" href="<?=$prefix;?>/">LG Online</a>
 	<ul class="navbar-nav mr-auto">
 		<li class="nav-item"><a href="<?=$prefix;?>/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg];?></a></li>
 	</ul>
-	<ul class="navbar-nav">
+	<ul class="navbar-nav flex-wrap">
 		<li class="nav-item align-top"><a href="./?lang=dan" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/dan.png" height="16" class="d-inline-block align-top flag-dan" alt=""> <span class="align-top">Dansk</span></a></li>
 		<li class="nav-item align-top"><a href="./?lang=eng" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/eng.png" height="16" class="d-inline-block align-top flag-eng" alt=""> <span class="align-top">English</span></a></li>
 	</ul>
@@ -146,6 +146,13 @@ function lg_header($state, $lg='', $path='') {
 
 function lg_footer($state=null) {
 ?>
+<nav class="navbar navbar-expand navbar-dark bg-primary mt-3 footer">
+	<a class="navbar-brand" href="/">Learn Greenlandic</a>
+	<ul class="navbar-nav flex-wrap">
+		<li class="nav-item"><a href="https://facebook.com/LearnGreenlandic" class="nav-link">Facebook</a></li>
+		<li class="nav-item"><a href="mailto:mail@learngreenlandic.com" class="nav-link">Email</a></li>
+	</ul>
+</nav>
 </body>
 </html>
 <?php

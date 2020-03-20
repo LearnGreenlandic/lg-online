@@ -4,12 +4,12 @@ $l10n = [
 	'eng' => [],
 	];
 
-$l10n['dan']['ERR_NO_ACCESS'] = 'Du er enten ikke <a href="/wp-login.php">logget ind</a>, eller din bruger har ikke adgang til hverken LG1 eller LG2.';
-$l10n['eng']['ERR_NO_ACCESS'] = 'You are either not <a href="/wp-login.php">logged in</a>, or your user lacks access to both LG1 and LG2.';
-$l10n['dan']['ERR_NO_ACCESS_LG1'] = 'Du er enten ikke <a href="/wp-login.php">logget ind</a>, eller din bruger har ikke adgang til LG1.';
-$l10n['eng']['ERR_NO_ACCESS_LG1'] = 'You are either not <a href="/wp-login.php">logged in</a>, or your user lacks access to LG1.';
-$l10n['dan']['ERR_NO_ACCESS_LG2'] = 'Du er enten ikke <a href="/wp-login.php">logget ind</a>, eller din bruger har ikke adgang til LG2.';
-$l10n['eng']['ERR_NO_ACCESS_LG2'] = 'You are either not <a href="/wp-login.php">logged in</a>, or your user lacks access to LG2.';
+$l10n['dan']['ERR_NO_ACCESS'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/">logget ind</a>, eller din bruger har ikke adgang til hverken LG1 eller LG2.';
+$l10n['eng']['ERR_NO_ACCESS'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/">logged in</a>, or your user lacks access to both LG1 and LG2.';
+$l10n['dan']['ERR_NO_ACCESS_LG1'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/lg1/">logget ind</a>, eller din bruger har ikke adgang til LG1.';
+$l10n['eng']['ERR_NO_ACCESS_LG1'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/lg1/">logged in</a>, or your user lacks access to LG1.';
+$l10n['dan']['ERR_NO_ACCESS_LG2'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/lg2/">logget ind</a>, eller din bruger har ikke adgang til LG2.';
+$l10n['eng']['ERR_NO_ACCESS_LG2'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/lg2/">logged in</a>, or your user lacks access to LG2.';
 
 $l10n['dan']['LBL_VIDEO_QUALITY'] = 'Video-opløsning';
 $l10n['eng']['LBL_VIDEO_QUALITY'] = 'Video resolution';
@@ -192,6 +192,28 @@ $l10n['eng']['lg1/structure/3.2'] = 'Pattern practice drill 3.2: Listen and add 
 $l10n['dan']['lg1/structure/3.2/text'] = 'Sæt endelsen N{-mi} på bynavnene for at danne ord med betydningen \'i BYNAVN\', men denne gang får du ingen hjælp af teksten. Sæt endelsen N{-mi} på det bynavn, du hører for at danne ord med betydningen \'i BYNAVN\'. {l10n:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/structure/3.2/text'] = 'Add the ending N{-mi} to the town names to form words meaning \'in TOWN\', only that you this time do not get help from the written text. Your ears will suffice. Add the ending N{-mi} to the town name you hear to form words meaning \'in TOWN\'. {l10n:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg1/updown'] = 'Øvelser i ordbygning: Forstå, sammenkæd selv, oversæt';
+$l10n['eng']['lg1/updown'] = 'Analyzing/generating words: Understand, form words, translate';
+$l10n['dan']['lg1/updown/1'] = 'Ordbygning: Reception';
+$l10n['eng']['lg1/updown/1'] = 'Understand wordforms';
+$l10n['dan']['lg1/updown/1/text'] = 'Prøv at forstå og at udtale følgende ord. Tryk på <button type="button" class="btn btn-sm btn-info inert">☉</button> for at vise analysen, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise oversættelsen.';
+$l10n['eng']['lg1/updown/1/text'] = 'Try understanding and pronouncing the following words. Push <button type="button" class="btn btn-sm btn-info inert">☉</button> to show the analysis, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to show the translation.';
+$l10n['dan']['lg1/updown/2'] = 'Ordbygning: Produktion';
+$l10n['eng']['lg1/updown/2'] = 'Produce wordforms';
+$l10n['dan']['lg1/updown/2/text'] = 'Skriv følgende ord i færdig form.';
+$l10n['eng']['lg1/updown/2/text'] = 'Write the following words in final form.';
+$l10n['dan']['lg1/updown/3'] = 'Ordbygning: Oversættelse';
+$l10n['eng']['lg1/updown/3'] = 'Translate wordforms';
+$l10n['dan']['lg1/updown/3/text'] = 'Oversæt følgende glossering til ord i færdig form.';
+$l10n['eng']['lg1/updown/3/text'] = 'Translate the following glossings to words in final form.';
+
+$l10n['dan']['lg1/appendix'] = 'Appendix og andet';
+$l10n['eng']['lg1/appendix'] = 'Appendix and more';
+$l10n['dan']['lg1/appendix/grammatica'] = 'Kapitel 3 (manuskriptudgave) af \'Forsøg til en forbedret grønlandsk pædagogisk grammatica\'';
+$l10n['eng']['lg1/appendix/grammatica'] = 'Chapter 3 (manuscript) of \'A Pedagogical Grammar of Kalaallisut\'';
+$l10n['dan']['lg1/appendix/pamphlet'] = 'Indstikshæfte som PDF';
+$l10n['eng']['lg1/appendix/pamphlet'] = 'Pamphlet as PDF';
+
 $l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
 $l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
 $l10n['dan']['lg1/pdf/2'] = 'Forelæsning 2 som PDF';
@@ -221,136 +243,3 @@ function lg_l10n_dan($out) {
 function lg_l10n_eng($out) {
 	return lg_l10n($out, 'eng');
 }
-
-/*
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Øvelser i ordbygning:
-Forstå, sammenkæd selv, oversæt';
-$l10n['eng'][''] = 'Analyzing/ generating words:
-Understand, form words, translate';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Ordbygning: Reception';
-$l10n['eng'][''] = 'Understand wordforms';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Ordbygning: Produktion';
-$l10n['eng'][''] = 'Produce wordforms';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Ordbygning: Oversættelse';
-$l10n['eng'][''] = 'Translate wordforms';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Change language to English';
-$l10n['eng'][''] = 'Skift sprog til dansk';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Appendix og andet';
-$l10n['eng'][''] = 'Appendix and more';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Kapitel 3 (manuskriptudgave) af \'Forsøg til en forbedret grønlandsk pædagogisk grammatica\'';
-$l10n['eng'][''] = 'Chapter 3 (manuscript) of \'A Pedagogical Grammar of Kalaallisut\'';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = 'Indstikshæfte som PDF';
-$l10n['eng'][''] = 'Pamphlet as PDF';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './grammatica/danish.pdf';
-$l10n['eng'][''] = './grammatica/english.pdf';
-// src/TaskChooser.cpp
-$l10n['dan'][''] = './pamphlet/danish.pdf';
-$l10n['eng'][''] = './pamphlet/english.pdf';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Ordbygning: Reception';
-$l10n['eng'][''] = 'Language tools: Reception exercise';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Prøv at forstå og at udtale følgende ord:';
-$l10n['eng'][''] = 'Try understanding and pronouncing the following word:';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Vis hjælp';
-$l10n['eng'][''] = 'Show help';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/UpdownOne.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Ordbygning: Oversættelse';
-$l10n['eng'][''] = 'Language tools: Translation';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Oversæt følgende glossering til et ord i færdig form:';
-$l10n['eng'][''] = 'Translate the following glossings to a word in final form:';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Der er ikke flere ord...vinduet lukker sig selv nu.';
-$l10n['eng'][''] = 'No words remain...the window will now close.';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Næsten korrekt.
-Store og små bogstaver gælder...';
-$l10n['eng'][''] = 'Almost correct.
-The check is case-sensitive...';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/UpdownThree.cpp
-$l10n['dan'][''] = 'Det korrekte færdige ord var:';
-$l10n['eng'][''] = 'The correctly constructed word was:';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Ordbygning: Produktion';
-$l10n['eng'][''] = 'Language tools: Word generation';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Skriv følgende ord i færdig form:';
-$l10n['eng'][''] = 'Write the following word in final form:';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Giv op...';
-$l10n['eng'][''] = 'Give up...';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Gå til næste ord';
-$l10n['eng'][''] = 'Go to next word';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Færdig!';
-$l10n['eng'][''] = 'Done!';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Korrekt!';
-$l10n['eng'][''] = 'Correct!';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Næsten korrekt.
-Store og små bogstaver gælder...';
-$l10n['eng'][''] = 'Almost correct.
-The check is case-sensitive...';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Ikke korrekt.
-Prøv igen...';
-$l10n['eng'][''] = 'Incorrect.
-Try again...';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Det korrekte færdige ord var:';
-$l10n['eng'][''] = 'The correctly constructed word was:';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Der er ikke mere i denne øvelse. Vil du fortsætte med næste øvelse?';
-$l10n['eng'][''] = 'No tasks remain in this exercise. Do you want to continue with next exercise?';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Ja, næste øvelse';
-$l10n['eng'][''] = 'Yes, next exercise';
-// src/UpdownTwo.cpp
-$l10n['dan'][''] = 'Nej, tilbage til menuen';
-$l10n['eng'][''] = 'No, back to the menu';
-*/

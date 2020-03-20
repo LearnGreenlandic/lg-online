@@ -200,5 +200,16 @@ $(function() {
 		});
 	}
 
+	if ($('.task-updown').length) {
+		$('.task-updown').find('.btn-info').click(function() {
+			let e = $(this).closest('.entry').find('.ua');
+			e.text(e.attr('data-a'));
+		});
+		$('.task-updown').find('.btn-secondary').click(function() {
+			let e = $(this).closest('.entry').find('.ua');
+			e.text(e.attr('data-t'));
+		});
+	}
+
 	$('.inert').off();
 });
