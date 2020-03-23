@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_listening_1($state) {
+function listening_1($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-yes-no task-audio container-fluid">
@@ -27,7 +28,7 @@ function lg_listening_1($state) {
 <?php
 }
 
-function lg_listening_2($state) {
+function listening_2($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-yes-no task-audio container-fluid">
@@ -51,7 +52,7 @@ function lg_listening_2($state) {
 <?php
 }
 
-function lg_listening_3($state) {
+function listening_3($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-yes-no task-audio container-fluid">
@@ -81,7 +82,7 @@ function lg_listening_3($state) {
 <?php
 }
 
-function lg_listening_4($state) {
+function listening_4($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-audio container-fluid">
@@ -104,19 +105,19 @@ function lg_listening_4($state) {
 <?php
 }
 
-function lg_listening($state, $which) {
-	lg_header($state, 'lg1', 'listening/'.$which);
+function listening($state, $which) {
+	\LGO\header($state, 'lg1', 'listening/'.$which);
 	if ($which === '1') {
-		lg_listening_1($state);
+		\LGO\listening_1($state);
 	}
 	else if ($which === '2') {
-		lg_listening_2($state);
+		\LGO\listening_2($state);
 	}
 	else if ($which === '3') {
-		lg_listening_3($state);
+		\LGO\listening_3($state);
 	}
 	else {
-		lg_listening_4($state);
+		\LGO\listening_4($state);
 	}
-	lg_footer($state);
+	\LGO\footer($state);
 }

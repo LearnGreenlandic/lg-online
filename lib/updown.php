@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_updown_data($state) {
+function updown_data($state) {
 	extract($state, EXTR_SKIP);
 
 	$gloss = file_get_contents('d/lg1/updown/'.$lang.'.txt');
@@ -36,7 +37,7 @@ function lg_updown_data($state) {
 	return $kals;
 }
 
-function lg_updown_1($state) {
+function updown_1($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-updown container-fluid">
@@ -47,7 +48,7 @@ function lg_updown_1($state) {
 </div>
 <div class="row alternate" lang="kl-GL">
 <?php
-	foreach (lg_updown_data($state) as $e) {
+	foreach (\LGO\updown_data($state) as $e) {
 		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-8 py-1">'.$e[0].'</div><div class="col-4"><button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></div></div><div class="row"><code class="col-12 ua" data-a="'.$e[1].'" data-t="'.htmlspecialchars($e[2]).'"></code></div></div>';
 	}
 ?>
@@ -56,7 +57,7 @@ function lg_updown_1($state) {
 <?php
 }
 
-function lg_updown_2($state) {
+function updown_2($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-updown container-fluid">
@@ -67,7 +68,7 @@ function lg_updown_2($state) {
 </div>
 <div class="row alternate" lang="kl-GL">
 <?php
-	foreach (lg_updown_data($state) as $e) {
+	foreach (\LGO\updown_data($state) as $e) {
 		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-12 py-1"><code>'.$e[1].'</code></div></div><div class="row"><div class="col-12 py-1"><input type="text" spellcheck="false" class="form-control" data-check="'.$e[0].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></span></div></div><div class="row"><code class="col-12 ua" data-a="'.htmlspecialchars($e[2]).'"></code></div></div>';
 	}
 ?>
@@ -76,7 +77,7 @@ function lg_updown_2($state) {
 <?php
 }
 
-function lg_updown_3($state) {
+function updown_3($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-updown container-fluid">
@@ -87,7 +88,7 @@ function lg_updown_3($state) {
 </div>
 <div class="row alternate" lang="kl-GL">
 <?php
-	foreach (lg_updown_data($state) as $e) {
+	foreach (\LGO\updown_data($state) as $e) {
 		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-12 py-1"><code>'.htmlspecialchars($e[3]).'</code></div></div><div class="row"><div class="col-12 py-1"><input type="text" spellcheck="false" class="form-control" data-check="'.$e[0].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></span></div></div><div class="row"><code class="col-12 ua" data-a="'.htmlspecialchars($e[2]).'"></code></div></div>';
 	}
 ?>
@@ -96,16 +97,16 @@ function lg_updown_3($state) {
 <?php
 }
 
-function lg_updown($state, $which) {
-	lg_header($state, 'lg1', 'updown/'.$which);
+function updown($state, $which) {
+	\LGO\header($state, 'lg1', 'updown/'.$which);
 	if ($which === '1') {
-		lg_updown_1($state);
+		\LGO\updown_1($state);
 	}
 	else if ($which === '2') {
-		lg_updown_2($state);
+		\LGO\updown_2($state);
 	}
 	else {
-		lg_updown_3($state);
+		\LGO\updown_3($state);
 	}
-	lg_footer($state);
+	\LGO\footer($state);
 }

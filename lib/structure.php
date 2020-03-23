@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_structure_1($state) {
+function structure_1($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-audio container-fluid structure">
@@ -23,7 +24,7 @@ function lg_structure_1($state) {
 <?php
 }
 
-function lg_structure_2($state, $which) {
+function structure_2($state, $which) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-audio container-fluid structure">
@@ -50,7 +51,7 @@ function lg_structure_2($state, $which) {
 <?php
 }
 
-function lg_structure_3($state, $which) {
+function structure_3($state, $which) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-audio container-fluid structure">
@@ -73,16 +74,16 @@ function lg_structure_3($state, $which) {
 <?php
 }
 
-function lg_structure($state, $which) {
-	lg_header($state, 'lg1', 'structure/'.$which);
+function structure($state, $which) {
+	\LGO\header($state, 'lg1', 'structure/'.$which);
 	if ($which === '1.1') {
-		lg_structure_1($state);
+		\LGO\structure_1($state);
 	}
 	else if ($which === '1.2' || $which === '2.1' || $which === '3.1') {
-		lg_structure_2($state, $which);
+		\LGO\structure_2($state, $which);
 	}
 	else {
-		lg_structure_3($state, $which);
+		\LGO\structure_3($state, $which);
 	}
-	lg_footer($state);
+	\LGO\footer($state);
 }

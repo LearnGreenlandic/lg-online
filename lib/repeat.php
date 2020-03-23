@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_repeat_per($state) {
+function repeat_per($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="container-fluid welcome">
@@ -37,7 +38,7 @@ function lg_repeat_per($state) {
 <?php
 }
 
-function lg_repeat_tika($state) {
+function repeat_tika($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="container-fluid welcome">
@@ -79,13 +80,13 @@ function lg_repeat_tika($state) {
 <?php
 }
 
-function lg_repeat($state, $which) {
-	lg_header($state, 'lg1', 'repeat/'.$which);
+function repeat($state, $which) {
+	\LGO\header($state, 'lg1', 'repeat/'.$which);
 	if ($which === 'per') {
-		lg_repeat_per($state);
+		\LGO\repeat_per($state);
 	}
 	else {
-		lg_repeat_tika($state);
+		\LGO\repeat_tika($state);
 	}
-	lg_footer($state);
+	\LGO\footer($state);
 }

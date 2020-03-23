@@ -1,8 +1,9 @@
 <?php
+namespace LGO;
 
-function lg_lecture($state, $lg, $lecture) {
+function lecture($state, $lg, $lecture) {
 	extract($state, EXTR_SKIP);
-	lg_header($state, $lg, $lecture);
+	\LGO\header($state, $lg, $lecture);
 ?>
 <div class="lecture container-fluid">
 <div class="row">
@@ -51,5 +52,5 @@ function lg_lecture($state, $lg, $lecture) {
 ?>
 </div>
 <?php
-	lg_footer($state);
+	\LGO\footer($state);
 }

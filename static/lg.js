@@ -162,6 +162,18 @@ $(function() {
 		$('#welcome-yes').click(function() {
 			$('#welcome-sure').modal('show');
 		});
+
+		$('#welcome-sure').find('input').change(function() {
+			if ($(this).val() == $(this).attr('data-check')) {
+				window.location.href = '../../lg2/';
+			}
+			else {
+				$(this).addClass('is-invalid');
+			}
+		});
+		$('#welcome-sure').find('.btn-warning').click(function() {
+			$('#welcome-sure').find('input').change();
+		});
 	}
 
 	if ($('#welcome-words').length) {

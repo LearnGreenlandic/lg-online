@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_welcome_video($state) {
+function welcome_video($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="container-fluid welcome">
@@ -65,7 +66,8 @@ function lg_welcome_video($state) {
         <p>{l10n:lg1/welcome/video/sure}</p>
       </div>
       <div class="modal-footer justify-content-center">
-        <a href="../1/" role="button" class="btn btn-warning">{l10n:lg1/welcome/video/help}</a>
+        <span class="text-nowrap"><input type="text" spellcheck="false" class="form-control" data-check="baaj"> <button type="button" class="btn btn-warning">✓</button></span>
+        <a href="../1/" role="button" class="btn btn-success">{l10n:lg1/welcome/video/help}</a>
       </div>
     </div>
   </div>
@@ -73,7 +75,7 @@ function lg_welcome_video($state) {
 <?php
 }
 
-function lg_welcome_1($state) {
+function welcome_1($state) {
 	extract($state, EXTR_SKIP);
 	$text = file_get_contents('d/lg1/welcome/input.txt');
 	$hyphen = file_get_contents('d/lg1/welcome/hyphenated.txt');
@@ -110,7 +112,7 @@ function lg_welcome_1($state) {
 <?php
 }
 
-function lg_welcome_2($state) {
+function welcome_2($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="task container-fluid hyphenate welcome-read">
@@ -145,7 +147,7 @@ function lg_welcome_2($state) {
 <?php
 }
 
-function lg_welcome_3($state) {
+function welcome_3($state) {
 	extract($state, EXTR_SKIP);
 ?>
 <div class="container-fluid">
@@ -203,19 +205,19 @@ function lg_welcome_3($state) {
 <?php
 }
 
-function lg_welcome($state, $which) {
-	lg_header($state, 'lg1', 'welcome/'.$which);
+function welcome($state, $which) {
+	\LGO\header($state, 'lg1', 'welcome/'.$which);
 	if ($which === 'video') {
-		lg_welcome_video($state);
+		\LGO\welcome_video($state);
 	}
 	else if ($which === '1') {
-		lg_welcome_1($state);
+		\LGO\welcome_1($state);
 	}
 	else if ($which === '2') {
-		lg_welcome_2($state);
+		\LGO\welcome_2($state);
 	}
 	else {
-		lg_welcome_3($state);
+		\LGO\welcome_3($state);
 	}
-	lg_footer($state);
+	\LGO\footer($state);
 }

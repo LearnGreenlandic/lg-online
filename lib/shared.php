@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_init() {
+function init() {
 	define('SHORTINIT', true);
 	require __DIR__.'/../../wp-load.php';
 	require_once ABSPATH.WPINC.'/class-wp-user.php';
@@ -31,6 +32,7 @@ function lg_init() {
 			++$lg2;
 		}
 		else {
+			require_once ABSPATH.'/wp-content/plugins/learngreenlandic/learngreenlandic.php';
 			$keys = lg_get_keys($user->ID);
 			foreach ($keys as $key => $row) {
 				if ($key[0] == 'D' || $key[0] == 'E' || $key[0] == 'R' || $key[0] == 'T' || $key[0] == 'X') { // || $key[0] == 'F'
@@ -84,8 +86,21 @@ function lg_init() {
 		setcookie('lang', '', 1, '/');
 	}
 
+	$theme = $_REQUEST['theme'] ?? $_COOKIE['theme'] ?? 'dan';
+	if ($theme !== 'darkly' && $theme !== 'flatly') {
+		$theme = 'flatly';
+	}
+	if ($theme !== 'flatly') {
+		if (!isset($_COOKIE['theme']) || $theme !== $_COOKIE['theme']) {
+			setcookie('theme', $theme, 2147483647, '/');
+		}
+	}
+	else if (isset($_COOKIE['theme'])) {
+		setcookie('theme', '', 1, '/');
+	}
+
 	require_once __DIR__.'/l10n.php';
-	ob_start('lg_l10n_'.$lang);
+	ob_start('\LGO\l10n_'.$lang);
 
 	return [
 		'path' => $path,
@@ -93,12 +108,13 @@ function lg_init() {
 		'q' => $q,
 		'lang' => $lang,
 		'l10n' => $l10n[$lang],
+		'theme' => $theme,
 		'lg1' => $lg1,
 		'lg2' => $lg2,
 		];
 }
 
-function lg_header($state, $lg='', $path='') {
+function header($state, $lg='', $path='') {
 	extract($state, EXTR_SKIP);
 
 	$title = 'Learn Greenlandic';
@@ -119,15 +135,17 @@ function lg_header($state, $lg='', $path='') {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?=$title;?></title>
 
-	<!-- Bootstrap theme by https://bootswatch.com/darkly/ -->
-	<link rel="stylesheet" href="<?=$prefix;?>/static/bootstrap.min.css">
+	<!-- Bootstrap theme by https://bootswatch.com/ -->
+	<link rel="stylesheet" href="<?=$prefix;?>/static/bootstrap.<?=$theme;?>.css">
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 	<link href="<?=$prefix;?>/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">
 	<script src="<?=$prefix;?>/static/lg.js?t=<?=filemtime('static/lg.js');?>"></script>
+	<link rel="stylesheet" href="<?=$prefix;?>/static/override.<?=$theme;?>.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -145,13 +163,23 @@ function lg_header($state, $lg='', $path='') {
 <?php
 }
 
-function lg_footer($state=null) {
+function footer($state=null) {
 ?>
 <nav class="navbar navbar-expand navbar-dark bg-primary mt-3 footer">
 	<a class="navbar-brand" href="/">Learn Greenlandic</a>
-	<ul class="navbar-nav flex-wrap">
+	<ul class="navbar-nav d-sm-none">
+		<li class="nav-item"><a class="nav-link">|</a></li>
+	</ul>
+	<ul class="navbar-nav flex-wrap mr-auto">
 		<li class="nav-item"><a href="https://facebook.com/LearnGreenlandic" class="nav-link">Facebook</a></li>
 		<li class="nav-item"><a href="mailto:mail@learngreenlandic.com" class="nav-link">Email</a></li>
+	</ul>
+	<ul class="navbar-nav d-sm-none">
+		<li class="nav-item"><a class="nav-link">|</a></li>
+	</ul>
+	<ul class="navbar-nav flex-wrap">
+		<li class="nav-item"><a href="./?theme=flatly" class="nav-link">{l10n:light}</a></li>
+		<li class="nav-item"><a href="./?theme=darkly" class="nav-link">{l10n:dark}</a></li>
 	</ul>
 </nav>
 </body>
@@ -159,7 +187,7 @@ function lg_footer($state=null) {
 <?php
 }
 
-function lg_shuffle_assoc($arr) {
+function shuffle_assoc($arr) {
 	$keys = array_keys($arr);
 	shuffle($keys);
 	$na = [];

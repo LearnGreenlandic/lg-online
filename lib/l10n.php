@@ -1,4 +1,6 @@
 <?php
+namespace LGO;
+
 $l10n = [
 	'dan' => [],
 	'eng' => [],
@@ -26,6 +28,10 @@ $l10n['dan']['prevword'] = 'Forrige ord';
 $l10n['eng']['prevword'] = 'Previous word';
 $l10n['dan']['nextword'] = 'Næste ord';
 $l10n['eng']['nextword'] = 'Next word';
+$l10n['dan']['dark'] = 'Mørk';
+$l10n['eng']['dark'] = 'Dark';
+$l10n['dan']['light'] = 'Lys';
+$l10n['eng']['light'] = 'Light';
 
 $l10n['dan']['TXT_AUDIO'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden';
 $l10n['eng']['TXT_AUDIO'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio';
@@ -141,9 +147,9 @@ $l10n['eng']['lg1/dialogue/3'] = 'Mini-dialogue 1.3: Ask questions';
 $l10n['dan']['lg1/dialogue/3/text'] = 'Den sidste øvelse i denne omgang er en simpel husk/oversæt-øvelse. Koncentrer dig om at huske Beatrines sætninger. Formuler dem selv højt, lyt til Beatrine igen og gentag til sidst hendes sætning. Du får Tikas responser serveret som lidt memoteknisk hjælp. {l10n:TXT_AUDIO_TRANSLATE}.';
 $l10n['eng']['lg1/dialogue/3/text'] = 'The last exercise in this round is a simple recall/translate exercise. Concentrate on remembering the sentences from Beatrine. Formulate them out loud, listen to Beatrine again and finally repeat what she says. You get to see Tika\'s response as a mnemonic device. {l10n:TXT_AUDIO_TRANSLATE}.';
 
-$l10n['dan']['lg1/welcome/3'] = 'Diktat af Tika\'s velkomst';
+$l10n['dan']['lg1/welcome/3'] = 'Diktat af Tikas velkomst';
 $l10n['eng']['lg1/welcome/3'] = 'Tika\'s welcome as dictation';
-$l10n['dan']['lg1/welcome/3/text'] = 'Aflyt og skriv Tika\'s velkomst ord for ord. {l10n:TXT_CHECK_REVEAL}.';
+$l10n['dan']['lg1/welcome/3/text'] = 'Aflyt og skriv Tikas velkomst ord for ord. {l10n:TXT_CHECK_REVEAL}.';
 $l10n['eng']['lg1/welcome/3/text'] = 'Listen closely and write Tika\'s welcome word by word. {l10n:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg1/welcome/3/prompt'] = 'Skriv næste ord';
 $l10n['eng']['lg1/welcome/3/prompt'] = 'Write next word';
@@ -157,8 +163,8 @@ $l10n['eng']['lg1/repeat/tika/text'] = '<strong>Please observe</strong>: Tikaaja
 
 $l10n['dan']['lg1/structure/1.1'] = 'Strukturøvelse 1.1: Lydopfattelse';
 $l10n['eng']['lg1/structure/1.1'] = 'Pattern practice 1.1: Listen';
-$l10n['dan']['lg1/structure/1.1/text'] = 'Nu hører du først Tika udtale navnene på de 18 gamle grønlandske kommuner. Lyt og prøv at skrive det navn, du hører. Lad være med at forsøge at springe over hvor gærdet er lavest ved at skrive af efter en liste eller et atlas; det lærer du ikke noget af! {l10n:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/structure/1.1/text'] = 'Tika will now pronounce the 18 old Greenlandic municipalities. Listen and take down the names you hear. Do not attempt any shortcuts like copying from a list or a map. It will do you no good! {l10n:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/structure/1.1/text'] = 'Nu hører du først udtale af navne på steder i Grønland. Lyt og prøv at skrive det navn, du hører. Lad være med at forsøge at springe over hvor gærdet er lavest ved at skrive af efter en liste eller et atlas; det lærer du ikke noget af! {l10n:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/structure/1.1/text'] = 'You will now hear a few Greenlandic place names pronounced. Listen and take down the names you hear. Do not attempt any shortcuts like copying from a list or a map. It will do you no good! {l10n:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['dan']['lg1/structure/1.2'] = 'Strukturøvelse 1.2: Dan nye ord';
 $l10n['eng']['lg1/structure/1.2'] = 'Pattern practice drill 1.2: Write new nouns';
 $l10n['dan']['lg1/structure/1.2/text'] = 'Sæt tilhænget N+MIU på bynavnene, så du danner ord med betydningen \'indbygger i BYNAVN\'.
@@ -229,7 +235,7 @@ $l10n['eng']['lg1/pdf/5.1'] = 'Lecture 5 as PDF';
 
 $GLOBALS['-l10n'] = $l10n;
 
-function lg_l10n($out, $lang) {
+function l10n($out, $lang) {
 	while (preg_match_all('~\{l10n:([^}]+)\}~', $out, $ms, PREG_SET_ORDER)) {
 		foreach ($ms as $m) {
 			$out = str_replace($m[0], $GLOBALS['-l10n'][$lang][$m[1]], $out);
@@ -238,10 +244,10 @@ function lg_l10n($out, $lang) {
 	return $out;
 }
 
-function lg_l10n_dan($out) {
-	return lg_l10n($out, 'dan');
+function l10n_dan($out) {
+	return \LGO\l10n($out, 'dan');
 }
 
-function lg_l10n_eng($out) {
-	return lg_l10n($out, 'eng');
+function l10n_eng($out) {
+	return \LGO\l10n($out, 'eng');
 }

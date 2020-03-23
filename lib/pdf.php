@@ -1,6 +1,7 @@
 <?php
+namespace LGO;
 
-function lg_pdf($state, $lg, $path) {
+function pdf($state, $lg, $path) {
 	extract($state, EXTR_SKIP);
 
 	$pdf = null;
@@ -15,13 +16,13 @@ function lg_pdf($state, $lg, $path) {
 	}
 
 	if (isset($pdf)) {
-		header('Content-Type: application/pdf');
-		header("Content-Disposition: inline; filename=\"{$name}\"");
-		header('Content-Length: '.filesize($pdf));
+		\header('Content-Type: application/pdf');
+		\header("Content-Disposition: inline; filename=\"{$name}\"");
+		\header('Content-Length: '.filesize($pdf));
 		readfile($pdf);
 		exit(0);
 	}
 
-	header('HTTP/1.0 404 No such file');
+	\header('HTTP/1.0 404 No such file');
 	exit(0);
 }

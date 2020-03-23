@@ -1,12 +1,14 @@
 html {
 	width: 100%;
 	height: 100%;
+	font-family: 'Noto Serif', serif;
 }
 body {
 	width: 100%;
 	padding-bottom: 75px;
 	min-height: calc(100% - 75px);
 	position: relative;
+	font-family: 'Noto Serif', serif;
 }
 
 .footer {
@@ -86,7 +88,7 @@ body {
 	content: "]";
 }
 
-.task-text input, #welcome-words input {
+.task-text input, #welcome-sure input, #welcome-words input {
 	display: inline-block;
 	width: 20ex;
 }
@@ -127,20 +129,10 @@ body {
 	white-space: pre;
 }
 
-@media (max-width: 991px) {
-	.alternate > div:nth-child(odd) {
-		background-color: #111;
-	}
-}
 @media (max-width: 735px) {
 	.ch-item + .ch-item {
 		margin-top: 0.5rem;
 		margin-bottom: 0.5rem;
-	}
-}
-@media (min-width: 992px) {
-	.alternate > div:nth-child(4n-3), .alternate > div:nth-child(4n) {
-		background-color: #111;
 	}
 }
 @media (min-width: 736px) {
@@ -156,5 +148,13 @@ body {
 		position: absolute;
 		left: 15px;
 		top: 0;
+	}
+}
+@media (max-width: 575px) {
+	.navbar-brand {
+		font-size: 1.0rem;
+	}
+	.navbar-nav {
+		font-size: 0.75rem;
 	}
 }

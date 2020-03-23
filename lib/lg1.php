@@ -1,8 +1,9 @@
 <?php
+namespace LGO;
 
-function lg_lg1($state) {
+function lg1($state) {
 	extract($state, EXTR_SKIP);
-	lg_header($state, 'lg1');
+	\LGO\header($state, 'lg1');
 ?>
 <div class="container d-flex flex-wrap chooser">
 <div class="choice my-2 col-lg-12">
@@ -92,5 +93,5 @@ function lg_lg1($state) {
 </div>
 </div>
 <?php
-	lg_footer($state);
+	\LGO\footer($state);
 }

@@ -1,7 +1,9 @@
 <?php
-function lg_hyphenate($state) {
+namespace LGO;
+
+function hyphenate($state) {
 	extract($state, EXTR_SKIP);
-	lg_header($state, 'lg1');
+	\LGO\header($state, 'lg1');
 ?>
 <div class="task task-text container-fluid hyphenate">
 <div class="row">
@@ -22,5 +24,5 @@ function lg_hyphenate($state) {
 </div>
 </div>
 <?php
-	lg_footer($state);
+	\LGO\footer($state);
 }
