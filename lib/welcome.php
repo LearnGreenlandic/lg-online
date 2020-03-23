@@ -66,7 +66,7 @@ function welcome_video($state) {
         <p>{l10n:lg1/welcome/video/sure}</p>
       </div>
       <div class="modal-footer justify-content-center">
-        <span class="text-nowrap"><input type="text" spellcheck="false" class="form-control" data-check="baaj"> <button type="button" class="btn btn-warning">✓</button></span>
+        <span class="text-nowrap"><input type="text" spellcheck="false" class="form-control" data-check="ingerlaqqillanga"> <button type="button" class="btn btn-warning">✓</button></span>
         <a href="../1/" role="button" class="btn btn-success">{l10n:lg1/welcome/video/help}</a>
       </div>
     </div>
@@ -87,8 +87,27 @@ function welcome_1($state) {
 </div>
 </div>
 <div class="row alternate">
-<div class="col text-center entry"><textarea class="form-control" spellcheck="false" lang="kl-GL" data-check="<?=$hyphen;?>"><?=$text;?></textarea> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>
+<div class="col text-center entry"><textarea class="form-control" spellcheck="false" lang="kl-GL" data-check="<?=$hyphen;?>" data-orig="<?=$text;?>"><?=$text;?></textarea> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>
 </div>
+</div>
+
+<div class="modal" id="check" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{l10n:check}</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="{l10n:close}">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="check-body"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">{l10n:close}</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="modal" id="solution" tabindex="-1" role="dialog">
@@ -128,7 +147,8 @@ function welcome_2($state) {
 	$pngs = glob('d/lg1/welcome/*.png');
 	$words = explode(' ', file_get_contents('d/lg1/welcome/input.txt'));
 	for ($i=0, $e=count($words) ; $i<$e ; ++$i) {
-		$words[$i] = '<span class="w" data-png="'.$prefix.'/'.$pngs[$i].'">'.$words[$i].'</span>';
+		$a = preg_replace('~[^a-z]+~', '', strtolower($words[$i]));
+		$words[$i] = '<span class="w" data-png="'.$prefix.'/'.$pngs[$i].'" data-mp3="'.$prefix.'/d/lg1/welcome/'.$a.'.mp3">'.$words[$i].'</span>';
 	}
 	echo implode(' ', $words);
 ?>
@@ -136,8 +156,9 @@ function welcome_2($state) {
 </div>
 </div>
 <div class="row">
-<div class="col-12 text-center">
-<img id="wimg" class="border border-secondary mw-100" src="<?=$prefix.'/'.$pngs[0];?>">
+<div class="col-12 text-center task-audio entry">
+<img id="wimg" class="border border-secondary mw-100" src="<?=$prefix.'/'.$pngs[0];?>"><br>
+<audio id="wmp3" src="" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary btn-lg my-1">▶</button>
 </div>
 <div class="col-12 my-2 text-center">
 <button type="button" class="btn btn-primary" id="wprev">{l10n:prevword}</button> <button type="button" class="btn btn-primary" id="wnext">{l10n:nextword}</button>

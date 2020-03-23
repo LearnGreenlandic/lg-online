@@ -97,7 +97,29 @@ $(function() {
 
 	if ($('.task-text-area').length) {
 		$('.task-text-area').find('textarea').change(textCheck);
-		$('.task-text-area').find('.btn-warning').click(textCheck);
+		$('.task-text-area').find('.btn-warning').click(function() {
+			let e = $('.task-text-area').find('textarea');
+			e.change();
+			if (e.hasClass('is-invalid')) {
+				let vs = e.val().split(/\s+/);
+				let cs = e.attr('data-check').split(/\s+/);
+				let os = e.attr('data-orig').split(/\s+/);
+				let html = '';
+				for (let i=0 ; i<cs.length ; ++i) {
+					if (cs[i].toLowerCase().replace(/[^a-z0-9-]+/g, '') === os[i].toLowerCase().replace(/[^a-z0-9-]+/g, '') || vs[i].toLowerCase().replace(/[^a-z0-9-]+/g, '') === os[i].toLowerCase().replace(/[^a-z0-9-]+/g, '')) {
+						html += os[i]+' ';
+					}
+					else if (cs[i].toLowerCase().replace(/[^a-z0-9-]+/g, '') === vs[i].toLowerCase().replace(/[^a-z0-9-]+/g, '')) {
+						html += '<span class="text-success">'+cs[i]+'</span> ';
+					}
+					else {
+						html += '<span class="text-danger">'+vs[i]+'</span> ';
+					}
+				}
+				$('#check-body').html(html);
+				$('#check').modal('show');
+			}
+		});
 		$('.task-text-area').find('.btn-secondary').click(function() {
 			$('#solution').modal('show');
 		});
@@ -125,6 +147,7 @@ $(function() {
 			let w = $(this);
 			w.addClass('text-info').addClass('font-weight-bold');
 			$('#wimg').attr('src', w.attr('data-png'));
+			$('#wmp3').attr('src', w.attr('data-mp3'));
 		});
 
 		$('#wprev').click(function() {
