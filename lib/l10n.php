@@ -133,8 +133,8 @@ $l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærm
 $l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pdf/pamphlet.pdf" target="_blank">the pamphlet (PDF)</a> but do not resort to it until you have tried your best on your own. {l10n:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg1/welcome/2'] = 'Skærmtekstsøvelse 1.2: Udtale';
 $l10n['eng']['lg1/welcome/2'] = 'Text exercise 1.2: Pronunciation';
-$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder, indtil du føler, at din udtale er ved at være korrekt. Du får ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet.pdf" target="_blank">indstikshæftet (PDF)</a>. Naviger ved at trykke på <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> og <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, eller direkte på ordene.';
-$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches, until you feel your pronunciation to be acceptable. A small analysis using our primitive staff is available for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet.pdf" target="_blank">the pamphlet (PDF)</a>. Navigate by pushing <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> and <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, or directly on the words.';
+$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder, indtil du føler, at din udtale er ved at være korrekt. Du får ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet.pdf" target="_blank">indstikshæftet (PDF)</a>. {l10n:TXT_AUDIO}. Naviger ved at trykke på <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> og <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, eller direkte på ordene.';
+$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches, until you feel your pronunciation to be acceptable. A small analysis using our primitive staff is available for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet.pdf" target="_blank">the pamphlet (PDF)</a>. {l10n:TXT_AUDIO}. Navigate by pushing <button type="button" class="btn btn-sm btn-primary inert">{l10n:prevword}</button> and <button type="button" class="btn btn-sm btn-primary inert">{l10n:nextword}</button>, or directly on the words.';
 
 $l10n['dan']['lg1/dialogue/1'] = 'Minidialog 1.1: Gentag';
 $l10n['eng']['lg1/dialogue/1'] = 'Mini-dialogue 1.1: Repeat';
@@ -210,12 +210,12 @@ $l10n['dan']['lg1/updown/1/text'] = 'Prøv at forstå og at udtale følgende ord
 $l10n['eng']['lg1/updown/1/text'] = 'Try understanding and pronouncing the following words. Push <button type="button" class="btn btn-sm btn-info inert">☉</button> to show the analysis, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to show the translation.';
 $l10n['dan']['lg1/updown/2'] = 'Ordbygning: Produktion';
 $l10n['eng']['lg1/updown/2'] = 'Produce wordforms';
-$l10n['dan']['lg1/updown/2/text'] = 'Skriv følgende ord i færdig form. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
-$l10n['eng']['lg1/updown/2/text'] = 'Write the following words in final form. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
+$l10n['dan']['lg1/updown/2/text'] = 'Skriv følgende ord i færdig form. For nogle ord er endelsen <em>-ssaaq</em> også korrekt, men her accepteres kun <em>-ssavoq</em>. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
+$l10n['eng']['lg1/updown/2/text'] = 'Write the following words in final form. For some words the suffix <em>-ssaaq</em> is also correct, but this exercise only accepts <em>-ssavoq</em>. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['dan']['lg1/updown/3'] = 'Ordbygning: Oversættelse';
 $l10n['eng']['lg1/updown/3'] = 'Translate wordforms';
-$l10n['dan']['lg1/updown/3/text'] = 'Oversæt følgende glossering til ord i færdig form. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
-$l10n['eng']['lg1/updown/3/text'] = 'Translate the following glossings to words in final form. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
+$l10n['dan']['lg1/updown/3/text'] = 'Oversæt følgende glossering til ord i færdig form. For nogle ord er endelsen <em>-ssaaq</em> også korrekt, men her accepteres kun <em>-ssavoq</em>. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
+$l10n['eng']['lg1/updown/3/text'] = 'Translate the following glossings to words in final form. For some words the suffix <em>-ssaaq</em> is also correct, but this exercise only accepts <em>-ssavoq</em>. {l10n:TXT_CHECK_REVEAL_UPDOWN}.';
 
 $l10n['dan']['lg1/appendix'] = 'Appendix og andet';
 $l10n['eng']['lg1/appendix'] = 'Appendix and more';
