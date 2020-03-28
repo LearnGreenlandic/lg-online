@@ -57,6 +57,7 @@ function adjustTextarea() {
 
 $(function() {
 	$('textarea').each(adjustTextarea);
+	$('.hint').hide();
 
 	if ($('.lecture').length) {
 		g_video = $('#video');
@@ -87,7 +88,9 @@ $(function() {
 		$('.task-text').find('input').change(textCheck);
 		$('.task-text').find('.btn-warning').click(textCheck);
 		$('.task-text').find('.btn-secondary').click(function() {
-			let i = $(this).closest('.entry').find('input').first();
+			let e = $(this).closest('.entry');
+			let i = e.find('input').first();
+			e.find('.hint').text(i.attr('data-check')).show();
 			i.val('');
 			i.removeClass('is-valid').removeClass('is-invalid');
 			i.attr('placeholder', i.attr('data-check'));

@@ -25,8 +25,10 @@ function init() {
 
 	$lg1 = 0;
 	$lg2 = 0;
+	$uid = 0;
 	if (is_user_logged_in()) {
 		$user = wp_get_current_user();
+		$uid = $user->ID;
 		if ($user->has_cap('administrator')) {
 			++$lg1;
 			++$lg2;
@@ -101,6 +103,8 @@ function init() {
 
 	require_once __DIR__.'/l10n.php';
 	ob_start('\LGO\l10n_'.$lang);
+	$GLOBALS['-l10n'][$lang]['prefix'] = $prefix;
+	$GLOBALS['-l10n'][$lang]['lang'] = $lang;
 
 	return [
 		'path' => $path,
@@ -111,6 +115,7 @@ function init() {
 		'theme' => $theme,
 		'lg1' => $lg1,
 		'lg2' => $lg2,
+		'uid' => $uid,
 		];
 }
 
@@ -136,26 +141,36 @@ function header($state, $lg='', $path='') {
 	<title><?=$title;?></title>
 
 	<!-- Bootstrap theme by https://bootswatch.com/ -->
-	<link rel="stylesheet" href="<?=$prefix;?>/static/bootstrap.<?=$theme;?>.css">
+	<link rel="stylesheet" href="{t:prefix}/static/bootstrap.<?=$theme;?>.css">
 
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
-	<link href="<?=$prefix;?>/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">
-	<script src="<?=$prefix;?>/static/lg.js?t=<?=filemtime('static/lg.js');?>"></script>
-	<link rel="stylesheet" href="<?=$prefix;?>/static/override.<?=$theme;?>.css">
+	<link href="{t:prefix}/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">
+	<script src="{t:prefix}/static/lg.js?t=<?=filemtime('static/lg.js');?>"></script>
+	<link rel="stylesheet" href="{t:prefix}/static/override.<?=$theme;?>.css">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87771-12"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-87771-12');
+		gtag('set', {'user_id': '<?=$uid;?>'});
+	</script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-	<a class="navbar-brand" href="<?=$prefix;?>/">LG Online</a>
+	<a class="navbar-brand" href="{t:prefix}/">LG Online</a>
 	<ul class="navbar-nav mr-auto">
-		<li class="nav-item"><a href="<?=$prefix;?>/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg];?></a></li>
+		<li class="nav-item"><a href="{t:prefix}/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg];?></a></li>
 	</ul>
 	<ul class="navbar-nav flex-wrap">
-		<li class="nav-item align-top"><a href="./?lang=dan" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/dan.png" height="16" class="d-inline-block align-top flag-dan" alt=""> <span class="align-top">Dansk</span></a></li>
-		<li class="nav-item align-top"><a href="./?lang=eng" class="nav-link flag align-top"><img src="<?=$prefix;?>/static/eng.png" height="16" class="d-inline-block align-top flag-eng" alt=""> <span class="align-top">English</span></a></li>
+		<li class="nav-item align-top"><a href="./?lang=dan" class="nav-link flag align-top"><img src="{t:prefix}/static/dan.png" height="16" class="d-inline-block align-top flag-dan" alt=""> <span class="align-top">Dansk</span></a></li>
+		<li class="nav-item align-top"><a href="./?lang=eng" class="nav-link flag align-top"><img src="{t:prefix}/static/eng.png" height="16" class="d-inline-block align-top flag-eng" alt=""> <span class="align-top">English</span></a></li>
 	</ul>
 </nav>
 <?=$h1;?>
@@ -178,10 +193,11 @@ function footer($state=null) {
 		<li class="nav-item"><a class="nav-link">|</a></li>
 	</ul>
 	<ul class="navbar-nav flex-wrap">
-		<li class="nav-item"><a href="./?theme=flatly" class="nav-link">{l10n:light}</a></li>
-		<li class="nav-item"><a href="./?theme=darkly" class="nav-link">{l10n:dark}</a></li>
+		<li class="nav-item"><a href="./?theme=flatly" class="nav-link">{t:light}</a></li>
+		<li class="nav-item"><a href="./?theme=darkly" class="nav-link">{t:dark}</a></li>
 	</ul>
 </nav>
+
 </body>
 </html>
 <?php

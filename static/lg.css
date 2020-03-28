@@ -11,6 +11,10 @@ body {
 	font-family: 'Noto Serif', serif;
 }
 
+.blockquote {
+	margin-left: 1rem;
+}
+
 .footer {
 	position: absolute;
 	bottom: -75px;
@@ -18,11 +22,15 @@ body {
 	width: 100%;
 }
 
+.flink {
+	display: inline-block;
+}
+.flink img {
+	max-width: 250px;
+}
+
 .chooser img {
 	max-width: 150px;
-}
-.chooser li:before {
-	content: "- ";
 }
 .img-small {
 	padding-left: 35px;
@@ -93,7 +101,7 @@ body {
 	width: 20ex;
 }
 .structure input, .task-updown input {
-	width: 30ex;
+	width: 40ex;
 }
 
 .task-text-area textarea {
@@ -127,6 +135,11 @@ body {
 
 .ua {
 	white-space: pre;
+}
+
+.hint {
+	display: block;
+	clear: both;
 }
 
 @media (max-width: 735px) {

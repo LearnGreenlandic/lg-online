@@ -2,7 +2,6 @@
 namespace LGO;
 
 function repeat_per($state) {
-	extract($state, EXTR_SKIP);
 ?>
 <div class="container-fluid welcome">
 <div class="row">
@@ -17,7 +16,7 @@ function repeat_per($state) {
 			$video = $v;
 		}
 	}
-	echo '<source src="'.$prefix.'/'.$video.'" type="video/mp4">';
+	echo '<source src="{t:prefix}/'.$video.'" type="video/mp4">';
 ?>
 </video>
 </div>
@@ -25,7 +24,7 @@ function repeat_per($state) {
 </div>
 
 <div class="options container-fluid">
-<div class="row m-1"><div class="col"><b>{l10n:LBL_VIDEO_QUALITY}</b>:
+<div class="row m-1"><div class="col"><b>{t:LBL_VIDEO_QUALITY}</b>:
 <?php
 	foreach ($videos as $v) {
 		preg_match('~/v(\d+)p\.mp4$~', $v, $m);
@@ -39,12 +38,11 @@ function repeat_per($state) {
 }
 
 function repeat_tika($state) {
-	extract($state, EXTR_SKIP);
 ?>
 <div class="container-fluid welcome">
 <div class="row">
 <div class="col">
-<p>{l10n:lg1/repeat/tika/text}</p>
+<p>{t:lg1/repeat/tika/text}</p>
 </div>
 </div>
 <div class="row">
@@ -59,7 +57,7 @@ function repeat_tika($state) {
 			$video = $v;
 		}
 	}
-	echo '<source src="'.$prefix.'/'.$video.'" type="video/mp4">';
+	echo '<source src="{t:prefix}/'.$video.'" type="video/mp4">';
 ?>
 </video>
 </div>
@@ -67,7 +65,7 @@ function repeat_tika($state) {
 </div>
 
 <div class="options container-fluid">
-<div class="row m-1"><div class="col"><b>{l10n:LBL_VIDEO_QUALITY}</b>:
+<div class="row m-1"><div class="col"><b>{t:LBL_VIDEO_QUALITY}</b>:
 <?php
 	foreach ($videos as $v) {
 		preg_match('~/v(\d+)p\.mp4$~', $v, $m);
@@ -78,6 +76,90 @@ function repeat_tika($state) {
 </div>
 </div>
 <?php
+}
+
+function repeat_lg2($state, $which) {
+	\LGO\header($state, 'lg2', 'repeat/'.$which);
+?>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+<p>{t:lg2/repeat/text}</p>
+</div>
+</div>
+<div class="row">
+<div class="video col-md">
+<video id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary">
+<?php
+	$videos = glob("d/lg2/repeat/{$which}/*.mp4");
+	sort($videos, SORT_NATURAL);
+	$video = $videos[0];
+	foreach ($videos as $v) {
+		if (strpos($v, "/v{$q}p.mp4") !== false) {
+			$video = $v;
+		}
+	}
+	echo '<source src="{t:prefix}/'.$video.'" type="video/mp4">';
+?>
+</video>
+</div>
+<div class="col-md">
+<div class="row" id="welcome-words">
+
+<div class="col-12 py-1 text-center">
+<label for="welcome-input">{t:lg2/repeat/prompt}</label> <input type="text" spellcheck="false" class="form-control" id="welcome-input"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button>
+</div>
+<div class="col-12" lang="kl-GL">
+<?php
+	$txt = trim(file_get_contents("d/lg2/repeat/{$which}/text.txt"));
+	$txt = preg_replace('~(\S+)~u', '<span class="w">$1</span>', $txt);
+	echo $txt;
+?>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<?php
+	\LGO\footer($state);
+}
+
+function repeat_audio($state, $which) {
+	\LGO\header($state, 'lg2', 'listen/'.$which);
+?>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+{t:lg2/listen/<?=$which;?>/text}
+</div>
+</div>
+<div class="row">
+<div class="video col-md">
+<audio id="video" controls controlslist="nodownload" crossorigin="use-credentials" preload="none" autoPictureInPicture class="border border-secondary">
+<source src="{t:prefix}/d/lg2/exercises/<?=$which;?>/audio.mp3" type="audio/mpeg">
+</audio>
+</div>
+<div class="col-md">
+<div class="row" id="welcome-words">
+
+<div class="col-12 py-1 text-center">
+<label for="welcome-input">{t:lg2/repeat/prompt}</label> <input type="text" spellcheck="false" class="form-control" id="welcome-input"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button>
+</div>
+<div class="col-12" lang="kl-GL">
+<?php
+	$txt = trim(file_get_contents("d/lg2/exercises/{$which}/text.txt"));
+	$txt = preg_replace('~(\S+)~u', '<span class="w">$1</span>', $txt);
+	echo $txt;
+?>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<?php
+	\LGO\footer($state);
 }
 
 function repeat($state, $which) {

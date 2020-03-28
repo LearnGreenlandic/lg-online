@@ -50,18 +50,17 @@ $GLOBALS['-words'] = [
 	];
 
 function pronounce_1($state) {
-	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-audio container-fluid">
 <div class="row">
 <div class="col">
-<p>{l10n:lg1/pronounce/1/text}</p>
+<p>{t:lg1/pronounce/1/text}</p>
 </div>
 </div>
 <div class="row alternate">
 <?php
 	foreach ($GLOBALS['-words'] as $word => $ipa) {
-		echo '<div class="col-md-6 my-1 entry"><div class="row justify-content-center"><div class="col-3">'.$word.'</div><div class="col-3 ipa">'.$ipa.'</div><div class="col-3"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary btn-lg">▶</button></div></div></div>';
+		echo '<div class="col-md-6 my-1 entry"><div class="row justify-content-center"><div class="col-3">'.$word.'</div><div class="col-3 ipa">'.$ipa.'</div><div class="col-3"><audio src="{t:prefix}/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary btn-lg">▶</button></div></div></div>';
 	}
 ?>
 </div>
@@ -70,19 +69,18 @@ function pronounce_1($state) {
 }
 
 function pronounce_2($state) {
-	extract($state, EXTR_SKIP);
 ?>
 <div class="task task-text task-audio container-fluid">
 <div class="row">
 <div class="col">
-<p>{l10n:lg1/pronounce/2/text}</p>
+<p>{t:lg1/pronounce/2/text}</p>
 </div>
 </div>
 <div class="row alternate">
 <?php
 	$words = \LGO\shuffle_assoc($GLOBALS['-words']);
 	foreach ($words as $word => $ipa) {
-		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$prefix.'/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="{t:prefix}/d/lg1/pronounce/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>
