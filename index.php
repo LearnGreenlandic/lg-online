@@ -3,14 +3,14 @@ namespace LGO;
 
 if (strpos($_SERVER['REQUEST_URI'], '/o/') === 0) {
 	$_SERVER['REQUEST_URI'] = str_replace('/o/', '/online/', $_SERVER['REQUEST_URI']);
-	header('Location: https://learngreenlandic.com'.$_SERVER['REQUEST_URI'], true, 301);
+	\header('Location: https://learngreenlandic.com'.$_SERVER['REQUEST_URI'], true, 301);
 	die();
 }
 if ((!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] !== 'learngreenlandic.com' && $_SERVER['HTTP_HOST'] !== 'learn.gl') || empty($_SERVER['HTTPS'])) {
-	header('Location: https://learngreenlandic.com'.$_SERVER['REQUEST_URI'], true, 301);
+	\header('Location: https://learngreenlandic.com'.$_SERVER['REQUEST_URI'], true, 301);
 	die();
 }
-header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
+\header('Strict-Transport-Security: max-age=63072000; includeSubDomains; preload');
 
 require_once __DIR__.'/lib/shared.php';
 
@@ -137,8 +137,8 @@ else if (preg_match('~^lg2/outtro/$~', $state['path'], $m)) {
 
 // Fallbacks
 else if (!empty($state['path'])) {
-	header('HTTP/1.0 302 Back to the root with you');
-	header("Location: {$state['prefix']}/");
+	\header('HTTP/1.0 302 Back to the root with you');
+	\header("Location: {$state['prefix']}/");
 	exit(0);
 }
 else {

@@ -53,15 +53,15 @@ function init() {
 
 	$path = $_GET['path'] ?? '';
 	if (preg_match('~[^a-z0-9/.-]~', $path) || substr($path, 0, 1) === '/' /* || !file_exists("d/{$path}") */) {
-		header('HTTP/1.0 404 No such file');
+		\header('HTTP/1.0 404 No such file');
 		exit(0);
 	}
 
 	$prefix = substr($_SERVER['SCRIPT_NAME'], 0, -10);
 
 	if (!empty($path) && substr($path, -1) !== '/' && substr($path, -4) !== '.pdf') {
-		header('HTTP/1.0 301 Need that final /');
-		header("Location: {$prefix}/{$path}/");
+		\header('HTTP/1.0 301 Need that final /');
+		\header("Location: {$prefix}/{$path}/");
 		exit(0);
 	}
 
