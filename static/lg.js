@@ -208,12 +208,12 @@ $(function() {
 		words.each(function() {
 			let w = $(this);
 			let t = w.text();
-			w.attr('data-word', t.toLowerCase().replace(/[^a-z|]/g, ''));
+			w.attr('data-word', t.toLowerCase().replace(/[^a-zæøå|]/g, ''));
 			w.text(t.replace(/\|.*$/g, ''));
 		});
 		$('#welcome-input').change(function() {
 			let i = $(this);
-			let txt = i.val().toLowerCase().replace(/[^a-z]/g, '');
+			let txt = i.val().toLowerCase().replace(/[^a-zæøå]/g, '');
 			let w = $('#welcome-words').find('span.w:hidden').first();
 			if ((new RegExp('^('+w.attr('data-word')+')$')).test(txt)) {
 				w.show();
