@@ -207,13 +207,15 @@ $(function() {
 		words.hide();
 		words.each(function() {
 			let w = $(this);
-			w.attr('data-word', w.text().toLowerCase().replace(/[^a-z]/g, ''));
+			let t = w.text();
+			w.attr('data-word', t.toLowerCase().replace(/[^a-z|]/g, ''));
+			w.text(t.replace(/\|.*$/g, ''));
 		});
 		$('#welcome-input').change(function() {
 			let i = $(this);
 			let txt = i.val().toLowerCase().replace(/[^a-z]/g, '');
 			let w = $('#welcome-words').find('span.w:hidden').first();
-			if (w.attr('data-word') === txt) {
+			if ((new RegExp('^('+w.attr('data-word')+')$')).test(txt)) {
 				w.show();
 				i.val('');
 				i.attr('placeholder', '');

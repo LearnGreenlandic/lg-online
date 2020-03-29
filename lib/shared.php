@@ -174,7 +174,9 @@ function header($state, $lg='', $path='') {
 	</ul>
 </nav>
 <?=$h1;?>
+<!-- NOTA BENE -->
 <!-- Please do not scrape or pirate these videos, lectures, or other material. We are a very small company with a limited market. -->
+<!-- NOTA BENE -->
 <?php
 }
 

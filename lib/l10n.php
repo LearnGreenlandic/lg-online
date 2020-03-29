@@ -368,8 +368,8 @@ $l10n['eng']['lg2/repeat/prompt'] = 'Write next word';
 
 $l10n['dan']['lg2/table/1.1'] = 'Øvelse 1-1: Forskellige former af intransitive verber';
 $l10n['eng']['lg2/table/1.1'] = 'Exercise 1-1: Forms of intransitive verbs';
-$l10n['dan']['lg2/table/1.1/text'] = 'Her finder du nu nogle uudfyldte skemaer til nogle af de mange forskellige former af de intransitive verber. Udfyld alle de felter, som du foreløbig har lært med følgende intransitive verber. {t:TXT_CHECK_REVEAL}.';
-$l10n['eng']['lg2/table/1.1/text'] = 'Here you have a few empty paradigms for some of the intransitive verbal moods. Fill out all fields you have learned this far. Use the following intransitive verbs. {t:TXT_CHECK_REVEAL}.';
+$l10n['dan']['lg2/table/1.1/text'] = 'Her finder du nu nogle uudfyldte skemaer til nogle af de mange forskellige former af de intransitive verber. Udfyld alle de felter, som du foreløbig har lært med følgende intransitive verber. For nogle ord er endelsen <em>-ssaanga</em> også korrekt, men her accepteres kun <em>-ssavunga</em>. {t:TXT_CHECK_REVEAL}.';
+$l10n['eng']['lg2/table/1.1/text'] = 'Here you have a few empty paradigms for some of the intransitive verbal moods. Fill out all fields you have learned this far. Use the following intransitive verbs. For some words the suffix <em>-ssaanga</em> is also correct, but this exercise only accepts <em>-ssavunga</em>. {t:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg2/table/1.1/h1'] = 'Intransitiv indikativ / fremsættemåde';
 $l10n['eng']['lg2/table/1.1/h1'] = 'Intransitive indicative';
 $l10n['dan']['lg2/table/1.1/h2'] = 'Intransitiv interrogativ / spørgemåde';
