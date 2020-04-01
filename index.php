@@ -66,12 +66,19 @@ else if ($state['path'] === 'lg2/') {
 	\LGO\lg2($state);
 }
 else if (preg_match('~^(lg[12])/pdf/([\w\d.]+?)\.pdf$~', $state['path'], $m)) {
-	require_once __DIR__.'/lib/pdf.php';
+	require_once __DIR__.'/lib/files.php';
 	\LGO\pdf($state, $m[1], $m[2]);
+	exit(0);
 }
 else if (preg_match('~^(lg[12])/pdf/slides/([\d.]+?)\.pdf$~', $state['path'], $m)) {
-	require_once __DIR__.'/lib/pdf.php';
+	require_once __DIR__.'/lib/files.php';
 	\LGO\pdf($state, $m[1], $m[2]);
+	exit(0);
+}
+else if (preg_match('~\.(mp3|mp4)$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/files.php';
+	\LGO\send_file($state, $m[1]);
+	exit(0);
 }
 
 // LG1

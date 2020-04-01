@@ -175,7 +175,7 @@ function init() {
 	chdir(__DIR__.'/../');
 
 	$path = $_GET['path'] ?? '';
-	if (preg_match('~[^a-z0-9/.-]~', $path) || substr($path, 0, 1) === '/') {
+	if (preg_match('~[^a-zA-Z0-9/. -]~', $path) || substr($path, 0, 1) === '/') {
 		\header('HTTP/1.0 404 No such file');
 		exit(0);
 	}
