@@ -1,6 +1,126 @@
 <?php
 namespace LGO;
 
+function b64_url($rv) {
+	$rv = base64_encode($rv);
+	$rv = trim($rv, '=');
+	$rv = str_replace('+', 'z', $rv);
+	$rv = str_replace('/', 'Z', $rv);
+	return $rv;
+}
+
+function make_session_token() {
+	$id = random_bytes(30);
+	$id = b64_url($id);
+	return $id;
+}
+
+function txt_store_array($txts) {
+	foreach ($txts as $k => $v) {
+		$txts[$k] = txt_store($v);
+	}
+	return $txts;
+}
+
+function txt_store($txt) {
+	if (is_array($txt)) {
+		return txt_store_array($txt);
+	}
+
+	// Don't trim, as that would corrupt request data
+
+	$size = strlen($txt);
+	$hash = trim(base64_encode(sha1($txt, true)), '=');
+
+	$db = \lg_mysql();
+	//$db->begin_transaction();
+	$query = "SELECT txt_id FROM lgo_texts WHERE txt_size = {$size} AND txt_hash = ".\lg_qn($hash);
+	$id = $db->query($query);
+
+	if ($id && $id->num_rows) {
+		$id = $id->fetch_assoc()['txt_id'];
+	}
+	else {
+		$query = "INSERT INTO lgo_texts (txt_size, txt_hash, txt_text) VALUES ({$size}, ".\lg_qn($hash).", ".\lg_qn($txt).")";
+		$db->query($query);
+		$id = $db->insert_id;
+	}
+
+	//$db->commit();
+	return intval($id);
+}
+
+function ip2binary($ip) {
+	$rv = inet_pton($ip);
+	if (strlen($rv) == 4) {
+		$rv = inet_pton('::ffff:'.$ip);
+	}
+	return $rv;
+}
+
+function log_hit($sid, $uid, $url) {
+	$db = \lg_mysql();
+	$db->begin_transaction();
+
+	$ip = ip2binary($_SERVER['REMOTE_ADDR']);
+	$ua = txt_store($_SERVER['HTTP_USER_AGENT'] ?? '');
+	$url = txt_store($url);
+	$query = "INSERT INTO lgo_hits (sess_id, user_id, rq_ip, rq_ua, rq_url, rq_stamp) VALUES ({$sid}, {$uid}, ".\lg_qn($ip).", {$ua}, {$url}, now())";
+	$db->query($query);
+	$db->commit();
+}
+
+function limit_session($state) {
+	if (empty($state['uid'])) {
+		return 0;
+	}
+
+	$token = $_COOKIE['lgo-session'] ?? '';
+
+	$db = \lg_mysql();
+	$db->begin_transaction();
+	$query = "SELECT sess_id, sess_stop FROM lgo_sessions WHERE user_id = {$state['uid']} AND sess_token = ".\lg_qn($token);
+	$sid = $db->query($query);
+
+	if ($sid && $sid->num_rows) {
+		$row = $sid->fetch_assoc();
+		if (!empty($row['sess_stop'])) {
+			setcookie('lgo-session', '', 1, '/', $_SERVER['HTTP_HOST'], true);
+			$db->commit();
+			return 0;
+		}
+
+		$sid = intval($row['sess_id']);
+		$query = "UPDATE lgo_sessions SET sess_seen = now() WHERE sess_id = {$sid}";
+		$db->query($query);
+	}
+	else {
+		$ip = ip2binary($_SERVER['REMOTE_ADDR']);
+		$ua = txt_store($_SERVER['HTTP_USER_AGENT'] ?? '');
+		$token = make_session_token();
+		$query = "INSERT INTO lgo_sessions (user_id, sess_token, sess_ip, sess_ua, sess_start) VALUES ({$state['uid']}, ".\lg_qn($token).", ".\lg_qn($ip).", {$ua}, now())";
+		$db->query($query);
+		$sid = $db->insert_id;
+	}
+
+	if (empty($state['admin'])) {
+		$query = "SELECT count(*) as cnt FROM lgo_sessions WHERE user_id = {$state['uid']} AND sess_stop IS NULL";
+		$cnt = $db->query($query);
+		if ($cnt && $cnt->num_rows) {
+			$cnt = intval($cnt->fetch_assoc()['cnt']);
+			if ($cnt > 2) {
+				$query = "UPDATE lgo_sessions SET sess_stop = now() WHERE user_id = {$state['uid']} AND sess_stop IS NULL ORDER BY sess_id ASC LIMIT ".($cnt - 2);
+				$db->query($query);
+			}
+		}
+	}
+
+	setcookie('lgo-session', $token, 2147483647, '/', $_SERVER['HTTP_HOST'], true);
+
+	$db->commit();
+	return $sid;
+}
+
 function init() {
 	define('SHORTINIT', true);
 	require __DIR__.'/../../wp-load.php';
@@ -23,18 +143,21 @@ function init() {
 	require_once ABSPATH.WPINC.'/rest-api.php';
 	require_once ABSPATH.WPINC.'/pluggable.php';
 
+	require_once ABSPATH.'/wp-content/plugins/learngreenlandic/learngreenlandic.php';
+
 	$lg1 = 0;
 	$lg2 = 0;
 	$uid = 0;
+	$admin = false;
 	if (is_user_logged_in()) {
 		$user = wp_get_current_user();
 		$uid = $user->ID;
 		if ($user->has_cap('administrator')) {
 			++$lg1;
 			++$lg2;
+			$admin = true;
 		}
 		else {
-			require_once ABSPATH.'/wp-content/plugins/learngreenlandic/learngreenlandic.php';
 			$keys = lg_get_keys($user->ID);
 			foreach ($keys as $key => $row) {
 				if ($key[0] == 'D' || $key[0] == 'E' || $key[0] == 'R' || $key[0] == 'T' || $key[0] == 'X') { // || $key[0] == 'F'
@@ -52,14 +175,14 @@ function init() {
 	chdir(__DIR__.'/../');
 
 	$path = $_GET['path'] ?? '';
-	if (preg_match('~[^a-z0-9/.-]~', $path) || substr($path, 0, 1) === '/' /* || !file_exists("d/{$path}") */) {
+	if (preg_match('~[^a-z0-9/.-]~', $path) || substr($path, 0, 1) === '/') {
 		\header('HTTP/1.0 404 No such file');
 		exit(0);
 	}
 
 	$prefix = substr($_SERVER['SCRIPT_NAME'], 0, -10);
 
-	if (!empty($path) && substr($path, -1) !== '/' && substr($path, -4) !== '.pdf') {
+	if (!empty($path) && substr($path, -1) !== '/' && substr($path, -4) !== '.pdf' && substr($path, -4) !== '.mp4' && substr($path, -4) !== '.mp3') {
 		\header('HTTP/1.0 301 Need that final /');
 		\header("Location: {$prefix}/{$path}/");
 		exit(0);
@@ -116,6 +239,7 @@ function init() {
 		'lg1' => $lg1,
 		'lg2' => $lg2,
 		'uid' => $uid,
+		'admin' => $admin,
 		];
 }
 

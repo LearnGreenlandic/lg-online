@@ -15,6 +15,8 @@ if ((!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] !== 'learngreenlandi
 require_once __DIR__.'/lib/shared.php';
 
 $state = \LGO\init();
+$sid = limit_session($state);
+log_hit($sid, $state['uid'], $_SERVER['REQUEST_URI']);
 
 if (substr($state['path'], 0, 3) === 'lg1' && $state['lg1'] === 0) {
 	\LGO\header($state);
@@ -36,6 +38,15 @@ if ($state['lg1'] === 0 && $state['lg2'] === 0) {
 	\LGO\header($state);
 	echo '<div class="container"><div class="row"><div class="col my-3 text-center">';
 	echo '<p>{t:ERR_NO_ACCESS}</p>';
+	echo '</div></div></div>';
+	\LGO\footer($state);
+	exit(0);
+}
+if (empty($sid)) {
+	\wp_logout();
+	\LGO\header($state);
+	echo '<div class="container"><div class="row"><div class="col my-3 text-center">';
+	echo '<p>{t:ERR_TOO_MANY_SESSIONS}</p>';
 	echo '</div></div></div>';
 	\LGO\footer($state);
 	exit(0);

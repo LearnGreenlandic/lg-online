@@ -12,6 +12,8 @@ $l10n['dan']['ERR_NO_ACCESS_LG1'] = 'Du er enten ikke <a href="/wp-login.php?red
 $l10n['eng']['ERR_NO_ACCESS_LG1'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/lg1/">logged in</a>, or your user lacks access to LG1.';
 $l10n['dan']['ERR_NO_ACCESS_LG2'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/lg2/">logget ind</a>, eller din bruger har ikke adgang til LG2.';
 $l10n['eng']['ERR_NO_ACCESS_LG2'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/lg2/">logged in</a>, or your user lacks access to LG2.';
+$l10n['dan']['ERR_TOO_MANY_SESSIONS'] = 'Du er logget ind fra for mange enheder, og skal derfor <a href="/wp-login.php?redirect_to=/online/">logge ind igen</a> fra denne enhed før du kan gå videre.';
+$l10n['eng']['ERR_TOO_MANY_SESSIONS'] = 'You are logged in from too many devices, and must therefore <a href="/wp-login.php?redirect_to=/online/">log in again</a> to continue on this device.';
 
 $l10n['dan']['LBL_VIDEO_QUALITY'] = 'Video-opløsning';
 $l10n['eng']['LBL_VIDEO_QUALITY'] = 'Video resolution';
