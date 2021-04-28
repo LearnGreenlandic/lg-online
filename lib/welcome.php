@@ -192,8 +192,12 @@ function welcome_3($state) {
 <div class="col-md">
 <div class="row" id="welcome-words">
 
-<div class="col-12 py-1 text-center">
-<label for="welcome-input">{t:lg1/welcome/3/prompt}</label> <input type="text" spellcheck="false" class="form-control" id="welcome-input"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button>
+<div class="col-12 py-1">
+<div class="row no-gutters justify-content-center">
+<div class="col-auto p-2"><label for="welcome-input">{t:lg1/welcome/3/prompt}</label></div>
+<div class="col-auto py-2"><input type="text" spellcheck="false" class="form-control" id="welcome-input"></div>
+<div class="col-auto p-2"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>
+</div>
 </div>
 <div class="col-12" lang="kl-GL">
 <?php

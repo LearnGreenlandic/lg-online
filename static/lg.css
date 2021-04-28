@@ -100,7 +100,7 @@ body {
 	display: inline-block;
 	width: 20ex;
 }
-.structure input, .task-updown input {
+#welcome-words input, .structure input, .task-updown input {
 	width: 40ex;
 }
 

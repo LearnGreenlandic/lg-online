@@ -163,7 +163,7 @@ function init() {
 				if ($key[0] == 'D' || $key[0] == 'E' || $key[0] == 'R' || $key[0] == 'T' || $key[0] == 'X') { // || $key[0] == 'F'
 					++$lg1;
 				}
-				else if ($key[0] == 'A' || $key[0] == 'B' || $key[0] == 'Z') { // || $key[0] == 'C'
+				else if ($key[0] == 'A' || $key[0] == 'B' || $key[0] == 'Y' || $key[0] == 'Z') { // || $key[0] == 'C'
 					++$lg2;
 				}
 			}
