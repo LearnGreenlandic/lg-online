@@ -6,12 +6,12 @@ $l10n = [
 	'eng' => [],
 	];
 
-$l10n['dan']['ERR_NO_ACCESS'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/">logget ind</a>, eller din bruger har ikke adgang til hverken LG1 eller LG2.';
-$l10n['eng']['ERR_NO_ACCESS'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/">logged in</a>, or your user lacks access to both LG1 and LG2.';
-$l10n['dan']['ERR_NO_ACCESS_LG1'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/lg1/">logget ind</a>, eller din bruger har ikke adgang til LG1.';
-$l10n['eng']['ERR_NO_ACCESS_LG1'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/lg1/">logged in</a>, or your user lacks access to LG1.';
-$l10n['dan']['ERR_NO_ACCESS_LG2'] = 'Du er enten ikke <a href="/wp-login.php?redirect_to=/online/lg2/">logget ind</a>, eller din bruger har ikke adgang til LG2.';
-$l10n['eng']['ERR_NO_ACCESS_LG2'] = 'You are either not <a href="/wp-login.php?redirect_to=/online/lg2/">logged in</a>, or your user lacks access to LG2.';
+$l10n['dan']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log ind</a> eller <a href="/wp-login.php?action=register">opret en konto</a> for at få gratis adgang til Learn Greenlandic.';
+$l10n['eng']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log in</a> or <a href="/wp-login.php?action=register">create an account</a> for free access to Learn Greenlandic.';
+$l10n['dan']['ERR_NO_ACCESS_LG1'] = $l10n['dan']['ERR_NO_ACCESS'];
+$l10n['eng']['ERR_NO_ACCESS_LG1'] = $l10n['eng']['ERR_NO_ACCESS'];
+$l10n['dan']['ERR_NO_ACCESS_LG2'] = $l10n['dan']['ERR_NO_ACCESS'];
+$l10n['eng']['ERR_NO_ACCESS_LG2'] = $l10n['eng']['ERR_NO_ACCESS'];
 $l10n['dan']['ERR_TOO_MANY_SESSIONS'] = 'Du er logget ind fra for mange enheder, og skal derfor <a href="/wp-login.php?redirect_to=/online/">logge ind igen</a> fra denne enhed før du kan gå videre.';
 $l10n['eng']['ERR_TOO_MANY_SESSIONS'] = 'You are logged in from too many devices, and must therefore <a href="/wp-login.php?redirect_to=/online/">log in again</a> to continue on this device.';
 

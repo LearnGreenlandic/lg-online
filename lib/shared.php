@@ -103,6 +103,7 @@ function limit_session($state) {
 		$sid = $db->insert_id;
 	}
 
+	/*
 	if (empty($state['admin'])) {
 		$query = "SELECT count(*) as cnt FROM lgo_sessions WHERE user_id = {$state['uid']} AND sess_stop IS NULL";
 		$cnt = $db->query($query);
@@ -114,6 +115,7 @@ function limit_session($state) {
 			}
 		}
 	}
+	//*/
 
 	setcookie('lgo-session', $token, 2147483647, '/', $_SERVER['HTTP_HOST'], true);
 
@@ -152,6 +154,9 @@ function init() {
 	if (is_user_logged_in()) {
 		$user = wp_get_current_user();
 		$uid = $user->ID;
+		++$lg1;
+		++$lg2;
+		/*
 		if ($user->has_cap('administrator')) {
 			++$lg1;
 			++$lg2;
@@ -168,6 +173,7 @@ function init() {
 				}
 			}
 		}
+		//*/
 	}
 
 	$_REQUEST = stripslashes_deep($_REQUEST);
