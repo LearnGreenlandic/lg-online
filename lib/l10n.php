@@ -593,8 +593,8 @@ $l10n['dan']['lg2/structure/4.4.1/t'] = 'Øvelse 4-4A: Introduktion til personen
 $l10n['eng']['lg2/structure/4.4.1/t'] = 'Exercise 4-4A: Introduction to possessum II (text)';
 $l10n['dan']['lg2/structure/4.4.1/a'] = 'Øvelse 4-4A: Introduktion til personendelse (possessum) II (audio)';
 $l10n['eng']['lg2/structure/4.4.1/a'] = 'Exercise 4-4A: Introduction to possessum II (audio)';
-$l10n['dan']['lg2/structure/4.4.1/text'] = 'Du har hidtil været præsenteret for 3 personendelser på nominer i ental, nemlig N{+ga}, N{-a} og N{-at}. Brug dem alle og bliv sikker i de lydskift, de medfører. <em>taassuma</em> betyder “den ders ..” og <em>taakku</em> betyder “de ders ...”.';
-$l10n['eng']['lg2/structure/4.4.1/text'] = 'This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. <em>taassuma</em> means “that one\'s ..” and <em>taakku</em> means “those ones\' ...”.';
+$l10n['dan']['lg2/structure/4.4.1/text'] = 'Du har hidtil været præsenteret for 3 personendelser på nominer i ental, nemlig N{+ga}, N{-a} og N{-at}. Brug dem alle og bliv sikker i de lydskift, de medfører. <em>taassuma</em> betyder “den ders ..” og <em>taakku/taakkua</em> betyder “de ders ...”.';
+$l10n['eng']['lg2/structure/4.4.1/text'] = 'This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. <em>taassuma</em> means “that one\'s ..” and <em>taakku/taakkua</em> means “those ones\' ...”.';
 
 $l10n['dan']['lg2/structure/4.4.2/t'] = 'Øvelse 4-4B: Introduktion til personendelse (possessum) II (tekst)';
 $l10n['eng']['lg2/structure/4.4.2/t'] = 'Exercise 4-4B: Introduction to possessum II (text)';
