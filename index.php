@@ -65,7 +65,7 @@ else if ($state['path'] === 'lg2/') {
 	require_once __DIR__.'/lib/lg2.php';
 	\LGO\lg2($state);
 }
-else if (preg_match('~^(lg[12])/pdf/([\w\d.]+?)\.pdf$~', $state['path'], $m)) {
+else if (preg_match('~^(lg[12])/pdf/([-\w\d.]+?)\.pdf$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/files.php';
 	\LGO\pdf($state, $m[1], $m[2]);
 	exit(0);
@@ -89,6 +89,10 @@ else if (preg_match('~^lg1/pronounce/([12])/$~', $state['path'], $m)) {
 else if (preg_match('~^lg1/listening/([1234])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/listening.php';
 	\LGO\listening($state, $m[1]);
+}
+else if (preg_match('~^lg1/(\dx)/([a-z]+)/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/sentence.php';
+	\LGO\sentence($state, $m[1], $m[2]);
 }
 else if (preg_match('~^lg1/hyphenate/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/hyphenate.php';

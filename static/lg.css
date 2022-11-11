@@ -100,8 +100,11 @@ body {
 	display: inline-block;
 	width: 20ex;
 }
-#welcome-words input, .structure input, .task-updown input {
+#welcome-words input, .structure input, .task-updown input, #shuffled input {
 	width: 40ex;
+}
+.sentence input {
+	min-width: 30ex;
 }
 
 .task-text-area textarea {

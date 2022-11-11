@@ -26,6 +26,12 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/listening/2/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/listening/2}</a></li>
 		<li><a href="{t:prefix}/lg1/listening/3/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/listening/3}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/2.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/2}</a></li>
+
+		<li class="mt-4"><a href="{t:prefix}/lg1/pdf/2x.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/2x}</a></li>
+		<li><a href="{t:prefix}/lg1/2x/listen/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/2x/listen}</a></li>
+		<li><a href="{t:prefix}/lg1/2x/trm/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/2x/trm}</a></li>
+		<li><a href="{t:prefix}/lg1/2x/abl/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/2x/abl}</a></li>
+		<li><a href="{t:prefix}/lg1/2x/all/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/2x/all}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l3">
@@ -37,6 +43,19 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/welcome/1/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/welcome/1}</a></li>
 		<li><a href="{t:prefix}/lg1/welcome/2/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg1/welcome/2}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/3.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/3}</a></li>
+
+		<li class="mt-4"><a href="{t:prefix}/lg1/pdf/3x.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/3x}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/listen/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/3x/listen}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/listenc/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/3x/listenc}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/trm/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/trm}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/trmc/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/trmc}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/abl/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/abl}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/ablc/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/ablc}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/lok/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/lok}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/lokc/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/lokc}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/verbs/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/3x/verbs}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/random/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/3x/random}</a></li>
+		<li><a href="{t:prefix}/lg1/3x/randp/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/3x/randp}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l4">

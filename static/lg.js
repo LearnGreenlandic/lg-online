@@ -254,5 +254,39 @@ $(function() {
 		});
 	}
 
+	if ($('#shuffled').length) {
+		$('#shuffled').children().hide();
+		$('#shuffled').children().first().show();
+
+		$('#btnPrev').click(function() {
+			let c = $('#shuffled').children(':visible');
+			c.hide();
+			let nc = null;
+			if (c.prev().length) {
+				nc = c.prev().show();
+			}
+			else {
+				nc = $('#shuffled').children().last().show();
+			}
+			nc.find('input').val('').attr('placeholder', '').removeClass('is-invalid');
+		});
+
+		$('#btnNext').click(function() {
+			let c = $('#shuffled').children(':visible');
+			c.hide();
+			let nc = null;
+			if (c.next().length) {
+				nc = c.next().show();
+			}
+			else {
+				nc = $('#shuffled').children().first().show();
+			}
+			if ($(this).hasClass('playAfter')) {
+				nc.find('.btn-primary').click();
+			}
+			nc.find('input').val('').attr('placeholder', '').removeClass('is-invalid').focus();
+		});
+	}
+
 	$('.inert').off();
 });
