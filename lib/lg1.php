@@ -67,6 +67,14 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/dialogue/3/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg1/dialogue/3}</a></li>
 		<li><a href="{t:prefix}/lg1/welcome/3/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/welcome/3}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/4.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/4}</a></li>
+
+		<li class="mt-4"><a href="{t:prefix}/lg1/pdf/4x.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/4x}</a></li>
+		<li><a href="{t:prefix}/lg1/4x/listenv/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/4x/listenv}</a></li>
+		<li><a href="{t:prefix}/lg1/4x/prod/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/4x/prod}</a></li>
+		<li><a href="{t:prefix}/lg1/4x/listeng/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/4x/listeng}</a></li>
+		<li><a href="{t:prefix}/lg1/4x/prodg/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/4x/prodg}</a></li>
+		<li><a href="{t:prefix}/lg1/4x/random/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/4x/random}</a></li>
+		<li><a href="{t:prefix}/lg1/4x/randp/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/4x/randp}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l5.1">

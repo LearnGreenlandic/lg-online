@@ -192,6 +192,31 @@ $l10n['eng']['senttmpl'] = 'Sentence template';
 $l10n['eng']['lg1/3x/randp'] = 'Exercise 3.11X: Sentences (production)';
 $l10n['eng']['lg1/3x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 4 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/pdf/4x'] = 'Introduktion til kapitel 4 X-tras';
+$l10n['eng']['lg1/pdf/4x'] = 'Introduction to chapter 4 X-tra';
+
+$l10n['dan']['lg1/4x/listenv'] = 'Øvelse 4.1X: TODO (lydøvelse)';
+$l10n['eng']['lg1/4x/listenv'] = 'Exercise 4.1X: Verbs created by adding N-QAR and N+TUR to nouns (perception)';
+$l10n['eng']['lg1/4x/listenv/text'] = 'Here you are presented with 5 nouns that have been verbified, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she, or it</i>). Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
+$l10n['dan']['lg1/4x/prod'] = 'Øvelse 4.2X: TODO (produktion)';
+$l10n['eng']['lg1/4x/prod'] = 'Exercise 4.2X: Produce verbs by adding N-QAR and N+TUR to nouns (production)';
+$l10n['eng']['lg1/4x/prod/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
+$l10n['dan']['lg1/4x/listeng'] = 'Øvelse 4.3X: TODO (lydøvelse)';
+$l10n['eng']['lg1/4x/listeng'] = 'Exercise 4.3X: Verb elaborating morpheme (perception)';
+$l10n['eng']['lg1/4x/listeng/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
+$l10n['dan']['lg1/4x/prodg'] = 'Øvelse 4.4X: TODO (produktion)';
+$l10n['eng']['lg1/4x/prodg'] = 'Exercise 4.4X: Verb elaborating morpheme (production)';
+$l10n['eng']['lg1/4x/prodg/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". {t:TXT_AUDIO_CHECK_REVEAL}.';
+
+$l10n['eng']['lg1/4x/random'] = 'Exercise 4.5X: Sentences (reception)';
+$l10n['eng']['lg1/4x/random/text'] = 'You will hear sentences containing only known language. Understand what you hear including all the processes that the sentence comes with. Once you are sure you understand everything speak out the whole sentence loudly. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
+$l10n['eng']['lg1/4x/randp'] = 'Exercise 4.6X: Sentences (production)';
+$l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
 $l10n['dan']['lg1/hyphenate'] = 'Stavelsesdeling af bynavne';
 $l10n['eng']['lg1/hyphenate'] = 'Hyphenate place names';
 $l10n['dan']['lg1/hyphenate/text'] = 'Del ordet med -; brug noderne til hjælp. {t:TXT_CHECK_REVEAL}.';

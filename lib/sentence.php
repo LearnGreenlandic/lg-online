@@ -8,6 +8,13 @@ $GLOBALS['-ds'] = [
 	'3x' => ['abl', 'trm', 'lok'],
 	];
 
+function load_corpus($chap='2x') {
+	$all = explode("\n", trim(file_get_contents('d/lg1/sentence/'.$chap.'/all.txt')));
+	$all = preg_grep('/#/', $all, PREG_GREP_INVERT);
+	$all = preg_grep('/^[ \t]*$/', $all, PREG_GREP_INVERT);
+	return $all;
+}
+
 function sentence_listen($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
@@ -26,7 +33,58 @@ function sentence_listen($state, $chap='2x') {
 	shuffle($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
-		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+	}
+?>
+</div>
+</div>
+<?php
+}
+
+function sentence_listen_v($state, $chap='2x') {
+?>
+<div class="task task-text task-audio container-fluid sentence">
+<div class="row">
+<div class="col">
+<p>{t:lg1/<?=$chap;?>/listenv/text}</p>
+</div>
+</div>
+<div class="row alternate">
+<?php
+	$all = load_corpus($chap);
+	$words = preg_grep('@\+GUSUP\+@', preg_grep('@\+(QAR|TUR)\+@', $all), PREG_GREP_INVERT);
+
+	shuffle($words);
+	foreach ($words as $word) {
+		$word = explode("\t", $word)[1];
+		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+	}
+?>
+</div>
+</div>
+<?php
+}
+
+function sentence_listen_g($state, $chap='2x') {
+?>
+<div class="task task-text task-audio container-fluid sentence">
+<div class="row">
+<div class="col">
+<p>{t:lg1/<?=$chap;?>/listeng/text}</p>
+</div>
+</div>
+<div class="row alternate">
+<?php
+	$all = load_corpus($chap);
+	$words = preg_grep('@\+(QAR|TUR)\+@', preg_grep('@\+GUSUP\+@', $all));
+
+	shuffle($words);
+	foreach ($words as $word) {
+		$word = explode("\t", $word)[1];
+		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>
@@ -61,7 +119,8 @@ function sentence_listen_c($state, $chap='2x') {
 	shuffle($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
-		echo '<div class="text-center entry"><audio src="{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		echo '<div class="text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>
@@ -97,7 +156,77 @@ function sentence_case($state, $chap='2x', $case='trm') {
 		if (!empty($ws[1])) {
 			$p = ' ('.$ws[1].')';
 		}
-		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.'</div><div class="col-12"><span class="entry"><audio src="{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$trgs[$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="{t:prefix}/d/lg1/sentence/mp3/'.$trgs[$k].'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div></div></div>';
+		$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3', $ws[0]);
+		$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$trgs[$k].'.mp3', $trgs[$k]);
+		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$trgs[$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div></div></div>';
+	}
+
+	shuffle($outs);
+	foreach ($outs as $out) {
+		echo $out;
+	}
+?>
+</div>
+</div>
+<?php
+}
+
+function sentence_prod_v($state, $chap='2x') {
+?>
+<div class="task task-text task-audio container-fluid sentence">
+<div class="row">
+<div class="col">
+<p>{t:lg1/<?=$chap;?>/prod/text}</p>
+</div>
+</div>
+<div class="row alternate">
+<?php
+	$all = load_corpus($chap);
+	$words = preg_grep('@\+GUSUP\+@', preg_grep('@\+(QAR|TUR)\+@', $all), PREG_GREP_INVERT);
+
+	$outs = [];
+	foreach ($words as $word) {
+		$ws = explode("\t", $word);
+		if (!preg_match('~^([^+]+).*\+(QAR|TUR).*\+(1Sg|3Sg)$~', $ws[0], $m)) {
+			continue;
+		}
+		$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$m[1].'.mp3', $m[1]);
+		$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[1].'.mp3', $ws[1]);
+		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$m[1].'+'.$m[2].'+'.$m[3].'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$ws[1].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div></div></div>';
+	}
+
+	shuffle($outs);
+	foreach ($outs as $out) {
+		echo $out;
+	}
+?>
+</div>
+</div>
+<?php
+}
+
+function sentence_prod_g($state, $chap='2x') {
+?>
+<div class="task task-text task-audio container-fluid sentence">
+<div class="row">
+<div class="col">
+<p>{t:lg1/<?=$chap;?>/prodg/text}</p>
+</div>
+</div>
+<div class="row alternate">
+<?php
+	$all = load_corpus($chap);
+	$words = preg_grep('@\+(QAR|TUR)\+@', preg_grep('@\+GUSUP\+@', $all));
+
+	$outs = [];
+	foreach ($words as $word) {
+		$ws = explode("\t", $word);
+		if (!preg_match('~^([^+]+).*\+(QAR|TUR).*\+(1Sg|3Sg)$~', $ws[0], $m)) {
+			continue;
+		}
+		$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$m[1].'.mp3', $m[1]);
+		$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[1].'.mp3', $ws[1]);
+		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$m[1].'+'.$m[2].'+GUSUP+'.$m[3].'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$ws[1].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div></div></div>';
 	}
 
 	shuffle($outs);
@@ -140,7 +269,9 @@ function sentence_case_c($state, $chap='2x', $case='trm') {
 			if (!empty($ws[1])) {
 				$p = ' ('.$ws[1].')';
 			}
-			$outs[] = '<div class="text-center"><span class="entry"><audio src="{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$trgs[$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="{t:prefix}/d/lg1/sentence/mp3/'.$trgs[$k].'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div>';
+			$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3', $ws[0]);
+			$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$trgs[$k].'.mp3', $trgs[$k]);
+			$outs[] = '<div class="text-center"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$trgs[$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div>';
 		}
 
 		if ($c === $chap) {
@@ -180,7 +311,8 @@ function sentence_verbs($state, $chap='3x') {
 	shuffle($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
-		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
+		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button></div>';
 	}
 ?>
 </div>
@@ -189,9 +321,7 @@ function sentence_verbs($state, $chap='3x') {
 }
 
 function _sent_rand_helper($chap) {
-	$all = explode("\n", trim(file_get_contents('d/lg1/sentence/'.$chap.'/all.txt')));
-	$all = preg_grep('/#/', $all, PREG_GREP_INVERT);
-	$all = preg_grep('/^[ \t]*$/', $all, PREG_GREP_INVERT);
+	$all = load_corpus($chap);
 
 	$ps = [
 		[
@@ -214,6 +344,19 @@ function _sent_rand_helper($chap) {
 			preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+2PlO@', $all)),
 			],
 		];
+	if ($chap == '4x') {
+		$ps = []; // TODO: Remove for production!
+		$ps[] = [
+			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(Mask|Fem|inst)@', preg_grep('@Sem/Hum.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+(Lok)@', $all)),
+			preg_grep('@Sem/(food|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
+			];
+		$ps[] = [
+			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+(Lok)@', $all)),
+			preg_grep('@Sem/(food|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
+			];
+	}
 
 	return $ps;
 }
@@ -316,7 +459,8 @@ function sentence_random_write($state, $chap='3x') {
 		$words = [];
 		$lis = [];
 		foreach ($sent as $s) {
-			preg_match('~\+((?:1Sg|3Sg|Lok|Abl|Trm|Abs).*)$~', $s[1], $m);
+			$s[1] = preg_replace('~\+[^/+]+/[^/+]+~', '', $s[1]);
+			preg_match('~\+((?:1Sg|3Sg|Lok|Abl|Trm|Abs|QAR|TUR).*)$~', $s[1], $m);
 			$m[1] = str_replace('+', ' + ', $m[1]);
 			$li = "{$s[0]} + {$m[1]}";
 			$lis[] = $li;
@@ -375,7 +519,9 @@ function sentence_all($state, $chap='2x') {
 		}
 
 		foreach ($GLOBALS['-ds'][$chap] as $case) {
-			$prep[$case][] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.' + '.ucfirst($case).'</div><div class="col-12"><span class="entry"><audio src="{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$cases[$case][$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="{t:prefix}/d/lg1/sentence/mp3/'.$cases[$case][$k].'.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div></div></div>';
+			$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3', $ws[0]);
+			$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$cases[$case][$k].'.mp3', $cases[$case][$k]);
+			$prep[$case][] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.' + '.ucfirst($case).'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$cases[$case][$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span></span></div></div></div>';
 		}
 	}
 
@@ -403,6 +549,12 @@ function sentence($state, $chap, $task) {
 	if ($task === 'listen') {
 		\LGO\sentence_listen($state, $chap);
 	}
+	else if ($task === 'listenv') {
+		\LGO\sentence_listen_v($state, $chap);
+	}
+	else if ($task === 'listeng') {
+		\LGO\sentence_listen_g($state, $chap);
+	}
 	else if ($task === 'listenc') {
 		\LGO\sentence_listen_c($state, $chap);
 	}
@@ -415,6 +567,13 @@ function sentence($state, $chap, $task) {
 	}
 	else if ($task === 'lok') {
 		\LGO\sentence_case($state, $chap, 'lok');
+	}
+
+	else if ($task === 'prod') {
+		\LGO\sentence_prod_v($state, $chap);
+	}
+	else if ($task === 'prodg') {
+		\LGO\sentence_prod_g($state, $chap);
 	}
 
 	else if ($task === 'trmc') {

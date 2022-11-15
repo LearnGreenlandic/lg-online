@@ -70,6 +70,14 @@ function log_hit($sid, $uid, $url) {
 	$db->commit();
 }
 
+function mp3_or_martha($local, $t) {
+	$lf = str_replace('{t:prefix}', __DIR__.'/..', $local);
+	if (file_exists($lf)) {
+		return $local;
+	}
+	return 'https://learngreenlandic.com/martha/?t='.urlencode($t);
+}
+
 function limit_session($state) {
 	if (empty($state['uid'])) {
 		return 0;
