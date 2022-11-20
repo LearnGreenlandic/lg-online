@@ -8,8 +8,12 @@ $GLOBALS['-ds'] = [
 	'3x' => ['abl', 'trm', 'lok'],
 	];
 
-function load_corpus($chap='2x') {
-	$all = explode("\n", trim(file_get_contents('d/lg1/sentence/'.$chap.'/all.txt')));
+function load_corpus($chap='2x', $task='random') {
+	$which = 'all';
+	if ($task != 'random' && file_exists('d/lg1/sentence/'.$chap.'/'.$task.'.txt')) {
+		$which = $task;
+	}
+	$all = explode("\n", trim(file_get_contents('d/lg1/sentence/'.$chap.'/'.$which.'.txt')));
 	$all = preg_grep('/#/', $all, PREG_GREP_INVERT);
 	$all = preg_grep('/^[ \t]*$/', $all, PREG_GREP_INVERT);
 	return $all;
@@ -320,53 +324,98 @@ function sentence_verbs($state, $chap='3x') {
 <?php
 }
 
-function _sent_rand_helper($chap) {
-	$all = load_corpus($chap);
+function _sent_rand_helper($chap, $task='random') {
+	$all = load_corpus($chap, $task);
+	$ps = [];
 
-	$ps = [
-		[
-			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all)),
-			preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+3Sg(\+|\s)@', $all)),
-			],
-		[
-			preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all)),
-			preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+1Sg(\+|\s)@', $all)),
-			],
-		[
-			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
-			preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+3SgO@', $all)),
-			],
-		[
-			preg_grep('@\+Pron\+.*Abs@', $all),
-			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
-			preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+2PlO@', $all)),
-			],
-		];
+	if ($chap == '5x' && $task == 'nu') {
+		$ps[] = [
+			preg_grep('@Sem/Fem@', preg_grep('@\+(Abs)@', $all)),
+			preg_grep('@Sem/H[^+]*\+@', preg_grep('@Sem/be_copula\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
+			];
+		$ps[] = [
+			preg_grep('@Sem/H[^+]*\+@', preg_grep('@Sem/be_copula\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
+			];
+		return $ps;
+	}
+
+	if ($chap == '5x' && $task == 'nqar') {
+		$ps[] = [
+			preg_grep('@Sem/inst@', preg_grep('@Sem/Hum\+.*Ins@', $all), PREG_GREP_INVERT),
+			preg_grep('@ateq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', $all))),
+			];
+		$ps[] = [
+			preg_grep('@Sem/Geo@', preg_grep('@\+Lok@', $all)),
+			preg_grep('@Sem/lodge@', preg_grep('@\+1Sg(\+|\s)@', $all)),
+			];
+		$ps[] = [
+			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
+			preg_grep('@Sem/Geo\+.*Lok@', $all),
+			preg_grep('@Sem/lodge@', preg_grep('@\+3Sg(\+|\s)@', $all)),
+			];
+		$ps[] = [
+			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
+			preg_grep('@Sem/inst\+.*Lok@', $all),
+			preg_grep('@suli\+@', preg_grep('@\+3Sg(\+|\s)@', $all)),
+			];
+		$ps[] = [
+			preg_grep('@Sem/inst\+.*Lok@', $all),
+			preg_grep('@suli\+@', preg_grep('@\+1Sg(\+|\s)@', $all)),
+			];
+		$ps[] = [
+			preg_grep('@Sem/Mask\+.*Abs@', $all),
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@nuliaq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', preg_grep('@\+3Sg(\+|\s)@', $all)))),
+			];
+		$ps[] = [
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@nuliaq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', preg_grep('@\+1Sg(\+|\s)@', $all)))),
+			];
+		return $ps;
+	}
+
 	if ($chap == '4x') {
-		//$ps = []; // TODO: Remove for production!
 		$ps[] = [
 			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT),
 			preg_grep('@Sem/(Mask|Fem|inst)@', preg_grep('@Sem/Hum.*Abs@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+(Lok)@', $all)),
+			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
 			preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+(Lok)@', $all)),
+			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
 			preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
 			];
 	}
 
+	$ps[] = [
+		preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
+		preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all)),
+		preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+3Sg(\+|\s)@', $all)),
+		];
+	$ps[] = [
+		preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all)),
+		preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+1Sg(\+|\s)@', $all)),
+		];
+	$ps[] = [
+		preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
+		preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
+		preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+3SgO@', $all)),
+		];
+	$ps[] = [
+		preg_grep('@\+Pron\+.*Abs@', $all),
+		preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
+		preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+2PlO@', $all)),
+		];
+
 	return $ps;
 }
 
-function sentence_random_listen($state, $chap='3x') {
+function sentence_random_listen($state, $chap='3x', $task='random') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
 <div class="row">
 <div class="col">
-<p>{t:lg1/<?=$chap;?>/random/text}</p>
+<p>{t:lg1/<?=$chap;?>/<?=$task;?>/text}</p>
 </div>
 </div>
 <div class="row">
@@ -375,7 +424,7 @@ function sentence_random_listen($state, $chap='3x') {
 </div>
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
-	$ps = _sent_rand_helper($chap);
+	$ps = _sent_rand_helper($chap, $task);
 
 	$sents = [];
 	foreach ($ps as $p) {
@@ -546,7 +595,12 @@ function sentence_all($state, $chap='2x') {
 
 function sentence($state, $chap, $task) {
 	\LGO\header($state, 'lg1', $chap.'/'.$task);
-	if ($task === 'listen') {
+	if ($chap == '5x') {
+		if ($task === 'nu' || $task === 'nqar') {
+			\LGO\sentence_random_listen($state, $chap, $task);
+		}
+	}
+	else if ($task === 'listen') {
 		\LGO\sentence_listen($state, $chap);
 	}
 	else if ($task === 'listenv') {

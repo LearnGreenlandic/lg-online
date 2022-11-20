@@ -98,6 +98,10 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/structure/3.1/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/structure/3.1}</a></li>
 		<li><a href="{t:prefix}/lg1/structure/3.2/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/structure/3.2}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/5.1.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/5.1}</a></li>
+
+		<li class="mt-4"><a href="{t:prefix}/lg1/pdf/5x.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/5x}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/nu/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/5x/nu}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/nqar/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/5x/nqar}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">

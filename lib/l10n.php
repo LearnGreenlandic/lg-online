@@ -238,6 +238,17 @@ $l10n['eng']['lg1/4x/random/text'] = 'You will hear sentences containing only kn
 $l10n['eng']['lg1/4x/randp'] = 'Exercise 4.6X: Sentences (production)';
 $l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/pdf/5x'] = 'Introduktion til kapitel 5 X-tras';
+$l10n['eng']['lg1/pdf/5x'] = 'Introduction to chapter 5 X-tra';
+
+$l10n['dan']['lg1/5x/nu'] = 'Øvelse 5.1X: TODO (lydøvelse)';
+$l10n['eng']['lg1/5x/nu'] = 'Exercise 5.1X: Verbs created by adding N-U to nouns (perception)';
+$l10n['eng']['lg1/5x/nu/text'] = 'Here you are presented with nouns that have been verbified with N-U, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she, or it</i>). E.g. <i>nuliaavunga (wife - be - I) = I am a wife</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
+$l10n['dan']['lg1/5x/nqar'] = 'Øvelse 5.2X: TODO (lydøvelse)';
+$l10n['eng']['lg1/5x/nqar'] = 'Exercise 5.2X: Nouns with N-QAR and verbal stem suli- (perception)';
+$l10n['eng']['lg1/5x/nqar/text'] = 'New nouns with N-QAR and new verbal stem, <i>suli-</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+
 $l10n['dan']['lg1/hyphenate'] = 'Stavelsesdeling af bynavne';
 $l10n['eng']['lg1/hyphenate'] = 'Hyphenate place names';
 $l10n['dan']['lg1/hyphenate/text'] = 'Del ordet med -; brug noderne til hjælp. {t:TXT_CHECK_REVEAL}.';
