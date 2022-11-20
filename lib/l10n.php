@@ -135,61 +135,82 @@ $l10n['eng']['lg1/pdf/2x'] = 'Introduction to chapter 2 X-tra';
 
 $l10n['dan']['lg1/2x/listen'] = 'Øvelse 2.1X: Til og fra stednavne (lydøvelse)';
 $l10n['eng']['lg1/2x/listen'] = 'Exercise 2.1X: To and from place names (perception)';
-$l10n['dan']['lg1/2x/listen/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/2x/listen/text'] = 'You will be presented with the 17 place names listed in <a href="{t:prefix}/lg1/pdf/2x.pdf">the readme</a> inflected with Trm ("to"-case) and Abl ("from"-case). Understand the word you hear and make sure that you understand what processes play a part in generating the word. Writing it down is good training. Speak out the word loudly to train your pronunciation. Speak out the word loudly to train your pronunciation. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/2x/listen/text'] = 'Her får du de 17 stednavne fra <a href="{t:prefix}/lg1/pdf/2x.pdf">introduktionen</a> bøjet med Trm ("til"-kasus) og Abl ("fra"-kasus). Forstå ordet, du hører og vær sikker på at du har styr på alle de processer, der var i spil for at generere ordet. Det er god træning at skrive ordet ned. Udtal derefter ordet for at træne din udtale. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/2x/listen/text'] = 'You will be presented with the 17 place names listed in <a href="{t:prefix}/lg1/pdf/2x.pdf">the readme</a> inflected with Trm ("to"-case) and Abl ("from"-case). Understand the word you hear and make sure that you understand what processes play a part in generating the word. Writing it down is good training. Speak out the word loudly to train your pronunciation. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/2x/trm'] = 'Øvelse 2.2X: Til STED (produktion)';
 $l10n['eng']['lg1/2x/trm'] = 'Exercise 2.2X: To PLACE (production)';
-$l10n['dan']['lg1/2x/trm/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/2x/trm/text'] = 'Her får du stednavnene i tilfældig orden. Du skal nu tilføje Trm-endelsen for at udtrykke "til STED". Sæt Trm-endelserne på i overensstemmelse med de regler, du så i introduktionen. Udtal ordet højt og skriv det ned. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/2x/trm/text'] = 'You will be presented with the place names in random order and the task is to add the Trm-ending to say "to PLACE". Add the Trm-ending in accordance with the rules guiding this process. Speak out the word you generated loud and write it. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/2x/abl'] = 'Øvelse 2.3X: Fra STED (produktion)';
 $l10n['eng']['lg1/2x/abl'] = 'Exercise 2.3X: From PLACE (production)';
-$l10n['dan']['lg1/2x/abl/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/2x/abl/text'] = 'Her får du stednavnene i tilfældig orden, men denne gang er det Abl-endlsen, du skal tilføje for at udtrykke "fra STED". Sæt Abl-endelserne på i overensstemmelse med de regler, du så i introduktionen. Udtal ordet højt og skriv det ned. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/2x/abl/text'] = 'You will be presented with the place names in random order and the task is to add the Abl-ending to say "from PLACE". Add the Abl-ending in accordance with the rules guiding this process. Speak out the word you generated loud and write it. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/2x/all'] = 'Øvelse 2.4X: Til og fra STED (produktion)';
 $l10n['eng']['lg1/2x/all'] = 'Exercise 2.4X: To and from PLACE (production)';
-$l10n['dan']['lg1/2x/all/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/2x/all/text'] = 'Du får igen stednavnene i tilfældig orden, men denne gang arbejder vi med såvel Trm-endelsen som Abl-endelsen. Sæt endelserne på i overensstemmelse med de regler, du så i introduktionen. Udtal ordet højt og skriv det ned. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/2x/all/text'] = 'You will be presented with the place names in random order and the task is to add either the Trm-ending to say "to PLACE" or the Abl-ending to say "from PLACE". Add the ending in accordance with the rules guiding this process. Speak out the word you generated loud and write it. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/pdf/3x'] = 'Introduktion til kapitel 3 X-tras';
 $l10n['eng']['lg1/pdf/3x'] = 'Introduction to chapter 3 X-tra';
 
-$l10n['dan']['lg1/3x/listen'] = 'Øvelse 3.1X: Abl, Trm, og Lok for nye egennavne (lydøvelse)';
+$l10n['dan']['lg1/3x/listen'] = 'Øvelse 3.1X: Abl, Trm, og Lok for nye egennavne (lytteøvelse)';
 $l10n['eng']['lg1/3x/listen'] = 'Exercise 3.1X: Abl, Trm, and Lok for new proper nouns (perception)';
+$l10n['dan']['lg1/3x/listen/text'] = 'Du får her de nye egennavne/ proprier med kasus terminalis (Trm), som bl.a. betyder "til" og med kasus ablativ (Abl), som bl.a. betyder "fra" og med kasus lokalis (Lok), som bl.a. betyder "i" og "på". Alt bliver præsenteret i tilfældig orden. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/listen/text'] = 'Like in chapter 2 you will first get the new proper names inflected with the case terminalis ending that among other things means "to" (henceforward Trm) and the case ablative ending that among other things means "from (henceforward Abl) and the case locative ending that among other things means "in/at/on (henceforward Lok) in a randomized order. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/3x/listenc'] = 'Øvelse 3.2X: Kumuleret Abl, Trm, og Lok for egennavne (lydøvelse)';
 $l10n['eng']['lg1/3x/listenc'] = 'Exercise 3.2X: Cumulative Abl, Trm, and Lok for proper nouns (perception)';
+$l10n['dan']['lg1/3x/listenc/text'] = 'Som 3-1X bortset fra, at du kun får egennavnet som lyd og at øvelsen medtager såvel nye stammer som kendte fra øvelse 2.1X i tilfældig orden.</p><p>Øvelsen omfatter således 93 ordformer af proprier i en uendelige løkke. Overvej at sætte en tidsramme på arbejdet med 3-2X før du går i gang, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/listenc/text'] = 'Like 3-1X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 93 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-2X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/trm'] = 'Øvelse 3.3X: Terminalis med de nye proprier (produktion)';
 $l10n['eng']['lg1/3x/trm'] = 'Exercise 3.3X: Trm with the new proper names (production)';
+$l10n['dan']['lg1/3x/trm/text'] = 'Her kommer de nye navne (proprier) i tilfældig rækkefølge. Du skal tilføje Trm-endelsen for at udtrykke "til PERSON/INSTITUTION". {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/trm/text'] = 'You will get the new names in random order and you will add the Trm-ending to say "to PERSON/INSTITUTION". {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/trmc'] = 'Øvelse 3.4X: Kumulativ Trm med proprier (produktion)';
 $l10n['eng']['lg1/3x/trmc'] = 'Exercise 3.4X: Cumulative Trm with the proper names (production)';
+$l10n['dan']['lg1/3x/trmc/text'] = 'Som 3-3X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3-4X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/trmc/text'] = 'Like 3-3X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-4X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/abl'] = 'Øvelse 3.5X: Ablativ med de nye proprier (produktion)';
 $l10n['eng']['lg1/3x/abl'] = 'Exercise 3.5X: Abl with the new proper names (production)';
+$l10n['dan']['lg1/3x/abl/text'] = 'Her kommer de nye proprier i tilfældig orden. Tilføj Abl-endelsen for at udtrykke "fra PERSON/INSTITUTION". {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/abl/text'] = 'You will get the new names in random order and you will add the Abl-ending to say "from PERSON/INSTITUTION". {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/ablc'] = 'Øvelse 3.6X: Kumulativ Abl med proprier (produktion)';
 $l10n['eng']['lg1/3x/ablc'] = 'Exercise 3.6X: Cumulative Abl with the proper names (production)';
+$l10n['dan']['lg1/3x/ablc/text'] = 'Som 3-5X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3-6X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/ablc/text'] = 'Like 3-5X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-6X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/lok'] = 'Exercise 3.7X: Lokalis med de nye proprier (produktion)';
 $l10n['eng']['lg1/3x/lok'] = 'Exercise 3.7X: Lok with the new proper names (production)';
+$l10n['dan']['lg1/3x/lok/text'] = 'Her får du de nye proprier i tilfældig orden. Tilføj lokalis-endelsen for at udtrykke "i/på PERSON/INSTITUTION". {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/lok/text'] = 'You will get the new names in random order and you will add the Lok-ending to say "in/at/on PERSON/INSTITUTION". {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/lokc'] = 'Øvelse 3.8X: Kumulativ Lok med proprierne (produktion)';
 $l10n['eng']['lg1/3x/lokc'] = 'Exercise 3.8X: Cumulative Lok with the proper names (production)';
+$l10n['dan']['lg1/3x/lokc/text'] = 'Som 3-7X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3-8X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/lokc/text'] = 'Like 3-7X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-8X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/verbs'] = 'Øvelse 3.9X: 8 verber uden kontekst (perception)';
 $l10n['eng']['lg1/3x/verbs'] = 'Exercise 3.9X: 8 isolated verbs (perception)';
+$l10n['dan']['lg1/3x/verbs/text'] = 'De 4 verbale stammer i kombination med de 4 endelser skaber 8 valide ordformer. Du får dem her i tilfældig rækkefølge. Forstå hvad de betyder og forstå de processer, der var i spil for at danne ordene. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/verbs/text'] = 'The 4 verbal stems combined with the 4 inflectional endings will generate 8 valid word forms. You get them here in randomized order. Understand what they mean and understand the processes involved in the generation process. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/3x/random'] = 'Øvelse 3.10X: Sætninger (reception)';
 $l10n['eng']['lg1/3x/random'] = 'Exercise 3.10X: Sentences (reception)';
+$l10n['dan']['lg1/3x/random/text'] = 'Her får du sætninger udelukkende med kendte ord og kendt grammatik. Forstå dem og forstå alle de processer, der var i spil for at danne sætningerne. Når du er sikker på at alt er forstået skal du udtale hele sætningen højt. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/random/text'] = 'You will hear sentences containing only known language. Understand what you hear including all the processes that the sentence comes with. Once you are sure you understand everything speak out the whole sentence loudly. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['senttmpl'] = 'Sætningens skabelon';
 $l10n['eng']['senttmpl'] = 'Sentence template';
+$l10n['dan']['lg1/3x/randp'] = 'Øvelse 3.11X: Sætninger (produktion)';
 $l10n['eng']['lg1/3x/randp'] = 'Exercise 3.11X: Sentences (production)';
+$l10n['dan']['lg1/3x/randp/text'] = 'Systemet vil i tilfældig rækkefølge generere en række opgaver. Din opgave er at danne sætninger iflg. 4 skabeloner med de input, du får. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 4 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/pdf/4x'] = 'Introduktion til kapitel 4 X-tras';

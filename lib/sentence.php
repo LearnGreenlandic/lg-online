@@ -345,16 +345,16 @@ function _sent_rand_helper($chap) {
 			],
 		];
 	if ($chap == '4x') {
-		$ps = []; // TODO: Remove for production!
+		//$ps = []; // TODO: Remove for production!
 		$ps[] = [
 			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT),
 			preg_grep('@Sem/(Mask|Fem|inst)@', preg_grep('@Sem/Hum.*Abs@', $all), PREG_GREP_INVERT),
 			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+(Lok)@', $all)),
-			preg_grep('@Sem/(food|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
+			preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
 			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+(Lok)@', $all)),
-			preg_grep('@Sem/(food|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
+			preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
 			];
 	}
 
