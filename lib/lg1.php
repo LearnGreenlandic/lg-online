@@ -102,6 +102,11 @@ function lg1($state) {
 		<li class="mt-4"><a href="{t:prefix}/lg1/pdf/5x.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/5x}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/nu/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/5x/nu}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/nqar/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/5x/nqar}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/qa-aap/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/qa-aap}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/qa-naamik/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/qa-naamik}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/qa-ssa/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/qa-ssa}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/qa-aqa/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/qa-aqa}</a></li>
+		<li><a href="{t:prefix}/lg1/5x/randp/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/randp}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6">
