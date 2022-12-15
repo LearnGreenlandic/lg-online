@@ -208,6 +208,21 @@ $l10n['eng']['lg1/3x/random/text'] = 'You will hear sentences containing only kn
 
 $l10n['dan']['senttmpl'] = 'Sætningens skabelon';
 $l10n['eng']['senttmpl'] = 'Sentence template';
+$l10n['dan']['tmpl/fname'] = 'Fornavn';
+$l10n['eng']['tmpl/fname'] = 'First name';
+$l10n['dan']['tmpl/subject'] = 'Subjekt';
+$l10n['eng']['tmpl/subject'] = 'Subject';
+$l10n['dan']['tmpl/object'] = 'Objekt';
+$l10n['eng']['tmpl/object'] = 'Object';
+$l10n['dan']['tmpl/advlr'] = 'ADVL>';
+$l10n['eng']['tmpl/advlr'] = 'ADVL>';
+$l10n['dan']['tmpl/pred'] = 'PRED';
+$l10n['eng']['tmpl/pred'] = 'PRED';
+$l10n['dan']['tmpl/verb'] = 'Verbum';
+$l10n['eng']['tmpl/verb'] = 'Verb';
+$l10n['dan']['tmpl/adled'] = 'Adled til inkorporeret objekt';
+$l10n['eng']['tmpl/adled'] = '!TODO!';
+
 $l10n['dan']['lg1/3x/randp'] = 'Øvelse 3.11X: Sætninger (produktion)';
 $l10n['eng']['lg1/3x/randp'] = 'Exercise 3.11X: Sentences (production)';
 $l10n['dan']['lg1/3x/randp/text'] = 'Systemet vil i tilfældig rækkefølge generere en række opgaver. Din opgave er at danne sætninger iflg. 4 skabeloner med de input, du får. {t:TXT_AUDIO_CHECK_REVEAL}.';
@@ -250,20 +265,34 @@ $l10n['eng']['lg1/5x/nqar'] = 'Exercise 5.2X: Nouns with N-QAR and verbal stem s
 $l10n['eng']['lg1/5x/nqar/text'] = 'New nouns with N-QAR and new verbal stem, <i>suli-</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/5x/qa-aap'] = 'Øvelse 5.3X: TODO (produktion)';
-$l10n['eng']['lg1/5x/qa-aap'] = 'Exercise 5.3X: TODO (production)';
-$l10n['eng']['lg1/5x/qa-aap/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/5x/qa-aap'] = 'Exercise 5.3X: Answering interrogatives affirmatively (production)';
+$l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endings in 2. person singular with and without object as in "<i>Per takuiuk? (Have you seen Per?)</i>" and "<i>Qanga tikippit? (When did you arrive?)</i>". In exercise 5 you will be asked whether you…. You will respond affirmatively to each question with "<i>Aap (Yes). ...</i>"</p>
+<p>E.g.<br>
+<i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Aap, Nuummi illoqarusuppunga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/qa-naamik'] = 'Øvelse 5.4X: TODO (produktion)';
-$l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: TODO (production)';
-$l10n['eng']['lg1/5x/qa-naamik/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: Answering interrogatives negatively (production)';
+$l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), ...</i>"</p>
+<p>E.g.<br>
+<i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/qa-ssa'] = 'Øvelse 5.5X: TODO (produktion)';
-$l10n['eng']['lg1/5x/qa-ssa'] = 'Exercise 5.5X: TODO (production)';
-$l10n['eng']['lg1/5x/qa-ssa/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/5x/qa-ssa'] = 'Exercise 5.5X: Sentences with -SSA 1 (production)';
+$l10n['eng']['lg1/5x/qa-ssa/text'] = 'Understand sentences with -SSA. Remember that -SSA is mandatory with all verbal content taking place later than now. Your input will be questions like "<i>Yesterday, did you ..?</i>". Understand what you hear and give an answer like "<i>No, I will .. the day after tomorrow.</i>". Remember <i>ippassaq = yesterday</i> and <i>aqaguagu = day after tomorrow</i>.</p>
+<p>E.g.<br>
+<i>Ippassaq Nuummi whiskytorpit? Naamik, aqaguagu Nuummi whiskytussaanga.</i><br>
+<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, aqaguagu Egede Qaqortumi naapissavara.</i></p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/qa-aqa'] = 'Øvelse 5.6X: TODO (produktion)';
-$l10n['eng']['lg1/5x/qa-aqa'] = 'Exercise 5.6X: TODO (production)';
-$l10n['eng']['lg1/5x/qa-aqa/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/5x/qa-aqa'] = 'Exercise 5.6X: Sentences with -SSA 2 (production)';
+$l10n['eng']['lg1/5x/qa-aqa/text'] = 'Understand the questions and negate them followed by "<i>.. but day after tomorrow I will ..</i>"</p>
+<p>E.g.<br>
+<i>Ippassaq Nuummi whiskytorpit? Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i><br>
+<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i></p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['eng']['lg1/5x/randp'] = 'Exercise 5.7X: Sentences (production)';
 $l10n['eng']['lg1/5x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';

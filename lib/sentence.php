@@ -8,6 +8,31 @@ $GLOBALS['-ds'] = [
 	'3x' => ['abl', 'trm', 'lok'],
 	];
 
+function pfx_fname(string $str): array {
+	return ['fname', $str];
+}
+function pfx_subj(string $str): array {
+	return ['subject', $str];
+}
+function pfx_obj(string $str): array {
+	return ['object', $str];
+}
+function pfx_advlr(string $str): array {
+	return ['advlr', $str];
+}
+function pfx_pred(string $str): array {
+	return ['pred', $str];
+}
+function pfx_verb(string $str): array {
+	return ['verb', $str];
+}
+function pfx_adled(string $str): array {
+	return ['adled', $str];
+}
+function pfx_dummy(string $str): array {
+	return ['dummy', $str];
+}
+
 function load_corpus($chap='2x', $task='random') {
 	$which = 'all';
 	if ($task != 'random' && file_exists('d/lg1/sentence/'.$chap.'/'.$task.'.txt')) {
@@ -24,7 +49,7 @@ function load_corpus($chap='2x', $task='random') {
 function sentence_listen($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/listen/text}</p>
 </div>
@@ -51,7 +76,7 @@ function sentence_listen($state, $chap='2x') {
 function sentence_listen_v($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/listenv/text}</p>
 </div>
@@ -76,7 +101,7 @@ function sentence_listen_v($state, $chap='2x') {
 function sentence_listen_g($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/listeng/text}</p>
 </div>
@@ -101,7 +126,7 @@ function sentence_listen_g($state, $chap='2x') {
 function sentence_listen_c($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/listenc/text}</p>
 </div>
@@ -141,7 +166,7 @@ function sentence_listen_c($state, $chap='2x') {
 function sentence_case($state, $chap='2x', $case='trm') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/<?=$case;?>/text}</p>
 </div>
@@ -180,7 +205,7 @@ function sentence_case($state, $chap='2x', $case='trm') {
 function sentence_prod_v($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/prod/text}</p>
 </div>
@@ -214,7 +239,7 @@ function sentence_prod_v($state, $chap='2x') {
 function sentence_prod_g($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/prodg/text}</p>
 </div>
@@ -248,7 +273,7 @@ function sentence_prod_g($state, $chap='2x') {
 function sentence_case_c($state, $chap='2x', $case='trm') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/<?=$case;?>c/text}</p>
 </div>
@@ -302,7 +327,7 @@ function sentence_case_c($state, $chap='2x', $case='trm') {
 function sentence_verbs($state, $chap='3x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/verbs/text}</p>
 </div>
@@ -340,11 +365,11 @@ function _sent_rand_helper($chap, $task='random') {
 	if ($chap == '5x' && $task == 'nu') {
 		$all = array_merge($all, load_corpus($chap, 'nouns'));
 		$ps[] = [
-			preg_grep('@Sem/Fem@', preg_grep('@\+(Abs)@', $all)),
-			preg_grep('@Sem/H[^+]*\+@', preg_grep('@Sem/be_copula\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/Fem@', preg_grep('@\+(Abs)@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/H[^+]*\+@', preg_grep('@Sem/be_copula\+@', preg_grep('@\+3Sg(\+|\s)@', $all)))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/H[^+]*\+@', preg_grep('@Sem/be_copula\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/H[^+]*\+@', preg_grep('@Sem/be_copula\+@', preg_grep('@\+1Sg(\+|\s)@', $all)))),
 			];
 		return $ps;
 	}
@@ -352,35 +377,35 @@ function _sent_rand_helper($chap, $task='random') {
 	if ($chap == '5x' && $task == 'nqar') {
 		$all = array_merge($all, load_corpus($chap, 'nouns'));
 		$ps[] = [
-			preg_grep('@Sem/inst@', preg_grep('@Sem/Hum\+.*Ins@', $all), PREG_GREP_INVERT),
-			preg_grep('@ateq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/inst@', preg_grep('@Sem/Hum\+.*Ins@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@ateq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', $all)))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/Geo@', preg_grep('@\+Lok@', $all)),
-			preg_grep('@Sem/lodge@', preg_grep('@\+1Sg(\+|\s)@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/Geo@', preg_grep('@\+Lok@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/lodge@', preg_grep('@\+1Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
-			preg_grep('@Sem/Geo\+.*Lok@', $all),
-			preg_grep('@Sem/lodge@', preg_grep('@\+3Sg(\+|\s)@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/Geo\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/lodge@', preg_grep('@\+3Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
-			preg_grep('@Sem/inst\+.*Lok@', $all),
-			preg_grep('@suli\+@', preg_grep('@\+3Sg(\+|\s)@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/inst\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@suli\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/inst\+.*Lok@', $all),
-			preg_grep('@suli\+@', preg_grep('@\+1Sg(\+|\s)@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/inst\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@suli\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/Mask\+.*Abs@', $all),
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@nuliaq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', preg_grep('@\+3Sg(\+|\s)@', $all)))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/Mask\+.*Abs@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@nuliaq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', preg_grep('@\+3Sg(\+|\s)@', $all))))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@nuliaq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', preg_grep('@\+1Sg(\+|\s)@', $all)))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@nuliaq\+@', preg_grep('@\+QAR\+@', preg_grep('@\+V(\+|\s)@', preg_grep('@\+1Sg(\+|\s)@', $all))))),
 			];
 		return $ps;
 	}
@@ -447,35 +472,35 @@ function _sent_rand_helper($chap, $task='random') {
 
 	if ($chap == '4x' || $chap == '5x') {
 		$ps[] = [
-			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(Mask|Fem|inst)@', preg_grep('@Sem/Hum.*Abs@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
-			preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
+			array_map('\LGO\pfx_fname', preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_subj', preg_grep('@Sem/(Mask|Fem|inst)@', preg_grep('@Sem/Hum.*Abs@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_advlr', preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all))),
+			array_map('\LGO\pfx_verb', preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+3Sg(\+|\s)@', $all)))),
 			];
 		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
-			preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
+			array_map('\LGO\pfx_advlr', preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all))),
+			array_map('\LGO\pfx_verb', preg_grep('@Sem/(food-h|drink)\+@', preg_grep('@Sem/(fn:drink|eat)\+@', preg_grep('@\+1Sg(\+|\s)@', $all)))),
 			];
 	}
 
 	$ps[] = [
-		preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
-		preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all)),
-		preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+3Sg(\+|\s)@', $all)),
+		array_map('\LGO\pfx_subj', preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT)),
+		array_map('\LGO\pfx_advlr', preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all))),
+		array_map('\LGO\pfx_pred', preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+3Sg(\+|\s)@', $all))),
 		];
 	$ps[] = [
-		preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all)),
-		preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+1Sg(\+|\s)@', $all)),
+		array_map('\LGO\pfx_advlr', preg_grep('@Sem/Geo@', preg_grep('@\+(Trm|Abl)@', $all))),
+		array_map('\LGO\pfx_pred', preg_grep('@Sem/(run|reach)\+@', preg_grep('@\+1Sg(\+|\s)@', $all))),
 		];
 	$ps[] = [
-		preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
-		preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
-		preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+3SgO@', $all)),
+		array_map('\LGO\pfx_obj', preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT)),
+		array_map('\LGO\pfx_advlr', preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all))),
+		array_map('\LGO\pfx_pred', preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+3SgO@', $all))),
 		];
 	$ps[] = [
-		preg_grep('@\+Pron\+.*Abs@', $all),
-		preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all)),
-		preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+2PlO@', $all)),
+		array_map('\LGO\pfx_obj', preg_grep('@\+Pron\+.*Abs@', $all)),
+		array_map('\LGO\pfx_advlr', preg_grep('@Sem/(Geo|inst)@', preg_grep('@\+Lok@', $all))),
+		array_map('\LGO\pfx_pred', preg_grep('@Sem/(encounter|teach)\+@', preg_grep('@\+1Sg\+2PlO@', $all))),
 		];
 
 	return $ps;
@@ -484,7 +509,7 @@ function _sent_rand_helper($chap, $task='random') {
 function sentence_random_qa($state, $chap='5x', $task='random') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/<?=$task;?>/text}</p>
 </div>
@@ -511,7 +536,7 @@ function sentence_random_qa($state, $chap='5x', $task='random') {
 			shuffle($p[$k]);
 		}
 		foreach (cartesian_product($p) as $c) {
-			$outs[] = implode("\n", $c);
+			$outs[] = $c;
 			if (count($outs) >= 500) {
 				break;
 			}
@@ -525,7 +550,6 @@ function sentence_random_qa($state, $chap='5x', $task='random') {
 	foreach ($sents as $sent) {
 		$qst = [];
 		$ans = [];
-		$sent = explode("\n", $sent);
 
 		if ($task == 'qa-aap') {
 			$ans[] = 'Aap,';
@@ -605,7 +629,7 @@ function sentence_random_qa($state, $chap='5x', $task='random') {
 function sentence_random_listen($state, $chap='3x', $task='random') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/<?=$task;?>/text}</p>
 </div>
@@ -623,7 +647,7 @@ function sentence_random_listen($state, $chap='3x', $task='random') {
 		$outs = [];
 		foreach ($p as $k => $vs) {
 			foreach ($vs as $ka => $va) {
-				$p[$k][$ka] = explode("\t", $va)[1];
+				$p[$k][$ka] = explode("\t", $va[1])[1];
 			}
 			shuffle($p[$k]);
 		}
@@ -660,7 +684,7 @@ function sentence_random_listen($state, $chap='3x', $task='random') {
 function sentence_random_write($state, $chap='3x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/randp/text}</p>
 </div>
@@ -677,10 +701,10 @@ function sentence_random_write($state, $chap='3x') {
 	foreach ($ps as $p) {
 		$outs = [];
 		foreach ($p as $k => $vs) {
-			foreach ($vs as $ka => $va) {
-				$va = explode("\t", $va);
+			foreach ($vs as $ka => $vat) {
+				$va = explode("\t", $vat[1]);
 				$bf = explode('+', $va[0], 2);
-				$p[$k][$ka] = [$bf[0], $bf[1], $va[1]];
+				$p[$k][$ka] = [$vat[0], [$bf[0], $bf[1], $va[1]]];
 			}
 			shuffle($p[$k]);
 		}
@@ -699,11 +723,12 @@ function sentence_random_write($state, $chap='3x') {
 	foreach ($sents as $sent) {
 		$words = [];
 		$lis = [];
-		foreach ($sent as $s) {
+		foreach ($sent as $ts) {
+			$s = $ts[1];
 			$s[1] = preg_replace('~\+[^/+]+/[^/+]+~', '', $s[1]);
-			preg_match('~\+((?:1Sg|3Sg|Lok|Abl|Trm|Abs|QAR|TUR).*)$~', $s[1], $m);
+			preg_match('~\+((?:1Sg|3Sg|Lok|Abl|Trm|Abs|[A-Z]+).*)$~', $s[1], $m);
 			$m[1] = str_replace('+', ' + ', $m[1]);
-			$li = "{$s[0]} + {$m[1]}";
+			$li = "{t:tmpl/{$ts[0]}}: {$s[0]} + {$m[1]}";
 			$lis[] = $li;
 			$words[] = $s[2];
 		}
@@ -730,7 +755,7 @@ function sentence_random_write($state, $chap='3x') {
 function sentence_all($state, $chap='2x') {
 ?>
 <div class="task task-text task-audio container-fluid sentence">
-<div class="row">
+<div class="row mb-3">
 <div class="col">
 <p>{t:lg1/<?=$chap;?>/all/text}</p>
 </div>
