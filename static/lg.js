@@ -259,6 +259,7 @@ $(function() {
 		$('#shuffled').children().first().show();
 
 		$('#btnPrev').click(function() {
+			$('.hint').hide();
 			let c = $('#shuffled').children(':visible');
 			c.hide();
 			let nc = null;
@@ -272,6 +273,7 @@ $(function() {
 		});
 
 		$('#btnNext').click(function() {
+			$('.hint').hide();
 			let c = $('#shuffled').children(':visible');
 			c.hide();
 			let nc = null;
@@ -284,7 +286,7 @@ $(function() {
 			if ($(this).hasClass('playAfter')) {
 				nc.find('.btn-primary').click();
 			}
-			nc.find('input').val('').attr('placeholder', '').removeClass('is-invalid').focus();
+			nc.find('input').val('').attr('placeholder', '').removeClass('is-invalid').first().focus();
 		});
 	}
 

@@ -15,6 +15,20 @@ function intro($state) {
 	\LGO\footer($state);
 }
 
+function prep($state) {
+	\LGO\header($state, 'lg2', 'prep');
+?>
+<div class="container-fluid">
+<div class="row">
+<div class="col">
+{t:lg2/prep/text}
+</div>
+</div>
+</div>
+<?php
+	\LGO\footer($state);
+}
+
 function outtro($state) {
 	\LGO\header($state, 'lg2', 'outtro');
 ?>

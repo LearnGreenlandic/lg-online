@@ -144,6 +144,7 @@ function init() {
 	//require_once ABSPATH.WPINC.'/query.php';
 	require_once ABSPATH.WPINC.'/user.php';
 	require_once ABSPATH.WPINC.'/meta.php';
+	require_once ABSPATH.WPINC.'/l10n.php';
 
 	wp_plugin_directory_constants();
 	wp_cookie_constants();
@@ -281,9 +282,9 @@ function header($state, $lg='', $path='') {
 	<!-- Bootstrap theme by https://bootswatch.com/ -->
 	<link rel="stylesheet" href="{t:prefix}/static/bootstrap.<?=$theme;?>.css">
 
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/js/bootstrap.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
 	<link href="{t:prefix}/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">

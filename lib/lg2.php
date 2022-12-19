@@ -18,6 +18,29 @@ function lg2($state) {
 	<a href="{t:prefix}/lg2/1.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/1.1/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/1.1/" class="text-warning">{t:lg2/1.1}</a></h5>
 	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/pdf/1.1.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/pdf/1}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/prep/"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/prep}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.1/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.1/t}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.1/a/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg2/structure/0.1/a}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.2/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.2/t}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.2/a/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg2/structure/0.2/a}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.3/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.3/t}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.3/a/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg2/structure/0.3/a}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.4/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.4/t}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.4/a/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg2/structure/0.4/a}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.5/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.5/t}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.5/a/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg2/structure/0.5/a}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.6/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.6}</a></li>
+		<li><a href="{t:prefix}/lg2/structure/0.7/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.7}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/0x/deny/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/deny}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/summer/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/summer}</a></li>
+		<!-- <li><a href="{t:prefix}/lg2/0x/i/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/i}</a></li> -->
+
+		<li><br></li>
 		<li><a href="{t:prefix}/lg2/fsts/1.1.1/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.1}</a></li>
 		<li><a href="{t:prefix}/lg2/fsts/1.1.2/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.2}</a></li>
 		<li><a href="{t:prefix}/lg2/fsts/1.1.3/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.3}</a></li>

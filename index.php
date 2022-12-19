@@ -128,6 +128,10 @@ else if (preg_match('~^lg2/intro/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/intro.php';
 	\LGO\intro($state);
 }
+else if (preg_match('~^lg2/prep/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/intro.php';
+	\LGO\prep($state);
+}
 else if (preg_match('~^lg2/fsts/([1-8][.][12][.][123])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/updown.php';
 	\LGO\updown_lg2($state, $m[1]);
@@ -151,6 +155,14 @@ else if (preg_match('~^lg2/structure/([\d.]+)/t/$~', $state['path'], $m)) {
 else if (preg_match('~^lg2/structure/([\d.]+)/a/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/structure.php';
 	\LGO\structure_audio($state, $m[1]);
+}
+else if (preg_match('~^lg2/(\dx)/([-a-z]+)/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/sentence.php';
+	\LGO\sentence_lg2($state, $m[1], $m[2]);
+}
+else if (preg_match('~^lg2/structure/([\d.]+)/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/structure.php';
+	\LGO\structure_lg2($state, $m[1]);
 }
 else if (preg_match('~^lg2/outtro/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/intro.php';

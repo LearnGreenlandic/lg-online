@@ -163,8 +163,8 @@ $l10n['eng']['lg1/3x/listen/text'] = 'Like in chapter 2 you will first get the n
 
 $l10n['dan']['lg1/3x/listenc'] = 'Øvelse 3.2X: Kumuleret Abl, Trm, og Lok for egennavne (lydøvelse)';
 $l10n['eng']['lg1/3x/listenc'] = 'Exercise 3.2X: Cumulative Abl, Trm, and Lok for proper nouns (perception)';
-$l10n['dan']['lg1/3x/listenc/text'] = 'Som 3-1X bortset fra, at du kun får egennavnet som lyd og at øvelsen medtager såvel nye stammer som kendte fra øvelse 2.1X i tilfældig orden.</p><p>Øvelsen omfatter således 93 ordformer af proprier i en uendelige løkke. Overvej at sætte en tidsramme på arbejdet med 3-2X før du går i gang, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/3x/listenc/text'] = 'Like 3-1X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 93 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-2X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/3x/listenc/text'] = 'Som 3.1X bortset fra, at du kun får egennavnet som lyd og at øvelsen medtager såvel nye stammer som kendte fra øvelse 2.1X i tilfældig orden.</p><p>Øvelsen omfatter således 93 ordformer af proprier i en uendelige løkke. Overvej at sætte en tidsramme på arbejdet med 3.2X før du går i gang, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/3x/listenc/text'] = 'Like 3.1X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 93 fullforms of proper nouns in an endless loop. Consider timing your activity with 3.2X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/3x/trm'] = 'Øvelse 3.3X: Terminalis med de nye proprier (produktion)';
 $l10n['eng']['lg1/3x/trm'] = 'Exercise 3.3X: Trm with the new proper names (production)';
@@ -173,8 +173,8 @@ $l10n['eng']['lg1/3x/trm/text'] = 'You will get the new names in random order an
 
 $l10n['dan']['lg1/3x/trmc'] = 'Øvelse 3.4X: Kumulativ Trm med proprier (produktion)';
 $l10n['eng']['lg1/3x/trmc'] = 'Exercise 3.4X: Cumulative Trm with the proper names (production)';
-$l10n['dan']['lg1/3x/trmc/text'] = 'Som 3-3X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3-4X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/3x/trmc/text'] = 'Like 3-3X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-4X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/3x/trmc/text'] = 'Som 3.3X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3.4X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/3x/trmc/text'] = 'Like 3.3X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3.4X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/3x/abl'] = 'Øvelse 3.5X: Ablativ med de nye proprier (produktion)';
 $l10n['eng']['lg1/3x/abl'] = 'Exercise 3.5X: Abl with the new proper names (production)';
@@ -183,8 +183,8 @@ $l10n['eng']['lg1/3x/abl/text'] = 'You will get the new names in random order an
 
 $l10n['dan']['lg1/3x/ablc'] = 'Øvelse 3.6X: Kumulativ Abl med proprier (produktion)';
 $l10n['eng']['lg1/3x/ablc'] = 'Exercise 3.6X: Cumulative Abl with the proper names (production)';
-$l10n['dan']['lg1/3x/ablc/text'] = 'Som 3-5X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3-6X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/3x/ablc/text'] = 'Like 3-5X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-6X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/3x/ablc/text'] = 'Som 3.5X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3.6X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/3x/ablc/text'] = 'Like 3.5X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3.6X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/3x/lok'] = 'Exercise 3.7X: Lokalis med de nye proprier (produktion)';
 $l10n['eng']['lg1/3x/lok'] = 'Exercise 3.7X: Lok with the new proper names (production)';
@@ -193,8 +193,8 @@ $l10n['eng']['lg1/3x/lok/text'] = 'You will get the new names in random order an
 
 $l10n['dan']['lg1/3x/lokc'] = 'Øvelse 3.8X: Kumulativ Lok med proprierne (produktion)';
 $l10n['eng']['lg1/3x/lokc'] = 'Exercise 3.8X: Cumulative Lok with the proper names (production)';
-$l10n['dan']['lg1/3x/lokc/text'] = 'Som 3-7X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3-8X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/3x/lokc/text'] = 'Like 3-7X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3-8X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/3x/lokc/text'] = 'Som 3.7X bortset fra at du nu ikke får input med tekst men kun som lyd og at øvelserne nu både omfatter nye proprier og de kendte fra øvelse 2.1X.</p><p>Øvelsen dækker således 32 fuldformer af proprier i en uendelig løkke. Overvej at sætte en tidsbegrænsning på dit arbejde med 3.8X før du begynder, fx et kvarter. Skulle du mene, at du behøver yderligere træning kan du bare starte igen og få en ny tilfældig rækkefølge.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/3x/lokc/text'] = 'Like 3.7X except that you only get the proper noun in question as sound without the input stem as text as in the exercise above and that the exercise will include the new stems as well as the ones from exercise 2.1X in randomized order.</p><p>The exercise thus covers 32 fullforms of proper nouns in an endless loop. Consider timing your activity with 3.8X to a fixed duration like a quarter of an hour before launching it. If you feel that more practice is needed you can always return and run it again. Whenever you return you will experience a new randomization.</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/3x/verbs'] = 'Øvelse 3.9X: 8 verber uden kontekst (perception)';
 $l10n['eng']['lg1/3x/verbs'] = 'Exercise 3.9X: 8 isolated verbs (perception)';
@@ -513,6 +513,111 @@ for ($i=1 ; $i<9 ; ++$i) {
 	}
 }
 
+$l10n['dan']['lg2/prep'] = 'Fortræning til DVD2';
+$l10n['eng']['lg2/prep'] = 'Preparations for DVD Module 2';
+$l10n['dan']['lg2/prep/text'] = '<p>Her er en række øvelser, som jeg kraftigt vil anbefale Jer at gennemarbejde grundigt FØR I for alvor kaster Jer ud i modul 2. Erfaringen har nemlig vist, at lektions 1\'s cocktail af en ny og ikke helt let verbalform og en lidt kompliceret lydregel, man ikke lige med det samme får under huden, er en lidt for stor mundfuld for de fleste.</p>
+
+<p>Derfor får I hermed en lille ekstra lektion uden nye gloser men med tre vigtige tilhæng, der alle indeholder den omtalte lydregel. Jeg håber (og tror), at lektion 1 vil vise sig langt mere håndterlig, når I møder den med lydreglen i bagagen allerede.</p>
+
+<p>Gør således:
+<ul>
+ 	<li>Aflyt forelæsning 1.1 og brug bagefter pdf-filen "Forelæsning 1.1 dias" til at indlære de nye gloser og endelser. Koncentrer dig om indlæring af de nye verber, tilhængene Vb+TAR og Vb+GALUAR samt endelserne Vb+{vaaŋŋa}, Vb+{vaat}, Vb+{vit}, Vb+{viuk} og Vb+{vugut}. Øvrige gloser, tilhæng og endelser skal du nok få på plads, når du er færdig med fortræningen og for alvor går i gang med lektion 1</li>
+ 	<li>Indlær den nye lydregel. Den regulerer den variable konsonant, der forekommer som første bogstav i mange højfrekvente tilhæng og endelser. Den skrives ofte som et stort T. Reglen siger, at T → /s/ efter en vokal, men /t/ efter en konsonant. Bemærk, at det er samme princip som modusmorfemerne {vu}, {va} og {vi}, der kun har v-formerne efter vokal, men ellers har formerne {pu}, {pa} og {pi}, som du lærte det i modul 1.</li>
+ 	<li>Lær et nyt tilhæng: Vb+TUQ betyder "den, som Vb-er" som i <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "ham/ hende, der studerer" (dvs. "en elev") og i <i>suli</i>+TUQ → <i>sulisoq</i> "ham/ hende, der arbejder" (dvs. "en arbejder")</li>
+ 	<li>Lær et andet nyt tilhæng: Vb+TARIAQAR betyder "være nødt til at Vb" som i <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "han er nødt til at studere" og i <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "han er nødt til at arbejde".</li>
+ 	<li>Gennemarbejd øvelserne 0.1 - 0.3 til du kan klare dem både som tekst og som lyd uden at tage bogstaverne til hjælp.</li>
+ 	<li>Gennemarbejd derefter øvelserne 0.4 - 0.5 på samme måde og forvis dig hver gang om, at du virkeligt forstår hvad svarene betyder.</li>
+ 	<li>Lær endelig et tredje meget frekvent tilhæng, nemlig Vb-TAQ, der skaber et passivt navneord af transitive verber. <i>asa-</i> betyder "at elske ham/hende" og <i>allap-</i> "at skrive det". Så betyder {asa-TAQ} → <i>asasaq</i> "den elskede" og {allap-TAQ} → <i>allataq</i> tilsvarende "det skrevne". Vb-TAQ er dog lidt mere kompliceret end andre tilhæng på T, for selv om tilhænget grundliggende følger de normale T-regler, så gælder det helt specielt for dette tilhæng, at det har formen -<i>gaq</i> efter stammer på /r/ som i {ilinniartip+TAR-TAQ} → <i>ilinniartittagaq </i> "en, man plejer at undervise" og {ilinniartip+GALUAR-TAQ} → <i>ilinniartikkaluagaq </i> "en, man ellers har undervist"</li>
+ 	<li>Gennemarbejd derefter øvelserne 0.6 - 0.7 på samme måde og forvis dig igen hver gang om, at du virkeligt forstår både hvad prompten og dine egne svar betyder. Hvis du er i tvivl om den korrekte forståelse, skal du tage det op med din gruppe og evt. med din lærer.</li>
+</ul></p>';
+$l10n['eng']['lg2/prep/text'] = '<p>This series of exercises should be thoroughly worked through BEFORE you embark on Module 2. It has namely proven that the cocktail of a new verbal mood plus a rather complicated sound rule offered to you in lesson 1 has been quite a mouthful for many of you.</p>
+
+<p>Therefore you now get an extra lesson without new words but with three important morphemes all of which contain the said sound rule. I am confident that lesson 1 will be much more manageable when you face it with the sound rule already acquired.</p>
+
+<p>Do so:
+<ul>
+ 	<li>Listen to presentation 1.1 and work through the pdf file "Chapter 1 as pdf" to learn the new words and morphemes. Focus your learning on verbs, the derivational morphemes Vb+TAR and Vb+GALUAR as well as the endings Vb+{vaaŋŋa}, Vb+{vaat}, Vb+{vit}, Vb+{viuk} and Vb+{vugut}. All other new material you will get in once you are done with this preparatory chapter and get going with lesson 1.</li>
+ 	<li>Learn the new sound rule. It controls the variable consonant one finds in a number of very frequent derivational morphemes and endings. It is most often written as a capital T. The rule states that T → /s/ after a vowel but /t/ after a consonant. Please, observe that this is exactly the same principle as you saw in the mood endings {vu}, {va} and {vi} that keep their v-shapes after vowels but after consonants turn {pu}, {pa} and {pi} as you learned it in module 1.</li>
+ 	<li>Learn a new derivational morpheme: Vb+TUQ means "the one who Vb" as in <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "the one who studies" (that is "a student") and in <i>suli</i>+TUQ → <i>sulisoq</i> "the one who works" (that is "a worker")</li>
+ 	<li>Learn another new derivational morpheme: Vb+TARIAQAR means "have to Vb/ must Vb" as in <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "he has to study" and in <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "he must work".</li>
+ 	<li>Work through exercises 0.1 - 0.3 till you can handle them both as text as well as as sound without support in the written text.</li>
+ 	<li>Work through exercises 0.4 - 0.5 in the same way and make sure that you in depth understand all the answers.</li>
+ 	<li>Finally, you will learn a third very frequent derivational morpheme namely Vb-TAQ which creates passive nouns of transitive verbs. <i>asa-</i> means "to love him/her" and <i>allap-</i> "to write it". Then {asa-TAQ} → <i>asasaq</i> means "the beloved one" and {allap-TAQ} → <i>allataq</i> by the same principle "that what has been written". Vb-TAQ is however a bit more complicated than other derivational morphemes since whereas T basically adhere to the normal T-rules there is a speciality exclusively for this morpheme that it will take the alternative shape -<i>gaq</i> after stems in /r/ as in {ilinniartip+TAR-TAQ} → <i>ilinniartittagaq </i> "one who is normally taught" and {ilinniartip+GALUAR-TAQ} → <i>ilinniartikkaluagaq </i> "somebody who is taught (but ..)"</li>
+ 	<li>Finally, work through exercises 0.6 - 0.7 the same way and make sure that you really understand the meaning of both the prompt and your own answers. If you are the least in doubt about how to interpret the word do not hesitate to bring it up with your work group and with your teacher if you have one.</li>
+</ul></p>';
+
+$l10n['dan']['lg2/structure/0.1/t'] = 'Øvelse 0.1: Brug Vb+TUQ (tekst)';
+$l10n['eng']['lg2/structure/0.1/t'] = 'Exercise 0.1: Use Vb+TUQ (text)';
+$l10n['dan']['lg2/structure/0.1/a'] = 'Øvelse 0.1: Brug Vb+TUQ (audio)';
+$l10n['eng']['lg2/structure/0.1/a'] = 'Exercise 0.1: Use Vb+TUQ (audio)';
+$l10n['dan']['lg2/structure/0.1/text'] = 'Brug Vb+TUQ til at lave ord, der betyder "<i>den som .. </i>".';
+$l10n['eng']['lg2/structure/0.1/text'] = 'Use Vb+TUQ to form words mearning "<i>the one who .. </i>".';
+
+$l10n['dan']['lg2/structure/0.2/t'] = 'Øvelse 0.2: Brug Vb+TARIAQAR (tekst)';
+$l10n['eng']['lg2/structure/0.2/t'] = 'Exercise 0.2: Use Vb+TARIAQAR (text)';
+$l10n['dan']['lg2/structure/0.2/a'] = 'Øvelse 0.2: Brug Vb+TARIAQAR (audio)';
+$l10n['eng']['lg2/structure/0.2/a'] = 'Exercise 0.2: Use Vb+TARIAQAR (audio)';
+$l10n['dan']['lg2/structure/0.2/text'] = 'Brug Vb+TARIAQAR til at lave verber, der betyder "<i>nogen er nødt til at Vb</i>".';
+$l10n['eng']['lg2/structure/0.2/text'] = 'Use Vb+TARIAQAR to form verbs meaning "<i>somebody must Vb</i>".';
+
+$l10n['dan']['lg2/structure/0.3/t'] = 'Øvelse 0.3: Brug Vb+TAR (tekst)';
+$l10n['eng']['lg2/structure/0.3/t'] = 'Exercise 0.3: Use Vb+TAR (text)';
+$l10n['dan']['lg2/structure/0.3/a'] = 'Øvelse 0.3: Brug Vb+TAR (audio)';
+$l10n['eng']['lg2/structure/0.3/a'] = 'Exercise 0.3: Use Vb+TAR (audio)';
+$l10n['dan']['lg2/structure/0.3/text'] = '<i>ullumi</i> betyder "i dag" og <i>aasakkut</i> betyder "om sommeren". Her er en række sætninger, der betyder "Nogen Vb-er i dag". Brug Vb+TAR og omskriv sætningen til at betyde "Nogen Vb-er om sommeren".';
+$l10n['eng']['lg2/structure/0.3/text'] = '<i>ullumi</i> means "today" and <i>aasakkut</i> means "at summertime (repeatedly)". Here are some sentences meaning "Somebody Vb-er today". Use <i>aasakkut</i> plus Vb+TAR and form sentences meaning "Somebody Vb during summers".';
+
+$l10n['dan']['lg2/structure/0.4/t'] = 'Øvelse 0.4: Brug -SSA (tekst)';
+$l10n['eng']['lg2/structure/0.4/t'] = 'Exercise 0.4: Use -SSA (text)';
+$l10n['dan']['lg2/structure/0.4/a'] = 'Øvelse 0.4: Brug -SSA (audio)';
+$l10n['eng']['lg2/structure/0.4/a'] = 'Exercise 0.4: Use -SSA (audio)';
+$l10n['dan']['lg2/structure/0.4/text'] = 'Næsten som 0.3, men nu medtager vi også -SSA. Promptsætningerne betyder stadig "Nogen Vb-er i dag", men nu skal du omskrive dem til at betyde "Fra nu af skal nogen Vb-e om sommeren". <i>massakkornit</i> betyder "fra nu af".';
+$l10n['eng']['lg2/structure/0.4/text'] = 'Almost like 0.3 apart from that we now also include -SSA. The prompt sentences still mean "Somebody Vb today" but you will now reformulate them to mean "From now on somebody will Vb-e during summer". <i>massakkornit</i> means "from now on".';
+
+$l10n['dan']['lg2/structure/0.5/t'] = 'Øvelse 0.5: Brug +GALUAR (tekst)';
+$l10n['eng']['lg2/structure/0.5/t'] = 'Exercise 0.5: Use +GALUAR (text)';
+$l10n['dan']['lg2/structure/0.5/a'] = 'Øvelse 0.5: Brug +GALUAR (audio)';
+$l10n['eng']['lg2/structure/0.5/a'] = 'Exercise 0.5: Use +GALUAR (audio)';
+$l10n['dan']['lg2/structure/0.5/text'] = 'Næsten som 0.4 men nu bruger vi +GALUAR i stedet for -SSA. Promptsætningerne betyder stadig "Nogen Vb-er i dag", men nu skal du omskrive dem til at betyde "Faktisk Vb-er nogen dagligt". <i>ullut tamaasa</i> betyder "hver dag/ daglig".';
+$l10n['eng']['lg2/structure/0.5/text'] = 'Almost like 0.4 but this time we will use +GALUAR instead of -SSA. The prompt sentences still mean "Somebody Vb today". Change them to mean "Somebody actually Vb every day". <i>ullut tamaasa</i> means "every day".';
+
+$l10n['dan']['lg2/structure/0.6'] = 'Øvelse 0.6: Brug Vb+TAQ';
+$l10n['eng']['lg2/structure/0.6'] = 'Exercise 0.6: Use Vb+TAQ';
+$l10n['dan']['lg2/structure/0.6/text'] = 'Brug Vb-TAQ til at skabe passive navneord og sæt endelsen {ga} på, så du får ord, der betyder "den som jeg Vb-ede".</p><p>Her er et eksempel <i>ilinniartip-</i> betyder som bekendt "at undervise ham/hende" så betyder {ilinniartip-taq} → <i>ilinniartitaq</i> altså "en der er blevet undervist" og {ilinniartip-taq+ga} → <i>ilinniartitara</i> altså "den af mig underviste", hvilket på lidt mere mundret dansk betyder "min elev".</p><p>';
+$l10n['eng']['lg2/structure/0.6/text'] = 'Use Vb-TAQ on transitive stems to form passive nouns and add the ending {ga} to them to make words meaning "the one whom I Vb-ed".</p><p>Here is an example: <i>ilinniartip-</i> means as you know already "to teach him/her". Then {ilinniartip-taq} → <i>ilinniartitaq</i> means "the one who was taught" and {ilinniartip-taq+ga} → <i>ilinniartitara</i> accordingly "the one by me taught" or in more normal language "my student".</p><p>';
+
+$l10n['dan']['lg2/structure/0.7'] = 'Øvelse 0.7: Brug Vb-TAQ + Vb-U';
+$l10n['eng']['lg2/structure/0.7'] = 'Exercise 0.7: Use Vb-TAQ + Vb-U';
+$l10n['dan']['lg2/structure/0.7/text'] = 'Vb-TAQ sammen med Vb-U er en af måderne at udtrykke passiv på grønlandsk.</p><p>Her er et par eksempler: <i>asa-</i> betyder som nævnt "at elske ham/hende" så betyder {asa-TAQ} → <i>asasaq</i> altså "en der er blevet elsket" og {asa-TAQ-U+vuŋa} → <i>asasaavunga</i> altså "Jeg er blevet elsket" og <i>allap-</i> betyder ligeledes som nævnt "at skrive det" så betyder {allap-TAQ} → <i>allataq</i> altså "det, der er blevet skrevet" og {allap-TAQ-U+vuq} → <i>allataavoq</i> altså "Det er blevet skrevet".</p><p>Lav ord, der betyder (i) Jeg er blevet .. (ii) Han er blevet .. (iii) Vi er blevet .. samt (iv) Er du blevet ..</p><p>';
+$l10n['eng']['lg2/structure/0.7/text'] = 'Vb-TAQ together with N-U is one of the ways to form the passive voice in Greenlandic.</p><p>Here are a few examples: <i>asa-</i> means as already mentioned "to love him/her". Accordingly {asa-TAQ} → <i>asasaq</i> means "the one loved" and {asa-TAQ-U+vuŋa} → <i>asasaavunga</i> accordingly "I am loved" and allap- that means "to write it". Accordingly {allap-TAQ} → <i>allataq</i> means "what has been written" and {allap-TAQ-U+vuq} → <i>allataavoq</i> then "It has been written".</p><p>Make words meaning (i) I am Vb-ed .. (ii) He is Vb-ed .. (iii) We are Vb-ed .. and (iv) Are you Vb-ed ..?</p><p>';
+$l10n['dan']['I-am-Vbed'] = 'Jeg er blevet ..';
+$l10n['eng']['I-am-Vbed'] = 'I am Vb-ed ..';
+$l10n['dan']['He-is-Vbed'] = 'Han er blevet ..';
+$l10n['eng']['He-is-Vbed'] = 'He is Vb-ed ..';
+$l10n['dan']['We-are-Vbed'] = 'Vi er blevet ..';
+$l10n['eng']['We-are-Vbed'] = 'We are Vb-ed ..';
+$l10n['dan']['Are-you-Vbed'] = 'Er du blevet ..?';
+$l10n['eng']['Are-you-Vbed'] = 'Are you Vb-ed ..?';
+
+$l10n['dan']['lg2/0x/deny'] = 'Øvelse 0.1x: Fornægt spørgsmål';
+$l10n['eng']['lg2/0x/deny'] = 'Exercise 0.1x: Deny questions';
+$l10n['dan']['lg2/0x/deny/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/deny/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny everything using <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
+<i>Naamik, ippassaq Arnannguaq Katuami ilinniartinngilara.</i> (No, I did not teach Arnannguaq in Katuaq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/summer'] = 'Øvelse 0.2x: TODO title';
+$l10n['eng']['lg2/0x/summer'] = 'Exercise 0.2x: TODO title';
+$l10n['dan']['lg2/0x/summer/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/summer/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny and say you do so only in summertime (that is repeated action so you must add TAR) using <i>Naamik, aasakkuinnaq…</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
+<i>Naamik, aasakkuinnaq Arnannguaq Katuami ilinniartittarpara.</i> (No, I teach Arnannguaq in Katuaq only in summertime.).</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/i'] = 'Øvelse 0.3x: TODO title';
+$l10n['eng']['lg2/0x/i'] = 'Exercise 0.3x: TODO title';
+
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['dan']['lg2/fsts/3/text'] = 'Oversæt følgende glossering til ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
@@ -539,8 +644,8 @@ $l10n['eng']['lg2/repeat/text'] = 'Listen closely and write what is spoken word 
 $l10n['dan']['lg2/repeat/prompt'] = 'Skriv næste ord';
 $l10n['eng']['lg2/repeat/prompt'] = 'Write next word';
 
-$l10n['dan']['lg2/table/1.1'] = 'Øvelse 1-1: Forskellige former af intransitive verber';
-$l10n['eng']['lg2/table/1.1'] = 'Exercise 1-1: Forms of intransitive verbs';
+$l10n['dan']['lg2/table/1.1'] = 'Øvelse 1.1: Forskellige former af intransitive verber';
+$l10n['eng']['lg2/table/1.1'] = 'Exercise 1.1: Forms of intransitive verbs';
 $l10n['dan']['lg2/table/1.1/text'] = 'Her finder du nu nogle uudfyldte skemaer til nogle af de mange forskellige former af de intransitive verber. Udfyld alle de felter, som du foreløbig har lært med følgende intransitive verber. For nogle ord er endelsen <em>-ssaanga</em> også korrekt, men her accepteres kun <em>-ssavunga</em>. {t:TXT_CHECK_REVEAL}.';
 $l10n['eng']['lg2/table/1.1/text'] = 'Here you have a few empty paradigms for some of the intransitive verbal moods. Fill out all fields you have learned this far. Use the following intransitive verbs. For some words the suffix <em>-ssaanga</em> is also correct, but this exercise only accepts <em>-ssavunga</em>. {t:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg2/table/1.1/h1'] = 'Intransitiv indikativ / fremsættemåde';
@@ -562,8 +667,8 @@ $l10n['eng']['lg2/table/1.1/2p'] = '2.plural "you"';
 $l10n['dan']['lg2/table/1.1/3p'] = '3.flertal "de"';
 $l10n['eng']['lg2/table/1.1/3p'] = '3.plural "they"';
 
-$l10n['dan']['lg2/table/1.2'] = 'Øvelse 1-2: Forskellige former af transitive verber';
-$l10n['eng']['lg2/table/1.2'] = 'Exercise 1-2: Forms of transitive verbs';
+$l10n['dan']['lg2/table/1.2'] = 'Øvelse 1.2: Forskellige former af transitive verber';
+$l10n['eng']['lg2/table/1.2'] = 'Exercise 1.2: Forms of transitive verbs';
 $l10n['dan']['lg2/table/1.2/text'] = 'Her finder du nu nogle uudfyldte skemaer til nogle af de mange forskellige former af de transitive verber. Udfyld alle de felter, som du foreløbig har lært med følgende transitive verbum. {t:TXT_CHECK_REVEAL}.';
 $l10n['eng']['lg2/table/1.2/text'] = 'Here you have a few empty paradigms for some of the transitive verbal moods. Fill out all fields you have learned this far. Use the following transitive verb. {t:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg2/table/1.2/h1'] = 'Indikativ';
@@ -595,50 +700,50 @@ $l10n['eng']['lg2/table/1.2/os'] = '"us"';
 $l10n['dan']['lg2/table/1.2/vi'] = '"vi"';
 $l10n['eng']['lg2/table/1.2/vi'] = '"we"';
 
-$l10n['dan']['lg2/structure/1.3/t'] = 'Øvelse 1-3: Brug Vb+TAR første øvelse (tekst)';
-$l10n['eng']['lg2/structure/1.3/t'] = 'Exercise 1-3: Use Vb+TAR first exercise (text)';
-$l10n['dan']['lg2/structure/1.3/a'] = 'Øvelse 1-3: Brug Vb+TAR første øvelse (audio)';
-$l10n['eng']['lg2/structure/1.3/a'] = 'Exercise 1-3: Use Vb+TAR first exercise (audio)';
+$l10n['dan']['lg2/structure/1.3/t'] = 'Øvelse 1.3: Brug Vb+TAR første øvelse (tekst)';
+$l10n['eng']['lg2/structure/1.3/t'] = 'Exercise 1.3: Use Vb+TAR first exercise (text)';
+$l10n['dan']['lg2/structure/1.3/a'] = 'Øvelse 1.3: Brug Vb+TAR første øvelse (audio)';
+$l10n['eng']['lg2/structure/1.3/a'] = 'Exercise 1.3: Use Vb+TAR first exercise (audio)';
 $l10n['dan']['lg2/structure/1.3/text'] = 'Her er en række spørgsmål til dig dvs. de er i 2. person ental. De drejer sig alle om gentagne forhold, så de indeholder alle sammen elementet Vb+TAR. Forstå spørgsmålet, forstå de processer, der har været på spil da ordene blev dannet, og besvar spørgsmålene positivt. Indled dine svar med <em>Aap, …</em>.';
 $l10n['eng']['lg2/structure/1.3/text'] = 'The following questions are all in the second person singular. That is, they are questions directly to you. All questions are about repeated action which means that all of them contain the morpheme Vb+TAR. Understand the question, understand why it is shaped the way it is, and answer the question affirmatively. Start with <em>Aap, …</em>.';
 
-$l10n['dan']['lg2/structure/1.4/t'] = 'Øvelse 1-4: Brug Vb+TAR anden øvelse (tekst)';
-$l10n['eng']['lg2/structure/1.4/t'] = 'Exercise 1-4: Use Vb+TAR second exercise (text)';
-$l10n['dan']['lg2/structure/1.4/a'] = 'Øvelse 1-4: Brug Vb+TAR anden øvelse (audio)';
-$l10n['eng']['lg2/structure/1.4/a'] = 'Exercise 1-4: Use Vb+TAR second exercise (audio)';
+$l10n['dan']['lg2/structure/1.4/t'] = 'Øvelse 1.4: Brug Vb+TAR anden øvelse (tekst)';
+$l10n['eng']['lg2/structure/1.4/t'] = 'Exercise 1.4: Use Vb+TAR second exercise (text)';
+$l10n['dan']['lg2/structure/1.4/a'] = 'Øvelse 1.4: Brug Vb+TAR anden øvelse (audio)';
+$l10n['eng']['lg2/structure/1.4/a'] = 'Exercise 1.4: Use Vb+TAR second exercise (audio)';
 $l10n['dan']['lg2/structure/1.4/text'] = 'De følgende ord er udsagn om handlinger, der kun foregår een gang eller altid. Gentag ordene uden at ændre personendelser men tilføj Vb+TAR, så du retter sætningen til at udtrykke en gentagen handling.';
 $l10n['eng']['lg2/structure/1.4/text'] = 'The following sentences tell about verbal action that takes place only once or always. Repeat the sentences but add Vb+TAR to make statements about repeated action.';
 
-$l10n['dan']['lg2/structure/1.5/t'] = 'Øvelse 1-5: Brug participium (tekst)';
-$l10n['eng']['lg2/structure/1.5/t'] = 'Exercise 1-5: Use the participle (text)';
-$l10n['dan']['lg2/structure/1.5/a'] = 'Øvelse 1-5: Brug participium (audio)';
-$l10n['eng']['lg2/structure/1.5/a'] = 'Exercise 1-5: Use the participle (audio)';
+$l10n['dan']['lg2/structure/1.5/t'] = 'Øvelse 1.5: Brug participium (tekst)';
+$l10n['eng']['lg2/structure/1.5/t'] = 'Exercise 1.5: Use the participle (text)';
+$l10n['dan']['lg2/structure/1.5/a'] = 'Øvelse 1.5: Brug participium (audio)';
+$l10n['eng']['lg2/structure/1.5/a'] = 'Exercise 1.5: Use the participle (audio)';
 $l10n['dan']['lg2/structure/1.5/text'] = 'Omskriv de følgende udsagn til at-sætninger. Brug sætningen <em>Nuliara oqarpoq</em> som anførende sætning.';
 $l10n['eng']['lg2/structure/1.5/text'] = 'Change the following superordinate sentences into subordinate ones by means of the introductory clause <em>Nuliara oqarpoq</em> (my wife says …).';
 
-$l10n['dan']['lg2/structure/1.6/t'] = 'Øvelse 1-6: Brug N{-mik} og væn dig til de skiftende vokalkvaliteter (tekst)';
-$l10n['eng']['lg2/structure/1.6/t'] = 'Exercise 1-6: Use N{-mik} to get accustomed to changing vowel qualities (text)';
-$l10n['dan']['lg2/structure/1.6/a'] = 'Øvelse 1-6: Brug N{-mik} og væn dig til de skiftende vokalkvaliteter (audio)';
-$l10n['eng']['lg2/structure/1.6/a'] = 'Exercise 1-6: Use N{-mik} to get accustomed to changing vowel qualities (audio)';
+$l10n['dan']['lg2/structure/1.6/t'] = 'Øvelse 1.6: Brug N{-mik} og væn dig til de skiftende vokalkvaliteter (tekst)';
+$l10n['eng']['lg2/structure/1.6/t'] = 'Exercise 1.6: Use N{-mik} to get accustomed to changing vowel qualities (text)';
+$l10n['dan']['lg2/structure/1.6/a'] = 'Øvelse 1.6: Brug N{-mik} og væn dig til de skiftende vokalkvaliteter (audio)';
+$l10n['eng']['lg2/structure/1.6/a'] = 'Exercise 1.6: Use N{-mik} to get accustomed to changing vowel qualities (audio)';
 $l10n['dan']['lg2/structure/1.6/text'] = 'Sæt følgende navneord i instrumentalis med endelsen {-mik}.';
 $l10n['eng']['lg2/structure/1.6/text'] = 'Put the following nouns in the instrumental case using {-mik}.';
 
-$l10n['dan']['lg2/structure/1.7/t'] = 'Øvelse 1-7: Brug {+mut} og væn dig til C1C2-reglen (tekst)';
-$l10n['eng']['lg2/structure/1.7/t'] = 'Exercise 1-7: Use {+mut} to get accustomed to the C1C2-rule (text)';
-$l10n['dan']['lg2/structure/1.7/a'] = 'Øvelse 1-7: Brug {+mut} og væn dig til C1C2-reglen (audio)';
-$l10n['eng']['lg2/structure/1.7/a'] = 'Exercise 1-7: Use {+mut} to get accustomed to the C1C2-rule (audio)';
+$l10n['dan']['lg2/structure/1.7/t'] = 'Øvelse 1.7: Brug {+mut} og væn dig til C1C2-reglen (tekst)';
+$l10n['eng']['lg2/structure/1.7/t'] = 'Exercise 1.7: Use {+mut} to get accustomed to the C1C2-rule (text)';
+$l10n['dan']['lg2/structure/1.7/a'] = 'Øvelse 1.7: Brug {+mut} og væn dig til C1C2-reglen (audio)';
+$l10n['eng']['lg2/structure/1.7/a'] = 'Exercise 1.7: Use {+mut} to get accustomed to the C1C2-rule (audio)';
 $l10n['dan']['lg2/structure/1.7/text'] = 'Sæt følgende navneord i terminalis (\'til N\') med endelsen {+mut}.';
 $l10n['eng']['lg2/structure/1.7/text'] = 'Put the following nouns in the allative case (\'to N\') using {+mut}.';
 
-$l10n['dan']['lg2/structure/1.8/t'] = 'Øvelse 1-8: Brug N-U{+vuq} og væn dig til de konstante forandringer, der hvor elementerne støder sammen (tekst)';
-$l10n['eng']['lg2/structure/1.8/t'] = 'Exercise 1-8: Use N-U{+vuq} to accustom yourself with the constant sound changes whenever stems, morphemes, and endings meet (text)';
-$l10n['dan']['lg2/structure/1.8/a'] = 'Øvelse 1-8: Brug N-U{+vuq} og væn dig til de konstante forandringer, der hvor elementerne støder sammen (audio)';
-$l10n['eng']['lg2/structure/1.8/a'] = 'Exercise 1-8: Use N-U{+vuq} to accustom yourself with the constant sound changes whenever stems, morphemes, and endings meet (audio)';
+$l10n['dan']['lg2/structure/1.8/t'] = 'Øvelse 1.8: Brug N-U{+vuq} og væn dig til de konstante forandringer, der hvor elementerne støder sammen (tekst)';
+$l10n['eng']['lg2/structure/1.8/t'] = 'Exercise 1.8: Use N-U{+vuq} to accustom yourself with the constant sound changes whenever stems, morphemes, and endings meet (text)';
+$l10n['dan']['lg2/structure/1.8/a'] = 'Øvelse 1.8: Brug N-U{+vuq} og væn dig til de konstante forandringer, der hvor elementerne støder sammen (audio)';
+$l10n['eng']['lg2/structure/1.8/a'] = 'Exercise 1.8: Use N-U{+vuq} to accustom yourself with the constant sound changes whenever stems, morphemes, and endings meet (audio)';
 $l10n['dan']['lg2/structure/1.8/text'] = 'Dan ord af typerne "Han/det er en N" af følgende navneord.';
 $l10n['eng']['lg2/structure/1.8/text'] = 'Make words of the type "He/it is an N" from the following nouns.';
 
-$l10n['dan']['lg2/listen/2.1'] = 'Øvelse 2-1: Øv din lydopfattelse';
-$l10n['eng']['lg2/listen/2.1'] = 'Exercise 2-1: Dictation';
+$l10n['dan']['lg2/listen/2.1'] = 'Øvelse 2.1: Øv din lydopfattelse';
+$l10n['eng']['lg2/listen/2.1'] = 'Exercise 2.1: Dictation';
 $l10n['dan']['lg2/listen/2.1/text'] = '<p>Vi skal øve lydopfattelse. Du hører nu en indtaling af første vers af de to nationalsange. Nedskriv dem så vidt muligt uden at misbruge skip-knappen. Det lærer du nemlig ikke noget af.</p>
 
 <p>Her er først en meget direkte ord-til-ord oversættelse til dansk af Henrik Lunds <em>Qitornat saperasi</em>, som blev trykt første gang i 1913:</p>
@@ -676,254 +781,254 @@ islands they-lie-in-front-of-it</blockquote>
 
 <p>{t:TXT_CHECK_REVEAL}.</p>';
 
-$l10n['dan']['lg2/structure/2.2/t'] = 'Øvelse 2-2: Lokalis på hhv. p-stammer og up-stammer (tekst)';
-$l10n['eng']['lg2/structure/2.2/t'] = 'Exercise 2-2: Locative with p-stems and up-stems (text)';
-$l10n['dan']['lg2/structure/2.2/a'] = 'Øvelse 2-2: Lokalis på hhv. p-stammer og up-stammer (audio)';
-$l10n['eng']['lg2/structure/2.2/a'] = 'Exercise 2-2: Locative with p-stems and up-stems (audio)';
+$l10n['dan']['lg2/structure/2.2/t'] = 'Øvelse 2.2: Lokalis på hhv. p-stammer og up-stammer (tekst)';
+$l10n['eng']['lg2/structure/2.2/t'] = 'Exercise 2.2: Locative with p-stems and up-stems (text)';
+$l10n['dan']['lg2/structure/2.2/a'] = 'Øvelse 2.2: Lokalis på hhv. p-stammer og up-stammer (audio)';
+$l10n['eng']['lg2/structure/2.2/a'] = 'Exercise 2.2: Locative with p-stems and up-stems (audio)';
 $l10n['dan']['lg2/structure/2.2/text'] = 'Brug lokalis’ endelse på de grønlandske bynavne. Brug {-mi} på ubøjede p-stammer og {-ni} på de bøjede, men {+mi} på ubøjede, og {+ni} på de bøjede up-stammer.';
 $l10n['eng']['lg2/structure/2.2/text'] = 'Use locative case with the Greenlandic towns. Use {-mi} with uninflected and {-ni} with inflected p-stems. Use {+mi} with unflected and {+ni} with inflected up-stems.';
 
-$l10n['dan']['lg2/structure/2.3.1/t'] = 'Øvelse 2-3A: p-stammer og up-stammer (tekst)';
-$l10n['eng']['lg2/structure/2.3.1/t'] = 'Exercise 2-3A: p-stammer og up-stammer (text)';
-$l10n['dan']['lg2/structure/2.3.1/a'] = 'Øvelse 2-3A: p-stammer og up-stammer (audio)';
-$l10n['eng']['lg2/structure/2.3.1/a'] = 'Exercise 2-3A: p-stammer og up-stammer (audio)';
+$l10n['dan']['lg2/structure/2.3.1/t'] = 'Øvelse 2.3A: p-stammer og up-stammer (tekst)';
+$l10n['eng']['lg2/structure/2.3.1/t'] = 'Exercise 2.3A: p-stammer og up-stammer (text)';
+$l10n['dan']['lg2/structure/2.3.1/a'] = 'Øvelse 2.3A: p-stammer og up-stammer (audio)';
+$l10n['eng']['lg2/structure/2.3.1/a'] = 'Exercise 2.3A: p-stammer og up-stammer (audio)';
 $l10n['dan']['lg2/structure/2.3.1/text'] = 'Brug instrumentalis’ endelser på nogle af de nominer du hidtil har lært. Brug {-mik} på p-stammerne, og brug {+mik} på up-stammerne.';
 $l10n['eng']['lg2/structure/2.3.1/text'] = 'Use the instrumental case. Use {-mik} with p-stems and {+mik} with up-stems.';
 
-$l10n['dan']['lg2/structure/2.3.2/t'] = 'Øvelse 2-3B: p-stammer og up-stammer (tekst)';
-$l10n['eng']['lg2/structure/2.3.2/t'] = 'Exercise 2-3B: p-stems and up-stems (text)';
-$l10n['dan']['lg2/structure/2.3.2/a'] = 'Øvelse 2-3B: p-stammer og up-stammer (audio)';
-$l10n['eng']['lg2/structure/2.3.2/a'] = 'Exercise 2-3B: p-stems and up-stems (audio)';
+$l10n['dan']['lg2/structure/2.3.2/t'] = 'Øvelse 2.3B: p-stammer og up-stammer (tekst)';
+$l10n['eng']['lg2/structure/2.3.2/t'] = 'Exercise 2.3B: p-stems and up-stems (text)';
+$l10n['dan']['lg2/structure/2.3.2/a'] = 'Øvelse 2.3B: p-stammer og up-stammer (audio)';
+$l10n['eng']['lg2/structure/2.3.2/a'] = 'Exercise 2.3B: p-stems and up-stems (audio)';
 $l10n['dan']['lg2/structure/2.3.2/text'] = 'Brug relativ kasus’ endelser på nogle af de nominer du hidtil har lært. Brug {-p} på p-stammerne, og brug {-up} på up-stammerne.';
 $l10n['eng']['lg2/structure/2.3.2/text'] = 'Use the instrumental case. Use {-mik} with p-stems and {+mik} with up-stems.';
 
-$l10n['dan']['lg2/structure/2.4/t'] = 'Øvelse 2-4: Brug ledsagemåden som indikativ nummer 2 (tekst)';
-$l10n['eng']['lg2/structure/2.4/t'] = 'Exercise 2-4: Contemporative as substitute when more than one indicative (text)';
-$l10n['dan']['lg2/structure/2.4/a'] = 'Øvelse 2-4: Brug ledsagemåden som indikativ nummer 2 (audio)';
-$l10n['eng']['lg2/structure/2.4/a'] = 'Exercise 2-4: Contemporative as substitute when more than one indicative (audio)';
+$l10n['dan']['lg2/structure/2.4/t'] = 'Øvelse 2.4: Brug ledsagemåden som indikativ nummer 2 (tekst)';
+$l10n['eng']['lg2/structure/2.4/t'] = 'Exercise 2.4: Contemporative as substitute when more than one indicative (text)';
+$l10n['dan']['lg2/structure/2.4/a'] = 'Øvelse 2.4: Brug ledsagemåden som indikativ nummer 2 (audio)';
+$l10n['eng']['lg2/structure/2.4/a'] = 'Exercise 2.4: Contemporative as substitute when more than one indicative (audio)';
 $l10n['dan']['lg2/structure/2.4/text'] = 'På grønlandsk bruges indikativ normalt kun een gang i samme sætning. I sætninger med parallelle udsagn om samme person (typen \'Han spiste og drak\') anvendes ledsagemåde sammen med tilhængspartiklen LU. Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sætninger.';
 $l10n['eng']['lg2/structure/2.4/text'] = 'In Greenlandic indicative normally is used only once per sentence. In sentences with more than one superordinate verb (type: <em>He ate and drank and sang all the time</em>) one uses contemporative and a clitic. Use the contemporative to make idiomatic sentences out of the following.';
 
-$l10n['dan']['lg2/structure/2.5/t'] = 'Øvelse 2-5: Brug ledsagemåden til det sekundære udsagn (tekst)';
-$l10n['eng']['lg2/structure/2.5/t'] = 'Exercise 2-5: Use contemporative as a subordinate mood (text)';
-$l10n['dan']['lg2/structure/2.5/a'] = 'Øvelse 2-5: Brug ledsagemåden til det sekundære udsagn (audio)';
-$l10n['eng']['lg2/structure/2.5/a'] = 'Exercise 2-5: Use contemporative as a subordinate mood (audio)';
+$l10n['dan']['lg2/structure/2.5/t'] = 'Øvelse 2.5: Brug ledsagemåden til det sekundære udsagn (tekst)';
+$l10n['eng']['lg2/structure/2.5/t'] = 'Exercise 2.5: Use contemporative as a subordinate mood (text)';
+$l10n['dan']['lg2/structure/2.5/a'] = 'Øvelse 2.5: Brug ledsagemåden til det sekundære udsagn (audio)';
+$l10n['eng']['lg2/structure/2.5/a'] = 'Exercise 2.5: Use contemporative as a subordinate mood (audio)';
 $l10n['dan']['lg2/structure/2.5/text'] = 'Ledsagemåde kan ofte oversættes til dansk lang tillægsform som i \'Han kom løbende\'. Ledsagemåde bruges nemlig til at udtrykke biomstændigheder som i eksemplet, hvor udsagnet er at \'han kom\' og biomstændigheden at det foregik i løb. Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sætninger på den måde, at det er sidste verbum, der opfattes som hovedudsagnet.';
 $l10n['eng']['lg2/structure/2.5/text'] = 'Contemporative often translates as English ing-form as in <em>He came running (= He came and he ran)</em>. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he came whereas his running is just a secondary message. Combine the following sentence pairs into single sentences letting the latter be the main message.';
 
-$l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3-1: Jongler lidt med personendelserne I (tekst)';
-$l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3-1: Play with personal endings I (text)';
-$l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3-1: Jongler lidt med personendelserne I (audio)';
-$l10n['eng']['lg2/structure/3.1/a'] = 'Exercise 3-1: Play with personal endings I (audio)';
+$l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
+$l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
+$l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';
+$l10n['eng']['lg2/structure/3.1/a'] = 'Exercise 3.1: Play with personal endings I (audio)';
 $l10n['dan']['lg2/structure/3.1/text'] = 'Her kommer en stribe udsagn om nogen, der har gjort noget. Besvar dem benægtende og sig, at det var \'os\', der gjorde det. Indled svaret med <em>Naamik, …</em>, der betyder \'Nej, …\'.';
 $l10n['eng']['lg2/structure/3.1/text'] = 'Here you get a number of statements about somebody. Deny them saying that the statement is about us. Start with <em>Naamik, …</em> meaning \'No, …\'.';
 
-$l10n['dan']['lg2/structure/3.2/t'] = 'Øvelse 3-2: Jongler lidt med personendelserne II (tekst)';
-$l10n['eng']['lg2/structure/3.2/t'] = 'Exercise 3-2: Play with personal endings II (text)';
-$l10n['dan']['lg2/structure/3.2/a'] = 'Øvelse 3-2: Jongler lidt med personendelserne II (audio)';
-$l10n['eng']['lg2/structure/3.2/a'] = 'Exercise 3-2: Play with personal endings II (audio)';
+$l10n['dan']['lg2/structure/3.2/t'] = 'Øvelse 3.2: Jongler lidt med personendelserne II (tekst)';
+$l10n['eng']['lg2/structure/3.2/t'] = 'Exercise 3.2: Play with personal endings II (text)';
+$l10n['dan']['lg2/structure/3.2/a'] = 'Øvelse 3.2: Jongler lidt med personendelserne II (audio)';
+$l10n['eng']['lg2/structure/3.2/a'] = 'Exercise 3.2: Play with personal endings II (audio)';
 $l10n['dan']['lg2/structure/3.2/text'] = 'Her kommer en stribe udsagn om nogen, der har gjort noget. Besvar dem benægtende og sig, at det var \'jeg\', der gjorde det. Indled svaret med <em>Naamik, …</em> som betyder nej.';
 $l10n['eng']['lg2/structure/3.2/text'] = 'Here you get a number of statements about somebody. Deny them saying that the statement is about me. Start with <em>Naamik, …</em> which means no.';
 
-$l10n['dan']['lg2/structure/3.3/t'] = 'Øvelse 3-3: Prøv participium sammen med efterhængt UNA (tekst)';
-$l10n['eng']['lg2/structure/3.3/t'] = 'Exercise 3-3: Use the participle with clitic UNA (text)';
-$l10n['dan']['lg2/structure/3.3/a'] = 'Øvelse 3-3: Prøv participium sammen med efterhængt UNA (audio)';
-$l10n['eng']['lg2/structure/3.3/a'] = 'Exercise 3-3: Use the participle with clitic UNA (audio)';
+$l10n['dan']['lg2/structure/3.3/t'] = 'Øvelse 3.3: Prøv participium sammen med efterhængt UNA (tekst)';
+$l10n['eng']['lg2/structure/3.3/t'] = 'Exercise 3.3: Use the participle with clitic UNA (text)';
+$l10n['dan']['lg2/structure/3.3/a'] = 'Øvelse 3.3: Prøv participium sammen med efterhængt UNA (audio)';
+$l10n['eng']['lg2/structure/3.3/a'] = 'Exercise 3.3: Use the participle with clitic UNA (audio)';
 $l10n['dan']['lg2/structure/3.3/text'] = 'Her kommer en stribe udsagn om nogen, der har gjort noget. Afvis det kategorisk og sig, at det var \'jeg\', der gjorde det. Brug konstruktionen med det personlige stedord, <em>uanga</em>, efterfulgt af tilhængspartiklen UNA og udsagnet i participium. Det er en normal måde, at konstruere modsvarigheden af sætningskløvning. Indled svaret med <em>Naamik, …</em>.';
 $l10n['eng']['lg2/structure/3.3/text'] = 'Here you get a number of statements about somebody. Deny them saying that the statement is about me. Use the word <em>naamik</em> meaning \'no\' plus an often heard emphatic construction: A personal pronoun (in this case <em>uanga</em>) followed by clitic UNA and a verb i the participle mood. Start with <em>Naamik, …</em>.';
 
-$l10n['dan']['lg2/structure/3.4/t'] = 'Øvelse 3-4: Brug ledsagemåde (tekst)';
-$l10n['eng']['lg2/structure/3.4/t'] = 'Exercise 3-4: Use the contemporative mood (text)';
-$l10n['dan']['lg2/structure/3.4/a'] = 'Øvelse 3-4: Brug ledsagemåde (audio)';
-$l10n['eng']['lg2/structure/3.4/a'] = 'Exercise 3-4: Use the contemporative mood (audio)';
+$l10n['dan']['lg2/structure/3.4/t'] = 'Øvelse 3.4: Brug ledsagemåde (tekst)';
+$l10n['eng']['lg2/structure/3.4/t'] = 'Exercise 3.4: Use the contemporative mood (text)';
+$l10n['dan']['lg2/structure/3.4/a'] = 'Øvelse 3.4: Brug ledsagemåde (audio)';
+$l10n['eng']['lg2/structure/3.4/a'] = 'Exercise 3.4: Use the contemporative mood (audio)';
 $l10n['dan']['lg2/structure/3.4/text'] = 'Bind følgende to udsagn sammen til en sætning ved hjælp af ledsagemåde.';
 $l10n['eng']['lg2/structure/3.4/text'] = 'Unite the double sentences into single sentences by means of the contemporative mood.';
 
-$l10n['dan']['lg2/structure/4.1/t'] = 'Øvelse 4-1: Øv tilhængspartiklerne LI og LU (tekst)';
-$l10n['eng']['lg2/structure/4.1/t'] = 'Exercise 4-1: Work with clitics LI and LU (text)';
-$l10n['dan']['lg2/structure/4.1/a'] = 'Øvelse 4-1: Øv tilhængspartiklerne LI og LU (audio)';
-$l10n['eng']['lg2/structure/4.1/a'] = 'Exercise 4-1: Work with clitics LI and LU (audio)';
+$l10n['dan']['lg2/structure/4.1/t'] = 'Øvelse 4.1: Øv tilhængspartiklerne LI og LU (tekst)';
+$l10n['eng']['lg2/structure/4.1/t'] = 'Exercise 4.1: Work with clitics LI and LU (text)';
+$l10n['dan']['lg2/structure/4.1/a'] = 'Øvelse 4.1: Øv tilhængspartiklerne LI og LU (audio)';
+$l10n['eng']['lg2/structure/4.1/a'] = 'Exercise 4.1: Work with clitics LI and LU (audio)';
 $l10n['dan']['lg2/structure/4.1/text'] = 'Bind de to informationer, du nu får, sammen til eet udsagn ved hjælp af N-U og den korrekte tilhængspartikel efter følgende princip: Hvis de to ord, du får, er af samme slags, skal du bruge LU således: ord1 N1-U ord2-lu N1-U, men hvis ord1 og ord2 tilhører forskellige kategorier skal du bruge LI: ord1 N1-U ord2-li N2-U.';
 $l10n['eng']['lg2/structure/4.1/text'] = 'Here you get two pieces of information. Tie them together using N-U and the proper clitic according to this principle: If the two words share the same logic class use LU like this: word1 N1-U word2-lu N1-U whereas you must use LI if word1 and word2 belong to different categories: word1 N1-U word2-li N2-U.';
 
-$l10n['dan']['lg2/structure/4.2/t'] = 'Øvelse 4-2: Flertal af hhv. p-stammer og up-stammer (tekst)';
-$l10n['eng']['lg2/structure/4.2/t'] = 'Exercise 4-2: Plural with p-stems and up-stems (text)';
-$l10n['dan']['lg2/structure/4.2/a'] = 'Øvelse 4-2: Flertal af hhv. p-stammer og up-stammer (audio)';
-$l10n['eng']['lg2/structure/4.2/a'] = 'Exercise 4-2: Plural with p-stems and up-stems (audio)';
+$l10n['dan']['lg2/structure/4.2/t'] = 'Øvelse 4.2: Flertal af hhv. p-stammer og up-stammer (tekst)';
+$l10n['eng']['lg2/structure/4.2/t'] = 'Exercise 4.2: Plural with p-stems and up-stems (text)';
+$l10n['dan']['lg2/structure/4.2/a'] = 'Øvelse 4.2: Flertal af hhv. p-stammer og up-stammer (audio)';
+$l10n['eng']['lg2/structure/4.2/a'] = 'Exercise 4.2: Plural with p-stems and up-stems (audio)';
 $l10n['dan']['lg2/structure/4.2/text'] = 'Omsæt følgende til flertal. Endelserne er N{-t} ved p‑stammerne og N{-it} ved alle up-stammerne i denne øvelse.';
 $l10n['eng']['lg2/structure/4.2/text'] = 'Make plural out of the following statements. Endings are N{-t} with p‑stems and N{-it} with all up-stems included in this exercise.';
 
-$l10n['dan']['lg2/structure/4.3/t'] = 'Øvelse 4-3: Introduktion til personendelserne (possessum) I (tekst)';
-$l10n['eng']['lg2/structure/4.3/t'] = 'Exercise 4-3: Introduction to possessum I (text)';
-$l10n['dan']['lg2/structure/4.3/a'] = 'Øvelse 4-3: Introduktion til personendelserne (possessum) I (audio)';
-$l10n['eng']['lg2/structure/4.3/a'] = 'Exercise 4-3: Introduction to possessum I (audio)';
+$l10n['dan']['lg2/structure/4.3/t'] = 'Øvelse 4.3: Introduktion til personendelserne (possessum) I (tekst)';
+$l10n['eng']['lg2/structure/4.3/t'] = 'Exercise 4.3: Introduction to possessum I (text)';
+$l10n['dan']['lg2/structure/4.3/a'] = 'Øvelse 4.3: Introduktion til personendelserne (possessum) I (audio)';
+$l10n['eng']['lg2/structure/4.3/a'] = 'Exercise 4.3: Introduction to possessum I (audio)';
 $l10n['dan']['lg2/structure/4.3/text'] = 'I denne øvelse får du eksempelsætninger af typen "Subjektet/subjekterne har N". Omsæt dem til "Subjektets/subjekternes ene N". Endelserne er N{-a} ved possessor i ental og N{-at} ved possessor i flertal.';
 $l10n['eng']['lg2/structure/4.3/text'] = 'In this exercise you will be presented with sentences of the type "Subject has/ subjects have N". Rephrase them to "Subject\'s/ subjects\' one N". Endings are N{-a} when possessor is singular and N{-at} when possessor is plural.';
 
-$l10n['dan']['lg2/structure/4.4.1/t'] = 'Øvelse 4-4A: Introduktion til personendelse (possessum) II (tekst)';
-$l10n['eng']['lg2/structure/4.4.1/t'] = 'Exercise 4-4A: Introduction to possessum II (text)';
-$l10n['dan']['lg2/structure/4.4.1/a'] = 'Øvelse 4-4A: Introduktion til personendelse (possessum) II (audio)';
-$l10n['eng']['lg2/structure/4.4.1/a'] = 'Exercise 4-4A: Introduction to possessum II (audio)';
+$l10n['dan']['lg2/structure/4.4.1/t'] = 'Øvelse 4.4A: Introduktion til personendelse (possessum) II (tekst)';
+$l10n['eng']['lg2/structure/4.4.1/t'] = 'Exercise 4.4A: Introduction to possessum II (text)';
+$l10n['dan']['lg2/structure/4.4.1/a'] = 'Øvelse 4.4A: Introduktion til personendelse (possessum) II (audio)';
+$l10n['eng']['lg2/structure/4.4.1/a'] = 'Exercise 4.4A: Introduction to possessum II (audio)';
 $l10n['dan']['lg2/structure/4.4.1/text'] = 'Du har hidtil været præsenteret for 3 personendelser på nominer i ental, nemlig N{+ga}, N{-a} og N{-at}. Brug dem alle og bliv sikker i de lydskift, de medfører. <em>taassuma</em> betyder "den ders .." og <em>taakku/taakkua</em> betyder "de ders ..." (taakku og taakkua bruges tilfældigt i moderne grønlandsk jf. kapitel 6).';
 $l10n['eng']['lg2/structure/4.4.1/text'] = 'This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. <em>taassuma</em> means "that one\'s .." and <em>taakku/taakkua</em> means "those ones\' ..." (taakku and taakkua are used arbitrarily in modern Greenlandic cf. chapter 6).';
 
-$l10n['dan']['lg2/structure/4.4.2/t'] = 'Øvelse 4-4B: Introduktion til personendelse (possessum) II (tekst)';
-$l10n['eng']['lg2/structure/4.4.2/t'] = 'Exercise 4-4B: Introduction to possessum II (text)';
-$l10n['dan']['lg2/structure/4.4.2/a'] = 'Øvelse 4-4B: Introduktion til personendelse (possessum) II (audio)';
-$l10n['eng']['lg2/structure/4.4.2/a'] = 'Exercise 4-4B: Introduction to possessum II (audio)';
+$l10n['dan']['lg2/structure/4.4.2/t'] = 'Øvelse 4.4B: Introduktion til personendelse (possessum) II (tekst)';
+$l10n['eng']['lg2/structure/4.4.2/t'] = 'Exercise 4.4B: Introduction to possessum II (text)';
+$l10n['dan']['lg2/structure/4.4.2/a'] = 'Øvelse 4.4B: Introduktion til personendelse (possessum) II (audio)';
+$l10n['eng']['lg2/structure/4.4.2/a'] = 'Exercise 4.4B: Introduction to possessum II (audio)';
 $l10n['dan']['lg2/structure/4.4.2/text'] = 'Du har hidtil været præsenteret for 1 personendelse på nominer i flertal, nemlig N{-kka}. Brug den og bliv sikker i de lydskift, den medfører.';
 $l10n['eng']['lg2/structure/4.4.2/text'] = 'This far you have only seen one possissive ending with nouns in the plural namely N{-kka}. Use it without getting lost because of the soundshifts it sometimes produces.';
 
-$l10n['dan']['lg2/structure/4.5/t'] = 'Øvelse 4-5: Øv tilhængspartiklerne LI og LU + ledsagemåde (tekst)';
-$l10n['eng']['lg2/structure/4.5/t'] = 'Exercise 4-5: Practise clitics LI and LU together with the contemporative mood (text)';
-$l10n['dan']['lg2/structure/4.5/a'] = 'Øvelse 4-5: Øv tilhængspartiklerne LI og LU + ledsagemåde (audio)';
-$l10n['eng']['lg2/structure/4.5/a'] = 'Exercise 4-5: Practise clitics LI and LU together with the contemporative mood (audio)';
-$l10n['dan']['lg2/structure/4.5/text'] = 'Øvelsen er en kopi af øvelse 4-1, men nu udviddet med yderligere et krav. Bind de to informationer, du nu får, sammen til eet udsagn ved hjælp af N-U og den korrekte tilhængspartikel efter følgende princip: Hvis de to ord, du får, er af samme slags, skal du bruge LU således: ord1 N1-U ord2-lu N1-U, men hvis ord1 og ord2 tilhører forskellige kategorier skal du bruge LI: ord1 N1-U ord2-li N2-U. Brug indikativ på første verbum, men ledsagemåde på det andet.';
-$l10n['eng']['lg2/structure/4.5/text'] = 'This exercise is a copy of exercise 4-1 apart from the fact that it has been expanded with one more task. Here you get two pieces of information. Tie them together using N-U and the proper clitic according to this principle: If the two words share the same logic class use LU like this: word1 N1-U word2-lu N1-U whereas you must use LI if word1 and word2 belong to different categories: word1 N1-U word2-li N2-U. Put the first verb in the indicative mood and the latter in the contemporative mood.';
+$l10n['dan']['lg2/structure/4.5/t'] = 'Øvelse 4.5: Øv tilhængspartiklerne LI og LU + ledsagemåde (tekst)';
+$l10n['eng']['lg2/structure/4.5/t'] = 'Exercise 4.5: Practise clitics LI and LU together with the contemporative mood (text)';
+$l10n['dan']['lg2/structure/4.5/a'] = 'Øvelse 4.5: Øv tilhængspartiklerne LI og LU + ledsagemåde (audio)';
+$l10n['eng']['lg2/structure/4.5/a'] = 'Exercise 4.5: Practise clitics LI and LU together with the contemporative mood (audio)';
+$l10n['dan']['lg2/structure/4.5/text'] = 'Øvelsen er en kopi af øvelse 4.1, men nu udviddet med yderligere et krav. Bind de to informationer, du nu får, sammen til eet udsagn ved hjælp af N-U og den korrekte tilhængspartikel efter følgende princip: Hvis de to ord, du får, er af samme slags, skal du bruge LU således: ord1 N1-U ord2-lu N1-U, men hvis ord1 og ord2 tilhører forskellige kategorier skal du bruge LI: ord1 N1-U ord2-li N2-U. Brug indikativ på første verbum, men ledsagemåde på det andet.';
+$l10n['eng']['lg2/structure/4.5/text'] = 'This exercise is a copy of exercise 4.1 apart from the fact that it has been expanded with one more task. Here you get two pieces of information. Tie them together using N-U and the proper clitic according to this principle: If the two words share the same logic class use LU like this: word1 N1-U word2-lu N1-U whereas you must use LI if word1 and word2 belong to different categories: word1 N1-U word2-li N2-U. Put the first verb in the indicative mood and the latter in the contemporative mood.';
 
-$l10n['dan']['lg2/structure/5.1/t'] = 'Øvelse 5-1: De første causativer (tekst)';
-$l10n['eng']['lg2/structure/5.1/t'] = 'Exercise 5-1: Introducing causative mood (text)';
-$l10n['dan']['lg2/structure/5.1/a'] = 'Øvelse 5-1: De første causativer (audio)';
-$l10n['eng']['lg2/structure/5.1/a'] = 'Exercise 5-1: Introducing causative mood (audio)';
+$l10n['dan']['lg2/structure/5.1/t'] = 'Øvelse 5.1: De første causativer (tekst)';
+$l10n['eng']['lg2/structure/5.1/t'] = 'Exercise 5.1: Introducing causative mood (text)';
+$l10n['dan']['lg2/structure/5.1/a'] = 'Øvelse 5.1: De første causativer (audio)';
+$l10n['eng']['lg2/structure/5.1/a'] = 'Exercise 5.1: Introducing causative mood (audio)';
 $l10n['dan']['lg2/structure/5.1/text'] = 'Sæt de følgende sætningspar sammen til een således at første sætning bliver begrundelsen for den anden. Brug causativ i den første af de to sætninger.';
 $l10n['eng']['lg2/structure/5.1/text'] = 'Combine the following sentence pairs making the first one the reason for the latter. Use the causative mood in the first one of the sentences.';
 
-$l10n['dan']['lg2/structure/5.2/t'] = 'Øvelse 5-2: Gradbøjning med +NIRU (tekst)';
-$l10n['eng']['lg2/structure/5.2/t'] = 'Exercise 5-2: Comparison using +NIRU (text)';
-$l10n['dan']['lg2/structure/5.2/a'] = 'Øvelse 5-2: Gradbøjning med +NIRU (audio)';
-$l10n['eng']['lg2/structure/5.2/a'] = 'Exercise 5-2: Comparison using +NIRU (audio)';
+$l10n['dan']['lg2/structure/5.2/t'] = 'Øvelse 5.2: Gradbøjning med +NIRU (tekst)';
+$l10n['eng']['lg2/structure/5.2/t'] = 'Exercise 5.2: Comparison using +NIRU (text)';
+$l10n['dan']['lg2/structure/5.2/a'] = 'Øvelse 5.2: Gradbøjning med +NIRU (audio)';
+$l10n['eng']['lg2/structure/5.2/a'] = 'Exercise 5.2: Comparison using +NIRU (audio)';
 $l10n['dan']['lg2/structure/5.2/text'] = 'Her er en række sætninger af typen \'Noget gør/ sker\'. Omsæt dem til at udtrykke samme handling i højere grad. Brug her i første øvelse bare indikativ for at øve dig. Det ville faktisk i en del af eksemplerne have været lidt mere mundret at anvende ledsagemåde i den anden sætning, men det undlader vi på dette sted for ikke at komplicere øvelsen unødigt. Indikativen er dog fuldt forståelig. Husk at både transitive og intransitive verber kan gradbøjes og at gradbøjningen kan forekomme i alle verbets former. Gradbøjning er nemlig grundliggende bare et tilhæng lige som alle andre tilhæng.';
 $l10n['eng']['lg2/structure/5.2/text'] = 'Here is a row of sentences type \'something happens / someone does\'. Adjust them to express the same statement at higher degree. This is the first exercise of its kind so we will just use the indicative mood as training. As a matter of facts the contemporative would have been more idiomatic in quite a number of the sentences but let us not komplicate matters more than necessarily. The sentences are all understandable in spite of the less than perfect indicative. Remember that transitive as well as intransitive statements can be put in comparative and superlative. In Greenlandic comparison is nothing but a derivational morpheme with all the normal uses as any other morpheme.';
 
-$l10n['dan']['lg2/structure/5.3/t'] = 'Øvelse 5-3: Variationer over ә (tekst)';
-$l10n['eng']['lg2/structure/5.3/t'] = 'Exercise 5-3: Variations of ә (text)';
-$l10n['dan']['lg2/structure/5.3/a'] = 'Øvelse 5-3: Variationer over ә (audio)';
-$l10n['eng']['lg2/structure/5.3/a'] = 'Exercise 5-3: Variations of ә (audio)';
+$l10n['dan']['lg2/structure/5.3/t'] = 'Øvelse 5.3: Variationer over ә (tekst)';
+$l10n['eng']['lg2/structure/5.3/t'] = 'Exercise 5.3: Variations of ә (text)';
+$l10n['dan']['lg2/structure/5.3/a'] = 'Øvelse 5.3: Variationer over ә (audio)';
+$l10n['eng']['lg2/structure/5.3/a'] = 'Exercise 5.3: Variations of ә (audio)';
 $l10n['dan']['lg2/structure/5.3/text'] = 'Her er nogle sætninger af typen \'subjektet N-QAR\' fulgt af en sætning af typen \'N er/gør\' eller \'N er objektet\'. Lav anden sætning om, så N\'s possessor står eksplicit udtrykt.';
 $l10n['eng']['lg2/structure/5.3/text'] = 'Here are a few sentences type \'subject N-QAR\' followed by a sentence type \'N is/does\' or \'N is object\'. Rephrase the sentence to make N\'s possessor explicit.';
 
-$l10n['dan']['lg2/structure/5.4.1/t'] = 'Øvelse 5-4A: Variationer over ә II (tekst)';
-$l10n['eng']['lg2/structure/5.4.1/t'] = 'Exercise 5-4A: Variations of ә II (text)';
-$l10n['dan']['lg2/structure/5.4.1/a'] = 'Øvelse 5-4A: Variationer over ә II (audio)';
-$l10n['eng']['lg2/structure/5.4.1/a'] = 'Exercise 5-4A: Variations of ә II (audio)';
+$l10n['dan']['lg2/structure/5.4.1/t'] = 'Øvelse 5.4A: Variationer over ә II (tekst)';
+$l10n['eng']['lg2/structure/5.4.1/t'] = 'Exercise 5.4A: Variations of ә II (text)';
+$l10n['dan']['lg2/structure/5.4.1/a'] = 'Øvelse 5.4A: Variationer over ә II (audio)';
+$l10n['eng']['lg2/structure/5.4.1/a'] = 'Exercise 5.4A: Variations of ә II (audio)';
 $l10n['dan']['lg2/structure/5.4.1/text'] = 'Brug N-U til at danne sætninger af typen \'Subjektet er N\' af følgende navneord.';
 $l10n['eng']['lg2/structure/5.4.1/text'] = 'Use N-U to form sentences type \'Subject is N\' out of the following nouns.';
 
-$l10n['dan']['lg2/structure/5.4.2/t'] = 'Øvelse 5-4B: Variationer over ә II (tekst)';
-$l10n['eng']['lg2/structure/5.4.2/t'] = 'Exercise 5-4B: Variations of ә II (text)';
-$l10n['dan']['lg2/structure/5.4.2/a'] = 'Øvelse 5-4B: Variationer over ә II (audio)';
-$l10n['eng']['lg2/structure/5.4.2/a'] = 'Exercise 5-4B: Variations of ә II (audio)';
+$l10n['dan']['lg2/structure/5.4.2/t'] = 'Øvelse 5.4B: Variationer over ә II (tekst)';
+$l10n['eng']['lg2/structure/5.4.2/t'] = 'Exercise 5.4B: Variations of ә II (text)';
+$l10n['dan']['lg2/structure/5.4.2/a'] = 'Øvelse 5.4B: Variationer over ә II (audio)';
+$l10n['eng']['lg2/structure/5.4.2/a'] = 'Exercise 5.4B: Variations of ә II (audio)';
 $l10n['dan']['lg2/structure/5.4.2/text'] = 'Brug N-QAR til at danne sætninger af typen \'Der er N\' af følgende navneord.';
 $l10n['eng']['lg2/structure/5.4.2/text'] = 'Use N-QAR to form sentences type \'There is N\' out of the following nouns.';
 
-$l10n['dan']['lg2/structure/5.5/t'] = 'Øvelse 5-5: Variationer over ә III (tekst)';
-$l10n['eng']['lg2/structure/5.5/t'] = 'Exercise 5-5: Variations of ә III (text)';
-$l10n['dan']['lg2/structure/5.5/a'] = 'Øvelse 5-5: Variationer over ә III (audio)';
-$l10n['eng']['lg2/structure/5.5/a'] = 'Exercise 5-5: Variations of ә III (audio)';
+$l10n['dan']['lg2/structure/5.5/t'] = 'Øvelse 5.5: Variationer over ә III (tekst)';
+$l10n['eng']['lg2/structure/5.5/t'] = 'Exercise 5.5: Variations of ә III (text)';
+$l10n['dan']['lg2/structure/5.5/a'] = 'Øvelse 5.5: Variationer over ә III (audio)';
+$l10n['eng']['lg2/structure/5.5/a'] = 'Exercise 5.5: Variations of ә III (audio)';
 $l10n['dan']['lg2/structure/5.5/text'] = 'Brug N+GӘ til at danne sætninger af typen \'Han er min/din/etc. N\'. Husk reglen om, at <em>*qg</em> og <em>*rg</em> altid fusionerer til <em>-r-</em>.';
 $l10n['eng']['lg2/structure/5.5/text'] = 'Use N+GӘ to form sentences type \'He is my/yours/etc. N\'. Remember the rule that fuses <em>*qg</em> and <em>*rg</em> to <em>-r-</em>.';
 
-$l10n['dan']['lg2/structure/5.6/t'] = 'Øvelse 5-6: Ledsagemåde og participium (tekst)';
-$l10n['eng']['lg2/structure/5.6/t'] = 'Exercise 5-6: The contemporative and the participle (text)';
-$l10n['dan']['lg2/structure/5.6/a'] = 'Øvelse 5-6: Ledsagemåde og participium (audio)';
-$l10n['eng']['lg2/structure/5.6/a'] = 'Exercise 5-6: The contemporative and the participle (audio)';
+$l10n['dan']['lg2/structure/5.6/t'] = 'Øvelse 5.6: Ledsagemåde og participium (tekst)';
+$l10n['eng']['lg2/structure/5.6/t'] = 'Exercise 5.6: The contemporative and the participle (text)';
+$l10n['dan']['lg2/structure/5.6/a'] = 'Øvelse 5.6: Ledsagemåde og participium (audio)';
+$l10n['eng']['lg2/structure/5.6/a'] = 'Exercise 5.6: The contemporative and the participle (audio)';
 $l10n['dan']['lg2/structure/5.6/text'] = 'Sæt de følgende sætninger sammen til een. Husk reglen: Ledsagemåde, når der er tale om samme grundled i begge sætninger, men participium, når der er forskellige grundled.';
 $l10n['eng']['lg2/structure/5.6/text'] = 'Merge the following sentences into single ones. Remember the rule that requires you to use contemporative whenever you have the same subject in both sentences (co- reference) but participle whenever the subject are different (non co-reference).';
 
-$l10n['dan']['lg2/structure/6.1/t'] = 'Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (tekst)';
-$l10n['eng']['lg2/structure/6.1/t'] = 'Exercise 6-1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (text)';
-$l10n['dan']['lg2/structure/6.1/a'] = 'Øvelse 6-1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (audio)';
-$l10n['eng']['lg2/structure/6.1/a'] = 'Exercise 6-1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (audio)';
+$l10n['dan']['lg2/structure/6.1/t'] = 'Øvelse 6.1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (tekst)';
+$l10n['eng']['lg2/structure/6.1/t'] = 'Exercise 6.1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (text)';
+$l10n['dan']['lg2/structure/6.1/a'] = 'Øvelse 6.1: Øv N-U og N-U-NNGIT sammen med tilhængspartiklen LI (audio)';
+$l10n['eng']['lg2/structure/6.1/a'] = 'Exercise 6.1: Practice N-U and N-U-NNGIT in combination with the clitic particle LI (audio)';
 $l10n['dan']['lg2/structure/6.1/text'] = 'Bind de to informationer, du får givet, sammen til eet udsagn ved hjælp af N-U eller N-U-NNGIT og tilhængspartiklen LI.';
 $l10n['eng']['lg2/structure/6.1/text'] = 'Glue the two pieces of information hereunder together by means of N-U or N-U-NNGIT and the clitic LI.';
 
-$l10n['dan']['lg2/structure/6.2/t'] = 'Øvelse 6-2: Øv N-INNAQ (tekst)';
-$l10n['eng']['lg2/structure/6.2/t'] = 'Exercise 6-2: Practice N-INNAQ (text)';
-$l10n['dan']['lg2/structure/6.2/a'] = 'Øvelse 6-2: Øv N-INNAQ (audio)';
-$l10n['eng']['lg2/structure/6.2/a'] = 'Exercise 6-2: Practice N-INNAQ (audio)';
+$l10n['dan']['lg2/structure/6.2/t'] = 'Øvelse 6.2: Øv N-INNAQ (tekst)';
+$l10n['eng']['lg2/structure/6.2/t'] = 'Exercise 6.2: Practice N-INNAQ (text)';
+$l10n['dan']['lg2/structure/6.2/a'] = 'Øvelse 6.2: Øv N-INNAQ (audio)';
+$l10n['eng']['lg2/structure/6.2/a'] = 'Exercise 6.2: Practice N-INNAQ (audio)';
 $l10n['dan']['lg2/structure/6.2/text'] = 'Sæt tilhænget N-INNAQ på samtlige følgende navneord. Du skal også sætte tilhænget på navneordene selv om der kommer N-U efter dem. Husk at navneord med N-INNAQ er -up-stammer. Det er altså endelsen {-it}, du skal bruge i flertal.';
 $l10n['eng']['lg2/structure/6.2/text'] = 'Add the derivational morpheme N-INNAQ to each of the following nouns. You must add the morpheme even if the nominal stem is followed by N-U. Remember that stems which include N-INNAQ are -up-stems. It is therefore the ending {-it} you need in the plural.';
 
-$l10n['dan']['lg2/structure/6.3.1/t'] = 'Øvelse 6-3A: Øv Vb+GUSUP (tekst)';
-$l10n['eng']['lg2/structure/6.3.1/t'] = 'Exercise 6-3A: Practise Vb+GUSUP (text)';
-$l10n['dan']['lg2/structure/6.3.1/a'] = 'Øvelse 6-3A: Øv Vb+GUSUP (audio)';
-$l10n['eng']['lg2/structure/6.3.1/a'] = 'Exercise 6-3A: Practise Vb+GUSUP (audio)';
+$l10n['dan']['lg2/structure/6.3.1/t'] = 'Øvelse 6.3A: Øv Vb+GUSUP (tekst)';
+$l10n['eng']['lg2/structure/6.3.1/t'] = 'Exercise 6.3A: Practise Vb+GUSUP (text)';
+$l10n['dan']['lg2/structure/6.3.1/a'] = 'Øvelse 6.3A: Øv Vb+GUSUP (audio)';
+$l10n['eng']['lg2/structure/6.3.1/a'] = 'Exercise 6.3A: Practise Vb+GUSUP (audio)';
 $l10n['dan']['lg2/structure/6.3.1/text'] = 'Sæt tilhænget Vb+GUSUP på samtlige følgende verber. Vb+GUSUP tilhører en lille gruppe af tilhæng, der opfører sig lidt særpræget, idet det indledende g opfører sig som g plejer at gøre (rg ⇒ r og pg ⇒ *gg ⇒ kk) undtagen når tilhænget sættes efter en vokal. Så anvendes nemlig varianten -rusup- i stedet for det forventede gusup-.';
 $l10n['eng']['lg2/structure/6.3.1/text'] = 'Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviating behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * gusup-.';
 
-$l10n['dan']['lg2/structure/6.3.2/t'] = 'Øvelse 6-3B: Øv Vb+GUSUP-NNGIT (tekst)';
-$l10n['eng']['lg2/structure/6.3.2/t'] = 'Exercise 6-3B: Practise Vb+GUSUP-NNGIT (text)';
-$l10n['dan']['lg2/structure/6.3.2/a'] = 'Øvelse 6-3B: Øv Vb+GUSUP-NNGIT (audio)';
-$l10n['eng']['lg2/structure/6.3.2/a'] = 'Exercise 6-3B: Practise Vb+GUSUP-NNGIT (audio)';
+$l10n['dan']['lg2/structure/6.3.2/t'] = 'Øvelse 6.3B: Øv Vb+GUSUP-NNGIT (tekst)';
+$l10n['eng']['lg2/structure/6.3.2/t'] = 'Exercise 6.3B: Practise Vb+GUSUP-NNGIT (text)';
+$l10n['dan']['lg2/structure/6.3.2/a'] = 'Øvelse 6.3B: Øv Vb+GUSUP-NNGIT (audio)';
+$l10n['eng']['lg2/structure/6.3.2/a'] = 'Exercise 6.3B: Practise Vb+GUSUP-NNGIT (audio)';
 $l10n['dan']['lg2/structure/6.3.2/text'] = 'Sæt tilhænget Vb+GUSUP-NNGIT på samtlige følgende verber.';
 $l10n['eng']['lg2/structure/6.3.2/text'] = 'Add the morphemes Vb+GUSUP-NNGIT to the following verbs.';
 
-$l10n['dan']['lg2/structure/6.4.1/t'] = 'Øvelse 6-4A: Øv Vb+TAR (tekst)';
-$l10n['eng']['lg2/structure/6.4.1/t'] = 'Exercise 6-4A: Practise Vb+TAR (text)';
-$l10n['dan']['lg2/structure/6.4.1/a'] = 'Øvelse 6-4A: Øv Vb+TAR (audio)';
-$l10n['eng']['lg2/structure/6.4.1/a'] = 'Exercise 6-4A: Practise Vb+TAR (audio)';
+$l10n['dan']['lg2/structure/6.4.1/t'] = 'Øvelse 6.4A: Øv Vb+TAR (tekst)';
+$l10n['eng']['lg2/structure/6.4.1/t'] = 'Exercise 6.4A: Practise Vb+TAR (text)';
+$l10n['dan']['lg2/structure/6.4.1/a'] = 'Øvelse 6.4A: Øv Vb+TAR (audio)';
+$l10n['eng']['lg2/structure/6.4.1/a'] = 'Exercise 6.4A: Practise Vb+TAR (audio)';
 $l10n['dan']['lg2/structure/6.4.1/text'] = 'Brug det meget, meget vigtige tilhæng Vb+TAR på samtlige følgende verber. Husk at Vb+TAR tilhører gruppen af tilhæng og endelser, der har en variabel konsonant som første lyd (T bliver t efter konsonant, men s efter vokal). I gloselister er +TAR\'s betydning normalt anført som "pleje at Vb". Det er som nævnt noget for håndfast, men vi har ikke en passende kort oversættelse til dansk. Faktisk er den negative definition den mest præcise, nemlig den, at hvis Vb ikke har +TAR betyder ordet \'Vb-er een gang\' som i 1969-imi ilisimatusarfimmi taamaatippunga eller "Vb-er altid" som i arnaavunga. Men det ville have været taamaatittarpunga hvis jeg var droppet ud af universitetet fx tre gange og det ville være arnaasarpunga hvis jeg arbejdede som drag-queen om lørdagen. Og husk, at +TAR er obligatorisk sammen med ord, der udtrykker gentagen tid.';
 $l10n['eng']['lg2/structure/6.4.1/text'] = 'Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR\'s meaning is often glossed as \'uses to Vb\'. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means \'to Vb only once\' as in 1969-imi ilisimatusarfimmi taamaatippunga or \'to Vb always\' as in arnaavunga. It would have been taamaatittarpunga had I dropped out of studying several times and it would have been arnaasarpunga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time.';
 
-$l10n['dan']['lg2/structure/6.4.2/t'] = 'Øvelse 6-4B: Øv Vb+TAR=NNGIT (tekst)';
-$l10n['eng']['lg2/structure/6.4.2/t'] = 'Exercise 6-4B: Practise Vb+TAR=NNGIT (text)';
-$l10n['dan']['lg2/structure/6.4.2/a'] = 'Øvelse 6-4B: Øv Vb+TAR=NNGIT (audio)';
-$l10n['eng']['lg2/structure/6.4.2/a'] = 'Exercise 6-4B: Practise Vb+TAR=NNGIT (audio)';
+$l10n['dan']['lg2/structure/6.4.2/t'] = 'Øvelse 6.4B: Øv Vb+TAR=NNGIT (tekst)';
+$l10n['eng']['lg2/structure/6.4.2/t'] = 'Exercise 6.4B: Practise Vb+TAR=NNGIT (text)';
+$l10n['dan']['lg2/structure/6.4.2/a'] = 'Øvelse 6.4B: Øv Vb+TAR=NNGIT (audio)';
+$l10n['eng']['lg2/structure/6.4.2/a'] = 'Exercise 6.4B: Practise Vb+TAR=NNGIT (audio)';
 $l10n['dan']['lg2/structure/6.4.2/text'] = 'Brug den meget vigtige kombination af tilhæng Vb+TAR=NNGIT på samtlige følgende verber.';
 $l10n['eng']['lg2/structure/6.4.2/text'] = 'Use the high-frequent combination of morphemes Vb+TAR=NNGIT with all the verbs hereunder.';
 
-$l10n['dan']['lg2/structure/6.5/t'] = 'Øvelse 6-5: Øv TERMINALIS-KAR (tekst)';
-$l10n['eng']['lg2/structure/6.5/t'] = 'Exercise 6-5: Practise TERMINALIS-KAR (text)';
-$l10n['dan']['lg2/structure/6.5/a'] = 'Øvelse 6-5: Øv TERMINALIS-KAR (audio)';
-$l10n['eng']['lg2/structure/6.5/a'] = 'Exercise 6-5: Practise TERMINALIS-KAR (audio)';
+$l10n['dan']['lg2/structure/6.5/t'] = 'Øvelse 6.5: Øv TERMINALIS-KAR (tekst)';
+$l10n['eng']['lg2/structure/6.5/t'] = 'Exercise 6.5: Practise TERMINALIS-KAR (text)';
+$l10n['dan']['lg2/structure/6.5/a'] = 'Øvelse 6.5: Øv TERMINALIS-KAR (audio)';
+$l10n['eng']['lg2/structure/6.5/a'] = 'Exercise 6.5: Practise TERMINALIS-KAR (audio)';
 $l10n['dan']['lg2/structure/6.5/text'] = 'Sæt TERMINALIS-KAR på samtlige følgende nominer. Der er jo blot tale om en mekanisk udvidelse af terminalis, så det er egentlig ret let. Afhængig af N findes tilhænget altså i følgende 4 varianter N-mukar ved ubøjede N af p-bøjningen, N-nukar ved (de fleste) bøjede ord af p-bøjningen, N+mukar ved ubøjede N af up-bøjningen og endelig N+nukar ved de fleste bøjede ord af up-bøjningen. Lad subjektet være "jeg".';
 $l10n['eng']['lg2/structure/6.5/text'] = 'Add TERMINALIS-KAR to all nouns hereunder. The process is rather simple since all you have to do is to mechanically add -KAR after the terminal case. Depending on N the combined terminal case ending plus -KAR can thus take four different shapes: N-mukar with uninflected p-stems, N-nukar with inflected p-stems, N+mukar with uninflected up-stems and N+nukar with most inflected up-stems. Use "I" as subject.';
 
-$l10n['dan']['lg2/structure/6.6/t'] = 'Øvelse 6-6: Øv TERMINALIS-KAR med yderligere tilhæng';
-$l10n['eng']['lg2/structure/6.6/t'] = 'Exercise 6-6: Practise TERMINALIS-KAR with further morphemes';
-$l10n['dan']['lg2/structure/6.6/text'] = 'Denne øvelse er en udvidelse af 6-5. Sæt TERMINALIS-KAR på samtlige følgende nominer, men medtag nu sammenhængen ullumi, naamik og aqagu (\'i morgen\') og gør det for såvel subjektet "de" som subjektet "jeg".';
-$l10n['eng']['lg2/structure/6.6/text'] = 'This exercise is an expanded form of exercise 6-5. Add TERMINALIS-KAR to the nouns hereunder but add a little context to the words you create. Include ullumi, naamik and aqagu (\'tomorrow\') and make the sentences both with subject \'they\' and subject \'I\'.';
+$l10n['dan']['lg2/structure/6.6/t'] = 'Øvelse 6.6: Øv TERMINALIS-KAR med yderligere tilhæng';
+$l10n['eng']['lg2/structure/6.6/t'] = 'Exercise 6.6: Practise TERMINALIS-KAR with further morphemes';
+$l10n['dan']['lg2/structure/6.6/text'] = 'Denne øvelse er en udvidelse af 6.5. Sæt TERMINALIS-KAR på samtlige følgende nominer, men medtag nu sammenhængen ullumi, naamik og aqagu (\'i morgen\') og gør det for såvel subjektet "de" som subjektet "jeg".';
+$l10n['eng']['lg2/structure/6.6/text'] = 'This exercise is an expanded form of exercise 6.5. Add TERMINALIS-KAR to the nouns hereunder but add a little context to the words you create. Include ullumi, naamik and aqagu (\'tomorrow\') and make the sentences both with subject \'they\' and subject \'I\'.';
 
-$l10n['dan']['lg2/structure/7.1/t'] = 'Øvelse 7-1: Øv dig i brugen af den spørgende dummy su-';
-$l10n['eng']['lg2/structure/7.1/t'] = 'Exercise 7-1: Practise the interrogative dummy su-';
+$l10n['dan']['lg2/structure/7.1/t'] = 'Øvelse 7.1: Øv dig i brugen af den spørgende dummy su-';
+$l10n['eng']['lg2/structure/7.1/t'] = 'Exercise 7.1: Practise the interrogative dummy su-';
 $l10n['dan']['lg2/structure/7.1/text'] = 'Husker du su- fra kapitel 5? su- er lidt vanskelig at oversætte til noget entydigt, mundret dansk. su- betyder nemlig ikke rigtigt noget. Den er en spørgende dummy, vi anvender, når det er tilhængenes og endelsernes betydning, vi har brug for. I læsestykke 6 forekom udsagnet .. nalullugu suniarnerlunga (\'uden at vide, hvad jeg mon ville\'), hvor hele betydningen for så vidt ligger i tilhængene +NIAR+NIR. Det er en typisk anvendelse af su-. Oversæt følgende spørgsmål og nægtede sætninger til grønlandsk. Du skal bruge su- plus en endelse og undertiden også et tilhæng i samtlige sætninger.';
 $l10n['eng']['lg2/structure/7.1/text'] = 'Remember su- from chapter 5? su- is almost impossible to translate into idiomatic English because su- does not really mean anything. It is an interrogative dummy we use whenever we need to form questions about semantics contained in morphemes and endings as opposed to meaning contained in stems. In chapter 6 you met the sentence .. nalullugu suniarnerlunga (\'not knowing what I wanted\'). In the relative clause all meaning is contained in the morphemes +NIAR+NIR. That is a typical way to use su-. Translate the questions and negations hereunder. You need to use su- plus an ending and sometimes also a morphme.';
 
-$l10n['dan']['lg2/structure/7.2/t'] = 'Øvelse 7-2: Øv dig i brugen af ila';
-$l10n['eng']['lg2/structure/7.2/t'] = 'Exercise 7-2: Practise ila';
+$l10n['dan']['lg2/structure/7.2/t'] = 'Øvelse 7.2: Øv dig i brugen af ila';
+$l10n['eng']['lg2/structure/7.2/t'] = 'Exercise 7.2: Practise ila';
 $l10n['dan']['lg2/structure/7.2/text'] = 'Oversæt følgende sætninger til grønlandsk.';
 $l10n['eng']['lg2/structure/7.2/text'] = 'Translate these sentence into Greenlandic';
 
-$l10n['dan']['lg2/structure/7.3.1/t'] = 'Øvelse 7-3A: Absolut og relativ (tekst)';
-$l10n['eng']['lg2/structure/7.3.1/t'] = 'Exercise 7-3A: Absolutive and relative (text)';
-$l10n['dan']['lg2/structure/7.3.1/a'] = 'Øvelse 7-3A: Absolut og relativ (audio)';
-$l10n['eng']['lg2/structure/7.3.1/a'] = 'Exercise 7-3A: Absolutive and relative (audio)';
+$l10n['dan']['lg2/structure/7.3.1/t'] = 'Øvelse 7.3A: Absolut og relativ (tekst)';
+$l10n['eng']['lg2/structure/7.3.1/t'] = 'Exercise 7.3A: Absolutive and relative (text)';
+$l10n['dan']['lg2/structure/7.3.1/a'] = 'Øvelse 7.3A: Absolut og relativ (audio)';
+$l10n['eng']['lg2/structure/7.3.1/a'] = 'Exercise 7.3A: Absolutive and relative (audio)';
 $l10n['dan']['lg2/structure/7.3.1/text'] = 'I denne øvelse får du eksempelsætninger af typen "Subjektet har N". Omsæt dem til "Subjektets/ subjekternes ene N". Bemærk at du skal gå ud fra formerne N-NNGUK og N+SUK når endelserne {-up} og {-it} skal sættes efter N-NNGUAQ og N+SUAQ. NB: Denne øvelse er ganske vanskelig, men uhyre vigtig, så afsæt mindst et par timer til at komme ordentligt igennem den, så du forstår ALLE eksemplerne helt ned i detaljen.';
 $l10n['eng']['lg2/structure/7.3.1/text'] = 'In this exercise you get input of the shape "Subject has N". Rephrase them to noun phrase "Subject\'s N". Note that you must use the base forms N-NNGUK and N+SUK when endings {-up} and {-it} come after N-NNGUAQ and N+SUAQ. NB: This is a rather difficult exercise but it has a lot in store for you so give it all the time it takes to make 100% sure that you understand all wordforms in all details.';
 
-$l10n['dan']['lg2/structure/7.3.2/t'] = 'Øvelse 7-3B: Absolut og relativ (tekst)';
-$l10n['eng']['lg2/structure/7.3.2/t'] = 'Exercise 7-3B: Absolutive and relative (text)';
-$l10n['dan']['lg2/structure/7.3.2/a'] = 'Øvelse 7-3B: Absolut og relativ (audio)';
-$l10n['eng']['lg2/structure/7.3.2/a'] = 'Exercise 7-3B: Absolutive and relative (audio)';
-$l10n['dan']['lg2/structure/7.3.2/text'] = 'Denne øvelse er mage til 7-3A bortset fra at du nu skal udtrykke "Subjektets/subjekternes flere N-er".';
-$l10n['eng']['lg2/structure/7.3.2/text'] = 'This exercise is exactly like 7-3A apart from that you now will make noun phrases with "Subject\'s N\'s (more that one N)".';
+$l10n['dan']['lg2/structure/7.3.2/t'] = 'Øvelse 7.3B: Absolut og relativ (tekst)';
+$l10n['eng']['lg2/structure/7.3.2/t'] = 'Exercise 7.3B: Absolutive and relative (text)';
+$l10n['dan']['lg2/structure/7.3.2/a'] = 'Øvelse 7.3B: Absolut og relativ (audio)';
+$l10n['eng']['lg2/structure/7.3.2/a'] = 'Exercise 7.3B: Absolutive and relative (audio)';
+$l10n['dan']['lg2/structure/7.3.2/text'] = 'Denne øvelse er mage til 7.3A bortset fra at du nu skal udtrykke "Subjektets/subjekternes flere N-er".';
+$l10n['eng']['lg2/structure/7.3.2/text'] = 'This exercise is exactly like 7.3A apart from that you now will make noun phrases with "Subject\'s N\'s (more that one N)".';
 
-$l10n['dan']['lg2/structure/7.4/t'] = 'Øvelse 7-4: Leg lidt med halvtransitiv (tekst)';
-$l10n['eng']['lg2/structure/7.4/t'] = 'Exercise 7-4: Play with half-transitive (text)';
-$l10n['dan']['lg2/structure/7.4/a'] = 'Øvelse 7-4: Leg lidt med halvtransitiv (audio)';
-$l10n['eng']['lg2/structure/7.4/a'] = 'Exercise 7-4: Play with half-transitive (audio)';
+$l10n['dan']['lg2/structure/7.4/t'] = 'Øvelse 7.4: Leg lidt med halvtransitiv (tekst)';
+$l10n['eng']['lg2/structure/7.4/t'] = 'Exercise 7.4: Play with half-transitive (text)';
+$l10n['dan']['lg2/structure/7.4/a'] = 'Øvelse 7.4: Leg lidt med halvtransitiv (audio)';
+$l10n['eng']['lg2/structure/7.4/a'] = 'Exercise 7.4: Play with half-transitive (audio)';
 $l10n['dan']['lg2/structure/7.4/text'] = 'I denne øvelse får du eksempelsætninger af typen "Grundled verbum genstandsled". Genstandsleddet er altså bestemt/bekendt sådan som det altid er tilfældet ved transitive verber.
 Omsæt dem nu til sætninger med ubestemt genstandsled ved hjælp af HTR (halvtransitiv). Husk at sætte det ubestemte "genstandsled" i instrumentalis.';
 $l10n['eng']['lg2/structure/7.4/text'] = 'In this exercise your input is sentences of the structure \'subject object transitive verb\'. The object is accordinly definite as is always the case with direct objects.
 Rephrase them to sentences with indefinite objects using HTR (half-transitive). Remember to place the indefinite "object" in the instrumental case.';
 
-$l10n['dan']['lg2/structure/7.5/t'] = 'Øvelse 7-5: Leg lidt med halvtransitiv II';
-$l10n['eng']['lg2/structure/7.5/t'] = 'Exercise 7-5: Play with half-transitive II';
+$l10n['dan']['lg2/structure/7.5/t'] = 'Øvelse 7.5: Leg lidt med halvtransitiv II';
+$l10n['eng']['lg2/structure/7.5/t'] = 'Exercise 7.5: Play with half-transitive II';
 $l10n['dan']['lg2/structure/7.5/text'] = 'Man har ofte brug for at danne navneord også af betydninger, der normalt er transitive som i asa- (\'at elske ham\'), der kan danne ordet \'kærlighed\', eller pilersor- (\'at forsyne ham\'), der kan danne ord som \'forsyningsselskab\'. På grønlandsk er dette kun muligt efter at transitiviteten - og dermed fokus på genstandsleddet - er fjernet. Det klares med HTR. Dan navneord ved hjælp af Vb+TUQ og Vb+NIQ sat på de relevante transitive stammer, men husk at stammerne først skal gøres halvtransitive før TUQ og NIQ kan tilføjes.';
 $l10n['eng']['lg2/structure/7.5/text'] = 'You often need to make nouns out of transitive verbal meaning as with asa- (\'to love him\') to form nouns such as love or pilersor- (\'to supply him\') to make nouns like supplier. In Greenlandic this is only doable after you have "deleted" the object. That is one important function of HTR. Make nouns be means of Vb+TUQ and Vb+NIQ added to transitive stems but remember that the stems first must be detransitivized before you can add TUQ and NIQ.';
 
-$l10n['dan']['lg2/table/8.1'] = 'Øvelse 8-1: Hold tungen lige i munden, når du skal forstå og forme navneord, for der er altid 3 forskellige størrelser at holde styr på, nemlig kasus, person og tal';
-$l10n['eng']['lg2/table/8.1'] = 'Exercise 8-1: Tread carefully when you understand and produce nominal wordforms for you must be able to handle case, person and number at the same time';
+$l10n['dan']['lg2/table/8.1'] = 'Øvelse 8.1: Hold tungen lige i munden, når du skal forstå og forme navneord, for der er altid 3 forskellige størrelser at holde styr på, nemlig kasus, person og tal';
+$l10n['eng']['lg2/table/8.1'] = 'Exercise 8.1: Tread carefully when you understand and produce nominal wordforms for you must be able to handle case, person and number at the same time';
 $l10n['dan']['lg2/table/8.1/text'] = 'I denne øvelse skal du sikre dig, at du ikke har tabt overblikket. Derfor får du her hele det nominale system i oversigt. Bemærk at den tredie kolonne repræsenterer alle 6 "små" kasus. De opfører sig stort set ens, så lokalis får lov at repræsentere samtlige 6 i denne oversigt. Kontroller først, at du forstår systemets princip. Det gør du, hvis du ubesværet kan fylde samtlige celler med danske eksempler. Check dernæst, at du behersker de endelser, der hidtil har været præsenteret, ved at sætte de korrekte endelser på ordene erneq, panik ikinngut og nuna. Det er alle de celler, der ikke er lagt skygge på. Husk at erneq er et +up-ord, at panik er et -up-ord, at ikinngut er et p-ord, der bare slutter på ә og at nuna er et p-ord. {t:TXT_CHECK_REVEAL}.';
 $l10n['eng']['lg2/table/8.1/text'] = 'In this exercise you will make sure to have kept the overview. To do so you hereunder get the complex nominal system as a paradigm. Please, observe that the locative case endings in the third column also represents the other 5 local cases. They behave almost exactly alike so if you master the locative you master the whole system. First you make sure to understand the paradigm in principle. If you without problems can fill in English examples in the paradigm this is not a problem for you. Then you will add all the endings you have seen this far to the nouns erneq, panik ikinngut and nuna. All cells without shadings should be known to you by now. Remember that erneq is a +up-stem, that panik is a -up-stemord, that ikinngut is a normal p-stem with a final ә, and that nuna is a p-stem. {t:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg2/table/8.1/h1'] = 'Absolut';
@@ -947,31 +1052,31 @@ $l10n['eng']['lg2/table/8.1/4s'] = '4. singular';
 $l10n['dan']['lg2/table/8.1/4p'] = '4. flertal';
 $l10n['eng']['lg2/table/8.1/4p'] = '4. plural';
 
-$l10n['dan']['lg2/structure/8.2.1/t'] = 'Øvelse 8-2A: Øv strukturen Vb+TUQ-QAR (tekst)';
-$l10n['eng']['lg2/structure/8.2.1/t'] = 'Exercise 8-2A: Practise Vb+TUQ-QAR (text)';
-$l10n['dan']['lg2/structure/8.2.1/a'] = 'Øvelse 8-2A: Øv strukturen Vb+TUQ-QAR (audio)';
-$l10n['eng']['lg2/structure/8.2.1/a'] = 'Exercise 8-2A: Practise Vb+TUQ-QAR (audio)';
+$l10n['dan']['lg2/structure/8.2.1/t'] = 'Øvelse 8.2A: Øv strukturen Vb+TUQ-QAR (tekst)';
+$l10n['eng']['lg2/structure/8.2.1/t'] = 'Exercise 8.2A: Practise Vb+TUQ-QAR (text)';
+$l10n['dan']['lg2/structure/8.2.1/a'] = 'Øvelse 8.2A: Øv strukturen Vb+TUQ-QAR (audio)';
+$l10n['eng']['lg2/structure/8.2.1/a'] = 'Exercise 8.2A: Practise Vb+TUQ-QAR (audio)';
 $l10n['dan']['lg2/structure/8.2.1/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Der er et N/ der er nogle N, der Vb\'.';
 $l10n['eng']['lg2/structure/8.2.1/text'] = 'In this exercise your input sentences are of type \'the subject Vb-s\'. Rewrite them to sentences of type \'there is/are an/some N who Vb-s\'.';
 
-$l10n['dan']['lg2/structure/8.2.2/t'] = 'Øvelse 8-2B: Øv strukturen Vb+TUQ-QAR-NNGIT (tekst)';
-$l10n['eng']['lg2/structure/8.2.2/t'] = 'Exercise 8-2B: Practise the structure Vb+TUQ-QAR-NNGIT (text)';
-$l10n['dan']['lg2/structure/8.2.2/a'] = 'Øvelse 8-2B: Øv strukturen Vb+TUQ-QAR-NNGIT (audio)';
-$l10n['eng']['lg2/structure/8.2.2/a'] = 'Exercise 8-2B: Practise the structure Vb+TUQ-QAR-NNGIT (audio)';
+$l10n['dan']['lg2/structure/8.2.2/t'] = 'Øvelse 8.2B: Øv strukturen Vb+TUQ-QAR-NNGIT (tekst)';
+$l10n['eng']['lg2/structure/8.2.2/t'] = 'Exercise 8.2B: Practise the structure Vb+TUQ-QAR-NNGIT (text)';
+$l10n['dan']['lg2/structure/8.2.2/a'] = 'Øvelse 8.2B: Øv strukturen Vb+TUQ-QAR-NNGIT (audio)';
+$l10n['eng']['lg2/structure/8.2.2/a'] = 'Exercise 8.2B: Practise the structure Vb+TUQ-QAR-NNGIT (audio)';
 $l10n['dan']['lg2/structure/8.2.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Der er ingen, der Vb\'.';
 $l10n['eng']['lg2/structure/8.2.2/text'] = 'The same as the preceding exercise apart from an added negation in the output sentences.';
 
-$l10n['dan']['lg2/structure/8.3.1/t'] = 'Øvelse 8-3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (tekst)';
-$l10n['eng']['lg2/structure/8.3.1/t'] = 'Exercise 8-3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (text)';
-$l10n['dan']['lg2/structure/8.3.1/a'] = 'Øvelse 8-3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (audio)';
-$l10n['eng']['lg2/structure/8.3.1/a'] = 'Exercise 8-3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (audio)';
+$l10n['dan']['lg2/structure/8.3.1/t'] = 'Øvelse 8.3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (tekst)';
+$l10n['eng']['lg2/structure/8.3.1/t'] = 'Exercise 8.3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (text)';
+$l10n['dan']['lg2/structure/8.3.1/a'] = 'Øvelse 8.3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (audio)';
+$l10n['eng']['lg2/structure/8.3.1/a'] = 'Exercise 8.3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (audio)';
 $l10n['dan']['lg2/structure/8.3.1/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Subjektet Vb enormt meget\' med Vb+TUQ-RUJUK=SUAQ-U.';
 $l10n['eng']['lg2/structure/8.3.1/text'] = 'Here your input sentences are of type \'the subject Vb-s\'. Change them to \'the subject Vb-s very very much\' by means of Vb+TUQ-RUJUK=SUAQ-U.';
 
-$l10n['dan']['lg2/structure/8.3.2/t'] = 'Øvelse 8-3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (tekst)';
-$l10n['eng']['lg2/structure/8.3.2/t'] = 'Exercise 8-3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (text)';
-$l10n['dan']['lg2/structure/8.3.2/a'] = 'Øvelse 8-3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
-$l10n['eng']['lg2/structure/8.3.2/a'] = 'Exercise 8-3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
+$l10n['dan']['lg2/structure/8.3.2/t'] = 'Øvelse 8.3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (tekst)';
+$l10n['eng']['lg2/structure/8.3.2/t'] = 'Exercise 8.3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (text)';
+$l10n['dan']['lg2/structure/8.3.2/a'] = 'Øvelse 8.3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
+$l10n['eng']['lg2/structure/8.3.2/a'] = 'Exercise 8.3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
 $l10n['dan']['lg2/structure/8.3.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Subjektet Vb ikke særligt meget\' med Vb+TUQ-RUJUK=SUAQ-U-NNGIT.';
 $l10n['eng']['lg2/structure/8.3.2/text'] = 'The same input sentences as in the preceding exercise but now you change them using Vb+TUQ-RUJUK=SUAQ-U-NNGIT to make sentences meaning \'the subject does not really Vb/ the subject hardly Vb\'s\'.';
 
