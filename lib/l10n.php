@@ -247,10 +247,14 @@ $l10n['dan']['lg1/4x/prodg'] = 'Øvelse 4.4X: TODO (produktion)';
 $l10n['eng']['lg1/4x/prodg'] = 'Exercise 4.4X: Verb elaborating morpheme (production)';
 $l10n['eng']['lg1/4x/prodg/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg1/4x/random'] = 'Øvelse 4.5X: Sætninger (reception)';
 $l10n['eng']['lg1/4x/random'] = 'Exercise 4.5X: Sentences (reception)';
+$l10n['dan']['lg1/4x/random/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/4x/random/text'] = 'You will hear sentences containing only known language. Understand what you hear including all the processes that the sentence comes with. Once you are sure you understand everything speak out the whole sentence loudly. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
+$l10n['dan']['lg1/4x/randp'] = 'Øvelse 4.6X: Sætninger (production)';
 $l10n['eng']['lg1/4x/randp'] = 'Exercise 4.6X: Sentences (production)';
+$l10n['dan']['lg1/4x/randp/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/pdf/5x'] = 'Introduktion til kapitel 5 X-tras';
@@ -258,14 +262,17 @@ $l10n['eng']['lg1/pdf/5x'] = 'Introduction to chapter 5 X-tra';
 
 $l10n['dan']['lg1/5x/nu'] = 'Øvelse 5.1X: TODO (lydøvelse)';
 $l10n['eng']['lg1/5x/nu'] = 'Exercise 5.1X: Verbs created by adding N-U to nouns (perception)';
+$l10n['dan']['lg1/5x/nu/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/5x/nu/text'] = 'Here you are presented with nouns that have been verbified with N-U, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she, or it</i>). E.g. <i>nuliaavunga (wife - be - I) = I am a wife</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/5x/nqar'] = 'Øvelse 5.2X: TODO (lydøvelse)';
 $l10n['eng']['lg1/5x/nqar'] = 'Exercise 5.2X: Nouns with N-QAR and verbal stem suli- (perception)';
+$l10n['dan']['lg1/5x/nqar/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/5x/nqar/text'] = 'New nouns with N-QAR and new verbal stem, <i>suli-</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/5x/qa-aap'] = 'Øvelse 5.3X: TODO (produktion)';
 $l10n['eng']['lg1/5x/qa-aap'] = 'Exercise 5.3X: Answering interrogatives affirmatively (production)';
+$l10n['dan']['lg1/5x/qa-aap/text'] = 'TODO</p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endings in 2. person singular with and without object as in "<i>Per takuiuk? (Have you seen Per?)</i>" and "<i>Qanga tikippit? (When did you arrive?)</i>". In exercise 5 you will be asked whether you…. You will respond affirmatively to each question with "<i>Aap (Yes). ...</i>"</p>
 <p>E.g.<br>
 <i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Aap, Nuummi illoqarusuppunga.</i><br>
@@ -273,6 +280,7 @@ $l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endi
 
 $l10n['dan']['lg1/5x/qa-naamik'] = 'Øvelse 5.4X: TODO (produktion)';
 $l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: Answering interrogatives negatively (production)';
+$l10n['dan']['lg1/5x/qa-naamik/text'] = 'TODO</p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), ...</i>"</p>
 <p>E.g.<br>
 <i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
@@ -280,6 +288,8 @@ $l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your
 
 $l10n['dan']['lg1/5x/qa-ssa'] = 'Øvelse 5.5X: TODO (produktion)';
 $l10n['eng']['lg1/5x/qa-ssa'] = 'Exercise 5.5X: Sentences with -SSA 1 (production)';
+$l10n['dan']['lg1/5x/qa-ssa/text'] = 'TODO</p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-ssa/text'] = 'Understand sentences with -SSA. Remember that -SSA is mandatory with all verbal content taking place later than now. Your input will be questions like "<i>Yesterday, did you ..?</i>". Understand what you hear and give an answer like "<i>No, I will .. the day after tomorrow.</i>". Remember <i>ippassaq = yesterday</i> and <i>aqaguagu = day after tomorrow</i>.</p>
 <p>E.g.<br>
 <i>Ippassaq Nuummi whiskytorpit? Naamik, aqaguagu Nuummi whiskytussaanga.</i><br>
@@ -288,13 +298,17 @@ $l10n['eng']['lg1/5x/qa-ssa/text'] = 'Understand sentences with -SSA. Remember t
 
 $l10n['dan']['lg1/5x/qa-aqa'] = 'Øvelse 5.6X: TODO (produktion)';
 $l10n['eng']['lg1/5x/qa-aqa'] = 'Exercise 5.6X: Sentences with -SSA 2 (production)';
+$l10n['dan']['lg1/5x/qa-aqa/text'] = 'TODO</p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-aqa/text'] = 'Understand the questions and negate them followed by "<i>.. but day after tomorrow I will ..</i>"</p>
 <p>E.g.<br>
 <i>Ippassaq Nuummi whiskytorpit? Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i><br>
 <i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg1/5x/randp'] = 'Øvelse 5.7X: Sætninger (production)';
 $l10n['eng']['lg1/5x/randp'] = 'Exercise 5.7X: Sentences (production)';
+$l10n['dan']['lg1/5x/randp/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/hyphenate'] = 'Stavelsesdeling af bynavne';
@@ -617,6 +631,12 @@ $l10n['eng']['lg2/0x/summer/text'] = 'Your input will be questions like <i>Ippas
 
 $l10n['dan']['lg2/0x/i'] = 'Øvelse 0.3x: TODO title';
 $l10n['eng']['lg2/0x/i'] = 'Exercise 0.3x: TODO title';
+$l10n['dan']['lg2/0x/i/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/i/text'] = 'Your input will be a sentence stating something. You will add the morpheme TUQ (<i>someone, who ..</i>) followed by U (<i>to be</i>) to make statements like "SUBJECT is someone, who IS/DOES"</p>
+<p>Ex:<br>
+<i>Ilisimatusarfimmi ilinniarpunga</i> (I study at the university)<br>
+<i>Ilisimatusarfimmi ilinniartuuvunga</i> (I am a student at the university).</p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';

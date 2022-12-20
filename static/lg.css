@@ -145,6 +145,11 @@ body {
 	clear: both;
 }
 
+.btn-sm {
+	padding: 0.15rem 0.3rem;
+	font-size: 0.6em;
+}
+
 @media (max-width: 735px) {
 	.ch-item + .ch-item {
 		margin-top: 0.5rem;

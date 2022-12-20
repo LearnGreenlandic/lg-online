@@ -38,7 +38,7 @@ function lg2($state) {
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/0x/deny/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/deny}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/summer/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/summer}</a></li>
-		<!-- <li><a href="{t:prefix}/lg2/0x/i/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/i}</a></li> -->
+		<li><a href="{t:prefix}/lg2/0x/i/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/i}</a></li>
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/fsts/1.1.1/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.1}</a></li>
