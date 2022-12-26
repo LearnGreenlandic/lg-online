@@ -21,7 +21,20 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/pdf/1.1.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/pdf/1}</a></li>
 
 		<li><br></li>
-		<li><a href="{t:prefix}/lg2/prep/"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/prep}</a></li>
+		<li><a href="{t:prefix}/lg2/fsts/1.1.1/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.1}</a></li>
+		<li><a href="{t:prefix}/lg2/fsts/1.1.2/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.2}</a></li>
+		<li><a href="{t:prefix}/lg2/fsts/1.1.3/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.3}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/repeat/1/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg2/repeat/1}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/pdf/slides/1.1.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/pdf/slides/1.1}</a></li>
+	</ul>
+</div>
+<div class="choice my-2 col-lg-6" id="l1.1x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/prep/" class="text-warning"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/prep}</a></h5>
+	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg2/structure/0.1/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.1/t}</a></li>
 		<li><a href="{t:prefix}/lg2/structure/0.1/a/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg2/structure/0.1/a}</a></li>
 		<li><a href="{t:prefix}/lg2/structure/0.2/t/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/structure/0.2/t}</a></li>
@@ -39,17 +52,6 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/0x/deny/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/deny}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/summer/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/summer}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/i/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/i}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg2/fsts/1.1.1/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.1}</a></li>
-		<li><a href="{t:prefix}/lg2/fsts/1.1.2/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.2}</a></li>
-		<li><a href="{t:prefix}/lg2/fsts/1.1.3/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fsts/1.1.3}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg2/repeat/1/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg2/repeat/1}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg2/pdf/slides/1.1.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/pdf/slides/1.1}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l1.2">

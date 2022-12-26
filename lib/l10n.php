@@ -220,8 +220,8 @@ $l10n['dan']['tmpl/pred'] = 'PRED';
 $l10n['eng']['tmpl/pred'] = 'PRED';
 $l10n['dan']['tmpl/verb'] = 'Verbum';
 $l10n['eng']['tmpl/verb'] = 'Verb';
-$l10n['dan']['tmpl/adled'] = 'Adled til inkorporeret objekt';
-$l10n['eng']['tmpl/adled'] = '!TODO!';
+$l10n['dan']['tmpl/adled'] = 'Adled til inderiveret objekt';
+$l10n['eng']['tmpl/adled'] = '"Adjective" to inderived object';
 
 $l10n['dan']['lg1/3x/randp'] = 'Øvelse 3.11X: Sætninger (produktion)';
 $l10n['eng']['lg1/3x/randp'] = 'Exercise 3.11X: Sentences (production)';
@@ -231,30 +231,34 @@ $l10n['eng']['lg1/3x/randp/text'] = 'The system will generate in random order a 
 $l10n['dan']['lg1/pdf/4x'] = 'Introduktion til kapitel 4 X-tras';
 $l10n['eng']['lg1/pdf/4x'] = 'Introduction to chapter 4 X-tra';
 
-$l10n['dan']['lg1/4x/listenv'] = 'Øvelse 4.1X: TODO (lydøvelse)';
+$l10n['dan']['lg1/4x/listenv'] = 'Øvelse 4.1X: Verber dannet af -QAR og +TUR på nominer  (lytteøvelse)';
 $l10n['eng']['lg1/4x/listenv'] = 'Exercise 4.1X: Verbs created by adding N-QAR and N+TUR to nouns (perception)';
+$l10n['dan']['lg1/4x/listenv/text'] = 'I denne øvelse får du 5 nominer, der er blevet verbaliserede med subjekter i hhv. 1Sg (<i>jeg</i>) og 3Sg (<i>han, hun, den/det</i>). Lyt til du forstår sætningen ordentligt og udtal den så højt før du går videre til næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/4x/listenv/text'] = 'Here you are presented with 5 nouns that have been verbified, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she, or it</i>). Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
-$l10n['dan']['lg1/4x/prod'] = 'Øvelse 4.2X: TODO (produktion)';
+$l10n['dan']['lg1/4x/prod'] = 'Øvelse 4.2X: Dan verber ved at tilføje -QAR og +TUR til nominer (produktion)';
 $l10n['eng']['lg1/4x/prod'] = 'Exercise 4.2X: Produce verbs by adding N-QAR and N+TUR to nouns (production)';
-$l10n['eng']['lg1/4x/prod/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/4x/prod/text'] = 'Dan verbet i overensstemmelse med den anførte skabelon. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/4x/prod/text'] = 'Build the verbs according to the templates provided. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/4x/listeng'] = 'Øvelse 4.3X: TODO (lydøvelse)';
+$l10n['dan']['lg1/4x/listeng'] = 'Øvelse 4.3X: Tilføj ekstra betydning til verber med derivationsmorfemerne (lytteøvelse)';
 $l10n['eng']['lg1/4x/listeng'] = 'Exercise 4.3X: Verb elaborating morpheme (perception)';
+$l10n['dan']['lg1/4x/listeng/text'] = 'Dit første viderederiverende morfem er +GUSUP, der betyder "<i>at gerne ville Vb</i>". Lyt til du forstår, hvad du hører, og udtal dernæst hele sætningen højt før du går i gang med næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/4x/listeng/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
-$l10n['dan']['lg1/4x/prodg'] = 'Øvelse 4.4X: TODO (produktion)';
+$l10n['dan']['lg1/4x/prodg'] = 'Øvelse 4.4X: Viderederiverede verber (produktion)';
 $l10n['eng']['lg1/4x/prodg'] = 'Exercise 4.4X: Verb elaborating morpheme (production)';
+$l10n['dan']['lg1/4x/prodg/text'] = 'Dit første viderederiverende tilhæng er +GUSUP, der betyder "<i>at gerne ville Vb</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/4x/prodg/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/4x/random'] = 'Øvelse 4.5X: Sætninger (reception)';
 $l10n['eng']['lg1/4x/random'] = 'Exercise 4.5X: Sentences (reception)';
-$l10n['dan']['lg1/4x/random/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/4x/random/text'] = 'Her kommer et antal sætninger, der kun indeholder kendt stof. Aflyt dem og forstå både hvad de betyder og hvilke processer, der indgår i dannelsen af ord og sætninger. Når du er sikker på at have forstået alt, skal du udtale sætningerne højt. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/4x/random/text'] = 'You will hear sentences containing only known language. Understand what you hear including all the processes that the sentence comes with. Once you are sure you understand everything speak out the whole sentence loudly. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/4x/randp'] = 'Øvelse 4.6X: Sætninger (production)';
 $l10n['eng']['lg1/4x/randp'] = 'Exercise 4.6X: Sentences (production)';
-$l10n['dan']['lg1/4x/randp/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/4x/randp/text'] = 'Øvelsen giver dig en lang række randomiserede øvelser bygget over 6 forskellige sætningsmønstre. Lav sætningerne i overensstemmelse med skabelonerne efterhånden som du ser dem. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/pdf/5x'] = 'Introduktion til kapitel 5 X-tras';
@@ -613,25 +617,35 @@ $l10n['eng']['We-are-Vbed'] = 'We are Vb-ed ..';
 $l10n['dan']['Are-you-Vbed'] = 'Er du blevet ..?';
 $l10n['eng']['Are-you-Vbed'] = 'Are you Vb-ed ..?';
 
-$l10n['dan']['lg2/0x/deny'] = 'Øvelse 0.1x: Fornægt spørgsmål';
+$l10n['dan']['lg2/0x/deny'] = 'Øvelse 0.1x: Benægt spørgsmål';
 $l10n['eng']['lg2/0x/deny'] = 'Exercise 0.1x: Deny questions';
-$l10n['dan']['lg2/0x/deny/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg2/0x/deny/text'] = 'Som input får du spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ+2Sg. Benægt med <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq i går?)<br>
+<i>Naamik, ippassaq Arnannguaq Katuami ilinniartinngilara.</i> (Nej, jeg underviste ikke Arnannguaq i Katuaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/0x/deny/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny everything using <i>Naamik, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
 <i>Naamik, ippassaq Arnannguaq Katuami ilinniartinngilara.</i> (No, I did not teach Arnannguaq in Katuaq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/0x/summer'] = 'Øvelse 0.2x: TODO title';
-$l10n['eng']['lg2/0x/summer'] = 'Exercise 0.2x: TODO title';
-$l10n['dan']['lg2/0x/summer/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg2/0x/summer'] = 'Øvelse 0.2x: Gentagen handling';
+$l10n['eng']['lg2/0x/summer'] = 'Exercise 0.2x: Repeated action';
+$l10n['dan']['lg2/0x/summer/text'] = 'Som input får spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ+2Sg. Du skal benægte og sige, det kun er noget du gør om sommeren (altså gentagen handling, så TAR er obligatorisk). Start svarende med <i>Naamik, aasakkuinnaq…</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq i går?)<br>
+<i>Naamik, aasakkuinnaq Arnannguaq Katuami ilinniartittarpara.</i> (Nej, kun om sommeren underviser jeg Arnannguaq i Katuaq.).</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/0x/summer/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny and say you do so only in summertime (that is repeated action so you must add TAR) using <i>Naamik, aasakkuinnaq…</i></p>
 <p>Ex:<br>
 <i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
 <i>Naamik, aasakkuinnaq Arnannguaq Katuami ilinniartittarpara.</i> (No, I teach Arnannguaq in Katuaq only in summertime.).</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/0x/i'] = 'Øvelse 0.3x: TODO title';
-$l10n['eng']['lg2/0x/i'] = 'Exercise 0.3x: TODO title';
-$l10n['dan']['lg2/0x/i/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg2/0x/i'] = 'Øvelse 0.3x: Brug TUQ + U';
+$l10n['eng']['lg2/0x/i'] = 'Exercise 0.3x: Use TUQ + U';
+$l10n['dan']['lg2/0x/i/text'] = 'Dit input er et udsagn (altså en sætning i indikativ). Sæt derivationsmorfemet TUQ (<i>en, som ..</i>) fulgt af U (<i>at være</i>) for at danne udsagn af typen "SUBJEKT er en, som er/gør .."</p>
+<p>Ex:<br>
+<i>Ilisimatusarfimmi ilinniarpunga</i> (Jeg studerer på universitetet)<br>
+<i>Ilisimatusarfimmi ilinniartuuvunga</i> (Jeg er en, som studerer på universitetet (altså en student).</p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/0x/i/text'] = 'Your input will be a sentence stating something. You will add the morpheme TUQ (<i>someone, who ..</i>) followed by U (<i>to be</i>) to make statements like "SUBJECT is someone, who IS/DOES"</p>
 <p>Ex:<br>
 <i>Ilisimatusarfimmi ilinniarpunga</i> (I study at the university)<br>
