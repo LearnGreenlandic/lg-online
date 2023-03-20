@@ -382,12 +382,12 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 			];
 		$ps[] = [
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/Geo@', preg_grep('@\+Lok@', $all))),
-			array_map('\LGO\pfx_dummy', preg_grep('@Sem/lodge@', preg_grep('@\+1Sg(\+|\s)@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(lodge|work)@', preg_grep('@\+1Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all)),
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/Geo\+.*Lok@', $all)),
-			array_map('\LGO\pfx_dummy', preg_grep('@Sem/lodge@', preg_grep('@\+3Sg(\+|\s)@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(lodge|work)@', preg_grep('@\+3Sg(\+|\s)@', $all))),
 			];
 		$ps[] = [
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all)),
@@ -814,10 +814,9 @@ function sentence_random_write($state, $chap='3x') {
 		$lis = [];
 		foreach ($sent as $ts) {
 			$s = $ts[1];
-			$s[1] = preg_replace('~\+[^/+]+/[^/+]+~', '', $s[1]);
-			preg_match('~\+((?:1Sg|3Sg|Lok|Abl|Trm|Abs|[A-Z]+).*)$~', $s[1], $m);
-			$m[1] = str_replace('+', ' + ', $m[1]);
-			$li = "{t:tmpl/{$ts[0]}}: {$s[0]} + {$m[1]}";
+			$s[1] = preg_replace('~[^/+]+/[^/+]+\+~', '', $s[1]);
+			$s[1] = str_replace('+', ' + ', $s[1]);
+			$li = "{t:tmpl/{$ts[0]}}: {$s[0]} + {$s[1]}";
 			$lis[] = $li;
 			$words[] = $s[2];
 		}
