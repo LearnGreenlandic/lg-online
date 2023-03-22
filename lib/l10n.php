@@ -264,35 +264,45 @@ $l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a 
 $l10n['dan']['lg1/pdf/5x'] = 'Introduktion til kapitel 5 X-tras';
 $l10n['eng']['lg1/pdf/5x'] = 'Introduction to chapter 5 X-tra';
 
-$l10n['dan']['lg1/5x/nu'] = 'Øvelse 5.1X: TODO (lydøvelse)';
+$l10n['dan']['lg1/5x/nu'] = 'Øvelse 5.1X: Verber bygget med N-U til nominer (lydøvelse)';
 $l10n['eng']['lg1/5x/nu'] = 'Exercise 5.1X: Verbs created by adding N-U to nouns (perception)';
-$l10n['dan']['lg1/5x/nu/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/5x/nu/text'] = 'Here you are presented with nouns that have been verbified with N-U, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she, or it</i>). E.g. <i>nuliaavunga (wife - be - I) = I am a wife</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/5x/nu/text'] = 'Her kommer nogle nominer, der er verbaliserede med N-U enten med subjekt i 1Sg (<i>I</i>) eller 3Sg (<i>han, hun, den, det</i>). Fx <i>nuliaavunga (kone - være - jeg) = Jeg er en kone</i>. Lyt til du er sikker på, at du forstår, hvad du hører og udtal dernæst sætningen højt før du fortsætter til næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/5x/nu/text'] = 'Here you are presented with nouns that have been verbified with N-U, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she or it</i>). E.g. <i>nuliaavunga (wife - be - I) = I am a wife</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
-$l10n['dan']['lg1/5x/nqar'] = 'Øvelse 5.2X: TODO (lydøvelse)';
-$l10n['eng']['lg1/5x/nqar'] = 'Exercise 5.2X: Nouns with N-QAR and verbal stem suli- (perception)';
-$l10n['dan']['lg1/5x/nqar/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/5x/nqar/text'] = 'New nouns with N-QAR and new verbal stem, <i>suli-</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/5x/nqar'] = 'Øvelse 5.2X: Nominer med tilhænget N-QAR og et nyt verbum <i>suli-</i> (lydøvelse)';
+$l10n['eng']['lg1/5x/nqar'] = 'Exercise 5.2X: Nouns with N-QAR and verbal stem <i>suli-</i> (perception)';
+$l10n['dan']['lg1/5x/nqar/text'] = 'Nye nominer med tilhænget N-QAR og et nyt verbum, <i>suli/at arbejde</i>. Lyt til du er sikker på, at du forstår, hvad du hører, og udtal så sætningen højt før du går videre til næste sætning. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/5x/nqar/text'] = 'New nouns with N-QAR and new verbal stem, <i>suli/to work</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
-$l10n['dan']['lg1/5x/qa-aap'] = 'Øvelse 5.3X: TODO (produktion)';
+$l10n['dan']['lg1/5x/qa-aap'] = 'Øvelse 5.3X: Besvar spørgsmål positivt (produktion)';
 $l10n['eng']['lg1/5x/qa-aap'] = 'Exercise 5.3X: Answering interrogatives affirmatively (production)';
-$l10n['dan']['lg1/5x/qa-aap/text'] = 'TODO</p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/5x/qa-aap/text'] = 'Du mødte interrogativs endelse i 2. person med og uden objekt i lektion 4 som i "<i>Per takuiuk? (Har du set Per?)</i>" og "<i>Qanga tikippit? (Hvornår kom du?)</i>". Her i øvelse 5 bliver du spurgt, om du ... Besvar alle spørgsmål bekræftende med "<i>Aap (Ja). ...</i>"</p>
+<p>Fx<br>
+<i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Aap, Nuummi illoqarusuppunga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p>  <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endings in 2. person singular with and without object as in "<i>Per takuiuk? (Have you seen Per?)</i>" and "<i>Qanga tikippit? (When did you arrive?)</i>". In exercise 5 you will be asked whether you…. You will respond affirmatively to each question with "<i>Aap (Yes). ...</i>"</p>
 <p>E.g.<br>
 <i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Aap, Nuummi illoqarusuppunga.</i><br>
 <i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/5x/qa-naamik'] = 'Øvelse 5.4X: TODO (produktion)';
+$l10n['dan']['lg1/5x/qa-naamik'] = 'Øvelse 5.4X: Besvar spørgsmål negativt (produktion)';
 $l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: Answering interrogatives negatively (production)';
-$l10n['dan']['lg1/5x/qa-naamik/text'] = 'TODO</p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/5x/qa-naamik/text'] = 'Benægt spørgsmål. Indled svarene med "<i>Naamik (Nej), ...</i>"</p>
+<p>Fx<br>
+<i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> 
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), ...</i>"</p>
 <p>E.g.<br>
 <i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
 <i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/5x/qa-ssa'] = 'Øvelse 5.5X: TODO (produktion)';
+$l10n['dan']['lg1/5x/qa-ssa'] = 'Øvelse 5.5X: Sætninger med SSA (produktion)';
 $l10n['eng']['lg1/5x/qa-ssa'] = 'Exercise 5.5X: Sentences with -SSA 1 (production)';
-$l10n['dan']['lg1/5x/qa-ssa/text'] = 'TODO</p>
+$l10n['dan']['lg1/5x/qa-ssa/text'] = 'Forstå sætninger, hvori SSA indgår. Husk at SSA er obligatorisk ved alle handlinger, der sker senere end nu. Du får input af typen "<i>I_går - vil/gør_du ..?</i>". Forstå, hvad du hører og svar med "<i>Nej, jeg .. i overmorgen.</i>". Husk at <i>ippassaq = i går</i> og <i>aqaguagu = i overmorgen</i>.</p>
+<p>Fx<br>
+<i>Ippassaq Nuummi whiskytorpit? Naamik, aqaguagu Nuummi whiskytussaanga.</i><br>
+<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, aqaguagu Egede Qaqortumi naapissavara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-ssa/text'] = 'Understand sentences with -SSA. Remember that -SSA is mandatory with all verbal content taking place later than now. Your input will be questions like "<i>Yesterday, did you ..?</i>". Understand what you hear and give an answer like "<i>No, I will .. the day after tomorrow.</i>". Remember <i>ippassaq = yesterday</i> and <i>aqaguagu = day after tomorrow</i>.</p>
 <p>E.g.<br>

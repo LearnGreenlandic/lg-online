@@ -448,24 +448,7 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 			];
 		$ps[] = [
 			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(eat|fn:drink|eat)@', preg_grep('@\+(GUSUP|SSA|NNGIT)\+@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
-			];
-		return $ps;
-	}
-
-	if ($chap == '5x' && $task == 'qa-ssa') {
-		$ps[] = [
-			preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem|Hum).*Abs@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(encounter|teach|see)@', preg_grep('@\+(GUSUP|SSA|NNGIT)\+@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
-			];
-		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*(Trm|Abl)@', $all),
-			preg_grep('@Sem/(run|reach)@', preg_grep('@\+(GUSUP|SSA|NNGIT)\+@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
-			];
-		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(eat|fn:drink|eat)@', preg_grep('@\+(GUSUP|SSA|NNGIT)\+@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
+			preg_grep('@Sem/(eat|fn:drink)@', preg_grep('@\+(GUSUP|SSA|NNGIT)\+@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
 			];
 		return $ps;
 	}
