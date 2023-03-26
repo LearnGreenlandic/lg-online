@@ -290,7 +290,7 @@ $l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: Answering interrogatives nega
 $l10n['dan']['lg1/5x/qa-naamik/text'] = 'Benægt spørgsmål. Indled svarene med "<i>Naamik (Nej), ...</i>"</p>
 <p>Fx<br>
 <i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
-<i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> 
+<i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), ...</i>"</p>
 <p>E.g.<br>
@@ -310,9 +310,12 @@ $l10n['eng']['lg1/5x/qa-ssa/text'] = 'Understand sentences with -SSA. Remember t
 <i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, aqaguagu Egede Qaqortumi naapissavara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/5x/qa-aqa'] = 'Øvelse 5.6X: TODO (produktion)';
+$l10n['dan']['lg1/5x/qa-aqa'] = 'Øvelse 5.6X: Sætninger med SSA 2 (produktion)';
 $l10n['eng']['lg1/5x/qa-aqa'] = 'Exercise 5.6X: Sentences with -SSA 2 (production)';
-$l10n['dan']['lg1/5x/qa-aqa/text'] = 'TODO</p>
+$l10n['dan']['lg1/5x/qa-aqa/text'] = 'Forstå spørgsmålene og benægt dem fulgt af "<i>.. men i overmorgen vil jeg ..</i></p>
+<p>Fx<br>
+<i>Ippassaq Nuummi whiskytorpit? Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i><br>
+<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-aqa/text'] = 'Understand the questions and negate them followed by "<i>.. but day after tomorrow I will ..</i>"</p>
 <p>E.g.<br>
@@ -322,7 +325,7 @@ $l10n['eng']['lg1/5x/qa-aqa/text'] = 'Understand the questions and negate them f
 
 $l10n['dan']['lg1/5x/randp'] = 'Øvelse 5.7X: Sætninger (production)';
 $l10n['eng']['lg1/5x/randp'] = 'Exercise 5.7X: Sentences (production)';
-$l10n['dan']['lg1/5x/randp/text'] = 'TODO. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/5x/randp/text'] = 'Programmet genererer i tilfældig rækkefølge en række opgaver. Din opgave er at lave sætninger ud fra de opgaver, du får. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/hyphenate'] = 'Stavelsesdeling af bynavne';
