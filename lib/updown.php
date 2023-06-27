@@ -123,3 +123,18 @@ function updown_lg2($state, $which) {
 	}
 	\LGO\footer($state);
 }
+
+function updown_lg2x($state, $which) {
+	\LGO\header($state, 'lg2', 'fstx/'.$which);
+	$s = substr($which, -1);
+	if ($s === '1') {
+		\LGO\updown_1($state, 'lg2/fstx', substr($which, 0, 3));
+	}
+	else if ($s === '2') {
+		\LGO\updown_2($state, 'lg2/fstx', substr($which, 0, 3));
+	}
+	else {
+		\LGO\updown_3($state, 'lg2/fstx', substr($which, 0, 3));
+	}
+	\LGO\footer($state);
+}

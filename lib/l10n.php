@@ -533,14 +533,16 @@ $l10n['eng']['lg2/pdf/slides/9'] = 'Lecture 9 slides';
 $l10n['dan']['lg2/pdf/9'] = 'Kapitel 9 som PDF';
 $l10n['eng']['lg2/pdf/9'] = 'Chapter 9 as PDF';
 
-for ($i=1 ; $i<9 ; ++$i) {
+for ($i=0 ; $i<9 ; ++$i) {
 	for ($j=1 ; $j<3 ; ++$j) {
-		$l10n['dan']['lg2/fsts/'.$i.'.'.$j.'.1'] = 'Automat '.$i.'.'.$j.'.1: Reception';
-		$l10n['eng']['lg2/fsts/'.$i.'.'.$j.'.1'] = 'Automaton '.$i.'.'.$j.'.1: Reception';
-		$l10n['dan']['lg2/fsts/'.$i.'.'.$j.'.2'] = 'Automat '.$i.'.'.$j.'.2: Produktion';
-		$l10n['eng']['lg2/fsts/'.$i.'.'.$j.'.2'] = 'Automaton '.$i.'.'.$j.'.2: Production';
-		$l10n['dan']['lg2/fsts/'.$i.'.'.$j.'.3'] = 'Automat '.$i.'.'.$j.'.3: Oversættelse';
-		$l10n['eng']['lg2/fsts/'.$i.'.'.$j.'.3'] = 'Automaton '.$i.'.'.$j.'.3: Translation';
+		foreach (['fsts' => '','fstx' => 'x'] as $w => $s) {
+			$l10n['dan']['lg2/'.$w.'/'.$i.'.'.$j.'.1'] = 'Automat '.$i.'.'.$j.'.1'.$s.': Reception';
+			$l10n['eng']['lg2/'.$w.'/'.$i.'.'.$j.'.1'] = 'Automaton '.$i.'.'.$j.'.1'.$s.': Reception';
+			$l10n['dan']['lg2/'.$w.'/'.$i.'.'.$j.'.2'] = 'Automat '.$i.'.'.$j.'.2'.$s.': Produktion';
+			$l10n['eng']['lg2/'.$w.'/'.$i.'.'.$j.'.2'] = 'Automaton '.$i.'.'.$j.'.2'.$s.': Production';
+			$l10n['dan']['lg2/'.$w.'/'.$i.'.'.$j.'.3'] = 'Automat '.$i.'.'.$j.'.3'.$s.': Oversættelse';
+			$l10n['eng']['lg2/'.$w.'/'.$i.'.'.$j.'.3'] = 'Automaton '.$i.'.'.$j.'.3'.$s.': Translation';
+		}
 	}
 }
 
@@ -665,10 +667,18 @@ $l10n['eng']['lg2/0x/i/text'] = 'Your input will be a sentence stating something
 <i>Ilisimatusarfimmi ilinniartuuvunga</i> (I am a student at the university).</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg2/pdf/alt'] = 'Øvelse 0.4x: Prøv at inddrage alternativt materiale';
+$l10n['eng']['lg2/pdf/alt'] = 'Exercise 0.4x: Try incorporating alternative sources';
+
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['dan']['lg2/fsts/3/text'] = 'Oversæt følgende glossering til ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/3/text'] = 'Translate the following glossings to words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
+
+$l10n['dan']['lg2/fstx/2/text'] = $l10n['dan']['lg2/fsts/2/text'];
+$l10n['eng']['lg2/fstx/2/text'] = $l10n['eng']['lg2/fsts/2/text'];
+$l10n['dan']['lg2/fstx/3/text'] = $l10n['dan']['lg2/fsts/3/text'];
+$l10n['eng']['lg2/fstx/3/text'] = $l10n['eng']['lg2/fsts/3/text'];
 
 $l10n['dan']['lg2/repeat/1'] = 'Lyt/forstå/gentag 1 v. Tikaajaat Kristensen';
 $l10n['eng']['lg2/repeat/1'] = 'Listen/understand/repeat 1: Tikaajaat Kristensen';

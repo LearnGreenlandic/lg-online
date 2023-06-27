@@ -24,6 +24,10 @@ function pdf($state, $lg, $path) {
 		$pdf = "d/{$lg}/{$path}/{$lang}.pdf";
 		$name = "{$lg}-{$path}-{$lang}.pdf";
 	}
+	else if (file_exists("d/{$lg}/pdfs/{$path}-{$lang}.pdf")) {
+		$pdf = "d/{$lg}/pdfs/{$path}-{$lang}.pdf";
+		$name = "{$lg}-{$path}-{$lang}.pdf";
+	}
 	else if (file_exists("d/{$lg}/{$path}.pdf")) {
 		$pdf = "d/{$lg}/{$path}.pdf";
 		$name = "{$lg}-{$path}.pdf";

@@ -136,6 +136,10 @@ else if (preg_match('~^lg2/fsts/([1-8][.][12][.][123])/$~', $state['path'], $m))
 	require_once __DIR__.'/lib/updown.php';
 	\LGO\updown_lg2($state, $m[1]);
 }
+else if (preg_match('~^lg2/fstx/([0-9][.][12][.][123])/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/updown.php';
+	\LGO\updown_lg2x($state, $m[1]);
+}
 else if (preg_match('~^lg2/table/([18]\.[12])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/table.php';
 	\LGO\table($state, $m[1]);

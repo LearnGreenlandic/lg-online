@@ -52,6 +52,12 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/0x/deny/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/deny}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/summer/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/summer}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/i/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/i}</a></li>
+		<li><a href="{t:prefix}/lg2/pdf/alt.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/pdf/alt}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/fstx/0.1.1/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fstx/0.1.1}</a></li>
+		<li><a href="{t:prefix}/lg2/fstx/0.1.2/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fstx/0.1.2}</a></li>
+		<li><a href="{t:prefix}/lg2/fstx/0.1.3/"><img src="{t:prefix}/static/fst_icon.png"> {t:lg2/fstx/0.1.3}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l1.2">
