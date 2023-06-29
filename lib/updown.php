@@ -40,7 +40,7 @@ function updown_data($state, $where='lg1/updown', $which='updown') {
 
 function updown_1($state, $where='lg1/updown', $which='updown') {
 ?>
-<div class="task task-updown container-fluid">
+<div class="task task-updown task-audio container-fluid">
 <div class="row">
 <div class="col">
 <p>{t:lg1/updown/1/text}</p>
@@ -49,7 +49,7 @@ function updown_1($state, $where='lg1/updown', $which='updown') {
 <div class="row alternate" lang="kl-GL">
 <?php
 	foreach (\LGO\updown_data($state, $where, $which) as $e) {
-		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-8 py-1">'.htmlspecialchars($e[0]).'</div><div class="col-4"><button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></div></div><div class="row"><code class="col-12 ua" data-a="'.$e[1].'" data-t="'.htmlspecialchars($e[2]).'"></code></div></div>';
+		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-8 py-1">'.htmlspecialchars($e[0]).'</div><div class="col-4"><audio src="/martha/?t='.urlencode($e[0]).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></div></div><div class="row"><code class="col-12 ua" data-a="'.$e[1].'" data-t="'.htmlspecialchars($e[2]).'"></code></div></div>';
 	}
 ?>
 </div>
@@ -59,7 +59,7 @@ function updown_1($state, $where='lg1/updown', $which='updown') {
 
 function updown_2($state, $where='lg1/updown', $which='updown') {
 ?>
-<div class="task task-text task-updown container-fluid">
+<div class="task task-text task-updown task-audio container-fluid">
 <div class="row">
 <div class="col">
 <p>{t:<?=$where;?>/2/text}</p>
@@ -68,7 +68,7 @@ function updown_2($state, $where='lg1/updown', $which='updown') {
 <div class="row alternate" lang="kl-GL">
 <?php
 	foreach (\LGO\updown_data($state, $where, $which) as $e) {
-		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-12 py-1"><code>'.htmlspecialchars($e[1]).'</code></div></div><div class="row"><div class="col-12 py-1"><input type="text" spellcheck="false" class="form-control" data-check="'.$e[0].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></span></div></div><div class="row"><code class="col-12 ua" data-a="'.htmlspecialchars($e[2]).'"></code></div></div>';
+		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-12 py-1"><code>'.htmlspecialchars($e[1]).'</code></div></div><div class="row"><div class="col-12 py-1"><input type="text" spellcheck="false" class="form-control" data-check="'.$e[0].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button> <audio src="/martha/?t='.urlencode($e[0]).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button></span></div></div><div class="row"><code class="col-12 ua" data-a="'.htmlspecialchars($e[2]).'"></code></div></div>';
 	}
 ?>
 </div>
@@ -78,7 +78,7 @@ function updown_2($state, $where='lg1/updown', $which='updown') {
 
 function updown_3($state, $where='lg1/updown', $which='updown') {
 ?>
-<div class="task task-text task-updown container-fluid">
+<div class="task task-text task-updown task-audio container-fluid">
 <div class="row">
 <div class="col">
 <p>{t:<?=$where;?>/3/text}</p>
@@ -87,7 +87,7 @@ function updown_3($state, $where='lg1/updown', $which='updown') {
 <div class="row alternate" lang="kl-GL">
 <?php
 	foreach (\LGO\updown_data($state, $where, $which) as $e) {
-		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-12 py-1"><code>'.htmlspecialchars($e[3]).'</code></div></div><div class="row"><div class="col-12 py-1"><input type="text" spellcheck="false" class="form-control" data-check="'.$e[0].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button></span></div></div><div class="row"><code class="col-12 ua" data-a="'.htmlspecialchars($e[2]).'"></code></div></div>';
+		echo '<div class="col-lg-6 my-2 entry"><div class="row"><div class="col-12 py-1"><code>'.htmlspecialchars($e[3]).'</code></div></div><div class="row"><div class="col-12 py-1"><input type="text" spellcheck="false" class="form-control" data-check="'.$e[0].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-info my-1">☉</button> <button type="button" class="btn btn-secondary my-1">☼</button> <audio src="/martha/?t='.urlencode($e[0]).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary my-1">▶</button></span></div></div><div class="row"><code class="col-12 ua" data-a="'.htmlspecialchars($e[2]).'"></code></div></div>';
 	}
 ?>
 </div>
