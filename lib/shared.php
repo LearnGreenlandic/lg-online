@@ -344,6 +344,17 @@ function footer($state=null) {
 <?php
 }
 
+function login_anonymous() {
+	if (!is_user_logged_in()) {
+		$user_login = 'Anonymous';
+		$user = get_user_by('login', $user_login);
+		$user_id = $user->ID;
+		wp_set_current_user($user_id, $user_login);
+		wp_set_auth_cookie($user_id);
+		do_action('wp_login', $user_login);
+	}
+}
+
 function shuffle_assoc($arr) {
 	$keys = array_keys($arr);
 	shuffle($keys);

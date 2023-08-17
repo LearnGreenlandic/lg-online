@@ -18,6 +18,11 @@ $state = \LGO\init();
 $sid = limit_session($state);
 log_hit($sid, $state['uid'], $_SERVER['REQUEST_URI']);
 
+if (substr($state['path'], 0, 9) === 'anonymous') {
+	\LGO\login_anonymous();
+	\header("Location: {$state['prefix']}/");
+	exit(0);
+}
 if (substr($state['path'], 0, 3) === 'lg1' && $state['lg1'] === 0) {
 	\LGO\header($state);
 	echo '<div class="container"><div class="row"><div class="col my-3 text-center">';

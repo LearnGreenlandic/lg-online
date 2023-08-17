@@ -6,8 +6,8 @@ $l10n = [
 	'eng' => [],
 	];
 
-$l10n['dan']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log ind</a> eller <a href="/wp-login.php?action=register">opret en konto</a> for at få gratis adgang til Learn Greenlandic.';
-$l10n['eng']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log in</a> or <a href="/wp-login.php?action=register">create an account</a> for free access to Learn Greenlandic.';
+$l10n['dan']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log ind</a> eller <a href="/wp-login.php?action=register">opret en konto</a> for at få gratis adgang til Learn Greenlandic. Du kan også <a href="./anonymous">tilgå servicen anonymt</a>.';
+$l10n['eng']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log in</a> or <a href="/wp-login.php?action=register">create an account</a> for free access to Learn Greenlandic. You can also <a href="./anonymous">access the service anonymously</a>.';
 $l10n['dan']['ERR_NO_ACCESS_LG1'] = $l10n['dan']['ERR_NO_ACCESS'];
 $l10n['eng']['ERR_NO_ACCESS_LG1'] = $l10n['eng']['ERR_NO_ACCESS'];
 $l10n['dan']['ERR_NO_ACCESS_LG2'] = $l10n['dan']['ERR_NO_ACCESS'];
