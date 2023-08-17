@@ -5,6 +5,11 @@ function lg1($state) {
 	\LGO\header($state, 'lg1');
 ?>
 <div class="container d-flex flex-wrap chooser">
+<!-- Global Notice -->
+<div class="alert alert-info col-6 mx-auto" role="alert">
+{t:alert}
+</div>
+
 <!-- Intro -->
 <div class="choice my-2 col-lg-12">
 	<a href="{t:prefix}/lg1/welcome/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg1/welcome-video/welcome.png"></a>

@@ -199,6 +199,12 @@ else {
 		</div>
 	</div>
 </div>
+
+<!-- Global Notice -->
+<div class="alert alert-info col-6 mx-auto" role="alert">
+{t:alert}
+</div>
+
 <?php
 	\LGO\footer($state);
 }
