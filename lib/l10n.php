@@ -52,6 +52,8 @@ $l10n['eng']['pamphlet'] = 'Pamphlet as PDF';
 
 $l10n['dan']['TXT_AUDIO'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden';
 $l10n['eng']['TXT_AUDIO'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio';
+$l10n['dan']['TXT_AUDIO_ANALYSIS_REVEAL'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise analysen';
+$l10n['eng']['TXT_AUDIO_ANALYSIS_REVEAL'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the analysis';
 $l10n['dan']['TXT_AUDIO_CHECK_REVEAL'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
 $l10n['eng']['TXT_AUDIO_CHECK_REVEAL'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio, <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
 $l10n['dan']['TXT_AUDIO_CHECK_REVEAL2'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, på <button class="btn btn-sm btn-info inert">▶</button> for at høre løsningen, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
@@ -670,8 +672,35 @@ $l10n['eng']['lg2/0x/i/text'] = 'Your input will be a sentence stating something
 <i>Ilisimatusarfimmi ilinniartuuvunga</i> (I am a student at the university).</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/pdf/alt'] = 'Øvelse 0.4x: Prøv at inddrage alternativt materiale';
-$l10n['eng']['lg2/pdf/alt'] = 'Exercise 0.4x: Try incorporating alternative sources';
+$l10n['dan']['lg2/0x/food'] = 'Øvelse 0.4x: Mad og drikke';
+$l10n['eng']['lg2/0x/food'] = 'Exercise 0.4x: Food and drink';
+$l10n['dan']['lg2/0x/food/text'] = 'Mad/drikke + TUR med lidt flere tilhængskombinationer: Forstå sætningerne og gentag dem når du kan.</p>
+<p>Ex:<br>
+<i>Aviaaja Katuami pizzatorusunngilaq.</i> (Aviaaja har ikke lyst til pizza i Katuaq.)</p>
+<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/0x/food2'] = 'Øvelse 0.5x: Mad og drikke, men';
+$l10n['eng']['lg2/0x/food2'] = 'Exercise 0.5x: Food and drink, but';
+$l10n['dan']['lg2/0x/food2/text'] = 'Næsten som foregående, men i denne øvelse inddrager vi samtidig LI (<i>men</i>). Forstå udsagnet og gentag det, når du kan.</p>
+<p>Ex:<br>
+<i>Aviaaja Qaqortumi whiskytorpoq, Nukali Qaqortumi whiskytunngilaq.</i></p>
+<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/0x/qa'] = 'Øvelse 0.6x: Besvar spørgsmål';
+$l10n['eng']['lg2/0x/qa'] = 'Exercise 0.6x: Answer questions';
+$l10n['dan']['lg2/0x/qa/text'] = 'Forstå spørgsmål og besvar dem bekræftende. Husk at benægtede spørgsmål besvares bogstaveligt <i>Nuliaqanngilatit / Har du ikke en kone</i> (=er du koneløs) / <i>Aap, nuliaqanngilanga</i> (=Ja, jeg er koneløs) eller <i>Tiitorusunngilatit / Har du ikke lyst til at drikke te</i> (=er du te-drikke-lyst-fri) / <i>Aap, tiitorusunngilanga</i> (=Ja, jeg te-drikke-lyst-fri).</p>
+<p>Ex:<br>
+<i>Tasiilarmiuuit? Aap, Tasiilarmiuuvunga.</i><br>
+<i>Tiitorusunngilatit? Aap, tiitorusunngilanga.</i></p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/qa2'] = 'Øvelse 0.7x: Benægt spørgsmål 2';
+$l10n['eng']['lg2/0x/qa2'] = 'Exercise 0.7x: Deny questions 2';
+$l10n['dan']['lg2/0x/qa2/text'] = 'Du får her en række udsagn, som du benægter. Husk igen, at besvare benægtede udsagn logisk.</p>
+<p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/pdf/alt'] = 'Øvelse 0.8x: Prøv at inddrage alternativt materiale';
+$l10n['eng']['lg2/pdf/alt'] = 'Exercise 0.8x: Try incorporating alternative sources';
 
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';

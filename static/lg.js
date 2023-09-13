@@ -98,6 +98,12 @@ $(function() {
 		});
 	}
 
+	if ($('.task-read').length) {
+		$('.task-read').find('.btn-secondary').click(function() {
+			$(this).closest('.entry').find('.hint').show();
+		});
+	}
+
 	if ($('.task-text-area').length) {
 		$('.task-text-area').find('textarea').change(textCheck);
 		$('.task-text-area').find('.btn-warning').click(function() {

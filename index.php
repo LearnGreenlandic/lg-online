@@ -165,7 +165,7 @@ else if (preg_match('~^lg2/structure/([\d.]+)/a/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/structure.php';
 	\LGO\structure_audio($state, $m[1]);
 }
-else if (preg_match('~^lg2/(\dx)/([-a-z]+)/$~', $state['path'], $m)) {
+else if (preg_match('~^lg2/(\dx)/([-a-z\d]+)/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/sentence.php';
 	\LGO\sentence_lg2($state, $m[1], $m[2]);
 }

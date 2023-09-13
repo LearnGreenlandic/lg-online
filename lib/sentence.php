@@ -359,7 +359,13 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 		$task = 'qa-ssa';
 	}
 
-	$all = load_corpus($root, $chap, $task);
+	$all = [];
+	if ($root == 'lg2' && $chap == '0x' && ($task == 'food' || $task == 'food2' || $task == 'qa' || $task == 'qa2')) {
+		$all = load_corpus($root, $chap, 'kal0');
+	}
+	else {
+		$all = load_corpus($root, $chap, $task);
+	}
 	$ps = [];
 
 	if ($chap == '5x' && $task == 'nu') {
@@ -501,6 +507,49 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 		return $ps;
 	}
 
+	if ($chap == '0x' && $task == 'food') {
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(MIU|LI|LU)[+\s]@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@\+TUR\+.*3Sg@', $all), PREG_GREP_INVERT)),
+			];
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(MIU|LI|LU)[+\s]@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@\+TUR\+.*1Sg@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'food2') {
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/Fem\+.*Abs@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(MIU|LI|LU)[+\s]@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(NNGIT|LI|LU)[+\s]@', preg_grep('@\+TUR\+.*V\+Ind\+3Sg@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LU)[+\s]@', preg_grep('@Sem/Mask\+.*Abs.*\+LI@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'qa') {
+		$ps[] = [
+			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'qa2') {
+		$ps[] = [
+			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/Fem\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/Geo\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@^nuliaq\+Sem/Hfam\+U\+Sem/be_copula\+Gram/IV.*\+3Sg@', $all), PREG_GREP_INVERT),
+			];
+		$ps[] = [
+			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/(Fem|Mask)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/Hnat.*\+U\+.*\+3Sg@', $all), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
 	if ($chap == '4x' || $chap == '5x') {
 		$ps[] = [
 			array_map('\LGO\pfx_fname', preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT)),
@@ -552,7 +601,13 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
 	$ps = _sent_rand_helper($root, $chap, $task);
-	$all = load_corpus($root, $chap);
+	$all = [];
+	if ($chap == '0x') {
+		$all = load_corpus($root, $chap, 'kal0');
+	}
+	else {
+		$all = load_corpus($root, $chap);
+	}
 
 	foreach ($all as $k => $v) {
 		unset($all[$k]);
@@ -582,13 +637,40 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		$qst = [];
 		$ans = [];
 
-		if ($task == 'qa-aap') {
+		if ($task == 'qa-aap' || $task == 'qa') {
 			$ans[] = 'Aap,';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
 				$qst[] = $w[1];
 				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
 				$ans[] = $all[$w[0]];
+			}
+		}
+		else if ($task == 'qa2') {
+			$ans[] = 'Naamik,';
+			foreach ($sent as $w) {
+				$w = explode("\t", $w);
+				$qst[] = $w[1];
+
+				if (strpos($w[0], '+NNGIT+') !== false) {
+					$w[0] = str_replace('+NNGIT+V+', '+V+', $w[0]);
+					if (!array_key_exists($w[0], $all)) {
+						$w[0] = str_replace('+Gram/IV+V+', '+V+', $w[0]);
+					}
+				}
+				else {
+					$w[0] = str_replace('+V+', '+NNGIT+V+', $w[0]);
+					if (!array_key_exists($w[0], $all)) {
+						$w[0] = str_replace('+NNGIT+V+', '+Gram/IV+NNGIT+V+', $w[0]);
+					}
+				}
+
+				if (!array_key_exists($w[0], $all)) {
+					$ans[] = "(Not found: {$w[0]})";
+				}
+				else {
+					$ans[] = $all[$w[0]];
+				}
 			}
 		}
 		else if ($task == 'qa-naamik') {
@@ -673,8 +755,8 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 			}
 		}
 
-		$qst = implode(' ', $qst).'?';
-		$ans = implode(' ', $ans);
+		$qst = ucfirst(implode(' ', $qst).'?');
+		$ans = ucfirst(implode(' ', $ans));
 
 		if ($task == 'i') {
 			$qst = substr($qst, 0, -1);
@@ -698,12 +780,12 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 <?php
 }
 
-function sentence_random_listen($state, $chap='3x', $task='random') {
+function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 ?>
-<div class="task task-text task-audio container-fluid sentence">
+<div class="task task-audio task-read container-fluid sentence">
 <div class="row mb-3">
 <div class="col">
-<p>{t:lg1/<?=$chap;?>/<?=$task;?>/text}</p>
+<p>{t:<?=$root;?>/<?=$chap;?>/<?=$task;?>/text}</p>
 </div>
 </div>
 <div class="row">
@@ -712,7 +794,75 @@ function sentence_random_listen($state, $chap='3x', $task='random') {
 </div>
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
-	$ps = _sent_rand_helper('lg1', $chap, $task);
+	$ps = _sent_rand_helper($root, $chap, $task);
+
+	$all = [];
+	if ($task == 'food2') {
+		$all = load_corpus($root, $chap, 'kal0');
+	}
+
+	$sents = [];
+	foreach ($ps as $p) {
+		$outs = [];
+		foreach ($p as $k => $vs) {
+			foreach ($vs as $ka => $va) {
+				$p[$k][$ka] = explode("\t", $va[1]);
+			}
+			shuffle($p[$k]);
+		}
+		foreach (cartesian_product($p) as $c) {
+			$outs[] = $c;
+			if (count($outs) >= 500) {
+				break;
+			}
+		}
+		shuffle($outs);
+		$outs = array_slice($outs, 0, 25);
+		$sents = array_merge($sents, $outs);
+	}
+
+	$outs = [];
+	foreach ($sents as $ws) {
+		if ($task == 'food2') {
+			$ws[] = $ws[1];
+			$nngit = preg_grep('@^\Q'.str_replace('+V+', '+NNGIT+V+', $ws[2][0]).'\E\t@', $all);
+			$ws[] = explode("\t", reset($nngit));
+		}
+
+		$ana = implode('<br>', array_column($ws, 0));
+		$sent = implode(' ', array_column($ws, 1));
+		$outs[] = '<div class="text-center entry"><div class="mb-3">'.$sent.'<br><code class="text-left text-wrap hint my-1">'.$ana.'</code></div><div><audio src="/martha/?t='.$sent.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button></div></div>';
+	}
+
+	shuffle($outs);
+	foreach ($outs as $out) {
+		echo $out;
+	}
+?>
+</div>
+<div class="col-3 text-left">
+<button type="button" class="btn btn-outline-primary playAfter" id="btnNext">{t:next}</button>
+</div>
+</div>
+</div>
+<?php
+}
+
+function sentence_random_listen($root='lg1', $state, $chap='3x', $task='random') {
+?>
+<div class="task task-text task-audio container-fluid sentence">
+<div class="row mb-3">
+<div class="col">
+<p>{t:<?=$root;?>/<?=$chap;?>/<?=$task;?>/text}</p>
+</div>
+</div>
+<div class="row">
+<div class="col-3 text-right">
+<button type="button" class="btn btn-outline-primary" id="btnPrev">{t:prev}</button>
+</div>
+<div class="col-6 my-2 text-center" id="shuffled">
+<?php
+	$ps = _sent_rand_helper($root, $chap, $task);
 
 	$sents = [];
 	foreach ($ps as $p) {
@@ -885,7 +1035,7 @@ function sentence($state, $chap, $task) {
 	\LGO\header($state, 'lg1', $chap.'/'.$task);
 	if ($chap == '5x') {
 		if ($task === 'nu' || $task === 'nqar') {
-			\LGO\sentence_random_listen($state, $chap, $task);
+			\LGO\sentence_random_listen('lg1', $state, $chap, $task);
 		}
 		else if ($task === 'qa-aap' || $task === 'qa-naamik' || $task === 'qa-ssa' || $task === 'qa-aqa') {
 			\LGO\sentence_random_qa('lg1', $state, $chap, $task);
@@ -939,7 +1089,7 @@ function sentence($state, $chap, $task) {
 	}
 
 	else if ($task === 'random') {
-		\LGO\sentence_random_listen($state, $chap);
+		\LGO\sentence_random_listen('lg1', $state, $chap);
 	}
 	else if ($task === 'randp') {
 		\LGO\sentence_random_write($state, $chap);
@@ -953,7 +1103,12 @@ function sentence($state, $chap, $task) {
 function sentence_lg2($state, $chap, $task) {
 	\LGO\header($state, 'lg2', $chap.'/'.$task);
 	if ($chap == '0x') {
-		\LGO\sentence_random_qa('lg2', $state, $chap, $task);
+		if ($task === 'food' || $task === 'food2') {
+			\LGO\sentence_random_read('lg2', $state, $chap, $task);
+		}
+		else {
+			\LGO\sentence_random_qa('lg2', $state, $chap, $task);
+		}
 	}
 	\LGO\footer($state);
 }

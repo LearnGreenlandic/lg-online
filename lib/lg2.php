@@ -57,6 +57,10 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/0x/deny/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/deny}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/summer/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/summer}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/i/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/i}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/food/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/food}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/food2/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/food2}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/qa/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/qa}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/qa2/"><img src="{t:prefix}/static/text_icon.png"> {t:lg2/0x/qa2}</a></li>
 		<li><a href="{t:prefix}/lg2/pdf/alt.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg2/pdf/alt}</a></li>
 
 		<li><br></li>
