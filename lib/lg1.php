@@ -6,9 +6,11 @@ function lg1($state) {
 ?>
 <div class="container d-flex flex-wrap chooser">
 <!-- Global Notice -->
+<!--
 <div class="alert alert-info col-6 mx-auto" role="alert">
 {t:alert}
 </div>
+-->
 
 <!-- Intro -->
 <div class="choice my-2 col-lg-12">
@@ -77,7 +79,6 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/dialogue/1/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg1/dialogue/1}</a></li>
 		<li><a href="{t:prefix}/lg1/dialogue/2/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg1/dialogue/2}</a></li>
 		<li><a href="{t:prefix}/lg1/dialogue/3/"><img src="{t:prefix}/static/listen_icon.png"> {t:lg1/dialogue/3}</a></li>
-		<li><a href="{t:prefix}/lg1/welcome/3/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/welcome/3}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/4.pdf"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/pdf/4}</a></li>
 
 		<li><br></li>
@@ -122,6 +123,10 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/5x/qa-ssa/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/qa-ssa}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/qa-aqa/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/qa-aqa}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/randp/"><img src="{t:prefix}/static/text_icon.png"> {t:lg1/5x/randp}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg1/welcome/intro/"><img src="{t:prefix}/static/pdf_icon.png"> {t:lg1/welcome/intro}</a></li>
+		<li><a href="{t:prefix}/lg1/welcome/3/"><img src="{t:prefix}/static/audio_icon.png"> {t:lg1/welcome/3}</a></li>
 	</ul>
 </div>
 <!-- Appendices -->

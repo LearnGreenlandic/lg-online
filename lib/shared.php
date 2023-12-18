@@ -141,7 +141,7 @@ function init() {
 	require_once ABSPATH.WPINC.'/class-wp-user-meta-session-tokens.php';
 	require_once ABSPATH.WPINC.'/formatting.php';
 	require_once ABSPATH.WPINC.'/capabilities.php';
-	//require_once ABSPATH.WPINC.'/query.php';
+	require_once ABSPATH.WPINC.'/blocks.php';
 	require_once ABSPATH.WPINC.'/user.php';
 	require_once ABSPATH.WPINC.'/meta.php';
 	require_once ABSPATH.WPINC.'/l10n.php';

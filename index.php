@@ -103,7 +103,7 @@ else if (preg_match('~^lg1/hyphenate/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/hyphenate.php';
 	\LGO\hyphenate($state);
 }
-else if (preg_match('~^lg1/welcome/([123])/$~', $state['path'], $m)) {
+else if (preg_match('~^lg1/welcome/([123]|intro)/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/welcome.php';
 	\LGO\welcome($state, $m[1]);
 }
@@ -201,9 +201,11 @@ else {
 </div>
 
 <!-- Global Notice -->
+<!--
 <div class="alert alert-info col-6 mx-auto" role="alert">
 {t:alert}
 </div>
+-->
 
 <?php
 	\LGO\footer($state);

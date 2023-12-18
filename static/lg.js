@@ -91,7 +91,6 @@ $(function() {
 			let e = $(this).closest('.entry');
 			let i = e.find('input').first();
 			e.find('.hint').text(i.attr('data-check')).show();
-			i.val('');
 			i.removeClass('is-valid').removeClass('is-invalid');
 			i.attr('placeholder', i.attr('data-check'));
 			i.focus();

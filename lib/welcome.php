@@ -74,6 +74,20 @@ function welcome_video($state) {
 <?php
 }
 
+function welcome_intro($state) {
+?>
+<div class="container">
+<div class="row">
+<div class="col">
+<?php
+	readfile("d/lg1/welcome-video/intro.{$state['lang']}.html");
+?>
+</div>
+</div>
+</div>
+<?php
+}
+
 function welcome_1($state) {
 	$text = file_get_contents('d/lg1/welcome/input.txt');
 	$hyphen = file_get_contents('d/lg1/welcome/hyphenated.txt');
@@ -230,6 +244,9 @@ function welcome($state, $which) {
 	\LGO\header($state, 'lg1', 'welcome/'.$which);
 	if ($which === 'video') {
 		\LGO\welcome_video($state);
+	}
+	else if ($which === 'intro') {
+		\LGO\welcome_intro($state);
 	}
 	else if ($which === '1') {
 		\LGO\welcome_1($state);

@@ -365,6 +365,9 @@ $l10n['eng']['lg1/dialogue/3'] = 'Mini-dialogue 1.3: Ask questions';
 $l10n['dan']['lg1/dialogue/3/text'] = 'Den sidste øvelse i denne omgang er en simpel husk/oversæt-øvelse. Koncentrer dig om at huske Beatrines sætninger. Formuler dem selv højt, lyt til Beatrine igen og gentag til sidst hendes sætning. Du får Tikas responser serveret som lidt memoteknisk hjælp. {t:TXT_AUDIO_TRANSLATE}.';
 $l10n['eng']['lg1/dialogue/3/text'] = 'The last exercise in this round is a simple recall/translate exercise. Concentrate on remembering the sentences from Beatrine. Formulate them out loud, listen to Beatrine again and finally repeat what she says. You get to see Tika\'s response as a mnemonic device. {t:TXT_AUDIO_TRANSLATE}.';
 
+$l10n['dan']['lg1/welcome/intro'] = 'Intro til: Diktat af Tikas velkomst';
+$l10n['eng']['lg1/welcome/intro'] = 'Intro for: Tika\'s welcome as dictation';
+
 $l10n['dan']['lg1/welcome/3'] = 'Diktat af Tikas velkomst';
 $l10n['eng']['lg1/welcome/3'] = 'Tika\'s welcome as dictation';
 $l10n['dan']['lg1/welcome/3/text'] = 'Aflyt og skriv Tikas velkomst ord for ord. {t:TXT_CHECK_REVEAL}.';
