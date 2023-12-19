@@ -38,13 +38,16 @@ function textCheck() {
 	let e = $(this).closest('.entry');
 	let i = e.find('input,textarea').first();
 	i.removeClass('is-valid').removeClass('is-invalid');
-	if ($.trim(i.val().toLowerCase()) === $.trim(i.attr('data-check').toLowerCase())) {
-		e.find('.btn-warning,.btn-secondary').attr('disabled', true);
-		e.find('.btn-warning').removeClass('btn-warning').addClass('btn-success');
-		i.addClass('is-valid');
-	}
-	else {
-		i.addClass('is-invalid');
+	let chks = $.trim(i.attr('data-check').toLowerCase()).split('|');
+	console.log(chks, i.val());
+	i.addClass('is-invalid');
+	for (let ci=0 ; ci<chks.length ; ++ci) {
+		if ($.trim(i.val().replace(/[ \t][ \t]+/g, ' ').toLowerCase()) === chks[ci]) {
+			e.find('.btn-warning,.btn-secondary').attr('disabled', true);
+			e.find('.btn-warning').removeClass('btn-warning').addClass('btn-success');
+			i.removeClass('is-invalid');
+			i.addClass('is-valid');
+		}
 	}
 }
 
