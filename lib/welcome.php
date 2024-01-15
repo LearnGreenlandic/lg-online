@@ -40,7 +40,7 @@ function welcome_video($state) {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">{t:lg1/welcome/video/qhead}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="{t:close}">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="{t:close}">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -108,7 +108,7 @@ function welcome_1($state) {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">{t:check}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="{t:close}">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="{t:close}">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -116,7 +116,7 @@ function welcome_1($state) {
         <p id="check-body"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">{t:close}</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">{t:close}</button>
       </div>
     </div>
   </div>
@@ -127,7 +127,7 @@ function welcome_1($state) {
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">{t:solution}</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="{t:close}">
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="{t:close}">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
@@ -135,7 +135,7 @@ function welcome_1($state) {
         <p><?=$hyphen;?></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">{t:close}</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">{t:close}</button>
       </div>
     </div>
   </div>

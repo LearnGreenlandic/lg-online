@@ -70,6 +70,10 @@ else if ($state['path'] === 'lg2/') {
 	require_once __DIR__.'/lib/lg2.php';
 	\LGO\lg2($state);
 }
+else if ($state['path'] === 'lg3/') {
+	require_once __DIR__.'/lib/lg3.php';
+	\LGO\lg3($state);
+}
 else if (preg_match('~^(lg[12])/pdf/([-\w\d.]+?)\.pdf$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/files.php';
 	\LGO\pdf($state, $m[1], $m[2]);
@@ -178,6 +182,20 @@ else if (preg_match('~^lg2/outtro/$~', $state['path'], $m)) {
 	\LGO\outtro($state);
 }
 
+// LG3
+else if (preg_match('~^lg3/intro/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/html.php';
+	\LGO\intro3($state);
+}
+else if (preg_match('~^lg3/gloss/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/gloss.php';
+	\LGO\gloss($state);
+}
+else if (preg_match('~^lg3/par/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/html.php';
+	\LGO\paradigms($state);
+}
+
 // Fallbacks
 else if (!empty($state['path'])) {
 	\header('HTTP/1.0 302 Back to the root with you');
@@ -195,6 +213,9 @@ else {
 			</div>
 			<div class="flink text-center m-4">
 				<a href="./lg2/"><img src="{t:prefix}/static/lg2.png" class="border border-secondary"><br><h4 class="text-warning">{t:lg2}</h5></a>
+			</div>
+			<div class="flink text-center m-4">
+				<a href="./lg3/"><img src="{t:prefix}/static/lg3.png" class="border border-secondary"><br><h4 class="text-warning">{t:lg3}</h5></a>
 			</div>
 		</div>
 	</div>

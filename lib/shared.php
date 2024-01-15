@@ -226,7 +226,7 @@ function init() {
 		setcookie('lang', '', 1, '/');
 	}
 
-	$theme = $_REQUEST['theme'] ?? $_COOKIE['theme'] ?? 'dan';
+	$theme = $_REQUEST['theme'] ?? $_COOKIE['theme'] ?? 'flatly';
 	if ($theme !== 'darkly' && $theme !== 'flatly') {
 		$theme = 'flatly';
 	}
@@ -279,17 +279,16 @@ function header($state, $lg='', $path='') {
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title><?=$title;?></title>
 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11/font/bootstrap-icons.css">
 	<!-- Bootstrap theme by https://bootswatch.com/ -->
-	<link rel="stylesheet" href="{t:prefix}/static/bootstrap.<?=$theme;?>.css">
+	<link rel="stylesheet" href="{t:prefix}/static/bootswatch.<?=$theme;?>.css">
 
-	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4/dist/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16/dist/umd/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Noto+Serif&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link href="{t:prefix}/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">
 	<script src="{t:prefix}/static/lg.js?t=<?=filemtime('static/lg.js');?>"></script>
-	<link rel="stylesheet" href="{t:prefix}/static/override.<?=$theme;?>.css">
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87771-12"></script>
 	<script>
@@ -300,11 +299,30 @@ function header($state, $lg='', $path='') {
 		gtag('config', 'UA-87771-12');
 		gtag('set', {'user_id': '<?=$uid;?>'});
 	</script>
+
+	<script>
+		var _paq = window._paq = window._paq || [];
+		_paq.push(['trackPageView']);
+		_paq.push(['enableLinkTracking']);
+		(function() {
+		var u="//tinodidriksen.com/matomo/";
+		_paq.push(['setTrackerUrl', u+'matomo.php']);
+		_paq.push(['setSiteId', '3']);
+		var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+		})();
+	</script>
+	<noscript><p><img src="//tinodidriksen.com/matomo/matomo.php?idsite=3&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+
+	<script>
+		let g_lang = '<?=$state['lang'];?>';
+		let g_theme = '<?=$theme;?>';
+	</script>
 </head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+<body data-theme="<?=$theme;?>">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary p-3">
 	<a class="navbar-brand" href="{t:prefix}/">LG Online</a>
-	<ul class="navbar-nav mr-auto">
+	<ul class="navbar-nav me-auto">
 		<li class="nav-item"><a href="{t:prefix}/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg];?></a></li>
 	</ul>
 	<ul class="navbar-nav flex-wrap">
@@ -321,13 +339,13 @@ function header($state, $lg='', $path='') {
 
 function footer($state=null) {
 ?>
-<nav class="navbar navbar-expand navbar-dark bg-primary mt-3 footer">
+<nav class="navbar navbar-expand navbar-dark bg-primary mt-3 p-3 footer">
 	<a class="navbar-brand" href="/">Learn Greenlandic</a>
 	<ul class="navbar-nav d-sm-none">
 		<li class="nav-item"><a class="nav-link">|</a></li>
 	</ul>
-	<ul class="navbar-nav flex-wrap mr-auto">
-		<li class="nav-item"><a href="https://facebook.com/LearnGreenlandic" class="nav-link">Facebook</a></li>
+	<ul class="navbar-nav flex-wrap me-auto">
+		<li class="nav-item"><a href="https://www.linkedin.com/company/learngreenlandic/" class="nav-link">LinkedIn</a></li>
 		<li class="nav-item"><a href="mailto:mail@learngreenlandic.com" class="nav-link">Email</a></li>
 	</ul>
 	<ul class="navbar-nav d-sm-none">

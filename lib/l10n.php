@@ -15,8 +15,8 @@ $l10n['eng']['ERR_NO_ACCESS_LG2'] = $l10n['eng']['ERR_NO_ACCESS'];
 $l10n['dan']['ERR_TOO_MANY_SESSIONS'] = 'Du er logget ind fra for mange enheder, og skal derfor <a href="/wp-login.php?redirect_to=/online/">logge ind igen</a> fra denne enhed før du kan gå videre.';
 $l10n['eng']['ERR_TOO_MANY_SESSIONS'] = 'You are logged in from too many devices, and must therefore <a href="/wp-login.php?redirect_to=/online/">log in again</a> to continue on this device.';
 
-$l10n['dan']['alert'] = 'LearnGreenlandic deltager i <a href="https://blogs.helsinki.fi/simila2023/" target="_blank">1st Symposium on Indigenous Minority Language Acquisition (SIMILA) i Helsingfors</a> i uge 34. Vores præsentation berører en del generelle tilegnelsesstrategier, som vi formoder kan være af interesse for en del af brugerne af <i>Lær grønlandsk med Per Langgård</i>. Interesserede kan læse handout-et med baggrundsinformation her: <a href="https://learn.gl/ci" target="_blank">https://learn.gl/ci <img src="{t:prefix}/static/pdf_icon.png"></a>. Selve præsentationen (slides) vil blive uploadet efter konferencen.';
-$l10n['eng']['alert'] = 'LearnGreenlandic participates in the <a href="https://blogs.helsinki.fi/simila2023/" target="_blank">1st Symposium on Indigenous Minority Language Acquisition (SIMILA) in Helsinki</a> in week 34. The presentation will include quite a bit about general acquisition strategies that we believe to be of interest to many users of <i>Learn Greenlandic with Per Langgård</i>. You can read the handout with background information here: <a href="https://learn.gl/ci" target="_blank">https://learn.gl/ci <img src="{t:prefix}/static/pdf_icon.png"></a>. The presentation itself (slides) will be uploaded after the conference.';
+$l10n['dan']['alert'] = '';
+$l10n['eng']['alert'] = '';
 
 $l10n['dan']['LBL_VIDEO_QUALITY'] = 'Video-opløsning';
 $l10n['eng']['LBL_VIDEO_QUALITY'] = 'Video resolution';
@@ -1205,6 +1205,24 @@ $l10n['eng']['lg2/outtro/text'] = '<p>You have now made it through the course. O
 <p>Therefore you still need the DVD and LearnGreenlandic. The automata and the corpus will have something in store for you for a long time to come and it is at LearnGreenlandic you easily find peers at your level of competence and with needs that compare to yours. Find them and use them and be used yourself.</p>
 
 <p>So instead of \'farewell\', we say \'until next time\'!</p>';
+
+// Learn Greenlandic 3
+$l10n['dan']['lg3'] = 'Grønlandsk for voksne 3';
+$l10n['eng']['lg3'] = 'Greenlandic for Foreigners 3';
+
+$l10n['dan']['lg3/intro'] = 'Introduktion og vejledning';
+$l10n['eng']['lg3/intro'] = 'Introduction and guide';
+$l10n['dan']['lg3/introhead'] = 'Velkommen til <i>Lær grønlandsk med Per Langgård. Modul 3</i>';
+$l10n['eng']['lg3/introhead'] = 'TODO';
+
+$l10n['dan']['lg3/gloss'] = 'Sætningsanalysator';
+$l10n['eng']['lg3/gloss'] = 'Sentence analyser';
+
+$l10n['dan']['lg3/paradigms'] = 'Paradigmer';
+$l10n['eng']['lg3/paradigms'] = 'Paradigms';
+
+$l10n['dan']['lg3/generator'] = 'Ordgenerator';
+$l10n['eng']['lg3/generator'] = 'Word generator';
 
 $GLOBALS['-l10n'] = $l10n;
 
