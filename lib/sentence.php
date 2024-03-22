@@ -550,6 +550,127 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 		return $ps;
 	}
 
+	if ($chap == '2x' && $task == 'affirm1') {
+		$ps[] = [
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@\+MIU@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'deny1') {
+		$ps[] = [
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'deny2') {
+		$ps[] = [
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Int\+2Sg@', $all)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'u1') {
+		$ps[] = [
+			preg_grep('@\+TAR\+@', preg_grep('@Sem/(build|dur|drink-h|drink|Lh|ac)\+@', preg_grep('@\+U\+@', preg_grep('@\+Int\+2Sg@', $all)), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'u2') {
+		$ps[] = [
+			preg_grep('@\+NNGIT@', preg_grep('@\+TAR\+@', preg_grep('@Sem/(build|dur|drink-h|drink|Lh|ac)\+@', preg_grep('@\+U\+@', preg_grep('@\+Int\+2Sg@', $all)), PREG_GREP_INVERT), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'u3') {
+		$ps[] = [
+			preg_grep('@\+NNGIT@', preg_grep('@\+TAR\+@', preg_grep('@Sem/(build|dur|drink-h|drink|Lh|ac)\+@', preg_grep('@\+U\+@', preg_grep('@\+Int\+2Sg@', $all)), PREG_GREP_INVERT), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'tp') {
+		$ps[] = [
+			preg_grep('@Sem/(Hum|Hfam|Hprof).*\+N\+Abs\+Sg\+1SgPoss@', $all),
+			preg_grep('@Sem/inst\+.*Lok@', $all),
+			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'dk') {
+		$ps[] = [
+			preg_grep('@ilinniartip\+HTR\+TUQ\+.*\+N\+Abs\+Sg\+1SgPoss@', $all),
+			preg_grep('@(dronning|kunngi).*\+N\+Ins\+Sg@', $all),
+			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all)),
+			];
+		$ps[] = [
+			preg_grep('@(Sem/Fem|anaana|nuliaq).*\+N\+Abs\+Sg\+1SgPoss@', $all),
+			preg_grep('@dronning.*\+N\+Ins\+Sg@', $all),
+			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all)),
+			];
+		$ps[] = [
+			preg_grep('@(Sem/Mask|ataata).*\+N\+Abs\+Sg\+1SgPoss@', $all),
+			preg_grep('@kunngi.*\+N\+Ins\+Sg@', $all),
+			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'cr') {
+		// TODO: Everything
+		$ps[] = [
+			preg_grep('@Pron\+Abs\+2Pl@', $all),
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@\+NNGIT\+@', preg_grep('@Sem/(socialize|remember|teach|encounter|see)\+.*Int\+2PlO@', $all), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'pr') {
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/remember\+.*2Sg\+3SgO@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Gram/Pers\+Pron\+Abs\+1Sg@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst|lodge)\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(work|learn)\+.*Par\+1Sg@', $all)),
+			];
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/remember\+.*2Sg\+3SgO@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Gram/Pers\+Pron\+Abs\+1Sg@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst)\+.*(Trm|Abl)@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(work|learn)\+.*Par\+1Sg@', $all)),
+			];
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/remember\+.*2Sg\+3SgO@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Gram/Pers\+Pron\+Abs\+1Sg@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Pron\+(Lok|Trm|Abl)\+2Pl@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(work|learn)\+.*Par\+1Sg@', $all)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'dr') {
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@TAQ\+QAR\+Sem/have\+V\+Ind\+(1Sg|3Sg|1Pl)@', $all)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'da') {
+		$ps[] = [
+			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
+			preg_grep('@TAQ\+QAR\+Sem/have\+V\+Int\+2Sg@', $all),
+			];
+		return $ps;
+	}
+
 	if ($chap == '4x' || $chap == '5x') {
 		$ps[] = [
 			array_map('\LGO\pfx_fname', preg_grep('@Sem/inst@', preg_grep('@Sem/(Mask|Fem).*Abs@', $all), PREG_GREP_INVERT)),
@@ -623,7 +744,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		}
 		foreach (cartesian_product($p) as $c) {
 			$outs[] = $c;
-			if (count($outs) >= 500) {
+			if (count($outs) >= 25000) {
 				break;
 			}
 		}
@@ -637,12 +758,37 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		$qst = [];
 		$ans = [];
 
-		if ($task == 'qa-aap' || $task == 'qa') {
+		if ($task == 'qa-aap' || $task == 'qa' || $task == 'affirm1' || $task == 'u1' || $task == 'tp' || $task == 'dk' || $task == 'da') {
 			$ans[] = 'Aap,';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
 				$qst[] = $w[1];
 				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
+				$ans[] = $all[$w[0]];
+			}
+		}
+		else if ($task == 'deny1' || $task == 'u2') {
+			$ans[] = 'Naamik,';
+			foreach ($sent as $w) {
+				$w = explode("\t", $w);
+				$qst[] = $w[1];
+				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
+				if (strpos($w[0], '+GALUAR+V+') !== false) {
+					$w[0] = str_replace('+GALUAR+V+', '+NNGIT+GALUAR+V+', $w[0]);
+				}
+				else {
+					$w[0] = str_replace('+V+', '+NNGIT+V+', $w[0]);
+				}
+				$ans[] = $all[$w[0]];
+			}
+		}
+		else if ($task == 'deny2' || $task == 'u3') {
+			$ans[] = 'Naamik,';
+			foreach ($sent as $w) {
+				$w = explode("\t", $w);
+				$qst[] = $w[1];
+				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
+				$w[0] = str_replace('+NNGIT+', '+', $w[0]);
 				$ans[] = $all[$w[0]];
 			}
 		}
@@ -812,7 +958,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 		}
 		foreach (cartesian_product($p) as $c) {
 			$outs[] = $c;
-			if (count($outs) >= 500) {
+			if (count($outs) >= 25000) {
 				break;
 			}
 		}
@@ -1102,8 +1248,8 @@ function sentence($state, $chap, $task) {
 
 function sentence_lg2($state, $chap, $task) {
 	\LGO\header($state, 'lg2', $chap.'/'.$task);
-	if ($chap == '0x') {
-		if ($task === 'food' || $task === 'food2') {
+	if ($chap == '0x' || $chap == '2x') {
+		if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr') {
 			\LGO\sentence_random_read('lg2', $state, $chap, $task);
 		}
 		else {

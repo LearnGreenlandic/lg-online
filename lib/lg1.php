@@ -38,7 +38,7 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/pdf/2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/2}</a></li>
 
 		<li><br></li>
-		<li><a href="{t:prefix}/lg1/pdf/2x.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/2x}</a></li>
+		<li><a href="{t:prefix}/lg1/2x/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/2x}</a></li>
 		<li><a href="{t:prefix}/lg1/2x/listen/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/2x/listen}</a></li>
 		<li><a href="{t:prefix}/lg1/2x/trm/"><i class="link-info bi bi-file-text"></i> {t:lg1/2x/trm}</a></li>
 		<li><a href="{t:prefix}/lg1/2x/abl/"><i class="link-info bi bi-file-text"></i> {t:lg1/2x/abl}</a></li>

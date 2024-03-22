@@ -135,8 +135,8 @@ $l10n['eng']['lg1/listening/3/ts'] = 'Has ts';
 $l10n['dan']['lg1/listening/3/t'] = 'Har kun t';
 $l10n['eng']['lg1/listening/3/t'] = 'Has only t';
 
-$l10n['dan']['lg1/pdf/2x'] = 'Introduktion til kapitel 2 X-tras';
-$l10n['eng']['lg1/pdf/2x'] = 'Introduction to chapter 2 X-tra';
+$l10n['dan']['lg1/2x'] = 'Introduktion til kapitel 2 X-tras';
+$l10n['eng']['lg1/2x'] = 'Introduction to chapter 2 X-tra';
 
 $l10n['dan']['lg1/2x/listen'] = 'Øvelse 2.1X: Til og fra stednavne (lydøvelse)';
 $l10n['eng']['lg1/2x/listen'] = 'Exercise 2.1X: To and from place names (perception)';
@@ -907,6 +907,42 @@ $l10n['dan']['lg2/structure/2.5/a'] = 'Øvelse 2.5: Brug ledsagemåden til det s
 $l10n['eng']['lg2/structure/2.5/a'] = 'Exercise 2.5: Use contemporative as a subordinate mood (audio)';
 $l10n['dan']['lg2/structure/2.5/text'] = 'Ledsagemåde kan ofte oversættes til dansk lang tillægsform som i \'Han kom løbende\'. Ledsagemåde bruges nemlig til at udtrykke biomstændigheder som i eksemplet, hvor udsagnet er at \'han kom\' og biomstændigheden at det foregik i løb. Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sætninger på den måde, at det er sidste verbum, der opfattes som hovedudsagnet.';
 $l10n['eng']['lg2/structure/2.5/text'] = 'Contemporative often translates as English ing-form as in <em>He came running (= He came and he ran)</em>. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he came whereas his running is just a secondary message. Combine the following sentence pairs into single sentences letting the latter be the main message.';
+
+$l10n['dan']['lg2/2x/affirm1'] = 'Øvelse 2.1.1x: Bekræft spørgsmål';
+$l10n['eng']['lg2/2x/affirm1'] = 'Exercise 2.1.1x: Affirm questions';
+
+$l10n['dan']['lg2/2x/deny1'] = 'Øvelse 2.1.2x: Benægt spørgsmål';
+$l10n['eng']['lg2/2x/deny1'] = 'Exercise 2.1.2x: Deny questions';
+
+$l10n['dan']['lg2/2x/deny2'] = 'Øvelse 2.1.3x: Benægt NNGIT-spørgsmål';
+$l10n['eng']['lg2/2x/deny2'] = 'Exercise 2.1.3x: Deny NNGIT-questions';
+
+$l10n['dan']['lg2/2x/u1'] = 'Øvelse 2.2.1x: Bekræft -U spørgsmål';
+$l10n['eng']['lg2/2x/u1'] = 'Exercise 2.2.1x: Affirm -U questions';
+
+$l10n['dan']['lg2/2x/u2'] = 'Øvelse 2.2.2x: Benægt -U spørgsmål';
+$l10n['eng']['lg2/2x/u2'] = 'Exercise 2.2.2x: Deny -U questions';
+
+$l10n['dan']['lg2/2x/u3'] = 'Øvelse 2.2.3x: Benægt -U NNGIT-spørgsmål';
+$l10n['eng']['lg2/2x/u3'] = 'Exercise 2.2.3x: Deny -U NNGIT-questions';
+
+$l10n['dan']['lg2/2x/tp'] = 'Øvelse 2.3.1x: Bekræft spørgsmål (transitive verber)';
+$l10n['eng']['lg2/2x/tp'] = 'Exercise 2.3.1x: Affirm questions (transitive verbs)';
+
+$l10n['dan']['lg2/2x/dk'] = 'Øvelse 2.3.2x: Bekræft spørgsmål (kongelige)';
+$l10n['eng']['lg2/2x/dk'] = 'Exercise 2.3.2x: Affirm questions (royalty)';
+
+$l10n['dan']['lg2/2x/cr'] = 'Øvelse 2.4x: Forstå og gentag';
+$l10n['eng']['lg2/2x/cr'] = 'Exercise 2.4x: Comprehend and repeat';
+
+$l10n['dan']['lg2/2x/pr'] = 'Øvelse 2.5x: Forstå og gentag (participium)';
+$l10n['eng']['lg2/2x/pr'] = 'Exercise 2.5x: Comprehend and repeat (participle)';
+
+$l10n['dan']['lg2/2x/dr'] = 'Øvelse 2.6.1x: Forstå og gentag (direkte objekt)';
+$l10n['eng']['lg2/2x/dr'] = 'Exercise 2.6.1x: Comprehend and repeat (direct object)';
+
+$l10n['dan']['lg2/2x/da'] = 'Øvelse 2.6.2x: Bekræft spørgsmål (direkte objekt)';
+$l10n['eng']['lg2/2x/da'] = 'Exercise 2.6.2x: Affirm questions (direct object)';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';

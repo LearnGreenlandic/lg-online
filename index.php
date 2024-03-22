@@ -99,6 +99,10 @@ else if (preg_match('~^lg1/listening/([1234])/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/listening.php';
 	\LGO\listening($state, $m[1]);
 }
+else if (preg_match('~^lg1/(\dx)/$~', $state['path'], $m)) {
+	require_once __DIR__.'/lib/html.php';
+	\LGO\lg1_x($state, $m[1]);
+}
 else if (preg_match('~^lg1/(\dx)/([-a-z]+)/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/sentence.php';
 	\LGO\sentence($state, $m[1], $m[2]);

@@ -14,6 +14,18 @@
 	/* BEGIN NUTSERUT IMPORTED CODE */
 	let g_pair = 'kal2dan';
 	let g_rv = {};
+	let g_funcmap = {
+		'ADVL': [/ (@ADVL)( |$)/, / (@&lt;ADVL)( |$)/, / (@ADVL&gt;)( |$)/],
+		'ADVL_gt_N': [/ (@ADVL&gt;N)( |$)/],
+		'CAU': [/ (@CAU)( |$)/, / (@&lt;CAU)( |$)/, / (@CAU&gt;)( |$)/],
+		'CL-CIT': [/ (@CL-CIT)( |$)/, / (@CL-&lt;CIT)( |$)/, / (@CL-CIT&gt;)( |$)/],
+		'CON': [/ (@CON)( |$)/, / (@&lt;CON)( |$)/, / (@CON&gt;)( |$)/],
+		'i-_gt_N': [/ (@i-&gt;N)( |$)/, / (@i-N&lt;)( |$)/, / (@i-&gt;N&gt;N)( |$)/],
+
+		'OBJ': [/ (@OBJ)( |$)/, / (@&lt;OBJ)( |$)/, / (@OBJ&gt;)( |$)/],
+
+		'PRED': [/ (@PRED)( |$)/],
+		};
 
 	function escHTML(t) {
 		return t.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&apos;');
@@ -35,9 +47,35 @@
 		}
 	}
 
+	function gloss_post_render() {
+		apply_secondary();
+
+		$('.funcPop').off().click(function() {
+			let e = $(this);
+			let w = e.attr('data-which');
+			let t = e.text();
+
+			let m = $('#func-modal');
+			m.find('.modal-title').text(t);
+			m.find('.modal-body').html(g_htmls[w]);
+			let modal = new bootstrap.Modal('#func-modal');
+			modal.show();
+		});
+	}
+
 	function format_reading(txt) {
 		txt = txt.replace(/ ¤\S+/g, '');
 		txt = escHTML(txt);
+		for (let w in g_funcmap) {
+			for (let i=0 ; i<g_funcmap[w].length ; ++i) {
+				let rx = g_funcmap[w][i];
+				let m = null;
+				if ((m = rx.exec(txt)) !== null) {
+					txt = txt.replace(m[0], ' <a href="#" class="dashed link-underline-primary funcPop" data-which="'+w+'">'+m[1]+'</a>'+m[2]);
+					break;
+				}
+			}
+		}
 		txt = txt.replace(/&quot;(.+?)&quot; /g, '<span class="text-success fw-bold">"$1"</span> ');
 		txt = txt.replace(/ (i?(?:N|V|Pali|Conj|Adv|Interj|Pron|Prop|Num|Symbol|Adj|Part|Prep)) (i?(?:N|V|Pali|Conj|Adv|Interj|Pron|Prop|Num|Symbol|Adj|Part|Prep))\b/g, ' <span class="text-info">$1</span><span class="text-info s-tag">\xa0$2</span>');
 		txt = txt.replace(/ (i?(?:N|V|Pali|Conj|Adv|Interj|Pron|Prop|Num|Symbol|Adj|Part|Prep))\b/g, ' <span class="text-info">$1</span>');
@@ -101,7 +139,7 @@
 		if (rv.hasOwnProperty('output')) {
 			if (/^g-/.test(g_pair)) {
 				$('#output').show().find('.card-text').html(glossify(rv.output));
-				apply_secondary();
+				gloss_post_render();
 			}
 			else {
 				$('#output').show().find('.card-text').text(rv.output);

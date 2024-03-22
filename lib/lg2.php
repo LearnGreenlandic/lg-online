@@ -40,7 +40,7 @@ function lg2($state) {
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l1.1x">
-	<h5 class="ch-item"><a href="{t:prefix}/lg2/prep/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> <i class="link-info bi bi-file-pdf"></i> {t:lg2/prep}</a></h5>
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/prep/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/prep}</a></h5>
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg2/structure/0.1/t/"><i class="link-info bi bi-file-text"></i> {t:lg2/structure/0.1/t}</a></li>
 		<li><a href="{t:prefix}/lg2/structure/0.1/a/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg2/structure/0.1/a}</a></li>
@@ -116,6 +116,28 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/2.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/2.1}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/affirm1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/affirm1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/deny1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/deny2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny2}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/u1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/u1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/u2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/u2}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/u3/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/u3}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/tp/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/tp}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/dk/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/dk}</a></li>
+
+		<li><br></li>
+		<li><s><a href="{t:prefix}/lg2/2x/cr/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/cr}</a></s></li>
+		<li><a href="{t:prefix}/lg2/2x/pr/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/pr}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/dr/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/dr}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/da/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/da}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l2.2">
