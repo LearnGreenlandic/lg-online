@@ -36,9 +36,12 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/listening/2/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/listening/2}</a></li>
 		<li><a href="{t:prefix}/lg1/listening/3/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/listening/3}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/2}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg1/2x/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/2x}</a></li>
+	</ul>
+</div>
+<!-- Chapter 2x -->
+<div class="choice my-2 col-lg-6" id="l2x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg1/2x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/2x}</a></h5>
+	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/2x/listen/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/2x/listen}</a></li>
 		<li><a href="{t:prefix}/lg1/2x/trm/"><i class="link-info bi bi-file-text"></i> {t:lg1/2x/trm}</a></li>
 		<li><a href="{t:prefix}/lg1/2x/abl/"><i class="link-info bi bi-file-text"></i> {t:lg1/2x/abl}</a></li>
@@ -55,9 +58,12 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/welcome/1/"><i class="link-info bi bi-file-text"></i> {t:lg1/welcome/1}</a></li>
 		<li><a href="{t:prefix}/lg1/welcome/2/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/welcome/2}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/3.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/3}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg1/pdf/3x.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/3x}</a></li>
+	</ul>
+</div>
+<!-- Chapter 3x -->
+<div class="choice my-2 col-lg-6" id="l3x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg1/3x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/3x}</a></h5>
+	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/3x/listen/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/3x/listen}</a></li>
 		<li><a href="{t:prefix}/lg1/3x/listenc/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/3x/listenc}</a></li>
 		<li><a href="{t:prefix}/lg1/3x/trm/"><i class="link-info bi bi-file-text"></i> {t:lg1/3x/trm}</a></li>
@@ -80,9 +86,12 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/dialogue/2/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/dialogue/2}</a></li>
 		<li><a href="{t:prefix}/lg1/dialogue/3/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/dialogue/3}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/4.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/4}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg1/pdf/4x.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/4x}</a></li>
+	</ul>
+</div>
+<!-- Chapter 4x -->
+<div class="choice my-2 col-lg-6" id="l4x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg1/pdf/4x.pdf" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/pdf/4x}</a></h5>
+	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/4x/listenv/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/4x/listenv}</a></li>
 		<li><a href="{t:prefix}/lg1/4x/prod/"><i class="link-info bi bi-file-text"></i> {t:lg1/4x/prod}</a></li>
 		<li><a href="{t:prefix}/lg1/4x/listeng/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/4x/listeng}</a></li>
@@ -113,9 +122,12 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/structure/3.1/"><i class="link-info bi bi-file-text"></i> {t:lg1/structure/3.1}</a></li>
 		<li><a href="{t:prefix}/lg1/structure/3.2/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/structure/3.2}</a></li>
 		<li><a href="{t:prefix}/lg1/pdf/5.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/5.1}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg1/pdf/5x.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/5x}</a></li>
+	</ul>
+</div>
+<!-- Chapter 5x -->
+<div class="choice my-2 col-lg-6" id="l5x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg1/pdf/3x.pdf" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/pdf/5x}</a></h5>
+	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/5x/nu/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/5x/nu}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/nqar/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/5x/nqar}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/qa-aap/"><i class="link-info bi bi-file-text"></i> {t:lg1/5x/qa-aap}</a></li>

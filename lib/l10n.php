@@ -158,8 +158,8 @@ $l10n['eng']['lg1/2x/all'] = 'Exercise 2.4X: To and from PLACE (production)';
 $l10n['dan']['lg1/2x/all/text'] = 'Du får igen stednavnene i tilfældig orden, men denne gang arbejder vi med såvel Trm-endelsen som Abl-endelsen. Sæt endelserne på i overensstemmelse med de regler, du så i introduktionen. Udtal ordet højt og skriv det ned. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/2x/all/text'] = 'You will be presented with the place names in random order and the task is to add either the Trm-ending to say "to PLACE" or the Abl-ending to say "from PLACE". Add the ending in accordance with the rules guiding this process. Speak out the word you generated loud and write it. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/pdf/3x'] = 'Introduktion til kapitel 3 X-tras';
-$l10n['eng']['lg1/pdf/3x'] = 'Introduction to chapter 3 X-tra';
+$l10n['dan']['lg1/3x'] = 'Introduktion til kapitel 3 X-tras';
+$l10n['eng']['lg1/3x'] = 'Introduction to chapter 3 X-tra';
 
 $l10n['dan']['lg1/3x/listen'] = 'Øvelse 3.1X: Abl, Trm, og Lok for nye egennavne (lytteøvelse)';
 $l10n['eng']['lg1/3x/listen'] = 'Exercise 3.1X: Abl, Trm, and Lok for new proper nouns (perception)';
