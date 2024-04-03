@@ -233,8 +233,8 @@ $l10n['eng']['lg1/3x/randp'] = 'Exercise 3.11X: Sentences (production)';
 $l10n['dan']['lg1/3x/randp/text'] = 'Systemet vil i tilfældig rækkefølge generere en række opgaver. Din opgave er at danne sætninger iflg. 4 skabeloner med de input, du får. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/3x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 4 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
-$l10n['dan']['lg1/pdf/4x'] = 'Introduktion til kapitel 4 X-tras';
-$l10n['eng']['lg1/pdf/4x'] = 'Introduction to chapter 4 X-tra';
+$l10n['dan']['lg1/4x'] = 'Introduktion til kapitel 4 X-tras';
+$l10n['eng']['lg1/4x'] = 'Introduction to chapter 4 X-tra';
 
 $l10n['dan']['lg1/4x/listenv'] = 'Øvelse 4.1X: Verber dannet af -QAR og +TUR på nominer  (lytteøvelse)';
 $l10n['eng']['lg1/4x/listenv'] = 'Exercise 4.1X: Verbs created by adding N-QAR and N+TUR to nouns (perception)';
@@ -266,8 +266,8 @@ $l10n['eng']['lg1/4x/randp'] = 'Exercise 4.6X: Sentences (production)';
 $l10n['dan']['lg1/4x/randp/text'] = 'Øvelsen giver dig en lang række randomiserede øvelser bygget over 6 forskellige sætningsmønstre. Lav sætningerne i overensstemmelse med skabelonerne efterhånden som du ser dem. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/pdf/5x'] = 'Introduktion til kapitel 5 X-tras';
-$l10n['eng']['lg1/pdf/5x'] = 'Introduction to chapter 5 X-tra';
+$l10n['dan']['lg1/5x'] = 'Introduktion til kapitel 5 X-tras';
+$l10n['eng']['lg1/5x'] = 'Introduction to chapter 5 X-tra';
 
 $l10n['dan']['lg1/5x/nu'] = 'Øvelse 5.1X: Verber bygget med N-U til nominer (lydøvelse)';
 $l10n['eng']['lg1/5x/nu'] = 'Exercise 5.1X: Verbs created by adding N-U to nouns (perception)';

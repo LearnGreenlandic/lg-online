@@ -90,7 +90,7 @@ function lg1($state) {
 </div>
 <!-- Chapter 4x -->
 <div class="choice my-2 col-lg-6" id="l4x">
-	<h5 class="ch-item"><a href="{t:prefix}/lg1/pdf/4x.pdf" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/pdf/4x}</a></h5>
+	<h5 class="ch-item"><a href="{t:prefix}/lg1/4x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/4x}</a></h5>
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/4x/listenv/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/4x/listenv}</a></li>
 		<li><a href="{t:prefix}/lg1/4x/prod/"><i class="link-info bi bi-file-text"></i> {t:lg1/4x/prod}</a></li>
@@ -126,7 +126,7 @@ function lg1($state) {
 </div>
 <!-- Chapter 5x -->
 <div class="choice my-2 col-lg-6" id="l5x">
-	<h5 class="ch-item"><a href="{t:prefix}/lg1/pdf/3x.pdf" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/pdf/5x}</a></h5>
+	<h5 class="ch-item"><a href="{t:prefix}/lg1/5x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg1/5x}</a></h5>
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/5x/nu/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/5x/nu}</a></li>
 		<li><a href="{t:prefix}/lg1/5x/nqar/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/5x/nqar}</a></li>
