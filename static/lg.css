@@ -23,6 +23,15 @@ a {
 	text-decoration: none;
 }
 
+.wip {
+	border: 1px dashed red;
+	display: none;
+}
+
+.popover {
+	box-shadow: black 0px 0px 10px;
+}
+
 .dashed {
 	text-decoration: underline;
 	text-decoration-style: dashed;
@@ -177,6 +186,16 @@ a {
 
 .bg-unused {
 	background-color: rgba(var(--bs-secondary-rgb), 0.5) !important;
+}
+
+lg-fn, lg-fn-def {
+	display: none;
+}
+.link, .tip {
+	text-decoration: underline dotted;
+}
+.link, .tip, .link-info {
+	cursor: pointer;
 }
 
 @media (max-width: 735px) {

@@ -1087,14 +1087,41 @@ function sentence_random_write($state, $chap='3x') {
 		$sents = array_merge($sents, $outs);
 	}
 
+	$db = new \TDC\PDO\SQLite(__DIR__.'/../docs/docs.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
+
+	$tags = [];
 	$outs = [];
+	foreach ($sents as $ks => $sent) {
+		foreach ($sent as $k => $ts) {
+			$ts[1][1] = preg_replace('~[^/+]+/[^/+]+\+~', '', $ts[1][1]);
+			$ts[1][1] = str_replace('+', ' + ', $ts[1][1]);
+			$ts[1][1] = explode(' + ', $ts[1][1]);
+			$sent[$k] = $ts;
+			$tags = array_merge($tags, $ts[1][1]);
+		}
+		$sents[$ks] = $sent;
+	}
+
+	$tags = array_values(array_unique($tags));
+	$stm = $db->prepexec("SELECT l_id, a_title, a_ref, a_ref_url, a_short, a_long FROM lookups INNER JOIN articles ON (l_{$state['lang']} = a_id) WHERE l_id IN (?".str_repeat(', ?', count($tags)-1).")", $tags);
+	$tags = [];
+	$js = '';
+	while ($row = $stm->fetch()) {
+		$tags[$row['l_id']] = $row;
+		$js .= 'g_tips['.json_encode_vb($row['l_id']).'] = '.json_encode_num($row).";\n";
+	}
+
 	foreach ($sents as $sent) {
 		$words = [];
 		$lis = [];
 		foreach ($sent as $ts) {
 			$s = $ts[1];
-			$s[1] = preg_replace('~[^/+]+/[^/+]+\+~', '', $s[1]);
-			$s[1] = str_replace('+', ' + ', $s[1]);
+			foreach ($s[1] as $k => $t) {
+				if (array_key_exists($t, $tags)) {
+					$s[1][$k] = '<a class="tip">'.$t.'</a>';
+				}
+			}
+			$s[1] = implode(' + ', $s[1]);
 			$li = "{t:tmpl/{$ts[0]}}: {$s[0]} + {$s[1]}";
 			$lis[] = $li;
 			$words[] = $s[2];
@@ -1116,6 +1143,9 @@ function sentence_random_write($state, $chap='3x') {
 </div>
 </div>
 </div>
+<script>
+<?=$js;?>
+</script>
 <?php
 }
 

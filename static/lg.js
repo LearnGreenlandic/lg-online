@@ -210,6 +210,10 @@
 	let g_slides = [];
 	let g_slide = -1;
 
+	let g_root = new URL(document.currentScript.src);
+	g_root.hash = g_root.search = '';
+	g_root.pathname = g_root.pathname.replace('/static/lg.js', '');
+
 	function goToSlide() {
 		let s = parseInt($(this).attr('data-s'));
 		g_video.currentTime = s;
@@ -258,6 +262,81 @@
 		if (ta.height() < this.scrollHeight) {
 			ta.height(this.scrollHeight + 20);
 		}
+	}
+
+	function loadTips(root) {
+		let tips = {};
+		$(root).find('.tip').attr('href', '#').off().click(showTip).each(function() {
+			let t = $.trim($(this).attr('data-which'));
+			if (!t) {
+				t = $.trim($(this).text());
+			}
+			if (!g_tips.hasOwnProperty(t)) {
+				tips[t] = t;
+			}
+		});
+		tips = Object.keys(tips);
+		if (tips.length) {
+			$.post(g_root + '/callback.php?a=tips', {'l': g_lang, 'ts': tips.join(',')}).done(function(rv) {
+				for (let k in rv['ts']) {
+					g_tips[k] = rv['ts'][k];
+				}
+			});
+		}
+	}
+
+	function expandTip(e) {
+		e = $(e);
+		e.closest('.popover-body').find('.expand').show();
+		e.remove();
+		return false;
+	}
+
+	function showTip(e) {
+		e.preventDefault();
+
+		let a = $(this);
+		if (a.attr('data-bs-toggle')) {
+			let p = bootstrap.Popover.getOrCreateInstance(a);
+			p.toggle();
+			return false;
+		}
+
+		let t = $.trim(a.attr('data-which'));
+		if (!t) {
+			t = $.trim(a.text());
+		}
+		if (!g_tips.hasOwnProperty(t)) {
+			alert('Error: There is no definition in lg-docs for '+t);
+			return false;
+		}
+		t = g_tips[t];
+
+		let ref = '/lg' + t['a_ref_url'];
+		if (ref[ref.length-1] == '#') {
+			ref += t['a_title'].toLowerCase();
+		}
+
+		let html = '<h5>'+escHTML(t['a_title'])+'</h5><div class="row"><div class="col text-nowrap">'+t['a_short']+'</div>';
+		if (t['a_ref']) {
+			html += '<div class="col text-end"><a href="'+escHTML(g_root + ref)+'" target="_tip">'+escHTML(t['a_ref'])+' <i class="bi bi-box-arrow-up-right"></i></a></div>';
+		}
+		html += '</div>';
+		if (t['a_long'].length) {
+			html += '<div class="row"><div class="col text-center"><a href="#" onclick="return learngl.expandTip(this);"><i class="bi bi-chevron-down"></i></a></div></div><div class="row expand" style="display: none;"><div class="col">'+t['a_long']+'</div></div>';
+		}
+
+		a.removeAttr('href');
+		a.attr('data-bs-toggle', 'popover');
+		a.attr('data-bs-container', 'body');
+		a.attr('data-bs-placement', 'bottom');
+		a.attr('data-bs-html', 'true');
+		a.attr('data-bs-content', html);
+		a.off();
+		let p = bootstrap.Popover.getOrCreateInstance(a, {'sanitize': false});
+		p.toggle();
+
+		return false;
 	}
 
 	function init() {
@@ -502,6 +581,17 @@
 
 		$('.inert').off();
 
+		$('lg-fn').each(function() {
+			let e = $(this);
+			let n = e.text();
+			let html = $('lg-fn-def[n="'+n+'"]').html();
+			let tip = '<a class="link-info" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-html="true" data-bs-content="'+escHTML(html)+'"><i class="bi bi-info-square"></i></a>';
+			e.replaceWith(tip);
+		});
+		$('lg-fn-def').remove();
+
+		loadTips(document.body);
+
 		const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
 		const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
 
@@ -510,12 +600,18 @@
 		if (g_lang === 'dan') {
 			$('#g-kal2dan').click();
 		}
+		if (g_admin) {
+			$('.wip').show();
+		}
+		else {
+			$('.wip').hide();
+		}
 	}
 
 	window.addEventListener('load', init);
 
 	// Export useful functions
 	return {
-		init: init,
+		expandTip: expandTip,
 		};
 }));

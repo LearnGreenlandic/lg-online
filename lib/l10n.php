@@ -58,6 +58,8 @@ $l10n['dan']['TXT_AUDIO_CHECK_REVEAL'] = 'Tryk på <button class="btn btn-sm btn
 $l10n['eng']['TXT_AUDIO_CHECK_REVEAL'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio, <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
 $l10n['dan']['TXT_AUDIO_CHECK_REVEAL2'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden, på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, på <button class="btn btn-sm btn-info inert">▶</button> for at høre løsningen, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
 $l10n['eng']['TXT_AUDIO_CHECK_REVEAL2'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio, <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, <button class="btn btn-sm btn-info inert">▶</button> to play the solution, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
+$l10n['dan']['TXT_AUDIO_CHECK_REVEAL3'] = 'Tryk på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, på <button class="btn btn-sm btn-info inert">▶</button> for at høre løsningen, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
+$l10n['eng']['TXT_AUDIO_CHECK_REVEAL3'] = 'Push <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, <button class="btn btn-sm btn-info inert">▶</button> to play the solution, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
 $l10n['dan']['TXT_CHECK_REVEAL'] = 'Tryk på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, eller på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen';
 $l10n['eng']['TXT_CHECK_REVEAL'] = 'Push <button type="button" class="btn btn-sm btn-warning inert">✓</button> to check your answer, or <button type="button" class="btn btn-sm btn-secondary inert">☼</button> to reveal the solution';
 $l10n['dan']['TXT_CHECK_REVEAL_UPDOWN'] = 'Tryk på <button type="button" class="btn btn-sm btn-warning inert">✓</button> for at tjekke svaret, på <button type="button" class="btn btn-sm btn-info inert">☉</button> for at vise oversættelsen, på <button type="button" class="btn btn-sm btn-secondary inert">☼</button> for at vise løsningen, eller på <button class="btn btn-sm btn-primary inert">▶</button> for at høre svaret';
@@ -140,8 +142,8 @@ $l10n['eng']['lg1/2x'] = 'Introduction to chapter 2 X-tra';
 
 $l10n['dan']['lg1/2x/listen'] = 'Øvelse 2.1X: Til og fra stednavne (lydøvelse)';
 $l10n['eng']['lg1/2x/listen'] = 'Exercise 2.1X: To and from place names (perception)';
-$l10n['dan']['lg1/2x/listen/text'] = 'Her får du de 17 stednavne fra <a href="{t:prefix}/lg1/pdf/2x.pdf">introduktionen</a> bøjet med Trm ("til"-kasus) og Abl ("fra"-kasus). Forstå ordet, du hører og vær sikker på at du har styr på alle de processer, der var i spil for at generere ordet. Det er god træning at skrive ordet ned. Udtal derefter ordet for at træne din udtale. {t:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/2x/listen/text'] = 'You will be presented with the 17 place names listed in <a href="{t:prefix}/lg1/pdf/2x.pdf">the readme</a> inflected with Trm ("to"-case) and Abl ("from"-case). Understand the word you hear and make sure that you understand what processes play a part in generating the word. Writing it down is good training. Speak out the word loudly to train your pronunciation. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/2x/listen/text'] = 'Her får du de 17 stednavne fra <a href="{t:prefix}/lg1/2x/">introduktionen</a> bøjet med Trm ("til"-kasus) og Abl ("fra"-kasus). Forstå ordet, du hører og vær sikker på at du har styr på alle de processer, der var i spil for at generere ordet. Det er god træning at skrive ordet ned. Udtal derefter ordet for at træne din udtale. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/2x/listen/text'] = 'You will be presented with the 17 place names listed in <a href="{t:prefix}/lg1/2x/">the introduction</a> inflected with Trm ("to"-case) and Abl ("from"-case). Understand the word you hear and make sure that you understand what processes play a part in generating the word. Writing it down is good training. Speak out the word loudly to train your pronunciation. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/2x/trm'] = 'Øvelse 2.2X: Til STED (produktion)';
 $l10n['eng']['lg1/2x/trm'] = 'Exercise 2.2X: To PLACE (production)';
@@ -213,20 +215,20 @@ $l10n['eng']['lg1/3x/random/text'] = 'You will hear sentences containing only kn
 
 $l10n['dan']['senttmpl'] = 'Sætningens skabelon';
 $l10n['eng']['senttmpl'] = 'Sentence template';
-$l10n['dan']['tmpl/fname'] = 'Fornavn';
-$l10n['eng']['tmpl/fname'] = 'First name';
-$l10n['dan']['tmpl/subject'] = 'Subjekt';
-$l10n['eng']['tmpl/subject'] = 'Subject';
-$l10n['dan']['tmpl/object'] = 'Objekt';
-$l10n['eng']['tmpl/object'] = 'Object';
-$l10n['dan']['tmpl/advlr'] = 'ADVL>';
-$l10n['eng']['tmpl/advlr'] = 'ADVL>';
-$l10n['dan']['tmpl/pred'] = 'PRED';
-$l10n['eng']['tmpl/pred'] = 'PRED';
-$l10n['dan']['tmpl/verb'] = 'Verbum';
-$l10n['eng']['tmpl/verb'] = 'Verb';
-$l10n['dan']['tmpl/adled'] = 'Adled til inderiveret objekt';
-$l10n['eng']['tmpl/adled'] = '"Adjective" to inderived object';
+$l10n['dan']['tmpl/fname'] = '<a class="tip">@PROP&gt;</a>';
+$l10n['eng']['tmpl/fname'] = $l10n['dan']['tmpl/fname'];
+$l10n['dan']['tmpl/subject'] = '<a class="tip">@SUBJ&gt;</a>';
+$l10n['eng']['tmpl/subject'] = $l10n['dan']['tmpl/subject'];
+$l10n['dan']['tmpl/object'] = '<a class="tip">@OBJ&gt;</a>';
+$l10n['eng']['tmpl/object'] = $l10n['dan']['tmpl/object'];
+$l10n['dan']['tmpl/advlr'] = '<a class="tip">@ADVL&gt;</a>';
+$l10n['eng']['tmpl/advlr'] = $l10n['dan']['tmpl/advlr'];
+$l10n['dan']['tmpl/pred'] = '<a class="tip">@PRED</a>';
+$l10n['eng']['tmpl/pred'] = $l10n['dan']['tmpl/pred'];
+$l10n['dan']['tmpl/verb'] = $l10n['dan']['tmpl/pred'];
+$l10n['eng']['tmpl/verb'] = $l10n['dan']['tmpl/pred'];
+$l10n['dan']['tmpl/adled'] = '<a class="tip">@i-&gt;N</a>';
+$l10n['eng']['tmpl/adled'] = $l10n['dan']['tmpl/adled'];
 
 $l10n['dan']['lg1/3x/randp'] = 'Øvelse 3.11X: Sætninger (produktion)';
 $l10n['eng']['lg1/3x/randp'] = 'Exercise 3.11X: Sentences (production)';
@@ -263,8 +265,8 @@ $l10n['eng']['lg1/4x/random/text'] = 'You will hear sentences containing only kn
 
 $l10n['dan']['lg1/4x/randp'] = 'Øvelse 4.6X: Sætninger (production)';
 $l10n['eng']['lg1/4x/randp'] = 'Exercise 4.6X: Sentences (production)';
-$l10n['dan']['lg1/4x/randp/text'] = 'Øvelsen giver dig en lang række randomiserede øvelser bygget over 6 forskellige sætningsmønstre. Lav sætningerne i overensstemmelse med skabelonerne efterhånden som du ser dem. {t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/4x/randp/text'] = 'Øvelsen giver dig en lang række randomiserede øvelser bygget over 6 forskellige sætningsmønstre. Lav sætningerne i overensstemmelse med skabelonerne efterhånden som du ser dem. {t:TXT_AUDIO_CHECK_REVEAL3}.';
+$l10n['eng']['lg1/4x/randp/text'] = 'The system will generate in random order a series of assignments. You will form sentences following 6 fixed patterns out of the cues you get. {t:TXT_AUDIO_CHECK_REVEAL3}.';
 
 $l10n['dan']['lg1/5x'] = 'Introduktion til kapitel 5 X-tras';
 $l10n['eng']['lg1/5x'] = 'Introduction to chapter 5 X-tra';

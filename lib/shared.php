@@ -1,11 +1,28 @@
 <?php
 namespace LGO;
+require_once __DIR__.'/../vendor/autoload.php';
 
 function b64_url($rv) {
 	$rv = base64_encode($rv);
 	$rv = trim($rv, '=');
 	$rv = str_replace('+', 'z', $rv);
 	$rv = str_replace('/', 'Z', $rv);
+	return $rv;
+}
+
+function json_encode_vb($v, $o=0) {
+	$rv = json_encode($v, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | $o);
+	if ($o & JSON_PRETTY_PRINT) {
+		$rv = str_replace('    ', '  ', $rv);
+	}
+	return $rv;
+}
+
+function json_encode_num($v, $o=0) {
+	$rv = json_encode($v, JSON_NUMERIC_CHECK | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | $o);
+	if ($o & JSON_PRETTY_PRINT) {
+		$rv = str_replace('    ', '  ', $rv);
+	}
 	return $rv;
 }
 
@@ -160,17 +177,18 @@ function init() {
 	$lg2 = 0;
 	$uid = 0;
 	$admin = false;
+	login_anonymous();
 	if (is_user_logged_in()) {
 		$user = wp_get_current_user();
 		$uid = $user->ID;
 		++$lg1;
 		++$lg2;
-		/*
 		if ($user->has_cap('administrator')) {
 			++$lg1;
 			++$lg2;
 			$admin = true;
 		}
+		/*
 		else {
 			$keys = lg_get_keys($user->ID);
 			foreach ($keys as $key => $row) {
@@ -289,6 +307,7 @@ function header($state, $lg='', $path='') {
 	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link href="{t:prefix}/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">
 	<script src="{t:prefix}/static/lg.js?t=<?=filemtime('static/lg.js');?>"></script>
+	<!-- <script src="{t:prefix}/static/tips.js?t=<?=filemtime('static/tips.js');?>"></script> -->
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-87771-12"></script>
 	<script>
@@ -317,6 +336,8 @@ function header($state, $lg='', $path='') {
 	<script>
 		let g_lang = '<?=$state['lang'];?>';
 		let g_theme = '<?=$theme;?>';
+		let g_admin = <?=intval($state['admin']);?>;
+		let g_tips = {};
 	</script>
 </head>
 <body data-theme="<?=$theme;?>">

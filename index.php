@@ -218,7 +218,7 @@ else {
 			<div class="flink text-center m-4">
 				<a href="./lg2/"><img src="{t:prefix}/static/lg2.png" class="border border-secondary"><br><h4 class="text-warning">{t:lg2}</h5></a>
 			</div>
-			<div class="flink text-center m-4">
+			<div class="flink text-center m-4 wip">
 				<a href="./lg3/"><img src="{t:prefix}/static/lg3.png" class="border border-secondary"><br><h4 class="text-warning">{t:lg3}</h5></a>
 			</div>
 		</div>

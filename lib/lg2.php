@@ -55,6 +55,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/structure/0.6/"><i class="link-info bi bi-file-text"></i> {t:lg2/structure/0.6}</a></li>
 		<li><a href="{t:prefix}/lg2/structure/0.7/"><i class="link-info bi bi-file-text"></i> {t:lg2/structure/0.7}</a></li>
 
+		<div class="wip">
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/0x/deny/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/deny}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/summer/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/summer}</a></li>
@@ -64,6 +65,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/0x/qa/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/qa}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/qa2/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/qa2}</a></li>
 		<li><a href="{t:prefix}/lg2/pdf/alt.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/alt}</a></li>
+		</div>
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/fstx/0.1.1/"><i class="link-info bi bi-x-diamond"></i> {t:lg2/fstx/0.1.1}</a></li>
@@ -117,6 +119,7 @@ function lg2($state) {
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/2.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/2.1}</a></li>
 
+		<div class="wip">
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/2x/affirm1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/affirm1}</a></li>
 		<li><a href="{t:prefix}/lg2/2x/deny1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny1}</a></li>
@@ -138,6 +141,7 @@ function lg2($state) {
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/2x/dr/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/dr}</a></li>
 		<li><a href="{t:prefix}/lg2/2x/da/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/da}</a></li>
+		</div>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l2.2">
