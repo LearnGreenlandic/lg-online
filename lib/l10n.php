@@ -47,8 +47,8 @@ $l10n['dan']['lecture-back'] = 'Tilbage til oversigten';
 $l10n['eng']['lecture-back'] = 'Back to the navigator';
 $l10n['dan']['useword'] = 'Brug ordet';
 $l10n['eng']['useword'] = 'Use the word';
-$l10n['dan']['pamphlet'] = 'Indstikshæfte som PDF';
-$l10n['eng']['pamphlet'] = 'Pamphlet as PDF';
+$l10n['dan']['pamphlet'] = 'Indstikshæfte';
+$l10n['eng']['pamphlet'] = 'Pamphlet';
 
 $l10n['dan']['TXT_AUDIO'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden';
 $l10n['eng']['TXT_AUDIO'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio';
@@ -347,12 +347,12 @@ $l10n['eng']['lg1/listening/4/text'] = $l10n['eng']['lg1/pronounce/2/text'];
 
 $l10n['dan']['lg1/welcome/1'] = 'Skærmtekstsøvelse 1.1: Stavelsesdeling';
 $l10n['eng']['lg1/welcome/1'] = 'Text exercise 1.1: Hyphenate a text';
-$l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærmen lige efter velkomsten. Stavelsesdel den efter de tre regler, du netop har lært. Du finder facitlisten og en oversættelse i <a href="../../pdf/pamphlet.pdf" target="_blank">indstikshæftet (PDF)</a>, men brug den først, når du har prøvet så godt du kan selv. {t:TXT_CHECK_REVEAL}.';
-$l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pdf/pamphlet.pdf" target="_blank">the pamphlet (PDF)</a> but do not resort to it until you have tried your best on your own. {t:TXT_CHECK_REVEAL}.';
+$l10n['dan']['lg1/welcome/1/text'] = 'Her er igen den tekst, der stod på skærmen lige efter velkomsten. Stavelsesdel den efter de tre regler, du netop har lært. Du finder facitlisten og en oversættelse i <a href="../../pamphlet/" target="_blank">indstikshæftet</a>, men brug den først, når du har prøvet så godt du kan selv. {t:TXT_CHECK_REVEAL}.';
+$l10n['eng']['lg1/welcome/1/text'] = 'The text that followed the welcome revisited. Hyphenate it using the three rules you just learned. The key and a translation is included in <a href="../../pamphlet/" target="_blank">the pamphlet</a> but do not resort to it until you have tried your best on your own. {t:TXT_CHECK_REVEAL}.';
 $l10n['dan']['lg1/welcome/2'] = 'Skærmtekstsøvelse 1.2: Udtale';
 $l10n['eng']['lg1/welcome/2'] = 'Text exercise 1.2: Pronunciation';
-$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder, indtil du føler, at din udtale er ved at være korrekt. Du får ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pdf/pamphlet.pdf" target="_blank">indstikshæftet (PDF)</a>. {t:TXT_AUDIO}. Naviger ved at trykke på <button type="button" class="btn btn-sm btn-primary inert">{t:prevword}</button> og <button type="button" class="btn btn-sm btn-primary inert">{t:nextword}</button>, eller direkte på ordene.';
-$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches, until you feel your pronunciation to be acceptable. A small analysis using our primitive staff is available for you to check your intonation pattern. A translation is included in <a href="../../pdf/pamphlet.pdf" target="_blank">the pamphlet (PDF)</a>. {t:TXT_AUDIO}. Navigate by pushing <button type="button" class="btn btn-sm btn-primary inert">{t:prevword}</button> and <button type="button" class="btn btn-sm btn-primary inert">{t:nextword}</button>, or directly on the words.';
+$l10n['dan']['lg1/welcome/2/text'] = 'Læs teksten op ord for ord og væn dig til de skiftende tonehøjder, indtil du føler, at din udtale er ved at være korrekt. Du får ordet i fonetisk skrift i vores lille nodesystem, så du har noget at kontrollere din udtale på. Du finder en oversættelse i <a href="../../pamphlet/" target="_blank">indstikshæftet</a>. {t:TXT_AUDIO}. Naviger ved at trykke på <button type="button" class="btn btn-sm btn-primary inert">{t:prevword}</button> og <button type="button" class="btn btn-sm btn-primary inert">{t:nextword}</button>, eller direkte på ordene.';
+$l10n['eng']['lg1/welcome/2/text'] = 'Read the text aloud word by word to get accustomed to the varying pitches, until you feel your pronunciation to be acceptable. A small analysis using our primitive staff is available for you to check your intonation pattern. A translation is included in <a href="../../pamphlet/" target="_blank">the pamphlet</a>. {t:TXT_AUDIO}. Navigate by pushing <button type="button" class="btn btn-sm btn-primary inert">{t:prevword}</button> and <button type="button" class="btn btn-sm btn-primary inert">{t:nextword}</button>, or directly on the words.';
 
 $l10n['dan']['lg1/dialogue/1'] = 'Minidialog 1.1: Gentag';
 $l10n['eng']['lg1/dialogue/1'] = 'Mini-dialogue 1.1: Repeat';
@@ -443,16 +443,16 @@ $l10n['eng']['lg1/appendix'] = 'Appendix and more';
 $l10n['dan']['lg1/appendix/grammatica'] = 'Kapitel 3 (manuskriptudgave) af \'Forsøg til en forbedret grønlandsk pædagogisk grammatica\'';
 $l10n['eng']['lg1/appendix/grammatica'] = 'Chapter 3 (manuscript) of \'A Pedagogical Grammar of Kalaallisut\'';
 
-$l10n['dan']['lg1/pdf/1'] = 'Forelæsning 1 som PDF';
-$l10n['eng']['lg1/pdf/1'] = 'Lecture 1 as PDF';
-$l10n['dan']['lg1/pdf/2'] = 'Forelæsning 2 som PDF';
-$l10n['eng']['lg1/pdf/2'] = 'Lecture 2 as PDF';
-$l10n['dan']['lg1/pdf/3'] = 'Forelæsning 3 som PDF';
-$l10n['eng']['lg1/pdf/3'] = 'Lecture 3 as PDF';
-$l10n['dan']['lg1/pdf/4'] = 'Forelæsning 4 som PDF';
-$l10n['eng']['lg1/pdf/4'] = 'Lecture 4 as PDF';
-$l10n['dan']['lg1/pdf/5.1'] = 'Forelæsning 5 som PDF';
-$l10n['eng']['lg1/pdf/5.1'] = 'Lecture 5 as PDF';
+$l10n['dan']['lg1/1/text'] = 'Forelæsning 1 som tekst';
+$l10n['eng']['lg1/1/text'] = 'Lecture 1 as text';
+$l10n['dan']['lg1/2/text'] = 'Forelæsning 2 som tekst';
+$l10n['eng']['lg1/2/text'] = 'Lecture 2 as text';
+$l10n['dan']['lg1/3/text'] = 'Forelæsning 3 som tekst';
+$l10n['eng']['lg1/3/text'] = 'Lecture 3 as text';
+$l10n['dan']['lg1/4/text'] = 'Forelæsning 4 som tekst';
+$l10n['eng']['lg1/4/text'] = 'Lecture 4 as text';
+$l10n['dan']['lg1/5.1/text'] = 'Forelæsning 5 som tekst';
+$l10n['eng']['lg1/5.1/text'] = 'Lecture 5 as text';
 
 // Learn Greenlandic 2
 $l10n['dan']['lg2'] = 'Grønlandsk for voksne 2';
@@ -468,7 +468,7 @@ $l10n['dan']['lg2/intro/text'] = '<p>Ambitionsniveauet var relativt lavt i modul
 
 <ol>
 <li>Se kapitlets første forelæsning og lær gloserne præliminært, evt. ved hjælp af tekst og dias i pdf-filerne.</li>
-<li>Få lært de nye gloser mv. så du virkelig kan dem ved hjælp af kapitlets gloseautomat. Husk at automaten er en dum maskine, så vær opmærksom på kommentaren på <a href="../pdf/pamphlet.pdf" target="_blank">indstikshæftets side 14 (PDF)</a>.</li>
+<li>Få lært de nye gloser mv. så du virkelig kan dem ved hjælp af kapitlets gloseautomat. Husk at automaten er en dum maskine, så vær opmærksom på kommentaren på <a href="../pamphlet/" target="_blank">indstikshæftets side 14 (PDF)</a>.</li>
 <li>Gennemarbejd dagens lyt/forstå/gentag øvelse og noter ned, hvis der er ord eller konstruktioner, du ikke forstår.</li>
 <li>Se den anden forelæsning, læs forelæsningen i pdf-versionen og arbejd dig igennem samtlige øvelser.  Dette bør besvare de spørgsmål, du sad med efter dagens tekst, så du nu kan aflytte den igen og nogenlunde ubesværet gentage alt, hvad Tika og Per siger.</li>
 <li>Gå i gang med den kumulerende automat (type 2). Sørg for at du forstår hver eneste ord og bliv ved i mindst en times tid. Husk at gentage ordene højt.</li>
@@ -485,9 +485,9 @@ $l10n['eng']['lg2/intro/text'] = '<p>The level of ambition was relatively low in
 
 <ol>
 <li>Watch the chapter\'s first lecture and learn the initial glosses, possibly with help from the text and slides in the PDF files.</li>
-<li>Learn all the new glosses thoroughly by using the chapter\'s word automaton. Remember that the automaton is an ignorant machine, so please be mindful of the comment on <a href="../pdf/pamphlet.pdf" target="_blank">page 14 in the pamphlet</a>.</li>
+<li>Learn all the new glosses thoroughly by using the chapter\'s word automaton. Remember that the automaton is an ignorant machine, so please be mindful of the comment on <a href="../pamphlet/" target="_blank">page 14 in the pamphlet</a>.</li>
 <li>Work through the day\'s listen/understand/repeat exercise and note if there are any words or constructs which you do not understand.</li>
-<li>Watch the second lecture, read the lecture\'s PDF version, and work through all the exercises. This should answer any questions you may have had after the day\'s text, so you can now listen to it again and reasonably unhindered repeat everything Tika and Per are saying.</li>
+<li>Watch the second lecture, read the lecture\'s text version, and work through all the exercises. This should answer any questions you may have had after the day\'s text, so you can now listen to it again and reasonably unhindered repeat everything Tika and Per are saying.</li>
 <li>Start on the cumulative automaton (type 2). Make sure you understand each and every word and keep going for at least an hour. Remember to speak the words out loud.</li>
 </ol>
 
@@ -535,13 +535,13 @@ for ($i=1 ; $i<9 ; ++$i) {
 		$l10n['dan']['lg2/pdf/slides/'.$i.'.'.$j] = 'Forelæsning '.$i.'.'.$j.' dias';
 		$l10n['eng']['lg2/pdf/slides/'.$i.'.'.$j] = 'Lecture '.$i.'.'.$j.' slides';
 	}
-	$l10n['dan']['lg2/pdf/'.$i] = 'Kapitel '.$i.' som PDF';
-	$l10n['eng']['lg2/pdf/'.$i] = 'Chapter '.$i.' as PDF';
+	$l10n['dan']['lg2/'.$i.'/text'] = 'Kapitel '.$i.' som tekst';
+	$l10n['eng']['lg2/'.$i.'/text'] = 'Chapter '.$i.' as text';
 }
 $l10n['dan']['lg2/pdf/slides/9'] = 'Forelæsning 9 dias';
 $l10n['eng']['lg2/pdf/slides/9'] = 'Lecture 9 slides';
-$l10n['dan']['lg2/pdf/9'] = 'Kapitel 9 som PDF';
-$l10n['eng']['lg2/pdf/9'] = 'Chapter 9 as PDF';
+$l10n['dan']['lg2/9/text'] = 'Kapitel 9 som tekst';
+$l10n['eng']['lg2/9/text'] = 'Chapter 9 as text';
 
 for ($i=0 ; $i<9 ; ++$i) {
 	for ($j=1 ; $j<3 ; ++$j) {
@@ -579,7 +579,7 @@ $l10n['eng']['lg2/prep/text'] = '<p>This series of exercises should be thoroughl
 
 <p>Do so:
 <ul>
- 	<li>Listen to presentation 1.1 and work through the pdf file "Chapter 1 as pdf" to learn the new words and morphemes. Focus your learning on verbs, the derivational morphemes Vb+TAR and Vb+GALUAR as well as the endings Vb+{vaaŋŋa}, Vb+{vaat}, Vb+{vit}, Vb+{viuk} and Vb+{vugut}. All other new material you will get in once you are done with this preparatory chapter and get going with lesson 1.</li>
+ 	<li>Listen to presentation 1.1 and work through the document "Chapter 1 as text" to learn the new words and morphemes. Focus your learning on verbs, the derivational morphemes Vb+TAR and Vb+GALUAR as well as the endings Vb+{vaaŋŋa}, Vb+{vaat}, Vb+{vit}, Vb+{viuk} and Vb+{vugut}. All other new material you will get in once you are done with this preparatory chapter and get going with lesson 1.</li>
  	<li>Learn the new sound rule. It controls the variable consonant one finds in a number of very frequent derivational morphemes and endings. It is most often written as a capital T. The rule states that T → /s/ after a vowel but /t/ after a consonant. Please, observe that this is exactly the same principle as you saw in the mood endings {vu}, {va} and {vi} that keep their v-shapes after vowels but after consonants turn {pu}, {pa} and {pi} as you learned it in module 1.</li>
  	<li>Learn a new derivational morpheme: Vb+TUQ means "the one who Vb" as in <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "the one who studies" (that is "a student") and in <i>suli</i>+TUQ → <i>sulisoq</i> "the one who works" (that is "a worker")</li>
  	<li>Learn another new derivational morpheme: Vb+TARIAQAR means "have to Vb/ must Vb" as in <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "he has to study" and in <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "he must work".</li>
@@ -642,28 +642,137 @@ $l10n['eng']['We-are-Vbed'] = 'We are Vb-ed ..';
 $l10n['dan']['Are-you-Vbed'] = 'Er du blevet ..?';
 $l10n['eng']['Are-you-Vbed'] = 'Are you Vb-ed ..?';
 
-$l10n['dan']['lg2/0x/deny'] = 'Øvelse 0.1x: Benægt spørgsmål';
-$l10n['eng']['lg2/0x/deny'] = 'Exercise 0.1x: Deny questions';
-$l10n['dan']['lg2/0x/deny/text'] = 'Som input får du spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ+2Sg. Benægt med <i>Naamik, …</i></p>
+$l10n['dan']['lg2/0x/deny1'] = 'Øvelse 0.1.1x: Benægt spørgsmål';
+$l10n['eng']['lg2/0x/deny1'] = 'Exercise 0.1.1x: Deny questions';
+$l10n['dan']['lg2/0x/deny1/text'] = 'Som input får du spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ+2Sg. Benægt med <i>Naamik, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq i går?)<br>
 <i>Naamik, ippassaq Arnannguaq Katuami ilinniartinngilara.</i> (Nej, jeg underviste ikke Arnannguaq i Katuaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/0x/deny/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny everything using <i>Naamik, …</i></p>
+$l10n['eng']['lg2/0x/deny1/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny everything using <i>Naamik, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
 <i>Naamik, ippassaq Arnannguaq Katuami ilinniartinngilara.</i> (No, I did not teach Arnannguaq in Katuaq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/0x/summer'] = 'Øvelse 0.2x: Gentagen handling';
-$l10n['eng']['lg2/0x/summer'] = 'Exercise 0.2x: Repeated action';
-$l10n['dan']['lg2/0x/summer/text'] = 'Som input får spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ+2Sg. Du skal benægte og sige, det kun er noget du gør om sommeren (altså gentagen handling, så TAR er obligatorisk). Start svarende med <i>Naamik, aasakkuinnaq…</i></p>
+$l10n['dan']['lg2/0x/invert1'] = 'Øvelse 0.1.2x: Benægt negative spørgsmål';
+$l10n['eng']['lg2/0x/invert1'] = 'Exercise 0.1.2x: Deny negated questions';
+$l10n['dan']['lg2/0x/invert1/text'] = 'Som input får du negative spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ+2Sg. Benægt og svar positivt med <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartinngiliuk?</i> (Underviste du ikke Arnannguaq i Katuaq i går? (var du altså undervisningsfri I går?))<br>
+<i>Naamik, ippassaq Arnannguaq Katuami ilinniartippara.</i> (Nej, jeg underviste Arnannguaq i Katuaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/invert1/text'] = 'Your input will be negated questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative + 2Sg. Invert and answer positively using <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartinngiliuk?</i> (Did you not teach Arnannguaq in Katuaq yesterday? (Were you off teaching yesterday?))<br>
+<i>Naamik, ippassaq Arnannguaq Katuami ilinniartippara.</i> (No, I did teach Arnannguaq in Katuaq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/deny2'] = 'Øvelse 0.2.1x: Benægt spørgsmål';
+$l10n['eng']['lg2/0x/deny2'] = 'Exercise 0.2.1x: Deny questions';
+$l10n['dan']['lg2/0x/deny2/text'] = 'Som input får du spørgsmål af typen <i>Ippassaq</i> (i går) :: sted :: interrogativ+2Sg. Benægt med <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Katuami tiitorpit?</i> (Drak du te i Katuaq i går?)<br>
+<i>Naamik, ippassaq Katuami tiitunngilanga.</i> (Nej, jeg drak ikke te i Katuaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/deny2/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: location :: interrogative + 2Sg. Deny with <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Katuami tiitorpit?</i> (Did you drink tea in Katuaq yesterday?)<br>
+<i>Naamik, ippassaq Katuami tiitunngilanga.</i> (No, I did not drink tea in Katuaq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/invert2'] = 'Øvelse 0.2.2x: Benægt negative spørgsmål';
+$l10n['eng']['lg2/0x/invert2'] = 'Exercise 0.2.2x: Deny negated questions';
+$l10n['dan']['lg2/0x/invert2/text'] = 'Som input får du negative spørgsmål af typen <i>Ippassaq</i> (i går) :: sted :: interrogativ + 2Sg. Benægt og svar positivt med <i>Naamik, …</i>. For at benægte skal du bruge den positive form af verbet.</p>
+<p>Ex:<br>
+<i>Ippassaq Katuami tiitunngilatit?</i> (Drak du ikke te i Katuaq i går? (= var du tedrikke-fri?))<br>
+<i>Naamik, ippassaq Katuami tiitorpunga.</i> (Nej, jeg drak te i Katuaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/invert2/text'] = 'Your input will be negated questions like <i>Ippassaq</i> (yesterday) :: location :: interrogative + 2Sg. Invert and answer positively using <i>Naamik, …</i>. To invert the answer you will need to use the positive version of the verb.</p>
+<p>Ex:<br>
+<i>Ippassaq Katuami tiitunngilatit?</i> (Did you not drink tea in Katuaq yesterday? (= were you tea-drinking-free?))<br>
+<i>Naamik, ippassaq Katuami tiitorpunga.</i> (No, I did drink tea in Katuaq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/deny3'] = 'Øvelse 0.3.1x: Benægt spørgsmål';
+$l10n['eng']['lg2/0x/deny3'] = 'Exercise 0.3.1x: Deny questions';
+$l10n['dan']['lg2/0x/deny3/text'] = 'Som input får du spørgsmål af typen <i>Ippassaq</i> (i går) :: sted :: interrogativ+ 2Sg. Benægt med <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Sisimiunut tikippit?</i> (Kom du til Sisimiut i går?)<br>
+<i>Naamik, ippassaq Sisimiunut tikinngilanga.</i> (Nej, jeg kom ikke til Sisimiut i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/deny3/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: location :: interrogative + 2Sg. Deny with <i>Naamik, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Sisimiunut tikippit?</i> (Did you arrive in Sisimiut yesterday?)<br>
+<i>Naamik, ippassaq Sisimiunut tikinngilanga.</i> (No, I did not arrive in Sisimiut yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/invert3'] = 'Øvelse 0.3.2x: Benægt negative spørgsmål';
+$l10n['eng']['lg2/0x/invert3'] = 'Exercise 0.3.2x: Deny negated questions';
+$l10n['dan']['lg2/0x/invert3/text'] = 'Som input får du negative spørgsmål af typen <i>Ippassaq</i> (i går) :: sted :: interrogativ + 2Sg. Benægt og svar positivt med <i>Naamik, …</i>. For at benægte skal du bruge den positive form af verbet.</p>
+<p>Ex:<br>
+<i>Ippassaq Sisimiunut tikinngilatit?</i> (Nåede du ikke til Sisimiut i går? (= ingen ankomst))<br>
+<i>Naamik, ippassaq Sisimiunut tikippunga.</i> (Nej, jeg nåede frem til Sisimiut i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/invert3/text'] = 'Your input will be negative questions like <i>Ippassaq</i> (yesterday) :: location :: interrogative + 2Sg. Invert and answer positively with <i>Naamik, …</i>. To invert the answer you will need to use the positive version of the verb.</p>
+<p>Ex:<br>
+<i>Ippassaq Sisimiunut tikinngilatit?</i> (Did you not arrive in Sisimiut yesterday? (= no arrival))<br>
+<i>Naamik, ippassaq Sisimiunut tikippunga.</i> (No, I did arrive in Sisimiut yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/summer1'] = 'Øvelse 0.4x: Gentagen handling';
+$l10n['eng']['lg2/0x/summer1'] = 'Exercise 0.4x: Repeated action';
+$l10n['dan']['lg2/0x/summer1/text'] = 'Som input får spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ + 2Sg. Benægt og sig, at det gør du kun om sommeren (<i>aasakkuinnaq</i> = kun om sommeren). Der er altså tale om en gentagen handling, så TAR er obligatorisk. Start svarende med <i>Naamik, aasakkuinnaq…</i></p>
 <p>Ex:<br>
 <i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq i går?)<br>
-<i>Naamik, aasakkuinnaq Arnannguaq Katuami ilinniartittarpara.</i> (Nej, kun om sommeren underviser jeg Arnannguaq i Katuaq.).</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/0x/summer/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny and say you do so only in summertime (that is repeated action so you must add TAR) using <i>Naamik, aasakkuinnaq…</i></p>
+<i>Naamik, aasakkuinnaq Arnannguaq Katuami ilinniartittarpara.</i> (Nej, det er kun om sommeren, jeg underviser Arnannguaq i Katuaq.).</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/summer1/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny and say you do so only in summertime (<i>aasakkuinnaq</i> = only during summer). This is repeated action, so you must add TAR. Answer using <i>Naamik, aasakkuinnaq…</i></p>
 <p>Ex:<br>
 <i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
 <i>Naamik, aasakkuinnaq Arnannguaq Katuami ilinniartittarpara.</i> (No, I teach Arnannguaq in Katuaq only in summertime.).</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg2/0x/summer2'] = 'Øvelse 0.5x: Gentagen handling';
+$l10n['eng']['lg2/0x/summer2'] = 'Exercise 0.5x: Repeated action';
+$l10n['dan']['lg2/0x/summer2/text'] = 'Som input får spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ + 2Sg. Benægt og sig, at det gør du kun om sommeren (<i>aasakkuinnaq</i> = kun om sommeren). Der er altså tale om en gentagen handling, så TAR er obligatorisk. Start svarende med <i>Naamik, aasakkuinnaq…</i></p>
+<p>Ex:<br>
+<i>Ippassaq Narsamut aallarpit?</i> (Tog du til Narsaq I går?)<br>
+<i>Naamik, aasakkuinnaq Narsamut aallartarpunga.</i> (Nej, det er kun om sommeren, jeg tager til Narsaq.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/summer2/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. You will deny and say you do so only in summertime (<i>aasakkuinnaq</i> = only during summer). This is repeated action, so you must add TAR. Answer using <i>Naamik, aasakkuinnaq…</i></p>
+<p>Ex:<br>
+<i>Ippassaq Narsamut aallarpit?</i> (Did you go to Narsaq yesterday?)<br>
+<i>Naamik, aasakkuinnaq Narsamut aallartarpunga.</i> (No, it is only during summer that I go to Narsaq.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/tomorrow'] = 'Øvelse 0.6x: I morgen';
+$l10n['eng']['lg2/0x/tomorrow'] = 'Exercise 0.6x: Tomorrow';
+$l10n['dan']['lg2/0x/tomorrow/text'] = 'Som input får spørgsmål af typen <i>Ippassaq</i> (i går) :: objekt :: sted :: interrogativ + 2Sg. Benægt og sig, at det gør du i morgen. Start svarende med <i>Naamik, aqaguli…</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq i går?)<br>
+<i>Naamik, aqaguli Arnannguaq Katuami ilinniartissavara.</i> (Nej, men jeg underviser Arnannguaq i Katuaq i morgen.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/tomorrow/text'] = 'Your input will be questions like <i>Ippassaq</i> (yesterday) :: object :: location :: interrogative+2Sg. Deny and say you will do so tomorrow. Answer using <i>Naamik, aqaguli…</i></p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Did you teach Arnannguaq in Katuaq yesterday?)<br>
+<i>Naamik, aqaguli Arnannguaq Katuami ilinniartissavara.</i> (No, but I will teach Arnannguaq in Katuaq tomorrow.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/today'] = 'Øvelse 0.7x: I dag';
+$l10n['eng']['lg2/0x/today'] = 'Exercise 0.7x: Today';
+$l10n['dan']['lg2/0x/today/text'] = 'Som input får spørgsmål af typen <i>Ullumi</i> (i dag) :: sted :: indikativ + 1Pl. Bekræft alt og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, ullumi…</i></p>
+<p>Ex:<br>
+<i>Ullumi Narsamut aallassaagut?</i> (Tager vi til Narsaq i dag?)<br>
+<i>Aap, ullumi Narsamut aallassaagut.</i> (Ja, vi tager til Narsaq i dag.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/today/text'] = 'Your input will be questions like <i>Ullumi</i> (today) :: location :: indicative + 1Pl. Affirm everything, and remember that if the question is negative, the answer much also be. Answer using <i>Aap, aqaguli…</i></p>
+<p>Ex:<br>
+<i>Ullumi Narsamut aallassaagut?</i> (Are we going to Narsaq today?)<br>
+<i>Aap, ullumi Narsamut aallassaagut.</i> (Yes, we are going to Narsaq today.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/name'] = 'Øvelse 0.8x: Navn';
+$l10n['eng']['lg2/0x/name'] = 'Exercise 0.8x: Name';
+$l10n['dan']['lg2/0x/name/text'] = 'Du får her en række udsagn, der sætter navn på en eller anden. Forstå sætningen og gentag den højt, når du har forstået den ordentligt.</p>
+<p>Ex:<br>
+<i>Nuummi naapittagara taanna Aviaajamik ateqarpoq.</i> (Hende der, jeg plejer at møde i Nuuk, hedder Aviaaja.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/name/text'] = 'You will see a series of statements that name somebody. Read the sentences, and repeat them out loud when you comprehend them.</p>
+<p>Ex:<br>
+<i>Nuummi naapittagara taanna Aviaajamik ateqarpoq.</i> (Her, that I usually meet in Nuuk, is named Aviaaja.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0x/onewho'] = 'Øvelse 0.9x: En som er/gør';
+$l10n['eng']['lg2/0x/onewho'] = 'Exercise 0.9x: One who is/does';
+$l10n['dan']['lg2/0x/onewho/text'] = 'I denne øvelse får du input-sætninger, der udsiger et eller andet. Sæt morfemet TUQ fulgt af U på for at danne sætninger af typen <i>subjektet er sådan en, som er/gør…</i></p>
+<p>Ex:<br>
+<i>Ilisimatusarfimmi ilinniarpugut.</i> (Vi studerer på universitetet.)<br>
+<i>Ilisimatusarfimmi ilinniartuuvugut.</i> (Vi er universitetsstuderende.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0x/onewho/text'] = 'Your input will be sentences that state something. Add the morpheme TUQ followed by U to make sentences like <i>the subject is one who is/does…</i></p>
+<p>Ex:<br>
+<i>Ilisimatusarfimmi ilinniarpugut.</i> (We study at the university.)<br>
+<i>Ilisimatusarfimmi ilinniartuuvugut.</i> (We are university students.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+/*
 $l10n['dan']['lg2/0x/i'] = 'Øvelse 0.3x: Brug TUQ + U';
 $l10n['eng']['lg2/0x/i'] = 'Exercise 0.3x: Use TUQ + U';
 $l10n['dan']['lg2/0x/i/text'] = 'Dit input er et udsagn (altså en sætning i indikativ). Sæt derivationsmorfemet TUQ (<i>en, som ..</i>) fulgt af U (<i>at være</i>) for at danne udsagn af typen "SUBJEKT er en, som er/gør .."</p>
@@ -703,9 +812,10 @@ $l10n['dan']['lg2/0x/qa2'] = 'Øvelse 0.7x: Benægt spørgsmål 2';
 $l10n['eng']['lg2/0x/qa2'] = 'Exercise 0.7x: Deny questions 2';
 $l10n['dan']['lg2/0x/qa2/text'] = 'Du får her en række udsagn, som du benægter. Husk igen, at besvare benægtede udsagn logisk.</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+//*/
 
-$l10n['dan']['lg2/pdf/alt'] = 'Øvelse 0.8x: Prøv at inddrage alternativt materiale';
-$l10n['eng']['lg2/pdf/alt'] = 'Exercise 0.8x: Try incorporating alternative sources';
+$l10n['dan']['lg2/pdf/alt'] = 'Øvelse 0.10x: Prøv at inddrage alternativt materiale';
+$l10n['eng']['lg2/pdf/alt'] = 'Exercise 0.10x: Try incorporating alternative sources';
 
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';

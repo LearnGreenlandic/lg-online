@@ -600,7 +600,7 @@
 		if (g_lang === 'dan') {
 			$('#g-kal2dan').click();
 		}
-		if (g_admin) {
+		if (g_admin || g_root.toString().indexOf('/online-dev') != -1) {
 			$('.wip').show();
 		}
 		else {

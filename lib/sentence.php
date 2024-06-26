@@ -56,17 +56,20 @@ function sentence_listen($state, $chap='2x') {
 </div>
 <div class="row alternate">
 <?php
+	$tsv = "#Text\tMP3\n";
 	$data = '';
 	foreach ($GLOBALS['-ds'][$chap] as $f) {
 		$data = trim($data."\n".trim(file_get_contents('d/lg1/sentence/'.$chap.'/'.$f.'.txt')));
 	}
 	$words = explode("\n", $data);
-	shuffle($words);
+	$words = shuffle_values($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
 		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		$tsv .= "{$word}\t{$mp3}\n";
 		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div>';
 	}
+	maybe_export($state, $tsv);
 ?>
 </div>
 </div>
@@ -83,15 +86,18 @@ function sentence_listen_v($state, $chap='2x') {
 </div>
 <div class="row alternate">
 <?php
+	$tsv = "#Text\tMP3\n";
 	$all = load_corpus('lg1', $chap);
 	$words = preg_grep('@\+GUSUP\+@', preg_grep('@\+(QAR|TUR)\+@', $all), PREG_GREP_INVERT);
 
-	shuffle($words);
+	$words = shuffle_values($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
 		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		$tsv .= "{$word}\t{$mp3}\n";
 		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div>';
 	}
+	maybe_export($state, $tsv);
 ?>
 </div>
 </div>
@@ -108,15 +114,18 @@ function sentence_listen_g($state, $chap='2x') {
 </div>
 <div class="row alternate">
 <?php
+	$tsv = "#Text\tMP3\n";
 	$all = load_corpus('lg1', $chap);
 	$words = preg_grep('@\+(QAR|TUR)\+@', preg_grep('@\+GUSUP\+@', $all));
 
-	shuffle($words);
+	$words = shuffle_values($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
 		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		$tsv .= "{$word}\t{$mp3}\n";
 		echo '<div class="col-lg-6 my-2 text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div>';
 	}
+	maybe_export($state, $tsv);
 ?>
 </div>
 </div>
@@ -137,6 +146,7 @@ function sentence_listen_c($state, $chap='2x') {
 </div>
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
+	$tsv = "#Text\tMP3\n";
 	$data = '';
 	foreach ($GLOBALS['-ds'] as $c => $fs) {
 		foreach ($GLOBALS['-ds'][$chap] as $f) {
@@ -147,12 +157,14 @@ function sentence_listen_c($state, $chap='2x') {
 		}
 	}
 	$words = explode("\n", $data);
-	shuffle($words);
+	$words = shuffle_values($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
 		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
+		$tsv .= "{$word}\t{$mp3}\n";
 		echo '<div class="text-center entry"><audio src="'.$mp3.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$word.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div>';
 	}
+	maybe_export($state, $tsv);
 ?>
 </div>
 <div class="col-3 text-left">
@@ -173,6 +185,7 @@ function sentence_case($state, $chap='2x', $case='trm') {
 </div>
 <div class="row alternate">
 <?php
+	$tsv = "#Question\tAnswer\tQ MP3\tA MP3\n";
 	$trgs = explode("\n", trim(file_get_contents('d/lg1/sentence/'.$chap.'/'.$case.'.txt')));
 	foreach ($trgs as $k => $trg) {
 		$ws = explode("\t", $trg);
@@ -187,15 +200,18 @@ function sentence_case($state, $chap='2x', $case='trm') {
 		if (!empty($ws[1])) {
 			$p = ' ('.$ws[1].')';
 		}
+		$word = $ws[0].$p;
 		$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3', $ws[0]);
 		$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$trgs[$k].'.mp3', $trgs[$k]);
-		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$trgs[$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><br><code class="hint my-1"></code></span></div></div></div>';
+		$tsv .= "{$word}\t{$trgs[$k]}\t{$mp3_1}\t{$mp3_2}\n";
+		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$word.'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$trgs[$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><br><code class="hint my-1"></code></span></div></div></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
+	maybe_export($state, $tsv);
 ?>
 </div>
 </div>
@@ -226,7 +242,7 @@ function sentence_prod_v($state, $chap='2x') {
 		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$m[1].'+'.$m[2].'+'.$m[3].'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$ws[1].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><br><code class="hint my-1"></code></span></div></div></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -260,7 +276,7 @@ function sentence_prod_g($state, $chap='2x') {
 		$outs[] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$m[1].'+'.$m[2].'+GUSUP+'.$m[3].'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$ws[1].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><br><code class="hint my-1"></code></span></div></div></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -310,7 +326,7 @@ function sentence_case_c($state, $chap='2x', $case='trm') {
 		}
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -339,7 +355,7 @@ function sentence_verbs($state, $chap='3x') {
 		$data = trim($data."\n".trim(file_get_contents('d/lg1/sentence/'.$chap.'/'.$f.'.txt')));
 	}
 	$words = explode("\n", $data);
-	shuffle($words);
+	$words = shuffle_values($words);
 	foreach ($words as $word) {
 		$word = explode("\t", $word)[1];
 		$mp3 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$word.'.mp3', $word);
@@ -359,13 +375,7 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 		$task = 'qa-ssa';
 	}
 
-	$all = [];
-	if ($root == 'lg2' && $chap == '0x' && ($task == 'food' || $task == 'food2' || $task == 'qa' || $task == 'qa2')) {
-		$all = load_corpus($root, $chap, 'kal0');
-	}
-	else {
-		$all = load_corpus($root, $chap, $task);
-	}
+	$all = load_corpus($root, $chap, $task);
 	$ps = [];
 
 	if ($chap == '5x' && $task == 'nu') {
@@ -459,32 +469,115 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 		return $ps;
 	}
 
-	if ($chap == '0x' && $task == 'deny') {
+	if ($chap == '0x' && $task == 'deny1') {
 		$ps[] = [
-			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(encounter|teach|see)@', preg_grep('@\+(GALUAR|SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
-			];
-		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(GALUAR|SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Mask|Fem|Hnat|Hfam)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(encounter|teach|see)@', preg_grep('@\+(SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
 			];
 		return $ps;
 	}
 
-	if ($chap == '0x' && $task == 'summer') {
+	if ($chap == '0x' && $task == 'invert1') {
 		$ps[] = [
-			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(encounter|teach|see)@', preg_grep('@\+(GALUAR|SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
-			];
-		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(GALUAR|SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Mask|Fem|Hnat|Hfam)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(encounter|teach|see).*\+NNGIT@', preg_grep('@\+(SSA|TAR)@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
 			];
 		return $ps;
 	}
 
+	if ($chap == '0x' && $task == 'deny2') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+[1234](Sg|Pl)O@', preg_grep('@\+(SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'invert2') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+[1234](Sg|Pl)O@', preg_grep('@\+(SSA|TAR)@', preg_grep('@\+NNGIT.*?\+Int\+2Sg@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'deny3') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(reach|run)@', preg_grep('@\+[1234](Sg|Pl)O@', preg_grep('@\+(SSA|TAR|NNGIT)@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'invert3') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(reach|run)@', preg_grep('@\+[1234](Sg|Pl)O@', preg_grep('@\+(SSA|TAR)@', preg_grep('@\+NNGIT.*?\+Int\+2Sg@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'summer1') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(encounter|teach|see)@', preg_grep('@\+(TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'summer2') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(reach|run)@', preg_grep('@\+(TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'tomorrow') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(encounter|teach|see)@', preg_grep('@\+(TAR|NNGIT)@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'today') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(reach|run).*\+SSA@', preg_grep('@\+(TAR)@', preg_grep('@\+Ind\+1Pl\s@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'name') {
+		$ps[] = [
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+Sem/create-semantic@', preg_grep('@\+TAQ\b.*?\+Abs\+Sg\+1SgPoss@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', ["taanna\ttaanna"]),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LI|LU)\b@', preg_grep('@\+Sem/(Fem|Mask)\b.*?\+Ins@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+Sem/be_name\b.*?\+Ind\+3Sg@', $all)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '0x' && $task == 'onewho') {
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(SSA|NNGIT)@', preg_grep('@\+Ind\+1(Sg|Pl)\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			];
+		$ps[] = [
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(SSA|NNGIT)@', preg_grep('@\+Ind\+3Sg\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			];
+		return $ps;
+	}
+
+	/*
 	if ($chap == '0x' && $task == 'i') {
 		$ps[] = [
 			preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all),
@@ -547,8 +640,10 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/(Fem|Mask)\+.*Abs@', $all), PREG_GREP_INVERT),
 			preg_grep('@\+(LI|LU)[+\s]@', preg_grep('@Sem/Hnat.*\+U\+.*\+3Sg@', $all), PREG_GREP_INVERT),
 			];
+		echo "\n<!-- ".var_export($ps, true)." -->\n";
 		return $ps;
 	}
+	//*/
 
 	if ($chap == '2x' && $task == 'affirm1') {
 		$ps[] = [
@@ -722,13 +817,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
 	$ps = _sent_rand_helper($root, $chap, $task);
-	$all = [];
-	if ($chap == '0x') {
-		$all = load_corpus($root, $chap, 'kal0');
-	}
-	else {
-		$all = load_corpus($root, $chap);
-	}
+	$all = load_corpus($root, $chap);
 
 	foreach ($all as $k => $v) {
 		unset($all[$k]);
@@ -740,7 +829,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 	foreach ($ps as $p) {
 		$outs = [];
 		foreach ($p as $k => $vs) {
-			shuffle($p[$k]);
+			$p[$k] = shuffle_values($p[$k]);
 		}
 		foreach (cartesian_product($p) as $c) {
 			$outs[] = $c;
@@ -748,7 +837,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				break;
 			}
 		}
-		shuffle($outs);
+		$outs = shuffle_values($outs);
 		$outs = array_slice($outs, 0, 25);
 		$sents = array_merge($sents, $outs);
 	}
@@ -767,7 +856,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$ans[] = $all[$w[0]];
 			}
 		}
-		else if ($task == 'deny1' || $task == 'u2') {
+		else if ($chap == '2x' && ($task == 'deny1' || $task == 'u2')) {
 			$ans[] = 'Naamik,';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
@@ -782,7 +871,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$ans[] = $all[$w[0]];
 			}
 		}
-		else if ($task == 'deny2' || $task == 'u3') {
+		else if ($chap == '2x' && ($task == 'deny2' || $task == 'u3')) {
 			$ans[] = 'Naamik,';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
@@ -864,7 +953,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$ans[] = $all[$w];
 			}
 		}
-		else if ($task == 'deny') {
+		else if ($chap == '0x' && ($task == 'deny1' || $task == 'deny2' || $task == 'deny3')) {
 			$qst[] = 'Ippassaq';
 			$ans[] = 'Naamik, ippassaq';
 			foreach ($sent as $w) {
@@ -872,10 +961,27 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$qst[] = $w[1];
 				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
 				$w[0] = str_replace('+V+', '+NNGIT+V+', $w[0]);
+				if (empty($all[$w[0]])) {
+					continue 2;
+				}
 				$ans[] = $all[$w[0]];
 			}
 		}
-		else if ($task == 'summer') {
+		else if ($chap == '0x' && ($task == 'invert1' || $task == 'invert2' || $task == 'invert3')) {
+			$qst[] = 'Ippassaq';
+			$ans[] = 'Naamik, ippassaq';
+			foreach ($sent as $w) {
+				$w = explode("\t", $w);
+				$qst[] = $w[1];
+				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
+				$w[0] = str_replace('+NNGIT+', '+', $w[0]);
+				if (empty($all[$w[0]])) {
+					continue 2;
+				}
+				$ans[] = $all[$w[0]];
+			}
+		}
+		else if ($task == 'summer1' || $task == 'summer2') {
 			$qst[] = 'Ippassaq';
 			$ans[] = 'Naamik, aasakkuinnaq';
 			foreach ($sent as $w) {
@@ -883,19 +989,48 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$qst[] = $w[1];
 				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
 				$w[0] = str_replace('+V+', '+TAR+V+', $w[0]);
+				if (empty($all[$w[0]])) {
+					continue 2;
+				}
 				$ans[] = $all[$w[0]];
 			}
 		}
-		else if ($task == 'i') {
+		else if ($task == 'tomorrow') {
+			$qst[] = 'Ippassaq';
+			$ans[] = 'Naamik, aqaguli';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
 				$qst[] = $w[1];
-				if (strpos($w[0], '+V+') !== false) {
-					$w[0] = str_replace('+Sem/', '+iSem/', $w[0]);
-					$w[0] = str_replace('+V+', '+TUQ+U+V+', $w[0]);
-				}
-				if (!array_key_exists($w[0], $all)) {
+				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
+				$w[0] = str_replace('+V+', '+SSA+V+', $w[0]);
+				if (empty($all[$w[0]])) {
 					continue 2;
+				}
+				$ans[] = $all[$w[0]];
+			}
+		}
+		else if ($task == 'today') {
+			$qst[] = 'Ullumi';
+			$ans[] = 'Aap, ullumi';
+			foreach ($sent as $w) {
+				$w = explode("\t", $w);
+				$qst[] = $w[1];
+				if (empty($all[$w[0]])) {
+					continue 2;
+				}
+				$ans[] = $all[$w[0]];
+			}
+		}
+		else if ($task == 'onewho') {
+			foreach ($sent as $w) {
+				$w = explode("\t", $w);
+				$qst[] = $w[1];
+				$w[0] = str_replace('+V+', '+TUQ+U+V+', $w[0]);
+				if (empty($all[$w[0]])) {
+					$w[0] = str_replace('+TUQ+U+V+', '+TUQ+U+Sem/copula+V+', $w[0]);
+					if (empty($all[$w[0]])) {
+						continue 2;
+					}
 				}
 				$ans[] = $all[$w[0]];
 			}
@@ -904,7 +1039,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		$qst = ucfirst(implode(' ', $qst).'?');
 		$ans = ucfirst(implode(' ', $ans));
 
-		if ($task == 'i') {
+		if ($task == 'onewho') {
 			$qst = substr($qst, 0, -1);
 			$qst .= '.';
 		}
@@ -912,7 +1047,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		$outs[] = '<div><div class="text-center entry"><audio src="/martha/?t='.urlencode($qst).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button> <div class="my-2 hint">'.$qst.'</div></div><div class="my-2 text-center entry"> <input type="text" spellcheck="false" class="form-control" data-check="'.$ans.'"> <button type="button" class="btn btn-warning">✓</button> <audio src="/martha/?t='.$ans.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -944,7 +1079,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 
 	$all = [];
 	if ($task == 'food2') {
-		$all = load_corpus($root, $chap, 'kal0');
+		$all = load_corpus($root, $chap);
 	}
 
 	$sents = [];
@@ -954,7 +1089,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 			foreach ($vs as $ka => $va) {
 				$p[$k][$ka] = explode("\t", $va[1]);
 			}
-			shuffle($p[$k]);
+			$p[$k] = shuffle_values($p[$k]);
 		}
 		foreach (cartesian_product($p) as $c) {
 			$outs[] = $c;
@@ -962,7 +1097,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 				break;
 			}
 		}
-		shuffle($outs);
+		$outs = shuffle_values($outs);
 		$outs = array_slice($outs, 0, 25);
 		$sents = array_merge($sents, $outs);
 	}
@@ -980,7 +1115,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 		$outs[] = '<div class="text-center entry"><div class="mb-3">'.$sent.'<br><code class="text-left text-wrap hint my-1">'.$ana.'</code></div><div><audio src="/martha/?t='.$sent.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button></div></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -1017,7 +1152,7 @@ function sentence_random_listen($root='lg1', $state, $chap='3x', $task='random')
 			foreach ($vs as $ka => $va) {
 				$p[$k][$ka] = explode("\t", $va[1])[1];
 			}
-			shuffle($p[$k]);
+			$p[$k] = shuffle_values($p[$k]);
 		}
 		foreach (cartesian_product($p) as $c) {
 			$outs[] = implode(' ', $c);
@@ -1025,7 +1160,7 @@ function sentence_random_listen($root='lg1', $state, $chap='3x', $task='random')
 				break;
 			}
 		}
-		shuffle($outs);
+		$outs = shuffle_values($outs);
 		$outs = array_slice($outs, 0, 25);
 		$sents = array_merge($sents, $outs);
 	}
@@ -1035,7 +1170,7 @@ function sentence_random_listen($root='lg1', $state, $chap='3x', $task='random')
 		$outs[] = '<div class="text-center entry"><audio src="/martha/?t='.$sent.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <input type="text" spellcheck="false" class="form-control" data-check="'.$sent.'"> <button type="button" class="btn btn-warning">✓</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -1074,7 +1209,7 @@ function sentence_random_write($state, $chap='3x') {
 				$bf = explode('+', $va[0], 2);
 				$p[$k][$ka] = [$vat[0], [$bf[0], $bf[1], $va[1]]];
 			}
-			shuffle($p[$k]);
+			$p[$k] = shuffle_values($p[$k]);
 		}
 		foreach (cartesian_product($p) as $c) {
 			$outs[] = $c;
@@ -1082,7 +1217,7 @@ function sentence_random_write($state, $chap='3x') {
 				break;
 			}
 		}
-		shuffle($outs);
+		$outs = shuffle_values($outs);
 		$outs = array_slice($outs, 0, 25);
 		$sents = array_merge($sents, $outs);
 	}
@@ -1132,7 +1267,7 @@ function sentence_random_write($state, $chap='3x') {
 		$outs[] = '<div class="text-center entry"><div class="text-left"><b>{t:senttmpl}</b>:<ul><li>'.$lis.'</li></ul></div><input type="text" spellcheck="false" class="form-control" data-check="'.$words.'"> <button type="button" class="btn btn-warning">✓</button> <audio src="/martha/?t='.$words.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div>';
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -1190,14 +1325,14 @@ function sentence_all($state, $chap='2x') {
 
 	$outs = [];
 	foreach ($GLOBALS['-ds'][$chap] as $case) {
-		shuffle($prep[$case]);
+		$prep[$case] = shuffle_values($prep[$case]);
 		if (count($prep[$case]) >= $div) {
 			$prep[$case] = array_slice($prep[$case], 0, intval($div));
 		}
 		$outs = array_merge($outs, $prep[$case]);
 	}
 
-	shuffle($outs);
+	$outs = shuffle_values($outs);
 	foreach ($outs as $out) {
 		echo $out;
 	}
@@ -1279,7 +1414,7 @@ function sentence($state, $chap, $task) {
 function sentence_lg2($state, $chap, $task) {
 	\LGO\header($state, 'lg2', $chap.'/'.$task);
 	if ($chap == '0x' || $chap == '2x') {
-		if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr') {
+		if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
 			\LGO\sentence_random_read('lg2', $state, $chap, $task);
 		}
 		else {

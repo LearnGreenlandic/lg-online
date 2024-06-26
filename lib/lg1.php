@@ -24,7 +24,7 @@ function lg1($state) {
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/pronounce/1/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/pronounce/1}</a></li>
 		<li><a href="{t:prefix}/lg1/pronounce/2/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/pronounce/2}</a></li>
-		<li><a href="{t:prefix}/lg1/pdf/1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/1}</a></li>
+		<li><a href="{t:prefix}/lg1/1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/1/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 2 -->
@@ -35,7 +35,7 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/listening/1/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/listening/1}</a></li>
 		<li><a href="{t:prefix}/lg1/listening/2/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/listening/2}</a></li>
 		<li><a href="{t:prefix}/lg1/listening/3/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/listening/3}</a></li>
-		<li><a href="{t:prefix}/lg1/pdf/2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/2}</a></li>
+		<li><a href="{t:prefix}/lg1/2/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/2/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 2x -->
@@ -57,7 +57,7 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/listening/4/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/listening/4}</a></li>
 		<li><a href="{t:prefix}/lg1/welcome/1/"><i class="link-info bi bi-file-text"></i> {t:lg1/welcome/1}</a></li>
 		<li><a href="{t:prefix}/lg1/welcome/2/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/welcome/2}</a></li>
-		<li><a href="{t:prefix}/lg1/pdf/3.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/3}</a></li>
+		<li><a href="{t:prefix}/lg1/3/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/3/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 3x -->
@@ -85,7 +85,7 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/dialogue/1/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/dialogue/1}</a></li>
 		<li><a href="{t:prefix}/lg1/dialogue/2/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/dialogue/2}</a></li>
 		<li><a href="{t:prefix}/lg1/dialogue/3/"><i class="link-info bi bi-chat-right-fill"></i> {t:lg1/dialogue/3}</a></li>
-		<li><a href="{t:prefix}/lg1/pdf/4.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/4}</a></li>
+		<li><a href="{t:prefix}/lg1/4/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/4/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 4x -->
@@ -107,7 +107,7 @@ function lg1($state) {
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg1/repeat/per/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/repeat/per}</a></li>
 		<li><a href="{t:prefix}/lg1/repeat/tika/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/repeat/tika}</a></li>
-		<li><a href="{t:prefix}/lg1/pdf/5.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/5.1}</a></li>
+		<li><a href="{t:prefix}/lg1/5.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/5.1/text}</a></li>
 	</ul>
 </div>
 <div class="choice my-2 col-lg-6" id="l5.2">
@@ -121,7 +121,7 @@ function lg1($state) {
 		<li><a href="{t:prefix}/lg1/structure/2.2/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/structure/2.2}</a></li>
 		<li><a href="{t:prefix}/lg1/structure/3.1/"><i class="link-info bi bi-file-text"></i> {t:lg1/structure/3.1}</a></li>
 		<li><a href="{t:prefix}/lg1/structure/3.2/"><i class="link-info bi bi-music-note-beamed"></i> {t:lg1/structure/3.2}</a></li>
-		<li><a href="{t:prefix}/lg1/pdf/5.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg1/pdf/5.1}</a></li>
+		<li><a href="{t:prefix}/lg1/5.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg1/5.1/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 5x -->

@@ -262,7 +262,7 @@ function init() {
 	$GLOBALS['-l10n'][$lang]['prefix'] = $prefix;
 	$GLOBALS['-l10n'][$lang]['lang'] = $lang;
 
-	return [
+	$state = [
 		'path' => $path,
 		'prefix' => $prefix,
 		'q' => $q,
@@ -273,7 +273,13 @@ function init() {
 		'lg2' => $lg2,
 		'uid' => $uid,
 		'admin' => $admin,
+		'seed' => intval($_REQUEST['seed'] ?? mt_rand()),
+		'export' => trim($_REQUEST['export'] ?? ''),
 		];
+
+	mt_srand($state['seed']);
+
+	return $state;
 }
 
 function header($state, $lg='', $path='') {
@@ -394,13 +400,46 @@ function login_anonymous() {
 	}
 }
 
+function shuffle_values($arr) {
+	$rv = [];
+	$n = count($arr);
+	while ($n > 0) {
+		--$n;
+		$k = mt_rand(0, $n);
+		$rv[] = $arr[$k];
+		array_splice($arr, $k, 1);
+	}
+	return $rv;
+}
+
 function shuffle_assoc($arr) {
 	$keys = array_keys($arr);
-	shuffle($keys);
+	$keys = shuffle_values($keys);
 	$na = [];
 	foreach ($keys as $key) {
 		$na[$key] = $arr[$key];
 	}
 
 	return $na;
+}
+
+function ob_stop() {
+	while (ob_get_level()) {
+		ob_end_clean();
+	}
+}
+
+function maybe_export($state, $tsv) {
+	if (empty($state['export'])) {
+		return false;
+	}
+
+	$tsv = str_replace('{t:prefix}', 'https://learngreenlandic.com/online', $tsv);
+
+	ob_stop();
+	\header('Content-Type: text/tab-separated-values; charset=UTF-8');
+	\header('Content-Disposition: inline; filename="exported.tsv"');
+	\header('Content-Length: '.strlen($tsv));
+	echo $tsv;
+	exit(0);
 }

@@ -25,7 +25,7 @@ function lg2($state) {
 	<a href="{t:prefix}/lg2/1.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/1.1/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/1.1/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> {t:lg2/1.1}</a></h5>
 	<ul class="list-unstyled ch-item">
-		<li><a href="{t:prefix}/lg2/pdf/1.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/1}</a></li>
+		<li><a href="{t:prefix}/lg2/1.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/1/text}</a></li>
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/fsts/1.1.1/"><i class="link-info bi bi-x-diamond"></i> {t:lg2/fsts/1.1.1}</a></li>
@@ -55,17 +55,20 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/structure/0.6/"><i class="link-info bi bi-file-text"></i> {t:lg2/structure/0.6}</a></li>
 		<li><a href="{t:prefix}/lg2/structure/0.7/"><i class="link-info bi bi-file-text"></i> {t:lg2/structure/0.7}</a></li>
 
-		<div class="wip">
 		<li><br></li>
-		<li><a href="{t:prefix}/lg2/0x/deny/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/deny}</a></li>
-		<li><a href="{t:prefix}/lg2/0x/summer/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/summer}</a></li>
-		<li><a href="{t:prefix}/lg2/0x/i/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/i}</a></li>
-		<li><a href="{t:prefix}/lg2/0x/food/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/food}</a></li>
-		<li><a href="{t:prefix}/lg2/0x/food2/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/food2}</a></li>
-		<li><a href="{t:prefix}/lg2/0x/qa/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/qa}</a></li>
-		<li><a href="{t:prefix}/lg2/0x/qa2/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/qa2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/alt.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/alt}</a></li>
-		</div>
+		<li><a href="{t:prefix}/lg2/0x/deny1/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/deny1}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/invert1/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/invert1}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/deny2/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/deny2}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/invert2/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/invert2}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/deny3/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/deny3}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/invert3/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/invert3}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/summer1/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/summer1}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/summer2/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/summer2}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/tomorrow/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/tomorrow}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/today/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/today}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/name/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/name}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/onewho/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/onewho}</a></li>
+		<li><a href="{t:prefix}/lg2/pdf/alt.pdf"><i class="link-info bi bi-file-text"></i> {t:lg2/pdf/alt}</a></li>
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/fstx/0.1.1/"><i class="link-info bi bi-x-diamond"></i> {t:lg2/fstx/0.1.1}</a></li>
@@ -101,7 +104,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/1.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/1.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/1.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/1}</a></li>
+		<li><a href="{t:prefix}/lg2/1.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/1/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 2 -->
@@ -169,7 +172,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/2.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/2.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/2.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/2}</a></li>
+		<li><a href="{t:prefix}/lg2/2.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/2/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 3 -->
@@ -208,7 +211,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/3.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/3.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/3.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/3}</a></li>
+		<li><a href="{t:prefix}/lg2/3.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/3/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 4 -->
@@ -251,7 +254,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/4.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/4.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/4.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/4}</a></li>
+		<li><a href="{t:prefix}/lg2/4.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/4/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 5 -->
@@ -296,7 +299,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/5.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/5.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/5.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/5}</a></li>
+		<li><a href="{t:prefix}/lg2/5.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/5/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 6 -->
@@ -342,7 +345,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/6.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/6.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/6.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/6}</a></li>
+		<li><a href="{t:prefix}/lg2/6.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/6/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 7 -->
@@ -382,7 +385,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/7.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/7.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/7.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/7}</a></li>
+		<li><a href="{t:prefix}/lg2/7.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/7/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 8 -->
@@ -424,7 +427,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/8.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/8.2}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/8.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/8}</a></li>
+		<li><a href="{t:prefix}/lg2/8.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/8/text}</a></li>
 	</ul>
 </div>
 <!-- Chapter 9 -->
@@ -436,7 +439,7 @@ function lg2($state) {
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/9.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/9}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/9.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/9}</a></li>
+		<li><a href="{t:prefix}/lg2/9/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/9/text}</a></li>
 	</ul>
 </div>
 <!-- Outtro -->

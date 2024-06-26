@@ -1,12 +1,6 @@
 <?php
 namespace LGO;
 
-function ob_stop() {
-	while (ob_get_level()) {
-		ob_end_clean();
-	}
-}
-
 function pdf($state, $lg, $path) {
 	extract($state, EXTR_SKIP);
 
