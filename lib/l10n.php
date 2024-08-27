@@ -18,6 +18,11 @@ $l10n['eng']['ERR_TOO_MANY_SESSIONS'] = 'You are logged in from too many devices
 $l10n['dan']['alert'] = '';
 $l10n['eng']['alert'] = '';
 
+$l10n['dan']['obj-def'] = 'Bestemt objekt';
+$l10n['eng']['obj-def'] = 'Definite object';
+$l10n['dan']['obj-idf'] = 'Ubestemt objekt';
+$l10n['eng']['obj-idf'] = 'Indefinite object';
+
 $l10n['dan']['LBL_VIDEO_QUALITY'] = 'Video-opløsning';
 $l10n['eng']['LBL_VIDEO_QUALITY'] = 'Video resolution';
 
@@ -743,7 +748,7 @@ $l10n['eng']['lg2/0x/tomorrow/text'] = 'Your input will be questions like <i>Ipp
 
 $l10n['dan']['lg2/0x/today'] = 'Øvelse 0.7x: I dag';
 $l10n['eng']['lg2/0x/today'] = 'Exercise 0.7x: Today';
-$l10n['dan']['lg2/0x/today/text'] = 'Som input får spørgsmål af typen <i>Ullumi</i> (i dag) :: sted :: indikativ + 1Pl. Bekræft alt og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, ullumi…</i></p>
+$l10n['dan']['lg2/0x/today/text'] = 'Som input får I spørgsmål af typen <i>Ullumi</i> (i dag) :: sted :: indikativ + 1Pl. Bekræft alt og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, ullumi…</i></p>
 <p>Ex:<br>
 <i>Ullumi Narsamut aallassaagut?</i> (Tager vi til Narsaq i dag?)<br>
 <i>Aap, ullumi Narsamut aallassaagut.</i> (Ja, vi tager til Narsaq i dag.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1020,41 +1025,72 @@ $l10n['eng']['lg2/structure/2.5/a'] = 'Exercise 2.5: Use contemporative as a sub
 $l10n['dan']['lg2/structure/2.5/text'] = 'Ledsagemåde kan ofte oversættes til dansk lang tillægsform som i \'Han kom løbende\'. Ledsagemåde bruges nemlig til at udtrykke biomstændigheder som i eksemplet, hvor udsagnet er at \'han kom\' og biomstændigheden at det foregik i løb. Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sætninger på den måde, at det er sidste verbum, der opfattes som hovedudsagnet.';
 $l10n['eng']['lg2/structure/2.5/text'] = 'Contemporative often translates as English ing-form as in <em>He came running (= He came and he ran)</em>. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he came whereas his running is just a secondary message. Combine the following sentence pairs into single sentences letting the latter be the main message.';
 
+$l10n['dan']['lg2/2-1x'] = 'Introduktion til kapitel 2-1 X-tras';
+$l10n['eng']['lg2/2-1x'] = 'Introduction to chapter 2-1 X-tras';
+
 $l10n['dan']['lg2/2x/affirm1'] = 'Øvelse 2.1.1x: Bekræft spørgsmål';
 $l10n['eng']['lg2/2x/affirm1'] = 'Exercise 2.1.1x: Affirm questions';
+$l10n['dan']['lg2/2x/affirm1/text'] = 'Bekræft spørgsmålene og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpit?</i> (Havde du ellers ikke lyst til at give lyd fra dig igen i går på Landsbiblioteket?)<br>
+<i>Aap, Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpunga.</i> (Ja, jeg havde ellers ikke lyst til at give lyd fra mig igen i går på Landsbiblioteket.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/2x/affirm1/text'] = 'Answer affirmatively. Remember that if the question is negative, the answer much also be. Answer using <i>Aap, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpit?</i> (You did not really want to make yourself heard yesterday at the National Library?)<br>
+<i>Aap, Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpunga.</i> (Yes, I did not really want to make myself heard yesterday at the National Library.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/deny1'] = 'Øvelse 2.1.2x: Benægt spørgsmål';
-$l10n['eng']['lg2/2x/deny1'] = 'Exercise 2.1.2x: Deny questions';
+$l10n['dan']['lg2/2x/affirm2'] = 'Øvelse 2.1.2x: Bekræft spørgsmål';
+$l10n['eng']['lg2/2x/affirm2'] = 'Exercise 2.1.2x: Affirm questions';
+$l10n['dan']['lg2/2x/affirm2/text'] = 'Bekræft spørgsmålene og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Mødte du Arnannguaq i Maniitsoq i går?)<br>
+<i>Aap, Ippassaq Maniitsumi Arnannguaq naapippara.</i> (Ja, jeg mødte Arnannguaq i Maniitsoq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/2x/affirm2/text'] = 'Answer affirmatively. Remember that if the question is negative, the answer much also be. Answer using <i>Aap, …</i></p>
+<p>Ex:<br>
+<i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Did you meet Arnannguaq in Maniitsoq yesterday?)<br>
+<i>Aap, Ippassaq Maniitsumi Arnannguaq naapippara.</i> (Yes, I met Arnannguaq in Maniitsoq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/deny2'] = 'Øvelse 2.1.3x: Benægt NNGIT-spørgsmål';
-$l10n['eng']['lg2/2x/deny2'] = 'Exercise 2.1.3x: Deny NNGIT-questions';
+$l10n['dan']['lg2/2x/deny1'] = 'Øvelse 2.1.3x: Benægt spørgsmål';
+$l10n['eng']['lg2/2x/deny1'] = 'Exercise 2.1.3x: Deny questions';
+$l10n['dan']['lg2/2x/deny1/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
+<p>Ex:<br>
+<i>Ippassaq Ilisimatusarfimmi tiitorpit?</i> (Drak du te på Ilisimatusarfik i går?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitunngilanga.</i> (Nej, jeg drak ikke te på Ilisimatusarfik i går.)<br>
+<i>Ippassaq Ilisimatusarfimmi tiitunngilatit?</i> (Drak du ikke te på Ilisimatusarfik i går?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitorpunga.</i> (Nej, jeg drak te på Ilisimatusarfik i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/2x/deny1/text'] = 'Deny the questions. Start the answer with <i>Naamik, …</i>. Remember that if the question is negative, the answer much also be.</p>
+<p>Ex:<br>
+<i>Ippassaq Ilisimatusarfimmi tiitorpit?</i> (Did you drink tea at Ilisimatusarfik yesterday?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitunngilanga.</i> (No, I did not drink tea at Ilisimatusarfik yesterday.)<br>
+<i>Ippassaq Ilisimatusarfimmi tiitunngilatit?</i> (Didn\'t you drink tea at Ilisimatusarfik yesterday?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitorpunga.</i> (No, I drank tea at Ilisimatusarfik yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/u1'] = 'Øvelse 2.2.1x: Bekræft -U spørgsmål';
-$l10n['eng']['lg2/2x/u1'] = 'Exercise 2.2.1x: Affirm -U questions';
+$l10n['dan']['lg2/2x/deny2'] = 'Øvelse 2.1.4x: Benægt spørgsmål';
+$l10n['eng']['lg2/2x/deny2'] = 'Exercise 2.1.4x: Deny questions';
+$l10n['dan']['lg2/2x/deny2/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
+<p>Ex:<br>
+<i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Mødte du Arnannnguaq i Maniitsoq i går?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapinngilara.</i> (Nej, jeg mødte ikke Arnannguaq i Maniitsoq i går.)<br>
+<i>Ippassaq Maniitsumi Arnannguaq naapinngiliuk?</i> (Mødte du ikke Arnannnguaq i Maniitsoq i går?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapippara.</i> (Nej, jeg mødte Arnannguaq i Maniitsoq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/2x/deny2/text'] = 'Deny the questions. Start the answer with <i>Naamik, …</i>. Remember that if the question is negative, the answer much also be.</p>
+<p>Ex:<br>
+<i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Did you meet Arnannnguaq in Maniitsoq yesterday?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapinngilara.</i> (No, I did not meet Arnannguaq in Maniitsoq yesterday.)<br>
+<i>Ippassaq Maniitsumi Arnannguaq naapinngiliuk?</i> (Didn\'t you meet Arnannnguaq in Maniitsoq yesterday?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapippara.</i> (No, I met Arnannguaq in Maniitsoq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/u2'] = 'Øvelse 2.2.2x: Benægt -U spørgsmål';
-$l10n['eng']['lg2/2x/u2'] = 'Exercise 2.2.2x: Deny -U questions';
+$l10n['dan']['lg2/2x/part1'] = 'Øvelse 2.1.5x: Øv participium (tekst)';
+$l10n['eng']['lg2/2x/part1'] = 'Exercise 2.1.5x: Practice participle (text)';
 
-$l10n['dan']['lg2/2x/u3'] = 'Øvelse 2.2.3x: Benægt -U NNGIT-spørgsmål';
-$l10n['eng']['lg2/2x/u3'] = 'Exercise 2.2.3x: Deny -U NNGIT-questions';
+$l10n['dan']['lg2/2x/part2'] = 'Øvelse 2.1.6x: Øv participium (audio)';
+$l10n['eng']['lg2/2x/part2'] = 'Exercise 2.1.6x: Practice participle (audio)';
+$l10n['dan']['lg2/2x/part2/text'] = 'Besvar spørgsmålet positivt. Start svaret med <i>Aap, …</i></p>
+<p>Ex:<br>
+<i>Nalunngiliuk uanga pisiniarfimmi sulisartunga?</i> (Ved du, at jeg arbejder i butikken?)<br>
+<i>Aap, nalunngilara illit pisiniarfimmi sulisartutit.</i> (Ja, jeg ved, at du arbejder i butikken.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/2x/part2/text'] = 'Answer the question positively. Begin the answer with <i>Aap, …</i></p>
+<p>Ex:<br>
+<i>Nalunngiliuk uanga pisiniarfimmi sulisartunga?</i> (Do you know that I work at the store?)<br>
+<i>Aap, nalunngilara illit pisiniarfimmi sulisartutit.</i> (Yes, I know you work at the store.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/tp'] = 'Øvelse 2.3.1x: Bekræft spørgsmål (transitive verber)';
-$l10n['eng']['lg2/2x/tp'] = 'Exercise 2.3.1x: Affirm questions (transitive verbs)';
+$l10n['dan']['lg2/2x/obj1'] = 'Øvelse 2.1.7x: Bestemt/ubestemt objekt';
+$l10n['eng']['lg2/2x/obj1'] = 'Exercise 2.1.7x: Definite/indefinite object';
 
-$l10n['dan']['lg2/2x/dk'] = 'Øvelse 2.3.2x: Bekræft spørgsmål (kongelige)';
-$l10n['eng']['lg2/2x/dk'] = 'Exercise 2.3.2x: Affirm questions (royalty)';
-
-$l10n['dan']['lg2/2x/cr'] = 'Øvelse 2.4x: Forstå og gentag';
-$l10n['eng']['lg2/2x/cr'] = 'Exercise 2.4x: Comprehend and repeat';
-
-$l10n['dan']['lg2/2x/pr'] = 'Øvelse 2.5x: Forstå og gentag (participium)';
-$l10n['eng']['lg2/2x/pr'] = 'Exercise 2.5x: Comprehend and repeat (participle)';
-
-$l10n['dan']['lg2/2x/dr'] = 'Øvelse 2.6.1x: Forstå og gentag (direkte objekt)';
-$l10n['eng']['lg2/2x/dr'] = 'Exercise 2.6.1x: Comprehend and repeat (direct object)';
-
-$l10n['dan']['lg2/2x/da'] = 'Øvelse 2.6.2x: Bekræft spørgsmål (direkte objekt)';
-$l10n['eng']['lg2/2x/da'] = 'Exercise 2.6.2x: Affirm questions (direct object)';
+$l10n['dan']['lg2/2x/obj2'] = 'Øvelse 2.1.8x: Ubestemt "nogen/nogle"';
+$l10n['eng']['lg2/2x/obj2'] = 'Exercise 2.1.8x: Indefinite "some"';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';

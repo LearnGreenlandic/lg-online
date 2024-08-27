@@ -401,6 +401,7 @@ function login_anonymous() {
 }
 
 function shuffle_values($arr) {
+	$arr = array_values($arr);
 	$rv = [];
 	$n = count($arr);
 	while ($n > 0) {

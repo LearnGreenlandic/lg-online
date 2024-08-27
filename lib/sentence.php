@@ -567,12 +567,12 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 	if ($chap == '0x' && $task == 'onewho') {
 		$ps[] = [
 			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(SSA|NNGIT)@', preg_grep('@\+Ind\+1(Sg|Pl)\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(SSA|NNGIT)@', preg_grep('@\+TUQ\+U\+.+?\+Ind\+1(Sg|Pl)\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
 			];
 		$ps[] = [
 			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Mask|Fem)\+.*Abs@', $all), PREG_GREP_INVERT),
 			preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
-			preg_grep('@Sem/(be_name|reach|run)@', preg_grep('@\+(SSA|NNGIT)@', preg_grep('@\+Ind\+3Sg\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
+			preg_grep('@Sem/(be_name|reach|run|drink)@', preg_grep('@\+(SSA|NNGIT)@', preg_grep('@\+TUQ\+U\+.+?\+Ind\+3Sg\s@', $all), PREG_GREP_INVERT), PREG_GREP_INVERT),
 			];
 		return $ps;
 	}
@@ -645,29 +645,87 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 	}
 	//*/
 
+	/*
 	if ($chap == '2x' && $task == 'affirm1') {
 		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@\+MIU@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT),
+			["ippassaq\tippassaq"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+Sem/(be_attribute|learn|lodge|refuse|work|speak_emot)\+@', preg_grep('@\+(SSA|LI|LU|TAR)\b@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
+			];
+		$ps[] = [
+			["aqaguagu\taqaguagu"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+Sem/(be_attribute|learn|lodge|refuse|work|speak_emot)\+@', preg_grep('@\+(LI|LU|TAR)\b@', preg_grep('@\+SSA\b.*\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
+			];
+		$ps[] = [
+			["ippassaq\tippassaq"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+Sem/(run|reach)\+@', preg_grep('@\+(SSA|LI|LU|TAR)\b@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
+			];
+		$ps[] = [
+			["aqaguagu\taqaguagu"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+Sem/(run|reach)\+@', preg_grep('@\+(LI|LU|TAR)\b@', preg_grep('@\+SSA\b.*\+Int\+2Sg\s@', $all), PREG_GREP_INVERT)),
+			];
+		return $ps;
+	}
+
+	if ($chap == '2x' && $task == 'affirm2') {
+		$ps[] = [
+			["ippassaq\tippassaq"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Fem|Mask)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+Sem/(socialize|teach|encounter|see)\+@', preg_grep('@\+(SSA|LI|LU|TAR)\b@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
+			];
+		$ps[] = [
+			["aqaguagu\taqaguagu"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Fem|Mask)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+Sem/(socialize|teach|encounter|see)\+@', preg_grep('@\+(LI|LU|TAR)\b@', preg_grep('@\+SSA\b.*\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT)),
 			];
 		return $ps;
 	}
 
 	if ($chap == '2x' && $task == 'deny1') {
 		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@\+NNGIT@', preg_grep('@\+Int\+2Sg@', $all), PREG_GREP_INVERT),
+			["ippassaq\tippassaq"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Sem/(be_attribute|learn|lodge|refuse|work|speak_emot)\+@', preg_grep('@\+(SSA|LI|LU|TAR)\b@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT))),
+			];
+		$ps[] = [
+			["aqaguagu\taqaguagu"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Sem/(be_attribute|learn|lodge|refuse|work|speak_emot)\+@', preg_grep('@\+(LI|LU|TAR)\b@', preg_grep('@\+SSA\b.*\+Ind\+1Sg\s@', $all), PREG_GREP_INVERT))),
+			];
+		$ps[] = [
+			["ippassaq\tippassaq"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Sem/(run|reach)\+@', preg_grep('@\+(SSA|LI|LU|TAR)\b@', preg_grep('@\+Int\+2Sg\s@', $all), PREG_GREP_INVERT))),
+			];
+		$ps[] = [
+			["aqaguagu\taqaguagu"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*(Abl|Trm)@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Sem/(run|reach)\+@', preg_grep('@\+(LI|LU|TAR)\b@', preg_grep('@\+SSA\b.*\+Ind\+1Sg\s@', $all), PREG_GREP_INVERT))),
 			];
 		return $ps;
 	}
 
 	if ($chap == '2x' && $task == 'deny2') {
 		$ps[] = [
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@\+NNGIT@', preg_grep('@\+Int\+2Sg@', $all)),
+			["ippassaq\tippassaq"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Fem|Mask)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Sem/(socialize|teach|encounter|see)\+@', preg_grep('@\+(SSA|LI|LU|TAR)\b@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all), PREG_GREP_INVERT))),
+			];
+		$ps[] = [
+			["aqaguagu\taqaguagu"],
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+(LI|LU)\b@', preg_grep('@Sem/(Fem|Mask)\+.*Abs@', $all), PREG_GREP_INVERT),
+			preg_grep('@\+NNGIT@', preg_grep('@\+Sem/(socialize|teach|encounter|see)\+@', preg_grep('@\+(LI|LU|TAR)\b@', preg_grep('@\+SSA\b.*\+Ind\+1Sg\+3SgO\s@', $all), PREG_GREP_INVERT))),
 			];
 		return $ps;
 	}
+	//*/
 
 	if ($chap == '2x' && $task == 'u1') {
 		$ps[] = [
@@ -701,29 +759,24 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 
 	if ($chap == '2x' && $task == 'dk') {
 		$ps[] = [
-			preg_grep('@ilinniartip\+HTR\+TUQ\+.*\+N\+Abs\+Sg\+1SgPoss@', $all),
-			preg_grep('@(dronning|kunngi).*\+N\+Ins\+Sg@', $all),
-			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all)),
+			preg_grep('@(Sem/Fem|anaana|nuliaq|ilinniartitsisoq).*\+N\+Abs\+Sg\+1SgPoss\s@', $all),
+			["dronning+N+Ins+Sg\tdronningimik"],
+			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all)),
 			];
 		$ps[] = [
-			preg_grep('@(Sem/Fem|anaana|nuliaq).*\+N\+Abs\+Sg\+1SgPoss@', $all),
-			preg_grep('@dronning.*\+N\+Ins\+Sg@', $all),
-			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all)),
-			];
-		$ps[] = [
-			preg_grep('@(Sem/Mask|ataata).*\+N\+Abs\+Sg\+1SgPoss@', $all),
-			preg_grep('@kunngi.*\+N\+Ins\+Sg@', $all),
-			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO@', $all)),
+			preg_grep('@(Sem/Mask|ataata|ilinniartitsisoq).*\+N\+Abs\+Sg\+1SgPoss\s@', $all),
+			["kunngi+N+Ins+Sg\tkunngimik"],
+			preg_grep('@Sem/name@', preg_grep('@\+Int\+2Sg\+3SgO\s@', $all)),
 			];
 		return $ps;
 	}
 
 	if ($chap == '2x' && $task == 'cr') {
-		// TODO: Everything
 		$ps[] = [
-			preg_grep('@Pron\+Abs\+2Pl@', $all),
-			preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all),
-			preg_grep('@\+NNGIT\+@', preg_grep('@Sem/(socialize|remember|teach|encounter|see)\+.*Int\+2PlO@', $all), PREG_GREP_INVERT),
+			array_map('\LGO\pfx_dummy', preg_grep('@Pron\+Abs\+2Pl\s@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+(LU|LI)\b@', preg_grep('@Sem/(Geo|inst)\+.*Lok@', $all), PREG_GREP_INVERT)),
+			array_map('\LGO\pfx_dummy', preg_grep('@\+NNGIT\+@', preg_grep('@Sem/(socialize|remember|teach|encounter|see)\+.*1Sg\+3SgO\s@', $all))),
+			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Hum|Hfam|Hprof)\b.*\+Abs\+Sg\+1SgPoss\+LI\s@', $all)),
 			];
 		return $ps;
 	}
@@ -731,19 +784,19 @@ function _sent_rand_helper($root='lg1', $chap, $task='random') {
 	if ($chap == '2x' && $task == 'pr') {
 		$ps[] = [
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/remember\+.*2Sg\+3SgO@', $all)),
-			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Gram/Pers\+Pron\+Abs\+1Sg@', $all)),
-			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst|lodge)\+.*Lok@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Pron\+Abs\+1Sg\s@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@(Sem/(Geo|inst|lodge)\+.*Lok)|(Pron\+Lok\+2Pl\s)@', $all)),
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(work|learn)\+.*Par\+1Sg@', $all)),
 			];
 		$ps[] = [
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/remember\+.*2Sg\+3SgO@', $all)),
-			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Gram/Pers\+Pron\+Abs\+1Sg@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Pron\+Abs\+1Sg\s@', $all)),
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(Geo|inst)\+.*(Trm|Abl)@', $all)),
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(work|learn)\+.*Par\+1Sg@', $all)),
 			];
 		$ps[] = [
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/remember\+.*2Sg\+3SgO@', $all)),
-			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Gram/Pers\+Pron\+Abs\+1Sg@', $all)),
+			array_map('\LGO\pfx_dummy', preg_grep('@uanga\+Pron\+Abs\+1Sg\s@', $all)),
 			array_map('\LGO\pfx_dummy', preg_grep('@Pron\+(Lok|Trm|Abl)\+2Pl@', $all)),
 			array_map('\LGO\pfx_dummy', preg_grep('@Sem/(work|learn)\+.*Par\+1Sg@', $all)),
 			];
@@ -847,16 +900,19 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		$qst = [];
 		$ans = [];
 
-		if ($task == 'qa-aap' || $task == 'qa' || $task == 'affirm1' || $task == 'u1' || $task == 'tp' || $task == 'dk' || $task == 'da') {
+		if ($task == 'qa-aap' || $task == 'qa' || $task == 'affirm1' || $task == 'affirm2' || $task == 'u1' || $task == 'tp' || $task == 'dk' || $task == 'da') {
 			$ans[] = 'Aap,';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
 				$qst[] = $w[1];
 				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
-				$ans[] = $all[$w[0]];
+				if (strpos($w[0], '+') !== false && empty($all[$w[0]])) {
+					continue 2;
+				}
+				$ans[] = $all[$w[0]] ?? $w[0];
 			}
 		}
-		else if ($chap == '2x' && ($task == 'deny1' || $task == 'u2')) {
+		else if ($chap == '2x' && $task == 'u2') {
 			$ans[] = 'Naamik,';
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
@@ -871,14 +927,31 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$ans[] = $all[$w[0]];
 			}
 		}
-		else if ($chap == '2x' && ($task == 'deny2' || $task == 'u3')) {
+		else if ($chap == '2x' && ($task == 'deny1' || $task == 'deny2' || $task == 'u3')) {
 			$ans[] = 'Naamik,';
+			$inv = false;
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
-				$qst[] = $w[1];
-				$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
-				$w[0] = str_replace('+NNGIT+', '+', $w[0]);
-				$ans[] = $all[$w[0]];
+				if ($w[0] === 'aqaguagu') {
+					$inv = true;
+				}
+				if (strpos($w[0], '+NNGIT+') !== false && $inv) {
+					$q0 = str_replace('+NNGIT+', '+', $w[0]);
+					$q0 = str_replace('+Ind+1Sg', '+Int+2Sg', $q0);
+					if (!array_key_exists($q0, $all)) {
+						continue 2;
+					}
+					$qst[] = $all[$q0];
+				}
+				else {
+					$qst[] = $w[1];
+					$w[0] = str_replace('+Int+2Sg', '+Ind+1Sg', $w[0]);
+					$w[0] = str_replace('+NNGIT+', '+', $w[0]);
+				}
+				if (strpos($w[0], '+') !== false && empty($all[$w[0]])) {
+					continue 2;
+				}
+				$ans[] = $all[$w[0]] ?? $w[0];
 			}
 		}
 		else if ($task == 'qa2') {
@@ -1024,15 +1097,16 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 		else if ($task == 'onewho') {
 			foreach ($sent as $w) {
 				$w = explode("\t", $w);
-				$qst[] = $w[1];
-				$w[0] = str_replace('+V+', '+TUQ+U+V+', $w[0]);
-				if (empty($all[$w[0]])) {
-					$w[0] = str_replace('+TUQ+U+V+', '+TUQ+U+Sem/copula+V+', $w[0]);
-					if (empty($all[$w[0]])) {
+				$q0 = $w[0];
+				if (strpos($q0, '+TUQ+U+') !== false) {
+					$q0 = str_replace('+TUQ+U+Sem/copula+', '+', $q0);
+					$q0 = str_replace('+TUQ+U+', '+', $q0);
+					if (empty($all[$q0])) {
 						continue 2;
 					}
 				}
-				$ans[] = $all[$w[0]];
+				$qst[] = $all[$q0];
+				$ans[] = $w[1];
 			}
 		}
 
@@ -1043,6 +1117,60 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 			$qst = substr($qst, 0, -1);
 			$qst .= '.';
 		}
+
+		$outs[] = '<div><div class="text-center entry"><audio src="/martha/?t='.urlencode($qst).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button> <div class="my-2 hint">'.$qst.'</div></div><div class="my-2 text-center entry"> <input type="text" spellcheck="false" class="form-control" data-check="'.$ans.'"> <button type="button" class="btn btn-warning">✓</button> <audio src="/martha/?t='.$ans.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div></div>';
+	}
+
+	$outs = shuffle_values($outs);
+	foreach ($outs as $out) {
+		echo $out;
+	}
+?>
+</div>
+<div class="col-3 text-left">
+<button type="button" class="btn btn-outline-primary playAfter" id="btnNext">{t:next}</button>
+</div>
+</div>
+</div>
+<?php
+}
+
+function sentence_random_qa_sqlite($root='lg1', $state, $chap='5x', $task='random') {
+?>
+<div class="task task-text task-audio container-fluid sentence">
+<div class="row mb-3">
+<div class="col">
+<p>{t:<?=$root;?>/<?=$chap;?>/<?=$task;?>/text}</p>
+</div>
+</div>
+<div class="row">
+<div class="col-3 text-right">
+<button type="button" class="btn btn-outline-primary" id="btnPrev">{t:prev}</button>
+</div>
+<div class="col-6 my-2 text-center" id="shuffled">
+<?php
+
+	$map = [
+		'affirm1' => '2-1-1x',
+		'affirm2' => '2-1-2x',
+		'deny1' => '2-1-3x',
+		'deny2' => '2-1-4x',
+		'part1' => '2-1-5x',
+		'part2' => '2-1-6x',
+		'obj1' => '2-1-7x',
+		'obj2' => '2-1-8x',
+	];
+
+	$db = new \TDC\PDO\SQLite('d/'.$root.'/sentence/'.$chap.'/'.$map[$task].'.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
+	$sents = $db->prepexec("SELECT * FROM qas ORDER BY RANDOM() LIMIT 100")->fetchAll();
+
+	$outs = [];
+	foreach ($sents as $sent) {
+		$qst = array_column(json_decode($sent['qa_q'], true), 1);
+		$ans = array_column(json_decode($sent['qa_a'], true), 1);
+
+		$qst = ucfirst(implode(' ', $qst).'?');
+		$ans = ucfirst(implode(' ', $ans));
 
 		$outs[] = '<div><div class="text-center entry"><audio src="/martha/?t='.urlencode($qst).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button> <div class="my-2 hint">'.$qst.'</div></div><div class="my-2 text-center entry"> <input type="text" spellcheck="false" class="form-control" data-check="'.$ans.'"> <button type="button" class="btn btn-warning">✓</button> <audio src="/martha/?t='.$ans.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div></div>';
 	}
@@ -1078,7 +1206,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 	$ps = _sent_rand_helper($root, $chap, $task);
 
 	$all = [];
-	if ($task == 'food2') {
+	if ($task == 'food2' || $task == 'cr') {
 		$all = load_corpus($root, $chap);
 	}
 
@@ -1109,10 +1237,89 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 			$nngit = preg_grep('@^\Q'.str_replace('+V+', '+NNGIT+V+', $ws[2][0]).'\E\t@', $all);
 			$ws[] = explode("\t", reset($nngit));
 		}
+		else if ($task == 'cr') {
+			$ws[] = $ws[1];
+			$ws[] = $ws[2];
+
+			$ws[2][0] = str_replace('+NNGIT+', '+', $ws[2][0]);
+			$ws[2][0] = str_replace('+3SgO', '+2PlO', $ws[2][0]);
+			$nngit = preg_grep('@^\Q'.$ws[2][0].'\E\t@', $all);
+			$ws[2] = explode("\t", reset($nngit));
+		}
 
 		$ana = implode('<br>', array_column($ws, 0));
 		$sent = implode(' ', array_column($ws, 1));
 		$outs[] = '<div class="text-center entry"><div class="mb-3">'.$sent.'<br><code class="text-left text-wrap hint my-1">'.$ana.'</code></div><div><audio src="/martha/?t='.$sent.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button></div></div>';
+	}
+
+	$outs = shuffle_values($outs);
+	foreach ($outs as $out) {
+		echo $out;
+	}
+?>
+</div>
+<div class="col-3 text-left">
+<button type="button" class="btn btn-outline-primary playAfter" id="btnNext">{t:next}</button>
+</div>
+</div>
+</div>
+<?php
+}
+
+function sentence_random_read_sqlite($root='lg2', $state, $chap='0x', $task='random') {
+?>
+<div class="task task-audio task-read container-fluid sentence">
+<div class="row mb-3">
+<div class="col">
+<p>{t:<?=$root;?>/<?=$chap;?>/<?=$task;?>/text}</p>
+</div>
+</div>
+<div class="row">
+<div class="col-3 text-right">
+<button type="button" class="btn btn-outline-primary" id="btnPrev">{t:prev}</button>
+</div>
+<div class="col-6 my-2 text-center" id="shuffled">
+<?php
+
+	$map = [
+		'affirm1' => '2-1-1x',
+		'affirm2' => '2-1-2x',
+		'deny1' => '2-1-3x',
+		'deny2' => '2-1-4x',
+		'part1' => '2-1-5x',
+		'part2' => '2-1-6x',
+		'obj1' => '2-1-7x',
+		'obj2' => '2-1-8x',
+	];
+
+	$db = new \TDC\PDO\SQLite('d/'.$root.'/sentence/'.$chap.'/'.$map[$task].'.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
+	if ($task == 'obj1') {
+		$sents = $db->prepexec("SELECT * FROM qas ORDER BY RANDOM() LIMIT 100")->fetchAll();
+	}
+	else {
+		$sents = $db->prepexec("SELECT * FROM qs ORDER BY RANDOM() LIMIT 100")->fetchAll();
+	}
+
+	$outs = [];
+	foreach ($sents as $ws) {
+		if ($task == 'obj1') {
+			$q = json_decode($ws['qa_q'], true);
+			$a = json_decode($ws['qa_a'], true);
+			$ana = implode('<br>', array_column($q, 0));
+			$ana .= '<br>'.implode('<br>', array_column($a, 0));
+			$sent = ucfirst(implode(' ', array_column($q, 1)));
+			$sent .= ucfirst(implode(' ', array_column($a, 1)));
+		}
+		else {
+			$ws = json_decode($ws['q'], true);
+			$ana = implode('<br>', array_column($ws, 0));
+			$sent = ucfirst(implode(' ', array_column($ws, 1)));
+		}
+		$audio = $sent;
+		$audio = preg_replace('~<br>~', '. ', $audio);
+		$audio = preg_replace('~\{t:[^}\s]*\}:?\s*~', '', $audio);
+		$audio = trim($audio);
+		$outs[] = '<div class="text-center entry"><div class="mb-3">'.$sent.'<br><code class="text-left text-wrap hint my-1">'.$ana.'</code></div><div><audio src="/martha/?t='.$audio.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button></div></div>';
 	}
 
 	$outs = shuffle_values($outs);
@@ -1416,6 +1623,12 @@ function sentence_lg2($state, $chap, $task) {
 	if ($chap == '0x' || $chap == '2x') {
 		if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
 			\LGO\sentence_random_read('lg2', $state, $chap, $task);
+		}
+		else if ($task == 'part1' || $task == 'obj1' || $task == 'obj2') {
+			\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
+		}
+		else if ($task == 'affirm1' || $task == 'affirm2' || $task == 'deny1' || $task == 'deny2' || $task == 'part2') {
+			\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 		}
 		else {
 			\LGO\sentence_random_qa('lg2', $state, $chap, $task);
