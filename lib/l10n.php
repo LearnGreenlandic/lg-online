@@ -1074,6 +1074,16 @@ $l10n['eng']['lg2/2x/deny2/text'] = 'Deny the questions. Start the answer with <
 
 $l10n['dan']['lg2/2x/part1'] = 'Øvelse 2.1.5x: Øv participium (tekst)';
 $l10n['eng']['lg2/2x/part1'] = 'Exercise 2.1.5x: Practice participle (text)';
+$l10n['dan']['lg2/2x/part1/text'] = 'Forstå og gentag.</p>
+<p>Ex:<br>
+<i>Nalunngilara illit pisiniarfimmi sulisartutit.</i> (Jeg ved, at du arbejder i butikken.)<br>
+<i>Isumaqarpunga Nuka Ilisimatusarfimmi sulerusukkaluartoq.</i> (Jeg tror, at Nuka ellers gerne vil arbejde på Ilisimatusarfik.)<br>
+<i>Eqqaamaviuk uanga Pituffimmi sulissasunga?</i> (Husker du, at jeg skal arbejde i Pituffik?)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/2x/part1/text'] = 'Comprehend and repeat.</p>
+<p>Ex:<br>
+<i>Nalunngilara illit pisiniarfimmi sulisartutit.</i> (I know that you work at the store.)<br>
+<i>Isumaqarpunga Nuka Ilisimatusarfimmi sulerusukkaluartoq.</i> (I think Nuka wants to work at Ilisimatusarfik.)<br>
+<i>Eqqaamaviuk uanga Pituffimmi sulissasunga?</i> (Do you remember that I work at Pituffik?)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
 $l10n['dan']['lg2/2x/part2'] = 'Øvelse 2.1.6x: Øv participium (audio)';
 $l10n['eng']['lg2/2x/part2'] = 'Exercise 2.1.6x: Practice participle (audio)';
@@ -1088,9 +1098,23 @@ $l10n['eng']['lg2/2x/part2/text'] = 'Answer the question positively. Begin the a
 
 $l10n['dan']['lg2/2x/obj1'] = 'Øvelse 2.1.7x: Bestemt/ubestemt objekt';
 $l10n['eng']['lg2/2x/obj1'] = 'Exercise 2.1.7x: Definite/indefinite object';
+$l10n['dan']['lg2/2x/obj1/text'] = 'Et direkte objekt udtrykker bestemt form medens strukturen TAQ+QAR er en almindelig måde at udtrykke ubestemte objekter. Her kommer et antal sætningspar med hhv. bestemt og ubestemt "objekt". Lyt og tænk dem rigtigt godt igennem. Når du er sikker på, at du har forstået begge strukturer helt, skal du - og dette er vigtigt! - gentage hele sætningen højt.</p>
+<p>Ex:<br>
+<i>Ilinniartitsisoq asavara.</i> (Jeg elsker læreren.)<br>
+<i>Ilinniartitsisumik asasaqarpunga.</i> (Jeg elsker en lærer.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/2x/obj1/text'] = 'A direct object expresses definiteness, while the structure TAQ+QAR is a common way to express indefinite objects. Here are some sentence pairs with definite and indefinite object. Listen and ponder them thoroughly. When you are certain you have understood both structures, you should - and this is important! - repeat the whole sentence aloud.</p>
+<p>Ex:<br>
+<i>Ilinniartitsisoq asavara.</i> (I love the teacher.)<br>
+<i>Ilinniartitsisumik asasaqarpunga.</i> (I love a teacher.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
 $l10n['dan']['lg2/2x/obj2'] = 'Øvelse 2.1.8x: Ubestemt "nogen/nogle"';
-$l10n['eng']['lg2/2x/obj2'] = 'Exercise 2.1.8x: Indefinite "some"';
+$l10n['eng']['lg2/2x/obj2'] = 'Exercise 2.1.8x: Indefinite "someone"';
+$l10n['dan']['lg2/2x/obj2/text'] = 'Forstå og gentag. TAQ+QAR er en meget frekvent måde at udtrykke det ubestemte "nogen/nogle".</p>
+<p>Ex:<br>
+<i>Nuummi asasaqarpunga.</i> (Jeg elsker nogen i Nuuk / Jeg har en kæreste i Nuuk.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/2x/obj2/text'] = 'Comprehend and repeat. TAQ+QAR is a common way to express the indefinite "someone".</p>
+<p>Ex:<br>
+<i>Nuummi asasaqarpunga.</i> (I love someone in Nuuk / I have a significant other in Nuuk.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
