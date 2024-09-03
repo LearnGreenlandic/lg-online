@@ -479,7 +479,7 @@ $l10n['dan']['lg2/intro/text'] = '<p>Ambitionsniveauet var relativt lavt i modul
 <li>Gå i gang med den kumulerende automat (type 2). Sørg for at du forstår hver eneste ord og bliv ved i mindst en times tid. Husk at gentage ordene højt.</li>
 </ol>
 
-<p>Og sørg så for at finde nogle ligesindede. Du får brug for støtte og nogen at snakke med i denne proces. Brug evt. vores <a href="https://www.facebook.com/LearnGreenlandic" target="_blank">Facebook side</a></p>
+<p>Og sørg så for at finde nogle ligesindede. Du får brug for støtte og nogen at snakke med i denne proces.</p>
 
 <h5 class="text-center"><a href="../1.1/">Gå til første forelæsning</a></h5>';
 $l10n['eng']['lg2/intro/text'] = '<p>The level of ambition was relatively low in module 1, but it is much higher in this module, so everything will be proceeding swiftly. This is a conscious choice as we know from bitter experience that learners tend to become very frustrated after a few months of learning Greenlandic. By that time one has usually discovered how unimaginably much one has to learn before you can even start to learn how to use the language productively.</p>
@@ -496,7 +496,7 @@ $l10n['eng']['lg2/intro/text'] = '<p>The level of ambition was relatively low in
 <li>Start on the cumulative automaton (type 2). Make sure you understand each and every word and keep going for at least an hour. Remember to speak the words out loud.</li>
 </ol>
 
-<p>And make sure to find like-minded students. You will need support and someone to talk to during this process. You can for example use our <a href="https://www.facebook.com/LearnGreenlandic" target="_blank">Facebook page</a></p>
+<p>And make sure to find like-minded students. You will need support and someone to talk to during this process.</p>
 
 <h5 class="text-center"><a href="../1.1/">Onwards to the first lecture</a></h5>';
 
@@ -561,8 +561,8 @@ for ($i=0 ; $i<9 ; ++$i) {
 	}
 }
 
-$l10n['dan']['lg2/prep'] = 'Fortræning til DVD2';
-$l10n['eng']['lg2/prep'] = 'Preparations for DVD Module 2';
+$l10n['dan']['lg2/prep'] = '2-0: Fortræning til modul 2';
+$l10n['eng']['lg2/prep'] = '2-0: Preparations for Module 2';
 $l10n['dan']['lg2/prep/text'] = '<p>Her er en række øvelser, som jeg kraftigt vil anbefale Jer at gennemarbejde grundigt FØR I for alvor kaster Jer ud i modul 2. Erfaringen har nemlig vist, at lektions 1\'s cocktail af en ny og ikke helt let verbalform og en lidt kompliceret lydregel, man ikke lige med det samme får under huden, er en lidt for stor mundfuld for de fleste.</p>
 
 <p>Derfor får I hermed en lille ekstra lektion uden nye gloser men med tre vigtige tilhæng, der alle indeholder den omtalte lydregel. Jeg håber (og tror), at lektion 1 vil vise sig langt mere håndterlig, når I møder den med lydreglen i bagagen allerede.</p>

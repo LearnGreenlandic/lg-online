@@ -350,7 +350,7 @@ function header($state, $lg='', $path='') {
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-3">
 	<a class="navbar-brand" href="{t:prefix}/">LG Online</a>
 	<ul class="navbar-nav me-auto">
-		<li class="nav-item"><a href="{t:prefix}/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg];?></a></li>
+		<li class="nav-item"><a href="{t:prefix}/<?=$lg;?>/" class="nav-link"><?=$l10n[$lg] ?? '';?></a></li>
 	</ul>
 	<ul class="navbar-nav flex-wrap">
 		<li class="nav-item align-top"><a href="./?lang=dan" class="nav-link flag align-top"><img src="{t:prefix}/static/dan.png" height="16" class="d-inline-block align-top flag-dan" alt=""> <span class="align-top">Dansk</span></a></li>

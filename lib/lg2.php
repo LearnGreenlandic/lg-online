@@ -124,7 +124,7 @@ function lg2($state) {
 		</ul>
 </div>
 <!-- Chapter 2x -->
-<div class="choice my-2 col-lg-6 wip" id="l2.1x">
+<div class="choice my-2 col-lg-6" id="l2.1x">
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.1x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2-1x}</a></h5>
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg2/2x/affirm1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/affirm1}</a></li>
