@@ -1284,8 +1284,8 @@ $l10n['eng']['lg2/structure/6.5/a'] = 'Exercise 6.5: Practise TERMINALIS-KAR (au
 $l10n['dan']['lg2/structure/6.5/text'] = 'Sæt TERMINALIS-KAR på samtlige følgende nominer. Der er jo blot tale om en mekanisk udvidelse af terminalis, så det er egentlig ret let. Afhængig af N findes tilhænget altså i følgende 4 varianter N-mukar ved ubøjede N af p-bøjningen, N-nukar ved (de fleste) bøjede ord af p-bøjningen, N+mukar ved ubøjede N af up-bøjningen og endelig N+nukar ved de fleste bøjede ord af up-bøjningen. Lad subjektet være "jeg".';
 $l10n['eng']['lg2/structure/6.5/text'] = 'Add TERMINALIS-KAR to all nouns hereunder. The process is rather simple since all you have to do is to mechanically add -KAR after the terminal case. Depending on N the combined terminal case ending plus -KAR can thus take four different shapes: N-mukar with uninflected p-stems, N-nukar with inflected p-stems, N+mukar with uninflected up-stems and N+nukar with most inflected up-stems. Use "I" as subject.';
 
-$l10n['dan']['lg2/structure/6.6/t'] = 'Øvelse 6.6: Øv TERMINALIS-KAR med yderligere tilhæng';
-$l10n['eng']['lg2/structure/6.6/t'] = 'Exercise 6.6: Practise TERMINALIS-KAR with further morphemes';
+$l10n['dan']['lg2/structure/6.6/a'] = 'Øvelse 6.6: Øv TERMINALIS-KAR med yderligere tilhæng';
+$l10n['eng']['lg2/structure/6.6/a'] = 'Exercise 6.6: Practise TERMINALIS-KAR with further morphemes';
 $l10n['dan']['lg2/structure/6.6/text'] = 'Denne øvelse er en udvidelse af 6.5. Sæt TERMINALIS-KAR på samtlige følgende nominer, men medtag nu sammenhængen ullumi, naamik og aqagu (\'i morgen\') og gør det for såvel subjektet "de" som subjektet "jeg".';
 $l10n['eng']['lg2/structure/6.6/text'] = 'This exercise is an expanded form of exercise 6.5. Add TERMINALIS-KAR to the nouns hereunder but add a little context to the words you create. Include ullumi, naamik and aqagu (\'tomorrow\') and make the sentences both with subject \'they\' and subject \'I\'.';
 

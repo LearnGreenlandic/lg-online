@@ -1627,7 +1627,7 @@ function sentence_lg2($state, $chap, $task) {
 		else if ($task == 'part1' || $task == 'obj1' || $task == 'obj2') {
 			\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
 		}
-		else if ($task == 'affirm1' || $task == 'affirm2' || $task == 'deny1' || $task == 'deny2' || $task == 'part2') {
+		else if ($chap == '2x' && ($task == 'affirm1' || $task == 'affirm2' || $task == 'deny1' || $task == 'deny2' || $task == 'part2')) {
 			\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 		}
 		else {

@@ -26,8 +26,9 @@ function updown_data($state, $where='lg1/updown', $which='updown') {
 		}
 		foreach ($ts as $t) {
 			$pad = str_repeat(' ', $m - mb_strlen($t) + 5);
-			$k[2] .= "{$t}{$pad}{$gloss[$t]}\n";
-			$k[3] .= ($gloss[$t] ?? $t).' + ';
+			$gt = $gloss[$t] ?? $t;
+			$k[2] .= "{$t}{$pad}{$gt}\n";
+			$k[3] .= $gt.' + ';
 		}
 		$k[3] = trim($k[3], '+ ');
 		$kals[$i] = $k;
