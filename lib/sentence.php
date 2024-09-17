@@ -8,6 +8,34 @@ $GLOBALS['-ds'] = [
 	'3x' => ['abl', 'trm', 'lok'],
 	];
 
+$GLOBALS['-db-map'] = [
+	'affirm1' => '2-1-1x',
+	'affirm2' => '2-1-2x',
+	'deny1' => '2-1-3x',
+	'deny2' => '2-1-4x',
+	'part1' => '2-1-5x',
+	'part2' => '2-1-6x',
+	'obj1' => '2-1-7x',
+	'obj2' => '2-1-8x',
+	'deny3' => '2-2-1x',
+	'deny4' => '2-2-2x',
+	'that1' => '2-2-3x',
+	'indirect1' => '2-2-4x',
+	'lu1' => '2-2-5x',
+	'laar1' => '2-2-6x',
+	'laar2' => '2-2-7x',
+	'una1' => '2-2-8x',
+	'niq1' => '2-2-9x',
+];
+
+function trim_ucfirst($m) {
+	return '. '.ucfirst($m[1]);
+}
+
+function cb_ucfirst($m) {
+	return $m[1].ucfirst($m[2]);
+}
+
 function pfx_fname(string $str): array {
 	return ['fname', $str];
 }
@@ -1150,18 +1178,7 @@ function sentence_random_qa_sqlite($root='lg1', $state, $chap='5x', $task='rando
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
 
-	$map = [
-		'affirm1' => '2-1-1x',
-		'affirm2' => '2-1-2x',
-		'deny1' => '2-1-3x',
-		'deny2' => '2-1-4x',
-		'part1' => '2-1-5x',
-		'part2' => '2-1-6x',
-		'obj1' => '2-1-7x',
-		'obj2' => '2-1-8x',
-	];
-
-	$db = new \TDC\PDO\SQLite('d/'.$root.'/sentence/'.$chap.'/'.$map[$task].'.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
+	$db = new \TDC\PDO\SQLite('d/'.$root.'/sentence/'.$chap.'/'.$GLOBALS['-db-map'][$task].'.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
 	$sents = $db->prepexec("SELECT * FROM qas ORDER BY RANDOM() LIMIT 100")->fetchAll();
 
 	$outs = [];
@@ -1169,7 +1186,13 @@ function sentence_random_qa_sqlite($root='lg1', $state, $chap='5x', $task='rando
 		$qst = array_column(json_decode($sent['qa_q'], true), 1);
 		$ans = array_column(json_decode($sent['qa_a'], true), 1);
 
-		$qst = ucfirst(implode(' ', $qst).'?');
+		if ($task == 'lu1') {
+			$qst = ucfirst(implode(' ', $qst).'.');
+			$qst = preg_replace_callback('~ [.] ([^.])~u', '\LGO\trim_ucfirst', $qst);
+		}
+		else {
+			$qst = ucfirst(implode(' ', $qst).'?');
+		}
 		$ans = ucfirst(implode(' ', $ans));
 
 		$outs[] = '<div><div class="text-center entry"><audio src="/martha/?t='.urlencode($qst).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button> <div class="my-2 hint">'.$qst.'</div></div><div class="my-2 text-center entry"> <input type="text" spellcheck="false" class="form-control" data-check="'.$ans.'"> <button type="button" class="btn btn-warning">✓</button> <audio src="/martha/?t='.$ans.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div></div>';
@@ -1281,18 +1304,7 @@ function sentence_random_read_sqlite($root='lg2', $state, $chap='0x', $task='ran
 <div class="col-6 my-2 text-center" id="shuffled">
 <?php
 
-	$map = [
-		'affirm1' => '2-1-1x',
-		'affirm2' => '2-1-2x',
-		'deny1' => '2-1-3x',
-		'deny2' => '2-1-4x',
-		'part1' => '2-1-5x',
-		'part2' => '2-1-6x',
-		'obj1' => '2-1-7x',
-		'obj2' => '2-1-8x',
-	];
-
-	$db = new \TDC\PDO\SQLite('d/'.$root.'/sentence/'.$chap.'/'.$map[$task].'.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
+	$db = new \TDC\PDO\SQLite('d/'.$root.'/sentence/'.$chap.'/'.$GLOBALS['-db-map'][$task].'.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
 	if ($task == 'obj1') {
 		$sents = $db->prepexec("SELECT * FROM qas ORDER BY RANDOM() LIMIT 100")->fetchAll();
 	}
@@ -1315,6 +1327,8 @@ function sentence_random_read_sqlite($root='lg2', $state, $chap='0x', $task='ran
 			$ana = implode('<br>', array_column($ws, 0));
 			$sent = ucfirst(implode(' ', array_column($ws, 1)));
 		}
+		$sent = preg_replace_callback('~( ⇒ )(.)~u', '\LGO\cb_ucfirst', $sent);
+
 		$audio = $sent;
 		$audio = preg_replace('~<br>~', '. ', $audio);
 		$audio = preg_replace('~\{t:[^}\s]*\}:?\s*~', '', $audio);
@@ -1624,10 +1638,10 @@ function sentence_lg2($state, $chap, $task) {
 		if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
 			\LGO\sentence_random_read('lg2', $state, $chap, $task);
 		}
-		else if ($task == 'part1' || $task == 'obj1' || $task == 'obj2') {
+		else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1)$~', $task)) {
 			\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
 		}
-		else if ($chap == '2x' && ($task == 'affirm1' || $task == 'affirm2' || $task == 'deny1' || $task == 'deny2' || $task == 'part2')) {
+		else if ($chap == '2x' && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d)$~', $task)) {
 			\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 		}
 		else {

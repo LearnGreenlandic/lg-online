@@ -20,7 +20,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/pdf/pamphlet.pdf"><i class="link-info bi bi-file-pdf"></i> {t:pamphlet}</a></li>
 	</ul>
 </div>
-<!-- Chapter 1 -->
+<!-- Chapter 1.1 -->
 <div class="choice my-2 col-lg-6" id="l1.1">
 	<a href="{t:prefix}/lg2/1.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/1.1/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/1.1/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> {t:lg2/1.1}</a></h5>
@@ -39,6 +39,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/pdf/slides/1.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/1.1}</a></li>
 	</ul>
 </div>
+<!-- Chapter 1.1x -->
 <div class="choice my-2 col-lg-6" id="l1.1x">
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/prep/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/prep}</a></h5>
 	<ul class="list-unstyled ch-item">
@@ -76,6 +77,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/fstx/0.1.3/"><i class="link-info bi bi-x-diamond"></i> {t:lg2/fstx/0.1.3}</a></li>
 	</ul>
 </div>
+<!-- Chapter 1.2 -->
 <div class="choice my-2 col-lg-6" id="l1.2">
 	<a href="{t:prefix}/lg2/1.2/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/1.2/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/1.2/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> {t:lg2/1.2}</a></h5>
@@ -107,7 +109,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/1.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/1/text}</a></li>
 	</ul>
 </div>
-<!-- Chapter 2 -->
+<!-- Chapter 2.1 -->
 <div class="choice my-2 col-lg-6" id="l2.1">
 	<a href="{t:prefix}/lg2/2.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/2.1/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.1/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> {t:lg2/2.1}</a></h5>
@@ -123,7 +125,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/pdf/slides/2.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/2.1}</a></li>
 		</ul>
 </div>
-<!-- Chapter 2x -->
+<!-- Chapter 2.1x -->
 <div class="choice my-2 col-lg-6" id="l2.1x">
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.1x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2-1x}</a></h5>
 	<ul class="list-unstyled ch-item">
@@ -141,6 +143,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/2x/obj2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/obj2}</a></li>
 	</ul>
 </div>
+<!-- Chapter 2.2 -->
 <div class="choice my-2 col-lg-6" id="l2.2">
 	<a href="{t:prefix}/lg2/2.2/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/2.2/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.2/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> {t:lg2/2.2}</a></h5>
@@ -167,6 +170,25 @@ function lg2($state) {
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/2.2.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/2.2}</a></li>
 		<li><a href="{t:prefix}/lg2/2.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/2/text}</a></li>
+	</ul>
+</div>
+<!-- Chapter 2.2x -->
+<div class="choice my-2 col-lg-6 wip" id="l2.2x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.2x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2-2x}</a></h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/2x/deny3/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny3}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/deny4/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny4}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/that1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/that1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/indirect1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/indirect1}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/lu1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/lu1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/laar1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/laar1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/laar2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/laar2}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/una1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/una1}</a></li>
+		<li><a href="{t:prefix}/lg2/2x/niq1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/niq1}</a></li>
 	</ul>
 </div>
 <!-- Chapter 3 -->
