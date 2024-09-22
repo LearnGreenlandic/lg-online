@@ -1156,14 +1156,14 @@ $l10n['eng']['lg2/2x/that1/text'] = 'TODO MISSING TRANSLATION. Comprehend and re
 <i>Eqqaamasariaqarpara aqagu Aasianni whiskylerissallunga.</i> (I must remember that I need to take care of whisky in Aasiaat tomorrow.)<br>
 <i>Isumaqarpunga aqagu Aputsiami qarasaasiaq sammisarissallugu.</i> (I think that I will be busy with the computer at Aputsiaq\'s tomorrow.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2x/indirect1'] = 'Øvelse 2.2.4x: Indirekte tale';
-$l10n['eng']['lg2/2x/indirect1'] = 'Exercise 2.2.4x: Indirect speech';
-$l10n['dan']['lg2/2x/indirect1/text'] = 'Indirekte tale <lg-fn>1</lg-fn> med hhv. co-referentielt subjekt og non-co-referentielt subjekt. Forstå og gentag følgende sætninger. <lg-fn-def n="1">oratio obliqua</lg-fn-def></p>
+$l10n['dan']['lg2/2x/indirect1'] = 'Øvelse 2.2.4x: Oratio obliqua';
+$l10n['eng']['lg2/2x/indirect1'] = 'Exercise 2.2.4x: Oratio obliqua';
+$l10n['dan']['lg2/2x/indirect1/text'] = 'Oratio obliqua <lg-fn>1</lg-fn> med hhv. co-referentielt subjekt og non-co-referentielt subjekt. Forstå og gentag følgende sætninger. <lg-fn-def n="1">indirekte tale</lg-fn-def></p>
 <p>NB: Undlad at tage let på kravet om gentagelse. Gentag SAMTLIGE eksempler til du kan gøre det nogenlunde ubesværet og højt og tydeligt.</p>
 <p>Ex:<br>
 <i>Isumaqarpunga aqagu Nuummut aallassallunga.</i> (Jeg tror, at jeg skal til Nuuk i morgen.)<br>
 <i>Isumaqarpunga Nuka aqagu Nuummut aallassasoq.</i> (Jeg tror, at Nuka skal til Nuuk i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
-$l10n['eng']['lg2/2x/indirect1/text'] = 'Indirect speech <lg-fn>1</lg-fn> with respectively co-refential subject and non-co-referential subject. Comprehend and repeat the sentences. <lg-fn-def n="1">oratio obliqua</lg-fn-def></p>
+$l10n['eng']['lg2/2x/indirect1/text'] = 'Oratio obliqua <lg-fn>1</lg-fn> with respectively co-refential subject and non-co-referential subject. Comprehend and repeat the sentences. <lg-fn-def n="1">indirect speech</lg-fn-def></p>
 <p>NB: Don\'t take the speaking aloud lightly. Repeat EVERY example until you are can do speak them aloud reasonably comfortably.</p>
 <p>Ex:<br>
 <i>Isumaqarpunga aqagu Nuummut aallassallunga.</i> (I think that I am going to Nuuk tomorrow.)<br>
@@ -1196,6 +1196,7 @@ $l10n['eng']['lg2/2x/laar2/text'] = 'Deny the question, and emphasize the answer
 <p>Ex:<br>
 <i>Arnannguaq naapippiuk??</i> (Have you met Arnannguaq?) =&gt; <i>Naamik, Arnannguaq naapilaanngilara.</i> (No, I have definitely not met Arnannguaq.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+/*
 $l10n['dan']['lg2/2x/una1'] = 'Øvelse 2.2.8x: Øv UNA';
 $l10n['eng']['lg2/2x/una1'] = 'Exercise 2.2.8x: Practice UNA';
 $l10n['dan']['lg2/2x/una1/text'] = 'Øv en af flere konstruktioner med tilhængspartiklen UNA. Forstå og gentag.</p>
@@ -1206,15 +1207,21 @@ $l10n['eng']['lg2/2x/una1/text'] = 'Practice one of the multiple constructions w
 <p>Ex:<br>
 <i>Qallunaaruna tutsiuteqqittoq!</i> (It was that Dane who sounded off again!)<br>
 <i>Ilinniartitsisoraana oqaluttuartoq!</i> (It was my teacher who narrated!)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+//*/
 
-$l10n['dan']['lg2/2x/niq1'] = 'Øvelse 2.2.9x: Øv NIQ';
-$l10n['eng']['lg2/2x/niq1'] = 'Exercise 2.2.9x: Practice NIQ';
+$l10n['dan']['lg2/2x/niq1'] = 'Øvelse 2.2.8x: Øv NIQ';
+$l10n['eng']['lg2/2x/niq1'] = 'Exercise 2.2.8x: Practice NIQ';
 $l10n['dan']['lg2/2x/niq1/text'] = 'Øv det abstrakte nomen, NIQ. Forstå og gentag sætningen og omsæt den til formen "Jeg refererer til min &lt;<i>det forhold, som er udtrykt i verbet</i>&gt;". Tilføj pronominet <i>taanna</i> for at gøre den nye sætning lidt mere mundret.</p>
 <p>Ex:<br>
 <i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (Jeg ville ellers gerne arbejde på Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkarluarnera taanna pivara.</i> (Jeg refererer til den lyst, jeg ellers havde til at arbejde på Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 $l10n['eng']['lg2/2x/niq1/text'] = 'Practice the abstract noun NIQ. Comprehend and repeat the sentence, and transform it into the form of "I\'m referring to my &lt;<i>the condition expressed in the verb</i>&gt;". Add the pronoun <i>taanna</i> to smoothen out the new sentence.</p>
 <p>Ex:<br>
 <i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (I would have liked to work at Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkarluarnera taanna pivara.</i> (I\'m referring to the desire I had for working at Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/2x/lik1'] = 'Øvelse 2.2.9x: Øv LIK';
+$l10n['eng']['lg2/2x/lik1'] = 'Exercise 2.2.9x: Practice LIK';
+$l10n['dan']['lg2/2x/lik1/text'] = 'Tilhænget LIK giver ofte anledning til en del misforståelser, så det vil vi ofre lidt opmærksomhed nu. Vend derfor tilbage til <a href="../../2.2x/#lik1">Introduktion til øvelserne 2-2X</a> og arbejd igennem øvelsen nederst i introduktionen og brug derefter den tid, det tager at forstå den lille sætning fra Sørine Steenholdts roman. Gør det helst sammen med din studiekammerat.';
+$l10n['eng']['lg2/2x/lik1/text'] = 'As the derivational morpheme LIK is often the source of misunderstandings, we will turn our attention there now. Return to <a href="../../2.2x/#lik1">Introduction to chapter 2-2 X-tras</a> and work through the exercise at the bottom of the introduction. After that, spend the requisite time it takes to understandt the short sentence from Sørine Steenholdt\'s novel. Ideally, you should do all this with a study partner.';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';

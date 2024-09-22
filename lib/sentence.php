@@ -24,8 +24,8 @@ $GLOBALS['-db-map'] = [
 	'lu1' => '2-2-5x',
 	'laar1' => '2-2-6x',
 	'laar2' => '2-2-7x',
-	'una1' => '2-2-8x',
-	'niq1' => '2-2-9x',
+	//'una1' => '2-2-8x',
+	'niq1' => '2-2-8x',
 ];
 
 function trim_ucfirst($m) {
@@ -1643,6 +1643,10 @@ function sentence_lg2($state, $chap, $task) {
 		}
 		else if ($chap == '2x' && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d)$~', $task)) {
 			\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
+		}
+		else if ($task == 'lik1') {
+			require_once __DIR__.'/html.php';
+			\LGO\just_html('lg2', $state, $chap, $task);
 		}
 		else {
 			\LGO\sentence_random_qa('lg2', $state, $chap, $task);

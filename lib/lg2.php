@@ -173,7 +173,7 @@ function lg2($state) {
 	</ul>
 </div>
 <!-- Chapter 2.2x -->
-<div class="choice my-2 col-lg-6 wip" id="l2.2x">
+<div class="choice my-2 col-lg-6" id="l2.2x">
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.2x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2-2x}</a></h5>
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg2/2x/deny3/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny3}</a></li>
@@ -187,8 +187,11 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/2x/lu1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/lu1}</a></li>
 		<li><a href="{t:prefix}/lg2/2x/laar1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/laar1}</a></li>
 		<li><a href="{t:prefix}/lg2/2x/laar2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/laar2}</a></li>
-		<li><a href="{t:prefix}/lg2/2x/una1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/una1}</a></li>
+		<!-- <li><a href="{t:prefix}/lg2/2x/una1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/una1}</a></li> -->
 		<li><a href="{t:prefix}/lg2/2x/niq1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/niq1}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/2x/lik1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/lik1}</a></li>
 	</ul>
 </div>
 <!-- Chapter 3 -->

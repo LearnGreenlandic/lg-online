@@ -48,3 +48,15 @@ function paradigms($state) {
 <?php
 	\LGO\footer($state);
 }
+
+function just_html($root='lg1', $state, $chap='5x', $task='random') {
+?>
+<div class="task container-fluid">
+<div class="row mb-3">
+<div class="col">
+<p>{t:<?=$root;?>/<?=$chap;?>/<?=$task;?>/text}</p>
+</div>
+</div>
+</div>
+<?php
+}
