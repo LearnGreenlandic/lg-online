@@ -444,3 +444,23 @@ function maybe_export($state, $tsv) {
 	echo $tsv;
 	exit(0);
 }
+
+function mb_ucfirst($str) {
+	return mb_strtoupper(mb_substr($str, 0, 1)).mb_substr($str, 1);
+}
+
+function _trim_ucfirst($m) {
+	return $m[1].' '.mb_ucfirst($m[2]);
+}
+
+function trim_ucfirst($str) {
+	$str = mb_ucfirst($str);
+	$str = preg_replace_callback('~ ([.?!:]) ([^.])~u', '\LGO\_trim_ucfirst', $str);
+	$str = preg_replace_callback('~(⇒) ([^.])~u', '\LGO\_trim_ucfirst', $str);
+	$str = preg_replace('~ ([.?!:,;])~u', '$1', $str);
+	return $str;
+}
+
+function cb_ucfirst($m) {
+	return $m[1].mb_ucfirst($m[2]);
+}

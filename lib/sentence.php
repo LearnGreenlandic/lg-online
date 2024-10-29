@@ -17,6 +17,7 @@ $GLOBALS['-db-map'] = [
 	'part2' => '2-1-6x',
 	'obj1' => '2-1-7x',
 	'obj2' => '2-1-8x',
+
 	'deny3' => '2-2-1x',
 	'deny4' => '2-2-2x',
 	'that1' => '2-2-3x',
@@ -26,15 +27,19 @@ $GLOBALS['-db-map'] = [
 	'laar2' => '2-2-7x',
 	//'una1' => '2-2-8x',
 	'niq1' => '2-2-8x',
+
+	'review3' => '3-0x',
+	'fam1' => '3-1-1x',
+	'fam2' => '3-1-2x',
+	'fam3' => '3-2x',
+	'deny5' => '3-3x',
+	'that2' => '3-4x',
+	'affirm3' => '3-5-1x',
+	'cntp1' => '3-5-2x',
+	'affirm4' => '3-6x',
+	'summer3' => '3-7-1x',
+	'summer4' => '3-7-2x',
 ];
-
-function trim_ucfirst($m) {
-	return '. '.ucfirst($m[1]);
-}
-
-function cb_ucfirst($m) {
-	return $m[1].ucfirst($m[2]);
-}
 
 function pfx_fname(string $str): array {
 	return ['fname', $str];
@@ -1138,8 +1143,8 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 			}
 		}
 
-		$qst = ucfirst(implode(' ', $qst).'?');
-		$ans = ucfirst(implode(' ', $ans));
+		$qst = mb_ucfirst(implode(' ', $qst).'?');
+		$ans = mb_ucfirst(implode(' ', $ans));
 
 		if ($task == 'onewho') {
 			$qst = substr($qst, 0, -1);
@@ -1183,17 +1188,23 @@ function sentence_random_qa_sqlite($root='lg1', $state, $chap='5x', $task='rando
 
 	$outs = [];
 	foreach ($sents as $sent) {
-		$qst = array_column(json_decode($sent['qa_q'], true), 1);
-		$ans = array_column(json_decode($sent['qa_a'], true), 1);
-
-		if ($task == 'lu1') {
-			$qst = ucfirst(implode(' ', $qst).'.');
-			$qst = preg_replace_callback('~ [.] ([^.])~u', '\LGO\trim_ucfirst', $qst);
+		$qst = $ans = '';
+		if (!empty($sent['qa_q_txt'])) {
+			$qst = $sent['qa_q_txt'];
+			$ans = $sent['qa_a_txt'];
 		}
 		else {
-			$qst = ucfirst(implode(' ', $qst).'?');
+			$qst = array_column(json_decode($sent['qa_q'], true), 1);
+			$ans = array_column(json_decode($sent['qa_a'], true), 1);
+
+			if ($task == 'lu1') {
+				$qst = trim_ucfirst(implode(' ', $qst).'.');
+			}
+			else {
+				$qst = mb_ucfirst(implode(' ', $qst).'?');
+			}
+			$ans = mb_ucfirst(implode(' ', $ans));
 		}
-		$ans = ucfirst(implode(' ', $ans));
 
 		$outs[] = '<div><div class="text-center entry"><audio src="/martha/?t='.urlencode($qst).'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button> <div class="my-2 hint">'.$qst.'</div></div><div class="my-2 text-center entry"> <input type="text" spellcheck="false" class="form-control" data-check="'.$ans.'"> <button type="button" class="btn btn-warning">✓</button> <audio src="/martha/?t='.$ans.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button><br><code class="hint my-1"></code></div></div>';
 	}
@@ -1319,15 +1330,19 @@ function sentence_random_read_sqlite($root='lg2', $state, $chap='0x', $task='ran
 			$a = json_decode($ws['qa_a'], true);
 			$ana = implode('<br>', array_column($q, 0));
 			$ana .= '<br>'.implode('<br>', array_column($a, 0));
-			$sent = ucfirst(implode(' ', array_column($q, 1)));
-			$sent .= ucfirst(implode(' ', array_column($a, 1)));
+			$sent = mb_ucfirst(implode(' ', array_column($q, 1)));
+			$sent .= mb_ucfirst(implode(' ', array_column($a, 1)));
 		}
 		else {
-			$ws = json_decode($ws['q'], true);
-			$ana = implode('<br>', array_column($ws, 0));
-			$sent = ucfirst(implode(' ', array_column($ws, 1)));
+			$q = json_decode($ws['q'], true);
+			$ana = implode('<br>', array_column($q, 0));
+			$sent = mb_ucfirst(implode(' ', array_column($q, 1)));
 		}
 		$sent = preg_replace_callback('~( ⇒ )(.)~u', '\LGO\cb_ucfirst', $sent);
+
+		if (!empty($ws['q_txt'])) {
+			$sent = $ws['q_txt'];
+		}
 
 		$audio = $sent;
 		$audio = preg_replace('~<br>~', '. ', $audio);
@@ -1540,7 +1555,7 @@ function sentence_all($state, $chap='2x') {
 		foreach ($GLOBALS['-ds'][$chap] as $case) {
 			$mp3_1 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$ws[0].'.mp3', $ws[0]);
 			$mp3_2 = mp3_or_martha('{t:prefix}/d/lg1/sentence/mp3/'.$cases[$case][$k].'.mp3', $cases[$case][$k]);
-			$prep[$case][] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.' + '.ucfirst($case).'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$cases[$case][$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><br><code class="hint my-1"></code></span></div></div></div>';
+			$prep[$case][] = '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.$ws[0].$p.' + '.mb_ucfirst($case).'</div><div class="col-12"><span class="entry"><audio src="'.$mp3_1.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.$cases[$case][$k].'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$mp3_2.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><br><code class="hint my-1"></code></span></div></div></div>';
 		}
 	}
 
@@ -1634,23 +1649,23 @@ function sentence($state, $chap, $task) {
 
 function sentence_lg2($state, $chap, $task) {
 	\LGO\header($state, 'lg2', $chap.'/'.$task);
-	if ($chap == '0x' || $chap == '2x') {
-		if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
-			\LGO\sentence_random_read('lg2', $state, $chap, $task);
-		}
-		else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1)$~', $task)) {
-			\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
-		}
-		else if ($chap == '2x' && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d)$~', $task)) {
-			\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
-		}
-		else if ($task == 'lik1') {
-			require_once __DIR__.'/html.php';
-			\LGO\just_html('lg2', $state, $chap, $task);
-		}
-		else {
-			\LGO\sentence_random_qa('lg2', $state, $chap, $task);
-		}
+
+	if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
+		\LGO\sentence_random_read('lg2', $state, $chap, $task);
 	}
+	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review3|cntp1)$~', $task)) {
+		\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
+	}
+	else if (($chap == '1x' || $chap == '2x' || $chap == '3x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d)$~', $task)) {
+		\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
+	}
+	else if ($task == 'lik1') {
+		require_once __DIR__.'/html.php';
+		\LGO\just_html('lg2', $state, $chap, $task);
+	}
+	else {
+		\LGO\sentence_random_qa('lg2', $state, $chap, $task);
+	}
+
 	\LGO\footer($state);
 }

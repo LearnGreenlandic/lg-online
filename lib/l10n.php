@@ -142,8 +142,8 @@ $l10n['eng']['lg1/listening/3/ts'] = 'Has ts';
 $l10n['dan']['lg1/listening/3/t'] = 'Har kun t';
 $l10n['eng']['lg1/listening/3/t'] = 'Has only t';
 
-$l10n['dan']['lg1/2x'] = 'Introduktion til kapitel 2 X-tras';
-$l10n['eng']['lg1/2x'] = 'Introduction to chapter 2 X-tra';
+$l10n['dan']['lg1/2x'] = 'Introduktion til kapitel II X-tras';
+$l10n['eng']['lg1/2x'] = 'Introduction to chapter II X-tra';
 
 $l10n['dan']['lg1/2x/listen'] = 'Øvelse 2.1X: Til og fra stednavne (lydøvelse)';
 $l10n['eng']['lg1/2x/listen'] = 'Exercise 2.1X: To and from place names (perception)';
@@ -500,40 +500,40 @@ $l10n['eng']['lg2/intro/text'] = '<p>The level of ambition was relatively low in
 
 <h5 class="text-center"><a href="../1.1/">Onwards to the first lecture</a></h5>';
 
-$l10n['dan']['lg2/1.1'] = 'Forelæsning 1.1: Modul I lærte dig';
-$l10n['eng']['lg2/1.1'] = 'Lecture 1.1: Module I taught you';
-$l10n['dan']['lg2/1.2'] = 'Forelæsning 1.2: Grammatisk køn findes ikke';
-$l10n['eng']['lg2/1.2'] = 'Lecture 1.2: No gender in Greenlandic';
-$l10n['dan']['lg2/2.1'] = 'Forelæsning 2.1: Lydregler og nogle ord fortsat';
-$l10n['eng']['lg2/2.1'] = 'Lecture 2.1: Sound rules and new words continued';
-$l10n['dan']['lg2/2.2'] = 'Forelæsning 2.2: Navneordene falder i to klasser';
-$l10n['eng']['lg2/2.2'] = 'Lecture 2.2: Nouns have two declensions';
-$l10n['dan']['lg2/3.1'] = 'Forelæsning 3.1: Repetition af verberne';
-$l10n['eng']['lg2/3.1'] = 'Lecture 3.1: Revision of verbs';
-$l10n['dan']['lg2/3.2'] = 'Forelæsning 3.2: Modus indikativ';
-$l10n['eng']['lg2/3.2'] = 'Lecture 3.2: The indicative mood';
-$l10n['dan']['lg2/4.1'] = 'Forelæsning 4.1: Om relativ kasus og simpelt flertal';
-$l10n['eng']['lg2/4.1'] = 'Lecture 4.1: Relative case and plural';
-$l10n['dan']['lg2/4.2'] = 'Forelæsning 4.2: Den fjerde vokal';
-$l10n['eng']['lg2/4.2'] = 'Lecture 4.2: The fourth vowel';
-$l10n['dan']['lg2/5.1'] = 'Forelæsning 5.1: Nye tilhæng';
-$l10n['eng']['lg2/5.1'] = 'Lecture 5.1: New derivational morphemes';
-$l10n['dan']['lg2/5.2'] = 'Forelæsning 5.2';
-$l10n['eng']['lg2/5.2'] = 'Lecture 5.2';
-$l10n['dan']['lg2/6.1'] = 'Forelæsning 6.1: Nye gloser, men næsten ingen ny grammatik';
-$l10n['eng']['lg2/6.1'] = 'Lecture 6.1: Lots of new words but hardly any new grammar';
-$l10n['dan']['lg2/6.2'] = 'Forelæsning 6.2';
-$l10n['eng']['lg2/6.2'] = 'Lecture 6.2';
-$l10n['dan']['lg2/7.1'] = 'Forelæsning 7.1: Nye gloser og halvtransitiv';
-$l10n['eng']['lg2/7.1'] = 'Lecture 7.1: New words and halftransitive';
-$l10n['dan']['lg2/7.2'] = 'Forelæsning 7.2';
-$l10n['eng']['lg2/7.2'] = 'Lecture 7.2';
-$l10n['dan']['lg2/8.1'] = 'Forelæsning 8.1: Opsamling mht. navneordene';
-$l10n['eng']['lg2/8.1'] = 'Lecture 8.1: Nouns revisited';
-$l10n['dan']['lg2/8.2'] = 'Forelæsning 8.2';
-$l10n['eng']['lg2/8.2'] = 'Lecture 8.2';
-$l10n['dan']['lg2/9'] = 'Forelæsning 9: Next step?';
-$l10n['eng']['lg2/9'] = 'Lecture 9: Next step?';
+$l10n['dan']['lg2/1.1'] = 'Forelæsning II-1.1: Modul I lærte dig';
+$l10n['eng']['lg2/1.1'] = 'Lecture II-1.1: Module I taught you';
+$l10n['dan']['lg2/1.2'] = 'Forelæsning II-1.2: Grammatisk køn findes ikke';
+$l10n['eng']['lg2/1.2'] = 'Lecture II-1.2: No gender in Greenlandic';
+$l10n['dan']['lg2/2.1'] = 'Forelæsning II-2.1: Lydregler og nogle ord fortsat';
+$l10n['eng']['lg2/2.1'] = 'Lecture II-2.1: Sound rules and new words continued';
+$l10n['dan']['lg2/2.2'] = 'Forelæsning II-2.2: Navneordene falder i to klasser';
+$l10n['eng']['lg2/2.2'] = 'Lecture II-2.2: Nouns have two declensions';
+$l10n['dan']['lg2/3.1'] = 'Forelæsning II-3.1: Repetition af verberne';
+$l10n['eng']['lg2/3.1'] = 'Lecture II-3.1: Revision of verbs';
+$l10n['dan']['lg2/3.2'] = 'Forelæsning II-3.2: Modus indikativ';
+$l10n['eng']['lg2/3.2'] = 'Lecture II-3.2: The indicative mood';
+$l10n['dan']['lg2/4.1'] = 'Forelæsning II-4.1: Om relativ kasus og simpelt flertal';
+$l10n['eng']['lg2/4.1'] = 'Lecture II-4.1: Relative case and plural';
+$l10n['dan']['lg2/4.2'] = 'Forelæsning II-4.2: Den fjerde vokal';
+$l10n['eng']['lg2/4.2'] = 'Lecture II-4.2: The fourth vowel';
+$l10n['dan']['lg2/5.1'] = 'Forelæsning II-5.1: Nye tilhæng';
+$l10n['eng']['lg2/5.1'] = 'Lecture II-5.1: New derivational morphemes';
+$l10n['dan']['lg2/5.2'] = 'Forelæsning II-5.2';
+$l10n['eng']['lg2/5.2'] = 'Lecture II-5.2';
+$l10n['dan']['lg2/6.1'] = 'Forelæsning II-6.1: Nye gloser, men næsten ingen ny grammatik';
+$l10n['eng']['lg2/6.1'] = 'Lecture II-6.1: Lots of new words but hardly any new grammar';
+$l10n['dan']['lg2/6.2'] = 'Forelæsning II-6.2';
+$l10n['eng']['lg2/6.2'] = 'Lecture II-6.2';
+$l10n['dan']['lg2/7.1'] = 'Forelæsning II-7.1: Nye gloser og halvtransitiv';
+$l10n['eng']['lg2/7.1'] = 'Lecture II-7.1: New words and halftransitive';
+$l10n['dan']['lg2/7.2'] = 'Forelæsning II-7.2';
+$l10n['eng']['lg2/7.2'] = 'Lecture II-7.2';
+$l10n['dan']['lg2/8.1'] = 'Forelæsning II-8.1: Opsamling mht. navneordene';
+$l10n['eng']['lg2/8.1'] = 'Lecture II-8.1: Nouns revisited';
+$l10n['dan']['lg2/8.2'] = 'Forelæsning II-8.2';
+$l10n['eng']['lg2/8.2'] = 'Lecture II-8.2';
+$l10n['dan']['lg2/9'] = 'Forelæsning II-9: Next step?';
+$l10n['eng']['lg2/9'] = 'Lecture II-9: Next step?';
 
 for ($i=1 ; $i<9 ; ++$i) {
 	for ($j=1 ; $j<3 ; ++$j) {
@@ -561,8 +561,8 @@ for ($i=0 ; $i<9 ; ++$i) {
 	}
 }
 
-$l10n['dan']['lg2/prep'] = '2-0: Fortræning til modul 2';
-$l10n['eng']['lg2/prep'] = '2-0: Preparations for Module 2';
+$l10n['dan']['lg2/prep'] = 'II-0: Fortræning til modul 2';
+$l10n['eng']['lg2/prep'] = 'II-0: Preparations for Module 2';
 $l10n['dan']['lg2/prep/text'] = '<p>Her er en række øvelser, som jeg kraftigt vil anbefale Jer at gennemarbejde grundigt FØR I for alvor kaster Jer ud i modul 2. Erfaringen har nemlig vist, at lektions 1\'s cocktail af en ny og ikke helt let verbalform og en lidt kompliceret lydregel, man ikke lige med det samme får under huden, er en lidt for stor mundfuld for de fleste.</p>
 
 <p>Derfor får I hermed en lille ekstra lektion uden nye gloser men med tre vigtige tilhæng, der alle indeholder den omtalte lydregel. Jeg håber (og tror), at lektion 1 vil vise sig langt mere håndterlig, når I møder den med lydreglen i bagagen allerede.</p>
@@ -1025,8 +1025,8 @@ $l10n['eng']['lg2/structure/2.5/a'] = 'Exercise 2.5: Use contemporative as a sub
 $l10n['dan']['lg2/structure/2.5/text'] = 'Ledsagemåde kan ofte oversættes til dansk lang tillægsform som i \'Han kom løbende\'. Ledsagemåde bruges nemlig til at udtrykke biomstændigheder som i eksemplet, hvor udsagnet er at \'han kom\' og biomstændigheden at det foregik i løb. Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sætninger på den måde, at det er sidste verbum, der opfattes som hovedudsagnet.';
 $l10n['eng']['lg2/structure/2.5/text'] = 'Contemporative often translates as English ing-form as in <em>He came running (= He came and he ran)</em>. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he came whereas his running is just a secondary message. Combine the following sentence pairs into single sentences letting the latter be the main message.';
 
-$l10n['dan']['lg2/2-1x'] = 'Introduktion til kapitel 2-1 X-tras';
-$l10n['eng']['lg2/2-1x'] = 'Introduction to chapter 2-1 X-tras';
+$l10n['dan']['lg2/2-1x'] = 'Introduktion til kapitel II-1 X-tras';
+$l10n['eng']['lg2/2-1x'] = 'Introduction to chapter II-1 X-tras';
 
 $l10n['dan']['lg2/2x/affirm1'] = 'Øvelse 2.1.1x: Bekræft spørgsmål';
 $l10n['eng']['lg2/2x/affirm1'] = 'Exercise 2.1.1x: Affirm questions';
@@ -1116,8 +1116,8 @@ $l10n['eng']['lg2/2x/obj2/text'] = 'Comprehend and repeat. TAQ+QAR is a common w
 <p>Ex:<br>
 <i>Nuummi asasaqarpunga.</i> (I love someone in Nuuk / I have a significant other in Nuuk.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2-2x'] = 'Introduktion til kapitel 2-2 X-tras';
-$l10n['eng']['lg2/2-2x'] = 'Introduction to chapter 2-2 X-tras';
+$l10n['dan']['lg2/2-2x'] = 'Introduktion til kapitel II-2 X-tras';
+$l10n['eng']['lg2/2-2x'] = 'Introduction to chapter II-2 X-tras';
 
 $l10n['dan']['lg2/2x/deny3'] = 'Øvelse 2.2.1x: Benægt spørgsmål (udvidet)';
 $l10n['eng']['lg2/2x/deny3'] = 'Exercise 2.2.1x: Deny questions (extended)';
@@ -1213,7 +1213,7 @@ $l10n['dan']['lg2/2x/niq1'] = 'Øvelse 2.2.8x: Øv NIQ';
 $l10n['eng']['lg2/2x/niq1'] = 'Exercise 2.2.8x: Practice NIQ';
 $l10n['dan']['lg2/2x/niq1/text'] = 'Øv det abstrakte nomen, NIQ. Forstå og gentag sætningen og omsæt den til formen "Jeg refererer til min &lt;<i>det forhold, som er udtrykt i verbet</i>&gt;". Tilføj pronominet <i>taanna</i> for at gøre den nye sætning lidt mere mundret.</p>
 <p>Ex:<br>
-<i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (Jeg ville ellers gerne arbejde på Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkarluarnera taanna pivara.</i> (Jeg refererer til den lyst, jeg ellers havde til at arbejde på Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+<i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (Jeg ville ellers gerne arbejde på Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkaluarnera taanna pivara.</i> (Jeg refererer til den lyst, jeg ellers havde til at arbejde på Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 $l10n['eng']['lg2/2x/niq1/text'] = 'Practice the abstract noun NIQ. Comprehend and repeat the sentence, and transform it into the form of "I\'m referring to my &lt;<i>the condition expressed in the verb</i>&gt;". Add the pronoun <i>taanna</i> to smoothen out the new sentence.</p>
 <p>Ex:<br>
 <i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (I would have liked to work at Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkarluarnera taanna pivara.</i> (I\'m referring to the desire I had for working at Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
@@ -1222,6 +1222,91 @@ $l10n['dan']['lg2/2x/lik1'] = 'Øvelse 2.2.9x: Øv LIK';
 $l10n['eng']['lg2/2x/lik1'] = 'Exercise 2.2.9x: Practice LIK';
 $l10n['dan']['lg2/2x/lik1/text'] = 'Tilhænget LIK giver ofte anledning til en del misforståelser, så det vil vi ofre lidt opmærksomhed nu. Vend derfor tilbage til <a href="../../2.2x/#lik1">Introduktion til øvelserne 2-2X</a> og arbejd igennem øvelsen nederst i introduktionen og brug derefter den tid, det tager at forstå den lille sætning fra Sørine Steenholdts roman. Gør det helst sammen med din studiekammerat.';
 $l10n['eng']['lg2/2x/lik1/text'] = 'As the derivational morpheme LIK is often the source of misunderstandings, we will turn our attention there now. Return to <a href="../../2.2x/#lik1">Introduction to chapter 2-2 X-tras</a> and work through the exercise at the bottom of the introduction. After that, spend the requisite time it takes to understandt the short sentence from Sørine Steenholdt\'s novel. Ideally, you should do all this with a study partner.';
+
+$l10n['dan']['lg2/3x'] = 'Introduktion til kapitel II-3 X-tras';
+$l10n['eng']['lg2/3x'] = 'Introduction to chapter II-3 X-tras';
+
+$l10n['dan']['lg2/3x/review3'] = 'Øvelse 3.0x: Konsolidering';
+$l10n['eng']['lg2/3x/review3'] = 'Exercise 3.0x: Consolidating';
+$l10n['dan']['lg2/3x/review3/text'] = 'Øvelser til konsolidering af gammel viden, men under inddragelse af hele glosestoffet. I denne første øvelse forekommer der kun verber i indikativ og interrogativ, som efterhånden er nogenlunde velkendte. Aflyt sætningerne, forstå dem og gentag dem højt og tydeligt.</p>
+<p>Ex:<br>
+<i>Uanga ilissi ilinniartuunngorniarfimmi asasariaqanngilassi.</i> (Jeg skal ikke nødvendigvis elske jer på gymnasiet.)<br>
+<i>Uummannami qallunaat tamarmik takusarpaannga.</i> (I Uummannaq ser alle danskerne mig jævnligt.)<br>
+<i>Meeqqat nuliara eqqaamavaat.</i> (Børnene husker min kone.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/3x/review3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/3x/fam1'] = 'Øvelse 3.1.1x: Øv familiebetegnelserne I';
+$l10n['eng']['lg2/3x/fam1'] = 'Exercise 3.1.1x: Practice kinship terms I';
+$l10n['dan']['lg2/3x/fam1/text'] = 'Øv familiebetegnelserne. I den første øvelse er EGO hankøn. Besvar spørgsmålet positivt. Kald dine (fiktive) familiemedlemmer hhv. Lene og Ole.</p>
+<p>Ex:<br>
+<i>Aviaajamik atilimmik najaqarpunga.</i> (Jeg har en lillesøster ved havn Aviaaja.) <i>Illit najaqarpit?</i> (Har du en lillesøster?) =&gt; <i>Aap, najaqarpunga.</i> (Ja, jeg har en lillesøster.) <i>Najaga Lenemik ateqarpoq.</i> (Min lillesøster hedder Lene.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/fam1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/fam2'] = 'Øvelse 3.1.2x: Øv familiebetegnelserne II';
+$l10n['eng']['lg2/3x/fam2'] = 'Exercise 3.1.2x: Practice kinship terms II';
+$l10n['dan']['lg2/3x/fam2/text'] = 'Øv familiebetegnelserne. I denne anden øvelse er EGO hunkøn. Besvar spørgsmålet positivt. Kald dine (fiktive) familiemedlemmer hhv. Lene og Ole.</p>
+<p>Ex:<br>
+<i>Malimmik atilimmik aqqaloqarpunga.</i> (Jeg har en lillebror ved navn Malik.) <i>Illit aqqaloqarpit?</i> (Har du en lillebror?) =&gt; <i>Aap, aqqaloqarpunga.</i> (Ja, jeg har en lillebror.) <i>Aqqalora Olemik ateqarpoq.</i> (Min lillebror hedder Ole.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/fam2/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/fam3'] = 'Øvelse 3.2x: Øv familiebetegnelserne III';
+$l10n['eng']['lg2/3x/fam3'] = 'Exercise 3.2x: Practice kinship terms III';
+$l10n['dan']['lg2/3x/fam3/text'] = 'Øv familiebetegnelserne lidt mere. I denne øvelse er "vi" af hankøn. Besvar spørgsmålet positivt. Kald dine (fiktive) familiemedlemmer hhv. Lene og Ole.</p>
+<p>Ex:<br>
+<i>Uagut marlunnik aleqaqarpugut.</i> (Vi har to storesøstre.) <i>Illit aleqaqarpit?</i> (Har du en storesøster/storesøstre?) =&gt; <i>Aap, ataatsimik aleqaqarpunga.</i> (Ja, jeg har en storesøster.) <i>Aleqara Lenemik ateqarpoq.</i> (Min storesøster hedder Lene.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/fam3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/deny5'] = 'Øvelse 3.3x: Gør det i morgen';
+$l10n['eng']['lg2/3x/deny5'] = 'Exercise 3.3x: Do it tomorrow';
+$l10n['dan']['lg2/3x/deny5/text'] = 'Lyt, forstå, benægt spørgsmålet og svar, at du i stedet vil gøre det i morgen! Start svaret med <i>Naamik, …</i> ved affirmative spørgsmål og med <i>Aap, …</i> ved benægtede spørgsmål. Prøv også lige at ofre en ekstra tanke på, om talesyntesen agerer mand eller kvinde, når den bringer personer som <i>uiga</i>, <i>aqqalora</i> etc. på banen.</p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq i går?) =&gt; <i>Naamik, ippassaq Arnannguaq Katuami ilinniartinngilara. Kisianni aqagu Katuami ilinniartissavara.</i> (Nej, jeg underviste ikke Arnannguaq i Katuaq i går. Men jeg vil undervise hende i Katuaq i morgen.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/deny5/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/that2'] = 'Øvelse 3.4x: Ledsagemåde i at-sætninger';
+$l10n['eng']['lg2/3x/that2'] = 'Exercise 3.4x: Contemporative in that-sentences';
+$l10n['dan']['lg2/3x/that2/text'] = 'Lidt flere øvelser med ledsagemåde i at-sætninger. Besvar alle spørgsmål med <i>Aap, ...</i></p>
+<p>Ex:<br>
+<i>Eqqaamaviuk tamanna sammisarissallugu?</i> (Husker du, at du skal beskæftige dig med det her?) =&gt; <i>Aap, eqqaamavara tamanna sammisarissallugu.</i> (Ja, jeg husker, at jeg skal beskæftige mig med det her.)<br>
+<i>Arnat naluaat tamanna allassallugu?</i> (Vidste kvinderne ikke, at de skulle skrive det her?) =&gt; <i>Aap, arnat naluaat tamanna allassallugu.</i> (Ja, kvinderne vidste ikke, at de skulle skrive det her.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/that2/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/affirm3'] = 'Øvelse 3.5.1x: Ledsagende omstændighed I';
+$l10n['eng']['lg2/3x/affirm3'] = 'Exercise 3.5.1x: Contemporative circumstance I';
+$l10n['dan']['lg2/3x/affirm3/text'] = 'Brug ledsagemåde som ledsagende omstændighed. Svar bekræftende på følgende spørgsmål.</p>
+<p>Ex:<br>
+<i>Ippassaq angerlarniarlutit Nuummut aallarpit?</i> (Rejste du hjem til Nuuk i går?) =&gt; <i>Aap, ippassaq angerlarniarlunga Nuummut aallarpunga.</i> (Ja, jeg rejste hjem til Nuuk i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/affirm3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/cntp1'] = 'Øvelse 3.5.2x: Ledsagende omstændighed II';
+$l10n['eng']['lg2/3x/cntp1'] = 'Exercise 3.5.2x: Contemporative circumstance II';
+$l10n['dan']['lg2/3x/cntp1/text'] = 'Brug ledsagemåde som ledsagende omstændighed også om andet en 1. person. Forstå og gentag følgende udsagn højt og tydeligt.</p>
+<p>Ex:<br>
+<i>Ullumi nuliara angerlarluni Danmarkimut aallarpoq.</i> (Min kone rejste hjem til Danmark i dag.)<br>
+<i>Aappaagu qallunaat angerlarlutik Nuummut aallarnianngitsut isumaqarpunga.</i> (Jeg tror, at danskerne ikke agter at rejse hjem til Nuuk næste år.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/3x/cntp1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/3x/affirm4'] = 'Øvelse 3.6x: Bekræft spørgsmpål';
+$l10n['eng']['lg2/3x/affirm4'] = 'Exercise 3.6x: Affirm question';
+$l10n['dan']['lg2/3x/affirm4/text'] = 'Forstå spørgmålene og besvar dem positivt. Indled svaret med <i>Aap, …</i> Bemærk, at øvelsen stiller lidt større krav til dig end de foregående, for at-sætningerne herunder blander tilfælde, hvor der er co-referentialitet mellem det anførende verbum og at-sætningen (og dermed krav om ledsagemåde i at-sætningen) med tilfælde, hvor der ikke er co-referentialitet (og dermed krav om participium i at-sætningen).</p>
+<p>Ex:<br>
+<i>Eqqaamaviuk Arnannguaq aqagu Upernavimmut aallassasoq?</i> (Husker du, at Arnannguaq skal rejse til Upernavik i morgen?) =&gt; <i>Aap, eqqaamavara Arnannguaq aqagu Upernavimmut allassasoq.</i> (Ja, jeg husker, at Arnannguaq skal rejse til Upernavik i morgen.)<br>
+<i>Eqqaamaviuk aqaguagu Maniitsumut aallassallutit?</i> (Husker du, at du skal rejse til Maniitsoq i overmorgen?) =&gt; <i>Aap, eqqaamavara aqaguagu Maniitsumut aallassallunga.</i> (Ja, jeg husker, at jeg skal rejse til Maniitsoq i overmorgen.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/affirm4/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/summer3'] = 'Øvelse 3.7.1x: Benægt, til sommer I';
+$l10n['eng']['lg2/3x/summer3'] = 'Exercise 3.7.1x: Deny, this summer I';
+$l10n['dan']['lg2/3x/summer3/text'] = 'Denne øvelse er næsten som den foregående, men med den forskel, at du nu benægter spørgsmålet og tilføjer, at det adspurgte først finder sted til sommer. Start svaret med <i>Naamik. Isumaqaraluarpunga ...</i></p>
+<p>Ex:<br>
+<i>Eqqaamaviuk Arnannguaq aqagu Nuummut aallassasoq?</i> (Husker du, at Arnannguaq rejser til Nuuk i morgen?) =&gt; <i>Naamik. Isumaqaraluarpunga aatsaat aasaru Nuummut aallassasoq.</i> (Nej. Jeg troede ellers, at hun først rejser til Nuuk til sommer.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/summer3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/3x/summer4'] = 'Øvelse 3.7.2x: Benægt, til sommer II';
+$l10n['eng']['lg2/3x/summer4'] = 'Exercise 3.7.2x: Deny, this summer II';
+$l10n['dan']['lg2/3x/summer4/text'] = 'Variation til 3.7.1X med subjekt i pluralis/flertal. Besvar spørgsmålene med <i>Naluara</i> (Det ved jeg ikke). Tilføj så, at subjekterne <i>oqarput</i> (de siger), at at-sætningen først finder sted til sommer.</p>
+<p>Ex:<br>
+<i>Angutit eqqaamavaat Arnannguaq aqagu Nuummut aallassasoq?</i> (Husker mændene, at Arnannguaq rejser til Nuuk i morgen?) =&gt; <i>Naluara. Angutit oqarput Arnannguaq aatsaat aasaru Nuummut aallassasoq.</i> (Det ved jeg ikke. Mændene siger, at Arnannguaq først rejser til Nuuk til sommer.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/3x/summer4/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
