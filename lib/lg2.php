@@ -109,6 +109,24 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/1.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/1/text}</a></li>
 	</ul>
 </div>
+<!-- Chapter 1x -->
+<div class="choice my-2 col-lg-6" id="l1x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/1x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/1x}</a></h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/1x/affirm1/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/affirm1}</a></li>
+		<li><a href="{t:prefix}/lg2/1x/affirm2/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/affirm2}</a></li>
+		<li><a href="{t:prefix}/lg2/1x/deny1/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/deny1}</a></li>
+		<li><a href="{t:prefix}/lg2/1x/deny2/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/deny2}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/1x/part1/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/part1}</a></li>
+		<li><a href="{t:prefix}/lg2/1x/part2/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/part2}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/1x/obj1/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/obj1}</a></li>
+		<li><a href="{t:prefix}/lg2/1x/obj2/"><i class="link-info bi bi-file-text"></i> {t:lg2/1x/obj2}</a></li>
+	</ul>
+</div>
 <!-- Chapter 2.1 -->
 <div class="choice my-2 col-lg-6" id="l2.1">
 	<a href="{t:prefix}/lg2/2.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/2.1/{t:lang}/0.png"></a>
@@ -124,24 +142,6 @@ function lg2($state) {
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/pdf/slides/2.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/2.1}</a></li>
 		</ul>
-</div>
-<!-- Chapter 2.1x -->
-<div class="choice my-2 col-lg-6" id="l2.1x">
-	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.1x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2-1x}</a></h5>
-	<ul class="list-unstyled ch-item">
-		<li><a href="{t:prefix}/lg2/2x/affirm1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/affirm1}</a></li>
-		<li><a href="{t:prefix}/lg2/2x/affirm2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/affirm2}</a></li>
-		<li><a href="{t:prefix}/lg2/2x/deny1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny1}</a></li>
-		<li><a href="{t:prefix}/lg2/2x/deny2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny2}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg2/2x/part1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/part1}</a></li>
-		<li><a href="{t:prefix}/lg2/2x/part2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/part2}</a></li>
-
-		<li><br></li>
-		<li><a href="{t:prefix}/lg2/2x/obj1/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/obj1}</a></li>
-		<li><a href="{t:prefix}/lg2/2x/obj2/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/obj2}</a></li>
-	</ul>
 </div>
 <!-- Chapter 2.2 -->
 <div class="choice my-2 col-lg-6" id="l2.2">
@@ -172,9 +172,9 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/2.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/2/text}</a></li>
 	</ul>
 </div>
-<!-- Chapter 2.2x -->
-<div class="choice my-2 col-lg-6" id="l2.2x">
-	<h5 class="ch-item"><a href="{t:prefix}/lg2/2.2x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2-2x}</a></h5>
+<!-- Chapter 2x -->
+<div class="choice my-2 col-lg-6" id="l2x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/2x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/2x}</a></h5>
 	<ul class="list-unstyled ch-item">
 		<li><a href="{t:prefix}/lg2/2x/deny3/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny3}</a></li>
 		<li><a href="{t:prefix}/lg2/2x/deny4/"><i class="link-info bi bi-file-text"></i> {t:lg2/2x/deny4}</a></li>

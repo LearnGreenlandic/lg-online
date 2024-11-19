@@ -9,24 +9,24 @@ $GLOBALS['-ds'] = [
 	];
 
 $GLOBALS['-db-map'] = [
-	'affirm1' => '2-1-1x',
-	'affirm2' => '2-1-2x',
-	'deny1' => '2-1-3x',
-	'deny2' => '2-1-4x',
-	'part1' => '2-1-5x',
-	'part2' => '2-1-6x',
-	'obj1' => '2-1-7x',
-	'obj2' => '2-1-8x',
+	'affirm1' => '1-1x',
+	'affirm2' => '1-2x',
+	'deny1' => '1-3x',
+	'deny2' => '1-4x',
+	'part1' => '1-5x',
+	'part2' => '1-6x',
+	'obj1' => '1-7x',
+	'obj2' => '1-8x',
 
-	'deny3' => '2-2-1x',
-	'deny4' => '2-2-2x',
-	'that1' => '2-2-3x',
-	'indirect1' => '2-2-4x',
-	'lu1' => '2-2-5x',
-	'laar1' => '2-2-6x',
-	'laar2' => '2-2-7x',
-	//'una1' => '2-2-8x',
-	'niq1' => '2-2-8x',
+	'deny3' => '2-1x',
+	'deny4' => '2-2x',
+	'that1' => '2-3x',
+	'indirect1' => '2-4x',
+	'lu1' => '2-5x',
+	'laar1' => '2-6x',
+	'laar2' => '2-7x',
+	//'una1' => '2-8x',
+	'niq1' => '2-8x',
 
 	'review3' => '3-0x',
 	'fam1' => '3-1-1x',
@@ -960,7 +960,7 @@ function sentence_random_qa($root='lg1', $state, $chap='5x', $task='random') {
 				$ans[] = $all[$w[0]];
 			}
 		}
-		else if ($chap == '2x' && ($task == 'deny1' || $task == 'deny2' || $task == 'u3')) {
+		else if (($chap == '1x' || $chap == '2x') && ($task == 'deny1' || $task == 'deny2' || $task == 'u3')) {
 			$ans[] = 'Naamik,';
 			$inv = false;
 			foreach ($sent as $w) {

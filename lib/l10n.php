@@ -1025,102 +1025,102 @@ $l10n['eng']['lg2/structure/2.5/a'] = 'Exercise 2.5: Use contemporative as a sub
 $l10n['dan']['lg2/structure/2.5/text'] = 'Ledsagemåde kan ofte oversættes til dansk lang tillægsform som i \'Han kom løbende\'. Ledsagemåde bruges nemlig til at udtrykke biomstændigheder som i eksemplet, hvor udsagnet er at \'han kom\' og biomstændigheden at det foregik i løb. Brug ledsagemåden til at skrive følgende sætningssæt sammen til enkelte sætninger på den måde, at det er sidste verbum, der opfattes som hovedudsagnet.';
 $l10n['eng']['lg2/structure/2.5/text'] = 'Contemporative often translates as English ing-form as in <em>He came running (= He came and he ran)</em>. Contemporative is namely the mood we use to express secondary actions coming with the main statements as in the example where the primary message is that he came whereas his running is just a secondary message. Combine the following sentence pairs into single sentences letting the latter be the main message.';
 
-$l10n['dan']['lg2/2-1x'] = 'Introduktion til kapitel II-1 X-tras';
-$l10n['eng']['lg2/2-1x'] = 'Introduction to chapter II-1 X-tras';
+$l10n['dan']['lg2/1x'] = 'Introduktion til kapitel II-1 X-tras';
+$l10n['eng']['lg2/1x'] = 'Introduction to chapter II-1 X-tras';
 
-$l10n['dan']['lg2/2x/affirm1'] = 'Øvelse 2.1.1x: Bekræft spørgsmål';
-$l10n['eng']['lg2/2x/affirm1'] = 'Exercise 2.1.1x: Affirm questions';
-$l10n['dan']['lg2/2x/affirm1/text'] = 'Bekræft spørgsmålene og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, …</i></p>
+$l10n['dan']['lg2/1x/affirm1'] = 'Øvelse 1.1x: Bekræft spørgsmål';
+$l10n['eng']['lg2/1x/affirm1'] = 'Exercise 1.1x: Affirm questions';
+$l10n['dan']['lg2/1x/affirm1/text'] = 'Bekræft spørgsmålene og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpit?</i> (Havde du ellers ikke lyst til at give lyd fra dig igen i går på Landsbiblioteket?)<br>
 <i>Aap, Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpunga.</i> (Ja, jeg havde ellers ikke lyst til at give lyd fra mig igen i går på Landsbiblioteket.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/2x/affirm1/text'] = 'Answer affirmatively. Remember that if the question is negative, the answer much also be. Answer using <i>Aap, …</i></p>
+$l10n['eng']['lg2/1x/affirm1/text'] = 'Answer affirmatively. Remember that if the question is negative, the answer much also be. Answer using <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpit?</i> (You did not really want to make yourself heard yesterday at the National Library?)<br>
 <i>Aap, Ippassaq Nunatta Atuagaateqarfiani tutsiuteqqikkusunngikkaluarpunga.</i> (Yes, I did not really want to make myself heard yesterday at the National Library.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/affirm2'] = 'Øvelse 2.1.2x: Bekræft spørgsmål';
-$l10n['eng']['lg2/2x/affirm2'] = 'Exercise 2.1.2x: Affirm questions';
-$l10n['dan']['lg2/2x/affirm2/text'] = 'Bekræft spørgsmålene og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, …</i></p>
+$l10n['dan']['lg2/1x/affirm2'] = 'Øvelse 1.2x: Bekræft spørgsmål';
+$l10n['eng']['lg2/1x/affirm2'] = 'Exercise 1.2x: Affirm questions';
+$l10n['dan']['lg2/1x/affirm2/text'] = 'Bekræft spørgsmålene og husk, at hvis spørgsmålet er negativt, skal svaret også være det. Start svaret med <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Mødte du Arnannguaq i Maniitsoq i går?)<br>
 <i>Aap, Ippassaq Maniitsumi Arnannguaq naapippara.</i> (Ja, jeg mødte Arnannguaq i Maniitsoq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/2x/affirm2/text'] = 'Answer affirmatively. Remember that if the question is negative, the answer much also be. Answer using <i>Aap, …</i></p>
+$l10n['eng']['lg2/1x/affirm2/text'] = 'Answer affirmatively. Remember that if the question is negative, the answer much also be. Answer using <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Did you meet Arnannguaq in Maniitsoq yesterday?)<br>
 <i>Aap, Ippassaq Maniitsumi Arnannguaq naapippara.</i> (Yes, I met Arnannguaq in Maniitsoq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/deny1'] = 'Øvelse 2.1.3x: Benægt spørgsmål';
-$l10n['eng']['lg2/2x/deny1'] = 'Exercise 2.1.3x: Deny questions';
-$l10n['dan']['lg2/2x/deny1/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
+$l10n['dan']['lg2/1x/deny1'] = 'Øvelse 1.3x: Benægt spørgsmål';
+$l10n['eng']['lg2/1x/deny1'] = 'Exercise 1.3x: Deny questions';
+$l10n['dan']['lg2/1x/deny1/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
 <p>Ex:<br>
 <i>Ippassaq Ilisimatusarfimmi tiitorpit?</i> (Drak du te på Ilisimatusarfik i går?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitunngilanga.</i> (Nej, jeg drak ikke te på Ilisimatusarfik i går.)<br>
 <i>Ippassaq Ilisimatusarfimmi tiitunngilatit?</i> (Drak du ikke te på Ilisimatusarfik i går?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitorpunga.</i> (Nej, jeg drak te på Ilisimatusarfik i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/2x/deny1/text'] = 'Deny the questions. Start the answer with <i>Naamik, …</i>. Remember that if the question is negative, the answer much also be.</p>
+$l10n['eng']['lg2/1x/deny1/text'] = 'Deny the questions. Start the answer with <i>Naamik, …</i>. Remember that if the question is negative, the answer much also be.</p>
 <p>Ex:<br>
 <i>Ippassaq Ilisimatusarfimmi tiitorpit?</i> (Did you drink tea at Ilisimatusarfik yesterday?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitunngilanga.</i> (No, I did not drink tea at Ilisimatusarfik yesterday.)<br>
 <i>Ippassaq Ilisimatusarfimmi tiitunngilatit?</i> (Didn\'t you drink tea at Ilisimatusarfik yesterday?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitorpunga.</i> (No, I drank tea at Ilisimatusarfik yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/deny2'] = 'Øvelse 2.1.4x: Benægt spørgsmål';
-$l10n['eng']['lg2/2x/deny2'] = 'Exercise 2.1.4x: Deny questions';
-$l10n['dan']['lg2/2x/deny2/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
+$l10n['dan']['lg2/1x/deny2'] = 'Øvelse 1.4x: Benægt spørgsmål';
+$l10n['eng']['lg2/1x/deny2'] = 'Exercise 1.4x: Deny questions';
+$l10n['dan']['lg2/1x/deny2/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
 <p>Ex:<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Mødte du Arnannnguaq i Maniitsoq i går?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapinngilara.</i> (Nej, jeg mødte ikke Arnannguaq i Maniitsoq i går.)<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapinngiliuk?</i> (Mødte du ikke Arnannnguaq i Maniitsoq i går?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapippara.</i> (Nej, jeg mødte Arnannguaq i Maniitsoq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/2x/deny2/text'] = 'Deny the questions. Start the answer with <i>Naamik, …</i>. Remember that if the question is negative, the answer much also be.</p>
+$l10n['eng']['lg2/1x/deny2/text'] = 'Deny the questions. Start the answer with <i>Naamik, …</i>. Remember that if the question is negative, the answer much also be.</p>
 <p>Ex:<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Did you meet Arnannnguaq in Maniitsoq yesterday?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapinngilara.</i> (No, I did not meet Arnannguaq in Maniitsoq yesterday.)<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapinngiliuk?</i> (Didn\'t you meet Arnannnguaq in Maniitsoq yesterday?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapippara.</i> (No, I met Arnannguaq in Maniitsoq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/part1'] = 'Øvelse 2.1.5x: Øv participium (tekst)';
-$l10n['eng']['lg2/2x/part1'] = 'Exercise 2.1.5x: Practice participle (text)';
-$l10n['dan']['lg2/2x/part1/text'] = 'Forstå og gentag.</p>
+$l10n['dan']['lg2/1x/part1'] = 'Øvelse 1.5x: Øv participium (tekst)';
+$l10n['eng']['lg2/1x/part1'] = 'Exercise 1.5x: Practice participle (text)';
+$l10n['dan']['lg2/1x/part1/text'] = 'Forstå og gentag.</p>
 <p>Ex:<br>
 <i>Nalunngilara illit pisiniarfimmi sulisartutit.</i> (Jeg ved, at du arbejder i butikken.)<br>
 <i>Isumaqarpunga Nuka Ilisimatusarfimmi sulerusukkaluartoq.</i> (Jeg tror, at Nuka ellers gerne vil arbejde på Ilisimatusarfik.)<br>
 <i>Eqqaamaviuk uanga Pituffimmi sulissasunga?</i> (Husker du, at jeg skal arbejde i Pituffik?)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
-$l10n['eng']['lg2/2x/part1/text'] = 'Comprehend and repeat.</p>
+$l10n['eng']['lg2/1x/part1/text'] = 'Comprehend and repeat.</p>
 <p>Ex:<br>
 <i>Nalunngilara illit pisiniarfimmi sulisartutit.</i> (I know that you work at the store.)<br>
 <i>Isumaqarpunga Nuka Ilisimatusarfimmi sulerusukkaluartoq.</i> (I think Nuka wants to work at Ilisimatusarfik.)<br>
 <i>Eqqaamaviuk uanga Pituffimmi sulissasunga?</i> (Do you remember that I work at Pituffik?)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2x/part2'] = 'Øvelse 2.1.6x: Øv participium (audio)';
-$l10n['eng']['lg2/2x/part2'] = 'Exercise 2.1.6x: Practice participle (audio)';
-$l10n['dan']['lg2/2x/part2/text'] = 'Besvar spørgsmålet positivt. Start svaret med <i>Aap, …</i></p>
+$l10n['dan']['lg2/1x/part2'] = 'Øvelse 1.6x: Øv participium (audio)';
+$l10n['eng']['lg2/1x/part2'] = 'Exercise 1.6x: Practice participle (audio)';
+$l10n['dan']['lg2/1x/part2/text'] = 'Besvar spørgsmålet positivt. Start svaret med <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Nalunngiliuk uanga pisiniarfimmi sulisartunga?</i> (Ved du, at jeg arbejder i butikken?)<br>
 <i>Aap, nalunngilara illit pisiniarfimmi sulisartutit.</i> (Ja, jeg ved, at du arbejder i butikken.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/2x/part2/text'] = 'Answer the question positively. Begin the answer with <i>Aap, …</i></p>
+$l10n['eng']['lg2/1x/part2/text'] = 'Answer the question positively. Begin the answer with <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Nalunngiliuk uanga pisiniarfimmi sulisartunga?</i> (Do you know that I work at the store?)<br>
 <i>Aap, nalunngilara illit pisiniarfimmi sulisartutit.</i> (Yes, I know you work at the store.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/obj1'] = 'Øvelse 2.1.7x: Bestemt/ubestemt objekt';
-$l10n['eng']['lg2/2x/obj1'] = 'Exercise 2.1.7x: Definite/indefinite object';
-$l10n['dan']['lg2/2x/obj1/text'] = 'Et direkte objekt udtrykker bestemt form medens strukturen TAQ+QAR er en almindelig måde at udtrykke ubestemte objekter. Her kommer et antal sætningspar med hhv. bestemt og ubestemt "objekt". Lyt og tænk dem rigtigt godt igennem. Når du er sikker på, at du har forstået begge strukturer helt, skal du - og dette er vigtigt! - gentage hele sætningen højt.</p>
+$l10n['dan']['lg2/1x/obj1'] = 'Øvelse 1.7x: Bestemt/ubestemt objekt';
+$l10n['eng']['lg2/1x/obj1'] = 'Exercise 1.7x: Definite/indefinite object';
+$l10n['dan']['lg2/1x/obj1/text'] = 'Et direkte objekt udtrykker bestemt form medens strukturen TAQ+QAR er en almindelig måde at udtrykke ubestemte objekter. Her kommer et antal sætningspar med hhv. bestemt og ubestemt "objekt". Lyt og tænk dem rigtigt godt igennem. Når du er sikker på, at du har forstået begge strukturer helt, skal du - og dette er vigtigt! - gentage hele sætningen højt.</p>
 <p>Ex:<br>
 <i>Ilinniartitsisoq asavara.</i> (Jeg elsker læreren.)<br>
 <i>Ilinniartitsisumik asasaqarpunga.</i> (Jeg elsker en lærer.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
-$l10n['eng']['lg2/2x/obj1/text'] = 'A direct object expresses definiteness, while the structure TAQ+QAR is a common way to express indefinite objects. Here are some sentence pairs with definite and indefinite object. Listen and ponder them thoroughly. When you are certain you have understood both structures, you should - and this is important! - repeat the whole sentence aloud.</p>
+$l10n['eng']['lg2/1x/obj1/text'] = 'A direct object expresses definiteness, while the structure TAQ+QAR is a common way to express indefinite objects. Here are some sentence pairs with definite and indefinite object. Listen and ponder them thoroughly. When you are certain you have understood both structures, you should - and this is important! - repeat the whole sentence aloud.</p>
 <p>Ex:<br>
 <i>Ilinniartitsisoq asavara.</i> (I love the teacher.)<br>
 <i>Ilinniartitsisumik asasaqarpunga.</i> (I love a teacher.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2x/obj2'] = 'Øvelse 2.1.8x: Ubestemt "nogen/nogle"';
-$l10n['eng']['lg2/2x/obj2'] = 'Exercise 2.1.8x: Indefinite "someone"';
-$l10n['dan']['lg2/2x/obj2/text'] = 'Forstå og gentag. TAQ+QAR er en meget frekvent måde at udtrykke det ubestemte "nogen/nogle".</p>
+$l10n['dan']['lg2/1x/obj2'] = 'Øvelse 1.8x: Ubestemt "nogen/nogle"';
+$l10n['eng']['lg2/1x/obj2'] = 'Exercise 1.8x: Indefinite "someone"';
+$l10n['dan']['lg2/1x/obj2/text'] = 'Forstå og gentag. TAQ+QAR er en meget frekvent måde at udtrykke det ubestemte "nogen/nogle".</p>
 <p>Ex:<br>
 <i>Nuummi asasaqarpunga.</i> (Jeg elsker nogen i Nuuk / Jeg har en kæreste i Nuuk.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
-$l10n['eng']['lg2/2x/obj2/text'] = 'Comprehend and repeat. TAQ+QAR is a common way to express the indefinite "someone".</p>
+$l10n['eng']['lg2/1x/obj2/text'] = 'Comprehend and repeat. TAQ+QAR is a common way to express the indefinite "someone".</p>
 <p>Ex:<br>
 <i>Nuummi asasaqarpunga.</i> (I love someone in Nuuk / I have a significant other in Nuuk.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2-2x'] = 'Introduktion til kapitel II-2 X-tras';
-$l10n['eng']['lg2/2-2x'] = 'Introduction to chapter II-2 X-tras';
+$l10n['dan']['lg2/2x'] = 'Introduktion til kapitel II-2 X-tras';
+$l10n['eng']['lg2/2x'] = 'Introduction to chapter II-2 X-tras';
 
-$l10n['dan']['lg2/2x/deny3'] = 'Øvelse 2.2.1x: Benægt spørgsmål (udvidet)';
-$l10n['eng']['lg2/2x/deny3'] = 'Exercise 2.2.1x: Deny questions (extended)';
+$l10n['dan']['lg2/2x/deny3'] = 'Øvelse 2.1x: Benægt spørgsmål (udvidet)';
+$l10n['eng']['lg2/2x/deny3'] = 'Exercise 2.1x: Deny questions (extended)';
 $l10n['dan']['lg2/2x/deny3/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
 <p>Ex:<br>
 <i>Ippassaq Ilisimatusarfimmi tiitorpit?</i> (Drak du te på Ilisimatusarfik i går?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitunngilanga.</i> (Nej, jeg drak ikke te på Ilisimatusarfik i går.)<br>
@@ -1130,8 +1130,8 @@ $l10n['eng']['lg2/2x/deny3/text'] = 'Deny the questions. Start the answer with <
 <i>Ippassaq Ilisimatusarfimmi tiitorpit?</i> (Did you drink tea at Ilisimatusarfik yesterday?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitunngilanga.</i> (No, I did not drink tea at Ilisimatusarfik yesterday.)<br>
 <i>Ippassaq Ilisimatusarfimmi tiitunngilatit?</i> (Didn\'t you drink tea at Ilisimatusarfik yesterday?) - <i>Naamik, ippassaq Ilisimatusarfimmi tiitorpunga.</i> (No, I drank tea at Ilisimatusarfik yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/deny4'] = 'Øvelse 2.2.2x: Benægt spørgsmål (udvidet)';
-$l10n['eng']['lg2/2x/deny4'] = 'Exercise 2.2.2x: Deny questions (extended)';
+$l10n['dan']['lg2/2x/deny4'] = 'Øvelse 2.2x: Benægt spørgsmål (udvidet)';
+$l10n['eng']['lg2/2x/deny4'] = 'Exercise 2.2x: Deny questions (extended)';
 $l10n['dan']['lg2/2x/deny4/text'] = 'Benægt spørgsmålene. Start svaret med <i>Naamik, …</i>. Husk at du nødvendigvis må svare affirmativt hvis du skal benægte et negativt spørgsmål.</p>
 <p>Ex:<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Mødte du Arnannnguaq i Maniitsoq i går?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapinngilara.</i> (Nej, jeg mødte ikke Arnannguaq i Maniitsoq i går.)<br>
@@ -1141,8 +1141,8 @@ $l10n['eng']['lg2/2x/deny4/text'] = 'Deny the questions. Start the answer with <
 <i>Ippassaq Maniitsumi Arnannguaq naapippiuk?</i> (Did you meet Arnannnguaq in Maniitsoq yesterday?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapinngilara.</i> (No, I did not meet Arnannguaq in Maniitsoq yesterday.)<br>
 <i>Ippassaq Maniitsumi Arnannguaq naapinngiliuk?</i> (Didn\'t you meet Arnannnguaq in Maniitsoq yesterday?) - <i>Naamik, ippassaq Maniitsumi Arnannguaq naapippara.</i> (No, I met Arnannguaq in Maniitsoq yesterday.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/that1'] = 'Øvelse 2.2.3x: at-sætninger med samme subjekt';
-$l10n['eng']['lg2/2x/that1'] = 'Exercise 2.2.3x: that-sentences with same subject'; // TODO: Not good English
+$l10n['dan']['lg2/2x/that1'] = 'Øvelse 2.3x: at-sætninger med samme subjekt';
+$l10n['eng']['lg2/2x/that1'] = 'Exercise 2.3x: that-sentences with same subject'; // TODO: Not good English
 $l10n['dan']['lg2/2x/that1/text'] = 'at-sætninger med samme subjekt i at-sætningen og den anførende sætning. Forstå og gentag følgende sætninger.</p>
 <p>Ex:<br>
 <i>Isumaqaraluarpunga aasaru Nuummut aallassallunga.</i> (Jeg troede ellers, at jeg skulle rejse til Nuuk til sommer.)<br>
@@ -1156,8 +1156,8 @@ $l10n['eng']['lg2/2x/that1/text'] = 'TODO MISSING TRANSLATION. Comprehend and re
 <i>Eqqaamasariaqarpara aqagu Aasianni whiskylerissallunga.</i> (I must remember that I need to take care of whisky in Aasiaat tomorrow.)<br>
 <i>Isumaqarpunga aqagu Aputsiami qarasaasiaq sammisarissallugu.</i> (I think that I will be busy with the computer at Aputsiaq\'s tomorrow.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2x/indirect1'] = 'Øvelse 2.2.4x: Oratio obliqua';
-$l10n['eng']['lg2/2x/indirect1'] = 'Exercise 2.2.4x: Oratio obliqua';
+$l10n['dan']['lg2/2x/indirect1'] = 'Øvelse 2.4x: Oratio obliqua';
+$l10n['eng']['lg2/2x/indirect1'] = 'Exercise 2.4x: Oratio obliqua';
 $l10n['dan']['lg2/2x/indirect1/text'] = 'Oratio obliqua <lg-fn>1</lg-fn> med hhv. co-referentielt subjekt og non-co-referentielt subjekt. Forstå og gentag følgende sætninger. <lg-fn-def n="1">indirekte tale</lg-fn-def></p>
 <p>NB: Undlad at tage let på kravet om gentagelse. Gentag SAMTLIGE eksempler til du kan gøre det nogenlunde ubesværet og højt og tydeligt.</p>
 <p>Ex:<br>
@@ -1169,8 +1169,8 @@ $l10n['eng']['lg2/2x/indirect1/text'] = 'Oratio obliqua <lg-fn>1</lg-fn> with re
 <i>Isumaqarpunga aqagu Nuummut aallassallunga.</i> (I think that I am going to Nuuk tomorrow.)<br>
 <i>Isumaqarpunga Nuka aqagu Nuummut aallassasoq.</i> (I think that Nuka is going to Nuuk tomorrow.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2x/lu1'] = 'Øvelse 2.2.5x: Sammensæt med LU';
-$l10n['eng']['lg2/2x/lu1'] = 'Exercise 2.2.5x: Combine with LU';
+$l10n['dan']['lg2/2x/lu1'] = 'Øvelse 2.5x: Sammensæt med LU';
+$l10n['eng']['lg2/2x/lu1'] = 'Exercise 2.5x: Combine with LU';
 $l10n['dan']['lg2/2x/lu1/text'] = 'Du får to hovedsætninger. Sæt dem sammen til en parataktisk sætning med LU.</p>
 <p>Ex:<br>
 <i>Sisimiuni illoqarpunga. Sisimiunut nuuttariaqarpunga.</i> (Jeg har hus i Sisimiut. Jeg er nødt til at flytte til Sisimiut.) =&gt; <i>Sisimiuni illoqarpunga Sisimiunullu nuuttariaqarlunga.</i> (Jeg har hus i Sisimiut og er nødt til at flytte til Sisimiut.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1178,8 +1178,8 @@ $l10n['eng']['lg2/2x/lu1/text'] = 'You will be given two main sentences. Combine
 <p>Ex:<br>
 <i>Sisimiuni illoqarpunga. Sisimiunut nuuttariaqarpunga.</i> (I have a house in Sisimiut. I need to move to Sisimiut.) =&gt; <i>Sisimiuni illoqarpunga Sisimiunullu nuuttariaqarlunga.</i> (I have a house in Sisimiut and need to move to Sisimiut.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/laar1'] = 'Øvelse 2.2.6x: Øv LAAR';
-$l10n['eng']['lg2/2x/laar1'] = 'Exercise 2.2.6x: Practice LAAR';
+$l10n['dan']['lg2/2x/laar1'] = 'Øvelse 2.6x: Øv LAAR';
+$l10n['eng']['lg2/2x/laar1'] = 'Exercise 2.6x: Practice LAAR';
 $l10n['dan']['lg2/2x/laar1/text'] = 'Besvar spørgsmålene modificeret positivt ved at tilføje LAAR.</p>
 <p>Ex:<br>
 <i>Nuka ilinniartikkusuppiuk?</i> (Vil du gerne undervise Nuka?) =&gt; <i>Nuka ilinniartilaarusuppara.</i> (Jeg vil gerne undervise Nuka lidt.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1187,8 +1187,8 @@ $l10n['eng']['lg2/2x/laar1/text'] = 'Answer the questions with a positive spin b
 <p>Ex:<br>
 <i>Nuka ilinniartikkusuppiuk?</i> (Do you want to teach Nuka?) =&gt; <i>Nuka ilinniartilaarusuppara.</i> (I want to teach Nuka a bit.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/2x/laar2'] = 'Øvelse 2.2.7x: Øv LAAR+NNGIT';
-$l10n['eng']['lg2/2x/laar2'] = 'Exercise 2.2.7x: Practice LAAR+NNGIT';
+$l10n['dan']['lg2/2x/laar2'] = 'Øvelse 2.7x: Øv LAAR+NNGIT';
+$l10n['eng']['lg2/2x/laar2'] = 'Exercise 2.7x: Practice LAAR+NNGIT';
 $l10n['dan']['lg2/2x/laar2/text'] = 'Benægt spørgsmålet og understreg benægtelsen af følgende ved hjælp af LAAR=NNGIT, som bl.a. udtrykker begrebet "overhovedet ikke".</p>
 <p>Ex:<br>
 <i>Arnannguaq naapippiuk??</i> (Har du mødt Arnannguaq?) =&gt; <i>Naamik, Arnannguaq naapilaanngilara.</i> (Nej, jeg har overhovedet ikke mødt Arnannguaq.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1197,8 +1197,8 @@ $l10n['eng']['lg2/2x/laar2/text'] = 'Deny the question, and emphasize the answer
 <i>Arnannguaq naapippiuk??</i> (Have you met Arnannguaq?) =&gt; <i>Naamik, Arnannguaq naapilaanngilara.</i> (No, I have definitely not met Arnannguaq.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 /*
-$l10n['dan']['lg2/2x/una1'] = 'Øvelse 2.2.8x: Øv UNA';
-$l10n['eng']['lg2/2x/una1'] = 'Exercise 2.2.8x: Practice UNA';
+$l10n['dan']['lg2/2x/una1'] = 'Øvelse 2.8x: Øv UNA';
+$l10n['eng']['lg2/2x/una1'] = 'Exercise 2.8x: Practice UNA';
 $l10n['dan']['lg2/2x/una1/text'] = 'Øv en af flere konstruktioner med tilhængspartiklen UNA. Forstå og gentag.</p>
 <p>Ex:<br>
 <i>Qallunaaruna tutsiuteqqittoq!</i> (Det var ham der danskeren, der lod høre fra sig igen!)<br>
@@ -1209,8 +1209,8 @@ $l10n['eng']['lg2/2x/una1/text'] = 'Practice one of the multiple constructions w
 <i>Ilinniartitsisoraana oqaluttuartoq!</i> (It was my teacher who narrated!)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 //*/
 
-$l10n['dan']['lg2/2x/niq1'] = 'Øvelse 2.2.8x: Øv NIQ';
-$l10n['eng']['lg2/2x/niq1'] = 'Exercise 2.2.8x: Practice NIQ';
+$l10n['dan']['lg2/2x/niq1'] = 'Øvelse 2.8x: Øv NIQ';
+$l10n['eng']['lg2/2x/niq1'] = 'Exercise 2.8x: Practice NIQ';
 $l10n['dan']['lg2/2x/niq1/text'] = 'Øv det abstrakte nomen, NIQ. Forstå og gentag sætningen og omsæt den til formen "Jeg refererer til min &lt;<i>det forhold, som er udtrykt i verbet</i>&gt;". Tilføj pronominet <i>taanna</i> for at gøre den nye sætning lidt mere mundret.</p>
 <p>Ex:<br>
 <i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (Jeg ville ellers gerne arbejde på Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkaluarnera taanna pivara.</i> (Jeg refererer til den lyst, jeg ellers havde til at arbejde på Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
@@ -1218,10 +1218,10 @@ $l10n['eng']['lg2/2x/niq1/text'] = 'Practice the abstract noun NIQ. Comprehend a
 <p>Ex:<br>
 <i>Ilisimatusarfimmi sulerusukkaluarpunga.</i> (I would have liked to work at Ilisimatusarfik.) =&gt; <i>Ilisimatusarfimmi sulerusukkarluarnera taanna pivara.</i> (I\'m referring to the desire I had for working at Ilisimatusarfik.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
-$l10n['dan']['lg2/2x/lik1'] = 'Øvelse 2.2.9x: Øv LIK';
-$l10n['eng']['lg2/2x/lik1'] = 'Exercise 2.2.9x: Practice LIK';
-$l10n['dan']['lg2/2x/lik1/text'] = 'Tilhænget LIK giver ofte anledning til en del misforståelser, så det vil vi ofre lidt opmærksomhed nu. Vend derfor tilbage til <a href="../../2.2x/#lik1">Introduktion til øvelserne 2-2X</a> og arbejd igennem øvelsen nederst i introduktionen og brug derefter den tid, det tager at forstå den lille sætning fra Sørine Steenholdts roman. Gør det helst sammen med din studiekammerat.';
-$l10n['eng']['lg2/2x/lik1/text'] = 'As the derivational morpheme LIK is often the source of misunderstandings, we will turn our attention there now. Return to <a href="../../2.2x/#lik1">Introduction to chapter 2-2 X-tras</a> and work through the exercise at the bottom of the introduction. After that, spend the requisite time it takes to understandt the short sentence from Sørine Steenholdt\'s novel. Ideally, you should do all this with a study partner.';
+$l10n['dan']['lg2/2x/lik1'] = 'Øvelse 2.9x: Øv LIK';
+$l10n['eng']['lg2/2x/lik1'] = 'Exercise 2.9x: Practice LIK';
+$l10n['dan']['lg2/2x/lik1/text'] = 'Tilhænget LIK giver ofte anledning til en del misforståelser, så det vil vi ofre lidt opmærksomhed nu. Vend derfor tilbage til <a href="../../2x/#lik1">Introduktion til øvelserne II-2X</a> og arbejd igennem øvelsen nederst i introduktionen og brug derefter den tid, det tager at forstå den lille sætning fra Sørine Steenholdts roman. Gør det helst sammen med din studiekammerat.';
+$l10n['eng']['lg2/2x/lik1/text'] = 'As the derivational morpheme LIK is often the source of misunderstandings, we will turn our attention there now. Return to <a href="../../2x/#lik1">Introduction to chapter II-2 X-tras</a> and work through the exercise at the bottom of the introduction. After that, spend the requisite time it takes to understandt the short sentence from Sørine Steenholdt\'s novel. Ideally, you should do all this with a study partner.';
 
 $l10n['dan']['lg2/3x'] = 'Introduktion til kapitel II-3 X-tras';
 $l10n['eng']['lg2/3x'] = 'Introduction to chapter II-3 X-tras';
