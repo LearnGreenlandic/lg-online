@@ -1308,6 +1308,40 @@ $l10n['dan']['lg2/3x/summer4/text'] = 'Variation til 3.7.1X med subjekt i plural
 <i>Angutit eqqaamavaat Arnannguaq aqagu Nuummut aallassasoq?</i> (Husker mændene, at Arnannguaq rejser til Nuuk i morgen?) =&gt; <i>Naluara. Angutit oqarput Arnannguaq aatsaat aasaru Nuummut aallassasoq.</i> (Det ved jeg ikke. Mændene siger, at Arnannguaq først rejser til Nuuk til sommer.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/3x/summer4/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg2/4x'] = 'Introduktion til kapitel II-4 X-tras';
+$l10n['eng']['lg2/4x'] = 'Introduction to chapter II-4 X-tras';
+
+$l10n['dan']['lg2/4x/review4'] = 'Øvelse 4.0x: Konsolidering';
+$l10n['eng']['lg2/4x/review4'] = 'Exercise 4.0x: Consolidating';
+$l10n['dan']['lg2/4x/review4/text'] = 'Konsolideringsøvelse. Øvelsen træner gloser, endelser og tilhængskombinationer ved hjælp af syntaktisk ukomplicerede sætninger, der kommer rundt om så vidt muligt alt, kendt leksikon. Aflyt og slå evt. op til du forstår sætningen og gentag den så højt. Bliv ved med at gøre det til du faktisk kan udtale hele sætningen uden at snuble.</p>
+<p>Ex:<br>
+<i>Ullumi uanga ilissi pisiniarfimmi takussagaluarpassi.</i> (Jeg skulle ellers se jer i butikken i dag.)<br>
+<i>Qallunaarpassuit mittarfimmut taamani ataasinnguartoriartunngillat.</i> (Mange danskere tog ikke til lufthavnen for at få en lille en dengang.)<br>
+<i>Ilinniarnertuunngorniarfinnguamit angerlarniartarpugut.</i> (Vi prøver at komme hjem fra det lille gymnasium.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/4x/review4/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/4x/so1'] = 'Øvelse 4.1x: Partner ja';
+$l10n['eng']['lg2/4x/so1'] = 'Exercise 4.1x: Significant other yes';
+$l10n['dan']['lg2/4x/so1/text'] = 'Træn N+GƏ. Sig JA til alle spørgsmål, der giver mening, men undlad at besvare spørgsmål, der er uforenelige med dit faktiske køn (hvis du altså er en mand og spørgsmålet vedrører en <i>aqqalu</i> eller <i>ani</i> skal du bare gå videre ligesom du, hvis du er en kvinde, skal springe over spørgsmål der vedrører <i>aleqa</i> eller <i>naja</i>. Ved spørgsmål om <i>ui</i> eller <i>nuliaq</i> er det op til dit eget livssyn, om du vil svare eller springe over!)</p>
+<p>Ex:<br>
+<i>Arnannguaq nuliariviuk?</i> (Er Arnannguaq din kone?) =&gt; <i>Aap, Arnannguaq nuliarivara.</i> (Ja, Arnannguaq er min kone.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/4x/so1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/4x/so2'] = 'Øvelse 4.2x: Partner nej';
+$l10n['eng']['lg2/4x/so2'] = 'Exercise 4.2x: Significant other no';
+$l10n['dan']['lg2/4x/so2/text'] = 'Som II 4-1X men denne gang benægter du alle spørgsmål. Undlad igen at besvare spørgsmål, der er uforenelige med dit faktiske køn.</p>
+<p>Ex:<br>
+<i>Arnannguaq nuliariviuk?</i> (Er Arnannguaq din kone?) =&gt; <i>Naamik, Arnannguaq nuliarinngilara.</i> (Nej, Arnannguaq er ikke min kone.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/4x/so2/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/4x/so3'] = 'Øvelse 4.3x: Fokus på N+GƏ';
+$l10n['eng']['lg2/4x/so3'] = 'Exercise 4.3x: Focus on N+GƏ';
+$l10n['dan']['lg2/4x/so3/text'] = 'Lidt mere fokus på N+GƏ. Aflyt de følgende spørgsmål til du har forstået dem til bunds og besvar dem så positivt.</p>
+<p>Ex:<br>
+<i>Arnannguup Nuummiu manna uigivaa?</i> (Er denne her Nuuk-fyr Arnannguaqs mand?) =&gt; <i>Aap, Arnannguup Nuummiu manna uigivaa.</i> (Ja, Nuuk-fyren her er Arnannguaqs mand.)<br>
+<i>Arnannguup Nuummiu taanna uiginngilaa?</i> (Er ham der Nuuk-fyren ikke Arnannguaqs mand?) =&gt; <i>Aap, Arnannguup Nuummiu taanna uiginngilaa.</i> (Nej, ham der Nuuk-fyren er ikke Arnannguaqs mand.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/4x/so3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';

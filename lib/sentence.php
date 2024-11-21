@@ -39,6 +39,11 @@ $GLOBALS['-db-map'] = [
 	'affirm4' => '3-6x',
 	'summer3' => '3-7-1x',
 	'summer4' => '3-7-2x',
+
+	'review4' => '4-0x',
+	'so1' => '4-1x',
+	'so2' => '4-2x',
+	'so3' => '4-3x',
 ];
 
 function pfx_fname(string $str): array {
@@ -1653,10 +1658,10 @@ function sentence_lg2($state, $chap, $task) {
 	if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
 		\LGO\sentence_random_read('lg2', $state, $chap, $task);
 	}
-	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review3|cntp1)$~', $task)) {
+	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review\d|cntp1)$~', $task)) {
 		\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
 	}
-	else if (($chap == '1x' || $chap == '2x' || $chap == '3x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d)$~', $task)) {
+	else if (($chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d|so\d)$~', $task)) {
 		\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 	}
 	else if ($task == 'lik1') {
