@@ -1342,6 +1342,22 @@ $l10n['dan']['lg2/4x/so3/text'] = 'Lidt mere fokus på N+GƏ. Aflyt de følgende
 <i>Arnannguup Nuummiu taanna uiginngilaa?</i> (Er ham der Nuuk-fyren ikke Arnannguaqs mand?) =&gt; <i>Aap, Arnannguup Nuummiu taanna uiginngilaa.</i> (Nej, ham der Nuuk-fyren er ikke Arnannguaqs mand.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/4x/so3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg2/4x/so4'] = 'Øvelse 4.4x: Contemporativ N+GƏ';
+$l10n['eng']['lg2/4x/so4'] = 'Exercise 4.4x: Contemporative N+GƏ';
+$l10n['dan']['lg2/4x/so4/text'] = 'I får her en ekstra øvelse med N+GƏ brugt i contemporativ. I får et udsagn af typen "Subjektet er objektets N". Omsæt udsagnet til "Subjektet siger, at objektet er hons N". Husk den helt specielle regel, at positiv contemporativ har varianten {lu} i stedet for sædvanlig {(l)lu} efter ǝ og at ǝ i netop denne situation bliver til /a/ og ikke forventet /i/. Altså bliver suli-QATƏ+GƏ+Cont+3SgO (havende hom som kollega) IKKE *suleqatigillugu, men <i>suleqatigalugu</i>.</p>
+<p>Ex:<br>
+<i>Malik uigivara.</i> (Malik er min mand.) =&gt; <i>Oqarpunga Malik uigalugu.</i> (Jeg siger, at Malik er min mand.)<br>
+<i>Aviaajap Arnannguaq angajorivaa.</i> (Arnannguaq er Aviaajas storesøster.) =&gt; <i>Aviaaja oqarpoq Arnannguaq angajoralugu.</i> (Aviaaja siger, at Arnannguaq er hendes storesøster.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/4x/so4/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/4x/so5'] = 'Øvelse 4.5x: Nægtet contemporativ N+GƏ';
+$l10n['eng']['lg2/4x/so5'] = 'Exercise 4.5x: Negated contemporative N+GƏ';
+$l10n['dan']['lg2/4x/so5/text'] = 'Næsten som øvelse II-4-4X, men denne gang med N+GƏ benægtet. I får et udsagn af typen "Subjektet er ikke objektets N". Omsæt udsagnet til "Subjektet siger, at objektet ikke er hons N".</p>
+<p>Ex:<br>
+<i>Aviaaja nuliarinngilara.</i> (Aviaaja er ikke min kone.) =&gt; <i>Oqarpunga Aviaaja nuliarinagu.</i> (Jeg siger, at Aviaaja ikke er min kone.)<br>
+<i>Arnannguup Malik uiginngilaa.</i> (Malik er ikke Arnannguaqs mand.) =&gt; <i>Arnannguaq oqarpoq Malik uiginagu.</i> (Arnannguaq siger, at Maik ikke er hendes mand.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/4x/so5/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';

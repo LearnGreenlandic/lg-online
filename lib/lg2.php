@@ -305,6 +305,8 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/4x/so1/"><i class="link-info bi bi-file-text"></i> {t:lg2/4x/so1}</a></li>
 		<li><a href="{t:prefix}/lg2/4x/so2/"><i class="link-info bi bi-file-text"></i> {t:lg2/4x/so2}</a></li>
 		<li><a href="{t:prefix}/lg2/4x/so3/"><i class="link-info bi bi-file-text"></i> {t:lg2/4x/so3}</a></li>
+		<li><a href="{t:prefix}/lg2/4x/so4/"><i class="link-info bi bi-file-text"></i> {t:lg2/4x/so4}</a></li>
+		<li><a href="{t:prefix}/lg2/4x/so5/"><i class="link-info bi bi-file-text"></i> {t:lg2/4x/so5}</a></li>
 	</ul>
 </div>
 <!-- Chapter 5 -->

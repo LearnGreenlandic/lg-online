@@ -44,6 +44,8 @@ $GLOBALS['-db-map'] = [
 	'so1' => '4-1x',
 	'so2' => '4-2x',
 	'so3' => '4-3x',
+	'so4' => '4-4x',
+	'so5' => '4-5x',
 ];
 
 function pfx_fname(string $str): array {
