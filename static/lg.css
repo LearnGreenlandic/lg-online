@@ -176,6 +176,14 @@ a {
 	font-size: 0.6em;
 }
 
+.table {
+	width: auto;
+}
+.center-table {
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .center-table th, .center-table td {
 	text-align: center;
 }
