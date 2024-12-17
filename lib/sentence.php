@@ -46,6 +46,10 @@ $GLOBALS['-db-map'] = [
 	'so3' => '4-3x',
 	'so4' => '4-4x',
 	'so5' => '4-5x',
+
+	'review50' => '5-0x',
+	'review51' => '5-1x',
+	'review52' => '5-2x',
 ];
 
 function pfx_fname(string $str): array {
@@ -1660,7 +1664,7 @@ function sentence_lg2($state, $chap, $task) {
 	if ($task === 'food' || $task === 'food2' || $task === 'cr' || $task === 'pr' || $task === 'dr' || $task === 'name') {
 		\LGO\sentence_random_read('lg2', $state, $chap, $task);
 	}
-	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review\d|cntp1)$~', $task)) {
+	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review\d+|cntp1)$~', $task)) {
 		\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
 	}
 	else if (($chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d|so\d)$~', $task)) {

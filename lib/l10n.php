@@ -1358,6 +1358,33 @@ $l10n['dan']['lg2/4x/so5/text'] = 'Næsten som øvelse II-4-4X, men denne gang m
 <i>Arnannguup Malik uiginngilaa.</i> (Malik er ikke Arnannguaqs mand.) =&gt; <i>Arnannguaq oqarpoq Malik uiginagu.</i> (Arnannguaq siger, at Maik ikke er hendes mand.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/4x/so5/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg2/5x'] = 'Introduktion til kapitel II-5 X-tras';
+$l10n['eng']['lg2/5x'] = 'Introduction to chapter II-5 X-tras';
+
+$l10n['dan']['lg2/5x/review50'] = 'Øvelse 5.0x: Konsolidering (intransitiv)';
+$l10n['eng']['lg2/5x/review50'] = 'Exercise 5.0x: Consolidating (intransitive)';
+$l10n['dan']['lg2/5x/review50/text'] = 'Konsolideringsøvelse med intransitive verber. Øvelsen træner gloser, endelser og tilhængskombinationer ved hjælp af syntaktisk ukomplicerede sætninger, der kommer rundt om så vidt muligt alt, kendt leksikon. Aflyt og slå evt. op til du forstår sætningen og gentag den så højt. Bliv ved med at gøre det til du faktisk kan udtale hele sætningen uden at snuble. Husk at du kan få hjælp til forståelsen fx på <a href="https://nutserut.gl/gloss" target="_gloss">https://nutserut.gl/gloss</a></p>
+<p>Ex:<br>
+<i>Aviaaja Sisimiormiuuvoq. Illunnguaqarluni suli Sisimiuni najugaqarpoq.</i> (Aviaaja er fra Sisimiut. Havende et lille hus bor hun stadig i Sisimiut.)<br>
+<i>Narsarmiuunngikkaluarpunga. Kisiannni Narsarmiumik nuliaqarlunga Narsami najugaqarpunga.</i> (Jeg er ellers ikke fra Narsaq. Men med en kone, som er fra Narsaq, bor jeg i Narsaq.)<br>
+<i>Uissara Nuummiuuvoq. Pisiniarfimmi sulilluni Nuummi najugaqarpoq.</i> (Min forlovede er fra Nuuk. Arbejdende i butikken bor han i Nuuk.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/5x/review50/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/5x/review51'] = 'Øvelse 5.1x: Konsolidering (transitive personer)';
+$l10n['eng']['lg2/5x/review51'] = 'Exercise 5.1x: Consolidating (transitive persons)';
+$l10n['dan']['lg2/5x/review51/text'] = 'Konsolideringsøvelse med transitive verber med personobjekter.</p>
+<p>Ex:<br>
+<i>Pituffimmi ilinniartitassaqarpunga. Aasaru Pituffimmut ilinniartikkiartussavara.</i> (Jeg har en kommende elev i Pituffik. Til sommer tager jeg til Pituffik for at undervise hom.)<br>
+<i>Aappara Ilisimatusarfimmi naapitassaqarpoq. Aqaguagu aapparma Ilisimatusarfimmut naapikkiartussavai.</i> (Min partner har nogen, hon skal møde på Ilisimatusarfik. I overmorgen tager min partner til Ilisimatusarfik for at møde dem.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/5x/review51/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/5x/review52'] = 'Øvelse 5.2x: Konsolidering (transitive ting)';
+$l10n['eng']['lg2/5x/review52'] = 'Exercise 5.2x: Consolidating (transitive items)';
+$l10n['dan']['lg2/5x/review52/text'] = 'Konsolideringsøvelse med transitive verber med tingsobjekter.</p>
+<p>Ex:<br>
+<i>Tusagassiornermik Ilinniarfimmi allatassaqarpunga. Ullumi Tusagassiornermik Ilinniarfimmut allakkiartussavara.</i> (Jeg har noget, der skal skrives på journalistuddannelsen. I dag tager jeg til journalistuddannelsen for at skrive det.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/5x/review52/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';
