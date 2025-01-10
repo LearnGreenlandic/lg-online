@@ -288,23 +288,23 @@ $l10n['eng']['lg1/5x/nqar/text'] = 'New nouns with N-QAR and new verbal stem, <i
 
 $l10n['dan']['lg1/5x/qa-aap'] = 'Øvelse 5.3X: Besvar spørgsmål positivt (produktion)';
 $l10n['eng']['lg1/5x/qa-aap'] = 'Exercise 5.3X: Answering interrogatives affirmatively (production)';
-$l10n['dan']['lg1/5x/qa-aap/text'] = 'Du mødte interrogativs endelse i 2. person med og uden objekt i lektion 4 som i "<i>Per takuiuk? (Har du set Per?)</i>" og "<i>Qanga tikippit? (Hvornår kom du?)</i>". Her i øvelse 5 bliver du spurgt, om du ... Besvar alle spørgsmål bekræftende med "<i>Aap (Ja). ...</i>"</p>
+$l10n['dan']['lg1/5x/qa-aap/text'] = 'Du mødte interrogativs endelse i 2. person med og uden objekt i lektion 4 som i "<i>Per takuiuk? (Har du set Per?)</i>" og "<i>Qanga tikippit? (Hvornår kom du?)</i>". Her i øvelse 5 bliver du spurgt, om du … Besvar alle spørgsmål bekræftende med "<i>Aap (Ja). …</i>"</p>
 <p>Fx<br>
 <i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Aap, Nuummi illoqarusuppunga.</i><br>
 <i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p>  <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endings in 2. person singular with and without object as in "<i>Per takuiuk? (Have you seen Per?)</i>" and "<i>Qanga tikippit? (When did you arrive?)</i>". In exercise 5 you will be asked whether you…. You will respond affirmatively to each question with "<i>Aap (Yes). ...</i>"</p>
+$l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endings in 2. person singular with and without object as in "<i>Per takuiuk? (Have you seen Per?)</i>" and "<i>Qanga tikippit? (When did you arrive?)</i>". In exercise 5 you will be asked whether you…. You will respond affirmatively to each question with "<i>Aap (Yes). …</i>"</p>
 <p>E.g.<br>
 <i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Aap, Nuummi illoqarusuppunga.</i><br>
 <i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/qa-naamik'] = 'Øvelse 5.4X: Besvar spørgsmål negativt (produktion)';
 $l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: Answering interrogatives negatively (production)';
-$l10n['dan']['lg1/5x/qa-naamik/text'] = 'Benægt spørgsmål. Indled svarene med "<i>Naamik (Nej), ...</i>"</p>
+$l10n['dan']['lg1/5x/qa-naamik/text'] = 'Benægt spørgsmål. Indled svarene med "<i>Naamik (Nej), …</i>"</p>
 <p>Fx<br>
 <i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
 <i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), ...</i>"</p>
+$l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), …</i>"</p>
 <p>E.g.<br>
 <i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
 <i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1265,7 +1265,7 @@ $l10n['eng']['lg2/3x/deny5/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHEC
 
 $l10n['dan']['lg2/3x/that2'] = 'Øvelse 3.4x: Ledsagemåde i at-sætninger';
 $l10n['eng']['lg2/3x/that2'] = 'Exercise 3.4x: Contemporative in that-sentences';
-$l10n['dan']['lg2/3x/that2/text'] = 'Lidt flere øvelser med ledsagemåde i at-sætninger. Besvar alle spørgsmål med <i>Aap, ...</i></p>
+$l10n['dan']['lg2/3x/that2/text'] = 'Lidt flere øvelser med ledsagemåde i at-sætninger. Besvar alle spørgsmål med <i>Aap, …</i></p>
 <p>Ex:<br>
 <i>Eqqaamaviuk tamanna sammisarissallugu?</i> (Husker du, at du skal beskæftige dig med det her?) =&gt; <i>Aap, eqqaamavara tamanna sammisarissallugu.</i> (Ja, jeg husker, at jeg skal beskæftige mig med det her.)<br>
 <i>Arnat naluaat tamanna allassallugu?</i> (Vidste kvinderne ikke, at de skulle skrive det her?) =&gt; <i>Aap, arnat naluaat tamanna allassallugu.</i> (Ja, kvinderne vidste ikke, at de skulle skrive det her.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1296,7 +1296,7 @@ $l10n['eng']['lg2/3x/affirm4/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CH
 
 $l10n['dan']['lg2/3x/summer3'] = 'Øvelse 3.7.1x: Benægt, til sommer I';
 $l10n['eng']['lg2/3x/summer3'] = 'Exercise 3.7.1x: Deny, this summer I';
-$l10n['dan']['lg2/3x/summer3/text'] = 'Denne øvelse er næsten som den foregående, men med den forskel, at du nu benægter spørgsmålet og tilføjer, at det adspurgte først finder sted til sommer. Start svaret med <i>Naamik. Isumaqaraluarpunga ...</i></p>
+$l10n['dan']['lg2/3x/summer3/text'] = 'Denne øvelse er næsten som den foregående, men med den forskel, at du nu benægter spørgsmålet og tilføjer, at det adspurgte først finder sted til sommer. Start svaret med <i>Naamik. Isumaqaraluarpunga …</i></p>
 <p>Ex:<br>
 <i>Eqqaamaviuk Arnannguaq aqagu Nuummut aallassasoq?</i> (Husker du, at Arnannguaq rejser til Nuuk i morgen?) =&gt; <i>Naamik. Isumaqaraluarpunga aatsaat aasaru Nuummut aallassasoq.</i> (Nej. Jeg troede ellers, at hun først rejser til Nuuk til sommer.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/3x/summer3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
@@ -1385,6 +1385,23 @@ $l10n['dan']['lg2/5x/review52/text'] = 'Konsolideringsøvelse med transitive ver
 <i>Tusagassiornermik Ilinniarfimmi allatassaqarpunga. Ullumi Tusagassiornermik Ilinniarfimmut allakkiartussavara.</i> (Jeg har noget, der skal skrives på journalistuddannelsen. I dag tager jeg til journalistuddannelsen for at skrive det.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 $l10n['eng']['lg2/5x/review52/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
+$l10n['dan']['lg2/5x/galuar1'] = 'Øvelse 5.3x: Brug GALUAR';
+$l10n['eng']['lg2/5x/galuar1'] = 'Exercise 5.3x: Use GALUAR';
+$l10n['dan']['lg2/5x/galuar1/text'] = 'Brug GALUAR og få lydreglerne internaliseret (bliv helt sikker på lydændringerne der hvor GALUAR tilføjes). GALUAR betyder som bekendt \'<i>ganske vist at V-e</i>\' (men med begrænsninger o.lign.). Tilhænget indgår typisk i en konkret kontekst, som vi ikke kan genskabe naturligt i en øvelse, så den må I selv tænke jer til selv om det situationen er lidt abstrakt. Besvar spørgsmålene positivt, men lidt afventende.</p>
+<p>Ex:<br>
+<i>Malik takuiuk? Aap, takugaluarpara kisianni …</i> (Så du Malik? Ja, jeg så ham faktisk, men … (fx: jeg snakkede ikke med ham/ han så ikke mig/ etc.))<br>
+<i>Nuummukarpit? Aap, Nuummukaraluarpunga kisianni …</i> (Rejste du til Nuuk? Ja, jeg rejste faktisk, men …)<br>
+<i>Nuummut angerlarpit? Aap, Nuummut angerlaraluarpunga kisianni …</i> (Tog du hjem til Nuuk? Ja, jeg tog faktisk hjem til Nuuk, men …)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/5x/galuar1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/5x/cau1'] = 'Øvelse 5.4x: Brug causativ som begrundelse';
+$l10n['eng']['lg2/5x/cau1'] = 'Exercise 5.4x: Use causative as reason';
+$l10n['dan']['lg2/5x/cau1/text'] = 'TODO</p>
+<p>Ex:<br>
+<i>Aasianni ilinniartitaqarpunga. Aasiannukarpunga. ➜ Aasianni ilinniartitaqarama Aasiannukarpunga.</i> (Jeg tog til Aasiaat fordi jeg havde elever i Aasiaat.)<br>
+<i>Qatanngutiga Katuami naapissavara. Katuamukassaanga. ➜ Qatanngutiga Katuami naapissagakku Katuamukassaanga.</i> (Jeg skal i Katuaq, fordi jeg skal møde min bror/søster.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/5x/cau1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';
@@ -1438,8 +1455,8 @@ $l10n['dan']['lg2/structure/4.4.1/t'] = 'Øvelse 4.4A: Introduktion til personen
 $l10n['eng']['lg2/structure/4.4.1/t'] = 'Exercise 4.4A: Introduction to possessum II (text)';
 $l10n['dan']['lg2/structure/4.4.1/a'] = 'Øvelse 4.4A: Introduktion til personendelse (possessum) II (audio)';
 $l10n['eng']['lg2/structure/4.4.1/a'] = 'Exercise 4.4A: Introduction to possessum II (audio)';
-$l10n['dan']['lg2/structure/4.4.1/text'] = 'Du har hidtil været præsenteret for 3 personendelser på nominer i ental, nemlig N{+ga}, N{-a} og N{-at}. Brug dem alle og bliv sikker i de lydskift, de medfører. <em>taassuma</em> betyder "den ders .." og <em>taakku/taakkua</em> betyder "de ders ..." (taakku og taakkua bruges tilfældigt i moderne grønlandsk jf. kapitel 6).';
-$l10n['eng']['lg2/structure/4.4.1/text'] = 'This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. <em>taassuma</em> means "that one\'s .." and <em>taakku/taakkua</em> means "those ones\' ..." (taakku and taakkua are used arbitrarily in modern Greenlandic cf. chapter 6).';
+$l10n['dan']['lg2/structure/4.4.1/text'] = 'Du har hidtil været præsenteret for 3 personendelser på nominer i ental, nemlig N{+ga}, N{-a} og N{-at}. Brug dem alle og bliv sikker i de lydskift, de medfører. <em>taassuma</em> betyder "den ders .." og <em>taakku/taakkua</em> betyder "de ders …" (taakku og taakkua bruges tilfældigt i moderne grønlandsk jf. kapitel 6).';
+$l10n['eng']['lg2/structure/4.4.1/text'] = 'This far you have seen 3 possessive endings with nouns in the singular N{+ga}, N{-a} and N{-at}. Use them and become safe with the sound shifts they produce. <em>taassuma</em> means "that one\'s .." and <em>taakku/taakkua</em> means "those ones\' …" (taakku and taakkua are used arbitrarily in modern Greenlandic cf. chapter 6).';
 
 $l10n['dan']['lg2/structure/4.4.2/t'] = 'Øvelse 4.4B: Introduktion til personendelse (possessum) II (tekst)';
 $l10n['eng']['lg2/structure/4.4.2/t'] = 'Exercise 4.4B: Introduction to possessum II (text)';
