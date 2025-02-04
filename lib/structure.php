@@ -105,15 +105,9 @@ function structure_text($state, $which) {
 		if (!empty($ws[3])) {
 			$p = ' ('.$ws[3].')';
 		}
-		$q = '';
-		if (file_exists('d/lg2/exercises/'.$which.'/'.$ws[0].' Q.mp3')) {
-			$q = '<span class="entry"><audio src="{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' Q.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> ';
-		}
-		$a = '';
-		if (file_exists('d/lg2/exercises/'.$which.'/'.$ws[0].' A.mp3')) {
-			$a = '<audio src="{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' A.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> ';
-		}
-		echo '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.htmlspecialchars($ws[1].$p).'</div><div class="col-12">'.$q.'<span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.htmlspecialchars($ws[2]).'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> '.$a.'<button type="button" class="btn btn-secondary">☼</button></span><code class="hint my-1"></code></span></div></div></div>';
+		$q = mp3_or_martha('{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' Q.mp3', $ws[1].$p);
+		$a = mp3_or_martha('{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' A.mp3', $ws[2]);
+		echo '<div class="col-lg-6 my-2 text-center"><div class="row"><div class="col-12">'.htmlspecialchars($ws[1].$p).'</div><div class="col-12"><span class="entry"><audio src="'.$q.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.htmlspecialchars($ws[2]).'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$a.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><code class="hint my-1"></code></span></div></div></div>';
 	}
 ?>
 </div>
@@ -134,7 +128,9 @@ function structure_audio($state, $which) {
 <div class="row alternate">
 <?php
 	foreach (structure_data($state, $which) as $ws) {
-		echo '<div class="col-lg-6 my-2 text-center"><span class="entry"><audio src="{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' Q.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.htmlspecialchars($ws[2]).'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' A.mp3" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><code class="hint my-1"></code></span></div>';
+		$q = mp3_or_martha('{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' Q.mp3', $ws[1]);
+		$a = mp3_or_martha('{t:prefix}/d/lg2/exercises/'.$which.'/'.$ws[0].' A.mp3', $ws[2]);
+		echo '<div class="col-lg-6 my-2 text-center"><span class="entry"><audio src="'.$q.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button></span> <span class="entry"><input type="text" spellcheck="false" class="form-control" data-check="'.htmlspecialchars($ws[2]).'"> <span class="text-nowrap"><button type="button" class="btn btn-warning">✓</button> <audio src="'.$a.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-info">▶</button> <button type="button" class="btn btn-secondary">☼</button></span><code class="hint my-1"></code></span></div>';
 	}
 ?>
 </div>
