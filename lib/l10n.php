@@ -1402,6 +1402,44 @@ $l10n['dan']['lg2/5x/cau1/text'] = 'TODO</p>
 <i>Qatanngutiga Katuami naapissavara. Katuamukassaanga. ➜ Qatanngutiga Katuami naapissagakku Katuamukassaanga.</i> (Jeg skal i Katuaq, fordi jeg skal møde min bror/søster.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 $l10n['eng']['lg2/5x/cau1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
+$l10n['dan']['lg2/6x'] = 'Introduktion til kapitel II-6 X-tras';
+$l10n['eng']['lg2/6x'] = 'Introduction to chapter II-6 X-tras';
+
+$l10n['dan']['lg2/6x/review60'] = 'Øvelse 6.0x: Konsolidering (transitive verber)';
+$l10n['eng']['lg2/6x/review60'] = 'Exercise 6.0x: Consolidating (transitive verbs)';
+$l10n['dan']['lg2/6x/review60/text'] = 'Konsolideringsøvelse med transitive verber. Øvelsen træner gloser, endelser og tilhængskombinationer ved hjælp af syntaktisk ukomplicerede sætninger, der kommer rundt om så vidt muligt alt, kendt leksikon. Aflyt og slå evt. op til du forstår sætningen og gentag den så højt. Bliv ved med at gøre det til du faktisk kan udtale hele sætningen uden at snuble. Husk at du kan få hjælp til forståelsen fx på <a href="https://nutserut.gl/gloss" target="_gloss">https://nutserut.gl/gloss</a></p>
+<p>Ex:<br>
+<i>Nuummiikkatta Malikkut ilinniartittarpakka.</i> (Da vi var i Nuuk, underviste jeg Malik og dem.)<br>
+<i>Katuami suligama Arnannguup naapittarpaanga.</i> (Da jeg arbejdede i Katuaq, plejede Arnannguaq at møde mig.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/6x/review60/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/6x/review61'] = 'Øvelse 6.1x: Konsolidering';
+$l10n['eng']['lg2/6x/review61'] = 'Exercise 6.1x: Consolidating';
+$l10n['dan']['lg2/6x/review61/text'] = 'Konsolideringsøvelse med indirekte tale i contemporativ og participium. Øvelsen træner gloser, endelser og tilhængskombinationer ved hjælp af syntaktisk ukomplicerede sætninger, der kommer rundt om så vidt muligt alt, kendt leksikon. Aflyt og slå evt. op til du forstår sætningen og gentag den så højt. Bliv ved med at gøre det til du faktisk kan udtale hele sætningen uden at snuble. Husk at du kan få hjælp til forståelsen fx på <a href="https://nutserut.gl/gloss" target="_gloss">https://nutserut.gl/gloss</a></p>
+<p>Ex:<br>
+<i>Isumaqaraluarpunga Nuummut angerlassallunga.</i> (Jeg troede ellers, at jeg skulle hjem til Nuuk.)<br>
+<i>Malik oqarpoq Pituffimmut tikissanani.</i> (Malik sagde, at han ikke kom til Pituffik.)<br>
+<i>Arnannguaq isumaqarpoq uanga Aasiannut angerlassasunga.</i> (Arnannguaq troede, at jeg skulle hjem til Aasiaat.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/6x/review61/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/6x/cau2'] = 'Øvelse 6.2x: Brug causativ';
+$l10n['eng']['lg2/6x/cau2'] = 'Exercise 6.2x: Use causative';
+$l10n['dan']['lg2/6x/cau2/text'] = 'MISSING EXPLANATION</p>
+<p>Ex:<br>
+<i>Ullumi Katuamiikkama Arnannguup naapippaanga.</i> (Da jeg var i Katuaq i dag mødte Arnannguaq mig.)<br>
+<i>Taamani Qaqortumiikkama Maliup ilaginngilaanga.</i> (Dengang, da jeg var i Qaqortoq, var Malik ikke sammen med mig.)<br>
+<i>Ippassaq Ilisimatusarfimmiikkama Aputsiaq takuara.</i> (Da jeg var på Ilisimatusarfik i går så jeg Aputsiaq.)<br>
+<i>Ullumi Royal Greenlandimiinnginnama Tikap naapikkiartorsinnaanngilaanga.</i> (Da jeg ikke var i Royal Greenland i dag, kunne Tika ikke komme og møde mig.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/6x/cau2/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/6x/schwa1'] = 'Øvelse 6.3x: Contemporativ med schwa-stammer';
+$l10n['eng']['lg2/6x/schwa1'] = 'Exercise 6.3x: Contemporative with schwa-stema';
+$l10n['dan']['lg2/6x/schwa1/text'] = 'Brug contemporativ med schwa-stammer. Du får to sætninger hvor sætning 1 har ilagǝ- som hovedverbum. Brug contemporativ og flet den sammen med sætning 2.</p>
+<p>Ex:<br>
+<i>Ilagivaanga. Nuummut aallarpoq.</i> (Hon var sammen med mig. Hon rejste til Nuuk.) ➜ <i>Ilagalunga Nuummut aallarpoq.</i> (Hon rejste til Nuuk sammen med mig.)<br>
+<i>Arnannguakkut ilagivagut. Danmarkimit tikippugut.</i> (Vi er sammen med Arnannguaq og de andre. Vi kom fra Danmark.) ➜ <i>Arnannguakkut ilagalugit Danmarkimit tikippugut.</i> (Vi kom fra Danmark sammen med Arnannguaq og dem.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/6x/schwa1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';

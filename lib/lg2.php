@@ -413,6 +413,18 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/6.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/6/text}</a></li>
 	</ul>
 </div>
+<!-- Chapter 6x -->
+<div class="choice my-2 col-lg-6" id="l6x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/6x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/6x}</a></h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/6x/review60/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/review60}</a></li>
+		<li><a href="{t:prefix}/lg2/6x/review61/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/review61}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/6x/cau2/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/cau2}</a></li>
+		<li><a href="{t:prefix}/lg2/6x/schwa1/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/schwa1}</a></li>
+	</ul>
+</div>
 <!-- Chapter 7 -->
 <div class="choice my-2 col-lg-6" id="l7.1">
 	<a href="{t:prefix}/lg2/7.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/7.1/{t:lang}/0.png"></a>
