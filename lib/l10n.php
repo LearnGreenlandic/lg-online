@@ -1437,8 +1437,33 @@ $l10n['eng']['lg2/6x/schwa1'] = 'Exercise 6.3x: Contemporative with schwa-stema'
 $l10n['dan']['lg2/6x/schwa1/text'] = 'Brug contemporativ med schwa-stammer. Du får to sætninger hvor sætning 1 har ilagǝ- som hovedverbum. Brug contemporativ og flet den sammen med sætning 2.</p>
 <p>Ex:<br>
 <i>Ilagivaanga. Nuummut aallarpoq.</i> (Hon var sammen med mig. Hon rejste til Nuuk.) ➜ <i>Ilagalunga Nuummut aallarpoq.</i> (Hon rejste til Nuuk sammen med mig.)<br>
-<i>Arnannguakkut ilagivagut. Danmarkimit tikippugut.</i> (Vi er sammen med Arnannguaq og de andre. Vi kom fra Danmark.) ➜ <i>Arnannguakkut ilagalugit Danmarkimit tikippugut.</i> (Vi kom fra Danmark sammen med Arnannguaq og dem.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
-$l10n['eng']['lg2/6x/schwa1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+<i>Arnannguakkut ilagivagut. Danmarkimit tikippugut.</i> (Vi er sammen med Arnannguaq og de andre. Vi kom fra Danmark.) ➜ <i>Arnannguakkut ilagalugit Danmarkimit tikippugut.</i> (Vi kom fra Danmark sammen med Arnannguaq og dem.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/6x/schwa1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/6x/review62'] = 'Øvelse 6.4.1x: Konsolideringsøvelse';
+$l10n['eng']['lg2/6x/review62'] = 'Exercise 6.4.1x: Consolidation';
+$l10n['dan']['lg2/6x/review62/text'] = 'Konsolideringsøvelse, der ingen nyheder indeholder. I bør virkelig kunne flyve igennem dem, men pas på! Øvelsen skal træne jeres gloseforråd og jeres hastighed i opfattelse og produktion af så mange tilhæng og endelser som muligt i så mange kombinationer som muligt. Det er vigtigt, at I bliver fortrolige med at håndtere lange kæder med mange tilhæng efter stammerne, men med øget kompleksitet falder ordfrekvensen så dramatisk, at øvelsen ind imellem vil indeholde ord, der teoretisk er mulige ord, men så komplekse, at de næppe vil blive brugt i normalt sprog uden for meget specifikke kontekster. Men evnen til hurtigt og ubesværet at danne kæder af tilhæng på alle slags stammer er en kapacitet, I ikke kan undvære, så her er øvelsen trods den nævnte svaghed.</p>
+<p>Besvar spørgsmålene positivt. Begynd svaret med "<i>Aap, …</i>"</p>
+<p>Ex:<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartippiuk?</i> (Underviste du Arnannguaq i Katuaq I går?) ➜ <i>Aap, ippassaq Arnannguaq Katuami ilinniartippara.</i> (Ja, jeg underviste Arnannguaq i Katuaq I går.)<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartinngiliuk?</i> (Underviste du ikke Arnannguaq i Katuaq I går?) ➜ <i>Aap, ippassaq Arnannguaq Katuami ilinniartinngilara.</i> (Ja, jeg underviste ikke Arnannguaq i Katuaq I går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/6x/review62/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/6x/review63'] = 'Øvelse 6.4.2x: Konsolideringsøvelse';
+$l10n['eng']['lg2/6x/review63'] = 'Exercise 6.4.2x: Consolidation';
+$l10n['dan']['lg2/6x/review63/text'] = 'Konsolideringsøvelse. Som II-6.4.1X bortset fra at du nu benægter alt! Start svaret med "<i>Naamik, …</i>"</p>
+<p>Ex:<br>
+<i>Ullumi Lene Naalakkersuisuni naapippiuk?</i> (Mødte du Lene hos Naalakkersuisut i dag?) ➜ <i>Naamik, ullumi Lene Naalakkersuisuni naapinngilara.</i> (Nej, jeg mødte ikke Lene hos Naalakkersuisut i dag.)<br>
+<i>Ippassaq Arnannguaq Katuami ilinniartinngiliuk?</i> (Underviste du ikke Arnannguaq i Katuaq I går?) ➜ <i>Naamik, ippassaq Arnannguaq Katuami ilinniartippara.</i> (Nej, jeg underviste Arnannguaq i Katuaq I går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/6x/review63/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/6x/review64'] = 'Øvelse 6.5x: Konsolideringsøvelse';
+$l10n['eng']['lg2/6x/review64'] = 'Exercise 6.5x: Consolidation';
+$l10n['dan']['lg2/6x/review64/text'] = 'Næsten som de foregående, men vi repeterer lige familiebetegnelserne. Objekterne er alle familiebetegnelser med endelse for 1SgPoss (min ene N), så for at gøre svarene så realistiske som muligt introducerer vi jf. introduktionen til II-6X 2SgPoss (din ene N). Besvar alle spørgsmål positivt. Start svaret med "<i>Aap, …</i>"</p>
+<p>Ex:<br>
+<i>Ippassaq nuliara Narsami takuiuk?</i> (Så du min kone i Narsaq i går?) ➜ <i>Aap, ippassaq nuliat Narsami takuara.</i> (Ja, jeg så din kone i Narsaq i går.)<br>
+<i>Ippassaq nuliara Narsami takunngiliuk? </i> (Så du ikke min kone i Narsaq i går?) ➜ <i>Aap, ippassaq nuliat Narsami takunngilara.</i> (Nej, jeg så ikke din kone i Narsaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/6x/review64/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';

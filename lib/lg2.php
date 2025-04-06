@@ -423,6 +423,11 @@ function lg2($state) {
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/6x/cau2/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/cau2}</a></li>
 		<li><a href="{t:prefix}/lg2/6x/schwa1/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/schwa1}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/6x/review62/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/review62}</a></li>
+		<li><a href="{t:prefix}/lg2/6x/review63/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/review63}</a></li>
+		<li><a href="{t:prefix}/lg2/6x/review64/"><i class="link-info bi bi-file-text"></i> {t:lg2/6x/review64}</a></li>
 	</ul>
 </div>
 <!-- Chapter 7 -->
