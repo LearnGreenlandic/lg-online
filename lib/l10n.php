@@ -1465,6 +1465,109 @@ $l10n['dan']['lg2/6x/review64/text'] = 'Næsten som de foregående, men vi repet
 <i>Ippassaq nuliara Narsami takunngiliuk? </i> (Så du ikke min kone i Narsaq i går?) ➜ <i>Aap, ippassaq nuliat Narsami takunngilara.</i> (Nej, jeg så ikke din kone i Narsaq i går.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg2/6x/review64/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
+$l10n['dan']['lg2/7x'] = 'Introduktion til kapitel II-7 X-tras';
+$l10n['eng']['lg2/7x'] = 'Introduction to chapter II-7 X-tras';
+
+$l10n['dan']['lg2/7x/review711'] = 'Øvelse 7.1.1x: Konsolidering 1Sg';
+$l10n['eng']['lg2/7x/review711'] = 'Exercise 7.1.1x: Consolidating 1Sg';
+$l10n['dan']['lg2/7x/review711/text'] = 'Konsolideringsøvelse med fokus på endelser for 1SgPoss (‘min N’ og ‘mine N-er’ samt indikativs endelser i 1. person med objekt i 3. person ((V Ind 1Sg 3SgO) fx {vara} og (V Ind 1Sg 3PlO) fx {vakka}).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Ullumi Arnannguaq Pisiffimmi takuara.</i> (Jeg så Arnannguaq i Pisiffik i dag.)<br>
+<i>Aasaru aleqakkut Narsami ilagerusuppakka.</i> (Jeg vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Ippassaq nuliara Katuami naapippara.</i> (Jeg mødte min kone i Katuaq i går.)<br>
+<i>Aqagu ilinniartitsisukka Ilulissani ilagissanngilakka.</i> (Jeg skal ikke være sammen med mine lærere i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review711/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/review712'] = 'Øvelse 7.1.2x: Konsolidering 2Sg';
+$l10n['eng']['lg2/7x/review712'] = 'Exercise 7.1.2x: Consolidating 2Sg';
+$l10n['dan']['lg2/7x/review712/text'] = 'Som II-7.1.1X, men nu med fokus på endelser for 2SgPoss (‘din N’ fx {-t} og ‘dine N-er’ {-tit} samt indikativs endelser i 2. person med objekt i 3. person ((V Ind 2Sg 3SgO) fx {vat} og (V Ind 2Sg 3PlO) fx {vatit}).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Ullumi Arnannguaq Pisiffimmi takuat.</i> (Du så Arnannguaq i Pisiffik i dag.)<br>
+<i>Aasaru aleqakkut Narsami ilagerusuppatit.</i> (Du vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Ippassaq nuliat Katuami naapippat.</i> (Du mødte din kone i Katuaq i går.)<br>
+<i>Aqagu ilinniartitsisutit Ilulissani ilagissanngilatit.</i> (Du skal ikke være sammen med dine lærere i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review712/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/review713'] = 'Øvelse 7.1.3x: Konsolidering 3Sg';
+$l10n['eng']['lg2/7x/review713'] = 'Exercise 7.1.3x: Consolidating 3Sg';
+$l10n['dan']['lg2/7x/review713/text'] = 'Som II-7.1.1X, men nu med fokus på endelser for 3SgPoss (‘hons N’ fx {-a} og ‘hons N-er’ fx {-i} samt indikativs endelser i 3. person med objekt i 3. person ((V Ind 3Sg 3SgO) fx {vaa} og (V Ind 3Sg 3PlO) fx {vai}).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Ullumi Maliup Arnannguaq Pisiffimmi takuaa.</i> (Malik så Arnannguaq i Pisiffik i dag.)<br>
+<i>Aasaru Aputsiap aleqakkut Narsami ilagerusuppai.</i> (Aputsiaq vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Ippassaq ilinniartitsisup Arnannguup uia Katuami naapippaa.</i> (Læreren mødte Arnannguaqs mand i Katuaq i går.)<br>
+<i>Aqagu Maliup Tikap ilinniartitsisui Ilulissani ilagissanngilai.</i> (Malik skal ikke være sammen med Tikas lærere i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review713/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/review714'] = 'Øvelse 7.1.4x: Konsolidering 1Pl';
+$l10n['eng']['lg2/7x/review714'] = 'Exercise 7.1.4x: Consolidating 1Pl';
+$l10n['dan']['lg2/7x/review714/text'] = 'Som II-7.1.1X, men nu med fokus på endelser for 1PlPoss (‘vor N’ {+put} og ‘vore N-er’ {-gut/-vut} samt indikativs endelser i 1. person pluralis med objekt i 3. person ((V Ind 1Pl 3SgO) fx {varput} og (V Ind 1Pl 3PlO) fx {vagut}).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Ullumi Arnannguaq Pisiffimmi takuarput.</i> (Vi så Arnannguaq i Pisiffik i dag.)<br>
+<i>Aasaru aleqakkut Narsami ilagerusuppatit.</i> (Vi vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Ippassaq nukarput Uummannami eqqarsaatigivarput.</i> (Vi tænkte på vores lillebror i Uummannaq i går.)<br>
+<i>Aqaguagu ilinniartitsisunnguagut Kalaallit Nunaanni ilaginiassavagut.</i> (Vi skal være sammen med vore søde lærere i Grønland i overmorgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review714/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/review715'] = 'Øvelse 7.1.5x: Konsolidering 2Pl';
+$l10n['eng']['lg2/7x/review715'] = 'Exercise 7.1.5x: Consolidating 2Pl';
+$l10n['dan']['lg2/7x/review715/text'] = 'Som II-7.1.1X, men nu med fokus på endelser for 2PlPoss (‘jer N’ {+si} og ‘jere N-er’ {-si} samt indikativs endelser i 2. person pluralis med objekt i 3. person ((V Ind 2Pl 3SgO) fx {varsi} og (V Ind 2Pl 3PlO) fx {vasi}).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Ullumi Arnannguaq Pisiffimmi takuarsi.</i> (I så Arnannguaq i Pisiffik i dag.)<br>
+<i>Aasaru aleqakkut Narsami ilagerusuppasi.</i> (I vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Ippassaq nuliasi Katuami naapippasi.</i> (I mødte jeres koner i Katuaq i går.)<br>
+<i>Aqagu ilinniartitsisusi Ilulissani ilagissanngilasi.</i> (I skal ikke være sammen med jeres lærere i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review715/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/review716'] = 'Øvelse 7.1.6x: Konsolidering 3Pl';
+$l10n['eng']['lg2/7x/review716'] = 'Exercise 7.1.6x: Consolidating 3Pl';
+$l10n['dan']['lg2/7x/review716/text'] = 'Som II-7.1.3X, men nu med fokus på endelser for 3PlPoss (‘deres N’ og ‘deres N-er’ samt indikativs endelser i 3. person med objekt i 3. person ((V Ind 3Pl 3SgO) fx {vaat} og (V Ind 3Pl 3PlO) fx {vaat}).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Ullumi Arnannguaq Pisiffimmi takuaat.</i> (De så Arnannguaq i Pisiffik i dag.)<br>
+<i>Aasaru aleqakkut Narsami ilagerusuppaat.</i> (De vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Ippassaq Aviaajakkut sakkutuut ilinniartitsisuat Katuami naapippaat.</i> (Aviaaja og de andre mødte soldaternes lærer i Katuaq i går.)<br>
+<i>Aqagu Olekkut qallunaat nulii Ilulissani ilagissanngilaat.</i> (Ole og de andre skal ikke være sammen med danskernes koner i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review716/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/review72'] = 'Øvelse 7.2x: Konsolidering';
+$l10n['eng']['lg2/7x/review72'] = 'Exercise 7.2x: Consolidating';
+$l10n['dan']['lg2/7x/review72/text'] = 'Præcis samme indhold som de foregående 6 øvelser, men i modsætning til de foregående 6 øvelser, hvor alle eksempler i hver øvelse havde samme subjektsperson (og dermed identiske endelser) er subjekterne nu randomiserede, så enhver af personerne kan forekomme. Det stiller lidt større krav til din opfattelsesevne, men bringer dig samtidig en anelse tættere på virkeligheden, hvor du jo heller ikke på forhånd kan vide, hvem din samtalepartner nu taler om.
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/review72/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/trpar1'] = 'Øvelse 7.3.1x: Transitiv participium 2Sg';
+$l10n['eng']['lg2/7x/trpar1'] = 'Exercise 7.3.1x: Transitive participium 2Sg';
+$l10n['dan']['lg2/7x/trpar1/text'] = 'Sætningerne i denne og de følgende øvelser er de samme som dem, du mødte i II-7.1.nX men nu optræder de som anført tale. Sørg for hele tiden at have ordentligt styr på, hvem subjekterne er, så start med at være sikker på, at du forstår verberne både i den anførende sætning og i den anførte tale. Fx i første eksempel herunder, hvor første subjekt er 1Sg (“jeg” sagde, at ..) og subjektet i at-sætningen er 2Sg (“du” så objektet, Arnannguaq).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Oqaraluarpunga illit ullumi Arnannguaq Pisiffimmi takugit.</i> (Jeg sagde ellers, at du så Arnannguaq i Pisiffik i dag.)<br>
+<i>Isumaqarama illit Aasaru aleqakkut Narsami ilagerusukkitit.</i> (Fordi jeg tror, at du gerne vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Isumaqanngilanga illit ippassaq nuliat Katuami naapikkit.</i> (Jeg troede ikke, at du mødte din kone i Katuaq i går.)<br>
+<i>Oqarnianngilanga illit aqagu ilinniartitsisutit Ilulissani ilagissanngikkitit.</i> (Jeg agter ikke at sige, at du ikke skal være sammen med dine lærere i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/trpar1/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/trpar2'] = 'Øvelse 7.3.2x: Transitiv participium 2Pl';
+$l10n['eng']['lg2/7x/trpar2'] = 'Exercise 7.3.2x: Transitive participium 2Pl';
+$l10n['dan']['lg2/7x/trpar2/text'] = 'Som foregående, men nu med den anførte tales subjekt i 2Pl (I ..).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p>
+<p>Ex:<br>
+<i>Oqaraluarpunga ilissi ullumi Arnannguaq Pisiffimmi takugissi.</i> (Jeg sagde ellers, at I så Arnannguaq i Pisiffik i dag.)<br>
+<i>Isumaqarama ilissi Aasaru aleqakkut Narsami ilagerusukkisi.</i> (Fordi jeg tror, at I gerne vil gerne være sammen med storesøster-familien i Narsaq til sommer.)<br>
+<i>Isumaqanngilanga ilissi ippassaq nuliat Katuami naapikkit.</i> (Jeg troede ikke, at du mødte din kone i Katuaq i går.)<br>
+<i>Oqarnianngilanga ilissi aqagu ilinniartitsisusi Ilulissani ilagissanngikkisi.</i> (Jeg agter ikke at sige, at I ikke skal være sammen med jeres lærere i Ilulissat i morgen.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/trpar2/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/7x/oqarfige'] = 'Øvelse 7.4x: Oqarfigǝ';
+$l10n['eng']['lg2/7x/oqarfige'] = 'Exercise 7.4x: Oqarfigǝ';
+$l10n['dan']['lg2/7x/oqarfige/text'] = 'En specialitet ved oqarfigǝ. Transitive verber tager normalt ENTEN et direkte objekt som i <i>Lisep Malik tusarpaa</i> (Lise hørte Malik) ELLER en objektssætning som i <i>Lisep tusarpaa Malik tikittoq</i> (Lise hørte, at Malik ankom). Dette gælder ikke for oqarfigǝ, der tager objekter samtidig med at være anførende verbum. <i>Nuliara oqarfigivara Lise aallassasoq</i> (Jeg sagde til min kone, at Lise skal rejse).
+Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/7x/oqarfige/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';

@@ -470,6 +470,24 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/7.1/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/7/text}</a></li>
 	</ul>
 </div>
+<!-- Chapter 7x -->
+<div class="choice my-2 col-lg-6" id="l7x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/7x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/7x}</a></h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/7x/review711/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review711}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/review712/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review712}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/review713/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review713}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/review714/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review714}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/review715/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review715}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/review716/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review716}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/review72/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/review72}</a></li>
+
+		<li><br></li>
+		<li><a href="{t:prefix}/lg2/7x/trpar1/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/trpar1}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/trpar2/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/trpar2}</a></li>
+		<li><a href="{t:prefix}/lg2/7x/oqarfige/"><i class="link-info bi bi-file-text"></i> {t:lg2/7x/oqarfige}</a></li>
+	</ul>
+</div>
 <!-- Chapter 8 -->
 <div class="choice my-2 col-lg-6" id="l8.1">
 	<a href="{t:prefix}/lg2/8.1/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/8.1/{t:lang}/0.png"></a>

@@ -195,6 +195,9 @@ a {
 .bg-unused {
 	background-color: rgba(var(--bs-secondary-rgb), 0.5) !important;
 }
+.bg-nonexistent, .bg-nonexistent td {
+	background-color: rgba(var(--bs-secondary-rgb), 0.25) !important;
+}
 
 lg-fn, lg-fn-def {
 	display: none;
