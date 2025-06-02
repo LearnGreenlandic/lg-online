@@ -1568,6 +1568,20 @@ $l10n['dan']['lg2/7x/oqarfige/text'] = 'En specialitet ved oqarfigǝ. Transitive
 Aflyt sætningerne til du er sikker på, at du forstår sætningen ordentligt og gentag den så højt. Hvis du har problemer med at gentage sætningen, skal du blive ved til du kan gøre det smidigt og ubesværet.</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 $l10n['eng']['lg2/7x/oqarfige/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
+$l10n['dan']['lg2/8x'] = 'Introduktion til kapitel II-8 X-tras';
+$l10n['eng']['lg2/8x'] = 'Introduction to chapter II-8 X-tras';
+
+$l10n['dan']['lg2/8x/cau3'] = 'Øvelse 8.1.1x: Causativ med objekt i 3. person';
+$l10n['eng']['lg2/8x/cau3'] = 'Exercise 8.1.1x: Causative with 3rd person object';
+$l10n['dan']['lg2/8x/cau3/text'] = 'Brug causativ med objekt i 3. person.<br>
+Pas på ikke at blive væk i personerne i de følgende øvelser, hvor du både har subjekter og objekter og . Hvis du er det mindste i tvivl om, hvem det er, der gør hvad ved hvem i sætningerne, skal du trykke på ☼ og begynde med at sikre, at du helt har styr på subjekt og evt. objekt i verberne. Det er subjektet, der står lige efter taggen +V og det er objekter, der indeholder et stort O.</p>
+<p>Fx indeholder første eksempelsætning herunder 3 verber: (i) najugaqarpoq indeholder analysen ‘V+Ind+3Sg’. Subjektet er altså ‘hon’ og der er ikke noget objekt. Verbet betyder altså “Hon V-er”. (ii) Naapissagakku indeholder analysen ‘V+Cau+1Sg+3SgO. Subjektet er altså ‘jeg’ og objektet ‘hom’. Verbet betyder altså “fordi jeg V-er hom” (iii) Narsamukassaanga indeholder analysen ‘V+Ind+1Sg’. Subjektet er altså ‘jeg’ og der er intet objekt. Verbet betyder “Jeg V-er”.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutiga Narsami najugaqarpoq. Naapissagakku aqagu Narsamukassaanga.</i> (En af mine søskende bor i Narsaq. Fordi jeg skal møde hom, tager jeg til Narsaq i morgen.)<br>
+<i>Qatanngutikka Royal Greenlandimi sulipput. Ilagigakkit ippassaq Royal Greenlandimiippunga.</i> (Mine søskende arbejder i Royal Greenland. Fordi jeg var sammen med dem, var jeg i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';
 $l10n['eng']['lg2/structure/3.1/t'] = 'Exercise 3.1: Play with personal endings I (text)';
 $l10n['dan']['lg2/structure/3.1/a'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (audio)';

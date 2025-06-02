@@ -504,6 +504,13 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/pdf/slides/8.1.pdf"><i class="link-info bi bi-file-pdf"></i> {t:lg2/pdf/slides/8.1}</a></li>
 	</ul>
 </div>
+<!-- Chapter 8x -->
+<div class="choice my-2 col-lg-6" id="l8x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/8x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/8x}</a></h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/8x/cau3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau3}</a></li>
+	</ul>
+</div>
 <div class="choice my-2 col-lg-6" id="l8.2">
 	<a href="{t:prefix}/lg2/8.2/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/d/lg2/8.2/{t:lang}/0.png"></a>
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/8.2/" class="link-warning"><i class="link-danger bi bi-play-btn"></i> {t:lg2/8.2}</a></h5>
