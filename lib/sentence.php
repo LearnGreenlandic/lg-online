@@ -72,7 +72,15 @@ $GLOBALS['-db-map'] = [
 	'trpar2' => '7-3-2x',
 	'oqarfige' => '7-4x',
 
-	'cau3' => '8-1-1x',
+	'cau1s3' => '8-1-1x',
+	'cau2s3' => '8-1-2x',
+	'cau3s3' => '8-1-3x',
+	'cau4s3' => '8-1-4x',
+	'cau1p3' => '8-1-5x',
+	'cau2p3' => '8-1-6x',
+	'cau3p3' => '8-1-7x',
+	'cau4p3' => '8-1-8x',
+	'cau3' => '8-1-9x',
 ];
 
 function pfx_fname(string $str): array {
@@ -1690,7 +1698,7 @@ function sentence_lg2($state, $chap, $task) {
 	else if (($chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x' || $chap == '5x' || $chap == '6x') && preg_match('~^(review6[234])$~', $task)) {
 		\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 	}
-	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review\d+|cntp1|cau[23]|trpar\d+|oqarfige)$~', $task)) {
+	else if (preg_match('~^(part1|obj\d|that1|indirect1|una1|niq1|review\d+|cntp1|cau[23]|cau[1-4][sp]3|trpar\d+|oqarfige)$~', $task)) {
 		\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
 	}
 	else if (($chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x' || $chap == '5x' || $chap == '6x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d|so\d|galuar\d|cau\d|schwa\d)$~', $task)) {

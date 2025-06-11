@@ -255,13 +255,13 @@ $l10n['eng']['lg1/4x/prod/text'] = 'Build the verbs according to the templates p
 
 $l10n['dan']['lg1/4x/listeng'] = 'Øvelse 4.3X: Tilføj ekstra betydning til verber med derivationsmorfemerne (lytteøvelse)';
 $l10n['eng']['lg1/4x/listeng'] = 'Exercise 4.3X: Verb elaborating morpheme (perception)';
-$l10n['dan']['lg1/4x/listeng/text'] = 'Dit første viderederiverende morfem er +GUSUP, der betyder "<i>at gerne ville Vb</i>". Lyt til du forstår, hvad du hører, og udtal dernæst hele sætningen højt før du går i gang med næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
-$l10n['eng']['lg1/4x/listeng/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/4x/listeng/text'] = 'Dit første viderederiverende morfem er +GUSUP, der betyder "<i>at gerne ville V</i>". Lyt til du forstår, hvad du hører, og udtal dernæst hele sætningen højt før du går i gang med næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['eng']['lg1/4x/listeng/text'] = 'Your first verb elaborating morpheme is +GUSUP meaning "<i>want to V</i>". Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/4x/prodg'] = 'Øvelse 4.4X: Viderederiverede verber (produktion)';
 $l10n['eng']['lg1/4x/prodg'] = 'Exercise 4.4X: Verb elaborating morpheme (production)';
-$l10n['dan']['lg1/4x/prodg/text'] = 'Dit første viderederiverende tilhæng er +GUSUP, der betyder "<i>at gerne ville Vb</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/4x/prodg/text'] = 'Your first verb elaborating morpheme is Vb+GUSUP meaning "<i>want to Vb</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['dan']['lg1/4x/prodg/text'] = 'Dit første viderederiverende tilhæng er +GUSUP, der betyder "<i>at gerne ville V</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg1/4x/prodg/text'] = 'Your first verb elaborating morpheme is +GUSUP meaning "<i>want to V</i>". {t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/4x/random'] = 'Øvelse 4.5X: Sætninger (reception)';
 $l10n['eng']['lg1/4x/random'] = 'Exercise 4.5X: Sentences (reception)';
@@ -1571,15 +1571,85 @@ $l10n['eng']['lg2/7x/oqarfige/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_A
 $l10n['dan']['lg2/8x'] = 'Introduktion til kapitel II-8 X-tras';
 $l10n['eng']['lg2/8x'] = 'Introduction to chapter II-8 X-tras';
 
-$l10n['dan']['lg2/8x/cau3'] = 'Øvelse 8.1.1x: Causativ med objekt i 3. person';
-$l10n['eng']['lg2/8x/cau3'] = 'Exercise 8.1.1x: Causative with 3rd person object';
-$l10n['dan']['lg2/8x/cau3/text'] = 'Brug causativ med objekt i 3. person.<br>
+$l10n['dan']['lg2/8x/cau1s3'] = 'Øvelse 8.1.1x: Causativ med objekt i 3. person (1Sg)';
+$l10n['eng']['lg2/8x/cau1s3'] = 'Exercise 8.1.1x: Causative with 3rd person object (1Sg)';
+$l10n['dan']['lg2/8x/cau1s3/text'] = 'Brug causativ med objekt i 3. person.<br>
 Pas på ikke at blive væk i personerne i de følgende øvelser, hvor du både har subjekter og objekter og . Hvis du er det mindste i tvivl om, hvem det er, der gør hvad ved hvem i sætningerne, skal du trykke på ☼ og begynde med at sikre, at du helt har styr på subjekt og evt. objekt i verberne. Det er subjektet, der står lige efter taggen +V og det er objekter, der indeholder et stort O.</p>
 <p>Fx indeholder første eksempelsætning herunder 3 verber: (i) najugaqarpoq indeholder analysen ‘V+Ind+3Sg’. Subjektet er altså ‘hon’ og der er ikke noget objekt. Verbet betyder altså “Hon V-er”. (ii) Naapissagakku indeholder analysen ‘V+Cau+1Sg+3SgO. Subjektet er altså ‘jeg’ og objektet ‘hom’. Verbet betyder altså “fordi jeg V-er hom” (iii) Narsamukassaanga indeholder analysen ‘V+Ind+1Sg’. Subjektet er altså ‘jeg’ og der er intet objekt. Verbet betyder “Jeg V-er”.</p>
 <p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
 <p>Ex:<br>
 <i>Qatanngutiga Narsami najugaqarpoq. Naapissagakku aqagu Narsamukassaanga.</i> (En af mine søskende bor i Narsaq. Fordi jeg skal møde hom, tager jeg til Narsaq i morgen.)<br>
 <i>Qatanngutikka Royal Greenlandimi sulipput. Ilagigakkit ippassaq Royal Greenlandimiippunga.</i> (Mine søskende arbejder i Royal Greenland. Fordi jeg var sammen med dem, var jeg i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau1s3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau2s3'] = 'Øvelse 8.1.2x: Causativ med objekt i 3. person (2Sg)';
+$l10n['eng']['lg2/8x/cau2s3'] = 'Exercise 8.1.2x: Causative with 3rd person object (2Sg)';
+$l10n['dan']['lg2/8x/cau2s3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutit Narsami najugaqarpoq. Naapissagakku aqagu Narsamukassaatit.</i> (En af dine søskende bor i Narsaq. Fordi du skal møde hom, tager du til Narsaq i morgen.)<br>
+<i>Qatanngutitit Royal Greenlandimi sulipput. Ilagigakkit ippassaq Royal Greenlandimiipputit.</i> (Dine søskende arbejder i Royal Greenland. Fordi du var sammen med dem, var du i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau2s3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau3s3'] = 'Øvelse 8.1.3x: Causativ med objekt i 3. person (3Sg)';
+$l10n['eng']['lg2/8x/cau3s3'] = 'Exercise 8.1.3x: Causative with 3rd person object (3Sg)';
+$l10n['dan']['lg2/8x/cau3s3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutiga Narsami najugaqarpoq. Arngannguup naapissammagu aqagu Narsamukassaagut.</i> (En af dine søskende bor i Narsaq. Fordi Arnannguaq skal møde hom, tager vi til Narsaq i morgen.)<br>
+<i>Qatanngutikka Royal Greenlandimi sulipput. Maliup ilagimmagit ippassaq Royal Greenlandimiippugut.</i> (Mine søskende arbejder i Royal Greenland. Fordi Malik var sammen med dem, var vi i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau3s3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau4s3'] = 'Øvelse 8.1.4x: Causativ med objekt i 3. person (4Sg)';
+$l10n['eng']['lg2/8x/cau4s3'] = 'Exercise 8.1.4x: Causative with 3rd person object (4Sg)';
+$l10n['dan']['lg2/8x/cau4s3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutiga Narsami najugaqarpoq. Arngannguup naapissagamiuk aqagu Narsamukassaaq.</i> (En af mine søskende bor i Narsaq. Fordi Arnannguaq skal møde hom, tager hun til Narsaq i morgen.)<br>
+<i>Qatanngutikka Royal Greenlandimi sulipput. Maliup ilagigamigit ippassaq Royal Greenlandimiippoq.</i> (Mine søskende arbejder i Royal Greenland. Fordi Malik var sammen med dem, var han i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau4s3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau1p3'] = 'Øvelse 8.1.5x: Causativ med objekt i 3. person (1Pl)';
+$l10n['eng']['lg2/8x/cau1p3'] = 'Exercise 8.1.5x: Causative with 3rd person object (1Pl)';
+$l10n['dan']['lg2/8x/cau1p3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatannguterput Narsami najugaqarpoq. Naapissagatsigu aqagu Narsamukassaagut.</i> (En af vore søskende bor i Narsaq. Fordi vi skal møde hom, tager vi til Narsaq i morgen.)<br>
+<i>Qatanngutigut Royal Greenlandimi sulipput. Ilagigatsigit ippassaq Royal Greenlandimiippugut.</i> (Vore søskende arbejder i Royal Greenland. Fordi vi var sammen med dem, var vi i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau1p3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau2p3'] = 'Øvelse 8.1.6x: Causativ med objekt i 3. person (2Pl)';
+$l10n['eng']['lg2/8x/cau2p3'] = 'Exercise 8.1.6x: Causative with 3rd person object (2Pl)';
+$l10n['dan']['lg2/8x/cau2p3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutersi Narsami najugaqarpoq. Naapissagassiuk aqagu Narsamukassaasi.</i> (En af jeres søskende bor i Narsaq. Fordi vi skal møde hom, tager vi til Narsaq i morgen.)<br>
+<i>Qatanngutigut Royal Greenlandimi sulipput. Ilagigatsigit ippassaq Royal Greenlandimiippugut.</i> (Vore søskende arbejder i Royal Greenland. Fordi vi var sammen med dem, var vi i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau2p3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau3p3'] = 'Øvelse 8.1.7x: Causativ med objekt i 3. person (3Pl)';
+$l10n['eng']['lg2/8x/cau3p3'] = 'Exercise 8.1.7x: Causative with 3rd person object (3Pl)';
+$l10n['dan']['lg2/8x/cau3p3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutit Narsami najugaqarpoq. Arngannguakkut naapissammassuk aqagu Narsamukassaagut.</i> (En af dine søskende bor i Narsaq. Fordi Arnannguaq skal møde hom, tager vi til Narsaq i morgen.)<br>
+<i>Qatanngutikka Royal Greenlandimi sulipput. Malikkut ilagimmatigit ippassaq Royal Greenlandimiippugut.</i> (Mine søskende arbejder i Royal Greenland. Fordi Malikkut var sammen med dem, var vi i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau3p3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau4p3'] = 'Øvelse 8.1.8x: Causativ med objekt i 3. person (4Pl)';
+$l10n['eng']['lg2/8x/cau4p3'] = 'Exercise 8.1.8x: Causative with 3rd person object (4Pl)';
+$l10n['dan']['lg2/8x/cau4p3/text'] = 'Brug causativ med objekt i 3. person. Nu med fokus på subjekt i 2.person.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>Ex:<br>
+<i>Qatanngutiga Narsami najugaqarpoq. Arngannguakkut naapissagamiikku aqagu Narsamukassapput.</i> (En af mine søskende bor i Narsaq. Fordi Arnannguaq og dem skal møde hom, tager de til Narsaq i morgen.)<br>
+<i>Qatanngutikka Royal Greenlandimi sulipput. Malikkut ilagigamikkit ippassaq Royal Greenlandimiipput.</i> (Mine søskende arbejder i Royal Greenland. Fordi Malik og dem var sammen med dem, var de i Royal Greenland i går.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/8x/cau4p3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/8x/cau3'] = 'Øvelse 8.1.9x: Causativ med objekt i 3. person';
+$l10n['eng']['lg2/8x/cau3'] = 'Exercise 8.1.9x: Causative with 3rd person object';
+$l10n['dan']['lg2/8x/cau3/text'] = 'Brug causativ med objekt i 3. person. Opsamling af alle foregående 8-1x øvelser.</p>
+<p>Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.</p>
+<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 $l10n['eng']['lg2/8x/cau3/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
 $l10n['dan']['lg2/structure/3.1/t'] = 'Øvelse 3.1: Jongler lidt med personendelserne I (tekst)';

@@ -508,6 +508,14 @@ function lg2($state) {
 <div class="choice my-2 col-lg-6" id="l8x">
 	<h5 class="ch-item"><a href="{t:prefix}/lg2/8x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/8x}</a></h5>
 	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/8x/cau1s3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau1s3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau2s3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau2s3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau3s3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau3s3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau4s3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau4s3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau1p3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau1p3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau2p3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau2p3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau3p3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau3p3}</a></li>
+		<li><a href="{t:prefix}/lg2/8x/cau4p3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau4p3}</a></li>
 		<li><a href="{t:prefix}/lg2/8x/cau3/"><i class="link-info bi bi-file-text"></i> {t:lg2/8x/cau3}</a></li>
 	</ul>
 </div>
