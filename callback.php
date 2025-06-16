@@ -31,28 +31,22 @@ $rv = [
 	];
 
 while ($a === 'tips') {
-	$_REQUEST['ts'] = preg_replace('~[^-A-Za-z0-9@<>_/,]+~s', ' ', $_REQUEST['ts']);
-	$_REQUEST['ts'] = preg_replace('~,,+~', ',', $_REQUEST['ts']);
-	$_REQUEST['ts'] = preg_replace('~^,~', '', $_REQUEST['ts']);
-	$_REQUEST['ts'] = preg_replace('~,$~', '', $_REQUEST['ts']);
+	$_REQUEST['ts'] = preg_replace('~[^-\pL\pN\pM@<>_/,]+~us', ' ', $_REQUEST['ts']);
+	$_REQUEST['ts'] = preg_replace('~,,+~u', ',', $_REQUEST['ts']);
+	$_REQUEST['ts'] = preg_replace('~^,~u', '', $_REQUEST['ts']);
+	$_REQUEST['ts'] = preg_replace('~,$~u', '', $_REQUEST['ts']);
 	$_REQUEST['ts'] = trim($_REQUEST['ts']);
 	$_REQUEST['ts'] = explode(',', $_REQUEST['ts']);
 	if (empty($_REQUEST['ts'])) {
 		$rv['e'][] = 'Malformed tips request - no tip IDs passed';
 		break;
 	}
-	if (!preg_match('~^(dan|eng|kal)$~', $_REQUEST['l'] ?? '')) {
+	if (!preg_match('~^(dan|eng|kal)$~u', $_REQUEST['l'] ?? '')) {
 		$rv['e'][] = 'Malformed tips request - invalid language';
 		break;
 	}
 
-	$db = new \TDC\PDO\SQLite(__DIR__.'/docs/docs.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
-
-	$rv['ts'] = [];
-	$stm = $db->prepexec("SELECT l_id, a_title, a_ref, a_ref_url, a_short, a_long FROM lookups INNER JOIN articles ON (l_{$_REQUEST['l']} = a_id) WHERE l_id IN (?".str_repeat(', ?', count($_REQUEST['ts'])-1).")", $_REQUEST['ts']);
-	while ($row = $stm->fetch()) {
-		$rv['ts'][$row['l_id']] = $row;
-	}
+	$rv['ts'] = load_tips($_REQUEST['ts'], $_REQUEST['l']);
 
 	break;
 }

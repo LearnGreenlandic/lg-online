@@ -1324,6 +1324,7 @@ function sentence_random_read($root='lg2', $state, $chap='0x', $task='random') {
 		}
 
 		$ana = implode('<br>', array_column($ws, 0));
+		$ana = '<a class="tip">'.preg_replace('~(<br>|\+)~', '</a>$1<a class="tip">', $ana).'</a>';
 		$sent = implode(' ', array_column($ws, 1));
 		$outs[] = '<div class="text-center entry"><div class="mb-3">'.$sent.'<br><code class="text-left text-wrap hint my-1">'.$ana.'</code></div><div><audio src="/martha/?t='.$sent.'" controlslist="nodownload" crossorigin="use-credentials" preload="none">HTML5 MP3</audio><button type="button" class="btn btn-primary">▶</button> <button type="button" class="btn btn-secondary">☼</button></div></div>';
 	}
@@ -1381,6 +1382,7 @@ function sentence_random_read_sqlite($root='lg2', $state, $chap='0x', $task='ran
 			$sent = mb_ucfirst(implode(' ', array_column($q, 1)));
 		}
 		$sent = preg_replace_callback('~( ⇒ )(.)~u', '\LGO\cb_ucfirst', $sent);
+		$ana = '<a class="tip">'.preg_replace('~(<br>|\+)~', '</a>$1<a class="tip">', $ana).'</a>';
 
 		if (!empty($ws['q_txt'])) {
 			$sent = $ws['q_txt'];

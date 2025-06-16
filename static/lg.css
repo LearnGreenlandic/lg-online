@@ -208,6 +208,17 @@ lg-fn, lg-fn-def {
 .link, .tip, .link-info {
 	cursor: pointer;
 }
+code .tip {
+	color: inherit;
+}
+.tip-no {
+	cursor: inherit;
+	text-decoration: inherit;
+}
+
+.text-left {
+	text-align: left;
+}
 
 @media (max-width: 735px) {
 	.ch-item + .ch-item {

@@ -69,7 +69,7 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/0x/today/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/today}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/name/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/name}</a></li>
 		<li><a href="{t:prefix}/lg2/0x/onewho/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x/onewho}</a></li>
-		<li><a href="{t:prefix}/lg2/pdf/alt.pdf"><i class="link-info bi bi-file-text"></i> {t:lg2/pdf/alt}</a></li>
+		<li><a href="{t:prefix}/lg2/0x/"><i class="link-info bi bi-file-text"></i> {t:lg2/0x}</a></li>
 
 		<li><br></li>
 		<li><a href="{t:prefix}/lg2/fstx/0.1.1/"><i class="link-info bi bi-x-diamond"></i> {t:lg2/fstx/0.1.1}</a></li>

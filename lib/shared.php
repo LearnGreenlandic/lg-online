@@ -2,6 +2,55 @@
 namespace LGO;
 require_once __DIR__.'/../vendor/autoload.php';
 
+$GLOBALS['-lg-tips-db'] = null;
+$GLOBALS['-lg-tips'] = [
+	'dan' => [],
+	'eng' => [],
+	'kal' => [],
+];
+function load_tips($ids, $lang) {
+	$rv = [];
+	foreach ($ids as $k => $v) {
+		if (array_key_exists($v, $GLOBALS['-lg-tips'][$lang])) {
+			$rv[$v] = $GLOBALS['-lg-tips'][$lang];
+			unset($ids[$k]);
+		}
+	}
+	if (!empty($ids)) {
+		if (empty($GLOBALS['-lg-tips-db'])) {
+			$GLOBALS['-lg-tips-db'] = new \TDC\PDO\SQLite(__DIR__.'/../docs/docs.sqlite', [\PDO::SQLITE_ATTR_OPEN_FLAGS => \PDO::SQLITE_OPEN_READONLY]);
+		}
+
+		$ids = array_values($ids);
+		$stm = $GLOBALS['-lg-tips-db']->prepexec("SELECT l_id, a_title, a_ref, a_ref_url, a_short, a_long FROM lookups INNER JOIN articles ON (l_{$lang} = a_id) WHERE l_id IN (?".str_repeat(', ?', count($ids)-1).")", $ids);
+		while ($row = $stm->fetch()) {
+			$rv[$row['l_id']] = $row;
+			$GLOBALS['-lg-tips'][$lang][$row['l_id']] = $row;
+		}
+	}
+
+	return $rv;
+}
+
+function tippify($arr) {
+	$first = false;
+	if (!is_array($arr)) {
+		$arr = [$arr];
+		$first = true;
+	}
+
+	foreach ($arr as $s) {
+		if (preg_match_all('~([^+]+)~', $s, $ms, PREG_SET_ORDER)) {
+			;
+		}
+	}
+
+	if ($first) {
+		return $arr[0];
+	}
+	return $arr;
+}
+
 function b64_url($rv) {
 	$rv = base64_encode($rv);
 	$rv = trim($rv, '=');
@@ -384,6 +433,15 @@ function footer($state=null) {
 	</ul>
 </nav>
 
+<script>
+<?php
+	if (!empty($GLOBALS['-lg-tips'][$state['lang']])) {
+		foreach ($GLOBALS['-lg-tips'][$state['lang']] as $k => $v) {
+			echo 'g_tips['.json_encode_vb($k).'] = '.json_encode_vb($v).';'."\n";
+		}
+	}
+?>
+</script>
 </body>
 </html>
 <?php

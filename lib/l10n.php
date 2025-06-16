@@ -142,8 +142,8 @@ $l10n['eng']['lg1/listening/3/ts'] = 'Has ts';
 $l10n['dan']['lg1/listening/3/t'] = 'Har kun t';
 $l10n['eng']['lg1/listening/3/t'] = 'Has only t';
 
-$l10n['dan']['lg1/2x'] = 'Introduktion til kapitel II X-tras';
-$l10n['eng']['lg1/2x'] = 'Introduction to chapter II X-tra';
+$l10n['dan']['lg1/2x'] = 'Introduktion til kapitel I-2 X-tras';
+$l10n['eng']['lg1/2x'] = 'Introduction to chapter I-2 X-tra';
 
 $l10n['dan']['lg1/2x/listen'] = 'Øvelse 2.1X: Til og fra stednavne (lydøvelse)';
 $l10n['eng']['lg1/2x/listen'] = 'Exercise 2.1X: To and from place names (perception)';
@@ -290,49 +290,49 @@ $l10n['dan']['lg1/5x/qa-aap'] = 'Øvelse 5.3X: Besvar spørgsmål positivt (prod
 $l10n['eng']['lg1/5x/qa-aap'] = 'Exercise 5.3X: Answering interrogatives affirmatively (production)';
 $l10n['dan']['lg1/5x/qa-aap/text'] = 'Du mødte interrogativs endelse i 2. person med og uden objekt i lektion 4 som i "<i>Per takuiuk? (Har du set Per?)</i>" og "<i>Qanga tikippit? (Hvornår kom du?)</i>". Her i øvelse 5 bliver du spurgt, om du … Besvar alle spørgsmål bekræftende med "<i>Aap (Ja). …</i>"</p>
 <p>Fx<br>
-<i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Aap, Nuummi illoqarusuppunga.</i><br>
-<i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p>  <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+<i>Nuummi illoqarusuppit?</i> (Vil du gerne have hus i Nuuk?) - <i>Aap, Nuummi illoqarusuppunga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk?</i> (Mødte du Arnannguaq i Pisiffik?) - <i>Aap, Arnannguaq Pisiffimmi naapippara.</i></p>  <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-aap/text'] = 'In lesson 4 you met the interrogative endings in 2. person singular with and without object as in "<i>Per takuiuk? (Have you seen Per?)</i>" and "<i>Qanga tikippit? (When did you arrive?)</i>". In exercise 5 you will be asked whether you…. You will respond affirmatively to each question with "<i>Aap (Yes). …</i>"</p>
 <p>E.g.<br>
-<i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Aap, Nuummi illoqarusuppunga.</i><br>
-<i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Aap, Arnannguaq Pisiffimmi naapippara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+<i>Nuummi illoqarusuppit?</i> (Do you want to have a house in Nuuk?) - <i>Aap, Nuummi illoqarusuppunga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk?</i> (Did you meet Arnannguaq in Pisiffik?) - <i>Aap, Arnannguaq Pisiffimmi naapippara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/qa-naamik'] = 'Øvelse 5.4X: Besvar spørgsmål negativt (produktion)';
 $l10n['eng']['lg1/5x/qa-naamik'] = 'Exercise 5.4X: Answering interrogatives negatively (production)';
-$l10n['dan']['lg1/5x/qa-naamik/text'] = 'Benægt spørgsmål. Indled svarene med "<i>Naamik (Nej), …</i>"</p>
+$l10n['dan']['lg1/5x/qa-naamik/text'] = 'Benægt spørgsmål. Indled svarene med "<i>Naamik</i> (Nej), …"</p>
 <p>Fx<br>
-<i>Nuummi illoqarusuppit? (hus – have – ønske_at – du?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
-<i>Arnannguaq Pisiffimmi naapippiuk? (møde – du_hende?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p>
+<i>Nuummi illoqarusuppit?</i> (Vil du gerne have hus i Nuuk?) - <i>Naamik, Nuummi illoqarusunngilanga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk?</i> (Mødte du Arnannguaq i Pisiffik?) - <i>Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik (No), …</i>"</p>
+$l10n['eng']['lg1/5x/qa-naamik/text'] = 'Answer questions negatively. Start your answers with  "<i>Naamik</i> (No), …"</p>
 <p>E.g.<br>
-<i>Nuummi illoqarusuppit? (house – have – want_to – you?) - Naamik, Nuummi illoqarusunngilanga.</i><br>
-<i>Arnannguaq Pisiffimmi naapippiuk? (meet – you_her?) - Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+<i>Nuummi illoqarusuppit?</i> (Do you want to have a house in Nuuk?) - <i>Naamik, Nuummi illoqarusunngilanga.</i><br>
+<i>Arnannguaq Pisiffimmi naapippiuk?</i> (Did you meet Arnannguaq in Pisiffik?) - <i>Naamik, Arnannguaq Pisiffimmi naapinngilara.</i></p> <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg1/5x/qa-ssa'] = 'Øvelse 5.5X: Sætninger med SSA (produktion)';
-$l10n['eng']['lg1/5x/qa-ssa'] = 'Exercise 5.5X: Sentences with -SSA 1 (production)';
+$l10n['dan']['lg1/5x/qa-ssa'] = 'Øvelse 5.5X: Sætninger med -SSA (produktion)';
+$l10n['eng']['lg1/5x/qa-ssa'] = 'Exercise 5.5X: Sentences with -SSA (production)';
 $l10n['dan']['lg1/5x/qa-ssa/text'] = 'Forstå sætninger, hvori SSA indgår. Husk at SSA er obligatorisk ved alle handlinger, der sker senere end nu. Du får input af typen "<i>I_går - vil/gør_du ..?</i>". Forstå, hvad du hører og svar med "<i>Nej, jeg .. i overmorgen.</i>". Husk at <i>ippassaq = i går</i> og <i>aqaguagu = i overmorgen</i>.</p>
 <p>Fx<br>
-<i>Ippassaq Nuummi whiskytorpit? Naamik, aqaguagu Nuummi whiskytussaanga.</i><br>
-<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, aqaguagu Egede Qaqortumi naapissavara.</i></p>
+<i>Ippassaq Nuummi whiskytorpit?</i> (Drak du whisky i Nuuk i går) <i>Naamik, aqaguagu Nuummi whiskytussaanga.</i> (Nej, jeg drikker whisky i Nuuk i overmorgen)<br>
+<i>Ippassaq Egede Qaqortumi naapippiuk?</i> (Mødte du Egede i Qaqortoq i går) <i>Naamik, aqaguagu Egede Qaqortumi naapissavara.</i> (Nej, jeg møder Egede i Qaqortoq i overmorgen)</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-ssa/text'] = 'Understand sentences with -SSA. Remember that -SSA is mandatory with all verbal content taking place later than now. Your input will be questions like "<i>Yesterday, did you ..?</i>". Understand what you hear and give an answer like "<i>No, I will .. the day after tomorrow.</i>". Remember <i>ippassaq = yesterday</i> and <i>aqaguagu = day after tomorrow</i>.</p>
 <p>E.g.<br>
-<i>Ippassaq Nuummi whiskytorpit? Naamik, aqaguagu Nuummi whiskytussaanga.</i><br>
-<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, aqaguagu Egede Qaqortumi naapissavara.</i></p>
+<i>Ippassaq Nuummi whiskytorpit?</i> (Did you drink whisky in Nuuk yesterday) <i>Naamik, aqaguagu Nuummi whiskytussaanga.</i> (No, I will drink whisky in Nuuk the day after tomorrow)<br>
+<i>Ippassaq Egede Qaqortumi naapippiuk?</i> (Did you meet Egede in Qaqortoq yesterday)<br> <i>Naamik, aqaguagu Egede Qaqortumi naapissavara.</i> (No, I will meet Egede in Qaqortoq the day after tomorrow</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/qa-aqa'] = 'Øvelse 5.6X: Sætninger med SSA 2 (produktion)';
 $l10n['eng']['lg1/5x/qa-aqa'] = 'Exercise 5.6X: Sentences with -SSA 2 (production)';
 $l10n['dan']['lg1/5x/qa-aqa/text'] = 'Forstå spørgsmålene og benægt dem fulgt af "<i>.. men i overmorgen vil jeg ..</i></p>
 <p>Fx<br>
-<i>Ippassaq Nuummi whiskytorpit? Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i><br>
-<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i></p>
+<i>Ippassaq Nuummi whiskytorpit?</i> (Drak du whisky i Nuuk i går)</br><i>Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i> (Nej, jeg drak ikke whisky i Nuuk i går, men i overmorgen drikker jeg whisky i Nuuk)<br>
+<i>Ippassaq Egede Qaqortumi naapippiuk?</i> (Mødte du Egede i Qaqortoq i går)<br><i>Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i> (Nej, jeg mødte ikke Egede i Qaqortoq i går, men i overmorgen møder jeg Egede i Qaqortoq)</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 $l10n['eng']['lg1/5x/qa-aqa/text'] = 'Understand the questions and negate them followed by "<i>.. but day after tomorrow I will ..</i>"</p>
 <p>E.g.<br>
-<i>Ippassaq Nuummi whiskytorpit? Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i><br>
-<i>Ippassaq Egede Qaqortumi naapippiuk? Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i></p>
+<i>Ippassaq Nuummi whiskytorpit?</i> (Did you drink whisky in Nuuk yesterday)<br><i>Naamik, ippassaq Nuummi whiskytunngilanga aqaguaguli Nuummi whiskytussaanga.</i> (No, I did not drink whisky in Nuuk yesterday but the day after tomorrow I will dring whisky in Nuuk<br>
+<i>Ippassaq Egede Qaqortumi naapippiuk?</i> (Did you meet Egede in Qaqortoq yesterday)<br> <i>Naamik, ippassaq Egede Qaqortumi naapinngilara aqaguaguli Egede Qaqortumi naapissavara.</i> (No, I did not meet Egede in Qaqortoq yesterday but the day after tomorrow I will meet Egede in Qaqortoq</p>
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 $l10n['dan']['lg1/5x/randp'] = 'Øvelse 5.7X: Sætninger (production)';
@@ -569,14 +569,14 @@ $l10n['dan']['lg2/prep/text'] = '<p>Her er en række øvelser, som jeg kraftigt 
 
 <p>Gør således:
 <ul>
- 	<li>Aflyt forelæsning 1.1 og brug bagefter pdf-filen "Forelæsning 1.1 dias" til at indlære de nye gloser og endelser. Koncentrer dig om indlæring af de nye verber, tilhængene Vb+TAR og Vb+GALUAR samt endelserne Vb+{vaaŋŋa}, Vb+{vaat}, Vb+{vit}, Vb+{viuk} og Vb+{vugut}. Øvrige gloser, tilhæng og endelser skal du nok få på plads, når du er færdig med fortræningen og for alvor går i gang med lektion 1</li>
- 	<li>Indlær den nye lydregel. Den regulerer den variable konsonant, der forekommer som første bogstav i mange højfrekvente tilhæng og endelser. Den skrives ofte som et stort T. Reglen siger, at T → /s/ efter en vokal, men /t/ efter en konsonant. Bemærk, at det er samme princip som modusmorfemerne {vu}, {va} og {vi}, der kun har v-formerne efter vokal, men ellers har formerne {pu}, {pa} og {pi}, som du lærte det i modul 1.</li>
- 	<li>Lær et nyt tilhæng: Vb+TUQ betyder "den, som Vb-er" som i <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "ham/ hende, der studerer" (dvs. "en elev") og i <i>suli</i>+TUQ → <i>sulisoq</i> "ham/ hende, der arbejder" (dvs. "en arbejder")</li>
- 	<li>Lær et andet nyt tilhæng: Vb+TARIAQAR betyder "være nødt til at Vb" som i <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "han er nødt til at studere" og i <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "han er nødt til at arbejde".</li>
- 	<li>Gennemarbejd øvelserne 0.1 - 0.3 til du kan klare dem både som tekst og som lyd uden at tage bogstaverne til hjælp.</li>
- 	<li>Gennemarbejd derefter øvelserne 0.4 - 0.5 på samme måde og forvis dig hver gang om, at du virkeligt forstår hvad svarene betyder.</li>
- 	<li>Lær endelig et tredje meget frekvent tilhæng, nemlig Vb-TAQ, der skaber et passivt navneord af transitive verber. <i>asa-</i> betyder "at elske ham/hende" og <i>allap-</i> "at skrive det". Så betyder {asa-TAQ} → <i>asasaq</i> "den elskede" og {allap-TAQ} → <i>allataq</i> tilsvarende "det skrevne". Vb-TAQ er dog lidt mere kompliceret end andre tilhæng på T, for selv om tilhænget grundliggende følger de normale T-regler, så gælder det helt specielt for dette tilhæng, at det har formen -<i>gaq</i> efter stammer på /r/ som i {ilinniartip+TAR-TAQ} → <i>ilinniartittagaq </i> "en, man plejer at undervise" og {ilinniartip+GALUAR-TAQ} → <i>ilinniartikkaluagaq </i> "en, man ellers har undervist"</li>
- 	<li>Gennemarbejd derefter øvelserne 0.6 - 0.7 på samme måde og forvis dig igen hver gang om, at du virkeligt forstår både hvad prompten og dine egne svar betyder. Hvis du er i tvivl om den korrekte forståelse, skal du tage det op med din gruppe og evt. med din lærer.</li>
+	<li>Aflyt forelæsning 1.1 og brug bagefter pdf-filen "Forelæsning 1.1 dias" til at indlære de nye gloser og endelser. Koncentrer dig om indlæring af de nye verber, tilhængene V+TAR og V+GALUAR samt endelserne V+{vaaŋŋa}, V+{vaat}, V+{vit}, V+{viuk} og V+{vugut}. Øvrige gloser, tilhæng og endelser skal du nok få på plads, når du er færdig med fortræningen og for alvor går i gang med lektion 1</li>
+	<li>Indlær den nye lydregel. Den regulerer den variable konsonant, der forekommer som første bogstav i mange højfrekvente tilhæng og endelser. Den skrives ofte som et stort T. Reglen siger, at T → /s/ efter en vokal, men /t/ efter en konsonant. Bemærk, at det er samme princip som modusmorfemerne {vu}, {va} og {vi}, der kun har v-formerne efter vokal, men ellers har formerne {pu}, {pa} og {pi}, som du lærte det i modul 1.</li>
+	<li>Lær et nyt tilhæng: V+TUQ betyder "den, som V-er" som i <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "ham/ hende, der studerer" (dvs. "en elev") og i <i>suli</i>+TUQ → <i>sulisoq</i> "ham/ hende, der arbejder" (dvs. "en arbejder")</li>
+	<li>Lær et andet nyt tilhæng: V+TARIAQAR betyder "være nødt til at V" som i <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "han er nødt til at studere" og i <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "han er nødt til at arbejde".</li>
+	<li>Gennemarbejd øvelserne 0.1 - 0.3 til du kan klare dem både som tekst og som lyd uden at tage bogstaverne til hjælp.</li>
+	<li>Gennemarbejd derefter øvelserne 0.4 - 0.5 på samme måde og forvis dig hver gang om, at du virkeligt forstår hvad svarene betyder.</li>
+	<li>Lær endelig et tredje meget frekvent tilhæng, nemlig V-TAQ, der skaber et passivt navneord af transitive verber. <i>asa-</i> betyder "at elske ham/hende" og <i>allap-</i> "at skrive det". Så betyder {asa-TAQ} → <i>asasaq</i> "den elskede" og {allap-TAQ} → <i>allataq</i> tilsvarende "det skrevne". V-TAQ er dog lidt mere kompliceret end andre tilhæng på T, for selv om tilhænget grundliggende følger de normale T-regler, så gælder det helt specielt for dette tilhæng, at det har formen -<i>gaq</i> efter stammer på /r/ som i {ilinniartip+TAR-TAQ} → <i>ilinniartittagaq </i> "en, man plejer at undervise" og {ilinniartip+GALUAR-TAQ} → <i>ilinniartikkaluagaq </i> "en, man ellers har undervist"</li>
+	<li>Gennemarbejd derefter øvelserne 0.6 - 0.7 på samme måde og forvis dig igen hver gang om, at du virkeligt forstår både hvad prompten og dine egne svar betyder. Hvis du er i tvivl om den korrekte forståelse, skal du tage det op med din gruppe og evt. med din lærer.</li>
 </ul></p>';
 $l10n['eng']['lg2/prep/text'] = '<p>This series of exercises should be thoroughly worked through BEFORE you embark on Module 2. It has namely proven that the cocktail of a new verbal mood plus a rather complicated sound rule offered to you in lesson 1 has been quite a mouthful for many of you.</p>
 
@@ -584,68 +584,68 @@ $l10n['eng']['lg2/prep/text'] = '<p>This series of exercises should be thoroughl
 
 <p>Do so:
 <ul>
- 	<li>Listen to presentation 1.1 and work through the document "Chapter 1 as text" to learn the new words and morphemes. Focus your learning on verbs, the derivational morphemes Vb+TAR and Vb+GALUAR as well as the endings Vb+{vaaŋŋa}, Vb+{vaat}, Vb+{vit}, Vb+{viuk} and Vb+{vugut}. All other new material you will get in once you are done with this preparatory chapter and get going with lesson 1.</li>
- 	<li>Learn the new sound rule. It controls the variable consonant one finds in a number of very frequent derivational morphemes and endings. It is most often written as a capital T. The rule states that T → /s/ after a vowel but /t/ after a consonant. Please, observe that this is exactly the same principle as you saw in the mood endings {vu}, {va} and {vi} that keep their v-shapes after vowels but after consonants turn {pu}, {pa} and {pi} as you learned it in module 1.</li>
- 	<li>Learn a new derivational morpheme: Vb+TUQ means "the one who Vb" as in <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "the one who studies" (that is "a student") and in <i>suli</i>+TUQ → <i>sulisoq</i> "the one who works" (that is "a worker")</li>
- 	<li>Learn another new derivational morpheme: Vb+TARIAQAR means "have to Vb/ must Vb" as in <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "he has to study" and in <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "he must work".</li>
- 	<li>Work through exercises 0.1 - 0.3 till you can handle them both as text as well as as sound without support in the written text.</li>
- 	<li>Work through exercises 0.4 - 0.5 in the same way and make sure that you in depth understand all the answers.</li>
- 	<li>Finally, you will learn a third very frequent derivational morpheme namely Vb-TAQ which creates passive nouns of transitive verbs. <i>asa-</i> means "to love him/her" and <i>allap-</i> "to write it". Then {asa-TAQ} → <i>asasaq</i> means "the beloved one" and {allap-TAQ} → <i>allataq</i> by the same principle "that what has been written". Vb-TAQ is however a bit more complicated than other derivational morphemes since whereas T basically adhere to the normal T-rules there is a speciality exclusively for this morpheme that it will take the alternative shape -<i>gaq</i> after stems in /r/ as in {ilinniartip+TAR-TAQ} → <i>ilinniartittagaq </i> "one who is normally taught" and {ilinniartip+GALUAR-TAQ} → <i>ilinniartikkaluagaq </i> "somebody who is taught (but ..)"</li>
- 	<li>Finally, work through exercises 0.6 - 0.7 the same way and make sure that you really understand the meaning of both the prompt and your own answers. If you are the least in doubt about how to interpret the word do not hesitate to bring it up with your work group and with your teacher if you have one.</li>
+	<li>Listen to presentation 1.1 and work through the document "Chapter 1 as text" to learn the new words and morphemes. Focus your learning on verbs, the derivational morphemes V+TAR and V+GALUAR as well as the endings V+{vaaŋŋa}, V+{vaat}, V+{vit}, V+{viuk} and V+{vugut}. All other new material you will get in once you are done with this preparatory chapter and get going with lesson 1.</li>
+	<li>Learn the new sound rule. It controls the variable consonant one finds in a number of very frequent derivational morphemes and endings. It is most often written as a capital T. The rule states that T → /s/ after a vowel but /t/ after a consonant. Please, observe that this is exactly the same principle as you saw in the mood endings {vu}, {va} and {vi} that keep their v-shapes after vowels but after consonants turn {pu}, {pa} and {pi} as you learned it in module 1.</li>
+	<li>Learn a new derivational morpheme: V+TUQ means "the one who V" as in <i>ilinniar</i>+TUQ → <i>ilinniartoq</i> "the one who studies" (that is "a student") and in <i>suli</i>+TUQ → <i>sulisoq</i> "the one who works" (that is "a worker")</li>
+	<li>Learn another new derivational morpheme: V+TARIAQAR means "have to V/ must V" as in <i>ilinni</i><i>ar</i>+TARIAQAR+{vuq} → <i>ilinniartaria</i><i>qar</i><i>p</i><i>oq</i> "he has to study" and in <i>suli</i>+TARIAQAR+{vuq}→ <i>sulis</i><i>ariaqarp</i><i>oq</i> "he must work".</li>
+	<li>Work through exercises 0.1 - 0.3 till you can handle them both as text as well as as sound without support in the written text.</li>
+	<li>Work through exercises 0.4 - 0.5 in the same way and make sure that you in depth understand all the answers.</li>
+	<li>Finally, you will learn a third very frequent derivational morpheme namely V-TAQ which creates passive nouns of transitive verbs. <i>asa-</i> means "to love him/her" and <i>allap-</i> "to write it". Then {asa-TAQ} → <i>asasaq</i> means "the beloved one" and {allap-TAQ} → <i>allataq</i> by the same principle "that what has been written". V-TAQ is however a bit more complicated than other derivational morphemes since whereas T basically adhere to the normal T-rules there is a speciality exclusively for this morpheme that it will take the alternative shape -<i>gaq</i> after stems in /r/ as in {ilinniartip+TAR-TAQ} → <i>ilinniartittagaq </i> "one who is normally taught" and {ilinniartip+GALUAR-TAQ} → <i>ilinniartikkaluagaq </i> "somebody who is taught (but ..)"</li>
+	<li>Finally, work through exercises 0.6 - 0.7 the same way and make sure that you really understand the meaning of both the prompt and your own answers. If you are the least in doubt about how to interpret the word do not hesitate to bring it up with your work group and with your teacher if you have one.</li>
 </ul></p>';
 
-$l10n['dan']['lg2/structure/0.1/t'] = 'Øvelse 0.1: Brug Vb+TUQ (tekst)';
-$l10n['eng']['lg2/structure/0.1/t'] = 'Exercise 0.1: Use Vb+TUQ (text)';
-$l10n['dan']['lg2/structure/0.1/a'] = 'Øvelse 0.1: Brug Vb+TUQ (audio)';
-$l10n['eng']['lg2/structure/0.1/a'] = 'Exercise 0.1: Use Vb+TUQ (audio)';
-$l10n['dan']['lg2/structure/0.1/text'] = 'Brug Vb+TUQ til at lave ord, der betyder "<i>den som .. </i>".';
-$l10n['eng']['lg2/structure/0.1/text'] = 'Use Vb+TUQ to form words mearning "<i>the one who .. </i>".';
+$l10n['dan']['lg2/structure/0.1/t'] = 'Øvelse 0.1: Brug V+TUQ (tekst)';
+$l10n['eng']['lg2/structure/0.1/t'] = 'Exercise 0.1: Use V+TUQ (text)';
+$l10n['dan']['lg2/structure/0.1/a'] = 'Øvelse 0.1: Brug V+TUQ (audio)';
+$l10n['eng']['lg2/structure/0.1/a'] = 'Exercise 0.1: Use V+TUQ (audio)';
+$l10n['dan']['lg2/structure/0.1/text'] = 'Brug V+TUQ til at lave ord, der betyder "<i>den som .. </i>".';
+$l10n['eng']['lg2/structure/0.1/text'] = 'Use V+TUQ to form words mearning "<i>the one who .. </i>".';
 
-$l10n['dan']['lg2/structure/0.2/t'] = 'Øvelse 0.2: Brug Vb+TARIAQAR (tekst)';
-$l10n['eng']['lg2/structure/0.2/t'] = 'Exercise 0.2: Use Vb+TARIAQAR (text)';
-$l10n['dan']['lg2/structure/0.2/a'] = 'Øvelse 0.2: Brug Vb+TARIAQAR (audio)';
-$l10n['eng']['lg2/structure/0.2/a'] = 'Exercise 0.2: Use Vb+TARIAQAR (audio)';
-$l10n['dan']['lg2/structure/0.2/text'] = 'Brug Vb+TARIAQAR til at lave verber, der betyder "<i>nogen er nødt til at Vb</i>".';
-$l10n['eng']['lg2/structure/0.2/text'] = 'Use Vb+TARIAQAR to form verbs meaning "<i>somebody must Vb</i>".';
+$l10n['dan']['lg2/structure/0.2/t'] = 'Øvelse 0.2: Brug V+TARIAQAR (tekst)';
+$l10n['eng']['lg2/structure/0.2/t'] = 'Exercise 0.2: Use V+TARIAQAR (text)';
+$l10n['dan']['lg2/structure/0.2/a'] = 'Øvelse 0.2: Brug V+TARIAQAR (audio)';
+$l10n['eng']['lg2/structure/0.2/a'] = 'Exercise 0.2: Use V+TARIAQAR (audio)';
+$l10n['dan']['lg2/structure/0.2/text'] = 'Brug V+TARIAQAR til at lave verber, der betyder "<i>nogen er nødt til at V</i>".';
+$l10n['eng']['lg2/structure/0.2/text'] = 'Use V+TARIAQAR to form verbs meaning "<i>somebody must V</i>".';
 
-$l10n['dan']['lg2/structure/0.3/t'] = 'Øvelse 0.3: Brug Vb+TAR (tekst)';
-$l10n['eng']['lg2/structure/0.3/t'] = 'Exercise 0.3: Use Vb+TAR (text)';
-$l10n['dan']['lg2/structure/0.3/a'] = 'Øvelse 0.3: Brug Vb+TAR (audio)';
-$l10n['eng']['lg2/structure/0.3/a'] = 'Exercise 0.3: Use Vb+TAR (audio)';
-$l10n['dan']['lg2/structure/0.3/text'] = '<i>ullumi</i> betyder "i dag" og <i>aasakkut</i> betyder "om sommeren". Her er en række sætninger, der betyder "Nogen Vb-er i dag". Brug Vb+TAR og omskriv sætningen til at betyde "Nogen Vb-er om sommeren".';
-$l10n['eng']['lg2/structure/0.3/text'] = '<i>ullumi</i> means "today" and <i>aasakkut</i> means "at summertime (repeatedly)". Here are some sentences meaning "Somebody Vb-er today". Use <i>aasakkut</i> plus Vb+TAR and form sentences meaning "Somebody Vb during summers".';
+$l10n['dan']['lg2/structure/0.3/t'] = 'Øvelse 0.3: Brug V+TAR (tekst)';
+$l10n['eng']['lg2/structure/0.3/t'] = 'Exercise 0.3: Use V+TAR (text)';
+$l10n['dan']['lg2/structure/0.3/a'] = 'Øvelse 0.3: Brug V+TAR (audio)';
+$l10n['eng']['lg2/structure/0.3/a'] = 'Exercise 0.3: Use V+TAR (audio)';
+$l10n['dan']['lg2/structure/0.3/text'] = '<i>ullumi</i> betyder "i dag" og <i>aasakkut</i> betyder "om sommeren". Her er en række sætninger, der betyder "Nogen V-er i dag". Brug V+TAR og omskriv sætningen til at betyde "Nogen V-er om sommeren".';
+$l10n['eng']['lg2/structure/0.3/text'] = '<i>ullumi</i> means "today" and <i>aasakkut</i> means "at summertime (repeatedly)". Here are some sentences meaning "Somebody V-er today". Use <i>aasakkut</i> plus V+TAR and form sentences meaning "Somebody V during summers".';
 
 $l10n['dan']['lg2/structure/0.4/t'] = 'Øvelse 0.4: Brug -SSA (tekst)';
 $l10n['eng']['lg2/structure/0.4/t'] = 'Exercise 0.4: Use -SSA (text)';
 $l10n['dan']['lg2/structure/0.4/a'] = 'Øvelse 0.4: Brug -SSA (audio)';
 $l10n['eng']['lg2/structure/0.4/a'] = 'Exercise 0.4: Use -SSA (audio)';
-$l10n['dan']['lg2/structure/0.4/text'] = 'Næsten som 0.3, men nu medtager vi også -SSA. Promptsætningerne betyder stadig "Nogen Vb-er i dag", men nu skal du omskrive dem til at betyde "Fra nu af skal nogen Vb-e om sommeren". <i>massakkornit</i> betyder "fra nu af".';
-$l10n['eng']['lg2/structure/0.4/text'] = 'Almost like 0.3 apart from that we now also include -SSA. The prompt sentences still mean "Somebody Vb today" but you will now reformulate them to mean "From now on somebody will Vb-e during summer". <i>massakkornit</i> means "from now on".';
+$l10n['dan']['lg2/structure/0.4/text'] = 'Næsten som 0.3, men nu medtager vi også -SSA. Promptsætningerne betyder stadig "Nogen V-er i dag", men nu skal du omskrive dem til at betyde "Fra nu af skal nogen V-e om sommeren". <i>massakkornit</i> betyder "fra nu af".';
+$l10n['eng']['lg2/structure/0.4/text'] = 'Almost like 0.3 apart from that we now also include -SSA. The prompt sentences still mean "Somebody V today" but you will now reformulate them to mean "From now on somebody will V-e during summer". <i>massakkornit</i> means "from now on".';
 
 $l10n['dan']['lg2/structure/0.5/t'] = 'Øvelse 0.5: Brug +GALUAR (tekst)';
 $l10n['eng']['lg2/structure/0.5/t'] = 'Exercise 0.5: Use +GALUAR (text)';
 $l10n['dan']['lg2/structure/0.5/a'] = 'Øvelse 0.5: Brug +GALUAR (audio)';
 $l10n['eng']['lg2/structure/0.5/a'] = 'Exercise 0.5: Use +GALUAR (audio)';
-$l10n['dan']['lg2/structure/0.5/text'] = 'Næsten som 0.4 men nu bruger vi +GALUAR i stedet for -SSA. Promptsætningerne betyder stadig "Nogen Vb-er i dag", men nu skal du omskrive dem til at betyde "Faktisk Vb-er nogen dagligt". <i>ullut tamaasa</i> betyder "hver dag/ daglig".';
-$l10n['eng']['lg2/structure/0.5/text'] = 'Almost like 0.4 but this time we will use +GALUAR instead of -SSA. The prompt sentences still mean "Somebody Vb today". Change them to mean "Somebody actually Vb every day". <i>ullut tamaasa</i> means "every day".';
+$l10n['dan']['lg2/structure/0.5/text'] = 'Næsten som 0.4 men nu bruger vi +GALUAR i stedet for -SSA. Promptsætningerne betyder stadig "Nogen V-er i dag", men nu skal du omskrive dem til at betyde "Faktisk V-er nogen dagligt". <i>ullut tamaasa</i> betyder "hver dag/ daglig".';
+$l10n['eng']['lg2/structure/0.5/text'] = 'Almost like 0.4 but this time we will use +GALUAR instead of -SSA. The prompt sentences still mean "Somebody V today". Change them to mean "Somebody actually V every day". <i>ullut tamaasa</i> means "every day".';
 
-$l10n['dan']['lg2/structure/0.6'] = 'Øvelse 0.6: Brug Vb+TAQ';
-$l10n['eng']['lg2/structure/0.6'] = 'Exercise 0.6: Use Vb+TAQ';
-$l10n['dan']['lg2/structure/0.6/text'] = 'Brug Vb-TAQ til at skabe passive navneord og sæt endelsen {ga} på, så du får ord, der betyder "den som jeg Vb-ede".</p><p>Her er et eksempel <i>ilinniartip-</i> betyder som bekendt "at undervise ham/hende" så betyder {ilinniartip-taq} → <i>ilinniartitaq</i> altså "en der er blevet undervist" og {ilinniartip-taq+ga} → <i>ilinniartitara</i> altså "den af mig underviste", hvilket på lidt mere mundret dansk betyder "min elev".</p><p>';
-$l10n['eng']['lg2/structure/0.6/text'] = 'Use Vb-TAQ on transitive stems to form passive nouns and add the ending {ga} to them to make words meaning "the one whom I Vb-ed".</p><p>Here is an example: <i>ilinniartip-</i> means as you know already "to teach him/her". Then {ilinniartip-taq} → <i>ilinniartitaq</i> means "the one who was taught" and {ilinniartip-taq+ga} → <i>ilinniartitara</i> accordingly "the one by me taught" or in more normal language "my student".</p><p>';
+$l10n['dan']['lg2/structure/0.6'] = 'Øvelse 0.6: Brug V+TAQ';
+$l10n['eng']['lg2/structure/0.6'] = 'Exercise 0.6: Use V+TAQ';
+$l10n['dan']['lg2/structure/0.6/text'] = 'Brug V-TAQ til at skabe passive navneord og sæt endelsen {ga} på, så du får ord, der betyder "den som jeg V-ede".</p><p>Her er et eksempel <i>ilinniartip-</i> betyder som bekendt "at undervise ham/hende" så betyder ilinniartip-TAQ → <i>ilinniartitaq</i> altså "en der er blevet undervist" og ilinniartip-TAQ{+ga} → <i>ilinniartitara</i> altså "den af mig underviste", hvilket på lidt mere mundret dansk betyder "min elev".</p><p>';
+$l10n['eng']['lg2/structure/0.6/text'] = 'Use V-TAQ on transitive stems to form passive nouns and add the ending {ga} to them to make words meaning "the one whom I V-ed".</p><p>Here is an example: <i>ilinniartip-</i> means as you know already "to teach him/her". Then ilinniartip-TAQ → <i>ilinniartitaq</i> means "the one who was taught" and ilinniartip-TAQ{+ga} → <i>ilinniartitara</i> accordingly "the one by me taught" or in more normal language "my student".</p><p>';
 
-$l10n['dan']['lg2/structure/0.7'] = 'Øvelse 0.7: Brug Vb-TAQ + Vb-U';
-$l10n['eng']['lg2/structure/0.7'] = 'Exercise 0.7: Use Vb-TAQ + Vb-U';
-$l10n['dan']['lg2/structure/0.7/text'] = 'Vb-TAQ sammen med Vb-U er en af måderne at udtrykke passiv på grønlandsk.</p><p>Her er et par eksempler: <i>asa-</i> betyder som nævnt "at elske ham/hende" så betyder {asa-TAQ} → <i>asasaq</i> altså "en der er blevet elsket" og {asa-TAQ-U+vuŋa} → <i>asasaavunga</i> altså "Jeg er blevet elsket" og <i>allap-</i> betyder ligeledes som nævnt "at skrive det" så betyder {allap-TAQ} → <i>allataq</i> altså "det, der er blevet skrevet" og {allap-TAQ-U+vuq} → <i>allataavoq</i> altså "Det er blevet skrevet".</p><p>Lav ord, der betyder (i) Jeg er blevet .. (ii) Han er blevet .. (iii) Vi er blevet .. samt (iv) Er du blevet ..</p><p>';
-$l10n['eng']['lg2/structure/0.7/text'] = 'Vb-TAQ together with N-U is one of the ways to form the passive voice in Greenlandic.</p><p>Here are a few examples: <i>asa-</i> means as already mentioned "to love him/her". Accordingly {asa-TAQ} → <i>asasaq</i> means "the one loved" and {asa-TAQ-U+vuŋa} → <i>asasaavunga</i> accordingly "I am loved" and allap- that means "to write it". Accordingly {allap-TAQ} → <i>allataq</i> means "what has been written" and {allap-TAQ-U+vuq} → <i>allataavoq</i> then "It has been written".</p><p>Make words meaning (i) I am Vb-ed .. (ii) He is Vb-ed .. (iii) We are Vb-ed .. and (iv) Are you Vb-ed ..?</p><p>';
-$l10n['dan']['I-am-Vbed'] = 'Jeg er blevet ..';
-$l10n['eng']['I-am-Vbed'] = 'I am Vb-ed ..';
-$l10n['dan']['He-is-Vbed'] = 'Han er blevet ..';
-$l10n['eng']['He-is-Vbed'] = 'He is Vb-ed ..';
-$l10n['dan']['We-are-Vbed'] = 'Vi er blevet ..';
-$l10n['eng']['We-are-Vbed'] = 'We are Vb-ed ..';
-$l10n['dan']['Are-you-Vbed'] = 'Er du blevet ..?';
-$l10n['eng']['Are-you-Vbed'] = 'Are you Vb-ed ..?';
+$l10n['dan']['lg2/structure/0.7'] = 'Øvelse 0.7: Brug V-TAQ + V-U';
+$l10n['eng']['lg2/structure/0.7'] = 'Exercise 0.7: Use V-TAQ + V-U';
+$l10n['dan']['lg2/structure/0.7/text'] = 'V-TAQ sammen med V-U er en af måderne at udtrykke passiv på grønlandsk.</p><p>Her er et par eksempler: <i>asa-</i> betyder som nævnt "at elske ham/hende" så betyder asa-TAQ → <i>asasaq</i> altså "en der er blevet elsket" og asa-TAQ-U{+vuŋa} → <i>asasaavunga</i> altså "Jeg er blevet elsket" og <i>allap-</i> betyder ligeledes som nævnt "at skrive det" så betyder allap-TAQ → <i>allataq</i> altså "det, der er blevet skrevet" og allap-TAQ-U{+vuq} → <i>allataavoq</i> altså "Det er blevet skrevet".</p><p>Lav ord, der betyder (i) Jeg er blevet .. (ii) Han er blevet .. (iii) Vi er blevet .. samt (iv) Er du blevet ..</p><p>';
+$l10n['eng']['lg2/structure/0.7/text'] = 'V-TAQ together with N-U is one of the ways to form the passive voice in Greenlandic.</p><p>Here are a few examples: <i>asa-</i> means as already mentioned "to love him/her". Accordingly asa-TAQ → <i>asasaq</i> means "the one loved" and asa-TAQ-U{+vuŋa} → <i>asasaavunga</i> accordingly "I am loved" and allap- that means "to write it". Accordingly allap-TAQ → <i>allataq</i> means "what has been written" and allap-TAQ-U{+vuq} → <i>allataavoq</i> then "It has been written".</p><p>Make words meaning (i) I am V-ed .. (ii) He is V-ed .. (iii) We are V-ed .. and (iv) Are you V-ed ..?</p><p>';
+$l10n['dan']['I-am-Ved'] = 'Jeg er blevet ..';
+$l10n['eng']['I-am-Ved'] = 'I am V-ed ..';
+$l10n['dan']['He-is-Ved'] = 'Han er blevet ..';
+$l10n['eng']['He-is-Ved'] = 'He is V-ed ..';
+$l10n['dan']['We-are-Ved'] = 'Vi er blevet ..';
+$l10n['eng']['We-are-Ved'] = 'We are V-ed ..';
+$l10n['dan']['Are-you-Ved'] = 'Er du blevet ..?';
+$l10n['eng']['Are-you-Ved'] = 'Are you V-ed ..?';
 
 $l10n['dan']['lg2/0x/deny1'] = 'Øvelse 0.1.1x: Benægt spørgsmål';
 $l10n['eng']['lg2/0x/deny1'] = 'Exercise 0.1.1x: Deny questions';
@@ -819,8 +819,8 @@ $l10n['dan']['lg2/0x/qa2/text'] = 'Du får her en række udsagn, som du benægte
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 //*/
 
-$l10n['dan']['lg2/pdf/alt'] = 'Øvelse 0.10x: Prøv at inddrage alternativt materiale';
-$l10n['eng']['lg2/pdf/alt'] = 'Exercise 0.10x: Try incorporating alternative sources';
+$l10n['dan']['lg2/0x'] = 'Øvelse 0.10x: Prøv at inddrage alternativt materiale';
+$l10n['eng']['lg2/0x'] = 'Exercise 0.10x: Try incorporating alternative sources';
 
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
@@ -909,19 +909,19 @@ $l10n['eng']['lg2/table/1.2/os'] = '"us"';
 $l10n['dan']['lg2/table/1.2/vi'] = '"vi"';
 $l10n['eng']['lg2/table/1.2/vi'] = '"we"';
 
-$l10n['dan']['lg2/structure/1.3/t'] = 'Øvelse 1.3: Brug Vb+TAR første øvelse (tekst)';
-$l10n['eng']['lg2/structure/1.3/t'] = 'Exercise 1.3: Use Vb+TAR first exercise (text)';
-$l10n['dan']['lg2/structure/1.3/a'] = 'Øvelse 1.3: Brug Vb+TAR første øvelse (audio)';
-$l10n['eng']['lg2/structure/1.3/a'] = 'Exercise 1.3: Use Vb+TAR first exercise (audio)';
-$l10n['dan']['lg2/structure/1.3/text'] = 'Her er en række spørgsmål til dig dvs. de er i 2. person ental. De drejer sig alle om gentagne forhold, så de indeholder alle sammen elementet Vb+TAR. Forstå spørgsmålet, forstå de processer, der har været på spil da ordene blev dannet, og besvar spørgsmålene positivt. Indled dine svar med <em>Aap, …</em>.';
-$l10n['eng']['lg2/structure/1.3/text'] = 'The following questions are all in the second person singular. That is, they are questions directly to you. All questions are about repeated action which means that all of them contain the morpheme Vb+TAR. Understand the question, understand why it is shaped the way it is, and answer the question affirmatively. Start with <em>Aap, …</em>.';
+$l10n['dan']['lg2/structure/1.3/t'] = 'Øvelse 1.3: Brug V+TAR første øvelse (tekst)';
+$l10n['eng']['lg2/structure/1.3/t'] = 'Exercise 1.3: Use V+TAR first exercise (text)';
+$l10n['dan']['lg2/structure/1.3/a'] = 'Øvelse 1.3: Brug V+TAR første øvelse (audio)';
+$l10n['eng']['lg2/structure/1.3/a'] = 'Exercise 1.3: Use V+TAR first exercise (audio)';
+$l10n['dan']['lg2/structure/1.3/text'] = 'Her er en række spørgsmål til dig dvs. de er i 2. person ental. De drejer sig alle om gentagne forhold, så de indeholder alle sammen elementet V+TAR. Forstå spørgsmålet, forstå de processer, der har været på spil da ordene blev dannet, og besvar spørgsmålene positivt. Indled dine svar med <em>Aap, …</em>.';
+$l10n['eng']['lg2/structure/1.3/text'] = 'The following questions are all in the second person singular. That is, they are questions directly to you. All questions are about repeated action which means that all of them contain the morpheme V+TAR. Understand the question, understand why it is shaped the way it is, and answer the question affirmatively. Start with <em>Aap, …</em>.';
 
-$l10n['dan']['lg2/structure/1.4/t'] = 'Øvelse 1.4: Brug Vb+TAR anden øvelse (tekst)';
-$l10n['eng']['lg2/structure/1.4/t'] = 'Exercise 1.4: Use Vb+TAR second exercise (text)';
-$l10n['dan']['lg2/structure/1.4/a'] = 'Øvelse 1.4: Brug Vb+TAR anden øvelse (audio)';
-$l10n['eng']['lg2/structure/1.4/a'] = 'Exercise 1.4: Use Vb+TAR second exercise (audio)';
-$l10n['dan']['lg2/structure/1.4/text'] = 'De følgende ord er udsagn om handlinger, der kun foregår een gang eller altid. Gentag ordene uden at ændre personendelser men tilføj Vb+TAR, så du retter sætningen til at udtrykke en gentagen handling.';
-$l10n['eng']['lg2/structure/1.4/text'] = 'The following sentences tell about verbal action that takes place only once or always. Repeat the sentences but add Vb+TAR to make statements about repeated action.';
+$l10n['dan']['lg2/structure/1.4/t'] = 'Øvelse 1.4: Brug V+TAR anden øvelse (tekst)';
+$l10n['eng']['lg2/structure/1.4/t'] = 'Exercise 1.4: Use V+TAR second exercise (text)';
+$l10n['dan']['lg2/structure/1.4/a'] = 'Øvelse 1.4: Brug V+TAR anden øvelse (audio)';
+$l10n['eng']['lg2/structure/1.4/a'] = 'Exercise 1.4: Use V+TAR second exercise (audio)';
+$l10n['dan']['lg2/structure/1.4/text'] = 'De følgende ord er udsagn om handlinger, der kun foregår een gang eller altid. Gentag ordene uden at ændre personendelser men tilføj V+TAR, så du retter sætningen til at udtrykke en gentagen handling.';
+$l10n['eng']['lg2/structure/1.4/text'] = 'The following sentences tell about verbal action that takes place only once or always. Repeat the sentences but add V+TAR to make statements about repeated action.';
 
 $l10n['dan']['lg2/structure/1.5/t'] = 'Øvelse 1.5: Brug participium (tekst)';
 $l10n['eng']['lg2/structure/1.5/t'] = 'Exercise 1.5: Use the participle (text)';
@@ -1785,33 +1785,33 @@ $l10n['eng']['lg2/structure/6.2/a'] = 'Exercise 6.2: Practice N-INNAQ (audio)';
 $l10n['dan']['lg2/structure/6.2/text'] = 'Sæt tilhænget N-INNAQ på samtlige følgende navneord. Du skal også sætte tilhænget på navneordene selv om der kommer N-U efter dem. Husk at navneord med N-INNAQ er -up-stammer. Det er altså endelsen {-it}, du skal bruge i flertal.';
 $l10n['eng']['lg2/structure/6.2/text'] = 'Add the derivational morpheme N-INNAQ to each of the following nouns. You must add the morpheme even if the nominal stem is followed by N-U. Remember that stems which include N-INNAQ are -up-stems. It is therefore the ending {-it} you need in the plural.';
 
-$l10n['dan']['lg2/structure/6.3.1/t'] = 'Øvelse 6.3A: Øv Vb+GUSUP (tekst)';
-$l10n['eng']['lg2/structure/6.3.1/t'] = 'Exercise 6.3A: Practise Vb+GUSUP (text)';
-$l10n['dan']['lg2/structure/6.3.1/a'] = 'Øvelse 6.3A: Øv Vb+GUSUP (audio)';
-$l10n['eng']['lg2/structure/6.3.1/a'] = 'Exercise 6.3A: Practise Vb+GUSUP (audio)';
-$l10n['dan']['lg2/structure/6.3.1/text'] = 'Sæt tilhænget Vb+GUSUP på samtlige følgende verber. Vb+GUSUP tilhører en lille gruppe af tilhæng, der opfører sig lidt særpræget, idet det indledende g opfører sig som g plejer at gøre (rg ⇒ r og pg ⇒ *gg ⇒ kk) undtagen når tilhænget sættes efter en vokal. Så anvendes nemlig varianten -rusup- i stedet for det forventede gusup-.';
-$l10n['eng']['lg2/structure/6.3.1/text'] = 'Add the morpheme Vb+GUSUP to the verbs hereunder. Note that Vb+GUSUP belongs to a small group of morphemes with a slightly deviating behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * gusup-.';
+$l10n['dan']['lg2/structure/6.3.1/t'] = 'Øvelse 6.3A: Øv V+GUSUP (tekst)';
+$l10n['eng']['lg2/structure/6.3.1/t'] = 'Exercise 6.3A: Practise V+GUSUP (text)';
+$l10n['dan']['lg2/structure/6.3.1/a'] = 'Øvelse 6.3A: Øv V+GUSUP (audio)';
+$l10n['eng']['lg2/structure/6.3.1/a'] = 'Exercise 6.3A: Practise V+GUSUP (audio)';
+$l10n['dan']['lg2/structure/6.3.1/text'] = 'Sæt tilhænget V+GUSUP på samtlige følgende verber. V+GUSUP tilhører en lille gruppe af tilhæng, der opfører sig lidt særpræget, idet det indledende g opfører sig som g plejer at gøre (rg ⇒ r og pg ⇒ *gg ⇒ kk) undtagen når tilhænget sættes efter en vokal. Så anvendes nemlig varianten -rusup- i stedet for det forventede gusup-.';
+$l10n['eng']['lg2/structure/6.3.1/text'] = 'Add the morpheme V+GUSUP to the verbs hereunder. Note that V+GUSUP belongs to a small group of morphemes with a slightly deviating behaviour after vowels. The initial g behaves as g normally behaves i connection with consonants (rg ⇒ r and pg ⇒ *gg ⇒ kk). But after vowels it takes the shape of -rusup- instead of expected * gusup-.';
 
-$l10n['dan']['lg2/structure/6.3.2/t'] = 'Øvelse 6.3B: Øv Vb+GUSUP-NNGIT (tekst)';
-$l10n['eng']['lg2/structure/6.3.2/t'] = 'Exercise 6.3B: Practise Vb+GUSUP-NNGIT (text)';
-$l10n['dan']['lg2/structure/6.3.2/a'] = 'Øvelse 6.3B: Øv Vb+GUSUP-NNGIT (audio)';
-$l10n['eng']['lg2/structure/6.3.2/a'] = 'Exercise 6.3B: Practise Vb+GUSUP-NNGIT (audio)';
-$l10n['dan']['lg2/structure/6.3.2/text'] = 'Sæt tilhænget Vb+GUSUP-NNGIT på samtlige følgende verber.';
-$l10n['eng']['lg2/structure/6.3.2/text'] = 'Add the morphemes Vb+GUSUP-NNGIT to the following verbs.';
+$l10n['dan']['lg2/structure/6.3.2/t'] = 'Øvelse 6.3B: Øv V+GUSUP-NNGIT (tekst)';
+$l10n['eng']['lg2/structure/6.3.2/t'] = 'Exercise 6.3B: Practise V+GUSUP-NNGIT (text)';
+$l10n['dan']['lg2/structure/6.3.2/a'] = 'Øvelse 6.3B: Øv V+GUSUP-NNGIT (audio)';
+$l10n['eng']['lg2/structure/6.3.2/a'] = 'Exercise 6.3B: Practise V+GUSUP-NNGIT (audio)';
+$l10n['dan']['lg2/structure/6.3.2/text'] = 'Sæt tilhænget V+GUSUP-NNGIT på samtlige følgende verber.';
+$l10n['eng']['lg2/structure/6.3.2/text'] = 'Add the morphemes V+GUSUP-NNGIT to the following verbs.';
 
-$l10n['dan']['lg2/structure/6.4.1/t'] = 'Øvelse 6.4A: Øv Vb+TAR (tekst)';
-$l10n['eng']['lg2/structure/6.4.1/t'] = 'Exercise 6.4A: Practise Vb+TAR (text)';
-$l10n['dan']['lg2/structure/6.4.1/a'] = 'Øvelse 6.4A: Øv Vb+TAR (audio)';
-$l10n['eng']['lg2/structure/6.4.1/a'] = 'Exercise 6.4A: Practise Vb+TAR (audio)';
-$l10n['dan']['lg2/structure/6.4.1/text'] = 'Brug det meget, meget vigtige tilhæng Vb+TAR på samtlige følgende verber. Husk at Vb+TAR tilhører gruppen af tilhæng og endelser, der har en variabel konsonant som første lyd (T bliver t efter konsonant, men s efter vokal). I gloselister er +TAR\'s betydning normalt anført som "pleje at Vb". Det er som nævnt noget for håndfast, men vi har ikke en passende kort oversættelse til dansk. Faktisk er den negative definition den mest præcise, nemlig den, at hvis Vb ikke har +TAR betyder ordet \'Vb-er een gang\' som i 1969-imi ilisimatusarfimmi taamaatippunga eller "Vb-er altid" som i arnaavunga. Men det ville have været taamaatittarpunga hvis jeg var droppet ud af universitetet fx tre gange og det ville være arnaasarpunga hvis jeg arbejdede som drag-queen om lørdagen. Og husk, at +TAR er obligatorisk sammen med ord, der udtrykker gentagen tid.';
-$l10n['eng']['lg2/structure/6.4.1/text'] = 'Add the very important morpheme Vb+TAR to the verbs hereunder. Remember that  Vb+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR\'s meaning is often glossed as \'uses to Vb\'. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means \'to Vb only once\' as in 1969-imi ilisimatusarfimmi taamaatippunga or \'to Vb always\' as in arnaavunga. It would have been taamaatittarpunga had I dropped out of studying several times and it would have been arnaasarpunga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time.';
+$l10n['dan']['lg2/structure/6.4.1/t'] = 'Øvelse 6.4A: Øv V+TAR (tekst)';
+$l10n['eng']['lg2/structure/6.4.1/t'] = 'Exercise 6.4A: Practise V+TAR (text)';
+$l10n['dan']['lg2/structure/6.4.1/a'] = 'Øvelse 6.4A: Øv V+TAR (audio)';
+$l10n['eng']['lg2/structure/6.4.1/a'] = 'Exercise 6.4A: Practise V+TAR (audio)';
+$l10n['dan']['lg2/structure/6.4.1/text'] = 'Brug det meget, meget vigtige tilhæng V+TAR på samtlige følgende verber. Husk at V+TAR tilhører gruppen af tilhæng og endelser, der har en variabel konsonant som første lyd (T bliver t efter konsonant, men s efter vokal). I gloselister er +TAR\'s betydning normalt anført som "pleje at V". Det er som nævnt noget for håndfast, men vi har ikke en passende kort oversættelse til dansk. Faktisk er den negative definition den mest præcise, nemlig den, at hvis V ikke har +TAR betyder ordet \'V-er een gang\' som i 1969-imi ilisimatusarfimmi taamaatippunga eller "V-er altid" som i arnaavunga. Men det ville have været taamaatittarpunga hvis jeg var droppet ud af universitetet fx tre gange og det ville være arnaasarpunga hvis jeg arbejdede som drag-queen om lørdagen. Og husk, at +TAR er obligatorisk sammen med ord, der udtrykker gentagen tid.';
+$l10n['eng']['lg2/structure/6.4.1/text'] = 'Add the very important morpheme V+TAR to the verbs hereunder. Remember that  V+TAR belongs to the group of derivatives and endings with a variable first consonant (T turns /t/ after a consonant but /s/ after a vowel). In dictionaries and word lists +TAR\'s meaning is often glossed as \'uses to V\'. That is as mentioned a rather unprecise glossing but unfortunately we have no adequate short glossing into English. The negative translation is probably the best one: If the verb does not include +TAR it means \'to V only once\' as in 1969-imi ilisimatusarfimmi taamaatippunga or \'to V always\' as in arnaavunga. It would have been taamaatittarpunga had I dropped out of studying several times and it would have been arnaasarpunga if I worked as a drag queen every Saturday. Remember that +TAR is mandatory in connection with words meaning repeated time.';
 
-$l10n['dan']['lg2/structure/6.4.2/t'] = 'Øvelse 6.4B: Øv Vb+TAR=NNGIT (tekst)';
-$l10n['eng']['lg2/structure/6.4.2/t'] = 'Exercise 6.4B: Practise Vb+TAR=NNGIT (text)';
-$l10n['dan']['lg2/structure/6.4.2/a'] = 'Øvelse 6.4B: Øv Vb+TAR=NNGIT (audio)';
-$l10n['eng']['lg2/structure/6.4.2/a'] = 'Exercise 6.4B: Practise Vb+TAR=NNGIT (audio)';
-$l10n['dan']['lg2/structure/6.4.2/text'] = 'Brug den meget vigtige kombination af tilhæng Vb+TAR=NNGIT på samtlige følgende verber.';
-$l10n['eng']['lg2/structure/6.4.2/text'] = 'Use the high-frequent combination of morphemes Vb+TAR=NNGIT with all the verbs hereunder.';
+$l10n['dan']['lg2/structure/6.4.2/t'] = 'Øvelse 6.4B: Øv V+TAR=NNGIT (tekst)';
+$l10n['eng']['lg2/structure/6.4.2/t'] = 'Exercise 6.4B: Practise V+TAR=NNGIT (text)';
+$l10n['dan']['lg2/structure/6.4.2/a'] = 'Øvelse 6.4B: Øv V+TAR=NNGIT (audio)';
+$l10n['eng']['lg2/structure/6.4.2/a'] = 'Exercise 6.4B: Practise V+TAR=NNGIT (audio)';
+$l10n['dan']['lg2/structure/6.4.2/text'] = 'Brug den meget vigtige kombination af tilhæng V+TAR=NNGIT på samtlige følgende verber.';
+$l10n['eng']['lg2/structure/6.4.2/text'] = 'Use the high-frequent combination of morphemes V+TAR=NNGIT with all the verbs hereunder.';
 
 $l10n['dan']['lg2/structure/6.5/t'] = 'Øvelse 6.5: Øv TERMINALIS-KAR (tekst)';
 $l10n['eng']['lg2/structure/6.5/t'] = 'Exercise 6.5: Practise TERMINALIS-KAR (text)';
@@ -1860,8 +1860,8 @@ Rephrase them to sentences with indefinite objects using HTR (half-transitive). 
 
 $l10n['dan']['lg2/structure/7.5/t'] = 'Øvelse 7.5: Leg lidt med halvtransitiv II';
 $l10n['eng']['lg2/structure/7.5/t'] = 'Exercise 7.5: Play with half-transitive II';
-$l10n['dan']['lg2/structure/7.5/text'] = 'Man har ofte brug for at danne navneord også af betydninger, der normalt er transitive som i asa- (\'at elske ham\'), der kan danne ordet \'kærlighed\', eller pilersor- (\'at forsyne ham\'), der kan danne ord som \'forsyningsselskab\'. På grønlandsk er dette kun muligt efter at transitiviteten - og dermed fokus på genstandsleddet - er fjernet. Det klares med HTR. Dan navneord ved hjælp af Vb+TUQ og Vb+NIQ sat på de relevante transitive stammer, men husk at stammerne først skal gøres halvtransitive før TUQ og NIQ kan tilføjes.';
-$l10n['eng']['lg2/structure/7.5/text'] = 'You often need to make nouns out of transitive verbal meaning as with asa- (\'to love him\') to form nouns such as love or pilersor- (\'to supply him\') to make nouns like supplier. In Greenlandic this is only doable after you have "deleted" the object. That is one important function of HTR. Make nouns be means of Vb+TUQ and Vb+NIQ added to transitive stems but remember that the stems first must be detransitivized before you can add TUQ and NIQ.';
+$l10n['dan']['lg2/structure/7.5/text'] = 'Man har ofte brug for at danne navneord også af betydninger, der normalt er transitive som i asa- (\'at elske ham\'), der kan danne ordet \'kærlighed\', eller pilersor- (\'at forsyne ham\'), der kan danne ord som \'forsyningsselskab\'. På grønlandsk er dette kun muligt efter at transitiviteten - og dermed fokus på genstandsleddet - er fjernet. Det klares med HTR. Dan navneord ved hjælp af V+TUQ og V+NIQ sat på de relevante transitive stammer, men husk at stammerne først skal gøres halvtransitive før TUQ og NIQ kan tilføjes.';
+$l10n['eng']['lg2/structure/7.5/text'] = 'You often need to make nouns out of transitive verbal meaning as with asa- (\'to love him\') to form nouns such as love or pilersor- (\'to supply him\') to make nouns like supplier. In Greenlandic this is only doable after you have "deleted" the object. That is one important function of HTR. Make nouns be means of V+TUQ and V+NIQ added to transitive stems but remember that the stems first must be detransitivized before you can add TUQ and NIQ.';
 
 $l10n['dan']['lg2/table/8.1'] = 'Øvelse 8.1: Hold tungen lige i munden, når du skal forstå og forme navneord, for der er altid 3 forskellige størrelser at holde styr på, nemlig kasus, person og tal';
 $l10n['eng']['lg2/table/8.1'] = 'Exercise 8.1: Tread carefully when you understand and produce nominal wordforms for you must be able to handle case, person and number at the same time';
@@ -1888,33 +1888,33 @@ $l10n['eng']['lg2/table/8.1/4s'] = '4. singular';
 $l10n['dan']['lg2/table/8.1/4p'] = '4. flertal';
 $l10n['eng']['lg2/table/8.1/4p'] = '4. plural';
 
-$l10n['dan']['lg2/structure/8.2.1/t'] = 'Øvelse 8.2A: Øv strukturen Vb+TUQ-QAR (tekst)';
-$l10n['eng']['lg2/structure/8.2.1/t'] = 'Exercise 8.2A: Practise Vb+TUQ-QAR (text)';
-$l10n['dan']['lg2/structure/8.2.1/a'] = 'Øvelse 8.2A: Øv strukturen Vb+TUQ-QAR (audio)';
-$l10n['eng']['lg2/structure/8.2.1/a'] = 'Exercise 8.2A: Practise Vb+TUQ-QAR (audio)';
-$l10n['dan']['lg2/structure/8.2.1/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Der er et N/ der er nogle N, der Vb\'.';
-$l10n['eng']['lg2/structure/8.2.1/text'] = 'In this exercise your input sentences are of type \'the subject Vb-s\'. Rewrite them to sentences of type \'there is/are an/some N who Vb-s\'.';
+$l10n['dan']['lg2/structure/8.2.1/t'] = 'Øvelse 8.2A: Øv strukturen V+TUQ-QAR (tekst)';
+$l10n['eng']['lg2/structure/8.2.1/t'] = 'Exercise 8.2A: Practise V+TUQ-QAR (text)';
+$l10n['dan']['lg2/structure/8.2.1/a'] = 'Øvelse 8.2A: Øv strukturen V+TUQ-QAR (audio)';
+$l10n['eng']['lg2/structure/8.2.1/a'] = 'Exercise 8.2A: Practise V+TUQ-QAR (audio)';
+$l10n['dan']['lg2/structure/8.2.1/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet V\'. Omsæt dem til \'Der er et N/ der er nogle N, der V\'.';
+$l10n['eng']['lg2/structure/8.2.1/text'] = 'In this exercise your input sentences are of type \'the subject V-s\'. Rewrite them to sentences of type \'there is/are an/some N who V-s\'.';
 
-$l10n['dan']['lg2/structure/8.2.2/t'] = 'Øvelse 8.2B: Øv strukturen Vb+TUQ-QAR-NNGIT (tekst)';
-$l10n['eng']['lg2/structure/8.2.2/t'] = 'Exercise 8.2B: Practise the structure Vb+TUQ-QAR-NNGIT (text)';
-$l10n['dan']['lg2/structure/8.2.2/a'] = 'Øvelse 8.2B: Øv strukturen Vb+TUQ-QAR-NNGIT (audio)';
-$l10n['eng']['lg2/structure/8.2.2/a'] = 'Exercise 8.2B: Practise the structure Vb+TUQ-QAR-NNGIT (audio)';
-$l10n['dan']['lg2/structure/8.2.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Der er ingen, der Vb\'.';
+$l10n['dan']['lg2/structure/8.2.2/t'] = 'Øvelse 8.2B: Øv strukturen V+TUQ-QAR-NNGIT (tekst)';
+$l10n['eng']['lg2/structure/8.2.2/t'] = 'Exercise 8.2B: Practise the structure V+TUQ-QAR-NNGIT (text)';
+$l10n['dan']['lg2/structure/8.2.2/a'] = 'Øvelse 8.2B: Øv strukturen V+TUQ-QAR-NNGIT (audio)';
+$l10n['eng']['lg2/structure/8.2.2/a'] = 'Exercise 8.2B: Practise the structure V+TUQ-QAR-NNGIT (audio)';
+$l10n['dan']['lg2/structure/8.2.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet V\'. Omsæt dem til \'Der er ingen, der V\'.';
 $l10n['eng']['lg2/structure/8.2.2/text'] = 'The same as the preceding exercise apart from an added negation in the output sentences.';
 
-$l10n['dan']['lg2/structure/8.3.1/t'] = 'Øvelse 8.3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (tekst)';
-$l10n['eng']['lg2/structure/8.3.1/t'] = 'Exercise 8.3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (text)';
-$l10n['dan']['lg2/structure/8.3.1/a'] = 'Øvelse 8.3A Øv strukturen Vb+TUQ-RUJUK=SUAQ-U (audio)';
-$l10n['eng']['lg2/structure/8.3.1/a'] = 'Exercise 8.3A Practise the structure Vb+TUQ-RUJUK=SUAQ-U (audio)';
-$l10n['dan']['lg2/structure/8.3.1/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Subjektet Vb enormt meget\' med Vb+TUQ-RUJUK=SUAQ-U.';
-$l10n['eng']['lg2/structure/8.3.1/text'] = 'Here your input sentences are of type \'the subject Vb-s\'. Change them to \'the subject Vb-s very very much\' by means of Vb+TUQ-RUJUK=SUAQ-U.';
+$l10n['dan']['lg2/structure/8.3.1/t'] = 'Øvelse 8.3A Øv strukturen V+TUQ-RUJUK=SUAQ-U (tekst)';
+$l10n['eng']['lg2/structure/8.3.1/t'] = 'Exercise 8.3A Practise the structure V+TUQ-RUJUK=SUAQ-U (text)';
+$l10n['dan']['lg2/structure/8.3.1/a'] = 'Øvelse 8.3A Øv strukturen V+TUQ-RUJUK=SUAQ-U (audio)';
+$l10n['eng']['lg2/structure/8.3.1/a'] = 'Exercise 8.3A Practise the structure V+TUQ-RUJUK=SUAQ-U (audio)';
+$l10n['dan']['lg2/structure/8.3.1/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet V\'. Omsæt dem til \'Subjektet V enormt meget\' med V+TUQ-RUJUK=SUAQ-U.';
+$l10n['eng']['lg2/structure/8.3.1/text'] = 'Here your input sentences are of type \'the subject V-s\'. Change them to \'the subject V-s very very much\' by means of V+TUQ-RUJUK=SUAQ-U.';
 
-$l10n['dan']['lg2/structure/8.3.2/t'] = 'Øvelse 8.3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (tekst)';
-$l10n['eng']['lg2/structure/8.3.2/t'] = 'Exercise 8.3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (text)';
-$l10n['dan']['lg2/structure/8.3.2/a'] = 'Øvelse 8.3B Øv strukturen Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
-$l10n['eng']['lg2/structure/8.3.2/a'] = 'Exercise 8.3B: Practise the structure Vb+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
-$l10n['dan']['lg2/structure/8.3.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet Vb\'. Omsæt dem til \'Subjektet Vb ikke særligt meget\' med Vb+TUQ-RUJUK=SUAQ-U-NNGIT.';
-$l10n['eng']['lg2/structure/8.3.2/text'] = 'The same input sentences as in the preceding exercise but now you change them using Vb+TUQ-RUJUK=SUAQ-U-NNGIT to make sentences meaning \'the subject does not really Vb/ the subject hardly Vb\'s\'.';
+$l10n['dan']['lg2/structure/8.3.2/t'] = 'Øvelse 8.3B Øv strukturen V+TUQ-RUJUK=SUAQ-U-NNGIT (tekst)';
+$l10n['eng']['lg2/structure/8.3.2/t'] = 'Exercise 8.3B: Practise the structure V+TUQ-RUJUK=SUAQ-U-NNGIT (text)';
+$l10n['dan']['lg2/structure/8.3.2/a'] = 'Øvelse 8.3B Øv strukturen V+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
+$l10n['eng']['lg2/structure/8.3.2/a'] = 'Exercise 8.3B: Practise the structure V+TUQ-RUJUK=SUAQ-U-NNGIT (audio)';
+$l10n['dan']['lg2/structure/8.3.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet V\'. Omsæt dem til \'Subjektet V ikke særligt meget\' med V+TUQ-RUJUK=SUAQ-U-NNGIT.';
+$l10n['eng']['lg2/structure/8.3.2/text'] = 'The same input sentences as in the preceding exercise but now you change them using V+TUQ-RUJUK=SUAQ-U-NNGIT to make sentences meaning \'the subject does not really V/ the subject hardly V\'s\'.';
 
 $l10n['dan']['lg2/corpus'] = 'Korpussøgeinterface';
 $l10n['eng']['lg2/corpus'] = 'Corpus query tool';

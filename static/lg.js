@@ -264,12 +264,29 @@
 		}
 	}
 
+	function checkTips(root) {
+		$(root).find('.tip').each(function() {
+			let t = $.trim($(this).attr('data-which'));
+			if (!t) {
+				t = $.trim($(this).text());
+			}
+			$(this).removeClass('tip-no');
+			if (!g_tips.hasOwnProperty(t)) {
+				$(this).addClass('tip-no');
+			}
+		});
+	}
+
 	function loadTips(root) {
 		let tips = {};
 		$(root).find('.tip').attr('href', '#').off().click(showTip).each(function() {
 			let t = $.trim($(this).attr('data-which'));
 			if (!t) {
 				t = $.trim($(this).text());
+			}
+			if (t.indexOf(' ') !== -1) {
+				t = t.replace(/ /g, '_');
+				$(this).attr('data-which', t);
 			}
 			if (!g_tips.hasOwnProperty(t)) {
 				tips[t] = t;
@@ -281,6 +298,7 @@
 				for (let k in rv['ts']) {
 					g_tips[k] = rv['ts'][k];
 				}
+				checkTips(root);
 			});
 		}
 	}
