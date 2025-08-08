@@ -11,6 +11,52 @@
 }(typeof self !== 'undefined' ? self : this, function () {
 	'use strict';
 
+	function haveLocalStorage() {
+		try {
+			let storage = window.localStorage;
+			let x = 'LocalStorageTest';
+			storage.setItem(x, x);
+			storage.removeItem(x);
+		}
+		catch (e) {
+			return false;
+		}
+		return true;
+	}
+
+	function ls_get(key, def) {
+		let v = null;
+		try {
+			v = window.localStorage.getItem(key);
+		}
+		catch (e) {
+		}
+		if (v === null) {
+			if (def !== null && typeof def === 'object') {
+				v = Object.assign({}, def);
+			}
+			else {
+				v = def;
+			}
+		}
+		else {
+			v = JSON.parse(v);
+		}
+		return v;
+	}
+
+	function ls_set(key, val) {
+		try {
+			window.localStorage.setItem(key, JSON.stringify(val));
+		}
+		catch (e) {
+		}
+	}
+
+	function ls_del(key) {
+		window.localStorage.removeItem(key);
+	}
+
 	/* BEGIN NUTSERUT IMPORTED CODE */
 	let g_pair = 'kal2dan';
 	let g_rv = {};
@@ -623,6 +669,17 @@
 		}
 		else {
 			$('.wip').hide();
+		}
+
+		if (haveLocalStorage()) {
+			let seen = ls_get('lg-announce', null);
+			if (!seen || seen != '20250808') {
+				let amodal = new bootstrap.Modal('#announce');
+				$('#announce').on('hidden.bs.modal', event => {
+					ls_set('lg-announce', '20250808');
+				});
+				amodal.show();
+			}
 		}
 	}
 

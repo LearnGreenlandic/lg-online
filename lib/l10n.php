@@ -6,6 +6,15 @@ $l10n = [
 	'eng' => [],
 	];
 
+$l10n['dan']['announce-title'] = 'Nyhed';
+$l10n['eng']['announce-title'] = 'News';
+$l10n['dan']['announce-body'] = '<p>Den seneste revision af systemet er nu tilgængelig. Den bygger på den nyeste forskning og erfaringerne fra flere års testundervisning og sikrer, at du kommer ordentligt og målrettet i gang med at tilegne dig rigtigt grønlandsk hvis du følger anvisningerne. Det er bare at gå i gang!</p>
+<p>Mange indlærere mener dog at have brug for et større netværk og hjælp til at organisere tilegnelsesprocessen. Derfor de nye tilbud om formaliserede netværk med tilknyttede tutorer.</p>
+<p>Interesseret? <a href="/" target="_tutorial">Læs mere om dem på forsiden</a> og tilmeld dig før kursusstart mandag den 18.8. kl. 16:30 grønlandsk tid (WGST)</p>';
+$l10n['eng']['announce-body'] = '<p>The latest revision of the LG-system is now available. It is based on the most recent acquisition research and results gathered from several years of experimental teaching. It guarantees a proper start toward functional Greenlandic if you follow the guidelines. No need to wait.</p>
+<p>Still, many learners work better in bigger networks and need help to organize the acquisition process.  Therefore the new offers of formalized networks with tutors allocated.</p>
+<p>Interested? <a href="/" target="_tutorial">Read more about tutorials here</a> and sign up before course start Tuesday 19th Danish time (CEST)</p>';
+
 $l10n['dan']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log ind</a> eller <a href="/wp-login.php?action=register">opret en konto</a> for at få gratis adgang til Learn Greenlandic. Du kan også <a href="./anonymous">tilgå servicen anonymt</a>.';
 $l10n['eng']['ERR_NO_ACCESS'] = '<a href="/wp-login.php?redirect_to=/online/">Log in</a> or <a href="/wp-login.php?action=register">create an account</a> for free access to Learn Greenlandic. You can also <a href="./anonymous">access the service anonymously</a>.';
 $l10n['dan']['ERR_NO_ACCESS_LG1'] = $l10n['dan']['ERR_NO_ACCESS'];
@@ -757,25 +766,24 @@ $l10n['eng']['lg2/0x/today/text'] = 'Your input will be questions like <i>Ullumi
 <i>Ullumi Narsamut aallassaagut?</i> (Are we going to Narsaq today?)<br>
 <i>Aap, ullumi Narsamut aallassaagut.</i> (Yes, we are going to Narsaq today.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/0x/name'] = 'Øvelse 0.8x: Navn';
-$l10n['eng']['lg2/0x/name'] = 'Exercise 0.8x: Name';
-$l10n['dan']['lg2/0x/name/text'] = 'Du får her en række udsagn, der sætter navn på en eller anden. Forstå sætningen og gentag den højt, når du har forstået den ordentligt.</p>
-<p>Ex:<br>
-<i>Nuummi naapittagara taanna Aviaajamik ateqarpoq.</i> (Hende der, jeg plejer at møde i Nuuk, hedder Aviaaja.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/0x/name/text'] = 'You will see a series of statements that name somebody. Read the sentences, and repeat them out loud when you comprehend them.</p>
-<p>Ex:<br>
-<i>Nuummi naapittagara taanna Aviaajamik ateqarpoq.</i> (Her, that I usually meet in Nuuk, is named Aviaaja.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+#$l10n['eng']['lg2/0x/name'] = 'Exercise 0.8x: Name';
+#$l10n['dan']['lg2/0x/name/text'] = 'Du får her en række udsagn, der sætter navn på en eller anden. Forstå sætningen og gentag den højt, når du har forstået den ordentligt.</p>
+#<p>Ex:<br>
+#<i>Nuummi naapittagara taanna Aviaajamik ateqarpoq.</i> (Hende der, jeg plejer at møde i Nuuk, hedder Aviaaja.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+#$l10n['eng']['lg2/0x/name/text'] = 'You will see a series of statements that name somebody. Read the sentences, and repeat them out loud when you comprehend them.</p>
+#<p>Ex:<br>
+#<i>Nuummi naapittagara taanna Aviaajamik ateqarpoq.</i> (Her, that I usually meet in Nuuk, is named Aviaaja.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
-$l10n['dan']['lg2/0x/onewho'] = 'Øvelse 0.9x: En som er/gør';
-$l10n['eng']['lg2/0x/onewho'] = 'Exercise 0.9x: One who is/does';
-$l10n['dan']['lg2/0x/onewho/text'] = 'I denne øvelse får du input-sætninger, der udsiger et eller andet. Sæt morfemet TUQ fulgt af U på for at danne sætninger af typen <i>subjektet er sådan en, som er/gør…</i></p>
-<p>Ex:<br>
-<i>Ilisimatusarfimmi ilinniarpugut.</i> (Vi studerer på universitetet.)<br>
-<i>Ilisimatusarfimmi ilinniartuuvugut.</i> (Vi er universitetsstuderende.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
-$l10n['eng']['lg2/0x/onewho/text'] = 'Your input will be sentences that state something. Add the morpheme TUQ followed by U to make sentences like <i>the subject is one who is/does…</i></p>
-<p>Ex:<br>
-<i>Ilisimatusarfimmi ilinniarpugut.</i> (We study at the university.)<br>
-<i>Ilisimatusarfimmi ilinniartuuvugut.</i> (We are university students.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+#$l10n['dan']['lg2/0x/onewho'] = 'Øvelse 0.9x: En som er/gør';
+#$l10n['eng']['lg2/0x/onewho'] = 'Exercise 0.9x: One who is/does';
+#$l10n['dan']['lg2/0x/onewho/text'] = 'I denne øvelse får du input-sætninger, der udsiger et eller andet. Sæt morfemet TUQ fulgt af U på for at danne sætninger af typen <i>subjektet er sådan en, som er/gør…</i></p>
+#<p>Ex:<br>
+#<i>Ilisimatusarfimmi ilinniarpugut.</i> (Vi studerer på universitetet.)<br>
+#<i>Ilisimatusarfimmi ilinniartuuvugut.</i> (Vi er universitetsstuderende.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+#$l10n['eng']['lg2/0x/onewho/text'] = 'Your input will be sentences that state something. Add the morpheme TUQ followed by U to make sentences like <i>the subject is one who is/does…</i></p>
+#<p>Ex:<br>
+#<i>Ilisimatusarfimmi ilinniarpugut.</i> (We study at the university.)<br>
+#<i>Ilisimatusarfimmi ilinniartuuvugut.</i> (We are university students.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 
 /*
 $l10n['dan']['lg2/0x/i'] = 'Øvelse 0.3x: Brug TUQ + U';
@@ -819,8 +827,8 @@ $l10n['dan']['lg2/0x/qa2/text'] = 'Du får her en række udsagn, som du benægte
 <p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
 //*/
 
-$l10n['dan']['lg2/0x'] = 'Øvelse 0.10x: Prøv at inddrage alternativt materiale';
-$l10n['eng']['lg2/0x'] = 'Exercise 0.10x: Try incorporating alternative sources';
+$l10n['dan']['lg2/0x'] = 'Øvelse 0.8x: Prøv at inddrage alternativt materiale';
+$l10n['eng']['lg2/0x'] = 'Exercise 0.8x: Try incorporating alternative sources';
 
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';

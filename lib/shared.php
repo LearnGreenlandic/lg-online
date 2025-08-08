@@ -433,6 +433,23 @@ function footer($state=null) {
 	</ul>
 </nav>
 
+<div id="announce" class="modal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">{t:announce-title}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        {t:announce-body}
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">{t:close}</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
 <?php
 	if (!empty($GLOBALS['-lg-tips'][$state['lang']])) {
