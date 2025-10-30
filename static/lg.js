@@ -671,12 +671,13 @@
 			$('.wip').hide();
 		}
 
-		if (haveLocalStorage()) {
+		if (g_lang === 'dan' && haveLocalStorage()) {
+			const announce_id = '20251029';
 			let seen = ls_get('lg-announce', null);
-			if (!seen || seen != '20250808') {
+			if (!seen || seen != announce_id) {
 				let amodal = new bootstrap.Modal('#announce');
 				$('#announce').on('hidden.bs.modal', event => {
-					ls_set('lg-announce', '20250808');
+					ls_set('lg-announce', announce_id);
 				});
 				amodal.show();
 			}

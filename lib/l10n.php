@@ -8,9 +8,7 @@ $l10n = [
 
 $l10n['dan']['announce-title'] = 'Nyhed';
 $l10n['eng']['announce-title'] = 'News';
-$l10n['dan']['announce-body'] = '<p>Den seneste revision af systemet er nu tilgængelig. Den bygger på den nyeste forskning og erfaringerne fra flere års testundervisning og sikrer, at du kommer ordentligt og målrettet i gang med at tilegne dig rigtigt grønlandsk hvis du følger anvisningerne. Det er bare at gå i gang!</p>
-<p>Mange indlærere mener dog at have brug for et større netværk og hjælp til at organisere tilegnelsesprocessen. Derfor kommer her helt nye tilbud om formaliserede netværk med tilknyttede tutorer.</p>
-<p>Interesseret? <a href="/" target="_tutorial">Læs mere om dem på forsiden</a> og tilmeld dig før kursusstart mandag den 18.8. kl. 16:30 grønlandsk tid (WGST)</p>';
+$l10n['dan']['announce-body'] = '<p>Nye tutorier og en helt ny masterclass! <a href="/?lang=da#n2510">Læs mere på forsiden</a>.</p>';
 $l10n['eng']['announce-body'] = '<p>The latest revision of the LG-system is now available. It is based on the most recent acquisition research and results gathered from several years of experimental teaching. It guarantees a proper start toward functional Greenlandic if you follow the guidelines. No need to wait.</p>
 <p>Still, many learners work better in bigger networks and need help to organize the acquisition process. Therefore, we hereby offer access to brand new formalized networks with tutors allocated.</p>
 <p>Interested? <a href="/" target="_tutorial">Read more about tutorials here</a> and sign up before course start Tuesday 19th 4 PM Danish time (CEST)</p>';
