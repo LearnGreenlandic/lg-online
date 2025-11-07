@@ -557,6 +557,16 @@ function lg2($state) {
 		<li><a href="{t:prefix}/lg2/9/text/"><i class="link-info bi bi-file-pdf"></i> {t:lg2/9/text}</a></li>
 	</ul>
 </div>
+<!-- Chapter 9x -->
+<div class="choice my-2 col-lg-6" id="l9x">
+	<h5 class="ch-item"><a href="{t:prefix}/lg2/9x/" class="link-warning"><i class="link-danger bi bi-file-pdf"></i> {t:lg2/9x}</a></h5>
+	<ul class="list-unstyled ch-item">
+		<li><a href="{t:prefix}/lg2/9x/review91/"><i class="link-info bi bi-file-text"></i> {t:lg2/9x/review91}</a></li>
+		<li><a href="{t:prefix}/lg2/9x/that92/"><i class="link-info bi bi-file-text"></i> {t:lg2/9x/that92}</a></li>
+		<li><a href="{t:prefix}/lg2/9x/that93/"><i class="link-info bi bi-file-text"></i> {t:lg2/9x/that93}</a></li>
+		<li><a href="{t:prefix}/lg2/9x/that94/"><i class="link-info bi bi-file-text"></i> {t:lg2/9x/that94}</a></li>
+	</ul>
+</div>
 <!-- Outtro -->
 <div class="choice my-2 col-lg-12">
 	<a href="{t:prefix}/lg2/outtro/" class="mr-3 ch-item ch-img"><img src="{t:prefix}/static/lg2.png"></a>

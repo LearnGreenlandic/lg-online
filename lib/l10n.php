@@ -1922,6 +1922,29 @@ $l10n['eng']['lg2/structure/8.3.2/a'] = 'Exercise 8.3B: Practise the structure V
 $l10n['dan']['lg2/structure/8.3.2/text'] = 'I denne øvelse får du eksempelsætninger af typen \'Subjektet V\'. Omsæt dem til \'Subjektet V ikke særligt meget\' med V+TUQ-RUJUK=SUAQ-U-NNGIT.';
 $l10n['eng']['lg2/structure/8.3.2/text'] = 'The same input sentences as in the preceding exercise but now you change them using V+TUQ-RUJUK=SUAQ-U-NNGIT to make sentences meaning \'the subject does not really V/ the subject hardly V\'s\'.';
 
+$l10n['dan']['lg2/9x'] = 'Introduktion til kapitel II-9 X-tras';
+$l10n['eng']['lg2/9x'] = 'Introduction to chapter II-9 X-tras';
+
+$l10n['dan']['lg2/9x/review91'] = 'Øvelse 9.1x: Konsolideringsøvelse';
+$l10n['eng']['lg2/9x/review91'] = 'Exercise 9.1x: Consolidation';
+$l10n['dan']['lg2/9x/review91/text'] = 'Simple hovedsætninger med objekter (transitiv indikativ). Forstå og gentag så mange, du orker, af de følgende sætninger. Bliv ved til du kan håndtere endelserne ubesværet.<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/9x/review91/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/9x/that92'] = 'Øvelse 9.2x: At-sætninger uden objekt';
+$l10n['eng']['lg2/9x/that92'] = 'Exercise 9.2x: That-sentences without object';
+$l10n['dan']['lg2/9x/that92/text'] = 'At-sætninger uden objekt (oratio obliqua med intransitivt verbum). Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/9x/that92/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/9x/that93'] = 'Øvelse 9.3x: At-sætninger med objekt';
+$l10n['eng']['lg2/9x/that93'] = 'Exercise 9.3x: That-sentences with object';
+$l10n['dan']['lg2/9x/that93/text'] = 'At-sætninger med objekter (transitiv indikativ). Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/9x/that93/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/9x/that94'] = 'Øvelse 9.4x: At-sætninger';
+$l10n['eng']['lg2/9x/that94'] = 'Exercise 9.4x: That-sentences';
+$l10n['dan']['lg2/9x/that94/text'] = 'At-sætninger med og uden objekter (transitiv indikativ). Forstå og gentag mange af de følgende sætninger. Fortsæt til du kan håndtere endelserne ubesværet.<p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/9x/that94/text'] = 'MISSING TRANSLATION</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
 $l10n['dan']['lg2/corpus'] = 'Korpussøgeinterface';
 $l10n['eng']['lg2/corpus'] = 'Corpus query tool';
 
