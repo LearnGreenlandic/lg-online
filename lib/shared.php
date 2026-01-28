@@ -359,7 +359,7 @@ function header($state, $lg='', $path='') {
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.7/dist/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3/dist/js/bootstrap.bundle.min.js"></script>
 
-	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.bunny.net/css?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link href="{t:prefix}/static/lg.css?t=<?=filemtime('static/lg.css');?>" rel="stylesheet">
 	<script src="{t:prefix}/static/lg.js?t=<?=filemtime('static/lg.js');?>"></script>
 	<!-- <script src="{t:prefix}/static/tips.js?t=<?=filemtime('static/tips.js');?>"></script> -->
