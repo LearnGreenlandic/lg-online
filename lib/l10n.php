@@ -8,7 +8,7 @@ $l10n = [
 
 $l10n['dan']['announce-title'] = 'Nyhed';
 $l10n['eng']['announce-title'] = 'News';
-$l10n['dan']['announce-body'] = '<p>Nye tutorier og en helt ny masterclass! <a href="/?lang=da#n2510">Læs mere på forsiden</a>.</p>';
+$l10n['dan']['announce-body'] = '<p>På grund af for få tilmeldinger opslås det ekstra begyndertutorium, der ellers var planlagt til start den 7. april alligevel ikke <a href="/?lang=da#n2510">Læs mere på forsiden</a>.</p>';
 $l10n['eng']['announce-body'] = '<p>The latest revision of the LG-system is now available. It is based on the most recent acquisition research and results gathered from several years of experimental teaching. It guarantees a proper start toward functional Greenlandic if you follow the guidelines. No need to wait.</p>
 <p>Still, many learners work better in bigger networks and need help to organize the acquisition process. Therefore, we hereby offer access to brand new formalized networks with tutors allocated.</p>
 <p>Interested? <a href="/" target="_tutorial">Read more about tutorials here</a> and sign up before course start Tuesday 19th 4 PM Danish time (CEST)</p>';
@@ -19,6 +19,8 @@ $l10n['dan']['ERR_NO_ACCESS_LG1'] = $l10n['dan']['ERR_NO_ACCESS'];
 $l10n['eng']['ERR_NO_ACCESS_LG1'] = $l10n['eng']['ERR_NO_ACCESS'];
 $l10n['dan']['ERR_NO_ACCESS_LG2'] = $l10n['dan']['ERR_NO_ACCESS'];
 $l10n['eng']['ERR_NO_ACCESS_LG2'] = $l10n['eng']['ERR_NO_ACCESS'];
+$l10n['dan']['ERR_NONFREE'] = 'Denne side indeholder tekster underlagt copyright, og du skal derfor <a href="/wp-login.php?redirect_to=/{t:path}">logge ind</a> med en konto der har betalt for adgang.';
+$l10n['eng']['ERR_NONFREE'] = 'This page contains copyrighted texts, so you must <a href="/wp-login.php?redirect_to=/{t:path}">log in</a> with an account that paid to access it.';
 $l10n['dan']['ERR_TOO_MANY_SESSIONS'] = 'Du er logget ind fra for mange enheder, og skal derfor <a href="/wp-login.php?redirect_to=/online/">logge ind igen</a> fra denne enhed før du kan gå videre.';
 $l10n['eng']['ERR_TOO_MANY_SESSIONS'] = 'You are logged in from too many devices, and must therefore <a href="/wp-login.php?redirect_to=/online/">log in again</a> to continue on this device.';
 
@@ -61,6 +63,24 @@ $l10n['dan']['useword'] = 'Brug ordet';
 $l10n['eng']['useword'] = 'Use the word';
 $l10n['dan']['pamphlet'] = 'Indstikshæfte';
 $l10n['eng']['pamphlet'] = 'Pamphlet';
+
+$l10n['dan']['lang-kal'] = 'Kalaallisut';
+$l10n['eng']['lang-kal'] = 'Kalaallisut';
+$l10n['dan']['lang-dan'] = 'Dansk';
+$l10n['eng']['lang-dan'] = 'Danish';
+$l10n['dan']['lang-qak'] = 'Analyseret kalaallisut';
+$l10n['eng']['lang-qak'] = 'Analyzed Kalaallisut';
+
+$l10n['dan']['search'] = 'Søg';
+$l10n['eng']['search'] = 'Search';
+$l10n['dan']['search-lang'] = 'Søg i sprogene';
+$l10n['eng']['search-lang'] = 'Search in languages';
+$l10n['dan']['show-lang'] = 'Vis sprogene';
+$l10n['eng']['show-lang'] = 'Show languages';
+$l10n['dan']['corpora'] = 'Korpora';
+$l10n['eng']['corpora'] = 'Corpora';
+$l10n['dan']['no-results'] = 'Intet fundet for den søgning';
+$l10n['eng']['no-results'] = 'Nothing found for that query';
 
 $l10n['dan']['TXT_AUDIO'] = 'Tryk på <button class="btn btn-sm btn-primary inert">▶</button> for at afspille lyden';
 $l10n['eng']['TXT_AUDIO'] = 'Push <button class="btn btn-sm btn-primary inert">▶</button> to play the audio';
@@ -1996,6 +2016,9 @@ $l10n['eng']['lg3/paradigms'] = 'Paradigms';
 
 $l10n['dan']['lg3/generator'] = 'Ordgenerator';
 $l10n['eng']['lg3/generator'] = 'Word generator';
+
+$l10n['dan']['lg3/corp-nf'] = 'Korpora (licenseret)';
+$l10n['eng']['lg3/corp-nf'] = 'Corpora (non-free)';
 
 $GLOBALS['-l10n'] = $l10n;
 

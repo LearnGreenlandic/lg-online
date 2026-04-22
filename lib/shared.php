@@ -51,6 +51,23 @@ function tippify($arr) {
 	return $arr;
 }
 
+function tippify_cg($cg) {
+	$ls = explode("\n", $cg);
+	foreach ($ls as $k => $l) {
+		if (preg_match('~^"<(.+)>"~', $l, $m)) {
+			$ls[$k] = '"&lt;<a class="tip">'.htmlspecialchars($m[1]).'</a>&gt;"';
+		}
+		else if (preg_match('~^\t("[^"]+"\S*)(.*)$~', $l, $m)) {
+			$ls[$k] = "\t".'"<a class="tip">'.htmlspecialchars(substr($m[1], 1, -1)).'</a>"';
+			$ts = explode(' ', trim($m[2]));
+			foreach ($ts as $t) {
+				$ls[$k] .= ' <a class="tip">'.htmlspecialchars($t).'</a>';
+			}
+		}
+	}
+	return implode("\n", $ls);
+}
+
 function b64_url($rv) {
 	$rv = base64_encode($rv);
 	$rv = trim($rv, '=');
@@ -225,7 +242,10 @@ function init() {
 	$lg1 = 0;
 	$lg2 = 0;
 	$uid = 0;
-	$admin = false;
+	$caps = [
+		'admin' => false,
+		'nonfree' => false,
+		];
 	login_anonymous();
 	if (is_user_logged_in()) {
 		$user = wp_get_current_user();
@@ -235,7 +255,13 @@ function init() {
 		if ($user->has_cap('administrator')) {
 			++$lg1;
 			++$lg2;
-			$admin = true;
+			$caps['admin'] = true;
+			$caps['nonfree'] = true;
+		}
+		if ($user->has_role('master_class') || $user->has_cap('master_class')) {
+			++$lg1;
+			++$lg2;
+			$caps['nonfree'] = true;
 		}
 		/*
 		else {
@@ -310,6 +336,7 @@ function init() {
 	ob_start('\LGO\l10n_'.$lang);
 	$GLOBALS['-l10n'][$lang]['prefix'] = $prefix;
 	$GLOBALS['-l10n'][$lang]['lang'] = $lang;
+	$GLOBALS['-l10n'][$lang]['path'] = $path;
 
 	$state = [
 		'path' => $path,
@@ -321,7 +348,7 @@ function init() {
 		'lg1' => $lg1,
 		'lg2' => $lg2,
 		'uid' => $uid,
-		'admin' => $admin,
+		'caps' => $caps,
 		'seed' => intval($_REQUEST['seed'] ?? mt_rand()),
 		'export' => trim($_REQUEST['export'] ?? ''),
 		];
@@ -391,7 +418,7 @@ function header($state, $lg='', $path='') {
 	<script>
 		let g_lang = '<?=$state['lang'];?>';
 		let g_theme = '<?=$theme;?>';
-		let g_admin = <?=intval($state['admin']);?>;
+		let g_admin = <?=intval($state['caps']['admin']);?>;
 		let g_tips = {};
 	</script>
 </head>
@@ -473,6 +500,18 @@ function login_anonymous() {
 		wp_set_auth_cookie($user_id);
 		do_action('wp_login', $user_login);
 	}
+}
+
+function check_nonfree_access($state) {
+	if ($state['caps']['nonfree']) {
+		return;
+	}
+	\LGO\header($state);
+	echo '<div class="container"><div class="row"><div class="col my-3 text-center">';
+	echo '<p>{t:ERR_NONFREE}</p>';
+	echo '</div></div></div>';
+	\LGO\footer($state);
+	exit(0);
 }
 
 function shuffle_values($arr) {

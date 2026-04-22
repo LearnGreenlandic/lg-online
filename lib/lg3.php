@@ -22,6 +22,8 @@ function lg3($state) {
 		<li><a href="{t:prefix}/lg3/par/"><i class="link-info bi bi-file-text"></i> {t:lg3/paradigms}</a></li>
 		<li><br></li>
 		<li><a href="{t:prefix}/lg3/gen/"><i class="link-info bi bi-x-diamond"></i> {t:lg3/generator}</a></li>
+		<li><br></li>
+		<li><a href="{t:prefix}/lg3/corp-nf/"><i class="link-info bi bi-x-diamond"></i> {t:lg3/corp-nf}</a></li>
 	</ul>
 </div>
 </div>

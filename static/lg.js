@@ -321,6 +321,9 @@
 				$(this).addClass('tip-no');
 			}
 		});
+		$(root).find('.tips-unlink').find('.tip-no').each(function() {
+			$(this).replaceWith($(this).text());
+		});
 	}
 
 	function loadTips(root) {
@@ -381,9 +384,9 @@
 			ref += t['a_title'].toLowerCase();
 		}
 
-		let html = '<h5>'+escHTML(t['a_title'])+'</h5><div class="row"><div class="col text-nowrap">'+t['a_short']+'</div>';
+		let html = '<h5>'+escHTML(t['a_title'])+'</h5><div class="row"><div class="col">'+t['a_short']+'</div>';
 		if (t['a_ref']) {
-			html += '<div class="col text-end"><a href="'+escHTML(g_root + ref)+'" target="_tip">'+escHTML(t['a_ref'])+' <i class="bi bi-box-arrow-up-right"></i></a></div>';
+			html += '<div class="col-auto text-end"><a href="'+escHTML(g_root + ref)+'" target="_tip">'+escHTML(t['a_ref'])+' <i class="bi bi-box-arrow-up-right"></i></a></div>';
 		}
 		html += '</div>';
 		if (t['a_long'].length) {
@@ -604,6 +607,20 @@
 			$('.task-updown').find('.btn-secondary').click(function() {
 				let e = $(this).closest('.entry').find('.ua');
 				e.text(e.attr('data-t'));
+			});
+		}
+
+		if ($('.task-corpora').length) {
+			g_corp_vl.forEach(function(l) {
+				$('.c-'+l).removeClass('d-none');
+			});
+			$('.task-corpora').find('.d-none').each(function() {
+				$(this).after('<a href="#" class="c-show fs-3"><i class="bi bi-eye"></i></a>');
+			});
+			$('.c-show').click(function(e) {
+				e.preventDefault();
+				$(this).closest('td').find('.d-none').removeClass('d-none');
+				$(this).remove();
 			});
 		}
 

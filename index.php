@@ -207,6 +207,11 @@ else if (preg_match('~^lg3/par/$~', $state['path'], $m)) {
 	require_once __DIR__.'/lib/html.php';
 	\LGO\paradigms($state);
 }
+else if (preg_match('~^lg3/corp-nf/$~', $state['path'], $m)) {
+	check_nonfree_access($state);
+	require_once __DIR__.'/lib/corp-nf.php';
+	\LGO\corp_nonfree($state);
+}
 
 // Fallbacks
 else if (!empty($state['path'])) {

@@ -183,6 +183,12 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 }
+tr:target {
+	border: 1px solid red;
+}
+tr, th, td {
+	vertical-align: top;
+}
 
 .center-table th, .center-table td {
 	text-align: center;
@@ -214,6 +220,23 @@ code .tip {
 .tip-no {
 	cursor: inherit;
 	text-decoration: inherit;
+}
+
+.lg-heading {
+	margin-bottom: .5rem;
+	line-height: 1.2;
+}
+.lg-heading h1, .lg-heading h2, .lg-heading h3, .lg-heading h4, .lg-heading h5, .lg-heading h6 {
+	display: inline;
+}
+.lg-heading-toc::before {
+	content: '[';
+}
+.lg-heading-toc::after {
+	content: ']';
+}
+.lg-heading-toc {
+	margin-left: 2ex;
 }
 
 .text-left {
