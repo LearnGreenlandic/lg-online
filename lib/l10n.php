@@ -8,7 +8,7 @@ $l10n = [
 
 $l10n['dan']['announce-title'] = 'Nyhed';
 $l10n['eng']['announce-title'] = 'News';
-$l10n['dan']['announce-body'] = '<p>På grund af for få tilmeldinger opslås det ekstra begyndertutorium, der ellers var planlagt til start den 7. april alligevel ikke <a href="/?lang=da#n2510">Læs mere på forsiden</a>.</p>';
+$l10n['dan']['announce-body'] = '<p>Planen for efterårets tutorie-aktiviteter er klar. <a href="/?lang=da#n2510">Læs mere i afnittet om tutorier på forsiden</a>.</p>';
 $l10n['eng']['announce-body'] = '<p>The latest revision of the LG-system is now available. It is based on the most recent acquisition research and results gathered from several years of experimental teaching. It guarantees a proper start toward functional Greenlandic if you follow the guidelines. No need to wait.</p>
 <p>Still, many learners work better in bigger networks and need help to organize the acquisition process. Therefore, we hereby offer access to brand new formalized networks with tutors allocated.</p>
 <p>Interested? <a href="/" target="_tutorial">Read more about tutorials here</a> and sign up before course start Tuesday 19th 4 PM Danish time (CEST)</p>';
@@ -19,8 +19,8 @@ $l10n['dan']['ERR_NO_ACCESS_LG1'] = $l10n['dan']['ERR_NO_ACCESS'];
 $l10n['eng']['ERR_NO_ACCESS_LG1'] = $l10n['eng']['ERR_NO_ACCESS'];
 $l10n['dan']['ERR_NO_ACCESS_LG2'] = $l10n['dan']['ERR_NO_ACCESS'];
 $l10n['eng']['ERR_NO_ACCESS_LG2'] = $l10n['eng']['ERR_NO_ACCESS'];
-$l10n['dan']['ERR_NONFREE'] = 'Denne side indeholder tekster underlagt copyright, og du skal derfor <a href="/wp-login.php?redirect_to=/{t:path}">logge ind</a> med en konto der har betalt for adgang.';
-$l10n['eng']['ERR_NONFREE'] = 'This page contains copyrighted texts, so you must <a href="/wp-login.php?redirect_to=/{t:path}">log in</a> with an account that paid to access it.';
+$l10n['dan']['ERR_NONFREE'] = 'Denne side indeholder tekster underlagt copyright, og du skal derfor <a href="/wp-login.php?redirect_to={t:prefix}/{t:path}">logge ind</a> med en konto der har betalt for adgang.';
+$l10n['eng']['ERR_NONFREE'] = 'This page contains copyrighted texts, so you must <a href="/wp-login.php?redirect_to={t:prefix}/{t:path}">log in</a> with an account that paid to access it.';
 $l10n['dan']['ERR_TOO_MANY_SESSIONS'] = 'Du er logget ind fra for mange enheder, og skal derfor <a href="/wp-login.php?redirect_to=/online/">logge ind igen</a> fra denne enhed før du kan gå videre.';
 $l10n['eng']['ERR_TOO_MANY_SESSIONS'] = 'You are logged in from too many devices, and must therefore <a href="/wp-login.php?redirect_to=/online/">log in again</a> to continue on this device.';
 
@@ -305,7 +305,7 @@ $l10n['eng']['lg1/5x'] = 'Introduction to chapter 5 X-tra';
 
 $l10n['dan']['lg1/5x/nu'] = 'Øvelse 5.1X: Verber bygget med N-U til nominer (lydøvelse)';
 $l10n['eng']['lg1/5x/nu'] = 'Exercise 5.1X: Verbs created by adding N-U to nouns (perception)';
-$l10n['dan']['lg1/5x/nu/text'] = 'Her kommer nogle nominer, der er verbaliserede med N-U enten med subjekt i 1Sg (<i>I</i>) eller 3Sg (<i>han, hun, den, det</i>). Fx <i>nuliaavunga (kone - være - jeg) = Jeg er en kone</i>. Lyt til du er sikker på, at du forstår, hvad du hører og udtal dernæst sætningen højt før du fortsætter til næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
+$l10n['dan']['lg1/5x/nu/text'] = 'Her kommer nogle nominer, der er verbaliserede med N-U enten med subjekt i 1Sg (<i>jeg</i>) eller 3Sg (<i>han, hun, den, det</i>). Fx <i>nuliaavunga (kone - være - jeg) = Jeg er en kone</i>. Lyt til du er sikker på, at du forstår, hvad du hører og udtal dernæst sætningen højt før du fortsætter til næste ord. {t:TXT_AUDIO_CHECK_REVEAL}.';
 $l10n['eng']['lg1/5x/nu/text'] = 'Here you are presented with nouns that have been verbified with N-U, either with subjects in 1Sg (<i>I</i>) or 3Sg (<i>he, she or it</i>). E.g. <i>nuliaavunga (wife - be - I) = I am a wife</i>. Listen until you understand what you hear and speak it out loudly before proceeding to the next word. {t:TXT_AUDIO_CHECK_REVEAL}.';
 
 $l10n['dan']['lg1/5x/nqar'] = 'Øvelse 5.2X: Nominer med tilhænget N-QAR og et nyt verbum <i>suli-</i> (lydøvelse)';
@@ -847,6 +847,58 @@ $l10n['dan']['lg2/0x/qa2/text'] = 'Du får her en række udsagn, som du benægte
 
 $l10n['dan']['lg2/0x'] = 'Øvelse 0.8x: Prøv at inddrage alternativt materiale';
 $l10n['eng']['lg2/0x'] = 'Exercise 0.8x: Try incorporating alternative sources';
+
+$l10n['dan']['lg2/0xx'] = 'Introduktion til II-0X X-tra';
+$l10n['eng']['lg2/0xx'] = 'Introduction to II-0X X-tra';
+
+$l10n['dan']['lg2/0xx/03xx'] = 'Øvelse 0.3xx';
+$l10n['eng']['lg2/0xx/03xx'] = 'Exercise 0.3xx';
+$l10n['dan']['lg2/0xx/03xx/text'] = 'Når du forlader det kunstigt forenklede sprog, du møder i grønlandskunder-visningen og i stedet kaster dig ud i ægte grønlandsk som det tales “på gaden”, vil du snart konstatere, at der derude er meget længere mellem ord på ..<i>poq</i>, ..<i>punga</i> og andre verber i indikativ end undervisningens kunstige sprog kunne få dig til at tro. Participium og contemporativ, som du præsenteres for i lektion II-2, forekommer faktisk hyppigere end indikativ.</p>
+<p>Så selv om det ikke er let at få participium og contemporativ under huden er der ingen vej udenom at få det gjort. Her er en nænsom start på den proces.</p>
+<p>Omskriv dagens tekst sætning for sætning til indirekte tale. Brug <i>nalunngilat</i>, som betyder ‘du ved det’ som anførende verbum og øv t/s-skiftet i endelserne (Par 3Sg) {+Tuq} og (Par 3Pl) {+Tut}</p>
+<p>Ex:<br>
+<i>Ilinniartitsisoq Hans Jensen Danmarkimi nunaqarpoq.</i> =&gt; <i>Nalunngilat ilinniartitsisoq Hans Jensen Danmarkimi nunaqartoq.</i> (Du ved, at lærer Hans Jensen bor i Danmark.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0xx/03xx/text'] = 'Once you leave the simplified language of the Greenlandic L2 classroom and face the real language of the real world you will immediately note that there is much further between occurances of ..<i>poq</i>, ..<i>punga</i> and other verbs in the indicative mood than teaching falsely made you think. The participle and contemporative that you will meet in chapter II-2 are as a matter of facts more frequent than is indicative.</p>
+<p>So in spite of the fact that internalizing (knowing by heart) the participle and the contemporative is not an easy task you cannot avoid it. Here is a gentle start to that process.</p>
+<p>Adjust all sentences in today’s text to reported speech. Use <i>nalunngilat</i> (you know it) as the reporting verb and practice the t/s-alternation in the endings  (Par 3Sg) {+Tuq} and (Par 3Pl) {+Tut}</p>
+<p>Ex:<br>
+<i>Ilinniartitsisoq Hans Jensen Danmarkimi nunaqarpoq.</i> (Teacher Hans Jensen lives in Denmark.) =&gt; <i>Nalunngilat ilinniartitsisoq Hans Jensen Danmarkimi nunaqartoq.</i> (You know that teacher Hans Jensen lives in Denmark.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0xx/04xx'] = 'Øvelse 0.4xx';
+$l10n['eng']['lg2/0xx/04xx'] = 'Exercise 0.4xx';
+$l10n['dan']['lg2/0xx/04xx/text'] = 'Som øvelsen ovenfor, men nu med teksten som den blev ændret i øvelse 2 som input for også at træne endelserne (Par 1Sg) {+Tuŋa} og (Par 1Pl) {+Tugut}</p>
+<p>Ex:<br>
+<i>Danmarkimi nunaqarpunga.</i> =&gt; <i>Nalunngilat Danmarkimi nunaqartunga.</i> (Du ved, at jeg bor i Danmark.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+$l10n['eng']['lg2/0xx/04xx/text'] = 'Like the exercise above but now use the text as it was changed in exercise 2 to practice endings of the 1. person (Par 1Sg) {+Tuŋa} and (Par 1Pl) {+Tugut}</p>
+<p>Ex:<br>
+<i>Danmarkimi nunaqarpunga.</i> (I live in Denmark.) =&gt; <i>Nalunngilat Danmarkimi nunaqartunga.</i> (You know that I live in Denmark.)</p><p>{t:TXT_AUDIO_CHECK_REVEAL2}.';
+
+$l10n['dan']['lg2/0xx/05xx'] = 'Øvelse 0.5xx: Konsolidering/glosetræning';
+$l10n['eng']['lg2/0xx/05xx'] = 'Exercise 0.5xx: Strengthening of lexicon';
+$l10n['dan']['lg2/0xx/05xx/text'] = 'Konsolidering/glosetræning hvor du ideelt set skal øve samtlige stammer sammen med alle de tilhæng og endelser, du kender for at få lydreglerne effektivt under huden.</p>
+<p>Lyt og forstå følgende sætninger så godt, at du kan gentage dem højt uden at læse løsningen. Ved sætninger med transitive verber skal du være ekstra opmærksom på <b>ikke</b> at misforstå hvem der gør (subjektet) hvad ved hvem (objektet). Det er ikke <i>Lene</i>, men 1Sg (dvs. ‘Jeg’) der er subjektet og dermed den der husker nogen i en sætning som <i>Lene eqqaamavara</i> (Jeg husker Lene)</p>
+<p>For at få så mange eksempler som muligt præsenteret i usammenhængende sætninger, som vi gør det her, kan det ikke undgås, at systemet ind imellem genererer sætninger, der umiddelbart kan være lidt tvivlsomme. Men hvis du indtænker lidt kontekst er de bestemt alle sammen mulige sætninger.</p>
+<p>For eksempel giver følgende kun ordentlig mening, hvis vi fx indtænker en situation, hvor den <i>Arnannguaq</i>, vi taler om, er en kvinde blandt andre kvinder, vi ikke helt har styr på: <i>Arnannguusoq ippassaq Aasiammiumi ilinniartitsisoqarusuppoq.</i> (Hende, som er Arnannguaq, ville gerne have en lærer hos aasiammiu i går).</p>
+<p>Men langt de fleste sætninger er slet ikke så komplicerede som dette eksempel, så gå roligt i gang med at lytte, forstå og gentage et meget stort antal sætninger.</p>
+<p>Ex:<br>
+<i>Paamiormiumut aallassagaluarpugut.</i> (Vi skulle ellers rejse hen til ham fra Paamiut.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/0xx/05xx/text'] = 'Consolidation where you ideally will practice all the stems you know together with all the affixes and inflectional endings you know to learn all the sound rules by heart. Listen closely to the sentences and make sure that you understand them fully without reading the answer. Sentences with transitive verbs need extra attention. Make sure <b>not</b> to jump to wrong conclusions about who (subject) does what to whom (object). In <i>Lene eqqaamavara</i> (I remember Lene) <i>Lene</i> is not the subject. The subject is 1Sg (I).</p>
+<p>In order to present as much material as possible as we do it here in sentences out of context a few of the examples inevitably will turn out a bit hard to understand.</p>
+<p>As an example the following needs a bit of context to be fully understandable, for instance a situation where the <i>Arnannguaq</i> in question is one person out of a group we hardly know the names of: <i>Arnannguusoq ippassaq Aasiammiumi ilinniartitsisoqarusuppoq.</i> (The one who is Arnannguaq wanted a teacher at the Aasiaat guy’s place yesterday).</p>
+<p>Still, very few examples are as complicated as this example so you can just get going with listening, understanding and repeating a large number of sentences.</p>
+<p>Ex:<br>
+<i>Paamiormiumut aallassagaluarpugut.</i> (We actully should have left for the one from Paamiut.)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+
+$l10n['dan']['lg2/0xx/06xx'] = 'Øvelse 0.6xx';
+$l10n['eng']['lg2/0xx/06xx'] = 'Exercise 0.6xx';
+$l10n['dan']['lg2/0xx/06xx/text'] = 'I de følgende øvelser træner vi 3 nye endelser fra intransitiv participiums bøjningsskema, nemlig personen ‘jeg’ (Par 1Sg) {+Tu}{ŋa}, personen ‘han/hun/den/det’ (Par 3Sg) {+Tu}{q} og personen ‘vi’ (Par 1Pl) {+Tu}{gut}. Bemærk, at du allerede kender de tre endelser fra indikativ {+vu}{ŋa}, {+vu}{q} og {+vu}{gut}, så bare du får partcipiumsendelsens t/s-skifte under huden vil øvelsen være ganske ukompliceret.</p>
+<p>Forstå og gentag at-sætninger. Vi bruger <i>eqqaamaviuk</i> (husker du det?) som anførende verbum i samtlige eksempler.</p>
+<p>Ex:<br>
+<i>Eqqaamaviuk Maniitsumit tikittunga?</i> (Husker du, at jeg ankom fra Maniitsoq?)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
+$l10n['eng']['lg2/0xx/06xx/text'] = 'In the exercises hereunder we work with three new inflectional endings of the intransitive participle’s paradigm namely ‘I’ (Par 1Sg) {+Tu}{ŋa}, ‘he/she/it’ (Par 3Sg) {+Tu}{q} and ‘we’ (Par 1Pl) {+Tu}{gut}. Please observe that you know the three personal endings already. You know them from the indicative mood {+vu}{ŋa}, {+vu}{q} and {+vu}{gut} so once you become familiar with the participle’s t/s shift the exercise will be very simple.</p>
+<p>Understand and repeat that-sentences. We use <i>eqqaamaviuk</i> (Do you remember that?) as reporting verb in all sentences.</p>
+<p>Ex:<br>
+<i>Eqqaamaviuk Maniitsumit tikittunga?</i> (Do you remember that I arrived from Maniitsoq?)</p><p>{t:TXT_AUDIO_ANALYSIS_REVEAL}.';
 
 $l10n['dan']['lg2/fsts/2/text'] = 'Skriv følgende ord i færdig form. {t:TXT_CHECK_REVEAL_UPDOWN}.';
 $l10n['eng']['lg2/fsts/2/text'] = 'Write the following words in final form. {t:TXT_CHECK_REVEAL_UPDOWN}.';

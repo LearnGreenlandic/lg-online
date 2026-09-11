@@ -9,6 +9,11 @@ $GLOBALS['-ds'] = [
 	];
 
 $GLOBALS['-db-map'] = [
+	'03xx' => '0-3xx',
+	'04xx' => '0-4xx',
+	'05xx' => '0-5xx',
+	'06xx' => '0-6xx',
+
 	'affirm1' => '1-1x',
 	'affirm2' => '1-2x',
 	'deny1' => '1-3x',
@@ -1705,10 +1710,10 @@ function sentence_lg2($state, $chap, $task) {
 	else if (($chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x' || $chap == '5x' || $chap == '6x') && preg_match('~^(review6[234])$~', $task)) {
 		\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 	}
-	else if (preg_match('~^(part1|obj\d|that[19]\d*|indirect1|una1|niq1|review\d+|cntp1|cau[23]|cau[1-4][sp]3|trpar\d+|oqarfige)$~', $task)) {
+	else if (preg_match('~^(part1|obj\d|that[19]\d*|indirect1|una1|niq1|review\d+|cntp1|cau[23]|cau[1-4][sp]3|trpar\d+|oqarfige|0[56]xx)$~', $task)) {
 		\LGO\sentence_random_read_sqlite('lg2', $state, $chap, $task);
 	}
-	else if (($chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x' || $chap == '5x' || $chap == '6x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d|so\d|galuar\d|cau\d|schwa\d)$~', $task)) {
+	else if (($chap == '0xx' || $chap == '1x' || $chap == '2x' || $chap == '3x' || $chap == '4x' || $chap == '5x' || $chap == '6x') && preg_match('~^(affirm\d|deny\d|part2|lu1|laar\d|fam\d|that\d|cntp\d|summer\d|so\d|galuar\d|cau\d|schwa\d|0[34]xx)$~', $task)) {
 		\LGO\sentence_random_qa_sqlite('lg2', $state, $chap, $task);
 	}
 	else if ($task == 'lik1') {

@@ -4,6 +4,8 @@ php_value error_reporting -1
 php_value display_errors 1
 
 RewriteEngine On
+RewriteRule ^lg1/pamphlet/lg.* - [F,L]
+
 RewriteRule ^index\.php$ - [L]
 RewriteRule ^(.*(mp3|mp4))$ ./index.php?path=$1 "[L,B= ]"
 
